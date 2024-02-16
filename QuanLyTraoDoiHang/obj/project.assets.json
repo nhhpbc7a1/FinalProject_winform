@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CODE\\hcmute\\winform\\FinalProject\\test\\QuanLyTraoDoiHang\\QuanLyTraoDoiHang.csproj",
+      "projectUniqueName": "D:\\CODE\\hcmute\\winform\\testClone_finalproject\\FinalProject_winform\\QuanLyTraoDoiHang\\QuanLyTraoDoiHang.csproj",
       "projectName": "QuanLyTraoDoiHang",
-      "projectPath": "D:\\CODE\\hcmute\\winform\\FinalProject\\test\\QuanLyTraoDoiHang\\QuanLyTraoDoiHang.csproj",
+      "projectPath": "D:\\CODE\\hcmute\\winform\\testClone_finalproject\\FinalProject_winform\\QuanLyTraoDoiHang\\QuanLyTraoDoiHang.csproj",
       "packagesPath": "C:\\Users\\Huy\\.nuget\\packages\\",
-      "outputPath": "D:\\CODE\\hcmute\\winform\\FinalProject\\test\\QuanLyTraoDoiHang\\obj\\",
+      "outputPath": "D:\\CODE\\hcmute\\winform\\testClone_finalproject\\FinalProject_winform\\QuanLyTraoDoiHang\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Huy\\AppData\\Roaming\\NuGet\\NuGet.Config",
