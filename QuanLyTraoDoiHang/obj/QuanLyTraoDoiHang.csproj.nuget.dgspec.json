@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CODE\\hcmute\\winform\\testClone_finalproject\\FinalProject_winform\\QuanLyTraoDoiHang\\QuanLyTraoDoiHang.csproj": {}
+    "E:\\UTE 23 24\\Winform\\Final Project\\FinalProject_winform\\QuanLyTraoDoiHang\\QuanLyTraoDoiHang.csproj": {}
   },
   "projects": {
-    "D:\\CODE\\hcmute\\winform\\testClone_finalproject\\FinalProject_winform\\QuanLyTraoDoiHang\\QuanLyTraoDoiHang.csproj": {
+    "E:\\UTE 23 24\\Winform\\Final Project\\FinalProject_winform\\QuanLyTraoDoiHang\\QuanLyTraoDoiHang.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CODE\\hcmute\\winform\\testClone_finalproject\\FinalProject_winform\\QuanLyTraoDoiHang\\QuanLyTraoDoiHang.csproj",
+        "projectUniqueName": "E:\\UTE 23 24\\Winform\\Final Project\\FinalProject_winform\\QuanLyTraoDoiHang\\QuanLyTraoDoiHang.csproj",
         "projectName": "QuanLyTraoDoiHang",
-        "projectPath": "D:\\CODE\\hcmute\\winform\\testClone_finalproject\\FinalProject_winform\\QuanLyTraoDoiHang\\QuanLyTraoDoiHang.csproj",
-        "packagesPath": "C:\\Users\\Huy\\.nuget\\packages\\",
-        "outputPath": "D:\\CODE\\hcmute\\winform\\testClone_finalproject\\FinalProject_winform\\QuanLyTraoDoiHang\\obj\\",
+        "projectPath": "E:\\UTE 23 24\\Winform\\Final Project\\FinalProject_winform\\QuanLyTraoDoiHang\\QuanLyTraoDoiHang.csproj",
+        "packagesPath": "C:\\Users\\Khanh\\.nuget\\packages\\",
+        "outputPath": "E:\\UTE 23 24\\Winform\\Final Project\\FinalProject_winform\\QuanLyTraoDoiHang\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Huy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Khanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,11 +34,22 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "FontAwesome.Sharp": {
+              "target": "Package",
+              "version": "[6.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,7 +69,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

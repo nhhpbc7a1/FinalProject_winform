@@ -16,3 +16,26 @@ D:\CODE\hcmute\winform\FinalProject\test\QuanLyTraoDoiHang\obj\Debug\net6.0-wind
 D:\CODE\hcmute\winform\FinalProject\test\QuanLyTraoDoiHang\obj\Debug\net6.0-windows\QuanLyTraoDoiHang.genruntimeconfig.cache
 D:\CODE\hcmute\winform\FinalProject\test\QuanLyTraoDoiHang\obj\Debug\net6.0-windows\ref\QuanLyTraoDoiHang.dll
 D:\CODE\hcmute\winform\FinalProject\test\QuanLyTraoDoiHang\obj\Debug\net6.0-windows\QuanLyTraoDoiHang.QuanLyHang.resources
+E:\UTE 23 24\Winform\Final Project\FinalProject_winform\QuanLyTraoDoiHang\bin\Debug\net6.0-windows\QuanLyTraoDoiHang.exe
+E:\UTE 23 24\Winform\Final Project\FinalProject_winform\QuanLyTraoDoiHang\bin\Debug\net6.0-windows\QuanLyTraoDoiHang.deps.json
+E:\UTE 23 24\Winform\Final Project\FinalProject_winform\QuanLyTraoDoiHang\bin\Debug\net6.0-windows\QuanLyTraoDoiHang.runtimeconfig.json
+E:\UTE 23 24\Winform\Final Project\FinalProject_winform\QuanLyTraoDoiHang\bin\Debug\net6.0-windows\QuanLyTraoDoiHang.dll
+E:\UTE 23 24\Winform\Final Project\FinalProject_winform\QuanLyTraoDoiHang\bin\Debug\net6.0-windows\QuanLyTraoDoiHang.pdb
+E:\UTE 23 24\Winform\Final Project\FinalProject_winform\QuanLyTraoDoiHang\obj\Debug\net6.0-windows\QuanLyTraoDoiHang.Form1.resources
+E:\UTE 23 24\Winform\Final Project\FinalProject_winform\QuanLyTraoDoiHang\obj\Debug\net6.0-windows\QuanLyTraoDoiHang.QuanLyHang.resources
+E:\UTE 23 24\Winform\Final Project\FinalProject_winform\QuanLyTraoDoiHang\obj\Debug\net6.0-windows\QuanLyTraoDoiHang.csproj.GenerateResource.cache
+E:\UTE 23 24\Winform\Final Project\FinalProject_winform\QuanLyTraoDoiHang\obj\Debug\net6.0-windows\QuanLyTraoDoiHang.GeneratedMSBuildEditorConfig.editorconfig
+E:\UTE 23 24\Winform\Final Project\FinalProject_winform\QuanLyTraoDoiHang\obj\Debug\net6.0-windows\QuanLyTraoDoiHang.AssemblyInfoInputs.cache
+E:\UTE 23 24\Winform\Final Project\FinalProject_winform\QuanLyTraoDoiHang\obj\Debug\net6.0-windows\QuanLyTraoDoiHang.AssemblyInfo.cs
+E:\UTE 23 24\Winform\Final Project\FinalProject_winform\QuanLyTraoDoiHang\obj\Debug\net6.0-windows\QuanLyTraoDoiHang.csproj.CoreCompileInputs.cache
+E:\UTE 23 24\Winform\Final Project\FinalProject_winform\QuanLyTraoDoiHang\obj\Debug\net6.0-windows\QuanLyTraoDoiHang.dll
+E:\UTE 23 24\Winform\Final Project\FinalProject_winform\QuanLyTraoDoiHang\obj\Debug\net6.0-windows\refint\QuanLyTraoDoiHang.dll
+E:\UTE 23 24\Winform\Final Project\FinalProject_winform\QuanLyTraoDoiHang\obj\Debug\net6.0-windows\QuanLyTraoDoiHang.pdb
+E:\UTE 23 24\Winform\Final Project\FinalProject_winform\QuanLyTraoDoiHang\obj\Debug\net6.0-windows\QuanLyTraoDoiHang.genruntimeconfig.cache
+E:\UTE 23 24\Winform\Final Project\FinalProject_winform\QuanLyTraoDoiHang\obj\Debug\net6.0-windows\ref\QuanLyTraoDoiHang.dll
+E:\UTE 23 24\Winform\Final Project\FinalProject_winform\QuanLyTraoDoiHang\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
+E:\UTE 23 24\Winform\Final Project\FinalProject_winform\QuanLyTraoDoiHang\obj\Debug\net6.0-windows\QuanLyTraoDoiHang.csproj.AssemblyReference.cache
+E:\UTE 23 24\Winform\Final Project\FinalProject_winform\QuanLyTraoDoiHang\obj\Debug\net6.0-windows\QuanLyTraoDoiHang.FormCart.resources
+E:\UTE 23 24\Winform\Final Project\FinalProject_winform\QuanLyTraoDoiHang\obj\Debug\net6.0-windows\QuanLyTraoDoiHang.Properties.Resources.resources
+E:\UTE 23 24\Winform\Final Project\FinalProject_winform\QuanLyTraoDoiHang\obj\Debug\net6.0-windows\QuanLyTraoDoiHang.sourcelink.json
+E:\UTE 23 24\Winform\Final Project\FinalProject_winform\QuanLyTraoDoiHang\obj\Debug\net6.0-windows\QuanLyTr.7B7E8656.Up2Date

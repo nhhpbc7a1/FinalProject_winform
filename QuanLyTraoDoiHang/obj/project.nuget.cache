@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "62W3JKMtt07dv59vHleS+sf3T4redNVoJCOoKxRT4BMJTX7WSZ6zoBv9V7BZU12cEWadXvhu6alxCWrVxJldzg==",
+  "dgSpecHash": "2d5jXPY76MNbWHdjZ2kfmnNcHDl5OA1Q4JZP/RhVxAxveph+HLoWWvUgVgq9U8NdaIqn+36qLDVVuULnWqwqSg==",
   "success": true,
-  "projectFilePath": "D:\\CODE\\hcmute\\winform\\testClone_finalproject\\FinalProject_winform\\QuanLyTraoDoiHang\\QuanLyTraoDoiHang.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "E:\\UTE 23 24\\Winform\\Final Project\\FinalProject_winform\\QuanLyTraoDoiHang\\QuanLyTraoDoiHang.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Khanh\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512"
+  ],
   "logs": []
 }

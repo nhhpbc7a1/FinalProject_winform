@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QuanLyTraoDoiHang")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88d8aa41aa66f0b302eb84fb4679f6f13c6ec6c4")]
 [assembly: System.Reflection.AssemblyProductAttribute("QuanLyTraoDoiHang")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QuanLyTraoDoiHang")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
