@@ -28,131 +28,182 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.lblPassword = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radbtnCustomer = new System.Windows.Forms.RadioButton();
+            this.radbtnSeller = new System.Windows.Forms.RadioButton();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnRegister = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // lblUsername
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(110, 134);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "tai khoan";
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblUsername.Location = new System.Drawing.Point(19, 25);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(69, 17);
+            this.lblUsername.TabIndex = 0;
+            this.lblUsername.Text = "Username";
+            this.lblUsername.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // lblPassword
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(110, 199);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "mat khau";
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPassword.Location = new System.Drawing.Point(19, 61);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(66, 17);
+            this.lblPassword.TabIndex = 1;
+            this.lblPassword.Text = "Password";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(232, 134);
+            this.textBox1.Location = new System.Drawing.Point(104, 22);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 27);
+            this.textBox1.Size = new System.Drawing.Size(162, 25);
             this.textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(232, 199);
+            this.textBox2.Location = new System.Drawing.Point(104, 58);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(125, 27);
+            this.textBox2.Size = new System.Drawing.Size(162, 25);
             this.textBox2.TabIndex = 3;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Controls.Add(this.radioButton1);
-            this.panel1.Location = new System.Drawing.Point(100, 49);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.radbtnCustomer);
+            this.panel1.Controls.Add(this.radbtnSeller);
+            this.panel1.Location = new System.Drawing.Point(123, 111);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(298, 35);
+            this.panel1.Size = new System.Drawing.Size(278, 39);
             this.panel1.TabIndex = 4;
             // 
-            // radioButton2
+            // radbtnCustomer
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(171, 8);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(97, 24);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "nguoi ban";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radbtnCustomer.AutoSize = true;
+            this.radbtnCustomer.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.radbtnCustomer.ForeColor = System.Drawing.Color.White;
+            this.radbtnCustomer.Location = new System.Drawing.Point(114, 6);
+            this.radbtnCustomer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.radbtnCustomer.Name = "radbtnCustomer";
+            this.radbtnCustomer.Size = new System.Drawing.Size(85, 21);
+            this.radbtnCustomer.TabIndex = 1;
+            this.radbtnCustomer.TabStop = true;
+            this.radbtnCustomer.Text = "Customer";
+            this.radbtnCustomer.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // radbtnSeller
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(10, 8);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(101, 24);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "nguoi mua";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radbtnSeller.AutoSize = true;
+            this.radbtnSeller.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.radbtnSeller.ForeColor = System.Drawing.Color.White;
+            this.radbtnSeller.Location = new System.Drawing.Point(12, 6);
+            this.radbtnSeller.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.radbtnSeller.Name = "radbtnSeller";
+            this.radbtnSeller.Size = new System.Drawing.Size(60, 21);
+            this.radbtnSeller.TabIndex = 0;
+            this.radbtnSeller.TabStop = true;
+            this.radbtnSeller.Text = "Seller";
+            this.radbtnSeller.UseVisualStyleBackColor = true;
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(116)))), ((int)(((byte)(190)))));
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnLogin.Location = new System.Drawing.Point(19, 105);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(247, 35);
+            this.btnLogin.TabIndex = 5;
+            this.btnLogin.Text = "Sign in";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnRegister
+            // 
+            this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(54)))));
+            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRegister.Location = new System.Drawing.Point(19, 155);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(247, 32);
+            this.btnRegister.TabIndex = 6;
+            this.btnRegister.Text = "Register";
+            this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel2.Controls.Add(this.lblUsername);
+            this.panel2.Controls.Add(this.btnRegister);
+            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.btnLogin);
+            this.panel2.Controls.Add(this.lblPassword);
+            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Location = new System.Drawing.Point(123, 146);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(278, 224);
+            this.panel2.TabIndex = 7;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(210, 290);
+            this.button1.Location = new System.Drawing.Point(424, 32);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "dang nhap";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(359, 290);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 29);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "dang ky";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(541, 541);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private Label label1;
-        private Label label2;
+        private Label lblUsername;
+        private Label lblPassword;
         private TextBox textBox1;
         private TextBox textBox2;
         private Panel panel1;
-        private RadioButton radioButton2;
-        private RadioButton radioButton1;
+        private RadioButton radbtnCustomer;
+        private RadioButton radbtnSeller;
+        private Button btnLogin;
+        private Button btnRegister;
+        private Panel panel2;
         private Button button1;
-        private Button button2;
     }
 }
