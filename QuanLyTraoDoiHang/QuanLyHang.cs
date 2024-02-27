@@ -22,5 +22,11 @@ namespace QuanLyTraoDoiHang
             Form form = new FormCart();
             form.ShowDialog();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Form form = new FormProductDetail();
+            form.ShowDialog();
+        }
     }
 }
