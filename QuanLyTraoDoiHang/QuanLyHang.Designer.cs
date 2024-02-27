@@ -73,27 +73,27 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(12, 116);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 20);
+            this.label5.Size = new System.Drawing.Size(97, 20);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Bộ lọc sản phẩm";
+            this.label5.Text = "Product Filter";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(22, 296);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(62, 20);
+            this.label10.Size = new System.Drawing.Size(99, 20);
             this.label10.TabIndex = 14;
-            this.label10.Text = "Nơi bán";
+            this.label10.Text = "Store address";
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(30, 181);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(99, 24);
+            this.checkBox1.Size = new System.Drawing.Size(80, 24);
             this.checkBox1.TabIndex = 15;
-            this.checkBox1.Text = "Thời trang";
+            this.checkBox1.Text = "Fashion";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // checkBox2
@@ -101,9 +101,9 @@
             this.checkBox2.AutoSize = true;
             this.checkBox2.Location = new System.Drawing.Point(30, 211);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(80, 24);
+            this.checkBox2.Size = new System.Drawing.Size(143, 24);
             this.checkBox2.TabIndex = 16;
-            this.checkBox2.Text = "Điện tử";
+            this.checkBox2.Text = "Electronic device";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox3
@@ -111,9 +111,9 @@
             this.checkBox3.AutoSize = true;
             this.checkBox3.Location = new System.Drawing.Point(30, 244);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(97, 24);
+            this.checkBox3.Size = new System.Drawing.Size(137, 24);
             this.checkBox3.TabIndex = 17;
-            this.checkBox3.Text = "Tiêu dùng";
+            this.checkBox3.Text = "Consumer good";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // checkBox4
@@ -141,9 +141,9 @@
             this.checkBox6.AutoSize = true;
             this.checkBox6.Location = new System.Drawing.Point(40, 390);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(109, 24);
+            this.checkBox6.Size = new System.Drawing.Size(81, 24);
             this.checkBox6.TabIndex = 20;
-            this.checkBox6.Text = "Nước ngoài";
+            this.checkBox6.Text = "Abroad";
             this.checkBox6.UseVisualStyleBackColor = true;
             // 
             // label6
@@ -168,7 +168,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(94, 49);
             this.button2.TabIndex = 23;
-            this.button2.Text = "trang cá nhân";
+            this.button2.Text = "Account";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // label7
@@ -176,9 +176,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(22, 149);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 20);
+            this.label7.Size = new System.Drawing.Size(69, 20);
             this.label7.TabIndex = 24;
-            this.label7.Text = "Danh mục";
+            this.label7.Text = "Catagory";
             // 
             // label1
             // 
@@ -188,6 +188,7 @@
             this.label1.Size = new System.Drawing.Size(50, 20);
             this.label1.TabIndex = 25;
             this.label1.Text = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
