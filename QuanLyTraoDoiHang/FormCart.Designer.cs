@@ -28,226 +28,239 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pBMenu = new PictureBox();
-            pBSearch = new PictureBox();
-            btnNotification = new Button();
-            btnHelp = new Button();
-            cBAccount = new ComboBox();
-            txtSearch = new TextBox();
-            button4 = new Button();
-            icbtnHome = new FontAwesome.Sharp.IconButton();
-            pnlMenu = new Panel();
-            label1 = new Label();
-            lblAction = new Label();
-            lblTotalPrice = new Label();
-            lblQuantity = new Label();
-            lblPrice = new Label();
-            chBProducts = new CheckBox();
-            pnlCheckOut = new Panel();
-            ((System.ComponentModel.ISupportInitialize)pBMenu).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pBSearch).BeginInit();
-            pnlMenu.SuspendLayout();
-            SuspendLayout();
+            this.pBMenu = new System.Windows.Forms.PictureBox();
+            this.pBSearch = new System.Windows.Forms.PictureBox();
+            this.btnNotification = new System.Windows.Forms.Button();
+            this.btnHelp = new System.Windows.Forms.Button();
+            this.cBAccount = new System.Windows.Forms.ComboBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.icbtnHome = new FontAwesome.Sharp.IconButton();
+            this.pnlMenu = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblAction = new System.Windows.Forms.Label();
+            this.lblTotalPrice = new System.Windows.Forms.Label();
+            this.lblQuantity = new System.Windows.Forms.Label();
+            this.lblPrice = new System.Windows.Forms.Label();
+            this.chBProducts = new System.Windows.Forms.CheckBox();
+            this.pnlCheckOut = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.pBMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBSearch)).BeginInit();
+            this.pnlMenu.SuspendLayout();
+            this.SuspendLayout();
             // 
             // pBMenu
             // 
-            pBMenu.BackColor = Color.Gold;
-            pBMenu.Location = new Point(-3, -5);
-            pBMenu.Name = "pBMenu";
-            pBMenu.Size = new Size(2343, 104);
-            pBMenu.TabIndex = 0;
-            pBMenu.TabStop = false;
+            this.pBMenu.BackColor = System.Drawing.Color.Gold;
+            this.pBMenu.Location = new System.Drawing.Point(-1, -2);
+            this.pBMenu.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.pBMenu.Name = "pBMenu";
+            this.pBMenu.Size = new System.Drawing.Size(965, 38);
+            this.pBMenu.TabIndex = 0;
+            this.pBMenu.TabStop = false;
             // 
             // pBSearch
             // 
-            pBSearch.BackColor = Color.White;
-            pBSearch.Location = new Point(-3, 95);
-            pBSearch.Name = "pBSearch";
-            pBSearch.Size = new Size(2343, 182);
-            pBSearch.TabIndex = 1;
-            pBSearch.TabStop = false;
+            this.pBSearch.BackColor = System.Drawing.Color.White;
+            this.pBSearch.Location = new System.Drawing.Point(-1, 35);
+            this.pBSearch.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.pBSearch.Name = "pBSearch";
+            this.pBSearch.Size = new System.Drawing.Size(965, 67);
+            this.pBSearch.TabIndex = 1;
+            this.pBSearch.TabStop = false;
             // 
             // btnNotification
             // 
-            btnNotification.BackColor = Color.Gold;
-            btnNotification.BackgroundImageLayout = ImageLayout.Stretch;
-            btnNotification.FlatAppearance.BorderSize = 0;
-            btnNotification.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnNotification.Location = new Point(1326, 12);
-            btnNotification.Name = "btnNotification";
-            btnNotification.Size = new Size(203, 58);
-            btnNotification.TabIndex = 2;
-            btnNotification.Text = "Notification";
-            btnNotification.UseVisualStyleBackColor = false;
+            this.btnNotification.BackColor = System.Drawing.Color.Gold;
+            this.btnNotification.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNotification.FlatAppearance.BorderSize = 0;
+            this.btnNotification.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnNotification.Location = new System.Drawing.Point(546, 4);
+            this.btnNotification.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnNotification.Name = "btnNotification";
+            this.btnNotification.Size = new System.Drawing.Size(84, 21);
+            this.btnNotification.TabIndex = 2;
+            this.btnNotification.Text = "Notification";
+            this.btnNotification.UseVisualStyleBackColor = false;
             // 
             // btnHelp
             // 
-            btnHelp.BackColor = Color.Cornsilk;
-            btnHelp.Location = new Point(1562, 12);
-            btnHelp.Name = "btnHelp";
-            btnHelp.Size = new Size(188, 58);
-            btnHelp.TabIndex = 3;
-            btnHelp.Text = "Help";
-            btnHelp.UseVisualStyleBackColor = false;
+            this.btnHelp.BackColor = System.Drawing.Color.Cornsilk;
+            this.btnHelp.Location = new System.Drawing.Point(643, 4);
+            this.btnHelp.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(77, 21);
+            this.btnHelp.TabIndex = 3;
+            this.btnHelp.Text = "Help";
+            this.btnHelp.UseVisualStyleBackColor = false;
             // 
             // cBAccount
             // 
-            cBAccount.FormattingEnabled = true;
-            cBAccount.Location = new Point(1772, 18);
-            cBAccount.Name = "cBAccount";
-            cBAccount.Size = new Size(302, 49);
-            cBAccount.TabIndex = 5;
-            cBAccount.Text = "Account";
+            this.cBAccount.FormattingEnabled = true;
+            this.cBAccount.Location = new System.Drawing.Point(730, 7);
+            this.cBAccount.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.cBAccount.Name = "cBAccount";
+            this.cBAccount.Size = new System.Drawing.Size(127, 23);
+            this.cBAccount.TabIndex = 5;
+            this.cBAccount.Text = "Account";
             // 
             // txtSearch
             // 
-            txtSearch.BorderStyle = BorderStyle.FixedSingle;
-            txtSearch.Location = new Point(1086, 146);
-            txtSearch.Multiline = true;
-            txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(907, 80);
-            txtSearch.TabIndex = 7;
-            txtSearch.Text = "Your products";
+            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSearch.Location = new System.Drawing.Point(447, 53);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txtSearch.Multiline = true;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(375, 31);
+            this.txtSearch.TabIndex = 7;
+            this.txtSearch.Text = "Your products";
             // 
             // button4
             // 
-            button4.BackColor = Color.MidnightBlue;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            button4.ForeColor = SystemColors.Window;
-            button4.Location = new Point(1982, 143);
-            button4.Name = "button4";
-            button4.Size = new Size(217, 86);
-            button4.TabIndex = 8;
-            button4.Text = "Search";
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
+            this.button4.BackColor = System.Drawing.Color.MidnightBlue;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.button4.ForeColor = System.Drawing.SystemColors.Window;
+            this.button4.Location = new System.Drawing.Point(816, 52);
+            this.button4.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(89, 31);
+            this.button4.TabIndex = 8;
+            this.button4.Text = "Search";
+            this.button4.UseVisualStyleBackColor = false;
             // 
             // icbtnHome
             // 
-            icbtnHome.BackColor = Color.White;
-            icbtnHome.FlatAppearance.BorderSize = 0;
-            icbtnHome.FlatStyle = FlatStyle.Flat;
-            icbtnHome.Font = new Font("Segoe UI Black", 15.9000006F, FontStyle.Bold, GraphicsUnit.Point);
-            icbtnHome.ForeColor = Color.MidnightBlue;
-            icbtnHome.IconChar = FontAwesome.Sharp.IconChar.CartPlus;
-            icbtnHome.IconColor = Color.MidnightBlue;
-            icbtnHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            icbtnHome.IconSize = 100;
-            icbtnHome.ImageAlign = ContentAlignment.MiddleRight;
-            icbtnHome.Location = new Point(101, 127);
-            icbtnHome.Name = "icbtnHome";
-            icbtnHome.Size = new Size(317, 99);
-            icbtnHome.TabIndex = 10;
-            icbtnHome.Text = "Home |";
-            icbtnHome.TextAlign = ContentAlignment.MiddleLeft;
-            icbtnHome.UseVisualStyleBackColor = false;
-            icbtnHome.Click += iconButton1_Click;
+            this.icbtnHome.BackColor = System.Drawing.Color.White;
+            this.icbtnHome.FlatAppearance.BorderSize = 0;
+            this.icbtnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.icbtnHome.Font = new System.Drawing.Font("Segoe UI Black", 15.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.icbtnHome.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.icbtnHome.IconChar = FontAwesome.Sharp.IconChar.CartPlus;
+            this.icbtnHome.IconColor = System.Drawing.Color.MidnightBlue;
+            this.icbtnHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.icbtnHome.IconSize = 100;
+            this.icbtnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.icbtnHome.Location = new System.Drawing.Point(42, 46);
+            this.icbtnHome.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.icbtnHome.Name = "icbtnHome";
+            this.icbtnHome.Size = new System.Drawing.Size(131, 36);
+            this.icbtnHome.TabIndex = 10;
+            this.icbtnHome.Text = "Home |";
+            this.icbtnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.icbtnHome.UseVisualStyleBackColor = false;
             // 
             // pnlMenu
             // 
-            pnlMenu.BackColor = Color.Cornsilk;
-            pnlMenu.Controls.Add(label1);
-            pnlMenu.Controls.Add(lblAction);
-            pnlMenu.Controls.Add(lblTotalPrice);
-            pnlMenu.Controls.Add(lblQuantity);
-            pnlMenu.Controls.Add(lblPrice);
-            pnlMenu.Controls.Add(chBProducts);
-            pnlMenu.Location = new Point(101, 335);
-            pnlMenu.Name = "pnlMenu";
-            pnlMenu.Size = new Size(2098, 83);
-            pnlMenu.TabIndex = 11;
+            this.pnlMenu.BackColor = System.Drawing.Color.Cornsilk;
+            this.pnlMenu.Controls.Add(this.label1);
+            this.pnlMenu.Controls.Add(this.lblAction);
+            this.pnlMenu.Controls.Add(this.lblTotalPrice);
+            this.pnlMenu.Controls.Add(this.lblQuantity);
+            this.pnlMenu.Controls.Add(this.lblPrice);
+            this.pnlMenu.Controls.Add(this.chBProducts);
+            this.pnlMenu.Location = new System.Drawing.Point(42, 123);
+            this.pnlMenu.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.pnlMenu.Name = "pnlMenu";
+            this.pnlMenu.Size = new System.Drawing.Size(864, 30);
+            this.pnlMenu.TabIndex = 11;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(1567, 20);
-            label1.Name = "label1";
-            label1.Size = new Size(98, 41);
-            label1.TabIndex = 17;
-            label1.Text = "Status";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(645, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 15);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Status";
             // 
             // lblAction
             // 
-            lblAction.AutoSize = true;
-            lblAction.Location = new Point(1857, 20);
-            lblAction.Name = "lblAction";
-            lblAction.Size = new Size(116, 41);
-            lblAction.TabIndex = 16;
-            lblAction.Text = "Actions";
-            lblAction.Click += lblAction_Click;
+            this.lblAction.AutoSize = true;
+            this.lblAction.Location = new System.Drawing.Point(765, 7);
+            this.lblAction.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.lblAction.Name = "lblAction";
+            this.lblAction.Size = new System.Drawing.Size(47, 15);
+            this.lblAction.TabIndex = 16;
+            this.lblAction.Text = "Actions";
             // 
             // lblTotalPrice
             // 
-            lblTotalPrice.AutoSize = true;
-            lblTotalPrice.Location = new Point(1214, 20);
-            lblTotalPrice.Name = "lblTotalPrice";
-            lblTotalPrice.Size = new Size(153, 41);
-            lblTotalPrice.TabIndex = 15;
-            lblTotalPrice.Text = "Total Price";
-            lblTotalPrice.Click += lblTotalPrice_Click;
+            this.lblTotalPrice.AutoSize = true;
+            this.lblTotalPrice.Location = new System.Drawing.Point(500, 7);
+            this.lblTotalPrice.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.lblTotalPrice.Name = "lblTotalPrice";
+            this.lblTotalPrice.Size = new System.Drawing.Size(61, 15);
+            this.lblTotalPrice.TabIndex = 15;
+            this.lblTotalPrice.Text = "Total Price";
             // 
             // lblQuantity
             // 
-            lblQuantity.AutoSize = true;
-            lblQuantity.Location = new Point(905, 20);
-            lblQuantity.Name = "lblQuantity";
-            lblQuantity.Size = new Size(132, 41);
-            lblQuantity.TabIndex = 14;
-            lblQuantity.Text = "Quantity";
+            this.lblQuantity.AutoSize = true;
+            this.lblQuantity.Location = new System.Drawing.Point(373, 7);
+            this.lblQuantity.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.lblQuantity.Name = "lblQuantity";
+            this.lblQuantity.Size = new System.Drawing.Size(53, 15);
+            this.lblQuantity.TabIndex = 14;
+            this.lblQuantity.Text = "Quantity";
             // 
             // lblPrice
             // 
-            lblPrice.AutoSize = true;
-            lblPrice.Location = new Point(570, 20);
-            lblPrice.Name = "lblPrice";
-            lblPrice.Size = new Size(145, 41);
-            lblPrice.TabIndex = 13;
-            lblPrice.Text = "Unit Price";
+            this.lblPrice.AutoSize = true;
+            this.lblPrice.Location = new System.Drawing.Point(235, 7);
+            this.lblPrice.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.lblPrice.Name = "lblPrice";
+            this.lblPrice.Size = new System.Drawing.Size(58, 15);
+            this.lblPrice.TabIndex = 13;
+            this.lblPrice.Text = "Unit Price";
             // 
             // chBProducts
             // 
-            chBProducts.AutoSize = true;
-            chBProducts.Location = new Point(30, 20);
-            chBProducts.Name = "chBProducts";
-            chBProducts.Size = new Size(240, 45);
-            chBProducts.TabIndex = 12;
-            chBProducts.Text = "Your Products";
-            chBProducts.UseVisualStyleBackColor = true;
+            this.chBProducts.AutoSize = true;
+            this.chBProducts.Location = new System.Drawing.Point(12, 7);
+            this.chBProducts.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.chBProducts.Name = "chBProducts";
+            this.chBProducts.Size = new System.Drawing.Size(100, 19);
+            this.chBProducts.TabIndex = 12;
+            this.chBProducts.Text = "Your Products";
+            this.chBProducts.UseVisualStyleBackColor = true;
             // 
             // pnlCheckOut
             // 
-            pnlCheckOut.BackColor = Color.Gainsboro;
-            pnlCheckOut.Location = new Point(101, 914);
-            pnlCheckOut.Name = "pnlCheckOut";
-            pnlCheckOut.Size = new Size(2098, 184);
-            pnlCheckOut.TabIndex = 12;
+            this.pnlCheckOut.BackColor = System.Drawing.Color.Gainsboro;
+            this.pnlCheckOut.Location = new System.Drawing.Point(42, 334);
+            this.pnlCheckOut.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.pnlCheckOut.Name = "pnlCheckOut";
+            this.pnlCheckOut.Size = new System.Drawing.Size(864, 67);
+            this.pnlCheckOut.TabIndex = 12;
             // 
             // FormCart
             // 
-            AutoScaleDimensions = new SizeF(17F, 41F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(2335, 1096);
-            Controls.Add(pnlCheckOut);
-            Controls.Add(pnlMenu);
-            Controls.Add(icbtnHome);
-            Controls.Add(button4);
-            Controls.Add(txtSearch);
-            Controls.Add(cBAccount);
-            Controls.Add(btnHelp);
-            Controls.Add(btnNotification);
-            Controls.Add(pBSearch);
-            Controls.Add(pBMenu);
-            Name = "FormCart";
-            Text = "FormCart";
-            Load += FormCart_Load;
-            ((System.ComponentModel.ISupportInitialize)pBMenu).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pBSearch).EndInit();
-            pnlMenu.ResumeLayout(false);
-            pnlMenu.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(600, 388);
+            this.Controls.Add(this.pnlCheckOut);
+            this.Controls.Add(this.pnlMenu);
+            this.Controls.Add(this.icbtnHome);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.cBAccount);
+            this.Controls.Add(this.btnHelp);
+            this.Controls.Add(this.btnNotification);
+            this.Controls.Add(this.pBSearch);
+            this.Controls.Add(this.pBMenu);
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Name = "FormCart";
+            this.Text = "FormCart";
+            ((System.ComponentModel.ISupportInitialize)(this.pBMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBSearch)).EndInit();
+            this.pnlMenu.ResumeLayout(false);
+            this.pnlMenu.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
