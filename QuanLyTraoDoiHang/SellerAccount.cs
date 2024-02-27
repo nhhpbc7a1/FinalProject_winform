@@ -52,5 +52,15 @@ namespace QuanLyTraoDoiHang
         {
 
         }
+
+        private void SellerAccount_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userControlPersonalInfo1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

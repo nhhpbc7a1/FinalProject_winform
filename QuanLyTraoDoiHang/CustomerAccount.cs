@@ -36,5 +36,10 @@ namespace QuanLyTraoDoiHang
         {
 
         }
+
+        private void userControlPersonalInfo1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
