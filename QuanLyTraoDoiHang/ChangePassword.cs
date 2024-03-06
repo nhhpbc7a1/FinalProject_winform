@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace QuanLyTraoDoiHang
 {
-    public partial class UserControlPersonalInfo : UserControl
+    public partial class ChangePassword : Form
     {
-        public UserControlPersonalInfo()
+        public ChangePassword()
         {
             InitializeComponent();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

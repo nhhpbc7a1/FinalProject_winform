@@ -1,13 +1,13 @@
 ﻿namespace QuanLyTraoDoiHang
 {
-    partial class UserControlPersonalInfo
+    partial class PersonalInfor
     {
-        /// <summary> 
+        /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
+        /// <summary>
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,16 +20,17 @@
             base.Dispose(disposing);
         }
 
-        #region Component Designer generated code
+        #region Windows Form Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
+        /// <summary>
+        /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlPersonalInfo));
-            this.btnPassChangeCA = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PersonalInfor));
+            this.btnProfile = new System.Windows.Forms.Button();
+            this.btnBackCA = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -38,36 +39,47 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnUpdateCA = new System.Windows.Forms.Button();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.lblID = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.lblID = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnUpdateCA = new System.Windows.Forms.Button();
-            this.btnBackCA = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnProfile = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btnPassChangeCA = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnPassChangeCA
+            // btnProfile
             // 
-            this.btnPassChangeCA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(116)))), ((int)(((byte)(190)))));
-            this.btnPassChangeCA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPassChangeCA.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnPassChangeCA.Location = new System.Drawing.Point(14, 205);
-            this.btnPassChangeCA.Name = "btnPassChangeCA";
-            this.btnPassChangeCA.Size = new System.Drawing.Size(130, 34);
-            this.btnPassChangeCA.TabIndex = 15;
-            this.btnPassChangeCA.Text = "Change password";
-            this.btnPassChangeCA.UseVisualStyleBackColor = false;
+            this.btnProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(116)))), ((int)(((byte)(190)))));
+            this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProfile.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnProfile.Location = new System.Drawing.Point(14, 114);
+            this.btnProfile.Name = "btnProfile";
+            this.btnProfile.Size = new System.Drawing.Size(130, 34);
+            this.btnProfile.TabIndex = 9;
+            this.btnProfile.Text = "Change profile";
+            this.btnProfile.UseVisualStyleBackColor = false;
+            // 
+            // btnBackCA
+            // 
+            this.btnBackCA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(116)))), ((int)(((byte)(190)))));
+            this.btnBackCA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBackCA.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnBackCA.Location = new System.Drawing.Point(14, 27);
+            this.btnBackCA.Name = "btnBackCA";
+            this.btnBackCA.Size = new System.Drawing.Size(130, 34);
+            this.btnBackCA.TabIndex = 7;
+            this.btnBackCA.Text = "Back";
+            this.btnBackCA.UseVisualStyleBackColor = false;
             // 
             // textBox2
             // 
@@ -140,6 +152,61 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Email";
             // 
+            // btnUpdateCA
+            // 
+            this.btnUpdateCA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(54)))));
+            this.btnUpdateCA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateCA.Location = new System.Drawing.Point(14, 301);
+            this.btnUpdateCA.Name = "btnUpdateCA";
+            this.btnUpdateCA.Size = new System.Drawing.Size(130, 34);
+            this.btnUpdateCA.TabIndex = 8;
+            this.btnUpdateCA.Text = "Update";
+            this.btnUpdateCA.UseVisualStyleBackColor = false;
+            // 
+            // txtID
+            // 
+            this.txtID.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtID.Location = new System.Drawing.Point(113, 116);
+            this.txtID.Multiline = true;
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(335, 23);
+            this.txtID.TabIndex = 17;
+            // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblID.Location = new System.Drawing.Point(27, 124);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(22, 17);
+            this.lblID.TabIndex = 16;
+            this.lblID.Text = "ID";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.txtID);
+            this.panel1.Controls.Add(this.lblID);
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Location = new System.Drawing.Point(57, 96);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(517, 387);
+            this.panel1.TabIndex = 20;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -180,96 +247,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Username";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(274, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(144, 67);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Control;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.txtID);
-            this.panel1.Controls.Add(this.lblID);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.dateTimePicker1);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Location = new System.Drawing.Point(12, 128);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(494, 387);
-            this.panel1.TabIndex = 10;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // txtID
-            // 
-            this.txtID.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtID.Location = new System.Drawing.Point(113, 116);
-            this.txtID.Multiline = true;
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(335, 23);
-            this.txtID.TabIndex = 17;
-            // 
-            // lblID
-            // 
-            this.lblID.AutoSize = true;
-            this.lblID.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblID.Location = new System.Drawing.Point(27, 124);
-            this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(22, 17);
-            this.lblID.TabIndex = 16;
-            this.lblID.Text = "ID";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(686, 110);
-            this.panel2.TabIndex = 9;
-            // 
-            // btnUpdateCA
-            // 
-            this.btnUpdateCA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(54)))));
-            this.btnUpdateCA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateCA.Location = new System.Drawing.Point(14, 301);
-            this.btnUpdateCA.Name = "btnUpdateCA";
-            this.btnUpdateCA.Size = new System.Drawing.Size(130, 34);
-            this.btnUpdateCA.TabIndex = 8;
-            this.btnUpdateCA.Text = "Update";
-            this.btnUpdateCA.UseVisualStyleBackColor = false;
-            // 
-            // btnBackCA
-            // 
-            this.btnBackCA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(116)))), ((int)(((byte)(190)))));
-            this.btnBackCA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBackCA.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnBackCA.Location = new System.Drawing.Point(14, 27);
-            this.btnBackCA.Name = "btnBackCA";
-            this.btnBackCA.Size = new System.Drawing.Size(130, 34);
-            this.btnBackCA.TabIndex = 7;
-            this.btnBackCA.Text = "Back";
-            this.btnBackCA.UseVisualStyleBackColor = false;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Control;
@@ -279,45 +256,67 @@
             this.panel3.Controls.Add(this.btnPassChangeCA);
             this.panel3.Controls.Add(this.btnUpdateCA);
             this.panel3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.panel3.Location = new System.Drawing.Point(512, 128);
+            this.panel3.Location = new System.Drawing.Point(580, 96);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(162, 387);
-            this.panel3.TabIndex = 18;
+            this.panel3.TabIndex = 21;
             // 
-            // btnProfile
+            // btnPassChangeCA
             // 
-            this.btnProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(116)))), ((int)(((byte)(190)))));
-            this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProfile.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnProfile.Location = new System.Drawing.Point(14, 114);
-            this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Size = new System.Drawing.Size(130, 34);
-            this.btnProfile.TabIndex = 9;
-            this.btnProfile.Text = "Change profile";
-            this.btnProfile.UseVisualStyleBackColor = false;
+            this.btnPassChangeCA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(116)))), ((int)(((byte)(190)))));
+            this.btnPassChangeCA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPassChangeCA.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnPassChangeCA.Location = new System.Drawing.Point(14, 205);
+            this.btnPassChangeCA.Name = "btnPassChangeCA";
+            this.btnPassChangeCA.Size = new System.Drawing.Size(130, 34);
+            this.btnPassChangeCA.TabIndex = 15;
+            this.btnPassChangeCA.Text = "Change password";
+            this.btnPassChangeCA.UseVisualStyleBackColor = false;
             // 
-            // UserControlPersonalInfo
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(300, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(144, 67);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Location = new System.Drawing.Point(30, -32);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(741, 110);
+            this.panel2.TabIndex = 19;
+            // 
+            // PersonalInfor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Controls.Add(this.panel3);
+            this.ClientSize = new System.Drawing.Size(872, 547);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Name = "UserControlPersonalInfo";
-            this.Size = new System.Drawing.Size(686, 531);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Name = "PersonalInfor";
+            this.Text = "PersonalInfor";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Button btnPassChangeCA;
+        private Button btnProfile;
+        private Button btnBackCA;
         private TextBox textBox2;
         private Label label6;
         private ComboBox comboBox1;
@@ -326,18 +325,17 @@
         private TextBox textBox4;
         private TextBox textBox1;
         private Label label5;
+        private Button btnUpdateCA;
+        private TextBox txtID;
+        private Label lblID;
+        private Panel panel1;
         private Label label4;
         private Label label3;
         private Label label2;
         private Label label1;
-        private PictureBox pictureBox1;
-        private Panel panel1;
-        private Panel panel2;
-        private Button btnUpdateCA;
-        private Button btnBackCA;
-        private Label lblID;
-        private TextBox txtID;
         private Panel panel3;
-        private Button btnProfile;
+        private Button btnPassChangeCA;
+        private PictureBox pictureBox1;
+        private Panel panel2;
     }
 }

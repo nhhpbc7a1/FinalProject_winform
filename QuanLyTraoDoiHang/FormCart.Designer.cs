@@ -53,7 +53,7 @@
             // 
             this.pBMenu.BackColor = System.Drawing.Color.Gold;
             this.pBMenu.Location = new System.Drawing.Point(-1, -2);
-            this.pBMenu.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.pBMenu.Margin = new System.Windows.Forms.Padding(1);
             this.pBMenu.Name = "pBMenu";
             this.pBMenu.Size = new System.Drawing.Size(965, 38);
             this.pBMenu.TabIndex = 0;
@@ -63,7 +63,7 @@
             // 
             this.pBSearch.BackColor = System.Drawing.Color.White;
             this.pBSearch.Location = new System.Drawing.Point(-1, 35);
-            this.pBSearch.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.pBSearch.Margin = new System.Windows.Forms.Padding(1);
             this.pBSearch.Name = "pBSearch";
             this.pBSearch.Size = new System.Drawing.Size(965, 67);
             this.pBSearch.TabIndex = 1;
@@ -76,7 +76,7 @@
             this.btnNotification.FlatAppearance.BorderSize = 0;
             this.btnNotification.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnNotification.Location = new System.Drawing.Point(546, 4);
-            this.btnNotification.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnNotification.Margin = new System.Windows.Forms.Padding(1);
             this.btnNotification.Name = "btnNotification";
             this.btnNotification.Size = new System.Drawing.Size(84, 21);
             this.btnNotification.TabIndex = 2;
@@ -87,7 +87,7 @@
             // 
             this.btnHelp.BackColor = System.Drawing.Color.Cornsilk;
             this.btnHelp.Location = new System.Drawing.Point(643, 4);
-            this.btnHelp.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnHelp.Margin = new System.Windows.Forms.Padding(1);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(77, 21);
             this.btnHelp.TabIndex = 3;
@@ -98,7 +98,7 @@
             // 
             this.cBAccount.FormattingEnabled = true;
             this.cBAccount.Location = new System.Drawing.Point(730, 7);
-            this.cBAccount.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.cBAccount.Margin = new System.Windows.Forms.Padding(1);
             this.cBAccount.Name = "cBAccount";
             this.cBAccount.Size = new System.Drawing.Size(127, 23);
             this.cBAccount.TabIndex = 5;
@@ -108,7 +108,7 @@
             // 
             this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSearch.Location = new System.Drawing.Point(447, 53);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(1);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(375, 31);
@@ -122,7 +122,7 @@
             this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button4.ForeColor = System.Drawing.SystemColors.Window;
             this.button4.Location = new System.Drawing.Point(816, 52);
-            this.button4.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.button4.Margin = new System.Windows.Forms.Padding(1);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(89, 31);
             this.button4.TabIndex = 8;
@@ -142,7 +142,7 @@
             this.icbtnHome.IconSize = 100;
             this.icbtnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.icbtnHome.Location = new System.Drawing.Point(42, 46);
-            this.icbtnHome.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.icbtnHome.Margin = new System.Windows.Forms.Padding(1);
             this.icbtnHome.Name = "icbtnHome";
             this.icbtnHome.Size = new System.Drawing.Size(131, 36);
             this.icbtnHome.TabIndex = 10;
@@ -160,7 +160,7 @@
             this.pnlMenu.Controls.Add(this.lblPrice);
             this.pnlMenu.Controls.Add(this.chBProducts);
             this.pnlMenu.Location = new System.Drawing.Point(42, 123);
-            this.pnlMenu.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.pnlMenu.Margin = new System.Windows.Forms.Padding(1);
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(864, 30);
             this.pnlMenu.TabIndex = 11;
@@ -219,7 +219,7 @@
             // 
             this.chBProducts.AutoSize = true;
             this.chBProducts.Location = new System.Drawing.Point(12, 7);
-            this.chBProducts.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.chBProducts.Margin = new System.Windows.Forms.Padding(1);
             this.chBProducts.Name = "chBProducts";
             this.chBProducts.Size = new System.Drawing.Size(100, 19);
             this.chBProducts.TabIndex = 12;
@@ -230,7 +230,7 @@
             // 
             this.pnlCheckOut.BackColor = System.Drawing.Color.Gainsboro;
             this.pnlCheckOut.Location = new System.Drawing.Point(42, 334);
-            this.pnlCheckOut.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.pnlCheckOut.Margin = new System.Windows.Forms.Padding(1);
             this.pnlCheckOut.Name = "pnlCheckOut";
             this.pnlCheckOut.Size = new System.Drawing.Size(864, 67);
             this.pnlCheckOut.TabIndex = 12;
@@ -240,7 +240,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(600, 388);
+            this.ClientSize = new System.Drawing.Size(949, 420);
             this.Controls.Add(this.pnlCheckOut);
             this.Controls.Add(this.pnlMenu);
             this.Controls.Add(this.icbtnHome);
@@ -251,7 +251,9 @@
             this.Controls.Add(this.btnNotification);
             this.Controls.Add(this.pBSearch);
             this.Controls.Add(this.pBMenu);
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormCart";
             this.Text = "FormCart";
             ((System.ComponentModel.ISupportInitialize)(this.pBMenu)).EndInit();
