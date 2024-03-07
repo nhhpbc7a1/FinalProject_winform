@@ -235,6 +235,13 @@
             this.pnlCheckOut.Size = new System.Drawing.Size(864, 67);
             this.pnlCheckOut.TabIndex = 12;
             // 
+            // panel1
+            // 
+            panel1.Location = new Point(101, 470);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(2098, 438);
+            panel1.TabIndex = 13;
+            // 
             // FormCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -269,7 +276,6 @@
 
         private PictureBox pBMenu;
         private PictureBox pBSearch;
-        private Button btnNotification;
         private Button btnHelp;
         private ComboBox cBAccount;
         private TextBox txtSearch;
@@ -283,5 +289,6 @@
         private Label lblPrice;
         private Label label1;
         private Panel pnlCheckOut;
+        private Panel panel1;
     }
 }
