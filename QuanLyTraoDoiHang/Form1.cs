@@ -28,9 +28,14 @@ namespace QuanLyTraoDoiHang
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Form form = new SellerAccount();
-            form.ShowDialog();
 
+        }
+
+       
+
+        private void lblforgotpass_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Contact Admin for further information!", "Notification", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
         }
     }
 }
