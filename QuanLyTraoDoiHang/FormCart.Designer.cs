@@ -30,7 +30,6 @@
         {
             pBMenu = new PictureBox();
             pBSearch = new PictureBox();
-            btnNotification = new Button();
             btnHelp = new Button();
             cBAccount = new ComboBox();
             txtSearch = new TextBox();
@@ -44,6 +43,7 @@
             lblPrice = new Label();
             chBProducts = new CheckBox();
             pnlCheckOut = new Panel();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pBMenu).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pBSearch).BeginInit();
             pnlMenu.SuspendLayout();
@@ -67,19 +67,6 @@
             pBSearch.TabIndex = 1;
             pBSearch.TabStop = false;
             // 
-            // btnNotification
-            // 
-            btnNotification.BackColor = Color.Gold;
-            btnNotification.BackgroundImageLayout = ImageLayout.Stretch;
-            btnNotification.FlatAppearance.BorderSize = 0;
-            btnNotification.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnNotification.Location = new Point(1326, 12);
-            btnNotification.Name = "btnNotification";
-            btnNotification.Size = new Size(203, 58);
-            btnNotification.TabIndex = 2;
-            btnNotification.Text = "Notification";
-            btnNotification.UseVisualStyleBackColor = false;
-            // 
             // btnHelp
             // 
             btnHelp.BackColor = Color.Cornsilk;
@@ -98,6 +85,7 @@
             cBAccount.Size = new Size(302, 49);
             cBAccount.TabIndex = 5;
             cBAccount.Text = "Account";
+            cBAccount.SelectedIndexChanged += cBAccount_SelectedIndexChanged;
             // 
             // txtSearch
             // 
@@ -223,12 +211,20 @@
             pnlCheckOut.Size = new Size(2098, 184);
             pnlCheckOut.TabIndex = 12;
             // 
+            // panel1
+            // 
+            panel1.Location = new Point(101, 470);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(2098, 438);
+            panel1.TabIndex = 13;
+            // 
             // FormCart
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(2335, 1096);
+            Controls.Add(panel1);
             Controls.Add(pnlCheckOut);
             Controls.Add(pnlMenu);
             Controls.Add(icbtnHome);
@@ -236,7 +232,6 @@
             Controls.Add(txtSearch);
             Controls.Add(cBAccount);
             Controls.Add(btnHelp);
-            Controls.Add(btnNotification);
             Controls.Add(pBSearch);
             Controls.Add(pBMenu);
             Name = "FormCart";
@@ -254,7 +249,6 @@
 
         private PictureBox pBMenu;
         private PictureBox pBSearch;
-        private Button btnNotification;
         private Button btnHelp;
         private ComboBox cBAccount;
         private TextBox txtSearch;
@@ -268,5 +262,6 @@
         private Label lblPrice;
         private Label label1;
         private Panel pnlCheckOut;
+        private Panel panel1;
     }
 }

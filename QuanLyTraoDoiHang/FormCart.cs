@@ -66,5 +66,10 @@ namespace QuanLyTraoDoiHang
         {
 
         }
+
+        private void cBAccount_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
