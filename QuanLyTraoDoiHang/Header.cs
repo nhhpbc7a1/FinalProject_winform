@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyTraoDoiHang
 {
-    public partial class UserControlMenu : UserControl
+    public partial class Header : UserControl
     {
-        public UserControlMenu()
+        public Header()
         {
             InitializeComponent();
         }

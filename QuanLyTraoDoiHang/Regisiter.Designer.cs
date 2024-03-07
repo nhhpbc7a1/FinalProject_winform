@@ -47,8 +47,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.lblPassword = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.rButton2 = new QuanLyTraoDoiHang.RJControls.RButton();
@@ -64,7 +62,7 @@
             this.lblBirthday.AutoSize = true;
             this.lblBirthday.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblBirthday.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.lblBirthday.Location = new System.Drawing.Point(19, 199);
+            this.lblBirthday.Location = new System.Drawing.Point(45, 154);
             this.lblBirthday.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBirthday.Name = "lblBirthday";
             this.lblBirthday.Size = new System.Drawing.Size(71, 21);
@@ -76,7 +74,7 @@
             this.lblPass.AutoSize = true;
             this.lblPass.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblPass.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.lblPass.Location = new System.Drawing.Point(19, 413);
+            this.lblPass.Location = new System.Drawing.Point(45, 408);
             this.lblPass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPass.Name = "lblPass";
             this.lblPass.Size = new System.Drawing.Size(79, 21);
@@ -88,7 +86,7 @@
             this.lblRetypePass.AutoSize = true;
             this.lblRetypePass.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblRetypePass.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.lblRetypePass.Location = new System.Drawing.Point(19, 472);
+            this.lblRetypePass.Location = new System.Drawing.Point(45, 473);
             this.lblRetypePass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRetypePass.Name = "lblRetypePass";
             this.lblRetypePass.Size = new System.Drawing.Size(141, 21);
@@ -100,7 +98,7 @@
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblEmail.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.lblEmail.Location = new System.Drawing.Point(19, 361);
+            this.lblEmail.Location = new System.Drawing.Point(45, 344);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(48, 21);
@@ -112,7 +110,7 @@
             this.lblPhone.AutoSize = true;
             this.lblPhone.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblPhone.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.lblPhone.Location = new System.Drawing.Point(19, 303);
+            this.lblPhone.Location = new System.Drawing.Point(45, 278);
             this.lblPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(60, 21);
@@ -121,49 +119,55 @@
             // 
             // txtRetypePass
             // 
-            this.txtRetypePass.Location = new System.Drawing.Point(167, 469);
+            this.txtRetypePass.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtRetypePass.Location = new System.Drawing.Point(194, 469);
             this.txtRetypePass.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtRetypePass.Name = "txtRetypePass";
-            this.txtRetypePass.Size = new System.Drawing.Size(196, 25);
+            this.txtRetypePass.Size = new System.Drawing.Size(169, 29);
             this.txtRetypePass.TabIndex = 8;
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(167, 410);
+            this.txtPass.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPass.Location = new System.Drawing.Point(194, 404);
             this.txtPass.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(196, 25);
+            this.txtPass.Size = new System.Drawing.Size(169, 29);
             this.txtPass.TabIndex = 9;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(167, 353);
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtEmail.Location = new System.Drawing.Point(194, 340);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(196, 25);
+            this.txtEmail.Size = new System.Drawing.Size(169, 29);
             this.txtEmail.TabIndex = 10;
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(167, 295);
+            this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPhone.Location = new System.Drawing.Point(194, 274);
             this.txtPhone.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(196, 25);
+            this.txtPhone.Size = new System.Drawing.Size(169, 29);
             this.txtPhone.TabIndex = 11;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(167, 191);
+            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePicker1.Location = new System.Drawing.Point(194, 150);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(196, 25);
+            this.dateTimePicker1.Size = new System.Drawing.Size(169, 29);
             this.dateTimePicker1.TabIndex = 15;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(167, 242);
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox1.Location = new System.Drawing.Point(194, 214);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(196, 25);
+            this.textBox1.Size = new System.Drawing.Size(169, 29);
             this.textBox1.TabIndex = 14;
             // 
             // lblID
@@ -171,7 +175,7 @@
             this.lblID.AutoSize = true;
             this.lblID.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblID.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.lblID.Location = new System.Drawing.Point(19, 255);
+            this.lblID.Location = new System.Drawing.Point(45, 218);
             this.lblID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(87, 21);
@@ -183,7 +187,7 @@
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(5, 91);
+            this.panel2.Location = new System.Drawing.Point(126, 151);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(449, 372);
             this.panel2.TabIndex = 18;
@@ -226,7 +230,7 @@
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblUsername.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.lblUsername.Location = new System.Drawing.Point(19, 89);
+            this.lblUsername.Location = new System.Drawing.Point(45, 95);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(83, 21);
             this.lblUsername.TabIndex = 0;
@@ -234,30 +238,13 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(167, 85);
+            this.textBox2.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox2.Location = new System.Drawing.Point(194, 95);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(196, 25);
+            this.textBox2.Size = new System.Drawing.Size(169, 29);
             this.textBox2.TabIndex = 2;
-            // 
-            // lblPassword
-            // 
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPassword.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.lblPassword.Location = new System.Drawing.Point(19, 139);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(79, 21);
-            this.lblPassword.TabIndex = 1;
-            this.lblPassword.Text = "Password";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(167, 135);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(196, 25);
-            this.textBox3.TabIndex = 3;
             // 
             // panel3
             // 
@@ -277,22 +264,20 @@
             this.panel3.Controls.Add(this.lblUsername);
             this.panel3.Controls.Add(this.txtPhone);
             this.panel3.Controls.Add(this.textBox2);
-            this.panel3.Controls.Add(this.lblPassword);
-            this.panel3.Controls.Add(this.textBox3);
             this.panel3.Controls.Add(this.lblBirthday);
-            this.panel3.Location = new System.Drawing.Point(678, 27);
+            this.panel3.Location = new System.Drawing.Point(759, 24);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(421, 589);
+            this.panel3.Size = new System.Drawing.Size(421, 615);
             this.panel3.TabIndex = 15;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label5.Location = new System.Drawing.Point(144, 12);
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label5.Location = new System.Drawing.Point(147, 21);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(142, 45);
+            this.label5.Size = new System.Drawing.Size(138, 45);
             this.label5.TabIndex = 15;
             this.label5.Text = "Register";
             // 
@@ -307,9 +292,9 @@
             this.rButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rButton2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.rButton2.ForeColor = System.Drawing.Color.White;
-            this.rButton2.Location = new System.Drawing.Point(90, 525);
+            this.rButton2.Location = new System.Drawing.Point(57, 536);
             this.rButton2.Name = "rButton2";
-            this.rButton2.Size = new System.Drawing.Size(251, 40);
+            this.rButton2.Size = new System.Drawing.Size(306, 40);
             this.rButton2.TabIndex = 16;
             this.rButton2.Text = "Register";
             this.rButton2.TextColor = System.Drawing.Color.White;
@@ -378,8 +363,6 @@
         private Label label1;
         private Label lblUsername;
         private TextBox textBox2;
-        private Label lblPassword;
-        private TextBox textBox3;
         private Panel panel3;
         private Label label5;
         private RJControls.RButton rButton2;
