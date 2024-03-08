@@ -17,14 +17,42 @@ namespace QuanLyTraoDoiHang
             InitializeComponent();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+       
+        private void Mainpage_Load(object sender, EventArgs e)
         {
+           
+        }
+        private Form currentFormChild;
+        private void OpenChhildForm(Form childForm)
+        {
+            if(currentFormChild != null)
+            {
+                currentFormChild.Close();
+            }
+            currentFormChild = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
 
+            childForm.Dock = DockStyle.Fill;
+            pnl_Body.Controls.Add(childForm);
+            pnl_Body.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
 
-        private void iconPictureBox1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
+            OpenChhildForm(new FormCart());
+        }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            OpenChhildForm(new FormProductDetail());
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

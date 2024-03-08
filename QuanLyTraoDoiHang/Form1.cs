@@ -42,5 +42,10 @@ namespace QuanLyTraoDoiHang
             form.ShowDialog();
             this.Show();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -41,10 +41,6 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblID = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -52,9 +48,13 @@
             this.rButton2 = new QuanLyTraoDoiHang.RJControls.RButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblBirthday
@@ -182,49 +182,6 @@
             this.lblID.TabIndex = 13;
             this.lblID.Text = "ID number";
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(126, 151);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(449, 372);
-            this.panel2.TabIndex = 18;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(95, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(239, 211);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
-            this.label4.Location = new System.Drawing.Point(72, 297);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(301, 24);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Trade Goods, Seamless, Swift";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
-            this.label1.Location = new System.Drawing.Point(122, 217);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(186, 70);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "KoHa";
-            // 
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
@@ -265,7 +222,7 @@
             this.panel3.Controls.Add(this.txtPhone);
             this.panel3.Controls.Add(this.textBox2);
             this.panel3.Controls.Add(this.lblBirthday);
-            this.panel3.Location = new System.Drawing.Point(759, 24);
+            this.panel3.Location = new System.Drawing.Point(494, 23);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(421, 615);
             this.panel3.TabIndex = 15;
@@ -319,13 +276,56 @@
             this.label2.Size = new System.Drawing.Size(0, 55);
             this.label2.TabIndex = 16;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(12, 143);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(449, 372);
+            this.panel1.TabIndex = 18;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(95, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(239, 211);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
+            this.label4.Location = new System.Drawing.Point(67, 287);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(301, 24);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Trade Goods, Seamless, Swift";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
+            this.label1.Location = new System.Drawing.Point(122, 217);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(186, 70);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "KoHa";
+            // 
             // Regisiter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
-            this.ClientSize = new System.Drawing.Size(1284, 661);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(984, 661);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -334,11 +334,11 @@
             this.Name = "Regisiter";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Regisiter";
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -357,10 +357,6 @@
         private DateTimePicker dateTimePicker1;
         private TextBox textBox1;
         private Label lblID;
-        private Panel panel2;
-        private PictureBox pictureBox1;
-        private Label label4;
-        private Label label1;
         private Label lblUsername;
         private TextBox textBox2;
         private Panel panel3;
@@ -368,5 +364,9 @@
         private RJControls.RButton rButton2;
         private Label label3;
         private Label label2;
+        private Panel panel1;
+        private PictureBox pictureBox1;
+        private Label label4;
+        private Label label1;
     }
 }
