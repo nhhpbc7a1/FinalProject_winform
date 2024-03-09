@@ -16,5 +16,15 @@ namespace QuanLyTraoDoiHang
         {
             InitializeComponent();
         }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormProductDetail_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
