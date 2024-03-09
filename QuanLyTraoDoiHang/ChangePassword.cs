@@ -52,7 +52,7 @@ namespace QuanLyTraoDoiHang
             if (txtNewPass.UseSystemPasswordChar == false)
             {
                 txtNewPass.UseSystemPasswordChar = true;
-                btnHideNewPass.BringToFront();
+                btnViewNewPass.BringToFront();
             }
         }
         //
@@ -70,7 +70,7 @@ namespace QuanLyTraoDoiHang
             if (txtPass.UseSystemPasswordChar == false)
             {
                 txtPass.UseSystemPasswordChar = true;
-                btnHidePass.BringToFront();
+                btnViewPass.BringToFront();
             }
         }
         //
