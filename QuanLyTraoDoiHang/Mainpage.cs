@@ -15,6 +15,7 @@ namespace QuanLyTraoDoiHang
         public Mainpage()
         {
             InitializeComponent();
+            OpenChildForm(new FormProduct());
         }
 
        
@@ -23,7 +24,7 @@ namespace QuanLyTraoDoiHang
            
         }
         private Form currentFormChild;
-        private void OpenChhildForm(Form childForm)
+        private void OpenChildForm(Form childForm)
         {
             if(currentFormChild != null)
             {
@@ -40,19 +41,49 @@ namespace QuanLyTraoDoiHang
             childForm.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void iconButton1_Click(object sender, EventArgs e)
         {
-            OpenChhildForm(new FormCart());
+            OpenChildForm(new FormCart());
+
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-            OpenChhildForm(new FormProductDetail());
+            Form form = new Form1();
+            form.ShowDialog();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
-           
+            Form form = new Regisiter();
+            form.ShowDialog();
+        }
+
+        private void pnl_Body_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormProduct());
+        }
+
+        private void rButton2_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormCart());
+
+        }
+
+        private void rButton3_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new PersonalInfor());
+        }
+
+        private void rButton4_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormProduct());
+
         }
     }
 }

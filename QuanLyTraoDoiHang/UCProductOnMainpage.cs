@@ -10,24 +10,14 @@ using System.Windows.Forms;
 
 namespace QuanLyTraoDoiHang
 {
-    public partial class UCCartProduct : UserControl
+    public partial class UCProductOnMainpage : UserControl
     {
-        public UCCartProduct()
+        public UCProductOnMainpage()
         {
             InitializeComponent();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblPPrice_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblPStatus_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
