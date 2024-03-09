@@ -15,105 +15,74 @@ namespace QuanLyTraoDoiHang
         public Mainpage()
         {
             InitializeComponent();
+            OpenChildForm(new FormProduct());
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void iconPictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void Mainpage_Load(object sender, EventArgs e)
         {
+           
+        }
+        private Form currentFormChild;
+        private void OpenChildForm(Form childForm)
+        {
+            if(currentFormChild != null)
+            {
+                currentFormChild.Close();
+            }
+            currentFormChild = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
 
+            childForm.Dock = DockStyle.Fill;
+            pnl_Body.Controls.Add(childForm);
+            pnl_Body.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void iconButton1_Click(object sender, EventArgs e)
         {
-            Form form = new Form1();
-            this.Hide();
-            form.ShowDialog();
-            this.Show();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-            Form form = new Regisiter();
-
-            this.Hide();
-            form.ShowDialog();
-            this.Show();
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-            Form form = new FormProductDetail();
-            this.Hide();
-            form.ShowDialog();
-            this.Show();
-        }
-
-        private void rButton2_Click(object sender, EventArgs e)
-        {
-            Form form = new FormCart();
-            this.Hide();
-
-            form.ShowDialog();
-            this.Show();
+            OpenChildForm(new FormCart());
 
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            Form form = new Form1();
+            form.ShowDialog();
         }
 
-        private void panel2_Paint_1(object sender, PaintEventArgs e)
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Form form = new Regisiter();
+            form.ShowDialog();
+        }
+
+        private void pnl_Body_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new FormProduct());
+        }
+
+        private void rButton2_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormCart());
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void rButton3_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new PersonalInfor());
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void rButton4_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label20_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox3_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
+            OpenChildForm(new FormProduct());
 
         }
     }

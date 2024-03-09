@@ -101,7 +101,7 @@
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.lblPassword);
             this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Location = new System.Drawing.Point(763, 120);
+            this.panel2.Location = new System.Drawing.Point(543, 143);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(360, 413);
             this.panel2.TabIndex = 7;
@@ -214,7 +214,7 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(126, 151);
+            this.panel1.Location = new System.Drawing.Point(12, 143);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(449, 372);
             this.panel1.TabIndex = 14;
@@ -235,7 +235,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
-            this.ClientSize = new System.Drawing.Size(1284, 661);
+            this.ClientSize = new System.Drawing.Size(984, 661);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -246,6 +246,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
