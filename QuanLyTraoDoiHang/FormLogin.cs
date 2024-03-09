@@ -7,11 +7,6 @@ namespace QuanLyTraoDoiHang
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form form = new QuanLyHang();
-            form.ShowDialog();
-        }
 
         private void label1_Click(object sender, EventArgs e)
         {
