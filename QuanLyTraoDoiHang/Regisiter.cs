@@ -15,18 +15,13 @@ namespace QuanLyTraoDoiHang
         public Regisiter()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Register successfully");
-        }
-
-        private void txtBirthday_TextChanged(object sender, EventArgs e)
-        {
+            dtBirthday.CustomFormat = " 'Birthday' ";
+            dtBirthday.Format = DateTimePickerFormat.Custom;
+            
 
         }
 
+      
         private void btnBackRegister_Click(object sender, EventArgs e)
         {
             Form form = new Form1();
@@ -34,9 +29,14 @@ namespace QuanLyTraoDoiHang
            
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void dtBirthday_ValueChanged(object sender, EventArgs e)
         {
+            dtBirthday.CustomFormat = "dd/MM/yyyy ";
+        }
 
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

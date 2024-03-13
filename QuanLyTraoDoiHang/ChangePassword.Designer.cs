@@ -104,8 +104,8 @@
             // 
             // btnViewPass
             // 
-            this.btnViewPass.BackColor = System.Drawing.SystemColors.Control;
-            this.btnViewPass.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.btnViewPass.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnViewPass.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnViewPass.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnViewPass.BackgroundImage")));
             this.btnViewPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnViewPass.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -124,8 +124,8 @@
             // 
             // btnHidePass
             // 
-            this.btnHidePass.BackColor = System.Drawing.SystemColors.Control;
-            this.btnHidePass.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.btnHidePass.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnHidePass.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnHidePass.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnHidePass.BackgroundImage")));
             this.btnHidePass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnHidePass.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -144,8 +144,8 @@
             // 
             // btnViewNewPass
             // 
-            this.btnViewNewPass.BackColor = System.Drawing.SystemColors.Control;
-            this.btnViewNewPass.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.btnViewNewPass.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnViewNewPass.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnViewNewPass.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnViewNewPass.BackgroundImage")));
             this.btnViewNewPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnViewNewPass.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -164,8 +164,8 @@
             // 
             // btnHideNewPass
             // 
-            this.btnHideNewPass.BackColor = System.Drawing.SystemColors.Control;
-            this.btnHideNewPass.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.btnHideNewPass.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnHideNewPass.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnHideNewPass.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnHideNewPass.BackgroundImage")));
             this.btnHideNewPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnHideNewPass.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -184,8 +184,8 @@
             // 
             // rButton5
             // 
-            this.rButton5.BackColor = System.Drawing.SystemColors.Control;
-            this.rButton5.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.rButton5.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.rButton5.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.rButton5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rButton5.BackgroundImage")));
             this.rButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.rButton5.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -204,8 +204,8 @@
             // 
             // btnHideOldPass
             // 
-            this.btnHideOldPass.BackColor = System.Drawing.SystemColors.Control;
-            this.btnHideOldPass.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.btnHideOldPass.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnHideOldPass.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnHideOldPass.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnHideOldPass.BackgroundImage")));
             this.btnHideOldPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnHideOldPass.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -255,7 +255,7 @@
             // 
             // txtPass
             // 
-            this.txtPass.BackColor = System.Drawing.SystemColors.Control;
+            this.txtPass.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPass.Location = new System.Drawing.Point(120, 202);
             this.txtPass.Name = "txtPass";
@@ -266,7 +266,7 @@
             // 
             // txtNewPass
             // 
-            this.txtNewPass.BackColor = System.Drawing.SystemColors.Control;
+            this.txtNewPass.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtNewPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNewPass.Location = new System.Drawing.Point(120, 83);
             this.txtNewPass.Name = "txtNewPass";
@@ -277,7 +277,7 @@
             // 
             // txtOldPass
             // 
-            this.txtOldPass.BackColor = System.Drawing.SystemColors.Control;
+            this.txtOldPass.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtOldPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOldPass.Location = new System.Drawing.Point(120, 17);
             this.txtOldPass.Name = "txtOldPass";
