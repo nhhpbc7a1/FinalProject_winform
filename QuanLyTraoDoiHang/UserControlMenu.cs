@@ -10,15 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyTraoDoiHang
 {
-<<<<<<<< HEAD:QuanLyTraoDoiHang/FAnalystics.cs
-    public partial class FAnalystics : Form
+    public partial class UserControlMenu : UserControl
     {
-        public FAnalystics()
-========
-    public partial class MyInfo : Form
-    {
-        public MyInfo()
->>>>>>>> 42421791412c95c180855f550f69e495397d4faa:QuanLyTraoDoiHang/MyInfo.cs
+        public UserControlMenu()
         {
             InitializeComponent();
         }
