@@ -31,11 +31,16 @@ namespace QuanLyTraoDoiHang
 
         }
 
-       
+
 
         private void lblforgotpass_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Contact Admin for further information!", "Notification", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
