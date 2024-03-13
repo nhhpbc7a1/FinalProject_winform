@@ -17,6 +17,104 @@ namespace QuanLyTraoDoiHang
             InitializeComponent();
         }
 
+        private void FormCart_Load(object sender, EventArgs e)
+        {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblAction_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTotalPrice_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cBAccount_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTotalPrice_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void icbtnHome_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cBAccount_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ucCartProduct1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblAction_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pBSearch_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
