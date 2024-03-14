@@ -45,6 +45,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.rButton1 = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -53,6 +55,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
+            this.panel3.Controls.Add(this.label2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
@@ -215,8 +218,8 @@
             // 
             // rButton1
             // 
-            this.rButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(93)))), ((int)(((byte)(156)))));
-            this.rButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(93)))), ((int)(((byte)(156)))));
+            this.rButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
+            this.rButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
             this.rButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.rButton1.BorderRadius = 15;
             this.rButton1.BorderSize = 0;
@@ -232,6 +235,17 @@
             this.rButton1.TextColor = System.Drawing.SystemColors.ControlLightLight;
             this.rButton1.UseVisualStyleBackColor = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(227, 21);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(213, 30);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Personal Information";
+            // 
             // MyInfo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -243,6 +257,8 @@
             this.Controls.Add(this.panel4);
             this.Name = "MyInfo";
             this.Text = "MyInfo";
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -271,5 +287,6 @@
         private Label label5;
         private Label label6;
         private RJControls.RButton rButton1;
+        private Label label2;
     }
 }
