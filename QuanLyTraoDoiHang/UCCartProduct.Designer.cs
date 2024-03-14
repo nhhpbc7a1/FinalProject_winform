@@ -28,73 +28,72 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnDelete = new Button();
-            lblPStatus = new Label();
-            lblPPrice = new Label();
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            SuspendLayout();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.lblPStatus = new System.Windows.Forms.Label();
+            this.lblPPrice = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
             // 
             // btnDelete
             // 
-            btnDelete.BackColor = Color.LightCoral;
-            btnDelete.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnDelete.Location = new Point(898, 51);
-            btnDelete.Margin = new Padding(1);
-            btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(88, 49);
-            btnDelete.TabIndex = 7;
-            btnDelete.Text = "Delete";
-            btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.BackColor = System.Drawing.Color.LightCoral;
+            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDelete.Location = new System.Drawing.Point(786, 38);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(1);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(77, 37);
+            this.btnDelete.TabIndex = 7;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
             // 
             // lblPStatus
             // 
-            lblPStatus.AutoSize = true;
-            lblPStatus.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblPStatus.Location = new Point(685, 61);
-            lblPStatus.Margin = new Padding(1, 0, 1, 0);
-            lblPStatus.Name = "lblPStatus";
-            lblPStatus.Size = new Size(63, 28);
-            lblPStatus.TabIndex = 6;
-            lblPStatus.Text = "status";
-            lblPStatus.Click += lblPStatus_Click;
+            this.lblPStatus.AutoSize = true;
+            this.lblPStatus.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPStatus.Location = new System.Drawing.Point(599, 46);
+            this.lblPStatus.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.lblPStatus.Name = "lblPStatus";
+            this.lblPStatus.Size = new System.Drawing.Size(51, 21);
+            this.lblPStatus.TabIndex = 6;
+            this.lblPStatus.Text = "status";
             // 
             // lblPPrice
             // 
-            lblPPrice.AutoSize = true;
-            lblPPrice.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblPPrice.Location = new Point(452, 61);
-            lblPPrice.Margin = new Padding(1, 0, 1, 0);
-            lblPPrice.Name = "lblPPrice";
-            lblPPrice.Size = new Size(55, 28);
-            lblPPrice.TabIndex = 5;
-            lblPPrice.Text = "price";
+            this.lblPPrice.AutoSize = true;
+            this.lblPPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPPrice.Location = new System.Drawing.Point(396, 46);
+            this.lblPPrice.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.lblPPrice.Name = "lblPPrice";
+            this.lblPPrice.Size = new System.Drawing.Size(44, 21);
+            this.lblPPrice.TabIndex = 5;
+            this.lblPPrice.Text = "price";
             // 
             // pictureBox1
             // 
-            pictureBox1.BackColor = SystemColors.Control;
-            pictureBox1.Location = new Point(70, 22);
-            pictureBox1.Margin = new Padding(1);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(122, 94);
-            pictureBox1.TabIndex = 4;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox1.Location = new System.Drawing.Point(61, 16);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(107, 70);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // UCCartProduct
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(244, 237, 204);
-            Controls.Add(btnDelete);
-            Controls.Add(lblPStatus);
-            Controls.Add(lblPPrice);
-            Controls.Add(pictureBox1);
-            Margin = new Padding(1);
-            Name = "UCCartProduct";
-            Size = new Size(1148, 144);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.lblPStatus);
+            this.Controls.Add(this.lblPPrice);
+            this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(1);
+            this.Name = "UCCartProduct";
+            this.Size = new System.Drawing.Size(1004, 108);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

@@ -58,7 +58,6 @@
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.pnlChildForm = new System.Windows.Forms.Panel();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -202,7 +201,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.checkedListBox1);
             this.panel2.Controls.Add(this.checkBox7);
             this.panel2.Controls.Add(this.rButton3);
             this.panel2.Controls.Add(this.textBox2);
@@ -224,6 +222,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(249, 561);
             this.panel2.TabIndex = 56;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // checkBox7
             // 
@@ -414,30 +413,9 @@
             this.pnlChildForm.Size = new System.Drawing.Size(984, 561);
             this.pnlChildForm.TabIndex = 58;
             // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "0",
-            "100.000",
-            "200.000",
-            "300.000",
-            "400.000",
-            "500.000",
-            "1.000.000",
-            "2.000.000",
-            "3.000.000",
-            "4.000.000",
-            "5.000.000"});
-            this.checkedListBox1.Location = new System.Drawing.Point(44, 348);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(142, 22);
-            this.checkedListBox1.TabIndex = 56;
-            // 
             // FormProduct
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.pnlChildForm);
             this.Name = "FormProduct";
@@ -485,6 +463,5 @@
         private UCProductOnMainpage ucProductOnMainpage6;
         private UCProductOnMainpage ucProductOnMainpage8;
         private UCProductOnMainpage ucProductOnMainpage9;
-        private CheckedListBox checkedListBox1;
     }
 }
