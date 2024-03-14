@@ -90,7 +90,6 @@ namespace QuanLyTraoDoiHang
             // 
             this.rButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
             this.rButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
-            this.rButton2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rButton2.BackgroundImage")));
             this.rButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.rButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
             this.rButton2.BorderRadius = 20;
@@ -98,9 +97,10 @@ namespace QuanLyTraoDoiHang
             this.rButton2.FlatAppearance.BorderSize = 0;
             this.rButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rButton2.ForeColor = System.Drawing.Color.White;
-            this.rButton2.Location = new System.Drawing.Point(748, 10);
+            this.rButton2.Image = ((System.Drawing.Image)(resources.GetObject("rButton2.Image")));
+            this.rButton2.Location = new System.Drawing.Point(760, 6);
             this.rButton2.Name = "rButton2";
-            this.rButton2.Size = new System.Drawing.Size(36, 32);
+            this.rButton2.Size = new System.Drawing.Size(37, 39);
             this.rButton2.TabIndex = 3;
             this.rButton2.TextColor = System.Drawing.Color.White;
             this.rButton2.UseVisualStyleBackColor = false;
@@ -158,11 +158,14 @@ namespace QuanLyTraoDoiHang
             this.rButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.rButton1.ForeColor = System.Drawing.Color.White;
+            this.rButton1.Image = ((System.Drawing.Image)(resources.GetObject("rButton1.Image")));
+            this.rButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.rButton1.Location = new System.Drawing.Point(669, 12);
             this.rButton1.Name = "rButton1";
-            this.rButton1.Size = new System.Drawing.Size(73, 30);
+            this.rButton1.Size = new System.Drawing.Size(85, 30);
             this.rButton1.TabIndex = 19;
             this.rButton1.Text = "Search";
+            this.rButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.rButton1.TextColor = System.Drawing.Color.White;
             this.rButton1.UseVisualStyleBackColor = false;
             // 
@@ -186,7 +189,7 @@ namespace QuanLyTraoDoiHang
             this.rButton3.FlatAppearance.BorderSize = 0;
             this.rButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rButton3.ForeColor = System.Drawing.Color.White;
-            this.rButton3.Location = new System.Drawing.Point(577, 3);
+            this.rButton3.Location = new System.Drawing.Point(551, 3);
             this.rButton3.Name = "rButton3";
             this.rButton3.Size = new System.Drawing.Size(88, 40);
             this.rButton3.TabIndex = 0;

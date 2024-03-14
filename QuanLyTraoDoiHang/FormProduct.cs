@@ -27,5 +27,15 @@ namespace QuanLyTraoDoiHang
             //if (pnl_Body != null)
             //    theForm.OpenChildForm(new FormProductDetail());
         }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void ucProductOnMainpage1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
