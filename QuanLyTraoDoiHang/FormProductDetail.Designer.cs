@@ -30,6 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProductDetail));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pnl_ThisSellerPage = new System.Windows.Forms.Panel();
+            this.ucProductOnMainpage6 = new QuanLyTraoDoiHang.UCProductOnMainpage();
+            this.ucProductOnMainpage5 = new QuanLyTraoDoiHang.UCProductOnMainpage();
+            this.ucProductOnMainpage4 = new QuanLyTraoDoiHang.UCProductOnMainpage();
+            this.ucProductOnMainpage3 = new QuanLyTraoDoiHang.UCProductOnMainpage();
+            this.ucProductOnMainpage2 = new QuanLyTraoDoiHang.UCProductOnMainpage();
+            this.label9 = new System.Windows.Forms.Label();
+            this.ucProductOnMainpage1 = new QuanLyTraoDoiHang.UCProductOnMainpage();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -43,14 +51,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.rButton3 = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.pnl_ThisSellerPage = new System.Windows.Forms.Panel();
-            this.ucProductOnMainpage4 = new QuanLyTraoDoiHang.UCProductOnMainpage();
-            this.ucProductOnMainpage3 = new QuanLyTraoDoiHang.UCProductOnMainpage();
-            this.ucProductOnMainpage2 = new QuanLyTraoDoiHang.UCProductOnMainpage();
-            this.ucProductOnMainpage6 = new QuanLyTraoDoiHang.UCProductOnMainpage();
-            this.ucProductOnMainpage5 = new QuanLyTraoDoiHang.UCProductOnMainpage();
-            this.label9 = new System.Windows.Forms.Label();
-            this.ucProductOnMainpage1 = new QuanLyTraoDoiHang.UCProductOnMainpage();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -102,6 +102,7 @@
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.pnl_ThisSellerPage);
             this.panel1.Controls.Add(this.label20);
             this.panel1.Controls.Add(this.label21);
             this.panel1.Controls.Add(this.label18);
@@ -115,7 +116,6 @@
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.rButton3);
-            this.panel1.Controls.Add(this.pnl_ThisSellerPage);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.panel5);
@@ -128,6 +128,93 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(648, 653);
             this.panel1.TabIndex = 0;
+            // 
+            // pnl_ThisSellerPage
+            // 
+            this.pnl_ThisSellerPage.AutoScroll = true;
+            this.pnl_ThisSellerPage.BackColor = System.Drawing.Color.White;
+            this.pnl_ThisSellerPage.Controls.Add(this.ucProductOnMainpage6);
+            this.pnl_ThisSellerPage.Controls.Add(this.ucProductOnMainpage5);
+            this.pnl_ThisSellerPage.Controls.Add(this.ucProductOnMainpage4);
+            this.pnl_ThisSellerPage.Controls.Add(this.ucProductOnMainpage3);
+            this.pnl_ThisSellerPage.Controls.Add(this.ucProductOnMainpage2);
+            this.pnl_ThisSellerPage.Controls.Add(this.label9);
+            this.pnl_ThisSellerPage.Controls.Add(this.ucProductOnMainpage1);
+            this.pnl_ThisSellerPage.Location = new System.Drawing.Point(15, 90);
+            this.pnl_ThisSellerPage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnl_ThisSellerPage.Name = "pnl_ThisSellerPage";
+            this.pnl_ThisSellerPage.Size = new System.Drawing.Size(50, 50);
+            this.pnl_ThisSellerPage.TabIndex = 100;
+            // 
+            // ucProductOnMainpage6
+            // 
+            this.ucProductOnMainpage6.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.ucProductOnMainpage6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ucProductOnMainpage6.Location = new System.Drawing.Point(371, 597);
+            this.ucProductOnMainpage6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ucProductOnMainpage6.Name = "ucProductOnMainpage6";
+            this.ucProductOnMainpage6.Size = new System.Drawing.Size(203, 231);
+            this.ucProductOnMainpage6.TabIndex = 21;
+            // 
+            // ucProductOnMainpage5
+            // 
+            this.ucProductOnMainpage5.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.ucProductOnMainpage5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ucProductOnMainpage5.Location = new System.Drawing.Point(100, 597);
+            this.ucProductOnMainpage5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ucProductOnMainpage5.Name = "ucProductOnMainpage5";
+            this.ucProductOnMainpage5.Size = new System.Drawing.Size(203, 231);
+            this.ucProductOnMainpage5.TabIndex = 20;
+            // 
+            // ucProductOnMainpage4
+            // 
+            this.ucProductOnMainpage4.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.ucProductOnMainpage4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ucProductOnMainpage4.Location = new System.Drawing.Point(371, 332);
+            this.ucProductOnMainpage4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ucProductOnMainpage4.Name = "ucProductOnMainpage4";
+            this.ucProductOnMainpage4.Size = new System.Drawing.Size(203, 231);
+            this.ucProductOnMainpage4.TabIndex = 19;
+            // 
+            // ucProductOnMainpage3
+            // 
+            this.ucProductOnMainpage3.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.ucProductOnMainpage3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ucProductOnMainpage3.Location = new System.Drawing.Point(100, 332);
+            this.ucProductOnMainpage3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ucProductOnMainpage3.Name = "ucProductOnMainpage3";
+            this.ucProductOnMainpage3.Size = new System.Drawing.Size(203, 231);
+            this.ucProductOnMainpage3.TabIndex = 18;
+            // 
+            // ucProductOnMainpage2
+            // 
+            this.ucProductOnMainpage2.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.ucProductOnMainpage2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ucProductOnMainpage2.Location = new System.Drawing.Point(371, 72);
+            this.ucProductOnMainpage2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ucProductOnMainpage2.Name = "ucProductOnMainpage2";
+            this.ucProductOnMainpage2.Size = new System.Drawing.Size(203, 231);
+            this.ucProductOnMainpage2.TabIndex = 17;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(50, 20);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(109, 31);
+            this.label9.TabIndex = 11;
+            this.label9.Text = "Products";
+            // 
+            // ucProductOnMainpage1
+            // 
+            this.ucProductOnMainpage1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.ucProductOnMainpage1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ucProductOnMainpage1.Location = new System.Drawing.Point(100, 71);
+            this.ucProductOnMainpage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ucProductOnMainpage1.Name = "ucProductOnMainpage1";
+            this.ucProductOnMainpage1.Size = new System.Drawing.Size(203, 231);
+            this.ucProductOnMainpage1.TabIndex = 10;
             // 
             // label20
             // 
@@ -270,93 +357,6 @@
             this.rButton3.Text = "   Buy now";
             this.rButton3.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
             this.rButton3.UseVisualStyleBackColor = false;
-            // 
-            // pnl_ThisSellerPage
-            // 
-            this.pnl_ThisSellerPage.AutoScroll = true;
-            this.pnl_ThisSellerPage.BackColor = System.Drawing.Color.White;
-            this.pnl_ThisSellerPage.Controls.Add(this.ucProductOnMainpage4);
-            this.pnl_ThisSellerPage.Controls.Add(this.ucProductOnMainpage3);
-            this.pnl_ThisSellerPage.Controls.Add(this.ucProductOnMainpage2);
-            this.pnl_ThisSellerPage.Controls.Add(this.ucProductOnMainpage6);
-            this.pnl_ThisSellerPage.Controls.Add(this.ucProductOnMainpage5);
-            this.pnl_ThisSellerPage.Controls.Add(this.label9);
-            this.pnl_ThisSellerPage.Controls.Add(this.ucProductOnMainpage1);
-            this.pnl_ThisSellerPage.Location = new System.Drawing.Point(12, 80);
-            this.pnl_ThisSellerPage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pnl_ThisSellerPage.Name = "pnl_ThisSellerPage";
-            this.pnl_ThisSellerPage.Size = new System.Drawing.Size(28, 100);
-            this.pnl_ThisSellerPage.TabIndex = 9;
-            // 
-            // ucProductOnMainpage4
-            // 
-            this.ucProductOnMainpage4.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.ucProductOnMainpage4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ucProductOnMainpage4.Location = new System.Drawing.Point(291, 332);
-            this.ucProductOnMainpage4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ucProductOnMainpage4.Name = "ucProductOnMainpage4";
-            this.ucProductOnMainpage4.Size = new System.Drawing.Size(233, 231);
-            this.ucProductOnMainpage4.TabIndex = 19;
-            // 
-            // ucProductOnMainpage3
-            // 
-            this.ucProductOnMainpage3.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.ucProductOnMainpage3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ucProductOnMainpage3.Location = new System.Drawing.Point(35, 332);
-            this.ucProductOnMainpage3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ucProductOnMainpage3.Name = "ucProductOnMainpage3";
-            this.ucProductOnMainpage3.Size = new System.Drawing.Size(233, 231);
-            this.ucProductOnMainpage3.TabIndex = 18;
-            // 
-            // ucProductOnMainpage2
-            // 
-            this.ucProductOnMainpage2.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.ucProductOnMainpage2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ucProductOnMainpage2.Location = new System.Drawing.Point(291, 72);
-            this.ucProductOnMainpage2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ucProductOnMainpage2.Name = "ucProductOnMainpage2";
-            this.ucProductOnMainpage2.Size = new System.Drawing.Size(233, 231);
-            this.ucProductOnMainpage2.TabIndex = 17;
-            // 
-            // ucProductOnMainpage6
-            // 
-            this.ucProductOnMainpage6.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.ucProductOnMainpage6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ucProductOnMainpage6.Location = new System.Drawing.Point(454, 767);
-            this.ucProductOnMainpage6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ucProductOnMainpage6.Name = "ucProductOnMainpage6";
-            this.ucProductOnMainpage6.Size = new System.Drawing.Size(273, 311);
-            this.ucProductOnMainpage6.TabIndex = 16;
-            // 
-            // ucProductOnMainpage5
-            // 
-            this.ucProductOnMainpage5.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.ucProductOnMainpage5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ucProductOnMainpage5.Location = new System.Drawing.Point(117, 767);
-            this.ucProductOnMainpage5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ucProductOnMainpage5.Name = "ucProductOnMainpage5";
-            this.ucProductOnMainpage5.Size = new System.Drawing.Size(273, 311);
-            this.ucProductOnMainpage5.TabIndex = 15;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(50, 20);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(109, 31);
-            this.label9.TabIndex = 11;
-            this.label9.Text = "Products";
-            // 
-            // ucProductOnMainpage1
-            // 
-            this.ucProductOnMainpage1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.ucProductOnMainpage1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ucProductOnMainpage1.Location = new System.Drawing.Point(35, 72);
-            this.ucProductOnMainpage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ucProductOnMainpage1.Name = "ucProductOnMainpage1";
-            this.ucProductOnMainpage1.Size = new System.Drawing.Size(233, 231);
-            this.ucProductOnMainpage1.TabIndex = 10;
             // 
             // panel6
             // 
@@ -777,8 +777,6 @@
         private Label label7;
         private PictureBox pictureBox9;
         private Panel pnl_ThisSellerPage;
-        private UCProductOnMainpage ucProductOnMainpage6;
-        private UCProductOnMainpage ucProductOnMainpage5;
         private Label label9;
         private UCProductOnMainpage ucProductOnMainpage1;
         private RJControls.RButton rButton1;
@@ -788,9 +786,6 @@
         private Label label10;
         private Panel panel6;
         private RJControls.RButton rButton2;
-        private UCProductOnMainpage ucProductOnMainpage4;
-        private UCProductOnMainpage ucProductOnMainpage3;
-        private UCProductOnMainpage ucProductOnMainpage2;
         private RJControls.RButton rButton3;
         private RJControls.RButton rButton4;
         private Label label12;
@@ -805,5 +800,10 @@
         private Label label21;
         private Label label18;
         private Label label19;
+        private UCProductOnMainpage ucProductOnMainpage6;
+        private UCProductOnMainpage ucProductOnMainpage5;
+        private UCProductOnMainpage ucProductOnMainpage4;
+        private UCProductOnMainpage ucProductOnMainpage3;
+        private UCProductOnMainpage ucProductOnMainpage2;
     }
 }

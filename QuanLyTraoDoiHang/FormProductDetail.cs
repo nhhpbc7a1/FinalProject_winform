@@ -16,6 +16,7 @@ namespace QuanLyTraoDoiHang
         {
             InitializeComponent();
             pnl_ThisSellerPage.Visible = false;
+
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
@@ -25,6 +26,7 @@ namespace QuanLyTraoDoiHang
 
         private void FormProductDetail_Load(object sender, EventArgs e)
         {
+            pnl_ThisSellerPage.BringToFront();
 
         }
 
@@ -47,7 +49,7 @@ namespace QuanLyTraoDoiHang
         {
             panel2.Dock = DockStyle.None;
             panel1.Dock = DockStyle.None;
-            pnl_ThisSellerPage.Size = new System.Drawing.Size(777, 653);
+            pnl_ThisSellerPage.Size = new System.Drawing.Size(648, 653);
             pnl_ThisSellerPage.Visible = true;
             pnl_ThisSellerPage.BringToFront();
             pnl_ThisSellerPage.Dock = DockStyle.Left;
