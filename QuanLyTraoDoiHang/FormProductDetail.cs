@@ -43,10 +43,5 @@ namespace QuanLyTraoDoiHang
             pnl_ThisSellerPage.Visible = false;
         }
 
-        private void ucPasswordTextBox1_Load(object sender, EventArgs e)
-        {
-            ucPasswordTextBox1.txtPass.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            ucPasswordTextBox1.UCPasswordTextBox_Load(sender,e);
-        }
     }
 }
