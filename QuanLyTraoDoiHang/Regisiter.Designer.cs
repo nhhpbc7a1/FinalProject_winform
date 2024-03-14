@@ -132,6 +132,7 @@
             this.dtBirthday.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtBirthday.Location = new System.Drawing.Point(58, 150);
             this.dtBirthday.Name = "dtBirthday";
+            this.dtBirthday.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dtBirthday.Size = new System.Drawing.Size(306, 29);
             this.dtBirthday.TabIndex = 15;
             this.dtBirthday.ValueChanged += new System.EventHandler(this.dtBirthday_ValueChanged);

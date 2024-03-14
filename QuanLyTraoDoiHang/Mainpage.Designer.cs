@@ -67,7 +67,7 @@ namespace QuanLyTraoDoiHang
             this.comboBox1.Location = new System.Drawing.Point(254, 13);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(406, 36);
+            this.comboBox1.Size = new System.Drawing.Size(406, 29);
             this.comboBox1.TabIndex = 0;
             // 
             // panel1
@@ -95,9 +95,9 @@ namespace QuanLyTraoDoiHang
             this.rButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rButton2.ForeColor = System.Drawing.Color.White;
             this.rButton2.Image = ((System.Drawing.Image)(resources.GetObject("rButton2.Image")));
-            this.rButton2.Location = new System.Drawing.Point(776, 0);
+            this.rButton2.Location = new System.Drawing.Point(776, 7);
             this.rButton2.Name = "rButton2";
-            this.rButton2.Size = new System.Drawing.Size(59, 55);
+            this.rButton2.Size = new System.Drawing.Size(59, 43);
             this.rButton2.TabIndex = 3;
             this.rButton2.TextColor = System.Drawing.Color.White;
             this.rButton2.UseVisualStyleBackColor = false;
@@ -139,7 +139,7 @@ namespace QuanLyTraoDoiHang
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
             this.label5.Location = new System.Drawing.Point(71, 17);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 23);
+            this.label5.Size = new System.Drawing.Size(51, 21);
             this.label5.TabIndex = 1;
             this.label5.Text = "KoHa";
             // 
@@ -157,9 +157,9 @@ namespace QuanLyTraoDoiHang
             this.rButton1.ForeColor = System.Drawing.Color.White;
             this.rButton1.Image = ((System.Drawing.Image)(resources.GetObject("rButton1.Image")));
             this.rButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rButton1.Location = new System.Drawing.Point(669, 12);
+            this.rButton1.Location = new System.Drawing.Point(669, 10);
             this.rButton1.Name = "rButton1";
-            this.rButton1.Size = new System.Drawing.Size(101, 35);
+            this.rButton1.Size = new System.Drawing.Size(101, 32);
             this.rButton1.TabIndex = 19;
             this.rButton1.Text = "Search";
             this.rButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -192,7 +192,7 @@ namespace QuanLyTraoDoiHang
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(136, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 25);
+            this.label1.Size = new System.Drawing.Size(54, 20);
             this.label1.TabIndex = 14;
             this.label1.Text = "Sign in";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -204,7 +204,7 @@ namespace QuanLyTraoDoiHang
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(224, 12);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 25);
+            this.label2.Size = new System.Drawing.Size(59, 20);
             this.label2.TabIndex = 15;
             this.label2.Text = "Sign up";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -216,7 +216,7 @@ namespace QuanLyTraoDoiHang
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(3, 12);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 25);
+            this.label3.Size = new System.Drawing.Size(101, 20);
             this.label3.TabIndex = 16;
             this.label3.Text = "Seller channel";
             // 
