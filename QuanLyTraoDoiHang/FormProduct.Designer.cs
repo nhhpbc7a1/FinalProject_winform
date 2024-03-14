@@ -80,16 +80,18 @@
             this.panel4.Controls.Add(this.ucProductOnMainpage1);
             this.panel4.Controls.Add(this.ucProductOnMainpage7);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(365, 0);
+            this.panel4.Location = new System.Drawing.Point(249, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(760, 748);
+            this.panel4.Size = new System.Drawing.Size(735, 561);
             this.panel4.TabIndex = 56;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // ucProductOnMainpage6
             // 
             this.ucProductOnMainpage6.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ucProductOnMainpage6.Location = new System.Drawing.Point(490, 680);
+            this.ucProductOnMainpage6.Location = new System.Drawing.Point(498, 512);
+            this.ucProductOnMainpage6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucProductOnMainpage6.Name = "ucProductOnMainpage6";
             this.ucProductOnMainpage6.Size = new System.Drawing.Size(229, 284);
             this.ucProductOnMainpage6.TabIndex = 64;
@@ -97,7 +99,8 @@
             // ucProductOnMainpage8
             // 
             this.ucProductOnMainpage8.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ucProductOnMainpage8.Location = new System.Drawing.Point(255, 680);
+            this.ucProductOnMainpage8.Location = new System.Drawing.Point(263, 512);
+            this.ucProductOnMainpage8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucProductOnMainpage8.Name = "ucProductOnMainpage8";
             this.ucProductOnMainpage8.Size = new System.Drawing.Size(229, 284);
             this.ucProductOnMainpage8.TabIndex = 63;
@@ -105,7 +108,8 @@
             // ucProductOnMainpage9
             // 
             this.ucProductOnMainpage9.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ucProductOnMainpage9.Location = new System.Drawing.Point(19, 680);
+            this.ucProductOnMainpage9.Location = new System.Drawing.Point(17, 512);
+            this.ucProductOnMainpage9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucProductOnMainpage9.Name = "ucProductOnMainpage9";
             this.ucProductOnMainpage9.Size = new System.Drawing.Size(229, 284);
             this.ucProductOnMainpage9.TabIndex = 62;
@@ -118,7 +122,7 @@
             this.panel1.Location = new System.Drawing.Point(19, 12);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(699, 72);
+            this.panel1.Size = new System.Drawing.Size(681, 54);
             this.panel1.TabIndex = 61;
             // 
             // panel3
@@ -128,7 +132,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 61);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(699, 11);
+            this.panel3.Size = new System.Drawing.Size(681, 8);
             this.panel3.TabIndex = 1;
             // 
             // label1
@@ -145,7 +149,8 @@
             // ucProductOnMainpage5
             // 
             this.ucProductOnMainpage5.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ucProductOnMainpage5.Location = new System.Drawing.Point(490, 391);
+            this.ucProductOnMainpage5.Location = new System.Drawing.Point(498, 293);
+            this.ucProductOnMainpage5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucProductOnMainpage5.Name = "ucProductOnMainpage5";
             this.ucProductOnMainpage5.Size = new System.Drawing.Size(229, 284);
             this.ucProductOnMainpage5.TabIndex = 60;
@@ -153,7 +158,8 @@
             // ucProductOnMainpage4
             // 
             this.ucProductOnMainpage4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ucProductOnMainpage4.Location = new System.Drawing.Point(255, 391);
+            this.ucProductOnMainpage4.Location = new System.Drawing.Point(263, 293);
+            this.ucProductOnMainpage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucProductOnMainpage4.Name = "ucProductOnMainpage4";
             this.ucProductOnMainpage4.Size = new System.Drawing.Size(229, 284);
             this.ucProductOnMainpage4.TabIndex = 59;
@@ -169,7 +175,8 @@
             // ucProductOnMainpage2
             // 
             this.ucProductOnMainpage2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ucProductOnMainpage2.Location = new System.Drawing.Point(490, 101);
+            this.ucProductOnMainpage2.Location = new System.Drawing.Point(498, 73);
+            this.ucProductOnMainpage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucProductOnMainpage2.Name = "ucProductOnMainpage2";
             this.ucProductOnMainpage2.Size = new System.Drawing.Size(229, 284);
             this.ucProductOnMainpage2.TabIndex = 57;
@@ -177,7 +184,8 @@
             // ucProductOnMainpage1
             // 
             this.ucProductOnMainpage1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ucProductOnMainpage1.Location = new System.Drawing.Point(255, 101);
+            this.ucProductOnMainpage1.Location = new System.Drawing.Point(263, 73);
+            this.ucProductOnMainpage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucProductOnMainpage1.Name = "ucProductOnMainpage1";
             this.ucProductOnMainpage1.Size = new System.Drawing.Size(229, 284);
             this.ucProductOnMainpage1.TabIndex = 56;
@@ -185,7 +193,8 @@
             // ucProductOnMainpage7
             // 
             this.ucProductOnMainpage7.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ucProductOnMainpage7.Location = new System.Drawing.Point(19, 101);
+            this.ucProductOnMainpage7.Location = new System.Drawing.Point(17, 73);
+            this.ucProductOnMainpage7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucProductOnMainpage7.Name = "ucProductOnMainpage7";
             this.ucProductOnMainpage7.Size = new System.Drawing.Size(229, 284);
             this.ucProductOnMainpage7.TabIndex = 55;
@@ -212,14 +221,16 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(365, 748);
+            this.panel2.Size = new System.Drawing.Size(249, 561);
             this.panel2.TabIndex = 56;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // checkBox7
             // 
             this.checkBox7.AutoSize = true;
             this.checkBox7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox7.Location = new System.Drawing.Point(114, 437);
+            this.checkBox7.Location = new System.Drawing.Point(46, 348);
+            this.checkBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(84, 32);
             this.checkBox7.TabIndex = 55;
@@ -237,7 +248,8 @@
             this.rButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rButton3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.rButton3.ForeColor = System.Drawing.Color.White;
-            this.rButton3.Location = new System.Drawing.Point(99, 645);
+            this.rButton3.Location = new System.Drawing.Point(48, 483);
+            this.rButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rButton3.Name = "rButton3";
             this.rButton3.Size = new System.Drawing.Size(187, 51);
             this.rButton3.TabIndex = 54;
@@ -250,7 +262,8 @@
             this.textBox2.BackColor = System.Drawing.SystemColors.Menu;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(203, 571);
+            this.textBox2.Location = new System.Drawing.Point(121, 417);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(125, 34);
             this.textBox2.TabIndex = 53;
@@ -260,7 +273,8 @@
             this.textBox1.BackColor = System.Drawing.SystemColors.Menu;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(203, 509);
+            this.textBox1.Location = new System.Drawing.Point(121, 376);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(125, 34);
             this.textBox1.TabIndex = 52;
@@ -269,7 +283,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(85, 571);
+            this.label6.Location = new System.Drawing.Point(12, 425);
             this.label6.Name = "label6";
             this.label6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label6.Size = new System.Drawing.Size(100, 28);
@@ -280,7 +294,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(85, 512);
+            this.label5.Location = new System.Drawing.Point(12, 384);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(97, 28);
             this.label5.TabIndex = 50;
@@ -290,7 +304,8 @@
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox2.Location = new System.Drawing.Point(114, 219);
+            this.checkBox2.Location = new System.Drawing.Point(46, 165);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(180, 32);
             this.checkBox2.TabIndex = 44;
@@ -301,7 +316,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label20.Location = new System.Drawing.Point(75, 151);
+            this.label20.Location = new System.Drawing.Point(12, 114);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(93, 28);
             this.label20.TabIndex = 49;
@@ -312,7 +327,7 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(150)))), ((int)(((byte)(166)))));
-            this.label22.Location = new System.Drawing.Point(75, 97);
+            this.label22.Location = new System.Drawing.Point(56, 73);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(161, 31);
             this.label22.TabIndex = 41;
@@ -322,7 +337,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label21.Location = new System.Drawing.Point(75, 316);
+            this.label21.Location = new System.Drawing.Point(12, 238);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(135, 28);
             this.label21.TabIndex = 42;
@@ -332,7 +347,8 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox1.Location = new System.Drawing.Point(114, 181);
+            this.checkBox1.Location = new System.Drawing.Point(46, 137);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(100, 32);
             this.checkBox1.TabIndex = 43;
@@ -343,7 +359,8 @@
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox3.Location = new System.Drawing.Point(114, 257);
+            this.checkBox3.Location = new System.Drawing.Point(46, 194);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(175, 32);
             this.checkBox3.TabIndex = 45;
@@ -354,7 +371,8 @@
             // 
             this.checkBox4.AutoSize = true;
             this.checkBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox4.Location = new System.Drawing.Point(114, 347);
+            this.checkBox4.Location = new System.Drawing.Point(46, 261);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(95, 32);
             this.checkBox4.TabIndex = 46;
@@ -365,7 +383,8 @@
             // 
             this.checkBox6.AutoSize = true;
             this.checkBox6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox6.Location = new System.Drawing.Point(114, 407);
+            this.checkBox6.Location = new System.Drawing.Point(46, 319);
+            this.checkBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(100, 32);
             this.checkBox6.TabIndex = 48;
@@ -376,7 +395,8 @@
             // 
             this.checkBox5.AutoSize = true;
             this.checkBox5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox5.Location = new System.Drawing.Point(114, 377);
+            this.checkBox5.Location = new System.Drawing.Point(46, 290);
+            this.checkBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(173, 32);
             this.checkBox5.TabIndex = 47;
@@ -395,9 +415,8 @@
             // 
             // FormProduct
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1125, 748);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.pnlChildForm);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormProduct";
