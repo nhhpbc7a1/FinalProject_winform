@@ -46,7 +46,7 @@
             this.btnShow.FlatAppearance.BorderSize = 0;
             this.btnShow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShow.ForeColor = System.Drawing.Color.White;
-            this.btnShow.Location = new System.Drawing.Point(124, 74);
+            this.btnShow.Location = new System.Drawing.Point(182, 4);
             this.btnShow.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnShow.Name = "btnShow";
             this.btnShow.Size = new System.Drawing.Size(26, 28);
@@ -67,7 +67,7 @@
             this.btnHide.FlatAppearance.BorderSize = 0;
             this.btnHide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHide.ForeColor = System.Drawing.Color.White;
-            this.btnHide.Location = new System.Drawing.Point(203, 64);
+            this.btnHide.Location = new System.Drawing.Point(182, 4);
             this.btnHide.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnHide.Name = "btnHide";
             this.btnHide.Size = new System.Drawing.Size(26, 28);
@@ -86,7 +86,7 @@
             this.txtPass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPass.Name = "txtPass";
             this.txtPass.PlaceholderText = "  Old password";
-            this.txtPass.Size = new System.Drawing.Size(254, 34);
+            this.txtPass.Size = new System.Drawing.Size(252, 34);
             this.txtPass.TabIndex = 18;
             this.txtPass.UseSystemPasswordChar = true;
             // 
@@ -98,7 +98,7 @@
             this.Controls.Add(this.btnShow);
             this.Controls.Add(this.txtPass);
             this.Name = "UCPasswordTextBox";
-            this.Size = new System.Drawing.Size(254, 153);
+            this.Size = new System.Drawing.Size(252, 74);
             this.Load += new System.EventHandler(this.UCPasswordTextBox_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -109,6 +109,6 @@
 
         private RJControls.RButton btnShow;
         private RJControls.RButton btnHide;
-        private TextBox txtPass;
+        public TextBox txtPass;
     }
 }

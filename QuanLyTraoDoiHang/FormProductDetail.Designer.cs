@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProductDetail));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.rButton3 = new QuanLyTraoDoiHang.RJControls.RButton();
             this.pnl_ThisSellerPage = new System.Windows.Forms.Panel();
             this.ucProductOnMainpage4 = new QuanLyTraoDoiHang.UCProductOnMainpage();
             this.ucProductOnMainpage3 = new QuanLyTraoDoiHang.UCProductOnMainpage();
@@ -68,6 +69,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.ucPasswordTextBox1 = new QuanLyTraoDoiHang.UCPasswordTextBox();
             this.panel1.SuspendLayout();
             this.pnl_ThisSellerPage.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -90,6 +92,7 @@
             // 
             this.panel1.AutoScrollMargin = new System.Drawing.Size(10, 0);
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.rButton3);
             this.panel1.Controls.Add(this.pnl_ThisSellerPage);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.label10);
@@ -103,6 +106,29 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(570, 653);
             this.panel1.TabIndex = 0;
+            // 
+            // rButton3
+            // 
+            this.rButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(150)))), ((int)(((byte)(166)))));
+            this.rButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(150)))), ((int)(((byte)(166)))));
+            this.rButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rButton3.BorderRadius = 20;
+            this.rButton3.BorderSize = 0;
+            this.rButton3.FlatAppearance.BorderSize = 0;
+            this.rButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rButton3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rButton3.ForeColor = System.Drawing.Color.White;
+            this.rButton3.Image = ((System.Drawing.Image)(resources.GetObject("rButton3.Image")));
+            this.rButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rButton3.Location = new System.Drawing.Point(339, 316);
+            this.rButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rButton3.Name = "rButton3";
+            this.rButton3.Size = new System.Drawing.Size(150, 51);
+            this.rButton3.TabIndex = 14;
+            this.rButton3.Text = "Buy now";
+            this.rButton3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.rButton3.TextColor = System.Drawing.Color.White;
+            this.rButton3.UseVisualStyleBackColor = false;
             // 
             // pnl_ThisSellerPage
             // 
@@ -273,12 +299,15 @@
             this.rButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.rButton1.ForeColor = System.Drawing.Color.White;
-            this.rButton1.Location = new System.Drawing.Point(318, 345);
+            this.rButton1.Image = ((System.Drawing.Image)(resources.GetObject("rButton1.Image")));
+            this.rButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rButton1.Location = new System.Drawing.Point(327, 373);
             this.rButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rButton1.Name = "rButton1";
-            this.rButton1.Size = new System.Drawing.Size(215, 67);
+            this.rButton1.Size = new System.Drawing.Size(174, 51);
             this.rButton1.TabIndex = 10;
             this.rButton1.Text = "Add to cart";
+            this.rButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.rButton1.TextColor = System.Drawing.Color.White;
             this.rButton1.UseVisualStyleBackColor = false;
             // 
@@ -318,6 +347,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.ucPasswordTextBox1);
             this.panel2.Controls.Add(this.rButton2);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.pictureBox10);
@@ -344,6 +374,7 @@
             this.rButton2.BorderSize = 0;
             this.rButton2.FlatAppearance.BorderSize = 0;
             this.rButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rButton2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.rButton2.ForeColor = System.Drawing.Color.White;
             this.rButton2.Location = new System.Drawing.Point(236, 583);
             this.rButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -358,7 +389,7 @@
             // label8
             // 
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(98, 505);
+            this.label8.Location = new System.Drawing.Point(98, 455);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(271, 84);
             this.label8.TabIndex = 10;
@@ -368,7 +399,7 @@
             // 
             this.pictureBox10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox10.BackgroundImage")));
             this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox10.Location = new System.Drawing.Point(41, 505);
+            this.pictureBox10.Location = new System.Drawing.Point(41, 455);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(31, 27);
@@ -379,7 +410,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(98, 445);
+            this.label7.Location = new System.Drawing.Point(98, 395);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(131, 28);
             this.label7.TabIndex = 8;
@@ -389,7 +420,7 @@
             // 
             this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
             this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox9.Location = new System.Drawing.Point(41, 445);
+            this.pictureBox9.Location = new System.Drawing.Point(41, 395);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(31, 29);
@@ -402,7 +433,7 @@
             this.panel4.Controls.Add(this.pictureBox8);
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.label5);
-            this.panel4.Location = new System.Drawing.Point(24, 249);
+            this.panel4.Location = new System.Drawing.Point(24, 207);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(358, 58);
@@ -446,7 +477,7 @@
             // 
             this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
-            this.button1.Location = new System.Drawing.Point(24, 345);
+            this.button1.Location = new System.Drawing.Point(24, 299);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(358, 51);
@@ -550,6 +581,14 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
+            // ucPasswordTextBox1
+            // 
+            this.ucPasswordTextBox1.Location = new System.Drawing.Point(24, 16);
+            this.ucPasswordTextBox1.Name = "ucPasswordTextBox1";
+            this.ucPasswordTextBox1.Size = new System.Drawing.Size(376, 49);
+            this.ucPasswordTextBox1.TabIndex = 12;
+            this.ucPasswordTextBox1.Load += new System.EventHandler(this.ucPasswordTextBox1_Load);
+            // 
             // FormProductDetail
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -626,5 +665,7 @@
         private UCProductOnMainpage ucProductOnMainpage4;
         private UCProductOnMainpage ucProductOnMainpage3;
         private UCProductOnMainpage ucProductOnMainpage2;
+        private RJControls.RButton rButton3;
+        private UCPasswordTextBox ucPasswordTextBox1;
     }
 }

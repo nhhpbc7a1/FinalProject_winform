@@ -58,6 +58,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="rButton3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EQAACxEBf2RfkQAAAV9JREFUWEftlr8uBUEUhzcRiVChIFEpJRIvIN5Ar1YIlQcQiYZo7yvoBaFXUqr0
+        KDUqDTK+2TlD2Nnd+Vdc13zJl9zM/M7Zk9x7d6YqFAr/GqXUPF7hEU7Ishfk9/ECl2UpHZptouUOl2Sr
+        F7JvdZVSr7gjy2nQaKtu+Y1uvivbnZj4D85xVrbjoMHvgSynOCMxJybW4AnXJBIOxW0DaR5wVaINTMTJ
+        Bw5wXKL+UNQ1kEb/Tg5wTEq+qHe7ucVFiftBQd9AlmtckLIas9zLC25IST+EfQfSPOO6lPoOZDnBKSlt
+        h1DIQBbdfNJ8DOIeV+TRbgjEDKTR76wY9GtlWx7fhM3YgVJxv0jZGJmBUr6y9mOGzT/9ox6qv/3QvBhT
+        jo4bzHp0xB6u73iMWQ9Xff2YlpgTE2vwiFmvHykXtDPsvEP1QoNcV9j24yAEGs3hJR5i6CV/D/Ne8guF
+        wuhTVZ84YqipRS6WtwAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="iconButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -1132,6 +1144,22 @@
         EBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQeJe+kT/7m2iu3E4a/wCxItKMG+Rx41P0
         REH07wrLDLWn/RZ9AolEQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERARE
         Qf/Z
+</value>
+  </data>
+  <data name="rButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EQAACxEBf2RfkQAAAlNJREFUWEftljtoFGEURpdEA1oINooKpkgRJaawsFALE0hhoY0QiyiIQazEJr4a
+        gwiWtjYSU6YSBMFOwcoUKj5IpYKFhSKKhe/X9fz//WbImtmZ2Z0BMeyBA9nvPnYms7M7jS5dlh1m1osH
+        8PhfHsUNaiuE3q24Ry87hyUT2Ip5tRVC71sfsSFFncGCQXyILxb5CgM/sE+tuXh7ZERRfbB0k++OlDpj
+        9QYKD4ieYbyAaxUVQ/MHDIwraoI8fGaSy5TFN5xQexPkt2OH2ZSiYmie9xmbVtQE+YiXc2k1m5zIYUXF
+        0DzrMzanaAnUtuGYTJjC8Ho39qg1hWw9JmxXXAzNZ3zGHinKRb2B3M8Q9VFvs1+4SnExNO+LY2ZfsFdx
+        S+j5GrvNdirKhPoJb7NnisrBwIDPRQYUt4Se8H12HpdcpsVQv4KBG4rKwUAPfo6j/LcUV4Zdd32lXVJU
+        HoYe+6ydVlQZdiV32CFF5WFozmdtVlEl2LPZ10XK32EJDE37rD3HsxU9h/cw8BpX6G3Kw9B4HK+fSb1F
+        ezA45PORBbxf0eu4V+vbh+E+DL/4gTHF/xYO5Ikfj81g+9e9bjiIU/FwnE/4voJ3sNpJsSA84l7F31iV
+        8EW7RqurwaJ+3I/hzuvUQa1bpnCGO3AS+xXlQt86PIKjiuqDpccw+Rx9xGGVMqG+Ed+EZnFRpXpg4QPf
+        m3JZpUyon/S2lHcq1QMLb/nelNwnAOoHvS1lQaV6YOEWfIo/8SauVikT6uF56hp+x5e4S6V6YfFK/VmK
+        dvu7/Gc0Gn8A0tSsQtvC700AAAAASUVORK5CYII=
 </value>
   </data>
   <data name="richTextBox1.Text" xml:space="preserve">
