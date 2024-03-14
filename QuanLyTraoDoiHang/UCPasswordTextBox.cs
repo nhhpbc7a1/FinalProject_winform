@@ -35,7 +35,7 @@ namespace QuanLyTraoDoiHang
             }
         }
 
-        private void UCPasswordTextBox_Load(object sender, EventArgs e)
+        public void UCPasswordTextBox_Load(object sender, EventArgs e)
         {
             txtPass.Width = this.Width;
             this.Height = txtPass.Height;
@@ -43,7 +43,9 @@ namespace QuanLyTraoDoiHang
             btnShow.Location = new Point(this.Width - btnHide.Width - 3, (this.Height - btnHide.Height) / 2);
 
             btnHide.BringToFront();
-
+            this.BringToFront();
         }
+
+ 
     }
 }

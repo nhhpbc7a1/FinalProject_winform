@@ -107,6 +107,6 @@
 
         private RJControls.RButton btnShow;
         private RJControls.RButton btnHide;
-        private TextBox txtPass;
+        public TextBox txtPass;
     }
 }
