@@ -76,7 +76,7 @@ namespace QuanLyTraoDoiHang.RJControls
             this.FlatStyle = FlatStyle.Flat;
             this.FlatAppearance.BorderSize = 0;
             this.Size = new Size(150, 40);
-            this.BackColor = Color.MidnightBlue;
+            this.BackColor = Color.LightCoral;
             this.ForeColor = Color.White;
         }
 

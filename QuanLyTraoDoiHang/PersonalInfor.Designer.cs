@@ -57,7 +57,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.rButton5);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.panel8);
@@ -140,6 +140,7 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(197, 295);
             this.panel7.TabIndex = 6;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // rButton1
             // 
@@ -151,11 +152,13 @@
             this.rButton1.FlatAppearance.BorderSize = 0;
             this.rButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rButton1.ForeColor = System.Drawing.Color.White;
+            this.rButton1.Image = ((System.Drawing.Image)(resources.GetObject("rButton1.Image")));
+            this.rButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.rButton1.Location = new System.Drawing.Point(24, 24);
             this.rButton1.Name = "rButton1";
-            this.rButton1.Size = new System.Drawing.Size(150, 40);
+            this.rButton1.Size = new System.Drawing.Size(158, 40);
             this.rButton1.TabIndex = 2;
-            this.rButton1.Text = "Update Information";
+            this.rButton1.Text = "Update ";
             this.rButton1.TextColor = System.Drawing.Color.White;
             this.rButton1.UseVisualStyleBackColor = false;
             this.rButton1.Click += new System.EventHandler(this.rButton1_Click);
@@ -170,9 +173,11 @@
             this.rButton4.FlatAppearance.BorderSize = 0;
             this.rButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rButton4.ForeColor = System.Drawing.Color.White;
+            this.rButton4.Image = ((System.Drawing.Image)(resources.GetObject("rButton4.Image")));
+            this.rButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.rButton4.Location = new System.Drawing.Point(24, 229);
             this.rButton4.Name = "rButton4";
-            this.rButton4.Size = new System.Drawing.Size(150, 40);
+            this.rButton4.Size = new System.Drawing.Size(158, 40);
             this.rButton4.TabIndex = 5;
             this.rButton4.Text = "Log out";
             this.rButton4.TextColor = System.Drawing.Color.White;
@@ -188,11 +193,14 @@
             this.rButton2.FlatAppearance.BorderSize = 0;
             this.rButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rButton2.ForeColor = System.Drawing.Color.White;
+            this.rButton2.Image = ((System.Drawing.Image)(resources.GetObject("rButton2.Image")));
+            this.rButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.rButton2.Location = new System.Drawing.Point(24, 91);
             this.rButton2.Name = "rButton2";
-            this.rButton2.Size = new System.Drawing.Size(150, 40);
+            this.rButton2.Size = new System.Drawing.Size(158, 40);
             this.rButton2.TabIndex = 3;
             this.rButton2.Text = "Change Password";
+            this.rButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.rButton2.TextColor = System.Drawing.Color.White;
             this.rButton2.UseVisualStyleBackColor = false;
             this.rButton2.Click += new System.EventHandler(this.rButton2_Click);
@@ -207,18 +215,21 @@
             this.rButton3.FlatAppearance.BorderSize = 0;
             this.rButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rButton3.ForeColor = System.Drawing.Color.White;
+            this.rButton3.Image = ((System.Drawing.Image)(resources.GetObject("rButton3.Image")));
+            this.rButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.rButton3.Location = new System.Drawing.Point(24, 158);
             this.rButton3.Name = "rButton3";
-            this.rButton3.Size = new System.Drawing.Size(150, 42);
+            this.rButton3.Size = new System.Drawing.Size(158, 42);
             this.rButton3.TabIndex = 4;
             this.rButton3.Text = "Purchase History";
+            this.rButton3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.rButton3.TextColor = System.Drawing.Color.White;
             this.rButton3.UseVisualStyleBackColor = false;
             // 
             // PersonalInfor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnl_Infor);
