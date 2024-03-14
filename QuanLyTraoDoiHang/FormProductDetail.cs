@@ -52,5 +52,7 @@ namespace QuanLyTraoDoiHang
             pnl_ThisSellerPage.BringToFront();
             pnl_ThisSellerPage.Dock = DockStyle.Left;
         }
+
+
     }
 }
