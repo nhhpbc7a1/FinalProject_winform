@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -45,7 +46,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.rButton1 = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -61,6 +61,17 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(642, 72);
             this.panel3.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(227, 21);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(213, 30);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Personal Information";
             // 
             // panel5
             // 
@@ -218,33 +229,22 @@
             // 
             // rButton1
             // 
-            this.rButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
-            this.rButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
-            this.rButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rButton1.BackColor = System.Drawing.Color.White;
+            this.rButton1.BackgroundColor = System.Drawing.Color.White;
+            this.rButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
             this.rButton1.BorderRadius = 15;
-            this.rButton1.BorderSize = 0;
+            this.rButton1.BorderSize = 2;
             this.rButton1.FlatAppearance.BorderSize = 0;
             this.rButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rButton1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.rButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
             this.rButton1.Location = new System.Drawing.Point(180, 426);
             this.rButton1.Name = "rButton1";
             this.rButton1.Size = new System.Drawing.Size(277, 42);
             this.rButton1.TabIndex = 9;
             this.rButton1.Text = "Save";
-            this.rButton1.TextColor = System.Drawing.SystemColors.ControlLightLight;
+            this.rButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
             this.rButton1.UseVisualStyleBackColor = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(227, 21);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(213, 30);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Personal Information";
             // 
             // MyInfo
             // 

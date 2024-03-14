@@ -28,26 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.SuspendLayout();
             // 
             // panel1
             // 
-            panel1.Dock = DockStyle.Left;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(484, 1233);
-            panel1.TabIndex = 0;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(199, 274);
+            this.panel1.TabIndex = 0;
             // 
             // FSellermanagement
             // 
-            AutoScaleDimensions = new SizeF(17F, 41F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(2107, 1233);
-            Controls.Add(panel1);
-            Name = "FSellermanagement";
-            Text = "FSellermanagement";
-            ResumeLayout(false);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(564, 274);
+            this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Name = "FSellermanagement";
+            this.Text = "FSellermanagement";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
