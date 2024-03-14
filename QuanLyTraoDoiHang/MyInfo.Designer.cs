@@ -59,19 +59,19 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(642, 100);
+            this.panel3.Size = new System.Drawing.Size(642, 72);
             this.panel3.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.Green;
-            this.label2.Location = new System.Drawing.Point(250, 27);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(227, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(162, 30);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "My information";
+            this.label2.Size = new System.Drawing.Size(213, 30);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Personal Information";
             // 
             // panel5
             // 
@@ -80,9 +80,9 @@
             this.panel5.Controls.Add(this.textBox3);
             this.panel5.Controls.Add(this.textBox2);
             this.panel5.Controls.Add(this.textBox1);
-            this.panel5.Location = new System.Drawing.Point(227, 121);
+            this.panel5.Location = new System.Drawing.Point(184, 121);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(367, 267);
+            this.panel5.Size = new System.Drawing.Size(296, 267);
             this.panel5.TabIndex = 8;
             // 
             // panel6
@@ -91,7 +91,7 @@
             this.panel6.Controls.Add(this.checkBox3);
             this.panel6.Controls.Add(this.checkBox2);
             this.panel6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.panel6.Location = new System.Drawing.Point(48, 227);
+            this.panel6.Location = new System.Drawing.Point(6, 227);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(277, 34);
             this.panel6.TabIndex = 2;
@@ -134,7 +134,7 @@
             this.dateTimePicker1.CalendarTrailingForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(48, 60);
+            this.dateTimePicker1.Location = new System.Drawing.Point(3, 60);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(277, 29);
             this.dateTimePicker1.TabIndex = 4;
@@ -144,7 +144,7 @@
             this.textBox3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(48, 174);
+            this.textBox3.Location = new System.Drawing.Point(3, 176);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(277, 29);
             this.textBox3.TabIndex = 2;
@@ -154,7 +154,7 @@
             this.textBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(48, 116);
+            this.textBox2.Location = new System.Drawing.Point(3, 116);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(277, 29);
             this.textBox2.TabIndex = 1;
@@ -164,7 +164,7 @@
             this.textBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(48, 9);
+            this.textBox1.Location = new System.Drawing.Point(3, 9);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(277, 29);
             this.textBox1.TabIndex = 0;
@@ -177,80 +177,93 @@
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.label6);
             this.panel4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.panel4.Location = new System.Drawing.Point(51, 121);
+            this.panel4.Location = new System.Drawing.Point(88, 121);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(108, 267);
+            this.panel4.Size = new System.Drawing.Size(96, 267);
             this.panel4.TabIndex = 7;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(24, 15);
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label7.Location = new System.Drawing.Point(7, 9);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(78, 21);
+            this.label7.Size = new System.Drawing.Size(83, 29);
             this.label7.TabIndex = 6;
             this.label7.Text = "Full name";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 227);
+            this.label3.BackColor = System.Drawing.Color.Red;
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.label3.Location = new System.Drawing.Point(7, 227);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 21);
+            this.label3.Size = new System.Drawing.Size(83, 27);
             this.label3.TabIndex = 2;
             this.label3.Text = "Gender";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 176);
+            this.label4.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.label4.Location = new System.Drawing.Point(7, 176);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 21);
+            this.label4.Size = new System.Drawing.Size(80, 27);
             this.label4.TabIndex = 3;
             this.label4.Text = "Phone ";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(24, 124);
+            this.label5.BackColor = System.Drawing.Color.Gold;
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label5.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.label5.Location = new System.Drawing.Point(7, 116);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 21);
+            this.label5.Size = new System.Drawing.Size(80, 29);
             this.label5.TabIndex = 4;
             this.label5.Text = "Email";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(24, 68);
+            this.label6.BackColor = System.Drawing.Color.Turquoise;
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label6.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.label6.Location = new System.Drawing.Point(7, 60);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 21);
+            this.label6.Size = new System.Drawing.Size(83, 29);
             this.label6.TabIndex = 5;
             this.label6.Text = "Birthday";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // rButton1
             // 
-            this.rButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
-            this.rButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
-            this.rButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rButton1.BackColor = System.Drawing.Color.White;
+            this.rButton1.BackgroundColor = System.Drawing.Color.White;
+            this.rButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
             this.rButton1.BorderRadius = 15;
-            this.rButton1.BorderSize = 0;
+            this.rButton1.BorderSize = 2;
             this.rButton1.FlatAppearance.BorderSize = 0;
             this.rButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rButton1.ForeColor = System.Drawing.Color.White;
-            this.rButton1.Location = new System.Drawing.Point(237, 424);
+            this.rButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
+            this.rButton1.Location = new System.Drawing.Point(180, 426);
             this.rButton1.Name = "rButton1";
-            this.rButton1.Size = new System.Drawing.Size(150, 40);
+            this.rButton1.Size = new System.Drawing.Size(277, 42);
             this.rButton1.TabIndex = 9;
             this.rButton1.Text = "Save";
-            this.rButton1.TextColor = System.Drawing.Color.White;
+            this.rButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
             this.rButton1.UseVisualStyleBackColor = false;
             // 
             // MyInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(642, 495);
             this.Controls.Add(this.rButton1);
             this.Controls.Add(this.panel3);
@@ -265,14 +278,12 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private Panel panel3;
-        private Label label2;
         private Panel panel5;
         private Panel panel6;
         private CheckBox checkBox1;
@@ -289,5 +300,6 @@
         private Label label5;
         private Label label6;
         private RJControls.RButton rButton1;
+        private Label label2;
     }
 }

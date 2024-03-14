@@ -17,15 +17,33 @@ namespace QuanLyTraoDoiHang
             InitializeComponent();
         }
 
-        private void ucProductOnMainpage4_Click(object sender, EventArgs e)
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void ucProductOnMainpage1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void ucProductOnMainpage7_Click(object sender, EventArgs e)
         {
             Form form = new FormProductDetail();
             form.ShowDialog();
 
-            //Mainpage theForm = new Mainpage();
-            //var pnl_Body = theForm.Controls.Find("pnl_Body", true).OfType<Panel>().FirstOrDefault();
-            //if (pnl_Body != null)
-            //    theForm.OpenChildForm(new FormProductDetail());
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label20_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

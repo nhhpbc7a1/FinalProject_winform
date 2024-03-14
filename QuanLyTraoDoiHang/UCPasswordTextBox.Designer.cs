@@ -46,10 +46,9 @@
             this.btnShow.FlatAppearance.BorderSize = 0;
             this.btnShow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShow.ForeColor = System.Drawing.Color.White;
-            this.btnShow.Location = new System.Drawing.Point(124, 74);
-            this.btnShow.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnShow.Location = new System.Drawing.Point(108, 56);
             this.btnShow.Name = "btnShow";
-            this.btnShow.Size = new System.Drawing.Size(26, 28);
+            this.btnShow.Size = new System.Drawing.Size(23, 21);
             this.btnShow.TabIndex = 20;
             this.btnShow.TextColor = System.Drawing.Color.White;
             this.btnShow.UseVisualStyleBackColor = false;
@@ -67,10 +66,9 @@
             this.btnHide.FlatAppearance.BorderSize = 0;
             this.btnHide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHide.ForeColor = System.Drawing.Color.White;
-            this.btnHide.Location = new System.Drawing.Point(203, 64);
-            this.btnHide.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnHide.Location = new System.Drawing.Point(178, 48);
             this.btnHide.Name = "btnHide";
-            this.btnHide.Size = new System.Drawing.Size(26, 28);
+            this.btnHide.Size = new System.Drawing.Size(23, 21);
             this.btnHide.TabIndex = 19;
             this.btnHide.TextColor = System.Drawing.Color.White;
             this.btnHide.UseVisualStyleBackColor = false;
@@ -83,22 +81,21 @@
             this.txtPass.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtPass.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtPass.Location = new System.Drawing.Point(0, 0);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPass.Name = "txtPass";
             this.txtPass.PlaceholderText = "  Old password";
-            this.txtPass.Size = new System.Drawing.Size(254, 34);
+            this.txtPass.Size = new System.Drawing.Size(222, 29);
             this.txtPass.TabIndex = 18;
             this.txtPass.UseSystemPasswordChar = true;
             // 
             // UCPasswordTextBox
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.btnHide);
             this.Controls.Add(this.btnShow);
             this.Controls.Add(this.txtPass);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UCPasswordTextBox";
-            this.Size = new System.Drawing.Size(254, 153);
+            this.Size = new System.Drawing.Size(222, 115);
             this.Load += new System.EventHandler(this.UCPasswordTextBox_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -109,6 +106,6 @@
 
         private RJControls.RButton btnShow;
         private RJControls.RButton btnHide;
-        private TextBox txtPass;
+        public TextBox txtPass;
     }
 }

@@ -38,6 +38,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -51,7 +52,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -132,6 +132,7 @@
             this.dtBirthday.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtBirthday.Location = new System.Drawing.Point(58, 150);
             this.dtBirthday.Name = "dtBirthday";
+            this.dtBirthday.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dtBirthday.Size = new System.Drawing.Size(306, 29);
             this.dtBirthday.TabIndex = 15;
             this.dtBirthday.ValueChanged += new System.EventHandler(this.dtBirthday_ValueChanged);
@@ -183,6 +184,17 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(421, 615);
             this.panel3.TabIndex = 15;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.label5.Location = new System.Drawing.Point(147, 17);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(142, 45);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "Register";
             // 
             // pictureBox3
             // 
@@ -331,21 +343,9 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "KoHa";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label5.Location = new System.Drawing.Point(147, 17);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(142, 45);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "Register";
-            // 
             // Regisiter
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
             this.ClientSize = new System.Drawing.Size(984, 661);
             this.Controls.Add(this.panel1);
