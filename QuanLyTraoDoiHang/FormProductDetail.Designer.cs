@@ -69,7 +69,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.ucPasswordTextBox1 = new QuanLyTraoDoiHang.UCPasswordTextBox();
             this.panel1.SuspendLayout();
             this.pnl_ThisSellerPage.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -109,8 +108,8 @@
             // 
             // rButton3
             // 
-            this.rButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(150)))), ((int)(((byte)(166)))));
-            this.rButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(150)))), ((int)(((byte)(166)))));
+            this.rButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
+            this.rButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
             this.rButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.rButton3.BorderRadius = 20;
             this.rButton3.BorderSize = 0;
@@ -284,7 +283,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(66, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(313, 291);
+            this.pictureBox1.Size = new System.Drawing.Size(313, 281);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -347,7 +346,6 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.ucPasswordTextBox1);
             this.panel2.Controls.Add(this.rButton2);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.pictureBox10);
@@ -581,14 +579,6 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
-            // ucPasswordTextBox1
-            // 
-            this.ucPasswordTextBox1.Location = new System.Drawing.Point(24, 16);
-            this.ucPasswordTextBox1.Name = "ucPasswordTextBox1";
-            this.ucPasswordTextBox1.Size = new System.Drawing.Size(376, 49);
-            this.ucPasswordTextBox1.TabIndex = 12;
-            this.ucPasswordTextBox1.Load += new System.EventHandler(this.ucPasswordTextBox1_Load);
-            // 
             // FormProductDetail
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -666,6 +656,5 @@
         private UCProductOnMainpage ucProductOnMainpage3;
         private UCProductOnMainpage ucProductOnMainpage2;
         private RJControls.RButton rButton3;
-        private UCPasswordTextBox ucPasswordTextBox1;
     }
 }
