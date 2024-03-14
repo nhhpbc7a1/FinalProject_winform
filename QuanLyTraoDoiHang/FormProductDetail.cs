@@ -43,5 +43,14 @@ namespace QuanLyTraoDoiHang
             pnl_ThisSellerPage.Visible = false;
         }
 
+        private void rButton4_Click(object sender, EventArgs e)
+        {
+            panel2.Dock = DockStyle.None;
+            panel1.Dock = DockStyle.None;
+            pnl_ThisSellerPage.Size = new System.Drawing.Size(777, 653);
+            pnl_ThisSellerPage.Visible = true;
+            pnl_ThisSellerPage.BringToFront();
+            pnl_ThisSellerPage.Dock = DockStyle.Left;
+        }
     }
 }

@@ -59,7 +59,6 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -69,6 +68,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.rButton4 = new QuanLyTraoDoiHang.RJControls.RButton();
             this.panel1.SuspendLayout();
             this.pnl_ThisSellerPage.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -315,7 +315,7 @@
             this.richTextBox1.BackColor = System.Drawing.Color.White;
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.richTextBox1.Location = new System.Drawing.Point(53, 505);
+            this.richTextBox1.Location = new System.Drawing.Point(62, 489);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(467, 145);
@@ -346,13 +346,13 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.rButton4);
             this.panel2.Controls.Add(this.rButton2);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.pictureBox10);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.pictureBox9);
             this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.pictureBox2);
@@ -471,19 +471,6 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "0783701185";
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
-            this.button1.Location = new System.Drawing.Point(24, 299);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(358, 51);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "View page";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -579,6 +566,26 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
+            // rButton4
+            // 
+            this.rButton4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.rButton4.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.rButton4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
+            this.rButton4.BorderRadius = 15;
+            this.rButton4.BorderSize = 1;
+            this.rButton4.FlatAppearance.BorderSize = 0;
+            this.rButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rButton4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
+            this.rButton4.Location = new System.Drawing.Point(24, 307);
+            this.rButton4.Name = "rButton4";
+            this.rButton4.Size = new System.Drawing.Size(353, 50);
+            this.rButton4.TabIndex = 12;
+            this.rButton4.Text = "View page";
+            this.rButton4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
+            this.rButton4.UseVisualStyleBackColor = false;
+            this.rButton4.Click += new System.EventHandler(this.rButton4_Click);
+            // 
             // FormProductDetail
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -621,7 +628,6 @@
         private Label label3;
         private PictureBox pictureBox1;
         private Panel panel2;
-        private Button button1;
         private Label label2;
         private Label label1;
         private Panel panel3;
@@ -656,5 +662,6 @@
         private UCProductOnMainpage ucProductOnMainpage3;
         private UCProductOnMainpage ucProductOnMainpage2;
         private RJControls.RButton rButton3;
+        private RJControls.RButton rButton4;
     }
 }
