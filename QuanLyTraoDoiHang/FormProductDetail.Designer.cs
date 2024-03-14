@@ -30,6 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProductDetail));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.rButton3 = new QuanLyTraoDoiHang.RJControls.RButton();
             this.pnl_ThisSellerPage = new System.Windows.Forms.Panel();
             this.ucProductOnMainpage4 = new QuanLyTraoDoiHang.UCProductOnMainpage();
@@ -45,11 +53,12 @@
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.rButton1 = new QuanLyTraoDoiHang.RJControls.RButton();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.rButton1 = new QuanLyTraoDoiHang.RJControls.RButton();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.rButton4 = new QuanLyTraoDoiHang.RJControls.RButton();
             this.rButton2 = new QuanLyTraoDoiHang.RJControls.RButton();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -57,9 +66,7 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -69,6 +76,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.pnl_ThisSellerPage.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -89,22 +100,114 @@
             // 
             // panel1
             // 
-            this.panel1.AutoScrollMargin = new System.Drawing.Size(10, 0);
+            this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label20);
+            this.panel1.Controls.Add(this.label21);
+            this.panel1.Controls.Add(this.label18);
+            this.panel1.Controls.Add(this.label19);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label17);
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.label13);
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.rButton3);
             this.panel1.Controls.Add(this.pnl_ThisSellerPage);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.rButton1);
             this.panel1.Controls.Add(this.richTextBox1);
             this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.rButton1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(570, 653);
+            this.panel1.Size = new System.Drawing.Size(648, 653);
             this.panel1.TabIndex = 0;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(205, 445);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(75, 28);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "2 years";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label17.Location = new System.Drawing.Point(69, 445);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(107, 28);
+            this.label17.TabIndex = 21;
+            this.label17.Text = "Used time";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label15.Location = new System.Drawing.Point(250, 396);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(146, 28);
+            this.label15.TabIndex = 20;
+            this.label15.Text = "out of warranty";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label16.Location = new System.Drawing.Point(71, 396);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(162, 28);
+            this.label16.TabIndex = 19;
+            this.label16.Text = "Warranty Policy";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label13.Location = new System.Drawing.Point(189, 346);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(50, 28);
+            this.label13.TabIndex = 18;
+            this.label13.Text = "98%";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label14.Location = new System.Drawing.Point(69, 346);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(109, 28);
+            this.label14.TabIndex = 17;
+            this.label14.Text = "Condition:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label12.Location = new System.Drawing.Point(240, 300);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(114, 28);
+            this.label12.TabIndex = 16;
+            this.label12.Text = "5.990.000 đ";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label11.Location = new System.Drawing.Point(69, 300);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(146, 28);
+            this.label11.TabIndex = 15;
+            this.label11.Text = "Original price:";
             // 
             // rButton3
             // 
@@ -119,10 +222,10 @@
             this.rButton3.ForeColor = System.Drawing.Color.White;
             this.rButton3.Image = ((System.Drawing.Image)(resources.GetObject("rButton3.Image")));
             this.rButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rButton3.Location = new System.Drawing.Point(339, 316);
+            this.rButton3.Location = new System.Drawing.Point(399, 132);
             this.rButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rButton3.Name = "rButton3";
-            this.rButton3.Size = new System.Drawing.Size(150, 51);
+            this.rButton3.Size = new System.Drawing.Size(174, 51);
             this.rButton3.TabIndex = 14;
             this.rButton3.Text = "Buy now";
             this.rButton3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -143,7 +246,7 @@
             this.pnl_ThisSellerPage.Location = new System.Drawing.Point(12, 80);
             this.pnl_ThisSellerPage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_ThisSellerPage.Name = "pnl_ThisSellerPage";
-            this.pnl_ThisSellerPage.Size = new System.Drawing.Size(50, 100);
+            this.pnl_ThisSellerPage.Size = new System.Drawing.Size(28, 100);
             this.pnl_ThisSellerPage.TabIndex = 9;
             // 
             // ucProductOnMainpage4
@@ -219,7 +322,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.DimGray;
-            this.panel6.Location = new System.Drawing.Point(22, 432);
+            this.panel6.Location = new System.Drawing.Point(38, 624);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(535, 10);
@@ -229,7 +332,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(53, 460);
+            this.label10.Location = new System.Drawing.Point(69, 666);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(181, 28);
             this.label10.TabIndex = 12;
@@ -241,10 +344,10 @@
             this.panel5.Controls.Add(this.iconButton1);
             this.panel5.Controls.Add(this.iconButton2);
             this.panel5.Controls.Add(this.pictureBox1);
-            this.panel5.Location = new System.Drawing.Point(72, 16);
+            this.panel5.Location = new System.Drawing.Point(71, 35);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(448, 281);
+            this.panel5.Size = new System.Drawing.Size(287, 210);
             this.panel5.TabIndex = 11;
             // 
             // iconButton1
@@ -254,10 +357,10 @@
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
             this.iconButton1.IconColor = System.Drawing.Color.Black;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(395, 114);
+            this.iconButton1.Location = new System.Drawing.Point(249, 87);
             this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(34, 55);
+            this.iconButton1.Size = new System.Drawing.Size(24, 41);
             this.iconButton1.TabIndex = 1;
             this.iconButton1.UseVisualStyleBackColor = true;
             // 
@@ -268,10 +371,10 @@
             this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
             this.iconButton2.IconColor = System.Drawing.Color.Black;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(27, 114);
+            this.iconButton2.Location = new System.Drawing.Point(15, 87);
             this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(33, 55);
+            this.iconButton2.Size = new System.Drawing.Size(23, 41);
             this.iconButton2.TabIndex = 2;
             this.iconButton2.UseVisualStyleBackColor = true;
             // 
@@ -280,12 +383,36 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(66, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(44, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(313, 281);
+            this.pictureBox1.Size = new System.Drawing.Size(199, 209);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BackColor = System.Drawing.Color.White;
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBox1.Location = new System.Drawing.Point(49, 715);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.Size = new System.Drawing.Size(553, 145);
+            this.richTextBox1.TabIndex = 8;
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(386, 90);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(128, 31);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "1.190.000 đ";
             // 
             // rButton1
             // 
@@ -300,7 +427,7 @@
             this.rButton1.ForeColor = System.Drawing.Color.White;
             this.rButton1.Image = ((System.Drawing.Image)(resources.GetObject("rButton1.Image")));
             this.rButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rButton1.Location = new System.Drawing.Point(327, 373);
+            this.rButton1.Location = new System.Drawing.Point(399, 191);
             this.rButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rButton1.Name = "rButton1";
             this.rButton1.Size = new System.Drawing.Size(174, 51);
@@ -310,35 +437,11 @@
             this.rButton1.TextColor = System.Drawing.Color.White;
             this.rButton1.UseVisualStyleBackColor = false;
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.BackColor = System.Drawing.Color.White;
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.richTextBox1.Location = new System.Drawing.Point(53, 505);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(467, 145);
-            this.richTextBox1.TabIndex = 8;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(53, 381);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(128, 31);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "1.190.000 đ";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(53, 336);
+            this.label3.Location = new System.Drawing.Point(386, 47);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(210, 31);
             this.label3.TabIndex = 5;
@@ -346,22 +449,43 @@
             // 
             // panel2
             // 
+            this.panel2.AutoScroll = true;
+            this.panel2.Controls.Add(this.rButton4);
             this.panel2.Controls.Add(this.rButton2);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.pictureBox10);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.pictureBox9);
             this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(570, 0);
+            this.panel2.Location = new System.Drawing.Point(648, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(412, 653);
+            this.panel2.Size = new System.Drawing.Size(334, 653);
             this.panel2.TabIndex = 1;
+            // 
+            // rButton4
+            // 
+            this.rButton4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.rButton4.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.rButton4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
+            this.rButton4.BorderRadius = 15;
+            this.rButton4.BorderSize = 1;
+            this.rButton4.FlatAppearance.BorderSize = 0;
+            this.rButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rButton4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
+            this.rButton4.Location = new System.Drawing.Point(47, 195);
+            this.rButton4.Name = "rButton4";
+            this.rButton4.Size = new System.Drawing.Size(243, 50);
+            this.rButton4.TabIndex = 12;
+            this.rButton4.Text = "View page";
+            this.rButton4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
+            this.rButton4.UseVisualStyleBackColor = false;
+            this.rButton4.Click += new System.EventHandler(this.rButton4_Click);
             // 
             // rButton2
             // 
@@ -374,7 +498,7 @@
             this.rButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rButton2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.rButton2.ForeColor = System.Drawing.Color.White;
-            this.rButton2.Location = new System.Drawing.Point(236, 583);
+            this.rButton2.Location = new System.Drawing.Point(179, 583);
             this.rButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rButton2.Name = "rButton2";
             this.rButton2.Size = new System.Drawing.Size(133, 51);
@@ -387,9 +511,9 @@
             // label8
             // 
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(98, 455);
+            this.label8.Location = new System.Drawing.Point(104, 359);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(271, 84);
+            this.label8.Size = new System.Drawing.Size(213, 84);
             this.label8.TabIndex = 10;
             this.label8.Text = "Location: Cao Lanh City, Dong Thap, Viet Nam";
             // 
@@ -397,7 +521,7 @@
             // 
             this.pictureBox10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox10.BackgroundImage")));
             this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox10.Location = new System.Drawing.Point(41, 455);
+            this.pictureBox10.Location = new System.Drawing.Point(47, 359);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(31, 27);
@@ -408,7 +532,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(98, 395);
+            this.label7.Location = new System.Drawing.Point(104, 300);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(131, 28);
             this.label7.TabIndex = 8;
@@ -418,7 +542,7 @@
             // 
             this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
             this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox9.Location = new System.Drawing.Point(41, 395);
+            this.pictureBox9.Location = new System.Drawing.Point(47, 299);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(31, 29);
@@ -429,12 +553,11 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
             this.panel4.Controls.Add(this.pictureBox8);
-            this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.label5);
-            this.panel4.Location = new System.Drawing.Point(24, 207);
+            this.panel4.Location = new System.Drawing.Point(47, 122);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(358, 58);
+            this.panel4.Size = new System.Drawing.Size(243, 58);
             this.panel4.TabIndex = 6;
             // 
             // pictureBox8
@@ -449,46 +572,22 @@
             this.pictureBox8.TabIndex = 2;
             this.pictureBox8.TabStop = false;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(222, 17);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(119, 23);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Contact seller";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(74, 17);
+            this.label5.Location = new System.Drawing.Point(73, 18);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(110, 23);
             this.label5.TabIndex = 0;
             this.label5.Text = "0783701185";
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
-            this.button1.Location = new System.Drawing.Point(24, 299);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(358, 51);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "View page";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(197, 80);
+            this.label1.Location = new System.Drawing.Point(120, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(162, 25);
             this.label1.TabIndex = 3;
@@ -502,10 +601,10 @@
             this.panel3.Controls.Add(this.pictureBox4);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Location = new System.Drawing.Point(165, 127);
+            this.panel3.Location = new System.Drawing.Point(130, 65);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(190, 31);
+            this.panel3.Size = new System.Drawing.Size(182, 31);
             this.panel3.TabIndex = 2;
             // 
             // pictureBox7
@@ -572,12 +671,52 @@
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(24, 80);
+            this.pictureBox2.Location = new System.Drawing.Point(47, 35);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(80, 81);
+            this.pictureBox2.Size = new System.Drawing.Size(63, 61);
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label18.Location = new System.Drawing.Point(203, 497);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(73, 28);
+            this.label18.TabIndex = 24;
+            this.label18.Text = "Xiaomi";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label19.Location = new System.Drawing.Point(69, 497);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(68, 28);
+            this.label19.TabIndex = 23;
+            this.label19.Text = "Brand";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label20.Location = new System.Drawing.Point(205, 545);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(63, 28);
+            this.label20.TabIndex = 26;
+            this.label20.Text = "China";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label21.Location = new System.Drawing.Point(71, 545);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(71, 28);
+            this.label21.TabIndex = 25;
+            this.label21.Text = "Origin";
             // 
             // FormProductDetail
             // 
@@ -621,7 +760,6 @@
         private Label label3;
         private PictureBox pictureBox1;
         private Panel panel2;
-        private Button button1;
         private Label label2;
         private Label label1;
         private Panel panel3;
@@ -630,7 +768,6 @@
         private RichTextBox richTextBox1;
         private Panel panel4;
         private PictureBox pictureBox8;
-        private Label label6;
         private Label label5;
         private PictureBox pictureBox7;
         private PictureBox pictureBox6;
@@ -656,5 +793,18 @@
         private UCProductOnMainpage ucProductOnMainpage3;
         private UCProductOnMainpage ucProductOnMainpage2;
         private RJControls.RButton rButton3;
+        private RJControls.RButton rButton4;
+        private Label label12;
+        private Label label11;
+        private Label label15;
+        private Label label16;
+        private Label label13;
+        private Label label14;
+        private Label label6;
+        private Label label17;
+        private Label label20;
+        private Label label21;
+        private Label label18;
+        private Label label19;
     }
 }
