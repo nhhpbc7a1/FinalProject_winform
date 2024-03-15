@@ -37,12 +37,27 @@ namespace QuanLyTraoDoiHang
 
         private void ucDropDownMenu1_Load(object sender, EventArgs e)
         {
+            this.ucOrder.rBSelect.Text = "Order";
+            this.ucOrder.rButton1.Text = "My Order";
+            //cancel by buyer, cancel by owner
+            this.ucOrder.rButton2.Text = "Cancellation";
+            //return reason
+            this.ucOrder.rButton3.Text = "Return";
 
+        }
+        private void ucProduct_Load(object sender, EventArgs e)
+        {
+            //actions: update
+            this.ucProduct.rBSelect.Text = "Product";
+            this.ucProduct.rButton1.Text = "My Product";
+            this.ucProduct.rButton2.Text = "Add New Products";
+            this.ucProduct.rButton3.Visible = false;
+            
         }
 
         private void rButton1_Click(object sender, EventArgs e)
         {
-
+            
         }
         private Form currentFormChild;
         private void OpenChildForm(Form childForm)
@@ -66,5 +81,7 @@ namespace QuanLyTraoDoiHang
         {
 
         }
+
+       
     }
 }
