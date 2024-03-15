@@ -52,9 +52,9 @@
             rBDelete.FlatStyle = FlatStyle.Flat;
             rBDelete.Font = new Font("Segoe UI", 11.1F, FontStyle.Bold, GraphicsUnit.Point);
             rBDelete.ForeColor = Color.Black;
-            rBDelete.Location = new Point(1489, 81);
+            rBDelete.Location = new Point(1255, 95);
             rBDelete.Name = "rBDelete";
-            rBDelete.Size = new Size(197, 100);
+            rBDelete.Size = new Size(146, 99);
             rBDelete.TabIndex = 14;
             rBDelete.Text = "Cancel";
             rBDelete.TextColor = Color.Black;
@@ -73,7 +73,7 @@
             // 
             lblPPrice.AutoSize = true;
             lblPPrice.Font = new Font("Segoe UI", 9.900001F, FontStyle.Regular, GraphicsUnit.Point);
-            lblPPrice.Location = new Point(548, 93);
+            lblPPrice.Location = new Point(456, 106);
             lblPPrice.Margin = new Padding(2, 0, 2, 0);
             lblPPrice.Name = "lblPPrice";
             lblPPrice.Size = new Size(94, 46);
@@ -83,10 +83,10 @@
             // pictureBox1
             // 
             pictureBox1.BackColor = SystemColors.Control;
-            pictureBox1.Location = new Point(15, 18);
+            pictureBox1.Location = new Point(9, 15);
             pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(218, 193);
+            pictureBox1.Size = new Size(156, 171);
             pictureBox1.TabIndex = 10;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
@@ -94,7 +94,7 @@
             // dUDStatusShipment
             // 
             dUDStatusShipment.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            dUDStatusShipment.Location = new Point(693, 96);
+            dUDStatusShipment.Location = new Point(574, 109);
             dUDStatusShipment.Name = "dUDStatusShipment";
             dUDStatusShipment.Size = new Size(300, 52);
             dUDStatusShipment.TabIndex = 15;
@@ -103,7 +103,7 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(16, 118);
+            checkBox1.Location = new Point(41, 119);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(34, 33);
             checkBox1.TabIndex = 16;
@@ -112,7 +112,7 @@
             // dUDTypeOfShip
             // 
             dUDTypeOfShip.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            dUDTypeOfShip.Location = new Point(1083, 96);
+            dUDTypeOfShip.Location = new Point(893, 109);
             dUDTypeOfShip.Name = "dUDTypeOfShip";
             dUDTypeOfShip.Size = new Size(339, 52);
             dUDTypeOfShip.TabIndex = 17;
@@ -122,9 +122,9 @@
             // 
             panel1.Controls.Add(lblProductName);
             panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(76, 19);
+            panel1.Location = new Point(81, 34);
             panel1.Name = "panel1";
-            panel1.Size = new Size(447, 224);
+            panel1.Size = new Size(300, 202);
             panel1.TabIndex = 18;
             panel1.Paint += panel1_Paint;
             // 
@@ -132,7 +132,7 @@
             // 
             lblProductName.AutoSize = true;
             lblProductName.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            lblProductName.Location = new Point(265, 82);
+            lblProductName.Location = new Point(170, 74);
             lblProductName.Name = "lblProductName";
             lblProductName.Size = new Size(123, 46);
             lblProductName.TabIndex = 11;
@@ -151,7 +151,7 @@
             Controls.Add(cBCart);
             Controls.Add(lblPPrice);
             Name = "UCShipment";
-            Size = new Size(1806, 274);
+            Size = new Size(1431, 274);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

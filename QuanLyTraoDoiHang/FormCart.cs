@@ -88,5 +88,10 @@ namespace QuanLyTraoDoiHang
         {
 
         }
+
+        private void lblItemsCart_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
