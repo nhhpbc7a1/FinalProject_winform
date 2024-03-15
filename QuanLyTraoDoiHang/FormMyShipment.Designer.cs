@@ -35,6 +35,7 @@
             lblAction = new Label();
             lblTotalPrice = new Label();
             chBProducts = new CheckBox();
+            label2 = new Label();
             pnlShipment.SuspendLayout();
             pnlMenu.SuspendLayout();
             SuspendLayout();
@@ -63,6 +64,7 @@
             // pnlMenu
             // 
             pnlMenu.BackColor = Color.FromArgb(97, 150, 166);
+            pnlMenu.Controls.Add(label2);
             pnlMenu.Controls.Add(label1);
             pnlMenu.Controls.Add(lblAction);
             pnlMenu.Controls.Add(lblTotalPrice);
@@ -78,7 +80,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(1041, 14);
+            label1.Location = new Point(824, 14);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(131, 54);
@@ -102,7 +104,7 @@
             lblTotalPrice.AutoSize = true;
             lblTotalPrice.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblTotalPrice.ForeColor = SystemColors.Control;
-            lblTotalPrice.Location = new Point(618, 14);
+            lblTotalPrice.Location = new Point(520, 14);
             lblTotalPrice.Margin = new Padding(2, 0, 2, 0);
             lblTotalPrice.Name = "lblTotalPrice";
             lblTotalPrice.Size = new Size(203, 54);
@@ -121,6 +123,18 @@
             chBProducts.TabIndex = 12;
             chBProducts.Text = "Your Products";
             chBProducts.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = SystemColors.Control;
+            label2.Location = new Point(1231, 14);
+            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(106, 54);
+            label2.TabIndex = 18;
+            label2.Text = "Type";
             // 
             // FormMyShipment
             // 
@@ -148,5 +162,6 @@
         private Label lblTotalPrice;
         private CheckBox chBProducts;
         private UCShipment ucShipment1;
+        private Label label2;
     }
 }

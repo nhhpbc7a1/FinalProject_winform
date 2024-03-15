@@ -33,6 +33,7 @@
             ucProduct = new UCDropDownMenu();
             rButton1 = new RJControls.RButton();
             ucOrder = new UCDropDownMenu();
+            panel2 = new Panel();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -43,10 +44,9 @@
             panel1.Controls.Add(ucProduct);
             panel1.Controls.Add(rButton1);
             panel1.Controls.Add(ucOrder);
-            panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(485, 1233);
+            panel1.Size = new Size(480, 1233);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
             // 
@@ -60,7 +60,7 @@
             rBAnalysis.FlatAppearance.BorderSize = 0;
             rBAnalysis.FlatStyle = FlatStyle.Flat;
             rBAnalysis.ForeColor = Color.SaddleBrown;
-            rBAnalysis.Location = new Point(-1, 808);
+            rBAnalysis.Location = new Point(3, 884);
             rBAnalysis.Name = "rBAnalysis";
             rBAnalysis.Size = new Size(479, 100);
             rBAnalysis.TabIndex = 5;
@@ -70,9 +70,9 @@
             // 
             // ucProduct
             // 
-            ucProduct.Location = new Point(-10, 557);
+            ucProduct.Location = new Point(-10, 629);
             ucProduct.Name = "ucProduct";
-            ucProduct.Size = new Size(504, 481);
+            ucProduct.Size = new Size(504, 259);
             ucProduct.TabIndex = 4;
             // 
             // rButton1
@@ -85,7 +85,7 @@
             rButton1.FlatAppearance.BorderSize = 0;
             rButton1.FlatStyle = FlatStyle.Flat;
             rButton1.ForeColor = Color.SaddleBrown;
-            rButton1.Location = new Point(-1, 190);
+            rButton1.Location = new Point(-2, 157);
             rButton1.Name = "rButton1";
             rButton1.Size = new Size(479, 100);
             rButton1.TabIndex = 3;
@@ -95,11 +95,19 @@
             // 
             // ucOrder
             // 
-            ucOrder.Location = new Point(-10, 321);
+            ucOrder.Location = new Point(-10, 372);
             ucOrder.Name = "ucOrder";
-            ucOrder.Size = new Size(504, 481);
+            ucOrder.Size = new Size(488, 261);
             ucOrder.TabIndex = 2;
             ucOrder.Load += ucDropDownMenu1_Load;
+            // 
+            // panel2
+            // 
+            panel2.Dock = DockStyle.Left;
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(482, 1233);
+            panel2.TabIndex = 1;
             // 
             // FSellermanagement
             // 
@@ -107,6 +115,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(2107, 1233);
             Controls.Add(panel1);
+            Controls.Add(panel2);
             Name = "FSellermanagement";
             Text = "FSellermanagement";
             Load += FSellermanagement_Load;
@@ -121,5 +130,6 @@
         private RJControls.RButton rButton1;
         private RJControls.RButton rBAnalysis;
         private UCDropDownMenu ucProduct;
+        private Panel panel2;
     }
 }

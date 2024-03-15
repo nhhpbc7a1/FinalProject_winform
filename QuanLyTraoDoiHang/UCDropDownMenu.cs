@@ -33,7 +33,7 @@ namespace QuanLyTraoDoiHang
         {
             if (expand == false)
             {
-                fPanelDropDown.Height += 350;
+                fPanelDropDown.Height += 300;
                 if (fPanelDropDown.Height >= fPanelDropDown.MaximumSize.Height)
                 {
                     timer1.Stop();
@@ -64,6 +64,11 @@ namespace QuanLyTraoDoiHang
         private void rButton1_Click(object sender, EventArgs e)
         {
             timer1.Start();
+        }
+
+        private void fPanelDropDown_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

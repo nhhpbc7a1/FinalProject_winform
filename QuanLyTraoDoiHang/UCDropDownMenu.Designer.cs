@@ -47,14 +47,16 @@
             fPanelDropDown.Controls.Add(rBSelect);
             fPanelDropDown.Controls.Add(pnlOptions);
             fPanelDropDown.Location = new Point(3, 0);
-            fPanelDropDown.MaximumSize = new Size(485, 230);
-            fPanelDropDown.MinimumSize = new Size(485, 230);
+            fPanelDropDown.MaximumSize = new Size(979, 340);
+            fPanelDropDown.MinimumSize = new Size(487, 100);
             fPanelDropDown.Name = "fPanelDropDown";
-            fPanelDropDown.Size = new Size(485, 230);
+            fPanelDropDown.Size = new Size(487, 106);
             fPanelDropDown.TabIndex = 0;
+            fPanelDropDown.Paint += fPanelDropDown_Paint;
             // 
             // rBSelect
             // 
+            rBSelect.AllowDrop = true;
             rBSelect.BackColor = Color.FromArgb(244, 237, 204);
             rBSelect.BackgroundColor = Color.FromArgb(244, 237, 204);
             rBSelect.BorderColor = Color.PaleVioletRed;
@@ -67,7 +69,7 @@
             rBSelect.ImageAlign = ContentAlignment.MiddleRight;
             rBSelect.Location = new Point(3, 3);
             rBSelect.Name = "rBSelect";
-            rBSelect.Size = new Size(480, 102);
+            rBSelect.Size = new Size(483, 102);
             rBSelect.TabIndex = 1;
             rBSelect.Text = "Select";
             rBSelect.TextColor = Color.SaddleBrown;
@@ -98,7 +100,7 @@
             rButton1.FlatStyle = FlatStyle.Flat;
             rButton1.ForeColor = Color.SaddleBrown;
             rButton1.ImageAlign = ContentAlignment.MiddleRight;
-            rButton1.Location = new Point(2, 13);
+            rButton1.Location = new Point(3, 13);
             rButton1.Name = "rButton1";
             rButton1.Size = new Size(480, 102);
             rButton1.TabIndex = 2;
