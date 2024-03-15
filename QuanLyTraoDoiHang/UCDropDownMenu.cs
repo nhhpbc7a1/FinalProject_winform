@@ -29,27 +29,7 @@ namespace QuanLyTraoDoiHang
 
         }
         bool expand = false;
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            if (expand == false)
-            {
-                fPanelDropDown.Height += 300;
-                if (fPanelDropDown.Height >= fPanelDropDown.MaximumSize.Height)
-                {
-                    timer1.Stop();
-                    expand = true;
-                }
-            }
-            else
-            {
-                fPanelDropDown.Height -= 250;
-                if (fPanelDropDown.Height <= fPanelDropDown.MinimumSize.Height)
-                {
-                    timer1.Stop();
-                    expand = false;
-                }
-            }
-        }
+
 
         private void btnOption3_Click(object sender, EventArgs e)
         {
@@ -58,17 +38,47 @@ namespace QuanLyTraoDoiHang
 
         private void btnDropDown_Click_2(object sender, EventArgs e)
         {
-            timer1.Start();
+
         }
 
         private void rButton1_Click(object sender, EventArgs e)
         {
-            timer1.Start();
+            if (pnlOptions.Visible == false)
+            {
+                pnlOptions.Visible = true;
+            }
+            else pnlOptions.Visible = false;
         }
-
+        private void HideOptions()
+        {
+            if (pnlOptions.Visible == true)
+            {
+                pnlOptions.Visible = false;
+            }
+        }
         private void fPanelDropDown_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void rButton1_Click_1(object sender, EventArgs e)
+        {
+            HideOptions();
+        }
+
+        private void rButton3_Click(object sender, EventArgs e)
+        {
+            HideOptions();
+        }
+
+        private void rButton2_Click(object sender, EventArgs e)
+        {
+            HideOptions();
+        }
+
+        private void UCDropDownMenu_Load(object sender, EventArgs e)
+        {
+            pnlOptions.Visible = false;
         }
     }
 }
