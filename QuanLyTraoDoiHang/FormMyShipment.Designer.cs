@@ -31,11 +31,11 @@
             pnlShipment = new Panel();
             ucShipment1 = new UCShipment();
             pnlMenu = new Panel();
+            label2 = new Label();
             label1 = new Label();
             lblAction = new Label();
             lblTotalPrice = new Label();
             chBProducts = new CheckBox();
-            label2 = new Label();
             pnlShipment.SuspendLayout();
             pnlMenu.SuspendLayout();
             SuspendLayout();
@@ -49,16 +49,16 @@
             pnlShipment.Location = new Point(55, 196);
             pnlShipment.Margin = new Padding(6);
             pnlShipment.Name = "pnlShipment";
-            pnlShipment.Size = new Size(1871, 877);
+            pnlShipment.Size = new Size(1575, 915);
             pnlShipment.TabIndex = 16;
             pnlShipment.Paint += pnlShipment_Paint;
             // 
             // ucShipment1
             // 
             ucShipment1.BackColor = Color.FromArgb(244, 237, 204);
-            ucShipment1.Location = new Point(55, 24);
+            ucShipment1.Location = new Point(32, 49);
             ucShipment1.Name = "ucShipment1";
-            ucShipment1.Size = new Size(1741, 265);
+            ucShipment1.Size = new Size(1482, 304);
             ucShipment1.TabIndex = 0;
             // 
             // pnlMenu
@@ -72,15 +72,27 @@
             pnlMenu.Location = new Point(55, 55);
             pnlMenu.Margin = new Padding(2);
             pnlMenu.Name = "pnlMenu";
-            pnlMenu.Size = new Size(1871, 82);
+            pnlMenu.Size = new Size(1575, 120);
             pnlMenu.TabIndex = 15;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = SystemColors.Control;
+            label2.Location = new Point(1070, 14);
+            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(106, 54);
+            label2.TabIndex = 18;
+            label2.Text = "Type";
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(824, 14);
+            label1.Location = new Point(779, 14);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(131, 54);
@@ -92,7 +104,7 @@
             lblAction.AutoSize = true;
             lblAction.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblAction.ForeColor = SystemColors.Control;
-            lblAction.Location = new Point(1578, 14);
+            lblAction.Location = new Point(1294, 14);
             lblAction.Margin = new Padding(2, 0, 2, 0);
             lblAction.Name = "lblAction";
             lblAction.Size = new Size(154, 54);
@@ -104,7 +116,7 @@
             lblTotalPrice.AutoSize = true;
             lblTotalPrice.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblTotalPrice.ForeColor = SystemColors.Control;
-            lblTotalPrice.Location = new Point(520, 14);
+            lblTotalPrice.Location = new Point(470, 14);
             lblTotalPrice.Margin = new Padding(2, 0, 2, 0);
             lblTotalPrice.Name = "lblTotalPrice";
             lblTotalPrice.Size = new Size(203, 54);
@@ -116,32 +128,21 @@
             chBProducts.AutoSize = true;
             chBProducts.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             chBProducts.ForeColor = SystemColors.Control;
-            chBProducts.Location = new Point(69, 14);
+            chBProducts.Location = new Point(33, 14);
             chBProducts.Margin = new Padding(2);
             chBProducts.Name = "chBProducts";
             chBProducts.Size = new Size(305, 58);
             chBProducts.TabIndex = 12;
             chBProducts.Text = "Your Products";
             chBProducts.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = SystemColors.Control;
-            label2.Location = new Point(1231, 14);
-            label2.Margin = new Padding(2, 0, 2, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(106, 54);
-            label2.TabIndex = 18;
-            label2.Text = "Type";
+            chBProducts.CheckedChanged += chBProducts_CheckedChanged;
             // 
             // FormMyShipment
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(164, 206, 149);
-            ClientSize = new Size(1988, 1126);
+            ClientSize = new Size(1684, 1126);
             Controls.Add(pnlShipment);
             Controls.Add(pnlMenu);
             ForeColor = SystemColors.ActiveCaptionText;

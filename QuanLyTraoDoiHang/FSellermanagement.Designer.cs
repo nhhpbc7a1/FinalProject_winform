@@ -34,6 +34,7 @@
             rButton1 = new RJControls.RButton();
             ucOrder = new UCDropDownMenu();
             panel2 = new Panel();
+            pnlSellerTool = new Panel();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -46,7 +47,7 @@
             panel1.Controls.Add(ucOrder);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(480, 1233);
+            panel1.Size = new Size(480, 1339);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
             // 
@@ -92,6 +93,7 @@
             rButton1.Text = "My Shipment";
             rButton1.TextColor = Color.SaddleBrown;
             rButton1.UseVisualStyleBackColor = false;
+            rButton1.Click += rButton1_Click;
             // 
             // ucOrder
             // 
@@ -106,14 +108,23 @@
             panel2.Dock = DockStyle.Left;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(482, 1233);
+            panel2.Size = new Size(482, 1335);
             panel2.TabIndex = 1;
+            // 
+            // pnlSellerTool
+            // 
+            pnlSellerTool.Location = new Point(478, 0);
+            pnlSellerTool.Name = "pnlSellerTool";
+            pnlSellerTool.Size = new Size(1707, 1335);
+            pnlSellerTool.TabIndex = 2;
+            pnlSellerTool.Paint += pnlSellerTool_Paint;
             // 
             // FSellermanagement
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(2107, 1233);
+            ClientSize = new Size(2188, 1335);
+            Controls.Add(pnlSellerTool);
             Controls.Add(panel1);
             Controls.Add(panel2);
             Name = "FSellermanagement";
@@ -131,5 +142,6 @@
         private RJControls.RButton rBAnalysis;
         private UCDropDownMenu ucProduct;
         private Panel panel2;
+        private Panel pnlSellerTool;
     }
 }

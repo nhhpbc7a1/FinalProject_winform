@@ -18,15 +18,15 @@ namespace QuanLyTraoDoiHang
             OpenChildForm(new FormProduct());
         }
 
-       
+
         private void Mainpage_Load(object sender, EventArgs e)
         {
-           
+
         }
         private Form currentFormChild;
         private void OpenChildForm(Form childForm)
         {
-            if(currentFormChild != null)
+            if (currentFormChild != null)
             {
                 currentFormChild.Close();
             }
@@ -83,6 +83,16 @@ namespace QuanLyTraoDoiHang
         private void rButton4_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormProduct());
+
+        }
+
+        private void rButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

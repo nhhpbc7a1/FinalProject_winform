@@ -21,5 +21,10 @@ namespace QuanLyTraoDoiHang
         {
 
         }
+
+        private void chBProducts_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
