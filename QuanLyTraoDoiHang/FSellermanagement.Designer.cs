@@ -30,9 +30,9 @@
         {
             panel1 = new Panel();
             rBAnalysis = new RJControls.RButton();
+            ucProduct = new UCDropDownMenu();
             rButton1 = new RJControls.RButton();
             ucOrder = new UCDropDownMenu();
-            ucProduct = new UCDropDownMenu();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -60,13 +60,20 @@
             rBAnalysis.FlatAppearance.BorderSize = 0;
             rBAnalysis.FlatStyle = FlatStyle.Flat;
             rBAnalysis.ForeColor = Color.SaddleBrown;
-            rBAnalysis.Location = new Point(3, 748);
+            rBAnalysis.Location = new Point(-1, 808);
             rBAnalysis.Name = "rBAnalysis";
             rBAnalysis.Size = new Size(479, 100);
             rBAnalysis.TabIndex = 5;
             rBAnalysis.Text = "Data Analysis";
             rBAnalysis.TextColor = Color.SaddleBrown;
             rBAnalysis.UseVisualStyleBackColor = false;
+            // 
+            // ucProduct
+            // 
+            ucProduct.Location = new Point(-10, 557);
+            ucProduct.Name = "ucProduct";
+            ucProduct.Size = new Size(504, 481);
+            ucProduct.TabIndex = 4;
             // 
             // rButton1
             // 
@@ -78,7 +85,7 @@
             rButton1.FlatAppearance.BorderSize = 0;
             rButton1.FlatStyle = FlatStyle.Flat;
             rButton1.ForeColor = Color.SaddleBrown;
-            rButton1.Location = new Point(3, 130);
+            rButton1.Location = new Point(-1, 190);
             rButton1.Name = "rButton1";
             rButton1.Size = new Size(479, 100);
             rButton1.TabIndex = 3;
@@ -88,18 +95,11 @@
             // 
             // ucOrder
             // 
-            ucOrder.Location = new Point(-6, 261);
+            ucOrder.Location = new Point(-10, 321);
             ucOrder.Name = "ucOrder";
             ucOrder.Size = new Size(504, 481);
             ucOrder.TabIndex = 2;
             ucOrder.Load += ucDropDownMenu1_Load;
-            // 
-            // ucProduct
-            // 
-            ucProduct.Location = new Point(-6, 497);
-            ucProduct.Name = "ucProduct";
-            ucProduct.Size = new Size(504, 481);
-            ucProduct.TabIndex = 4;
             // 
             // FSellermanagement
             // 
