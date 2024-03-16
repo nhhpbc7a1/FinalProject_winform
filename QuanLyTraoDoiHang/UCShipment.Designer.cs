@@ -34,9 +34,11 @@
             pictureBox1 = new PictureBox();
             dUDStatusShipment = new DomainUpDown();
             checkBox1 = new CheckBox();
-            dUDTypeOfShip = new DomainUpDown();
+            dUDType = new DomainUpDown();
             panel1 = new Panel();
             lblProductName = new Label();
+            lblEstimateddate = new Label();
+            lblWriteDate = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -52,7 +54,7 @@
             rBDelete.FlatStyle = FlatStyle.Flat;
             rBDelete.Font = new Font("Segoe UI", 11.1F, FontStyle.Bold, GraphicsUnit.Point);
             rBDelete.ForeColor = Color.Black;
-            rBDelete.Location = new Point(1255, 95);
+            rBDelete.Location = new Point(1248, 83);
             rBDelete.Name = "rBDelete";
             rBDelete.Size = new Size(146, 99);
             rBDelete.TabIndex = 14;
@@ -96,6 +98,7 @@
             dUDStatusShipment.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             dUDStatusShipment.Location = new Point(574, 109);
             dUDStatusShipment.Name = "dUDStatusShipment";
+            dUDStatusShipment.ReadOnly = true;
             dUDStatusShipment.Size = new Size(300, 52);
             dUDStatusShipment.TabIndex = 15;
             dUDStatusShipment.Text = "(Status)";
@@ -109,14 +112,15 @@
             checkBox1.TabIndex = 16;
             checkBox1.UseVisualStyleBackColor = true;
             // 
-            // dUDTypeOfShip
+            // dUDType
             // 
-            dUDTypeOfShip.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            dUDTypeOfShip.Location = new Point(893, 109);
-            dUDTypeOfShip.Name = "dUDTypeOfShip";
-            dUDTypeOfShip.Size = new Size(339, 52);
-            dUDTypeOfShip.TabIndex = 17;
-            dUDTypeOfShip.Text = "(TypeOfShipment)";
+            dUDType.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            dUDType.Location = new Point(893, 109);
+            dUDType.Name = "dUDType";
+            dUDType.ReadOnly = true;
+            dUDType.Size = new Size(339, 52);
+            dUDType.TabIndex = 17;
+            dUDType.Text = "(TypeOfShipment)";
             // 
             // panel1
             // 
@@ -138,13 +142,34 @@
             lblProductName.TabIndex = 11;
             lblProductName.Text = "(name)";
             // 
+            // lblEstimateddate
+            // 
+            lblEstimateddate.AutoSize = true;
+            lblEstimateddate.Location = new Point(538, 179);
+            lblEstimateddate.Name = "lblEstimateddate";
+            lblEstimateddate.Size = new Size(230, 41);
+            lblEstimateddate.TabIndex = 19;
+            lblEstimateddate.Text = "Estimated date: ";
+            // 
+            // lblWriteDate
+            // 
+            lblWriteDate.AutoSize = true;
+            lblWriteDate.Font = new Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point);
+            lblWriteDate.Location = new Point(756, 179);
+            lblWriteDate.Name = "lblWriteDate";
+            lblWriteDate.Size = new Size(93, 41);
+            lblWriteDate.TabIndex = 20;
+            lblWriteDate.Text = "(date)";
+            // 
             // UCShipment
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(244, 237, 204);
+            Controls.Add(lblWriteDate);
+            Controls.Add(lblEstimateddate);
             Controls.Add(panel1);
-            Controls.Add(dUDTypeOfShip);
+            Controls.Add(dUDType);
             Controls.Add(checkBox1);
             Controls.Add(dUDStatusShipment);
             Controls.Add(rBDelete);
@@ -152,6 +177,7 @@
             Controls.Add(lblPPrice);
             Name = "UCShipment";
             Size = new Size(1431, 274);
+            Load += UCShipment_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -161,14 +187,16 @@
 
         #endregion
 
-        private RJControls.RButton rBDelete;
-        private CheckBox cBCart;
-        private Label lblPPrice;
-        private PictureBox pictureBox1;
-        private DomainUpDown dUDStatusShipment;
-        private CheckBox checkBox1;
-        private DomainUpDown dUDTypeOfShip;
-        private Panel panel1;
-        private Label lblProductName;
+        public RJControls.RButton rBDelete;
+        public CheckBox cBCart;
+        public Label lblPPrice;
+        public PictureBox pictureBox1;
+        public DomainUpDown dUDStatusShipment;
+        public CheckBox checkBox1;
+        public DomainUpDown dUDType;
+        public Panel panel1;
+        public Label lblProductName;
+        public Label lblEstimateddate;
+        public Label lblWriteDate;
     }
 }

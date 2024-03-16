@@ -1,6 +1,6 @@
 ﻿namespace QuanLyTraoDoiHang
 {
-    partial class FormMyShipment
+    partial class FCancellation
     {
         /// <summary>
         /// Required designer variable.
@@ -36,7 +36,6 @@
             lblAction = new Label();
             lblTotalPrice = new Label();
             chBProducts = new CheckBox();
-            rBUpdateShipment = new RJControls.RButton();
             pnlShipment.SuspendLayout();
             pnlMenu.SuspendLayout();
             SuspendLayout();
@@ -47,12 +46,11 @@
             pnlShipment.BackColor = Color.FromArgb(224, 224, 224);
             pnlShipment.BorderStyle = BorderStyle.FixedSingle;
             pnlShipment.Controls.Add(ucShipment1);
-            pnlShipment.Location = new Point(55, 196);
+            pnlShipment.Location = new Point(55, 176);
             pnlShipment.Margin = new Padding(6);
             pnlShipment.Name = "pnlShipment";
-            pnlShipment.Size = new Size(1575, 792);
-            pnlShipment.TabIndex = 16;
-            pnlShipment.Paint += pnlShipment_Paint;
+            pnlShipment.Size = new Size(1575, 915);
+            pnlShipment.TabIndex = 18;
             // 
             // ucShipment1
             // 
@@ -71,18 +69,18 @@
             pnlMenu.Controls.Add(lblAction);
             pnlMenu.Controls.Add(lblTotalPrice);
             pnlMenu.Controls.Add(chBProducts);
-            pnlMenu.Location = new Point(55, 55);
+            pnlMenu.Location = new Point(55, 35);
             pnlMenu.Margin = new Padding(2);
             pnlMenu.Name = "pnlMenu";
             pnlMenu.Size = new Size(1575, 85);
-            pnlMenu.TabIndex = 15;
+            pnlMenu.TabIndex = 17;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.Control;
-            label2.Location = new Point(1020, 14);
+            label2.Location = new Point(1070, 14);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
             label2.Size = new Size(106, 54);
@@ -137,39 +135,17 @@
             chBProducts.TabIndex = 12;
             chBProducts.Text = "Your Products";
             chBProducts.UseVisualStyleBackColor = true;
-            chBProducts.CheckedChanged += chBProducts_CheckedChanged;
             // 
-            // rBUpdateShipment
-            // 
-            rBUpdateShipment.BackColor = Color.LightCoral;
-            rBUpdateShipment.BackgroundColor = Color.LightCoral;
-            rBUpdateShipment.BorderColor = Color.PaleVioletRed;
-            rBUpdateShipment.BorderRadius = 20;
-            rBUpdateShipment.BorderSize = 0;
-            rBUpdateShipment.FlatAppearance.BorderSize = 0;
-            rBUpdateShipment.FlatStyle = FlatStyle.Flat;
-            rBUpdateShipment.Font = new Font("Segoe UI Black", 9.900001F, FontStyle.Bold, GraphicsUnit.Point);
-            rBUpdateShipment.ForeColor = Color.White;
-            rBUpdateShipment.Location = new Point(1243, 1014);
-            rBUpdateShipment.Name = "rBUpdateShipment";
-            rBUpdateShipment.Size = new Size(375, 100);
-            rBUpdateShipment.TabIndex = 17;
-            rBUpdateShipment.Text = "Update";
-            rBUpdateShipment.TextColor = Color.White;
-            rBUpdateShipment.UseVisualStyleBackColor = false;
-            // 
-            // FormMyShipment
+            // FCancellation
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(164, 206, 149);
             ClientSize = new Size(1684, 1126);
-            Controls.Add(rBUpdateShipment);
             Controls.Add(pnlShipment);
             Controls.Add(pnlMenu);
-            ForeColor = SystemColors.ActiveCaptionText;
-            Name = "FormMyShipment";
-            Text = "FormMyShipment";
+            Name = "FCancellation";
+            Text = "FCancellation";
             pnlShipment.ResumeLayout(false);
             pnlMenu.ResumeLayout(false);
             pnlMenu.PerformLayout();
@@ -179,13 +155,12 @@
         #endregion
 
         private Panel pnlShipment;
+        private UCShipment ucShipment1;
         private Panel pnlMenu;
+        private Label label2;
         private Label label1;
         private Label lblAction;
         private Label lblTotalPrice;
         private CheckBox chBProducts;
-        private UCShipment ucShipment1;
-        private Label label2;
-        private RJControls.RButton rBUpdateShipment;
     }
 }
