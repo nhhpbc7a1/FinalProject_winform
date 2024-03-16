@@ -26,5 +26,10 @@ namespace QuanLyTraoDoiHang
         {
 
         }
+
+        private void UCShipment_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

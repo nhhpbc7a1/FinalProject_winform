@@ -16,15 +16,23 @@ namespace QuanLyTraoDoiHang
         public FSellermanagement()
         {
             InitializeComponent();
-
             OpenChildForm(new FormMyShipment());
+            this.ucOrder.rButton1.Click += rButton1_Product_Click;
+            this.ucOrder.rButton2.Click += rButton2_Product_Click;
         }
 
         private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {
 
         }
-
+        private void rButton1_Product_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormMyOrder());
+        }
+        private void rButton2_Product_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FCancellation());
+        }
         private void FSellermanagement_Load(object sender, EventArgs e)
         {
 
@@ -57,7 +65,7 @@ namespace QuanLyTraoDoiHang
 
         private void rButton1_Click(object sender, EventArgs e)
         {
-            
+            OpenChildForm(new FormMyShipment());
         }
         private Form currentFormChild;
         private void OpenChildForm(Form childForm)

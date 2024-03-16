@@ -1,6 +1,6 @@
 ﻿namespace QuanLyTraoDoiHang
 {
-    partial class FormMyShipment
+    partial class FormMyOrder
     {
         /// <summary>
         /// Required designer variable.
@@ -28,40 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pnlShipment = new Panel();
-            ucShipment1 = new UCShipment();
             pnlMenu = new Panel();
-            label2 = new Label();
             label1 = new Label();
             lblAction = new Label();
             lblTotalPrice = new Label();
             chBProducts = new CheckBox();
-            rBUpdateShipment = new RJControls.RButton();
-            pnlShipment.SuspendLayout();
+            pnlShipment = new Panel();
+            ucShipment1 = new UCShipment();
+            label2 = new Label();
             pnlMenu.SuspendLayout();
+            pnlShipment.SuspendLayout();
             SuspendLayout();
-            // 
-            // pnlShipment
-            // 
-            pnlShipment.AutoScroll = true;
-            pnlShipment.BackColor = Color.FromArgb(224, 224, 224);
-            pnlShipment.BorderStyle = BorderStyle.FixedSingle;
-            pnlShipment.Controls.Add(ucShipment1);
-            pnlShipment.Location = new Point(55, 196);
-            pnlShipment.Margin = new Padding(6);
-            pnlShipment.Name = "pnlShipment";
-            pnlShipment.Size = new Size(1575, 792);
-            pnlShipment.TabIndex = 16;
-            pnlShipment.Paint += pnlShipment_Paint;
-            // 
-            // ucShipment1
-            // 
-            ucShipment1.BackColor = Color.FromArgb(244, 237, 204);
-            ucShipment1.Location = new Point(32, 49);
-            ucShipment1.Name = "ucShipment1";
-            ucShipment1.Size = new Size(1482, 304);
-            ucShipment1.TabIndex = 0;
-            ucShipment1.Load += ucShipment1_Load;
             // 
             // pnlMenu
             // 
@@ -71,30 +48,18 @@
             pnlMenu.Controls.Add(lblAction);
             pnlMenu.Controls.Add(lblTotalPrice);
             pnlMenu.Controls.Add(chBProducts);
-            pnlMenu.Location = new Point(55, 55);
+            pnlMenu.Location = new Point(58, 67);
             pnlMenu.Margin = new Padding(2);
             pnlMenu.Name = "pnlMenu";
             pnlMenu.Size = new Size(1575, 85);
-            pnlMenu.TabIndex = 15;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = SystemColors.Control;
-            label2.Location = new Point(1020, 14);
-            label2.Margin = new Padding(2, 0, 2, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(106, 54);
-            label2.TabIndex = 18;
-            label2.Text = "Type";
+            pnlMenu.TabIndex = 17;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(779, 14);
+            label1.Location = new Point(688, 14);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(131, 54);
@@ -106,7 +71,7 @@
             lblAction.AutoSize = true;
             lblAction.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblAction.ForeColor = SystemColors.Control;
-            lblAction.Location = new Point(1294, 14);
+            lblAction.Location = new Point(1327, 14);
             lblAction.Margin = new Padding(2, 0, 2, 0);
             lblAction.Name = "lblAction";
             lblAction.Size = new Size(154, 54);
@@ -118,7 +83,7 @@
             lblTotalPrice.AutoSize = true;
             lblTotalPrice.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblTotalPrice.ForeColor = SystemColors.Control;
-            lblTotalPrice.Location = new Point(470, 14);
+            lblTotalPrice.Location = new Point(421, 18);
             lblTotalPrice.Margin = new Padding(2, 0, 2, 0);
             lblTotalPrice.Name = "lblTotalPrice";
             lblTotalPrice.Size = new Size(203, 54);
@@ -137,55 +102,64 @@
             chBProducts.TabIndex = 12;
             chBProducts.Text = "Your Products";
             chBProducts.UseVisualStyleBackColor = true;
-            chBProducts.CheckedChanged += chBProducts_CheckedChanged;
             // 
-            // rBUpdateShipment
+            // pnlShipment
             // 
-            rBUpdateShipment.BackColor = Color.LightCoral;
-            rBUpdateShipment.BackgroundColor = Color.LightCoral;
-            rBUpdateShipment.BorderColor = Color.PaleVioletRed;
-            rBUpdateShipment.BorderRadius = 20;
-            rBUpdateShipment.BorderSize = 0;
-            rBUpdateShipment.FlatAppearance.BorderSize = 0;
-            rBUpdateShipment.FlatStyle = FlatStyle.Flat;
-            rBUpdateShipment.Font = new Font("Segoe UI Black", 9.900001F, FontStyle.Bold, GraphicsUnit.Point);
-            rBUpdateShipment.ForeColor = Color.White;
-            rBUpdateShipment.Location = new Point(1243, 1014);
-            rBUpdateShipment.Name = "rBUpdateShipment";
-            rBUpdateShipment.Size = new Size(375, 100);
-            rBUpdateShipment.TabIndex = 17;
-            rBUpdateShipment.Text = "Update";
-            rBUpdateShipment.TextColor = Color.White;
-            rBUpdateShipment.UseVisualStyleBackColor = false;
+            pnlShipment.AutoScroll = true;
+            pnlShipment.BackColor = Color.FromArgb(224, 224, 224);
+            pnlShipment.BorderStyle = BorderStyle.FixedSingle;
+            pnlShipment.Controls.Add(ucShipment1);
+            pnlShipment.Location = new Point(58, 208);
+            pnlShipment.Margin = new Padding(6);
+            pnlShipment.Name = "pnlShipment";
+            pnlShipment.Size = new Size(1575, 915);
+            pnlShipment.TabIndex = 18;
             // 
-            // FormMyShipment
+            // ucShipment1
+            // 
+            ucShipment1.BackColor = Color.FromArgb(244, 237, 204);
+            ucShipment1.Location = new Point(32, 40);
+            ucShipment1.Name = "ucShipment1";
+            ucShipment1.Size = new Size(1524, 262);
+            ucShipment1.TabIndex = 0;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = SystemColors.Control;
+            label2.Location = new Point(1066, 14);
+            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(106, 54);
+            label2.TabIndex = 19;
+            label2.Text = "Type";
+            // 
+            // FormMyOrder
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(164, 206, 149);
             ClientSize = new Size(1684, 1126);
-            Controls.Add(rBUpdateShipment);
-            Controls.Add(pnlShipment);
             Controls.Add(pnlMenu);
-            ForeColor = SystemColors.ActiveCaptionText;
-            Name = "FormMyShipment";
-            Text = "FormMyShipment";
-            pnlShipment.ResumeLayout(false);
+            Controls.Add(pnlShipment);
+            Name = "FormMyOrder";
+            Text = "FormMyOrder";
             pnlMenu.ResumeLayout(false);
             pnlMenu.PerformLayout();
+            pnlShipment.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel pnlShipment;
         private Panel pnlMenu;
         private Label label1;
         private Label lblAction;
         private Label lblTotalPrice;
         private CheckBox chBProducts;
+        private Panel pnlShipment;
         private UCShipment ucShipment1;
         private Label label2;
-        private RJControls.RButton rBUpdateShipment;
     }
 }
