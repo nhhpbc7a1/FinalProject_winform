@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            rBDelete = new RJControls.RButton();
             cBCart = new CheckBox();
             lblPPrice = new Label();
             pictureBox1 = new PictureBox();
@@ -41,28 +40,10 @@
             lblWriteDate = new Label();
             lblOrderBy = new Label();
             lblOrderCode = new Label();
+            rBCancel = new RJControls.RButton();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
-            // 
-            // rBDelete
-            // 
-            rBDelete.BackColor = Color.LightCoral;
-            rBDelete.BackgroundColor = Color.LightCoral;
-            rBDelete.BorderColor = Color.PaleVioletRed;
-            rBDelete.BorderRadius = 20;
-            rBDelete.BorderSize = 0;
-            rBDelete.FlatAppearance.BorderSize = 0;
-            rBDelete.FlatStyle = FlatStyle.Flat;
-            rBDelete.Font = new Font("Segoe UI", 11.1F, FontStyle.Bold, GraphicsUnit.Point);
-            rBDelete.ForeColor = Color.Black;
-            rBDelete.Location = new Point(1248, 83);
-            rBDelete.Name = "rBDelete";
-            rBDelete.Size = new Size(146, 99);
-            rBDelete.TabIndex = 14;
-            rBDelete.Text = "Cancel";
-            rBDelete.TextColor = Color.Black;
-            rBDelete.UseVisualStyleBackColor = false;
             // 
             // cBCart
             // 
@@ -181,11 +162,31 @@
             lblOrderCode.TabIndex = 22;
             lblOrderCode.Text = "(order code)";
             // 
+            // rBCancel
+            // 
+            rBCancel.BackColor = Color.LightCoral;
+            rBCancel.BackgroundColor = Color.LightCoral;
+            rBCancel.BorderColor = Color.PaleVioletRed;
+            rBCancel.BorderRadius = 20;
+            rBCancel.BorderSize = 0;
+            rBCancel.FlatAppearance.BorderSize = 0;
+            rBCancel.FlatStyle = FlatStyle.Flat;
+            rBCancel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            rBCancel.ForeColor = Color.White;
+            rBCancel.Location = new Point(1251, 84);
+            rBCancel.Name = "rBCancel";
+            rBCancel.Size = new Size(161, 100);
+            rBCancel.TabIndex = 23;
+            rBCancel.Text = "Cancel";
+            rBCancel.TextColor = Color.White;
+            rBCancel.UseVisualStyleBackColor = false;
+            // 
             // UCShipment
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(244, 237, 204);
+            Controls.Add(rBCancel);
             Controls.Add(lblOrderCode);
             Controls.Add(lblOrderBy);
             Controls.Add(lblWriteDate);
@@ -194,7 +195,6 @@
             Controls.Add(dUDType);
             Controls.Add(checkBox1);
             Controls.Add(dUDStatusShipment);
-            Controls.Add(rBDelete);
             Controls.Add(cBCart);
             Controls.Add(lblPPrice);
             Name = "UCShipment";
@@ -222,5 +222,6 @@
         public Label lblWriteDate;
         private Label lblOrderBy;
         private Label lblOrderCode;
+        private RJControls.RButton rBCancel;
     }
 }

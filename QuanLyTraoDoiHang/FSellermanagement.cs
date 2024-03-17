@@ -70,7 +70,7 @@ namespace QuanLyTraoDoiHang
             this.ucProduct.rButton1.Text = "My Product";
             this.ucProduct.rButton2.Text = "Add New Products";
             this.ucProduct.rButton3.Visible = false;
-            
+
         }
 
         private void rButton1_Click(object sender, EventArgs e)
@@ -100,6 +100,9 @@ namespace QuanLyTraoDoiHang
 
         }
 
-       
+        private void rBAnalysis_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FAnalysis());
+        }
     }
 }
