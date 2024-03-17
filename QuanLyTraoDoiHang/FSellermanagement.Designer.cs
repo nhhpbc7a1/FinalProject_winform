@@ -68,6 +68,7 @@
             rBAnalysis.Text = "Data Analysis";
             rBAnalysis.TextColor = Color.SaddleBrown;
             rBAnalysis.UseVisualStyleBackColor = false;
+            rBAnalysis.Click += rBAnalysis_Click;
             // 
             // ucProduct
             // 

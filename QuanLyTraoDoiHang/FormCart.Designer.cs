@@ -54,10 +54,10 @@
             pnlMenu.Controls.Add(lblAction);
             pnlMenu.Controls.Add(lblTotalPrice);
             pnlMenu.Controls.Add(chBProducts);
-            pnlMenu.Location = new Point(102, 68);
+            pnlMenu.Location = new Point(58, 61);
             pnlMenu.Margin = new Padding(2);
             pnlMenu.Name = "pnlMenu";
-            pnlMenu.Size = new Size(1853, 82);
+            pnlMenu.Size = new Size(1574, 82);
             pnlMenu.TabIndex = 11;
             // 
             // label1
@@ -65,7 +65,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(1177, 14);
+            label1.Location = new Point(934, 11);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(131, 54);
@@ -78,7 +78,7 @@
             lblAction.AutoSize = true;
             lblAction.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblAction.ForeColor = SystemColors.Control;
-            lblAction.Location = new Point(1528, 14);
+            lblAction.Location = new Point(1268, 11);
             lblAction.Margin = new Padding(2, 0, 2, 0);
             lblAction.Name = "lblAction";
             lblAction.Size = new Size(154, 54);
@@ -91,7 +91,7 @@
             lblTotalPrice.AutoSize = true;
             lblTotalPrice.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblTotalPrice.ForeColor = SystemColors.Control;
-            lblTotalPrice.Location = new Point(774, 14);
+            lblTotalPrice.Location = new Point(638, 11);
             lblTotalPrice.Margin = new Padding(2, 0, 2, 0);
             lblTotalPrice.Name = "lblTotalPrice";
             lblTotalPrice.Size = new Size(203, 54);
@@ -124,7 +124,7 @@
             pnlCheckOut.Location = new Point(0, 920);
             pnlCheckOut.Margin = new Padding(2);
             pnlCheckOut.Name = "pnlCheckOut";
-            pnlCheckOut.Size = new Size(2072, 222);
+            pnlCheckOut.Size = new Size(1732, 222);
             pnlCheckOut.TabIndex = 12;
             // 
             // rBCheckout
@@ -138,7 +138,7 @@
             rBCheckout.FlatStyle = FlatStyle.Flat;
             rBCheckout.Font = new Font("Segoe UI", 11.1F, FontStyle.Bold, GraphicsUnit.Point);
             rBCheckout.ForeColor = Color.Black;
-            rBCheckout.Location = new Point(1641, 62);
+            rBCheckout.Location = new Point(1310, 60);
             rBCheckout.Name = "rBCheckout";
             rBCheckout.Size = new Size(270, 100);
             rBCheckout.TabIndex = 10;
@@ -151,7 +151,7 @@
             lblCheckOutPrice.AutoSize = true;
             lblCheckOutPrice.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             lblCheckOutPrice.ForeColor = SystemColors.ButtonHighlight;
-            lblCheckOutPrice.Location = new Point(1472, 86);
+            lblCheckOutPrice.Location = new Point(992, 84);
             lblCheckOutPrice.Name = "lblCheckOutPrice";
             lblCheckOutPrice.Size = new Size(81, 54);
             lblCheckOutPrice.TabIndex = 22;
@@ -162,7 +162,7 @@
             lblItemWriting.AutoSize = true;
             lblItemWriting.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             lblItemWriting.ForeColor = SystemColors.ButtonHighlight;
-            lblItemWriting.Location = new Point(900, 84);
+            lblItemWriting.Location = new Point(613, 86);
             lblItemWriting.Name = "lblItemWriting";
             lblItemWriting.Size = new Size(46, 54);
             lblItemWriting.TabIndex = 21;
@@ -173,7 +173,7 @@
             lblPriceCheckOut.AutoSize = true;
             lblPriceCheckOut.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblPriceCheckOut.ForeColor = SystemColors.Control;
-            lblPriceCheckOut.Location = new Point(1213, 86);
+            lblPriceCheckOut.Location = new Point(757, 86);
             lblPriceCheckOut.Margin = new Padding(2, 0, 2, 0);
             lblPriceCheckOut.Name = "lblPriceCheckOut";
             lblPriceCheckOut.Size = new Size(230, 54);
@@ -185,7 +185,7 @@
             lblItemsCart.AutoSize = true;
             lblItemsCart.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblItemsCart.ForeColor = SystemColors.Control;
-            lblItemsCart.Location = new Point(622, 86);
+            lblItemsCart.Location = new Point(315, 82);
             lblItemsCart.Margin = new Padding(2, 0, 2, 0);
             lblItemsCart.Name = "lblItemsCart";
             lblItemsCart.Size = new Size(273, 54);
@@ -198,7 +198,7 @@
             cBPay.AutoSize = true;
             cBPay.Font = new Font("Segoe UI", 11.1F, FontStyle.Bold, GraphicsUnit.Point);
             cBPay.ForeColor = Color.Bisque;
-            cBPay.Location = new Point(151, 86);
+            cBPay.Location = new Point(40, 84);
             cBPay.Name = "cBPay";
             cBPay.Size = new Size(222, 54);
             cBPay.TabIndex = 0;
@@ -211,10 +211,10 @@
             panel1.BackColor = Color.FromArgb(224, 224, 224);
             panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(ucCartProduct1);
-            panel1.Location = new Point(102, 209);
+            panel1.Location = new Point(58, 205);
             panel1.Margin = new Padding(6);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1841, 877);
+            panel1.Size = new Size(1574, 877);
             panel1.TabIndex = 14;
             // 
             // ucCartProduct1
@@ -223,7 +223,7 @@
             ucCartProduct1.Location = new Point(48, 44);
             ucCartProduct1.Margin = new Padding(2);
             ucCartProduct1.Name = "ucCartProduct1";
-            ucCartProduct1.Size = new Size(1720, 229);
+            ucCartProduct1.Size = new Size(1473, 229);
             ucCartProduct1.TabIndex = 0;
             // 
             // FormCart
@@ -231,7 +231,7 @@
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(164, 206, 149);
-            ClientSize = new Size(2060, 1134);
+            ClientSize = new Size(1684, 1126);
             Controls.Add(pnlCheckOut);
             Controls.Add(pnlMenu);
             Controls.Add(panel1);
