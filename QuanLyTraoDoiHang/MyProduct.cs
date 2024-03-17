@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace QuanLyTraoDoiHang
 {
-    public partial class FormMyOrder : Form
+    public partial class MyProduct : Form
     {
-        public FormMyOrder()
+        public MyProduct()
         {
             InitializeComponent();
-        }
-
-        private void ucShipment1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
