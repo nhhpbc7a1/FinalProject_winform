@@ -1,6 +1,6 @@
 ﻿namespace QuanLyTraoDoiHang
 {
-    partial class FormMyOrder
+    partial class FReturn
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
+            pnlShipment = new Panel();
+            ucShipment1 = new UCShipment();
             pnlMenu = new Panel();
             label2 = new Label();
             label1 = new Label();
             lblAction = new Label();
             lblTotalPrice = new Label();
             chBProducts = new CheckBox();
-            pnlShipment = new Panel();
-            ucShipment1 = new UCShipment();
-            pnlMenu.SuspendLayout();
             pnlShipment.SuspendLayout();
+            pnlMenu.SuspendLayout();
             SuspendLayout();
+            // 
+            // pnlShipment
+            // 
+            pnlShipment.AutoScroll = true;
+            pnlShipment.BackColor = Color.FromArgb(224, 224, 224);
+            pnlShipment.BorderStyle = BorderStyle.FixedSingle;
+            pnlShipment.Controls.Add(ucShipment1);
+            pnlShipment.Location = new Point(55, 176);
+            pnlShipment.Margin = new Padding(6);
+            pnlShipment.Name = "pnlShipment";
+            pnlShipment.Size = new Size(1575, 915);
+            pnlShipment.TabIndex = 20;
+            // 
+            // ucShipment1
+            // 
+            ucShipment1.BackColor = Color.FromArgb(244, 237, 204);
+            ucShipment1.Location = new Point(46, 48);
+            ucShipment1.Name = "ucShipment1";
+            ucShipment1.Size = new Size(1482, 304);
+            ucShipment1.TabIndex = 0;
+            ucShipment1.Load += ucShipment1_Load;
             // 
             // pnlMenu
             // 
@@ -48,22 +69,22 @@
             pnlMenu.Controls.Add(lblAction);
             pnlMenu.Controls.Add(lblTotalPrice);
             pnlMenu.Controls.Add(chBProducts);
-            pnlMenu.Location = new Point(58, 67);
+            pnlMenu.Location = new Point(55, 35);
             pnlMenu.Margin = new Padding(2);
             pnlMenu.Name = "pnlMenu";
             pnlMenu.Size = new Size(1575, 85);
-            pnlMenu.TabIndex = 17;
+            pnlMenu.TabIndex = 19;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.Control;
-            label2.Location = new Point(1051, 18);
+            label2.Location = new Point(1028, 14);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
             label2.Size = new Size(106, 54);
-            label2.TabIndex = 19;
+            label2.TabIndex = 18;
             label2.Text = "Type";
             // 
             // label1
@@ -71,7 +92,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(702, 15);
+            label1.Location = new Point(704, 18);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(131, 54);
@@ -83,7 +104,7 @@
             lblAction.AutoSize = true;
             lblAction.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblAction.ForeColor = SystemColors.Control;
-            lblAction.Location = new Point(1327, 14);
+            lblAction.Location = new Point(1269, 18);
             lblAction.Margin = new Padding(2, 0, 2, 0);
             lblAction.Name = "lblAction";
             lblAction.Size = new Size(154, 54);
@@ -95,7 +116,7 @@
             lblTotalPrice.AutoSize = true;
             lblTotalPrice.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblTotalPrice.ForeColor = SystemColors.Control;
-            lblTotalPrice.Location = new Point(421, 18);
+            lblTotalPrice.Location = new Point(405, 15);
             lblTotalPrice.Margin = new Padding(2, 0, 2, 0);
             lblTotalPrice.Name = "lblTotalPrice";
             lblTotalPrice.Size = new Size(203, 54);
@@ -115,51 +136,31 @@
             chBProducts.Text = "Your Products";
             chBProducts.UseVisualStyleBackColor = true;
             // 
-            // pnlShipment
-            // 
-            pnlShipment.AutoScroll = true;
-            pnlShipment.BackColor = Color.FromArgb(224, 224, 224);
-            pnlShipment.BorderStyle = BorderStyle.FixedSingle;
-            pnlShipment.Controls.Add(ucShipment1);
-            pnlShipment.Location = new Point(58, 208);
-            pnlShipment.Margin = new Padding(6);
-            pnlShipment.Name = "pnlShipment";
-            pnlShipment.Size = new Size(1575, 915);
-            pnlShipment.TabIndex = 18;
-            // 
-            // ucShipment1
-            // 
-            ucShipment1.BackColor = Color.FromArgb(244, 237, 204);
-            ucShipment1.Location = new Point(32, 46);
-            ucShipment1.Name = "ucShipment1";
-            ucShipment1.Size = new Size(1482, 304);
-            ucShipment1.TabIndex = 1;
-            // 
-            // FormMyOrder
+            // FReturn
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(164, 206, 149);
             ClientSize = new Size(1684, 1126);
-            Controls.Add(pnlMenu);
             Controls.Add(pnlShipment);
-            Name = "FormMyOrder";
-            Text = "FormMyOrder";
+            Controls.Add(pnlMenu);
+            Name = "FReturn";
+            Text = "FReturn";
+            pnlShipment.ResumeLayout(false);
             pnlMenu.ResumeLayout(false);
             pnlMenu.PerformLayout();
-            pnlShipment.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
+        private Panel pnlShipment;
+        private UCShipment ucShipment1;
         private Panel pnlMenu;
+        private Label label2;
         private Label label1;
         private Label lblAction;
         private Label lblTotalPrice;
         private CheckBox chBProducts;
-        private Panel pnlShipment;
-        private Label label2;
-        private UCShipment ucShipment1;
     }
 }

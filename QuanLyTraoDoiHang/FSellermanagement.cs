@@ -17,21 +17,31 @@ namespace QuanLyTraoDoiHang
         {
             InitializeComponent();
             OpenChildForm(new FormMyShipment());
-            this.ucOrder.rButton1.Click += rButton1_Product_Click;
-            this.ucOrder.rButton2.Click += rButton2_Product_Click;
+            this.ucOrder.rButton1.Click += rButton1_Order_Click;
+            this.ucOrder.rButton2.Click += rButton2_Order_Click;
+            this.ucOrder.rButton3.Click += rButton3_Order_Click;
+            this.ucProduct.rButton1.Click += rButton1_Product_Click;
         }
 
         private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {
 
         }
-        private void rButton1_Product_Click(object sender, EventArgs e)
+        private void rButton1_Order_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormMyOrder());
         }
-        private void rButton2_Product_Click(object sender, EventArgs e)
+        private void rButton2_Order_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FCancellation());
+        }
+        private void rButton3_Order_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FReturn());
+        }
+        private void rButton1_Product_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new MyProduct());
         }
         private void FSellermanagement_Load(object sender, EventArgs e)
         {

@@ -28,34 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lblPStatus = new Label();
             lblPPrice = new Label();
             cBCart = new CheckBox();
             rBDelete = new RJControls.RButton();
             panel1 = new Panel();
             lblProductName = new Label();
             pictureBox1 = new PictureBox();
+            dUDStatusShipment = new DomainUpDown();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // lblPStatus
-            // 
-            lblPStatus.AutoSize = true;
-            lblPStatus.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            lblPStatus.Location = new Point(1142, 94);
-            lblPStatus.Margin = new Padding(2, 0, 2, 0);
-            lblPStatus.Name = "lblPStatus";
-            lblPStatus.Size = new Size(108, 46);
-            lblPStatus.TabIndex = 6;
-            lblPStatus.Text = "status";
-            lblPStatus.Click += lblPStatus_Click;
             // 
             // lblPPrice
             // 
             lblPPrice.AutoSize = true;
             lblPPrice.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            lblPPrice.Location = new Point(783, 94);
+            lblPPrice.Location = new Point(639, 94);
             lblPPrice.Margin = new Padding(2, 0, 2, 0);
             lblPPrice.Name = "lblPPrice";
             lblPPrice.Size = new Size(94, 46);
@@ -82,7 +70,7 @@
             rBDelete.FlatStyle = FlatStyle.Flat;
             rBDelete.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
             rBDelete.ForeColor = Color.Black;
-            rBDelete.Location = new Point(1449, 66);
+            rBDelete.Location = new Point(1201, 66);
             rBDelete.Name = "rBDelete";
             rBDelete.Size = new Size(197, 100);
             rBDelete.TabIndex = 9;
@@ -119,19 +107,29 @@
             pictureBox1.TabIndex = 10;
             pictureBox1.TabStop = false;
             // 
+            // dUDStatusShipment
+            // 
+            dUDStatusShipment.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            dUDStatusShipment.Location = new Point(801, 92);
+            dUDStatusShipment.Name = "dUDStatusShipment";
+            dUDStatusShipment.ReadOnly = true;
+            dUDStatusShipment.Size = new Size(300, 52);
+            dUDStatusShipment.TabIndex = 16;
+            dUDStatusShipment.Text = "(Status)";
+            // 
             // UCCartProduct
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(244, 237, 204);
+            Controls.Add(dUDStatusShipment);
             Controls.Add(panel1);
             Controls.Add(rBDelete);
             Controls.Add(cBCart);
-            Controls.Add(lblPStatus);
             Controls.Add(lblPPrice);
             Margin = new Padding(2);
             Name = "UCCartProduct";
-            Size = new Size(1703, 234);
+            Size = new Size(1431, 227);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -140,12 +138,12 @@
         }
 
         #endregion
-        private Label lblPStatus;
         private Label lblPPrice;
         private CheckBox cBCart;
         private RJControls.RButton rBDelete;
         private Panel panel1;
         private Label lblProductName;
         private PictureBox pictureBox1;
+        public DomainUpDown dUDStatusShipment;
     }
 }

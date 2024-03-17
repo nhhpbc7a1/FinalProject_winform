@@ -39,6 +39,8 @@
             lblProductName = new Label();
             lblEstimateddate = new Label();
             lblWriteDate = new Label();
+            lblOrderBy = new Label();
+            lblOrderCode = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -75,7 +77,7 @@
             // 
             lblPPrice.AutoSize = true;
             lblPPrice.Font = new Font("Segoe UI", 9.900001F, FontStyle.Regular, GraphicsUnit.Point);
-            lblPPrice.Location = new Point(456, 106);
+            lblPPrice.Location = new Point(416, 106);
             lblPPrice.Margin = new Padding(2, 0, 2, 0);
             lblPPrice.Name = "lblPPrice";
             lblPPrice.Size = new Size(94, 46);
@@ -120,7 +122,7 @@
             dUDType.ReadOnly = true;
             dUDType.Size = new Size(339, 52);
             dUDType.TabIndex = 17;
-            dUDType.Text = "(TypeOfShipment)";
+            dUDType.Text = "(Type)";
             // 
             // panel1
             // 
@@ -161,11 +163,31 @@
             lblWriteDate.TabIndex = 20;
             lblWriteDate.Text = "(date)";
             // 
+            // lblOrderBy
+            // 
+            lblOrderBy.AutoSize = true;
+            lblOrderBy.Location = new Point(81, 254);
+            lblOrderBy.Name = "lblOrderBy";
+            lblOrderBy.Size = new Size(151, 41);
+            lblOrderBy.TabIndex = 21;
+            lblOrderBy.Text = "Order by: ";
+            // 
+            // lblOrderCode
+            // 
+            lblOrderCode.AutoSize = true;
+            lblOrderCode.Location = new Point(238, 254);
+            lblOrderCode.Name = "lblOrderCode";
+            lblOrderCode.Size = new Size(182, 41);
+            lblOrderCode.TabIndex = 22;
+            lblOrderCode.Text = "(order code)";
+            // 
             // UCShipment
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(244, 237, 204);
+            Controls.Add(lblOrderCode);
+            Controls.Add(lblOrderBy);
             Controls.Add(lblWriteDate);
             Controls.Add(lblEstimateddate);
             Controls.Add(panel1);
@@ -176,7 +198,7 @@
             Controls.Add(cBCart);
             Controls.Add(lblPPrice);
             Name = "UCShipment";
-            Size = new Size(1431, 274);
+            Size = new Size(1431, 305);
             Load += UCShipment_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
@@ -198,5 +220,7 @@
         public Label lblProductName;
         public Label lblEstimateddate;
         public Label lblWriteDate;
+        private Label lblOrderBy;
+        private Label lblOrderCode;
     }
 }
