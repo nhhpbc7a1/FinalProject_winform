@@ -130,8 +130,7 @@
             // 
             // FSellermanagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(984, 661);
             this.Controls.Add(this.pnlSellerTool);
             this.Controls.Add(this.panel2);
