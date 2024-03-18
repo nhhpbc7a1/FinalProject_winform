@@ -35,8 +35,8 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.dtBirthday = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -45,7 +45,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.rButton2 = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.btnRegister = new QuanLyTraoDoiHang.RJControls.RButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -137,32 +137,33 @@
             this.dtBirthday.TabIndex = 15;
             this.dtBirthday.ValueChanged += new System.EventHandler(this.dtBirthday_ValueChanged);
             // 
-            // textBox1
+            // txtID
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(58, 217);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "  ID number";
-            this.textBox1.Size = new System.Drawing.Size(306, 29);
-            this.textBox1.TabIndex = 14;
+            this.txtID.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txtID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtID.Location = new System.Drawing.Point(58, 217);
+            this.txtID.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtID.Name = "txtID";
+            this.txtID.PlaceholderText = "  ID number";
+            this.txtID.Size = new System.Drawing.Size(306, 29);
+            this.txtID.TabIndex = 14;
             // 
-            // textBox2
+            // txtUsername
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(58, 95);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PlaceholderText = "  Username";
-            this.textBox2.Size = new System.Drawing.Size(306, 29);
-            this.textBox2.TabIndex = 2;
+            this.txtUsername.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtUsername.Location = new System.Drawing.Point(58, 95);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.PlaceholderText = "  Username";
+            this.txtUsername.Size = new System.Drawing.Size(306, 29);
+            this.txtUsername.TabIndex = 2;
             // 
             // panel3
             // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.pictureBox3);
@@ -171,14 +172,14 @@
             this.panel3.Controls.Add(this.pictureBox4);
             this.panel3.Controls.Add(this.pictureBox5);
             this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.txtID);
             this.panel3.Controls.Add(this.txtRetypePass);
             this.panel3.Controls.Add(this.dtBirthday);
             this.panel3.Controls.Add(this.txtPass);
             this.panel3.Controls.Add(this.txtEmail);
-            this.panel3.Controls.Add(this.rButton2);
+            this.panel3.Controls.Add(this.btnRegister);
             this.panel3.Controls.Add(this.txtPhone);
-            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.txtUsername);
             this.panel3.Controls.Add(this.lblBirthday);
             this.panel3.Location = new System.Drawing.Point(494, 23);
             this.panel3.Name = "panel3";
@@ -262,24 +263,24 @@
             this.pictureBox2.TabIndex = 19;
             this.pictureBox2.TabStop = false;
             // 
-            // rButton2
+            // btnRegister
             // 
-            this.rButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(150)))), ((int)(((byte)(166)))));
-            this.rButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(150)))), ((int)(((byte)(166)))));
-            this.rButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rButton2.BorderRadius = 20;
-            this.rButton2.BorderSize = 0;
-            this.rButton2.FlatAppearance.BorderSize = 0;
-            this.rButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rButton2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rButton2.ForeColor = System.Drawing.Color.White;
-            this.rButton2.Location = new System.Drawing.Point(57, 536);
-            this.rButton2.Name = "rButton2";
-            this.rButton2.Size = new System.Drawing.Size(306, 40);
-            this.rButton2.TabIndex = 16;
-            this.rButton2.Text = "Register";
-            this.rButton2.TextColor = System.Drawing.Color.White;
-            this.rButton2.UseVisualStyleBackColor = false;
+            this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(150)))), ((int)(((byte)(166)))));
+            this.btnRegister.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(150)))), ((int)(((byte)(166)))));
+            this.btnRegister.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnRegister.BorderRadius = 20;
+            this.btnRegister.BorderSize = 0;
+            this.btnRegister.FlatAppearance.BorderSize = 0;
+            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegister.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnRegister.ForeColor = System.Drawing.Color.White;
+            this.btnRegister.Location = new System.Drawing.Point(57, 536);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(306, 40);
+            this.btnRegister.TabIndex = 16;
+            this.btnRegister.Text = "Register";
+            this.btnRegister.TextColor = System.Drawing.Color.White;
+            this.btnRegister.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -302,6 +303,7 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label1);
@@ -353,7 +355,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Regisiter";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -381,10 +382,10 @@
         private TextBox txtEmail;
         private TextBox txtPhone;
         private DateTimePicker dtBirthday;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtID;
+        private TextBox txtUsername;
         private Panel panel3;
-        private RJControls.RButton rButton2;
+        private RJControls.RButton btnRegister;
         private Label label3;
         private Label label2;
         private Panel panel1;
