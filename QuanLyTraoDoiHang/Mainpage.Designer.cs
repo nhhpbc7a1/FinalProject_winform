@@ -31,260 +31,257 @@ namespace QuanLyTraoDoiHang
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mainpage));
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCart = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btnMainPage = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.label5 = new System.Windows.Forms.Label();
-            this.btnSearch = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.rButton3 = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.lblSignin = new System.Windows.Forms.Label();
-            this.lblSignup = new System.Windows.Forms.Label();
-            this.lblSellerChannel = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pnl_Body = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.SuspendLayout();
+            comboBox1 = new ComboBox();
+            panel1 = new Panel();
+            btnCart = new RJControls.RButton();
+            panel5 = new Panel();
+            btnMainPage = new RJControls.RButton();
+            label5 = new Label();
+            btnSearch = new RJControls.RButton();
+            rButton3 = new RJControls.RButton();
+            lblSignin = new Label();
+            lblSignup = new Label();
+            lblSellerChannel = new Label();
+            panel2 = new Panel();
+            panel3 = new Panel();
+            panel4 = new Panel();
+            pnl_Body = new Panel();
+            panel1.SuspendLayout();
+            panel5.SuspendLayout();
+            panel2.SuspendLayout();
+            panel3.SuspendLayout();
+            panel4.SuspendLayout();
+            SuspendLayout();
             // 
             // comboBox1
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.comboBox1.DropDownWidth = 498;
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "totoro model",
-            "susuwatari model",
-            "snow ball"});
-            this.comboBox1.Location = new System.Drawing.Point(254, 13);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(406, 29);
-            this.comboBox1.TabIndex = 0;
+            comboBox1.Anchor = AnchorStyles.None;
+            comboBox1.BackColor = SystemColors.Window;
+            comboBox1.DropDownWidth = 498;
+            comboBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            comboBox1.ForeColor = SystemColors.InfoText;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "totoro model", "susuwatari model", "snow ball" });
+            comboBox1.Location = new Point(254, 13);
+            comboBox1.Margin = new Padding(6, 3, 6, 3);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(406, 36);
+            comboBox1.TabIndex = 0;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(242)))), ((int)(((byte)(176)))));
-            this.panel1.Controls.Add(this.btnCart);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.btnSearch);
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 45);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(982, 55);
-            this.panel1.TabIndex = 10;
+            panel1.BackColor = Color.FromArgb(193, 242, 176);
+            panel1.Controls.Add(btnCart);
+            panel1.Controls.Add(panel5);
+            panel1.Controls.Add(btnSearch);
+            panel1.Controls.Add(comboBox1);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 45);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(982, 55);
+            panel1.TabIndex = 10;
             // 
             // btnCart
             // 
-            this.btnCart.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(242)))), ((int)(((byte)(176)))));
-            this.btnCart.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(242)))), ((int)(((byte)(176)))));
-            this.btnCart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCart.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
-            this.btnCart.BorderRadius = 20;
-            this.btnCart.BorderSize = 0;
-            this.btnCart.FlatAppearance.BorderSize = 0;
-            this.btnCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCart.ForeColor = System.Drawing.Color.White;
-            this.btnCart.Image = ((System.Drawing.Image)(resources.GetObject("btnCart.Image")));
-            this.btnCart.Location = new System.Drawing.Point(776, 7);
-            this.btnCart.Name = "btnCart";
-            this.btnCart.Size = new System.Drawing.Size(59, 43);
-            this.btnCart.TabIndex = 3;
-            this.btnCart.TextColor = System.Drawing.Color.White;
-            this.btnCart.UseVisualStyleBackColor = false;
-            this.btnCart.Click += new System.EventHandler(this.btnCart_Click);
+            btnCart.Anchor = AnchorStyles.None;
+            btnCart.BackColor = Color.FromArgb(193, 242, 176);
+            btnCart.BackgroundColor = Color.FromArgb(193, 242, 176);
+            btnCart.BackgroundImageLayout = ImageLayout.Stretch;
+            btnCart.BorderColor = Color.FromArgb(244, 237, 204);
+            btnCart.BorderRadius = 20;
+            btnCart.BorderSize = 0;
+            btnCart.FlatAppearance.BorderSize = 0;
+            btnCart.FlatStyle = FlatStyle.Flat;
+            btnCart.ForeColor = Color.White;
+            btnCart.Image = (Image)resources.GetObject("btnCart.Image");
+            btnCart.Location = new Point(776, 7);
+            btnCart.Name = "btnCart";
+            btnCart.Size = new Size(59, 43);
+            btnCart.TabIndex = 3;
+            btnCart.TextColor = Color.White;
+            btnCart.UseVisualStyleBackColor = false;
+            btnCart.Click += btnCart_Click;
             // 
             // panel5
             // 
-            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel5.Controls.Add(this.btnMainPage);
-            this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(111, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(134, 55);
-            this.panel5.TabIndex = 1;
+            panel5.Anchor = AnchorStyles.None;
+            panel5.Controls.Add(btnMainPage);
+            panel5.Controls.Add(label5);
+            panel5.Location = new Point(111, 0);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(134, 55);
+            panel5.TabIndex = 1;
             // 
             // btnMainPage
             // 
-            this.btnMainPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(242)))), ((int)(((byte)(176)))));
-            this.btnMainPage.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(242)))), ((int)(((byte)(176)))));
-            this.btnMainPage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMainPage.BackgroundImage")));
-            this.btnMainPage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMainPage.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
-            this.btnMainPage.BorderRadius = 20;
-            this.btnMainPage.BorderSize = 0;
-            this.btnMainPage.FlatAppearance.BorderSize = 0;
-            this.btnMainPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMainPage.ForeColor = System.Drawing.Color.White;
-            this.btnMainPage.Location = new System.Drawing.Point(6, 2);
-            this.btnMainPage.Name = "btnMainPage";
-            this.btnMainPage.Size = new System.Drawing.Size(68, 50);
-            this.btnMainPage.TabIndex = 0;
-            this.btnMainPage.TextColor = System.Drawing.Color.White;
-            this.btnMainPage.UseVisualStyleBackColor = false;
-            this.btnMainPage.Click += new System.EventHandler(this.btnMainPage_Click);
+            btnMainPage.BackColor = Color.FromArgb(193, 242, 176);
+            btnMainPage.BackgroundColor = Color.FromArgb(193, 242, 176);
+            btnMainPage.BackgroundImage = (Image)resources.GetObject("btnMainPage.BackgroundImage");
+            btnMainPage.BackgroundImageLayout = ImageLayout.Stretch;
+            btnMainPage.BorderColor = Color.FromArgb(244, 237, 204);
+            btnMainPage.BorderRadius = 20;
+            btnMainPage.BorderSize = 0;
+            btnMainPage.FlatAppearance.BorderSize = 0;
+            btnMainPage.FlatStyle = FlatStyle.Flat;
+            btnMainPage.ForeColor = Color.White;
+            btnMainPage.Location = new Point(6, 2);
+            btnMainPage.Name = "btnMainPage";
+            btnMainPage.Size = new Size(68, 50);
+            btnMainPage.TabIndex = 0;
+            btnMainPage.TextColor = Color.White;
+            btnMainPage.UseVisualStyleBackColor = false;
+            btnMainPage.Click += btnMainPage_Click;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
-            this.label5.Location = new System.Drawing.Point(71, 17);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 21);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "KoHa";
+            label5.AutoSize = true;
+            label5.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.ForeColor = Color.FromArgb(30, 106, 17);
+            label5.Location = new Point(71, 17);
+            label5.Name = "label5";
+            label5.Size = new Size(63, 23);
+            label5.TabIndex = 1;
+            label5.Text = "KoHa";
             // 
             // btnSearch
             // 
-            this.btnSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(149)))), ((int)(((byte)(210)))));
-            this.btnSearch.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(149)))), ((int)(((byte)(210)))));
-            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSearch.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnSearch.BorderRadius = 5;
-            this.btnSearch.BorderSize = 0;
-            this.btnSearch.FlatAppearance.BorderSize = 0;
-            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
-            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearch.Location = new System.Drawing.Point(669, 10);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(101, 32);
-            this.btnSearch.TabIndex = 19;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSearch.TextColor = System.Drawing.Color.White;
-            this.btnSearch.UseVisualStyleBackColor = false;
+            btnSearch.Anchor = AnchorStyles.None;
+            btnSearch.BackColor = Color.FromArgb(104, 149, 210);
+            btnSearch.BackgroundColor = Color.FromArgb(104, 149, 210);
+            btnSearch.BackgroundImageLayout = ImageLayout.Stretch;
+            btnSearch.BorderColor = Color.PaleVioletRed;
+            btnSearch.BorderRadius = 5;
+            btnSearch.BorderSize = 0;
+            btnSearch.FlatAppearance.BorderSize = 0;
+            btnSearch.FlatStyle = FlatStyle.Flat;
+            btnSearch.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSearch.ForeColor = Color.White;
+            btnSearch.Image = (Image)resources.GetObject("btnSearch.Image");
+            btnSearch.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSearch.Location = new Point(669, 10);
+            btnSearch.Name = "btnSearch";
+            btnSearch.Size = new Size(101, 32);
+            btnSearch.TabIndex = 19;
+            btnSearch.Text = "Search";
+            btnSearch.TextAlign = ContentAlignment.MiddleRight;
+            btnSearch.TextColor = Color.White;
+            btnSearch.UseVisualStyleBackColor = false;
             // 
             // rButton3
             // 
-            this.rButton3.BackColor = System.Drawing.Color.YellowGreen;
-            this.rButton3.BackgroundColor = System.Drawing.Color.YellowGreen;
-            this.rButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rButton3.BorderRadius = 20;
-            this.rButton3.BorderSize = 0;
-            this.rButton3.FlatAppearance.BorderSize = 0;
-            this.rButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rButton3.ForeColor = System.Drawing.Color.White;
-            this.rButton3.Location = new System.Drawing.Point(537, 1);
-            this.rButton3.Name = "rButton3";
-            this.rButton3.Size = new System.Drawing.Size(88, 40);
-            this.rButton3.TabIndex = 0;
-            this.rButton3.Text = "account";
-            this.rButton3.TextColor = System.Drawing.Color.White;
-            this.rButton3.UseVisualStyleBackColor = false;
-            this.rButton3.Click += new System.EventHandler(this.rButton3_Click);
+            rButton3.BackColor = Color.YellowGreen;
+            rButton3.BackgroundColor = Color.YellowGreen;
+            rButton3.BorderColor = Color.PaleVioletRed;
+            rButton3.BorderRadius = 20;
+            rButton3.BorderSize = 0;
+            rButton3.FlatAppearance.BorderSize = 0;
+            rButton3.FlatStyle = FlatStyle.Flat;
+            rButton3.ForeColor = Color.White;
+            rButton3.Location = new Point(537, 1);
+            rButton3.Name = "rButton3";
+            rButton3.Size = new Size(88, 40);
+            rButton3.TabIndex = 0;
+            rButton3.Text = "account";
+            rButton3.TextColor = Color.White;
+            rButton3.UseVisualStyleBackColor = false;
+            rButton3.Click += rButton3_Click;
             // 
             // lblSignin
             // 
-            this.lblSignin.AutoSize = true;
-            this.lblSignin.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSignin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblSignin.Location = new System.Drawing.Point(136, 12);
-            this.lblSignin.Name = "lblSignin";
-            this.lblSignin.Size = new System.Drawing.Size(54, 20);
-            this.lblSignin.TabIndex = 14;
-            this.lblSignin.Text = "Sign in";
-            this.lblSignin.Click += new System.EventHandler(this.lblSignin_Click);
+            lblSignin.AutoSize = true;
+            lblSignin.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblSignin.ForeColor = SystemColors.ButtonHighlight;
+            lblSignin.Location = new Point(136, 12);
+            lblSignin.Name = "lblSignin";
+            lblSignin.Size = new Size(70, 25);
+            lblSignin.TabIndex = 14;
+            lblSignin.Text = "Sign in";
+            lblSignin.Click += lblSignin_Click;
             // 
             // lblSignup
             // 
-            this.lblSignup.AutoSize = true;
-            this.lblSignup.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSignup.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblSignup.Location = new System.Drawing.Point(224, 12);
-            this.lblSignup.Name = "lblSignup";
-            this.lblSignup.Size = new System.Drawing.Size(59, 20);
-            this.lblSignup.TabIndex = 15;
-            this.lblSignup.Text = "Sign up";
-            this.lblSignup.Click += new System.EventHandler(this.lblSignup_Click);
+            lblSignup.AutoSize = true;
+            lblSignup.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblSignup.ForeColor = SystemColors.ButtonHighlight;
+            lblSignup.Location = new Point(224, 12);
+            lblSignup.Name = "lblSignup";
+            lblSignup.Size = new Size(76, 25);
+            lblSignup.TabIndex = 15;
+            lblSignup.Text = "Sign up";
+            lblSignup.Click += lblSignup_Click;
             // 
             // lblSellerChannel
             // 
-            this.lblSellerChannel.AutoSize = true;
-            this.lblSellerChannel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSellerChannel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblSellerChannel.Location = new System.Drawing.Point(3, 12);
-            this.lblSellerChannel.Name = "lblSellerChannel";
-            this.lblSellerChannel.Size = new System.Drawing.Size(101, 20);
-            this.lblSellerChannel.TabIndex = 16;
-            this.lblSellerChannel.Text = "Seller channel";
-            this.lblSellerChannel.Click += new System.EventHandler(this.lblSellerChannel_Click);
+            lblSellerChannel.AutoSize = true;
+            lblSellerChannel.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblSellerChannel.ForeColor = SystemColors.ButtonHighlight;
+            lblSellerChannel.Location = new Point(3, 12);
+            lblSellerChannel.Name = "lblSellerChannel";
+            lblSellerChannel.Size = new Size(131, 25);
+            lblSellerChannel.TabIndex = 16;
+            lblSellerChannel.Text = "Seller channel";
+            lblSellerChannel.Click += lblSellerChannel_Click;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
-            this.panel2.Controls.Add(this.rButton3);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(982, 45);
-            this.panel2.TabIndex = 14;
+            panel2.BackColor = Color.FromArgb(101, 183, 65);
+            panel2.Controls.Add(rButton3);
+            panel2.Controls.Add(panel3);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(982, 45);
+            panel2.TabIndex = 14;
             // 
             // panel3
             // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
-            this.panel3.Controls.Add(this.lblSignup);
-            this.panel3.Controls.Add(this.lblSignin);
-            this.panel3.Controls.Add(this.lblSellerChannel);
-            this.panel3.Location = new System.Drawing.Point(674, 1);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(307, 44);
-            this.panel3.TabIndex = 17;
+            panel3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            panel3.BackColor = Color.FromArgb(101, 183, 65);
+            panel3.Controls.Add(lblSignup);
+            panel3.Controls.Add(lblSignin);
+            panel3.Controls.Add(lblSellerChannel);
+            panel3.Location = new Point(674, 1);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(307, 44);
+            panel3.TabIndex = 17;
+            panel3.Paint += panel3_Paint;
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.panel1);
-            this.panel4.Controls.Add(this.panel2);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(982, 100);
-            this.panel4.TabIndex = 18;
+            panel4.Controls.Add(panel1);
+            panel4.Controls.Add(panel2);
+            panel4.Dock = DockStyle.Top;
+            panel4.Location = new Point(0, 0);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(982, 100);
+            panel4.TabIndex = 18;
             // 
             // pnl_Body
             // 
-            this.pnl_Body.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_Body.Location = new System.Drawing.Point(0, 100);
-            this.pnl_Body.Name = "pnl_Body";
-            this.pnl_Body.Size = new System.Drawing.Size(982, 553);
-            this.pnl_Body.TabIndex = 19;
+            pnl_Body.Dock = DockStyle.Fill;
+            pnl_Body.Location = new Point(0, 100);
+            pnl_Body.Name = "pnl_Body";
+            pnl_Body.Size = new Size(982, 553);
+            pnl_Body.TabIndex = 19;
             // 
             // Mainpage
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(982, 653);
-            this.Controls.Add(this.pnl_Body);
-            this.Controls.Add(this.panel4);
-            this.Name = "Mainpage";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Mainpage";
-            this.panel1.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleMode = AutoScaleMode.None;
+            BackColor = SystemColors.Control;
+            ClientSize = new Size(982, 653);
+            Controls.Add(pnl_Body);
+            Controls.Add(panel4);
+            Name = "Mainpage";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Mainpage";
+            panel1.ResumeLayout(false);
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            panel4.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion
