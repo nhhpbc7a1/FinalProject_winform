@@ -44,8 +44,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.ucProductOnMainpage7 = new QuanLyTraoDoiHang.UCProductOnMainpage();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnApply = new QuanLyTraoDoiHang.RJControls.RButton();
@@ -215,8 +213,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.checkedListBox1);
-            this.panel2.Controls.Add(this.comboBox3);
             this.panel2.Controls.Add(this.comboBox2);
             this.panel2.Controls.Add(this.comboBox1);
             this.panel2.Controls.Add(this.btnApply);
@@ -237,72 +233,6 @@
             this.panel2.Size = new System.Drawing.Size(254, 561);
             this.panel2.TabIndex = 56;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(31, 337);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(134, 22);
-            this.checkedListBox1.TabIndex = 0;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "An Giang",
-            "Bạc Liêu",
-            "Bến Tre",
-            "Bình Định",
-            "Bình Thuận",
-            "Bà Rịa Vũng Tàu",
-            "Bình Dương",
-            "Bắc Ninh",
-            "Bình Phước",
-            "Cà Mau",
-            "Cần Thơ",
-            "Đắk Lắk",
-            "Đắk Nông",
-            "Đồng Tháp",
-            "Đồng Nai",
-            "Gia Lai",
-            "Hậu Giang",
-            "Hưng Yên",
-            "Hà Tĩnh",
-            "Hà Nam",
-            "Hải Dương",
-            "Kiên Giang",
-            "Kon Tum",
-            "Khánh Hòa",
-            "Long An",
-            "Lâm Đồng",
-            "Nghệ An",
-            "Nam Định",
-            "Ninh Thuận",
-            "Ninh Bình",
-            "Thành phố Đà Nẵng",
-            "Thanh Hóa",
-            "Thừa Thiên Huế",
-            "Thành phố Hải Phòng",
-            "Tiền Giang",
-            "Tây Ninh",
-            "Trà Vinh",
-            "Thái Bình",
-            "Sóc Trăng",
-            "Phú Yên",
-            "Quảng Nam",
-            "Quảng Ngãi",
-            "Quảng Bình",
-            "Quảng Trị",
-            "Vĩnh Phúc",
-            "Vĩnh Long"});
-            this.comboBox3.Location = new System.Drawing.Point(59, 302);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 29);
-            this.comboBox3.TabIndex = 57;
-            this.comboBox3.Text = "   Show more";
             // 
             // comboBox2
             // 
@@ -542,7 +472,5 @@
         private CheckBox checkBox4;
         private CheckBox checkBox6;
         private CheckBox checkBox5;
-        private ComboBox comboBox3;
-        private CheckedListBox checkedListBox1;
     }
 }

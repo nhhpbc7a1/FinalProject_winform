@@ -104,5 +104,11 @@ namespace QuanLyTraoDoiHang
         {
             OpenChildForm(new FAnalysis());
         }
+
+        private void rBAnalysis_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForm(new FAnalysis());
+
+        }
     }
 }

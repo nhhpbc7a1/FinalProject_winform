@@ -1,4 +1,5 @@
-﻿namespace QuanLyTraoDoiHang
+﻿
+namespace QuanLyTraoDoiHang
 {
     partial class FormCart
     {
@@ -50,16 +51,15 @@
             // 
             // pnlMenu
             // 
-            this.pnlMenu.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(150)))), ((int)(((byte)(166)))));
+            this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(149)))), ((int)(((byte)(210)))));
             this.pnlMenu.Controls.Add(this.label1);
             this.pnlMenu.Controls.Add(this.lblAction);
             this.pnlMenu.Controls.Add(this.lblTotalPrice);
             this.pnlMenu.Controls.Add(this.chBProducts);
-            this.pnlMenu.Location = new System.Drawing.Point(42, 25);
+            this.pnlMenu.Location = new System.Drawing.Point(24, 22);
             this.pnlMenu.Margin = new System.Windows.Forms.Padding(1);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(875, 30);
+            this.pnlMenu.Size = new System.Drawing.Size(939, 30);
             this.pnlMenu.TabIndex = 11;
             // 
             // label1
@@ -67,7 +67,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(504, 3);
+            this.label1.Location = new System.Drawing.Point(591, 5);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 21);
@@ -79,7 +79,7 @@
             this.lblAction.AutoSize = true;
             this.lblAction.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblAction.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblAction.Location = new System.Drawing.Point(739, 4);
+            this.lblAction.Location = new System.Drawing.Point(773, 5);
             this.lblAction.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblAction.Name = "lblAction";
             this.lblAction.Size = new System.Drawing.Size(61, 21);
@@ -91,7 +91,7 @@
             this.lblTotalPrice.AutoSize = true;
             this.lblTotalPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTotalPrice.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblTotalPrice.Location = new System.Drawing.Point(297, 4);
+            this.lblTotalPrice.Location = new System.Drawing.Point(336, 5);
             this.lblTotalPrice.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblTotalPrice.Name = "lblTotalPrice";
             this.lblTotalPrice.Size = new System.Drawing.Size(80, 21);
@@ -103,7 +103,7 @@
             this.chBProducts.AutoSize = true;
             this.chBProducts.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.chBProducts.ForeColor = System.Drawing.SystemColors.Control;
-            this.chBProducts.Location = new System.Drawing.Point(24, 3);
+            this.chBProducts.Location = new System.Drawing.Point(46, 4);
             this.chBProducts.Margin = new System.Windows.Forms.Padding(1);
             this.chBProducts.Name = "chBProducts";
             this.chBProducts.Size = new System.Drawing.Size(126, 25);
@@ -133,7 +133,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(664, 31);
+            this.label2.Location = new System.Drawing.Point(623, 31);
             this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(19, 21);
@@ -142,7 +142,6 @@
             // 
             // rBCheckout
             // 
-            this.rBCheckout.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rBCheckout.BackColor = System.Drawing.Color.LightCoral;
             this.rBCheckout.BackgroundColor = System.Drawing.Color.LightCoral;
             this.rBCheckout.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -151,41 +150,22 @@
             this.rBCheckout.FlatAppearance.BorderSize = 0;
             this.rBCheckout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rBCheckout.Font = new System.Drawing.Font("Segoe UI", 11.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rBCheckout.ForeColor = System.Drawing.Color.White;
-            this.rBCheckout.Location = new System.Drawing.Point(781, 23);
+            this.rBCheckout.ForeColor = System.Drawing.Color.Black;
+            this.rBCheckout.Location = new System.Drawing.Point(782, 24);
             this.rBCheckout.Margin = new System.Windows.Forms.Padding(1);
             this.rBCheckout.Name = "rBCheckout";
             this.rBCheckout.Size = new System.Drawing.Size(111, 37);
             this.rBCheckout.TabIndex = 10;
             this.rBCheckout.Text = "Check Out";
-            this.rBCheckout.TextColor = System.Drawing.Color.White;
+            this.rBCheckout.TextColor = System.Drawing.Color.Black;
             this.rBCheckout.UseVisualStyleBackColor = false;
-            // 
-            // rBCheckout
-            // 
-            rBCheckout.BackColor = Color.LightCoral;
-            rBCheckout.BackgroundColor = Color.LightCoral;
-            rBCheckout.BorderColor = Color.PaleVioletRed;
-            rBCheckout.BorderRadius = 20;
-            rBCheckout.BorderSize = 0;
-            rBCheckout.FlatAppearance.BorderSize = 0;
-            rBCheckout.FlatStyle = FlatStyle.Flat;
-            rBCheckout.Font = new Font("Segoe UI", 11.1F, FontStyle.Bold, GraphicsUnit.Point);
-            rBCheckout.ForeColor = Color.Black;
-            rBCheckout.Location = new Point(1310, 60);
-            rBCheckout.Name = "rBCheckout";
-            rBCheckout.Size = new Size(270, 100);
-            rBCheckout.TabIndex = 10;
-            rBCheckout.Text = "Check Out";
-            rBCheckout.TextColor = Color.Black;
-            rBCheckout.UseVisualStyleBackColor = false;
             // 
             // lblCheckOutPrice
             // 
             this.lblCheckOutPrice.AutoSize = true;
             this.lblCheckOutPrice.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.lblCheckOutPrice.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblCheckOutPrice.Location = new System.Drawing.Point(685, 31);
+            this.lblCheckOutPrice.Location = new System.Drawing.Point(644, 31);
             this.lblCheckOutPrice.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblCheckOutPrice.Name = "lblCheckOutPrice";
             this.lblCheckOutPrice.Size = new System.Drawing.Size(23, 21);
@@ -197,7 +177,7 @@
             this.lblItemWriting.AutoSize = true;
             this.lblItemWriting.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.lblItemWriting.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblItemWriting.Location = new System.Drawing.Point(441, 31);
+            this.lblItemWriting.Location = new System.Drawing.Point(389, 31);
             this.lblItemWriting.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblItemWriting.Name = "lblItemWriting";
             this.lblItemWriting.Size = new System.Drawing.Size(19, 21);
@@ -206,11 +186,10 @@
             // 
             // lblPriceCheckOut
             // 
-            this.lblPriceCheckOut.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPriceCheckOut.AutoSize = true;
             this.lblPriceCheckOut.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblPriceCheckOut.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblPriceCheckOut.Location = new System.Drawing.Point(578, 31);
+            this.lblPriceCheckOut.Location = new System.Drawing.Point(534, 31);
             this.lblPriceCheckOut.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblPriceCheckOut.Name = "lblPriceCheckOut";
             this.lblPriceCheckOut.Size = new System.Drawing.Size(94, 21);
@@ -219,11 +198,10 @@
             // 
             // lblItemsCart
             // 
-            this.lblItemsCart.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblItemsCart.AutoSize = true;
             this.lblItemsCart.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblItemsCart.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblItemsCart.Location = new System.Drawing.Point(338, 30);
+            this.lblItemsCart.Location = new System.Drawing.Point(277, 31);
             this.lblItemsCart.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblItemsCart.Name = "lblItemsCart";
             this.lblItemsCart.Size = new System.Drawing.Size(110, 21);
@@ -232,11 +210,10 @@
             // 
             // cBPay
             // 
-            this.cBPay.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cBPay.AutoSize = true;
             this.cBPay.Font = new System.Drawing.Font("Segoe UI", 11.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cBPay.ForeColor = System.Drawing.Color.Bisque;
-            this.cBPay.Location = new System.Drawing.Point(66, 30);
+            this.cBPay.Location = new System.Drawing.Point(59, 31);
             this.cBPay.Margin = new System.Windows.Forms.Padding(1);
             this.cBPay.Name = "cBPay";
             this.cBPay.Size = new System.Drawing.Size(92, 24);
@@ -246,24 +223,23 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.ucCartProduct1);
-            this.panel1.Location = new System.Drawing.Point(42, 76);
+            this.panel1.Location = new System.Drawing.Point(24, 75);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(876, 322);
+            this.panel1.Size = new System.Drawing.Size(939, 386);
             this.panel1.TabIndex = 14;
             // 
             // ucCartProduct1
             // 
             this.ucCartProduct1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
-            this.ucCartProduct1.Location = new System.Drawing.Point(12, 12);
+            this.ucCartProduct1.Location = new System.Drawing.Point(34, 18);
             this.ucCartProduct1.Margin = new System.Windows.Forms.Padding(1);
             this.ucCartProduct1.Name = "ucCartProduct1";
-            this.ucCartProduct1.Size = new System.Drawing.Size(847, 104);
+            this.ucCartProduct1.Size = new System.Drawing.Size(870, 83);
             this.ucCartProduct1.TabIndex = 0;
             // 
             // FormCart
@@ -298,7 +274,6 @@
         private Label label1;
         private Panel pnlCheckOut;
         private Panel panel1;
-        private UCCartProduct ucCartProduct1;
         private CheckBox cBPay;
         private Label lblPriceCheckOut;
         private Label lblItemsCart;
@@ -306,5 +281,6 @@
         private Label lblCheckOutPrice;
         private RJControls.RButton rBCheckout;
         private Label label2;
+        private UCCartProduct ucCartProduct1;
     }
 }
