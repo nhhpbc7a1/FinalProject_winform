@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCDropDownMenu));
             fPanelDropDown = new FlowLayoutPanel();
             rBSelect = new RJControls.RButton();
@@ -36,7 +35,6 @@
             rButton1 = new RJControls.RButton();
             rButton2 = new RJControls.RButton();
             rButton3 = new RJControls.RButton();
-            timer1 = new System.Windows.Forms.Timer(components);
             fPanelDropDown.SuspendLayout();
             pnlOptions.SuspendLayout();
             SuspendLayout();
@@ -47,14 +45,16 @@
             fPanelDropDown.Controls.Add(rBSelect);
             fPanelDropDown.Controls.Add(pnlOptions);
             fPanelDropDown.Location = new Point(3, 0);
-            fPanelDropDown.MaximumSize = new Size(485, 230);
-            fPanelDropDown.MinimumSize = new Size(485, 230);
+            fPanelDropDown.MaximumSize = new Size(487, 600);
+            fPanelDropDown.MinimumSize = new Size(487, 100);
             fPanelDropDown.Name = "fPanelDropDown";
-            fPanelDropDown.Size = new Size(485, 230);
+            fPanelDropDown.Size = new Size(487, 464);
             fPanelDropDown.TabIndex = 0;
+            fPanelDropDown.Paint += fPanelDropDown_Paint;
             // 
             // rBSelect
             // 
+            rBSelect.AllowDrop = true;
             rBSelect.BackColor = Color.FromArgb(244, 237, 204);
             rBSelect.BackgroundColor = Color.FromArgb(244, 237, 204);
             rBSelect.BorderColor = Color.PaleVioletRed;
@@ -67,7 +67,7 @@
             rBSelect.ImageAlign = ContentAlignment.MiddleRight;
             rBSelect.Location = new Point(3, 3);
             rBSelect.Name = "rBSelect";
-            rBSelect.Size = new Size(480, 102);
+            rBSelect.Size = new Size(483, 102);
             rBSelect.TabIndex = 1;
             rBSelect.Text = "Select";
             rBSelect.TextColor = Color.SaddleBrown;
@@ -98,13 +98,14 @@
             rButton1.FlatStyle = FlatStyle.Flat;
             rButton1.ForeColor = Color.SaddleBrown;
             rButton1.ImageAlign = ContentAlignment.MiddleRight;
-            rButton1.Location = new Point(2, 13);
+            rButton1.Location = new Point(-6, 0);
             rButton1.Name = "rButton1";
             rButton1.Size = new Size(480, 102);
             rButton1.TabIndex = 2;
             rButton1.Text = "Select";
             rButton1.TextColor = Color.SaddleBrown;
             rButton1.UseVisualStyleBackColor = false;
+            rButton1.Click += rButton1_Click_1;
             // 
             // rButton2
             // 
@@ -117,13 +118,14 @@
             rButton2.FlatStyle = FlatStyle.Flat;
             rButton2.ForeColor = Color.SaddleBrown;
             rButton2.ImageAlign = ContentAlignment.MiddleRight;
-            rButton2.Location = new Point(2, 228);
+            rButton2.Location = new Point(-6, 108);
             rButton2.Name = "rButton2";
             rButton2.Size = new Size(480, 102);
             rButton2.TabIndex = 3;
             rButton2.Text = "Select";
             rButton2.TextColor = Color.SaddleBrown;
             rButton2.UseVisualStyleBackColor = false;
+            rButton2.Click += rButton2_Click;
             // 
             // rButton3
             // 
@@ -136,18 +138,14 @@
             rButton3.FlatStyle = FlatStyle.Flat;
             rButton3.ForeColor = Color.SaddleBrown;
             rButton3.ImageAlign = ContentAlignment.MiddleRight;
-            rButton3.Location = new Point(2, 121);
+            rButton3.Location = new Point(-6, 216);
             rButton3.Name = "rButton3";
             rButton3.Size = new Size(480, 102);
             rButton3.TabIndex = 4;
             rButton3.Text = "Select";
             rButton3.TextColor = Color.SaddleBrown;
             rButton3.UseVisualStyleBackColor = false;
-            // 
-            // timer1
-            // 
-            timer1.Interval = 1;
-            timer1.Tick += timer1_Tick;
+            rButton3.Click += rButton3_Click;
             // 
             // UCDropDownMenu
             // 
@@ -156,6 +154,7 @@
             Controls.Add(fPanelDropDown);
             Name = "UCDropDownMenu";
             Size = new Size(1235, 869);
+            Load += UCDropDownMenu_Load;
             fPanelDropDown.ResumeLayout(false);
             pnlOptions.ResumeLayout(false);
             ResumeLayout(false);
@@ -163,12 +162,11 @@
 
         #endregion
 
-        private FlowLayoutPanel fPanelDropDown;
-        private System.Windows.Forms.Timer timer1;
-        private RJControls.RButton rBSelect;
-        private RJControls.RButton rButton2;
-        private RJControls.RButton rButton3;
-        private Panel pnlOptions;
-        private RJControls.RButton rButton1;
+        public FlowLayoutPanel fPanelDropDown;
+        public RJControls.RButton rBSelect;
+        public RJControls.RButton rButton2;
+        public RJControls.RButton rButton3;
+        public Panel pnlOptions;
+        public RJControls.RButton rButton1;
     }
 }

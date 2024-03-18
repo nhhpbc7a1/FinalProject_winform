@@ -161,6 +161,25 @@
             this.rBCheckout.TextColor = System.Drawing.Color.White;
             this.rBCheckout.UseVisualStyleBackColor = false;
             // 
+            // rBCheckout
+            // 
+            rBCheckout.BackColor = Color.LightCoral;
+            rBCheckout.BackgroundColor = Color.LightCoral;
+            rBCheckout.BorderColor = Color.PaleVioletRed;
+            rBCheckout.BorderRadius = 20;
+            rBCheckout.BorderSize = 0;
+            rBCheckout.FlatAppearance.BorderSize = 0;
+            rBCheckout.FlatStyle = FlatStyle.Flat;
+            rBCheckout.Font = new Font("Segoe UI", 11.1F, FontStyle.Bold, GraphicsUnit.Point);
+            rBCheckout.ForeColor = Color.Black;
+            rBCheckout.Location = new Point(1310, 60);
+            rBCheckout.Name = "rBCheckout";
+            rBCheckout.Size = new Size(270, 100);
+            rBCheckout.TabIndex = 10;
+            rBCheckout.Text = "Check Out";
+            rBCheckout.TextColor = Color.Black;
+            rBCheckout.UseVisualStyleBackColor = false;
+            // 
             // lblCheckOutPrice
             // 
             this.lblCheckOutPrice.AutoSize = true;

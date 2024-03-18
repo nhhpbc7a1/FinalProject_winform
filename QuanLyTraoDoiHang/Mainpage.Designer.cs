@@ -68,7 +68,7 @@ namespace QuanLyTraoDoiHang
             this.comboBox1.Location = new System.Drawing.Point(254, 13);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(406, 29);
+            this.comboBox1.Size = new System.Drawing.Size(406, 36);
             this.comboBox1.TabIndex = 0;
             // 
             // panel1
@@ -142,7 +142,7 @@ namespace QuanLyTraoDoiHang
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
             this.label5.Location = new System.Drawing.Point(71, 17);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 21);
+            this.label5.Size = new System.Drawing.Size(63, 23);
             this.label5.TabIndex = 1;
             this.label5.Text = "KoHa";
             // 
@@ -187,7 +187,7 @@ namespace QuanLyTraoDoiHang
             this.rButton3.Text = "account";
             this.rButton3.TextColor = System.Drawing.Color.White;
             this.rButton3.UseVisualStyleBackColor = false;
-            this.rButton3.Click += new System.EventHandler(this.rButton3_Click);
+            this.rButton3.Click += new System.EventHandler(this.rButton3_Click_1);
             // 
             // lblSignin
             // 
@@ -264,7 +264,6 @@ namespace QuanLyTraoDoiHang
             this.pnl_Body.Name = "pnl_Body";
             this.pnl_Body.Size = new System.Drawing.Size(982, 553);
             this.pnl_Body.TabIndex = 19;
-            this.pnl_Body.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_Body_Paint);
             // 
             // Mainpage
             // 

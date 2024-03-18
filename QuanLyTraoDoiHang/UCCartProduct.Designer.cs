@@ -98,6 +98,45 @@
             this.rBDelete.TextColor = System.Drawing.Color.White;
             this.rBDelete.UseVisualStyleBackColor = false;
             // 
+            // panel1
+            // 
+            panel1.Controls.Add(lblProductName);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Location = new Point(111, 12);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(447, 200);
+            panel1.TabIndex = 19;
+            // 
+            // lblProductName
+            // 
+            lblProductName.AutoSize = true;
+            lblProductName.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lblProductName.Location = new Point(265, 82);
+            lblProductName.Name = "lblProductName";
+            lblProductName.Size = new Size(123, 46);
+            lblProductName.TabIndex = 11;
+            lblProductName.Text = "(name)";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = SystemColors.Control;
+            pictureBox1.Location = new Point(27, 16);
+            pictureBox1.Margin = new Padding(2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(192, 164);
+            pictureBox1.TabIndex = 10;
+            pictureBox1.TabStop = false;
+            // 
+            // dUDStatusShipment
+            // 
+            dUDStatusShipment.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            dUDStatusShipment.Location = new Point(801, 92);
+            dUDStatusShipment.Name = "dUDStatusShipment";
+            dUDStatusShipment.ReadOnly = true;
+            dUDStatusShipment.Size = new Size(300, 52);
+            dUDStatusShipment.TabIndex = 16;
+            dUDStatusShipment.Text = "(Status)";
+            // 
             // UCCartProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -118,10 +157,12 @@
         }
 
         #endregion
-        private Label lblPStatus;
         private Label lblPPrice;
-        private PictureBox pictureBox1;
         private CheckBox cBCart;
         private RJControls.RButton rBDelete;
+        private Panel panel1;
+        private Label lblProductName;
+        private PictureBox pictureBox1;
+        public DomainUpDown dUDStatusShipment;
     }
 }

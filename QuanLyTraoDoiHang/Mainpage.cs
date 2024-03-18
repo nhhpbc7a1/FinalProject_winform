@@ -18,15 +18,15 @@ namespace QuanLyTraoDoiHang
             OpenChildForm(new FormProduct());
         }
 
-       
+
         private void Mainpage_Load(object sender, EventArgs e)
         {
-           
+
         }
         private Form currentFormChild;
         private void OpenChildForm(Form childForm)
         {
-            if(currentFormChild != null)
+            if (currentFormChild != null)
             {
                 currentFormChild.Close();
             }
@@ -41,49 +41,56 @@ namespace QuanLyTraoDoiHang
             childForm.Show();
         }
 
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new FormCart());
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            Form form = new Form1();
-            form.ShowDialog();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-            Form form = new Regisiter();
-            form.ShowDialog();
-        }
 
         private void pnl_Body_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+
+        private void rButton1_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormProduct());
+
         }
 
-        private void rButton2_Click(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Form form = new FSellermanagement();
+            form.ShowDialog();
+        }
+
+        private void rButton2_Click_1(object sender, EventArgs e)
         {
             OpenChildForm(new FormCart());
-
         }
 
-        private void rButton3_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new PersonalInfor());
-        }
-
-        private void rButton4_Click(object sender, EventArgs e)
+        private void rButton4_Click_1(object sender, EventArgs e)
         {
             OpenChildForm(new FormProduct());
+        }
 
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+            Form form = new Form1();
+            form.ShowDialog();
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+            Form form = new Regisiter();
+            form.ShowDialog();
+
+        }
+
+        private void rButton3_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForm(new PersonalInfor());
         }
     }
 }
