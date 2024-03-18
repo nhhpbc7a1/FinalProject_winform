@@ -130,6 +130,7 @@ namespace QuanLyTraoDoiHang
             this.rButton4.TabIndex = 0;
             this.rButton4.TextColor = System.Drawing.Color.White;
             this.rButton4.UseVisualStyleBackColor = false;
+            this.rButton4.Click += new System.EventHandler(this.rButton4_Click_1);
             // 
             // label5
             // 
@@ -182,6 +183,7 @@ namespace QuanLyTraoDoiHang
             this.rButton3.Text = "account";
             this.rButton3.TextColor = System.Drawing.Color.White;
             this.rButton3.UseVisualStyleBackColor = false;
+            this.rButton3.Click += new System.EventHandler(this.rButton3_Click_1);
             // 
             // label1
             // 
@@ -193,6 +195,7 @@ namespace QuanLyTraoDoiHang
             this.label1.Size = new System.Drawing.Size(70, 25);
             this.label1.TabIndex = 14;
             this.label1.Text = "Sign in";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // label2
             // 
@@ -204,6 +207,7 @@ namespace QuanLyTraoDoiHang
             this.label2.Size = new System.Drawing.Size(76, 25);
             this.label2.TabIndex = 15;
             this.label2.Text = "Sign up";
+            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // label3
             // 
