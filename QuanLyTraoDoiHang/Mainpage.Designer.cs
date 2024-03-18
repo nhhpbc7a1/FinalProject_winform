@@ -68,7 +68,7 @@ namespace QuanLyTraoDoiHang
             this.comboBox1.Location = new System.Drawing.Point(254, 13);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(406, 36);
+            this.comboBox1.Size = new System.Drawing.Size(406, 29);
             this.comboBox1.TabIndex = 0;
             // 
             // panel1
@@ -103,7 +103,7 @@ namespace QuanLyTraoDoiHang
             this.btnCart.TabIndex = 3;
             this.btnCart.TextColor = System.Drawing.Color.White;
             this.btnCart.UseVisualStyleBackColor = false;
-            this.btnCart.Click += new System.EventHandler(this.rButton2_Click);
+            this.btnCart.Click += new System.EventHandler(this.btnCart_Click);
             // 
             // panel5
             // 
@@ -133,7 +133,7 @@ namespace QuanLyTraoDoiHang
             this.btnMainPage.TabIndex = 0;
             this.btnMainPage.TextColor = System.Drawing.Color.White;
             this.btnMainPage.UseVisualStyleBackColor = false;
-            this.btnMainPage.Click += new System.EventHandler(this.rButton4_Click);
+            this.btnMainPage.Click += new System.EventHandler(this.btnMainPage_Click);
             // 
             // label5
             // 
@@ -142,7 +142,7 @@ namespace QuanLyTraoDoiHang
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
             this.label5.Location = new System.Drawing.Point(71, 17);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 23);
+            this.label5.Size = new System.Drawing.Size(51, 21);
             this.label5.TabIndex = 1;
             this.label5.Text = "KoHa";
             // 
@@ -187,7 +187,7 @@ namespace QuanLyTraoDoiHang
             this.rButton3.Text = "account";
             this.rButton3.TextColor = System.Drawing.Color.White;
             this.rButton3.UseVisualStyleBackColor = false;
-            this.rButton3.Click += new System.EventHandler(this.rButton3_Click_1);
+            this.rButton3.Click += new System.EventHandler(this.rButton3_Click);
             // 
             // lblSignin
             // 
@@ -199,7 +199,7 @@ namespace QuanLyTraoDoiHang
             this.lblSignin.Size = new System.Drawing.Size(54, 20);
             this.lblSignin.TabIndex = 14;
             this.lblSignin.Text = "Sign in";
-            this.lblSignin.Click += new System.EventHandler(this.label1_Click);
+            this.lblSignin.Click += new System.EventHandler(this.lblSignin_Click);
             // 
             // lblSignup
             // 
@@ -211,7 +211,7 @@ namespace QuanLyTraoDoiHang
             this.lblSignup.Size = new System.Drawing.Size(59, 20);
             this.lblSignup.TabIndex = 15;
             this.lblSignup.Text = "Sign up";
-            this.lblSignup.Click += new System.EventHandler(this.label2_Click);
+            this.lblSignup.Click += new System.EventHandler(this.lblSignup_Click);
             // 
             // lblSellerChannel
             // 
@@ -223,6 +223,7 @@ namespace QuanLyTraoDoiHang
             this.lblSellerChannel.Size = new System.Drawing.Size(101, 20);
             this.lblSellerChannel.TabIndex = 16;
             this.lblSellerChannel.Text = "Seller channel";
+            this.lblSellerChannel.Click += new System.EventHandler(this.lblSellerChannel_Click);
             // 
             // panel2
             // 

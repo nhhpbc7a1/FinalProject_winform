@@ -29,76 +29,74 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCPasswordTextBox));
-            btnShow = new RJControls.RButton();
-            btnHide = new RJControls.RButton();
-            txtPass = new TextBox();
-            SuspendLayout();
+            this.btnShow = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.btnHide = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.txtPass = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
             // 
             // btnShow
             // 
-            btnShow.BackColor = SystemColors.Control;
-            btnShow.BackgroundColor = SystemColors.Control;
-            btnShow.BackgroundImage = (Image)resources.GetObject("btnShow.BackgroundImage");
-            btnShow.BackgroundImageLayout = ImageLayout.Stretch;
-            btnShow.BorderColor = Color.PaleVioletRed;
-            btnShow.BorderRadius = 0;
-            btnShow.BorderSize = 0;
-            btnShow.FlatAppearance.BorderSize = 0;
-            btnShow.FlatStyle = FlatStyle.Flat;
-            btnShow.ForeColor = Color.White;
-            btnShow.Location = new Point(108, 56);
-            btnShow.Name = "btnShow";
-            btnShow.Size = new Size(23, 21);
-            btnShow.TabIndex = 20;
-            btnShow.TextColor = Color.White;
-            btnShow.UseVisualStyleBackColor = false;
-            btnShow.Click += btnShow_Click;
+            this.btnShow.BackColor = System.Drawing.SystemColors.Control;
+            this.btnShow.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.btnShow.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnShow.BackgroundImage")));
+            this.btnShow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnShow.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnShow.BorderRadius = 0;
+            this.btnShow.BorderSize = 0;
+            this.btnShow.FlatAppearance.BorderSize = 0;
+            this.btnShow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShow.ForeColor = System.Drawing.Color.White;
+            this.btnShow.Location = new System.Drawing.Point(108, 56);
+            this.btnShow.Name = "btnShow";
+            this.btnShow.Size = new System.Drawing.Size(23, 21);
+            this.btnShow.TabIndex = 20;
+            this.btnShow.TextColor = System.Drawing.Color.White;
+            this.btnShow.UseVisualStyleBackColor = false;
             // 
             // btnHide
             // 
-            btnHide.BackColor = SystemColors.Control;
-            btnHide.BackgroundColor = SystemColors.Control;
-            btnHide.BackgroundImage = (Image)resources.GetObject("btnHide.BackgroundImage");
-            btnHide.BackgroundImageLayout = ImageLayout.Stretch;
-            btnHide.BorderColor = Color.PaleVioletRed;
-            btnHide.BorderRadius = 0;
-            btnHide.BorderSize = 0;
-            btnHide.FlatAppearance.BorderSize = 0;
-            btnHide.FlatStyle = FlatStyle.Flat;
-            btnHide.ForeColor = Color.White;
-            btnHide.Location = new Point(178, 48);
-            btnHide.Name = "btnHide";
-            btnHide.Size = new Size(23, 21);
-            btnHide.TabIndex = 19;
-            btnHide.TextColor = Color.White;
-            btnHide.UseVisualStyleBackColor = false;
-            btnHide.Click += btnHide_Click;
+            this.btnHide.BackColor = System.Drawing.SystemColors.Control;
+            this.btnHide.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.btnHide.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnHide.BackgroundImage")));
+            this.btnHide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnHide.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnHide.BorderRadius = 0;
+            this.btnHide.BorderSize = 0;
+            this.btnHide.FlatAppearance.BorderSize = 0;
+            this.btnHide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHide.ForeColor = System.Drawing.Color.White;
+            this.btnHide.Location = new System.Drawing.Point(178, 48);
+            this.btnHide.Name = "btnHide";
+            this.btnHide.Size = new System.Drawing.Size(23, 21);
+            this.btnHide.TabIndex = 19;
+            this.btnHide.TextColor = System.Drawing.Color.White;
+            this.btnHide.UseVisualStyleBackColor = false;
             // 
             // txtPass
             // 
-            txtPass.BackColor = SystemColors.Control;
-            txtPass.BorderStyle = BorderStyle.FixedSingle;
-            txtPass.Dock = DockStyle.Fill;
-            txtPass.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtPass.Location = new Point(0, 0);
-            txtPass.Name = "txtPass";
-            txtPass.PlaceholderText = "  Old password";
-            txtPass.Size = new Size(222, 61);
-            txtPass.TabIndex = 18;
-            txtPass.UseSystemPasswordChar = true;
+            this.txtPass.BackColor = System.Drawing.SystemColors.Control;
+            this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPass.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtPass.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPass.Location = new System.Drawing.Point(0, 0);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.PlaceholderText = "  Old password";
+            this.txtPass.Size = new System.Drawing.Size(222, 29);
+            this.txtPass.TabIndex = 18;
+            this.txtPass.UseSystemPasswordChar = true;
             // 
             // UCPasswordTextBox
             // 
-            AutoScaleMode = AutoScaleMode.None;
-            Controls.Add(btnHide);
-            Controls.Add(btnShow);
-            Controls.Add(txtPass);
-            Margin = new Padding(3, 2, 3, 2);
-            Name = "UCPasswordTextBox";
-            Size = new Size(222, 115);
-            Load += UCPasswordTextBox_Load;
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.btnHide);
+            this.Controls.Add(this.btnShow);
+            this.Controls.Add(this.txtPass);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "UCPasswordTextBox";
+            this.Size = new System.Drawing.Size(222, 115);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

@@ -28,113 +28,121 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            rBAnalysis = new RJControls.RButton();
-            ucProduct = new UCDropDownMenu();
-            rButton1 = new RJControls.RButton();
-            ucOrder = new UCDropDownMenu();
-            panel2 = new Panel();
-            pnlSellerTool = new Panel();
-            panel1.SuspendLayout();
-            SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.rBAnalysis = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.ucProduct = new QuanLyTraoDoiHang.UCDropDownMenu();
+            this.rButton1 = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.ucOrder = new QuanLyTraoDoiHang.UCDropDownMenu();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlSellerTool = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.SuspendLayout();
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(164, 206, 149);
-            panel1.Controls.Add(rBAnalysis);
-            panel1.Controls.Add(ucProduct);
-            panel1.Controls.Add(rButton1);
-            panel1.Controls.Add(ucOrder);
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(488, 1339);
-            panel1.TabIndex = 0;
-            panel1.Paint += panel1_Paint;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
+            this.panel1.Controls.Add(this.rBAnalysis);
+            this.panel1.Controls.Add(this.ucProduct);
+            this.panel1.Controls.Add(this.rButton1);
+            this.panel1.Controls.Add(this.ucOrder);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(198, 661);
+            this.panel1.TabIndex = 0;
             // 
             // rBAnalysis
             // 
-            rBAnalysis.BackColor = Color.FromArgb(244, 237, 204);
-            rBAnalysis.BackgroundColor = Color.FromArgb(244, 237, 204);
-            rBAnalysis.BorderColor = Color.PaleVioletRed;
-            rBAnalysis.BorderRadius = 0;
-            rBAnalysis.BorderSize = 0;
-            rBAnalysis.FlatAppearance.BorderSize = 0;
-            rBAnalysis.FlatStyle = FlatStyle.Flat;
-            rBAnalysis.ForeColor = Color.SaddleBrown;
-            rBAnalysis.Location = new Point(0, 933);
-            rBAnalysis.Name = "rBAnalysis";
-            rBAnalysis.Size = new Size(482, 100);
-            rBAnalysis.TabIndex = 5;
-            rBAnalysis.Text = "Data Analysis";
-            rBAnalysis.TextColor = Color.SaddleBrown;
-            rBAnalysis.UseVisualStyleBackColor = false;
-            rBAnalysis.Click += rBAnalysis_Click;
+            this.rBAnalysis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
+            this.rBAnalysis.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
+            this.rBAnalysis.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rBAnalysis.BorderRadius = 0;
+            this.rBAnalysis.BorderSize = 0;
+            this.rBAnalysis.FlatAppearance.BorderSize = 0;
+            this.rBAnalysis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rBAnalysis.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.rBAnalysis.Location = new System.Drawing.Point(0, 341);
+            this.rBAnalysis.Margin = new System.Windows.Forms.Padding(1);
+            this.rBAnalysis.Name = "rBAnalysis";
+            this.rBAnalysis.Size = new System.Drawing.Size(198, 37);
+            this.rBAnalysis.TabIndex = 5;
+            this.rBAnalysis.Text = "Data Analysis";
+            this.rBAnalysis.TextColor = System.Drawing.Color.SaddleBrown;
+            this.rBAnalysis.UseVisualStyleBackColor = false;
+            this.rBAnalysis.Click += new System.EventHandler(this.rBAnalysis_Click_1);
             // 
             // ucProduct
             // 
-            ucProduct.Location = new Point(-6, 676);
-            ucProduct.Name = "ucProduct";
-            ucProduct.Size = new Size(504, 260);
-            ucProduct.TabIndex = 4;
-            ucProduct.Load += ucProduct_Load;
+            this.ucProduct.Location = new System.Drawing.Point(-2, 247);
+            this.ucProduct.Margin = new System.Windows.Forms.Padding(0);
+            this.ucProduct.Name = "ucProduct";
+            this.ucProduct.Size = new System.Drawing.Size(201, 95);
+            this.ucProduct.TabIndex = 4;
             // 
             // rButton1
             // 
-            rButton1.BackColor = Color.FromArgb(244, 237, 204);
-            rButton1.BackgroundColor = Color.FromArgb(244, 237, 204);
-            rButton1.BorderColor = Color.PaleVioletRed;
-            rButton1.BorderRadius = 0;
-            rButton1.BorderSize = 0;
-            rButton1.FlatAppearance.BorderSize = 0;
-            rButton1.FlatStyle = FlatStyle.Flat;
-            rButton1.ForeColor = Color.SaddleBrown;
-            rButton1.Location = new Point(-2, 157);
-            rButton1.Name = "rButton1";
-            rButton1.Size = new Size(484, 100);
-            rButton1.TabIndex = 3;
-            rButton1.Text = "My Shipment";
-            rButton1.TextColor = Color.SaddleBrown;
-            rButton1.UseVisualStyleBackColor = false;
-            rButton1.Click += rButton1_Click;
+            this.rButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
+            this.rButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
+            this.rButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rButton1.BorderRadius = 0;
+            this.rButton1.BorderSize = 0;
+            this.rButton1.FlatAppearance.BorderSize = 0;
+            this.rButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rButton1.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.rButton1.Location = new System.Drawing.Point(-1, 57);
+            this.rButton1.Margin = new System.Windows.Forms.Padding(1);
+            this.rButton1.Name = "rButton1";
+            this.rButton1.Size = new System.Drawing.Size(199, 37);
+            this.rButton1.TabIndex = 3;
+            this.rButton1.Text = "My Shipment";
+            this.rButton1.TextColor = System.Drawing.Color.SaddleBrown;
+            this.rButton1.UseVisualStyleBackColor = false;
             // 
             // ucOrder
             // 
-            ucOrder.Location = new Point(-6, 408);
-            ucOrder.Name = "ucOrder";
-            ucOrder.Size = new Size(488, 378);
-            ucOrder.TabIndex = 2;
-            ucOrder.Load += ucDropDownMenu1_Load;
+            this.ucOrder.Location = new System.Drawing.Point(-2, 149);
+            this.ucOrder.Margin = new System.Windows.Forms.Padding(0);
+            this.ucOrder.Name = "ucOrder";
+            this.ucOrder.Size = new System.Drawing.Size(201, 138);
+            this.ucOrder.TabIndex = 2;
             // 
             // panel2
             // 
-            panel2.Dock = DockStyle.Left;
-            panel2.Location = new Point(0, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(482, 1335);
-            panel2.TabIndex = 1;
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(1);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(198, 661);
+            this.panel2.TabIndex = 1;
             // 
             // pnlSellerTool
             // 
-            pnlSellerTool.Dock = DockStyle.Fill;
-            pnlSellerTool.Location = new Point(482, 0);
-            pnlSellerTool.Name = "pnlSellerTool";
-            pnlSellerTool.Size = new Size(1706, 1335);
-            pnlSellerTool.TabIndex = 2;
-            pnlSellerTool.Paint += pnlSellerTool_Paint;
+            this.pnlSellerTool.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlSellerTool.Location = new System.Drawing.Point(198, 0);
+            this.pnlSellerTool.Margin = new System.Windows.Forms.Padding(1);
+            this.pnlSellerTool.Name = "pnlSellerTool";
+            this.pnlSellerTool.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.pnlSellerTool.Size = new System.Drawing.Size(786, 661);
+            this.pnlSellerTool.TabIndex = 2;
             // 
             // FSellermanagement
             // 
-            AutoScaleDimensions = new SizeF(17F, 41F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(2188, 1335);
-            Controls.Add(pnlSellerTool);
-            Controls.Add(panel1);
-            Controls.Add(panel2);
-            Name = "FSellermanagement";
-            Text = "FSellermanagement";
-            Load += FSellermanagement_Load;
-            panel1.ResumeLayout(false);
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(984, 661);
+            this.Controls.Add(this.pnlSellerTool);
+            this.Controls.Add(this.panel2);
+            this.Margin = new System.Windows.Forms.Padding(1);
+            this.Name = "FSellermanagement";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FSellermanagement";
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

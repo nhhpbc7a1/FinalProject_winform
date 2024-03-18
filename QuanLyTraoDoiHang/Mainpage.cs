@@ -42,55 +42,56 @@ namespace QuanLyTraoDoiHang
         }
 
 
-        private void pnl_Body_Paint(object sender, PaintEventArgs e)
-        {
+       
 
-        }
-
-
-        private void rButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
+     
         private void label3_Click(object sender, EventArgs e)
         {
             Form form = new FSellermanagement();
             form.ShowDialog();
         }
 
-        private void rButton2_Click_1(object sender, EventArgs e)
+      
+
+      
+
+      
+
+        private void btnCart_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormCart());
+
         }
 
-        private void rButton4_Click_1(object sender, EventArgs e)
+        private void btnMainPage_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormProduct());
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-            Form form = new Form1();
-            form.ShowDialog();
 
         }
 
-        private void label2_Click_1(object sender, EventArgs e)
+        private void lblSignup_Click(object sender, EventArgs e)
         {
             Form form = new Regisiter();
             form.ShowDialog();
 
         }
 
-        private void rButton3_Click_1(object sender, EventArgs e)
+        private void lblSignin_Click(object sender, EventArgs e)
+        {
+            Form form = new Form1();
+            form.ShowDialog();
+        }
+
+        private void lblSellerChannel_Click(object sender, EventArgs e)
+        {
+            Form form = new FSellermanagement();
+            form.ShowDialog();
+        }
+
+        private void rButton3_Click(object sender, EventArgs e)
         {
             OpenChildForm(new PersonalInfor());
+
         }
     }
 }
