@@ -42,20 +42,20 @@ namespace QuanLyTraoDoiHang
         }
 
 
-       
 
-     
+
+
         private void label3_Click(object sender, EventArgs e)
         {
             Form form = new FSellermanagement();
             form.ShowDialog();
         }
 
-      
 
-      
 
-      
+
+
+
 
         private void btnCart_Click(object sender, EventArgs e)
         {
@@ -91,6 +91,11 @@ namespace QuanLyTraoDoiHang
         private void rButton3_Click(object sender, EventArgs e)
         {
             OpenChildForm(new PersonalInfor());
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }
