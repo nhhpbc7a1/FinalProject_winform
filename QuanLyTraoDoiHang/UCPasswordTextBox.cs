@@ -46,6 +46,5 @@ namespace QuanLyTraoDoiHang
             this.BringToFront();
         }
 
- 
     }
 }
