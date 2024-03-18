@@ -75,7 +75,7 @@
             // 
             this.dtpStartTime.CustomFormat = "MMM dd, yyyy";
             this.dtpStartTime.Location = new System.Drawing.Point(13, 11);
-            this.dtpStartTime.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.dtpStartTime.Margin = new System.Windows.Forms.Padding(1);
             this.dtpStartTime.Name = "dtpStartTime";
             this.dtpStartTime.Size = new System.Drawing.Size(129, 23);
             this.dtpStartTime.TabIndex = 0;
@@ -84,7 +84,7 @@
             // 
             this.dtpEndtime.CustomFormat = "MMM dd, yyyy";
             this.dtpEndtime.Location = new System.Drawing.Point(168, 9);
-            this.dtpEndtime.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.dtpEndtime.Margin = new System.Windows.Forms.Padding(1);
             this.dtpEndtime.Name = "dtpEndtime";
             this.dtpEndtime.Size = new System.Drawing.Size(129, 23);
             this.dtpEndtime.TabIndex = 1;
@@ -92,7 +92,7 @@
             // btnCustom
             // 
             this.btnCustom.Location = new System.Drawing.Point(346, 7);
-            this.btnCustom.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnCustom.Margin = new System.Windows.Forms.Padding(1);
             this.btnCustom.Name = "btnCustom";
             this.btnCustom.Size = new System.Drawing.Size(77, 21);
             this.btnCustom.TabIndex = 2;
@@ -102,7 +102,7 @@
             // btnToday
             // 
             this.btnToday.Location = new System.Drawing.Point(426, 7);
-            this.btnToday.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnToday.Margin = new System.Windows.Forms.Padding(1);
             this.btnToday.Name = "btnToday";
             this.btnToday.Size = new System.Drawing.Size(77, 21);
             this.btnToday.TabIndex = 3;
@@ -112,7 +112,7 @@
             // btnWeek
             // 
             this.btnWeek.Location = new System.Drawing.Point(506, 7);
-            this.btnWeek.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnWeek.Margin = new System.Windows.Forms.Padding(1);
             this.btnWeek.Name = "btnWeek";
             this.btnWeek.Size = new System.Drawing.Size(77, 21);
             this.btnWeek.TabIndex = 4;
@@ -122,7 +122,7 @@
             // btn
             // 
             this.btn.Location = new System.Drawing.Point(586, 7);
-            this.btn.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btn.Margin = new System.Windows.Forms.Padding(1);
             this.btn.Name = "btn";
             this.btn.Size = new System.Drawing.Size(77, 21);
             this.btn.TabIndex = 5;
@@ -132,7 +132,7 @@
             // btnOk
             // 
             this.btnOk.Location = new System.Drawing.Point(304, 7);
-            this.btnOk.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnOk.Margin = new System.Windows.Forms.Padding(1);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(40, 21);
             this.btnOk.TabIndex = 6;
@@ -145,7 +145,7 @@
             this.panel1.Controls.Add(this.lblNoOfOrders);
             this.panel1.Controls.Add(this.lblOrdersNumber);
             this.panel1.Location = new System.Drawing.Point(13, 42);
-            this.panel1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(144, 47);
             this.panel1.TabIndex = 7;
@@ -179,7 +179,7 @@
             this.panel2.Controls.Add(this.lblRevenue);
             this.panel2.Controls.Add(this.lblRevenueNumber);
             this.panel2.Location = new System.Drawing.Point(171, 42);
-            this.panel2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panel2.Margin = new System.Windows.Forms.Padding(1);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(237, 47);
             this.panel2.TabIndex = 10;
@@ -213,7 +213,7 @@
             this.panel3.Controls.Add(this.lblProfit);
             this.panel3.Controls.Add(this.lblProfitNumber);
             this.panel3.Location = new System.Drawing.Point(416, 42);
-            this.panel3.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panel3.Margin = new System.Windows.Forms.Padding(1);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(267, 47);
             this.panel3.TabIndex = 11;
@@ -249,7 +249,7 @@
             legend1.Name = "Legend1";
             this.chartGrossRevenue.Legends.Add(legend1);
             this.chartGrossRevenue.Location = new System.Drawing.Point(0, 0);
-            this.chartGrossRevenue.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.chartGrossRevenue.Margin = new System.Windows.Forms.Padding(1);
             this.chartGrossRevenue.Name = "chartGrossRevenue";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
@@ -267,7 +267,7 @@
             // 
             this.pnlGrossRevenue.Controls.Add(this.chartGrossRevenue);
             this.pnlGrossRevenue.Location = new System.Drawing.Point(13, 97);
-            this.pnlGrossRevenue.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.pnlGrossRevenue.Margin = new System.Windows.Forms.Padding(1);
             this.pnlGrossRevenue.Name = "pnlGrossRevenue";
             this.pnlGrossRevenue.Size = new System.Drawing.Size(367, 251);
             this.pnlGrossRevenue.TabIndex = 13;
@@ -276,7 +276,7 @@
             // 
             this.panel5.Controls.Add(this.chTop5Products);
             this.panel5.Location = new System.Drawing.Point(383, 97);
-            this.panel5.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panel5.Margin = new System.Windows.Forms.Padding(1);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(302, 420);
             this.panel5.TabIndex = 14;
@@ -290,7 +290,7 @@
             legend2.Name = "Legend1";
             this.chTop5Products.Legends.Add(legend2);
             this.chTop5Products.Location = new System.Drawing.Point(0, 0);
-            this.chTop5Products.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.chTop5Products.Margin = new System.Windows.Forms.Padding(1);
             this.chTop5Products.Name = "chTop5Products";
             this.chTop5Products.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
             series2.ChartArea = "ChartArea1";
@@ -317,7 +317,7 @@
             this.panel4.Controls.Add(this.lblCustomer);
             this.panel4.Controls.Add(this.lblCustomerCount);
             this.panel4.Location = new System.Drawing.Point(13, 353);
-            this.panel4.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panel4.Margin = new System.Windows.Forms.Padding(1);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(367, 164);
             this.panel4.TabIndex = 15;
@@ -338,7 +338,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(191, 100);
+            this.label4.Location = new System.Drawing.Point(191, 69);
             this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 28);
@@ -361,7 +361,7 @@
             // 
             this.lblCustomerCount.AutoSize = true;
             this.lblCustomerCount.Font = new System.Drawing.Font("Segoe UI", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.lblCustomerCount.Location = new System.Drawing.Point(191, 45);
+            this.lblCustomerCount.Location = new System.Drawing.Point(191, 16);
             this.lblCustomerCount.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblCustomerCount.Name = "lblCustomerCount";
             this.lblCustomerCount.Size = new System.Drawing.Size(60, 28);
@@ -370,8 +370,7 @@
             // 
             // FAnalysis
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
             this.ClientSize = new System.Drawing.Size(811, 527);
@@ -388,7 +387,7 @@
             this.Controls.Add(this.btnCustom);
             this.Controls.Add(this.dtpEndtime);
             this.Controls.Add(this.dtpStartTime);
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "FAnalysis";
             this.Text = "FAnalysis";
             this.panel1.ResumeLayout(false);

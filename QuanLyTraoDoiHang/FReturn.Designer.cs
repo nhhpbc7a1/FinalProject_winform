@@ -47,7 +47,7 @@
             this.pnlShipment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlShipment.Controls.Add(this.ucShipment1);
             this.pnlShipment.Location = new System.Drawing.Point(23, 64);
-            this.pnlShipment.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlShipment.Margin = new System.Windows.Forms.Padding(2);
             this.pnlShipment.Name = "pnlShipment";
             this.pnlShipment.Size = new System.Drawing.Size(650, 336);
             this.pnlShipment.TabIndex = 20;
@@ -56,7 +56,7 @@
             // 
             this.ucShipment1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
             this.ucShipment1.Location = new System.Drawing.Point(19, 18);
-            this.ucShipment1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.ucShipment1.Margin = new System.Windows.Forms.Padding(0);
             this.ucShipment1.Name = "ucShipment1";
             this.ucShipment1.Size = new System.Drawing.Size(610, 111);
             this.ucShipment1.TabIndex = 0;
@@ -70,7 +70,7 @@
             this.pnlMenu.Controls.Add(this.lblTotalPrice);
             this.pnlMenu.Controls.Add(this.chBProducts);
             this.pnlMenu.Location = new System.Drawing.Point(23, 13);
-            this.pnlMenu.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.pnlMenu.Margin = new System.Windows.Forms.Padding(1);
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(649, 31);
             this.pnlMenu.TabIndex = 19;
@@ -129,7 +129,7 @@
             this.chBProducts.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.chBProducts.ForeColor = System.Drawing.SystemColors.Control;
             this.chBProducts.Location = new System.Drawing.Point(14, 5);
-            this.chBProducts.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.chBProducts.Margin = new System.Windows.Forms.Padding(1);
             this.chBProducts.Name = "chBProducts";
             this.chBProducts.Size = new System.Drawing.Size(126, 25);
             this.chBProducts.TabIndex = 12;
@@ -138,13 +138,12 @@
             // 
             // FReturn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
             this.ClientSize = new System.Drawing.Size(695, 432);
             this.Controls.Add(this.pnlShipment);
             this.Controls.Add(this.pnlMenu);
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "FReturn";
             this.Text = "FReturn";
             this.pnlShipment.ResumeLayout(false);
