@@ -95,5 +95,17 @@ namespace QuanLyTraoDoiHang
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Form form = new FSellermanagement();
+            form.ShowDialog();
+        }
+
+        private void rButton2_Click_1(object sender, EventArgs e)
+        {
+            Form form = new FormCart();
+            form.ShowDialog();
+        }
     }
 }
