@@ -33,15 +33,15 @@ namespace QuanLyTraoDoiHang
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mainpage));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.rButton2 = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.btnCart = new QuanLyTraoDoiHang.RJControls.RButton();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.rButton4 = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.btnMainPage = new QuanLyTraoDoiHang.RJControls.RButton();
             this.label5 = new System.Windows.Forms.Label();
-            this.rButton1 = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.btnSearch = new QuanLyTraoDoiHang.RJControls.RButton();
             this.rButton3 = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblSignin = new System.Windows.Forms.Label();
+            this.lblSignup = new System.Windows.Forms.Label();
+            this.lblSellerChannel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -55,6 +55,7 @@ namespace QuanLyTraoDoiHang
             // 
             // comboBox1
             // 
+            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox1.BackColor = System.Drawing.SystemColors.Window;
             this.comboBox1.DropDownWidth = 498;
             this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -72,10 +73,10 @@ namespace QuanLyTraoDoiHang
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
-            this.panel1.Controls.Add(this.rButton2);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(242)))), ((int)(((byte)(176)))));
+            this.panel1.Controls.Add(this.btnCart);
             this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.rButton1);
+            this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 45);
@@ -83,54 +84,56 @@ namespace QuanLyTraoDoiHang
             this.panel1.Size = new System.Drawing.Size(982, 55);
             this.panel1.TabIndex = 10;
             // 
-            // rButton2
+            // btnCart
             // 
-            this.rButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
-            this.rButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
-            this.rButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.rButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
-            this.rButton2.BorderRadius = 20;
-            this.rButton2.BorderSize = 0;
-            this.rButton2.FlatAppearance.BorderSize = 0;
-            this.rButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rButton2.ForeColor = System.Drawing.Color.White;
-            this.rButton2.Image = ((System.Drawing.Image)(resources.GetObject("rButton2.Image")));
-            this.rButton2.Location = new System.Drawing.Point(776, 7);
-            this.rButton2.Name = "rButton2";
-            this.rButton2.Size = new System.Drawing.Size(59, 43);
-            this.rButton2.TabIndex = 3;
-            this.rButton2.TextColor = System.Drawing.Color.White;
-            this.rButton2.UseVisualStyleBackColor = false;
-            this.rButton2.Click += new System.EventHandler(this.rButton2_Click);
+            this.btnCart.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(242)))), ((int)(((byte)(176)))));
+            this.btnCart.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(242)))), ((int)(((byte)(176)))));
+            this.btnCart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCart.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
+            this.btnCart.BorderRadius = 20;
+            this.btnCart.BorderSize = 0;
+            this.btnCart.FlatAppearance.BorderSize = 0;
+            this.btnCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCart.ForeColor = System.Drawing.Color.White;
+            this.btnCart.Image = ((System.Drawing.Image)(resources.GetObject("btnCart.Image")));
+            this.btnCart.Location = new System.Drawing.Point(776, 7);
+            this.btnCart.Name = "btnCart";
+            this.btnCart.Size = new System.Drawing.Size(59, 43);
+            this.btnCart.TabIndex = 3;
+            this.btnCart.TextColor = System.Drawing.Color.White;
+            this.btnCart.UseVisualStyleBackColor = false;
+            this.btnCart.Click += new System.EventHandler(this.rButton2_Click);
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.rButton4);
+            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel5.Controls.Add(this.btnMainPage);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Location = new System.Drawing.Point(111, 0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(134, 55);
             this.panel5.TabIndex = 1;
             // 
-            // rButton4
+            // btnMainPage
             // 
-            this.rButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
-            this.rButton4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
-            this.rButton4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rButton4.BackgroundImage")));
-            this.rButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.rButton4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
-            this.rButton4.BorderRadius = 20;
-            this.rButton4.BorderSize = 0;
-            this.rButton4.FlatAppearance.BorderSize = 0;
-            this.rButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rButton4.ForeColor = System.Drawing.Color.White;
-            this.rButton4.Location = new System.Drawing.Point(6, 2);
-            this.rButton4.Name = "rButton4";
-            this.rButton4.Size = new System.Drawing.Size(68, 50);
-            this.rButton4.TabIndex = 0;
-            this.rButton4.TextColor = System.Drawing.Color.White;
-            this.rButton4.UseVisualStyleBackColor = false;
-            this.rButton4.Click += new System.EventHandler(this.rButton4_Click);
+            this.btnMainPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(242)))), ((int)(((byte)(176)))));
+            this.btnMainPage.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(242)))), ((int)(((byte)(176)))));
+            this.btnMainPage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMainPage.BackgroundImage")));
+            this.btnMainPage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMainPage.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
+            this.btnMainPage.BorderRadius = 20;
+            this.btnMainPage.BorderSize = 0;
+            this.btnMainPage.FlatAppearance.BorderSize = 0;
+            this.btnMainPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMainPage.ForeColor = System.Drawing.Color.White;
+            this.btnMainPage.Location = new System.Drawing.Point(6, 2);
+            this.btnMainPage.Name = "btnMainPage";
+            this.btnMainPage.Size = new System.Drawing.Size(68, 50);
+            this.btnMainPage.TabIndex = 0;
+            this.btnMainPage.TextColor = System.Drawing.Color.White;
+            this.btnMainPage.UseVisualStyleBackColor = false;
+            this.btnMainPage.Click += new System.EventHandler(this.rButton4_Click);
             // 
             // label5
             // 
@@ -143,28 +146,29 @@ namespace QuanLyTraoDoiHang
             this.label5.TabIndex = 1;
             this.label5.Text = "KoHa";
             // 
-            // rButton1
+            // btnSearch
             // 
-            this.rButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(150)))), ((int)(((byte)(166)))));
-            this.rButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(150)))), ((int)(((byte)(166)))));
-            this.rButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.rButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rButton1.BorderRadius = 4;
-            this.rButton1.BorderSize = 0;
-            this.rButton1.FlatAppearance.BorderSize = 0;
-            this.rButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rButton1.ForeColor = System.Drawing.Color.White;
-            this.rButton1.Image = ((System.Drawing.Image)(resources.GetObject("rButton1.Image")));
-            this.rButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rButton1.Location = new System.Drawing.Point(669, 10);
-            this.rButton1.Name = "rButton1";
-            this.rButton1.Size = new System.Drawing.Size(101, 32);
-            this.rButton1.TabIndex = 19;
-            this.rButton1.Text = "Search";
-            this.rButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.rButton1.TextColor = System.Drawing.Color.White;
-            this.rButton1.UseVisualStyleBackColor = false;
+            this.btnSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(149)))), ((int)(((byte)(210)))));
+            this.btnSearch.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(149)))), ((int)(((byte)(210)))));
+            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSearch.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnSearch.BorderRadius = 5;
+            this.btnSearch.BorderSize = 0;
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
+            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSearch.Location = new System.Drawing.Point(669, 10);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(101, 32);
+            this.btnSearch.TabIndex = 19;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSearch.TextColor = System.Drawing.Color.White;
+            this.btnSearch.UseVisualStyleBackColor = false;
             // 
             // rButton3
             // 
@@ -185,44 +189,44 @@ namespace QuanLyTraoDoiHang
             this.rButton3.UseVisualStyleBackColor = false;
             this.rButton3.Click += new System.EventHandler(this.rButton3_Click);
             // 
-            // label1
+            // lblSignin
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(136, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 20);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Sign in";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lblSignin.AutoSize = true;
+            this.lblSignin.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSignin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblSignin.Location = new System.Drawing.Point(136, 12);
+            this.lblSignin.Name = "lblSignin";
+            this.lblSignin.Size = new System.Drawing.Size(54, 20);
+            this.lblSignin.TabIndex = 14;
+            this.lblSignin.Text = "Sign in";
+            this.lblSignin.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // lblSignup
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(224, 12);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 20);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "Sign up";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lblSignup.AutoSize = true;
+            this.lblSignup.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSignup.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblSignup.Location = new System.Drawing.Point(224, 12);
+            this.lblSignup.Name = "lblSignup";
+            this.lblSignup.Size = new System.Drawing.Size(59, 20);
+            this.lblSignup.TabIndex = 15;
+            this.lblSignup.Text = "Sign up";
+            this.lblSignup.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
+            // lblSellerChannel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(3, 12);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 20);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "Seller channel";
+            this.lblSellerChannel.AutoSize = true;
+            this.lblSellerChannel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSellerChannel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblSellerChannel.Location = new System.Drawing.Point(3, 12);
+            this.lblSellerChannel.Name = "lblSellerChannel";
+            this.lblSellerChannel.Size = new System.Drawing.Size(101, 20);
+            this.lblSellerChannel.TabIndex = 16;
+            this.lblSellerChannel.Text = "Seller channel";
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
             this.panel2.Controls.Add(this.rButton3);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -233,10 +237,11 @@ namespace QuanLyTraoDoiHang
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.label3);
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
+            this.panel3.Controls.Add(this.lblSignup);
+            this.panel3.Controls.Add(this.lblSignin);
+            this.panel3.Controls.Add(this.lblSellerChannel);
             this.panel3.Location = new System.Drawing.Point(674, 1);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(307, 44);
@@ -286,18 +291,18 @@ namespace QuanLyTraoDoiHang
         private ComboBox comboBox1;
         private Panel panel1;
         private IconPictureBox iconPictureBox1;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private RJControls.RButton rButton1;
+        private Label lblSignin;
+        private Label lblSignup;
+        private Label lblSellerChannel;
+        private RJControls.RButton btnSearch;
         private Panel panel2;
         private Panel panel3;
         private Panel panel4;
         private Panel panel5;
         private Label label5;
-        private RJControls.RButton rButton2;
+        private RJControls.RButton btnCart;
         private RJControls.RButton rButton3;
-        private RJControls.RButton rButton4;
+        private RJControls.RButton btnMainPage;
         public Panel pnl_Body;
     }
 }

@@ -28,24 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyInfo));
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dtBirthday = new System.Windows.Forms.DateTimePicker();
+            this.tctPhone = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.rButton1 = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.lblName = new System.Windows.Forms.Label();
+            this.lblGender = new System.Windows.Forms.Label();
+            this.lblPhone = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblBirthday = new System.Windows.Forms.Label();
+            this.btnSave = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.tctAddress = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -54,13 +58,23 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
+            this.panel3.Controls.Add(this.panel1);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(642, 72);
             this.panel3.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 67);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(642, 5);
+            this.panel1.TabIndex = 57;
             // 
             // label2
             // 
@@ -75,14 +89,15 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.tctAddress);
             this.panel5.Controls.Add(this.panel6);
-            this.panel5.Controls.Add(this.dateTimePicker1);
-            this.panel5.Controls.Add(this.textBox3);
-            this.panel5.Controls.Add(this.textBox2);
-            this.panel5.Controls.Add(this.textBox1);
-            this.panel5.Location = new System.Drawing.Point(184, 121);
+            this.panel5.Controls.Add(this.dtBirthday);
+            this.panel5.Controls.Add(this.tctPhone);
+            this.panel5.Controls.Add(this.txtEmail);
+            this.panel5.Controls.Add(this.txtName);
+            this.panel5.Location = new System.Drawing.Point(260, 95);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(296, 267);
+            this.panel5.Size = new System.Drawing.Size(296, 325);
             this.panel5.TabIndex = 8;
             // 
             // panel6
@@ -91,7 +106,7 @@
             this.panel6.Controls.Add(this.checkBox3);
             this.panel6.Controls.Add(this.checkBox2);
             this.panel6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.panel6.Location = new System.Drawing.Point(6, 227);
+            this.panel6.Location = new System.Drawing.Point(3, 280);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(277, 34);
             this.panel6.TabIndex = 2;
@@ -126,146 +141,176 @@
             this.checkBox2.Text = "Male";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // dtBirthday
             // 
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.Control;
-            this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.Color.Black;
-            this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dateTimePicker1.CalendarTrailingForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(3, 60);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(277, 29);
-            this.dateTimePicker1.TabIndex = 4;
+            this.dtBirthday.CalendarMonthBackground = System.Drawing.SystemColors.Control;
+            this.dtBirthday.CalendarTitleBackColor = System.Drawing.Color.Black;
+            this.dtBirthday.CalendarTitleForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dtBirthday.CalendarTrailingForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.dtBirthday.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtBirthday.Location = new System.Drawing.Point(3, 60);
+            this.dtBirthday.Name = "dtBirthday";
+            this.dtBirthday.Size = new System.Drawing.Size(277, 29);
+            this.dtBirthday.TabIndex = 4;
             // 
-            // textBox3
+            // tctPhone
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(3, 176);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(277, 29);
-            this.textBox3.TabIndex = 2;
+            this.tctPhone.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.tctPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tctPhone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tctPhone.Location = new System.Drawing.Point(3, 176);
+            this.tctPhone.Name = "tctPhone";
+            this.tctPhone.Size = new System.Drawing.Size(277, 29);
+            this.tctPhone.TabIndex = 2;
             // 
-            // textBox2
+            // txtEmail
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(3, 116);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(277, 29);
-            this.textBox2.TabIndex = 1;
+            this.txtEmail.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtEmail.Location = new System.Drawing.Point(3, 116);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(277, 29);
+            this.txtEmail.TabIndex = 1;
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(3, 9);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(277, 29);
-            this.textBox1.TabIndex = 0;
+            this.txtName.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtName.Location = new System.Drawing.Point(3, 9);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(277, 29);
+            this.txtName.TabIndex = 0;
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.label7);
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Controls.Add(this.label5);
-            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.lblAddress);
+            this.panel4.Controls.Add(this.lblName);
+            this.panel4.Controls.Add(this.lblPhone);
+            this.panel4.Controls.Add(this.lblGender);
+            this.panel4.Controls.Add(this.lblEmail);
+            this.panel4.Controls.Add(this.lblBirthday);
             this.panel4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.panel4.Location = new System.Drawing.Point(88, 121);
+            this.panel4.Location = new System.Drawing.Point(73, 95);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(96, 267);
+            this.panel4.Size = new System.Drawing.Size(125, 325);
             this.panel4.TabIndex = 7;
             // 
-            // label7
+            // lblName
             // 
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label7.Location = new System.Drawing.Point(7, 9);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(83, 29);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Full name";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
+            this.lblName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblName.Image = ((System.Drawing.Image)(resources.GetObject("lblName.Image")));
+            this.lblName.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblName.Location = new System.Drawing.Point(7, 6);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(115, 32);
+            this.lblName.TabIndex = 6;
+            this.lblName.Text = "    Full name";
+            this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // lblGender
             // 
-            this.label3.BackColor = System.Drawing.Color.Red;
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.label3.Location = new System.Drawing.Point(7, 227);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 27);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Gender";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblGender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(133)))), ((int)(((byte)(133)))));
+            this.lblGender.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblGender.Image = ((System.Drawing.Image)(resources.GetObject("lblGender.Image")));
+            this.lblGender.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.lblGender.Location = new System.Drawing.Point(7, 280);
+            this.lblGender.Name = "lblGender";
+            this.lblGender.Size = new System.Drawing.Size(115, 32);
+            this.lblGender.TabIndex = 2;
+            this.lblGender.Text = "  Gender";
+            this.lblGender.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // lblPhone
             // 
-            this.label4.BackColor = System.Drawing.Color.MediumVioletRed;
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.label4.Location = new System.Drawing.Point(7, 176);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 27);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Phone ";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(65)))), ((int)(((byte)(143)))));
+            this.lblPhone.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblPhone.Image = ((System.Drawing.Image)(resources.GetObject("lblPhone.Image")));
+            this.lblPhone.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.lblPhone.Location = new System.Drawing.Point(7, 172);
+            this.lblPhone.Name = "lblPhone";
+            this.lblPhone.Size = new System.Drawing.Size(115, 32);
+            this.lblPhone.TabIndex = 3;
+            this.lblPhone.Text = "  Phone ";
+            this.lblPhone.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label5
+            // lblEmail
             // 
-            this.label5.BackColor = System.Drawing.Color.Gold;
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label5.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.label5.Location = new System.Drawing.Point(7, 116);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 29);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Email";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(187)))), ((int)(((byte)(100)))));
+            this.lblEmail.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblEmail.Image = ((System.Drawing.Image)(resources.GetObject("lblEmail.Image")));
+            this.lblEmail.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.lblEmail.Location = new System.Drawing.Point(7, 113);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(115, 32);
+            this.lblEmail.TabIndex = 4;
+            this.lblEmail.Text = "Email";
+            this.lblEmail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label6
+            // lblBirthday
             // 
-            this.label6.BackColor = System.Drawing.Color.Turquoise;
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.label6.Location = new System.Drawing.Point(7, 60);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(83, 29);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Birthday";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBirthday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(213)))), ((int)(((byte)(224)))));
+            this.lblBirthday.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblBirthday.Image = ((System.Drawing.Image)(resources.GetObject("lblBirthday.Image")));
+            this.lblBirthday.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.lblBirthday.Location = new System.Drawing.Point(7, 57);
+            this.lblBirthday.Name = "lblBirthday";
+            this.lblBirthday.Size = new System.Drawing.Size(115, 32);
+            this.lblBirthday.TabIndex = 5;
+            this.lblBirthday.Text = "   Birthday";
+            this.lblBirthday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // rButton1
+            // btnSave
             // 
-            this.rButton1.BackColor = System.Drawing.Color.White;
-            this.rButton1.BackgroundColor = System.Drawing.Color.White;
-            this.rButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
-            this.rButton1.BorderRadius = 15;
-            this.rButton1.BorderSize = 2;
-            this.rButton1.FlatAppearance.BorderSize = 0;
-            this.rButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
-            this.rButton1.Location = new System.Drawing.Point(180, 426);
-            this.rButton1.Name = "rButton1";
-            this.rButton1.Size = new System.Drawing.Size(277, 42);
-            this.rButton1.TabIndex = 9;
-            this.rButton1.Text = "Save";
-            this.rButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
-            this.rButton1.UseVisualStyleBackColor = false;
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
+            this.btnSave.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
+            this.btnSave.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
+            this.btnSave.BorderRadius = 15;
+            this.btnSave.BorderSize = 2;
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.Location = new System.Drawing.Point(180, 426);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(277, 42);
+            this.btnSave.TabIndex = 9;
+            this.btnSave.Text = "Save";
+            this.btnSave.TextColor = System.Drawing.Color.White;
+            this.btnSave.UseVisualStyleBackColor = false;
+            // 
+            // lblAddress
+            // 
+            this.lblAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(112)))), ((int)(((byte)(253)))));
+            this.lblAddress.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblAddress.Image = ((System.Drawing.Image)(resources.GetObject("lblAddress.Image")));
+            this.lblAddress.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblAddress.Location = new System.Drawing.Point(7, 228);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(115, 32);
+            this.lblAddress.TabIndex = 7;
+            this.lblAddress.Text = "    Address";
+            this.lblAddress.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tctAddress
+            // 
+            this.tctAddress.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.tctAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tctAddress.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tctAddress.Location = new System.Drawing.Point(3, 228);
+            this.tctAddress.Name = "tctAddress";
+            this.tctAddress.Size = new System.Drawing.Size(277, 29);
+            this.tctAddress.TabIndex = 5;
             // 
             // MyInfo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
             this.ClientSize = new System.Drawing.Size(642, 495);
-            this.Controls.Add(this.rButton1);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
@@ -289,17 +334,20 @@
         private CheckBox checkBox1;
         private CheckBox checkBox3;
         private CheckBox checkBox2;
-        private DateTimePicker dateTimePicker1;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private DateTimePicker dtBirthday;
+        private TextBox tctPhone;
+        private TextBox txtEmail;
+        private TextBox txtName;
         private Panel panel4;
-        private Label label7;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
-        private RJControls.RButton rButton1;
+        private Label lblName;
+        private Label lblGender;
+        private Label lblPhone;
+        private Label lblEmail;
+        private Label lblBirthday;
+        private RJControls.RButton btnSave;
         private Label label2;
+        private Panel panel1;
+        private TextBox tctAddress;
+        private Label lblAddress;
     }
 }

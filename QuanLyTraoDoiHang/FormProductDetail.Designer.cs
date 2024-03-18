@@ -100,6 +100,7 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.pnl_ThisSellerPage);
@@ -123,7 +124,6 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.rButton1);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(648, 653);
@@ -202,7 +202,7 @@
             this.label9.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label9.Location = new System.Drawing.Point(50, 20);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(109, 31);
+            this.label9.Size = new System.Drawing.Size(92, 25);
             this.label9.TabIndex = 11;
             this.label9.Text = "Products";
             // 
@@ -222,7 +222,7 @@
             this.label20.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.label20.Location = new System.Drawing.Point(269, 546);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(63, 28);
+            this.label20.Size = new System.Drawing.Size(51, 21);
             this.label20.TabIndex = 26;
             this.label20.Text = "China";
             // 
@@ -232,7 +232,7 @@
             this.label21.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label21.Location = new System.Drawing.Point(71, 545);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(71, 28);
+            this.label21.Size = new System.Drawing.Size(58, 21);
             this.label21.TabIndex = 25;
             this.label21.Text = "Origin";
             // 
@@ -242,7 +242,7 @@
             this.label18.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.label18.Location = new System.Drawing.Point(269, 498);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(73, 28);
+            this.label18.Size = new System.Drawing.Size(59, 21);
             this.label18.TabIndex = 24;
             this.label18.Text = "Xiaomi";
             // 
@@ -252,7 +252,7 @@
             this.label19.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label19.Location = new System.Drawing.Point(69, 497);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(68, 28);
+            this.label19.Size = new System.Drawing.Size(55, 21);
             this.label19.TabIndex = 23;
             this.label19.Text = "Brand";
             // 
@@ -262,7 +262,7 @@
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(270, 446);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 28);
+            this.label6.Size = new System.Drawing.Size(60, 21);
             this.label6.TabIndex = 22;
             this.label6.Text = "2 years";
             // 
@@ -272,7 +272,7 @@
             this.label17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label17.Location = new System.Drawing.Point(69, 445);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(107, 28);
+            this.label17.Size = new System.Drawing.Size(87, 21);
             this.label17.TabIndex = 21;
             this.label17.Text = "Used time";
             // 
@@ -282,7 +282,7 @@
             this.label15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.label15.Location = new System.Drawing.Point(269, 397);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(146, 28);
+            this.label15.Size = new System.Drawing.Size(119, 21);
             this.label15.TabIndex = 20;
             this.label15.Text = "out of warranty";
             // 
@@ -292,7 +292,7 @@
             this.label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label16.Location = new System.Drawing.Point(71, 396);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(162, 28);
+            this.label16.Size = new System.Drawing.Size(131, 21);
             this.label16.TabIndex = 19;
             this.label16.Text = "Warranty Policy";
             // 
@@ -302,7 +302,7 @@
             this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.label13.Location = new System.Drawing.Point(269, 347);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(50, 28);
+            this.label13.Size = new System.Drawing.Size(41, 21);
             this.label13.TabIndex = 18;
             this.label13.Text = "98%";
             // 
@@ -312,7 +312,7 @@
             this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label14.Location = new System.Drawing.Point(69, 346);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(109, 28);
+            this.label14.Size = new System.Drawing.Size(90, 21);
             this.label14.TabIndex = 17;
             this.label14.Text = "Condition:";
             // 
@@ -322,7 +322,7 @@
             this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.label12.Location = new System.Drawing.Point(270, 300);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(114, 28);
+            this.label12.Size = new System.Drawing.Size(92, 21);
             this.label12.TabIndex = 16;
             this.label12.Text = "5.990.000 đ";
             // 
@@ -332,7 +332,7 @@
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label11.Location = new System.Drawing.Point(69, 300);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(146, 28);
+            this.label11.Size = new System.Drawing.Size(118, 21);
             this.label11.TabIndex = 15;
             this.label11.Text = "Original price:";
             // 
@@ -373,7 +373,7 @@
             this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label10.Location = new System.Drawing.Point(69, 666);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(181, 28);
+            this.label10.Size = new System.Drawing.Size(146, 21);
             this.label10.TabIndex = 12;
             this.label10.Text = "Detail description";
             // 
@@ -449,7 +449,7 @@
             this.label4.ForeColor = System.Drawing.Color.Red;
             this.label4.Location = new System.Drawing.Point(386, 90);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(128, 31);
+            this.label4.Size = new System.Drawing.Size(106, 25);
             this.label4.TabIndex = 6;
             this.label4.Text = "1.190.000 đ";
             // 
@@ -482,12 +482,13 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(386, 47);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(210, 31);
+            this.label3.Size = new System.Drawing.Size(172, 25);
             this.label3.TabIndex = 5;
             this.label3.Text = "Xiaomi Redmi 9A";
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.AutoScroll = true;
             this.panel2.Controls.Add(this.rButton4);
             this.panel2.Controls.Add(this.rButton2);
@@ -499,7 +500,6 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(648, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
@@ -573,7 +573,7 @@
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(104, 300);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(131, 28);
+            this.label7.Size = new System.Drawing.Size(105, 21);
             this.label7.TabIndex = 8;
             this.label7.Text = "Joined: 2 year";
             // 
@@ -618,7 +618,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(73, 18);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(110, 23);
+            this.label5.Size = new System.Drawing.Size(89, 19);
             this.label5.TabIndex = 0;
             this.label5.Text = "0783701185";
             // 
@@ -628,7 +628,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(120, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 25);
+            this.label1.Size = new System.Drawing.Size(130, 20);
             this.label1.TabIndex = 3;
             this.label1.Text = "Hoang Ha Mobile";
             // 
@@ -692,7 +692,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(145, 3);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 23);
+            this.label2.Size = new System.Drawing.Size(29, 19);
             this.label2.TabIndex = 4;
             this.label2.Text = "4.6";
             // 

@@ -30,8 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChangePassword));
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.rButton3 = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.rButton4 = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.rButton2 = new QuanLyTraoDoiHang.RJControls.RButton();
             this.label4 = new System.Windows.Forms.Label();
             this.btnViewPass = new QuanLyTraoDoiHang.RJControls.RButton();
             this.btnHidePass = new QuanLyTraoDoiHang.RJControls.RButton();
@@ -45,7 +49,7 @@
             this.txtPass = new System.Windows.Forms.TextBox();
             this.txtNewPass = new System.Windows.Forms.TextBox();
             this.txtOldPass = new System.Windows.Forms.TextBox();
-            this.btnPassChange = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.rButton1 = new QuanLyTraoDoiHang.RJControls.RButton();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -53,20 +57,30 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
+            this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(642, 100);
+            this.panel3.Size = new System.Drawing.Size(642, 72);
             this.panel3.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Black;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(0, 67);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(642, 5);
+            this.panel4.TabIndex = 57;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(234, 36);
+            this.label2.Location = new System.Drawing.Point(234, 22);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(181, 30);
             this.label2.TabIndex = 2;
@@ -74,6 +88,9 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.rButton3);
+            this.panel2.Controls.Add(this.rButton4);
+            this.panel2.Controls.Add(this.rButton2);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.btnViewPass);
             this.panel2.Controls.Add(this.btnHidePass);
@@ -90,6 +107,60 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(556, 266);
             this.panel2.TabIndex = 6;
+            // 
+            // rButton3
+            // 
+            this.rButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(196)))), ((int)(((byte)(237)))));
+            this.rButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(196)))), ((int)(((byte)(237)))));
+            this.rButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rButton3.BorderRadius = 38;
+            this.rButton3.BorderSize = 0;
+            this.rButton3.FlatAppearance.BorderSize = 0;
+            this.rButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rButton3.ForeColor = System.Drawing.Color.White;
+            this.rButton3.Image = ((System.Drawing.Image)(resources.GetObject("rButton3.Image")));
+            this.rButton3.Location = new System.Drawing.Point(67, 11);
+            this.rButton3.Name = "rButton3";
+            this.rButton3.Size = new System.Drawing.Size(38, 38);
+            this.rButton3.TabIndex = 26;
+            this.rButton3.TextColor = System.Drawing.Color.White;
+            this.rButton3.UseVisualStyleBackColor = false;
+            // 
+            // rButton4
+            // 
+            this.rButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
+            this.rButton4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
+            this.rButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rButton4.BorderRadius = 38;
+            this.rButton4.BorderSize = 0;
+            this.rButton4.FlatAppearance.BorderSize = 0;
+            this.rButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rButton4.ForeColor = System.Drawing.Color.White;
+            this.rButton4.Image = ((System.Drawing.Image)(resources.GetObject("rButton4.Image")));
+            this.rButton4.Location = new System.Drawing.Point(67, 195);
+            this.rButton4.Name = "rButton4";
+            this.rButton4.Size = new System.Drawing.Size(38, 38);
+            this.rButton4.TabIndex = 25;
+            this.rButton4.TextColor = System.Drawing.Color.White;
+            this.rButton4.UseVisualStyleBackColor = false;
+            // 
+            // rButton2
+            // 
+            this.rButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
+            this.rButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
+            this.rButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rButton2.BorderRadius = 38;
+            this.rButton2.BorderSize = 0;
+            this.rButton2.FlatAppearance.BorderSize = 0;
+            this.rButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rButton2.ForeColor = System.Drawing.Color.White;
+            this.rButton2.Image = ((System.Drawing.Image)(resources.GetObject("rButton2.Image")));
+            this.rButton2.Location = new System.Drawing.Point(67, 76);
+            this.rButton2.Name = "rButton2";
+            this.rButton2.Size = new System.Drawing.Size(38, 38);
+            this.rButton2.TabIndex = 23;
+            this.rButton2.TextColor = System.Drawing.Color.White;
+            this.rButton2.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -286,31 +357,31 @@
             this.txtOldPass.TabIndex = 0;
             this.txtOldPass.UseSystemPasswordChar = true;
             // 
-            // btnPassChange
+            // rButton1
             // 
-            this.btnPassChange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
-            this.btnPassChange.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
-            this.btnPassChange.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnPassChange.BorderRadius = 10;
-            this.btnPassChange.BorderSize = 0;
-            this.btnPassChange.FlatAppearance.BorderSize = 0;
-            this.btnPassChange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPassChange.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnPassChange.ForeColor = System.Drawing.Color.White;
-            this.btnPassChange.Location = new System.Drawing.Point(164, 419);
-            this.btnPassChange.Name = "btnPassChange";
-            this.btnPassChange.Size = new System.Drawing.Size(329, 40);
-            this.btnPassChange.TabIndex = 7;
-            this.btnPassChange.Text = "Change";
-            this.btnPassChange.TextColor = System.Drawing.Color.White;
-            this.btnPassChange.UseVisualStyleBackColor = false;
+            this.rButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
+            this.rButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
+            this.rButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
+            this.rButton1.BorderRadius = 15;
+            this.rButton1.BorderSize = 2;
+            this.rButton1.FlatAppearance.BorderSize = 0;
+            this.rButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rButton1.ForeColor = System.Drawing.Color.White;
+            this.rButton1.Location = new System.Drawing.Point(161, 425);
+            this.rButton1.Name = "rButton1";
+            this.rButton1.Size = new System.Drawing.Size(326, 42);
+            this.rButton1.TabIndex = 10;
+            this.rButton1.Text = "Change";
+            this.rButton1.TextColor = System.Drawing.Color.White;
+            this.rButton1.UseVisualStyleBackColor = false;
             // 
             // ChangePassword
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
             this.ClientSize = new System.Drawing.Size(642, 495);
-            this.Controls.Add(this.btnPassChange);
+            this.Controls.Add(this.rButton1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Name = "ChangePassword";
@@ -334,7 +405,6 @@
         private Label label6;
         private TextBox txtPass;
         private TextBox txtNewPass;
-        private RJControls.RButton btnPassChange;
         private Label label3;
         private Label label4;
         private Panel panel1;
@@ -344,5 +414,10 @@
         private RJControls.RButton btnHidePass;
         private RJControls.RButton btnViewNewPass;
         private RJControls.RButton btnHideNewPass;
+        private RJControls.RButton rButton3;
+        private RJControls.RButton rButton4;
+        private RJControls.RButton rButton2;
+        private Panel panel4;
+        private RJControls.RButton rButton1;
     }
 }

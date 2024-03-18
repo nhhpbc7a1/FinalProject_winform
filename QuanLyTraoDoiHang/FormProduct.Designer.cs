@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProduct));
+            this.pnlChildForm = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.ucProductOnMainpage8 = new QuanLyTraoDoiHang.UCProductOnMainpage();
             this.ucProductOnMainpage6 = new QuanLyTraoDoiHang.UCProductOnMainpage();
@@ -42,10 +44,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.ucProductOnMainpage7 = new QuanLyTraoDoiHang.UCProductOnMainpage();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.rButton3 = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnApply = new QuanLyTraoDoiHang.RJControls.RButton();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
@@ -57,18 +60,27 @@
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.pnlChildForm = new System.Windows.Forms.Panel();
+            this.pnlChildForm.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.pnlChildForm.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // pnlChildForm
+            // 
+            this.pnlChildForm.Controls.Add(this.panel4);
+            this.pnlChildForm.Controls.Add(this.panel2);
+            this.pnlChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlChildForm.Location = new System.Drawing.Point(0, 0);
+            this.pnlChildForm.Name = "pnlChildForm";
+            this.pnlChildForm.Size = new System.Drawing.Size(984, 561);
+            this.pnlChildForm.TabIndex = 58;
             // 
             // panel4
             // 
             this.panel4.AutoScroll = true;
             this.panel4.AutoSize = true;
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel4.BackColor = System.Drawing.Color.Gainsboro;
             this.panel4.Controls.Add(this.ucProductOnMainpage8);
             this.panel4.Controls.Add(this.ucProductOnMainpage6);
             this.panel4.Controls.Add(this.ucProductOnMainpage5);
@@ -80,17 +92,17 @@
             this.panel4.Controls.Add(this.panel1);
             this.panel4.Controls.Add(this.ucProductOnMainpage7);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(249, 0);
+            this.panel4.Location = new System.Drawing.Point(254, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(735, 561);
+            this.panel4.Size = new System.Drawing.Size(730, 561);
             this.panel4.TabIndex = 56;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // ucProductOnMainpage8
             // 
             this.ucProductOnMainpage8.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ucProductOnMainpage8.Location = new System.Drawing.Point(253, 521);
+            this.ucProductOnMainpage8.Location = new System.Drawing.Point(257, 530);
             this.ucProductOnMainpage8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucProductOnMainpage8.Name = "ucProductOnMainpage8";
             this.ucProductOnMainpage8.Size = new System.Drawing.Size(213, 220);
@@ -99,7 +111,7 @@
             // ucProductOnMainpage6
             // 
             this.ucProductOnMainpage6.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ucProductOnMainpage6.Location = new System.Drawing.Point(487, 521);
+            this.ucProductOnMainpage6.Location = new System.Drawing.Point(491, 530);
             this.ucProductOnMainpage6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucProductOnMainpage6.Name = "ucProductOnMainpage6";
             this.ucProductOnMainpage6.Size = new System.Drawing.Size(213, 220);
@@ -108,7 +120,7 @@
             // ucProductOnMainpage5
             // 
             this.ucProductOnMainpage5.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ucProductOnMainpage5.Location = new System.Drawing.Point(17, 521);
+            this.ucProductOnMainpage5.Location = new System.Drawing.Point(24, 530);
             this.ucProductOnMainpage5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucProductOnMainpage5.Name = "ucProductOnMainpage5";
             this.ucProductOnMainpage5.Size = new System.Drawing.Size(213, 220);
@@ -117,7 +129,7 @@
             // ucProductOnMainpage2
             // 
             this.ucProductOnMainpage2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ucProductOnMainpage2.Location = new System.Drawing.Point(17, 297);
+            this.ucProductOnMainpage2.Location = new System.Drawing.Point(24, 302);
             this.ucProductOnMainpage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucProductOnMainpage2.Name = "ucProductOnMainpage2";
             this.ucProductOnMainpage2.Size = new System.Drawing.Size(213, 220);
@@ -126,7 +138,7 @@
             // ucProductOnMainpage3
             // 
             this.ucProductOnMainpage3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ucProductOnMainpage3.Location = new System.Drawing.Point(254, 297);
+            this.ucProductOnMainpage3.Location = new System.Drawing.Point(257, 302);
             this.ucProductOnMainpage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucProductOnMainpage3.Name = "ucProductOnMainpage3";
             this.ucProductOnMainpage3.Size = new System.Drawing.Size(213, 220);
@@ -135,7 +147,7 @@
             // ucProductOnMainpage4
             // 
             this.ucProductOnMainpage4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ucProductOnMainpage4.Location = new System.Drawing.Point(487, 296);
+            this.ucProductOnMainpage4.Location = new System.Drawing.Point(491, 302);
             this.ucProductOnMainpage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucProductOnMainpage4.Name = "ucProductOnMainpage4";
             this.ucProductOnMainpage4.Size = new System.Drawing.Size(213, 220);
@@ -144,7 +156,7 @@
             // ucProductOnMainpage1
             // 
             this.ucProductOnMainpage1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ucProductOnMainpage1.Location = new System.Drawing.Point(487, 72);
+            this.ucProductOnMainpage1.Location = new System.Drawing.Point(491, 75);
             this.ucProductOnMainpage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucProductOnMainpage1.Name = "ucProductOnMainpage1";
             this.ucProductOnMainpage1.Size = new System.Drawing.Size(213, 220);
@@ -153,7 +165,7 @@
             // ucProductOnMainpage10
             // 
             this.ucProductOnMainpage10.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ucProductOnMainpage10.Location = new System.Drawing.Point(254, 73);
+            this.ucProductOnMainpage10.Location = new System.Drawing.Point(257, 75);
             this.ucProductOnMainpage10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucProductOnMainpage10.Name = "ucProductOnMainpage10";
             this.ucProductOnMainpage10.Size = new System.Drawing.Size(213, 220);
@@ -161,31 +173,30 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(17, 12);
+            this.panel1.Location = new System.Drawing.Point(24, 15);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(683, 54);
+            this.panel1.Size = new System.Drawing.Size(680, 54);
             this.panel1.TabIndex = 61;
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
+            this.panel3.BackColor = System.Drawing.Color.Black;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 46);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel3.Location = new System.Drawing.Point(0, 49);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(683, 8);
-            this.panel3.TabIndex = 1;
+            this.panel3.Size = new System.Drawing.Size(680, 5);
+            this.panel3.TabIndex = 56;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
-            this.label1.Location = new System.Drawing.Point(235, 17);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(237, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(191, 25);
             this.label1.TabIndex = 0;
@@ -194,7 +205,7 @@
             // ucProductOnMainpage7
             // 
             this.ucProductOnMainpage7.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ucProductOnMainpage7.Location = new System.Drawing.Point(17, 73);
+            this.ucProductOnMainpage7.Location = new System.Drawing.Point(24, 75);
             this.ucProductOnMainpage7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucProductOnMainpage7.Name = "ucProductOnMainpage7";
             this.ucProductOnMainpage7.Size = new System.Drawing.Size(213, 220);
@@ -204,10 +215,11 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.checkBox7);
-            this.panel2.Controls.Add(this.rButton3);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.checkedListBox1);
+            this.panel2.Controls.Add(this.comboBox3);
+            this.panel2.Controls.Add(this.comboBox2);
+            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.btnApply);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.checkBox2);
@@ -222,84 +234,154 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(249, 561);
+            this.panel2.Size = new System.Drawing.Size(254, 561);
             this.panel2.TabIndex = 56;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // checkBox7
+            // checkedListBox1
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox7.Location = new System.Drawing.Point(46, 307);
-            this.checkBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(69, 25);
-            this.checkBox7.TabIndex = 55;
-            this.checkBox7.Text = "Other";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(31, 337);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(134, 22);
+            this.checkedListBox1.TabIndex = 0;
             // 
-            // rButton3
+            // comboBox3
             // 
-            this.rButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(150)))), ((int)(((byte)(166)))));
-            this.rButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(150)))), ((int)(((byte)(166)))));
-            this.rButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rButton3.BorderRadius = 15;
-            this.rButton3.BorderSize = 0;
-            this.rButton3.FlatAppearance.BorderSize = 0;
-            this.rButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rButton3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rButton3.ForeColor = System.Drawing.Color.White;
-            this.rButton3.Location = new System.Drawing.Point(31, 484);
-            this.rButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rButton3.Name = "rButton3";
-            this.rButton3.Size = new System.Drawing.Size(187, 51);
-            this.rButton3.TabIndex = 54;
-            this.rButton3.Text = "Apply";
-            this.rButton3.TextColor = System.Drawing.Color.White;
-            this.rButton3.UseVisualStyleBackColor = false;
+            this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "An Giang",
+            "Bạc Liêu",
+            "Bến Tre",
+            "Bình Định",
+            "Bình Thuận",
+            "Bà Rịa Vũng Tàu",
+            "Bình Dương",
+            "Bắc Ninh",
+            "Bình Phước",
+            "Cà Mau",
+            "Cần Thơ",
+            "Đắk Lắk",
+            "Đắk Nông",
+            "Đồng Tháp",
+            "Đồng Nai",
+            "Gia Lai",
+            "Hậu Giang",
+            "Hưng Yên",
+            "Hà Tĩnh",
+            "Hà Nam",
+            "Hải Dương",
+            "Kiên Giang",
+            "Kon Tum",
+            "Khánh Hòa",
+            "Long An",
+            "Lâm Đồng",
+            "Nghệ An",
+            "Nam Định",
+            "Ninh Thuận",
+            "Ninh Bình",
+            "Thành phố Đà Nẵng",
+            "Thanh Hóa",
+            "Thừa Thiên Huế",
+            "Thành phố Hải Phòng",
+            "Tiền Giang",
+            "Tây Ninh",
+            "Trà Vinh",
+            "Thái Bình",
+            "Sóc Trăng",
+            "Phú Yên",
+            "Quảng Nam",
+            "Quảng Ngãi",
+            "Quảng Bình",
+            "Quảng Trị",
+            "Vĩnh Phúc",
+            "Vĩnh Long"});
+            this.comboBox3.Location = new System.Drawing.Point(59, 302);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(121, 29);
+            this.comboBox3.TabIndex = 57;
+            this.comboBox3.Text = "   Show more";
             // 
-            // textBox2
+            // comboBox2
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(110, 418);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(125, 29);
-            this.textBox2.TabIndex = 53;
+            this.comboBox2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "100000",
+            "200000",
+            "500000",
+            "1000000",
+            "2000000",
+            "5000000"});
+            this.comboBox2.Location = new System.Drawing.Point(129, 419);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(89, 29);
+            this.comboBox2.TabIndex = 56;
             // 
-            // textBox1
+            // comboBox1
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(110, 363);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 29);
-            this.textBox1.TabIndex = 52;
+            this.comboBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "0",
+            "100000",
+            "200000",
+            "500000"});
+            this.comboBox1.Location = new System.Drawing.Point(129, 368);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(89, 29);
+            this.comboBox1.TabIndex = 55;
+            // 
+            // btnApply
+            // 
+            this.btnApply.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
+            this.btnApply.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
+            this.btnApply.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnApply.BorderRadius = 15;
+            this.btnApply.BorderSize = 0;
+            this.btnApply.FlatAppearance.BorderSize = 0;
+            this.btnApply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnApply.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnApply.ForeColor = System.Drawing.Color.White;
+            this.btnApply.Location = new System.Drawing.Point(31, 476);
+            this.btnApply.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnApply.Name = "btnApply";
+            this.btnApply.Size = new System.Drawing.Size(187, 51);
+            this.btnApply.TabIndex = 54;
+            this.btnApply.Text = "Apply";
+            this.btnApply.TextColor = System.Drawing.Color.White;
+            this.btnApply.UseVisualStyleBackColor = false;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
+            this.label6.AutoEllipsis = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Image = ((System.Drawing.Image)(resources.GetObject("label6.Image")));
+            this.label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label6.Location = new System.Drawing.Point(17, 418);
             this.label6.Name = "label6";
-            this.label6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label6.Size = new System.Drawing.Size(82, 21);
+            this.label6.Size = new System.Drawing.Size(106, 21);
             this.label6.TabIndex = 51;
             this.label6.Text = "Max price";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Image = ((System.Drawing.Image)(resources.GetObject("label5.Image")));
+            this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label5.Location = new System.Drawing.Point(17, 371);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 21);
+            this.label5.Size = new System.Drawing.Size(106, 21);
             this.label5.TabIndex = 50;
             this.label5.Text = "Min price";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // checkBox2
             // 
@@ -315,35 +397,41 @@
             // 
             // label20
             // 
-            this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label20.Image = ((System.Drawing.Image)(resources.GetObject("label20.Image")));
+            this.label20.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label20.Location = new System.Drawing.Point(17, 73);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(77, 21);
+            this.label20.Size = new System.Drawing.Size(103, 21);
             this.label20.TabIndex = 49;
             this.label20.Text = "Catagory";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
             // label22
             // 
-            this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(150)))), ((int)(((byte)(166)))));
-            this.label22.Location = new System.Drawing.Point(46, 29);
+            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
+            this.label22.Image = ((System.Drawing.Image)(resources.GetObject("label22.Image")));
+            this.label22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label22.Location = new System.Drawing.Point(31, 28);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(134, 25);
+            this.label22.Size = new System.Drawing.Size(159, 25);
             this.label22.TabIndex = 41;
             this.label22.Text = "Product Filter";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label21
             // 
-            this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label21.Image = ((System.Drawing.Image)(resources.GetObject("label21.Image")));
+            this.label21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label21.Location = new System.Drawing.Point(17, 197);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(111, 21);
+            this.label21.Size = new System.Drawing.Size(137, 21);
             this.label21.TabIndex = 42;
             this.label21.Text = "Store address";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // checkBox1
             // 
@@ -405,16 +493,6 @@
             this.checkBox5.Text = "TP. Hồ Chí Minh";
             this.checkBox5.UseVisualStyleBackColor = true;
             // 
-            // pnlChildForm
-            // 
-            this.pnlChildForm.Controls.Add(this.panel4);
-            this.pnlChildForm.Controls.Add(this.panel2);
-            this.pnlChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlChildForm.Location = new System.Drawing.Point(0, 0);
-            this.pnlChildForm.Name = "pnlChildForm";
-            this.pnlChildForm.Size = new System.Drawing.Size(984, 561);
-            this.pnlChildForm.TabIndex = 58;
-            // 
             // FormProduct
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -423,24 +501,36 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormProduct";
             this.Text = "Product";
+            this.pnlChildForm.ResumeLayout(false);
+            this.pnlChildForm.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.pnlChildForm.ResumeLayout(false);
-            this.pnlChildForm.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
+        private Panel pnlChildForm;
         private Panel panel4;
+        private UCProductOnMainpage ucProductOnMainpage8;
+        private UCProductOnMainpage ucProductOnMainpage6;
+        private UCProductOnMainpage ucProductOnMainpage5;
+        private UCProductOnMainpage ucProductOnMainpage2;
+        private UCProductOnMainpage ucProductOnMainpage3;
+        private UCProductOnMainpage ucProductOnMainpage4;
+        private UCProductOnMainpage ucProductOnMainpage1;
+        private UCProductOnMainpage ucProductOnMainpage10;
+        private Panel panel1;
+        private Panel panel3;
+        private Label label1;
+        private UCProductOnMainpage ucProductOnMainpage7;
         private Panel panel2;
-        private RJControls.RButton rButton3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private ComboBox comboBox2;
+        private ComboBox comboBox1;
+        private RJControls.RButton btnApply;
         private Label label6;
         private Label label5;
         private CheckBox checkBox2;
@@ -452,19 +542,7 @@
         private CheckBox checkBox4;
         private CheckBox checkBox6;
         private CheckBox checkBox5;
-        private Panel pnlChildForm;
-        private UCProductOnMainpage ucProductOnMainpage7;
-        private Panel panel1;
-        private Panel panel3;
-        private Label label1;
-        private CheckBox checkBox7;
-        private UCProductOnMainpage ucProductOnMainpage8;
-        private UCProductOnMainpage ucProductOnMainpage6;
-        private UCProductOnMainpage ucProductOnMainpage5;
-        private UCProductOnMainpage ucProductOnMainpage2;
-        private UCProductOnMainpage ucProductOnMainpage3;
-        private UCProductOnMainpage ucProductOnMainpage4;
-        private UCProductOnMainpage ucProductOnMainpage1;
-        private UCProductOnMainpage ucProductOnMainpage10;
+        private ComboBox comboBox3;
+        private CheckedListBox checkedListBox1;
     }
 }
