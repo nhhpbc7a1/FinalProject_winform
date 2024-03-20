@@ -129,5 +129,29 @@ namespace QuanLyTraoDoiHang
             this.ucProduct.rButton2.Text = "Add New Products";
             this.ucProduct.rButton3.Visible = false;
         }
+
+        private void ucProduct_Load_2(object sender, EventArgs e)
+        {
+            //actions: update
+            this.ucProduct.rBSelect.Text = "Product";
+            this.ucProduct.rButton1.Text = "My Product";
+            this.ucProduct.rButton2.Text = "Add New Products";
+            this.ucProduct.rButton3.Visible = false;
+        }
+
+        private void ucOrder_Load_1(object sender, EventArgs e)
+        {
+            this.ucOrder.rBSelect.Text = "Order";
+            this.ucOrder.rButton1.Text = "My Order";
+            //cancel by buyer, cancel by owner
+            this.ucOrder.rButton2.Text = "Cancellation";
+            //return reason
+            this.ucOrder.rButton3.Text = "Return";
+        }
+
+        private void rBAnalysis_Click_2(object sender, EventArgs e)
+        {
+            OpenChildForm(new FAnalysis());
+        }
     }
 }

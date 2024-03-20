@@ -28,164 +28,98 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pnlShipment = new Panel();
-            ucShipment1 = new UCShipment();
-            pnlMenu = new Panel();
-            label2 = new Label();
-            label1 = new Label();
-            lblAction = new Label();
-            lblTotalPrice = new Label();
-            chBProducts = new CheckBox();
-            rBUpdateShipment = new RJControls.RButton();
-            pnlShipment.SuspendLayout();
-            pnlMenu.SuspendLayout();
-            SuspendLayout();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.ucProductStatus1 = new QuanLyTraoDoiHang.UcProductStatus();
+            this.rButton2 = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.panel3.SuspendLayout();
+            this.SuspendLayout();
             // 
-            // pnlShipment
+            // panel3
             // 
-            pnlShipment.AutoScroll = true;
-            pnlShipment.BackColor = Color.FromArgb(224, 224, 224);
-            pnlShipment.BorderStyle = BorderStyle.FixedSingle;
-            pnlShipment.Controls.Add(ucShipment1);
-            pnlShipment.Location = new Point(55, 196);
-            pnlShipment.Margin = new Padding(6);
-            pnlShipment.Name = "pnlShipment";
-            pnlShipment.Size = new Size(1575, 792);
-            pnlShipment.TabIndex = 16;
-            pnlShipment.Paint += pnlShipment_Paint;
-            // 
-            // ucShipment1
-            // 
-            ucShipment1.BackColor = Color.FromArgb(244, 237, 204);
-            ucShipment1.Location = new Point(32, 49);
-            ucShipment1.Name = "ucShipment1";
-            ucShipment1.Size = new Size(1482, 304);
-            ucShipment1.TabIndex = 0;
-            ucShipment1.Load += ucShipment1_Load;
-            // 
-            // pnlMenu
-            // 
-            pnlMenu.BackColor = Color.FromArgb(97, 150, 166);
-            pnlMenu.Controls.Add(label2);
-            pnlMenu.Controls.Add(label1);
-            pnlMenu.Controls.Add(lblAction);
-            pnlMenu.Controls.Add(lblTotalPrice);
-            pnlMenu.Controls.Add(chBProducts);
-            pnlMenu.Location = new Point(55, 55);
-            pnlMenu.Margin = new Padding(2);
-            pnlMenu.Name = "pnlMenu";
-            pnlMenu.Size = new Size(1575, 85);
-            pnlMenu.TabIndex = 15;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(756, 76);
+            this.panel3.TabIndex = 21;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = SystemColors.Control;
-            label2.Location = new Point(1020, 14);
-            label2.Margin = new Padding(2, 0, 2, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(106, 54);
-            label2.TabIndex = 18;
-            label2.Text = "Type";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(340, 23);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(138, 30);
+            this.label2.TabIndex = 59;
+            this.label2.Text = "My shipment";
             // 
-            // label1
+            // panel4
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(779, 14);
-            label1.Margin = new Padding(2, 0, 2, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(131, 54);
-            label1.TabIndex = 17;
-            label1.Text = "Status";
+            this.panel4.BackColor = System.Drawing.Color.Black;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(0, 73);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(756, 3);
+            this.panel4.TabIndex = 58;
             // 
-            // lblAction
+            // ucProductStatus1
             // 
-            lblAction.AutoSize = true;
-            lblAction.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblAction.ForeColor = SystemColors.Control;
-            lblAction.Location = new Point(1294, 14);
-            lblAction.Margin = new Padding(2, 0, 2, 0);
-            lblAction.Name = "lblAction";
-            lblAction.Size = new Size(154, 54);
-            lblAction.TabIndex = 16;
-            lblAction.Text = "Actions";
+            this.ucProductStatus1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
+            this.ucProductStatus1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.ucProductStatus1.Location = new System.Drawing.Point(0, 90);
+            this.ucProductStatus1.Name = "ucProductStatus1";
+            this.ucProductStatus1.Size = new System.Drawing.Size(756, 444);
+            this.ucProductStatus1.TabIndex = 22;
             // 
-            // lblTotalPrice
+            // rButton2
             // 
-            lblTotalPrice.AutoSize = true;
-            lblTotalPrice.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblTotalPrice.ForeColor = SystemColors.Control;
-            lblTotalPrice.Location = new Point(470, 14);
-            lblTotalPrice.Margin = new Padding(2, 0, 2, 0);
-            lblTotalPrice.Name = "lblTotalPrice";
-            lblTotalPrice.Size = new Size(203, 54);
-            lblTotalPrice.TabIndex = 15;
-            lblTotalPrice.Text = "Total Price";
-            // 
-            // chBProducts
-            // 
-            chBProducts.AutoSize = true;
-            chBProducts.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            chBProducts.ForeColor = SystemColors.Control;
-            chBProducts.Location = new Point(33, 14);
-            chBProducts.Margin = new Padding(2);
-            chBProducts.Name = "chBProducts";
-            chBProducts.Size = new Size(305, 58);
-            chBProducts.TabIndex = 12;
-            chBProducts.Text = "Your Products";
-            chBProducts.UseVisualStyleBackColor = true;
-            chBProducts.CheckedChanged += chBProducts_CheckedChanged;
-            // 
-            // rBUpdateShipment
-            // 
-            rBUpdateShipment.BackColor = Color.LightCoral;
-            rBUpdateShipment.BackgroundColor = Color.LightCoral;
-            rBUpdateShipment.BorderColor = Color.PaleVioletRed;
-            rBUpdateShipment.BorderRadius = 20;
-            rBUpdateShipment.BorderSize = 0;
-            rBUpdateShipment.FlatAppearance.BorderSize = 0;
-            rBUpdateShipment.FlatStyle = FlatStyle.Flat;
-            rBUpdateShipment.Font = new Font("Segoe UI Black", 9.900001F, FontStyle.Bold, GraphicsUnit.Point);
-            rBUpdateShipment.ForeColor = Color.White;
-            rBUpdateShipment.Location = new Point(1243, 1014);
-            rBUpdateShipment.Name = "rBUpdateShipment";
-            rBUpdateShipment.Size = new Size(375, 100);
-            rBUpdateShipment.TabIndex = 17;
-            rBUpdateShipment.Text = "Update";
-            rBUpdateShipment.TextColor = Color.White;
-            rBUpdateShipment.UseVisualStyleBackColor = false;
+            this.rButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
+            this.rButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
+            this.rButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rButton2.BorderRadius = 20;
+            this.rButton2.BorderSize = 0;
+            this.rButton2.FlatAppearance.BorderSize = 0;
+            this.rButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rButton2.Font = new System.Drawing.Font("Segoe UI Black", 9.900001F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rButton2.ForeColor = System.Drawing.Color.White;
+            this.rButton2.Location = new System.Drawing.Point(312, 476);
+            this.rButton2.Margin = new System.Windows.Forms.Padding(1);
+            this.rButton2.Name = "rButton2";
+            this.rButton2.Size = new System.Drawing.Size(154, 37);
+            this.rButton2.TabIndex = 23;
+            this.rButton2.Text = "Update";
+            this.rButton2.TextColor = System.Drawing.Color.White;
+            this.rButton2.UseVisualStyleBackColor = false;
             // 
             // FormMyShipment
             // 
-            AutoScaleDimensions = new SizeF(17F, 41F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(164, 206, 149);
-            ClientSize = new Size(1684, 1126);
-            Controls.Add(rBUpdateShipment);
-            Controls.Add(pnlShipment);
-            Controls.Add(pnlMenu);
-            ForeColor = SystemColors.ActiveCaptionText;
-            Name = "FormMyShipment";
-            Text = "FormMyShipment";
-            pnlShipment.ResumeLayout(false);
-            pnlMenu.ResumeLayout(false);
-            pnlMenu.PerformLayout();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
+            this.ClientSize = new System.Drawing.Size(756, 534);
+            this.Controls.Add(this.rButton2);
+            this.Controls.Add(this.ucProductStatus1);
+            this.Controls.Add(this.panel3);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Margin = new System.Windows.Forms.Padding(1);
+            this.Name = "FormMyShipment";
+            this.Text = "FormMyShipment";
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
-
-        private Panel pnlShipment;
-        private Panel pnlMenu;
-        private Label label1;
-        private Label lblAction;
-        private Label lblTotalPrice;
-        private CheckBox chBProducts;
-        private UCShipment ucShipment1;
+        private Panel panel3;
         private Label label2;
-        private RJControls.RButton rBUpdateShipment;
+        private Panel panel4;
+        private UcProductStatus ucProductStatus1;
+        private RJControls.RButton rButton2;
     }
 }
