@@ -29,11 +29,7 @@ namespace QuanLyTraoDoiHang
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnlMenu = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblAction = new System.Windows.Forms.Label();
-            this.lblTotalPrice = new System.Windows.Forms.Label();
-            this.chBProducts = new System.Windows.Forms.CheckBox();
+            this.ucCartProduct1 = new QuanLyTraoDoiHang.UCCartProduct();
             this.pnlCheckOut = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.rBCheckout = new QuanLyTraoDoiHang.RJControls.RButton();
@@ -42,74 +38,17 @@ namespace QuanLyTraoDoiHang
             this.lblPriceCheckOut = new System.Windows.Forms.Label();
             this.lblItemsCart = new System.Windows.Forms.Label();
             this.cBPay = new System.Windows.Forms.CheckBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.ucCartProduct1 = new QuanLyTraoDoiHang.UCCartProduct();
-            this.pnlMenu.SuspendLayout();
             this.pnlCheckOut.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pnlMenu
+            // ucCartProduct1
             // 
-            this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(149)))), ((int)(((byte)(210)))));
-            this.pnlMenu.Controls.Add(this.label1);
-            this.pnlMenu.Controls.Add(this.lblAction);
-            this.pnlMenu.Controls.Add(this.lblTotalPrice);
-            this.pnlMenu.Controls.Add(this.chBProducts);
-            this.pnlMenu.Location = new System.Drawing.Point(24, 22);
-            this.pnlMenu.Margin = new System.Windows.Forms.Padding(1);
-            this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(939, 30);
-            this.pnlMenu.TabIndex = 11;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(591, 5);
-            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 21);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Status";
-            // 
-            // lblAction
-            // 
-            this.lblAction.AutoSize = true;
-            this.lblAction.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblAction.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblAction.Location = new System.Drawing.Point(773, 5);
-            this.lblAction.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblAction.Name = "lblAction";
-            this.lblAction.Size = new System.Drawing.Size(61, 21);
-            this.lblAction.TabIndex = 16;
-            this.lblAction.Text = "Actions";
-            // 
-            // lblTotalPrice
-            // 
-            this.lblTotalPrice.AutoSize = true;
-            this.lblTotalPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTotalPrice.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblTotalPrice.Location = new System.Drawing.Point(336, 5);
-            this.lblTotalPrice.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblTotalPrice.Name = "lblTotalPrice";
-            this.lblTotalPrice.Size = new System.Drawing.Size(80, 21);
-            this.lblTotalPrice.TabIndex = 15;
-            this.lblTotalPrice.Text = "Total Price";
-            // 
-            // chBProducts
-            // 
-            this.chBProducts.AutoSize = true;
-            this.chBProducts.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.chBProducts.ForeColor = System.Drawing.SystemColors.Control;
-            this.chBProducts.Location = new System.Drawing.Point(46, 4);
-            this.chBProducts.Margin = new System.Windows.Forms.Padding(1);
-            this.chBProducts.Name = "chBProducts";
-            this.chBProducts.Size = new System.Drawing.Size(126, 25);
-            this.chBProducts.TabIndex = 12;
-            this.chBProducts.Text = "Your Products";
-            this.chBProducts.UseVisualStyleBackColor = true;
+            this.ucCartProduct1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
+            this.ucCartProduct1.Location = new System.Drawing.Point(122, 34);
+            this.ucCartProduct1.Margin = new System.Windows.Forms.Padding(1);
+            this.ucCartProduct1.Name = "ucCartProduct1";
+            this.ucCartProduct1.Size = new System.Drawing.Size(755, 439);
+            this.ucCartProduct1.TabIndex = 19;
             // 
             // pnlCheckOut
             // 
@@ -122,11 +61,11 @@ namespace QuanLyTraoDoiHang
             this.pnlCheckOut.Controls.Add(this.lblItemsCart);
             this.pnlCheckOut.Controls.Add(this.cBPay);
             this.pnlCheckOut.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlCheckOut.Location = new System.Drawing.Point(0, 480);
+            this.pnlCheckOut.Location = new System.Drawing.Point(0, 467);
             this.pnlCheckOut.Margin = new System.Windows.Forms.Padding(1);
             this.pnlCheckOut.Name = "pnlCheckOut";
-            this.pnlCheckOut.Size = new System.Drawing.Size(984, 81);
-            this.pnlCheckOut.TabIndex = 12;
+            this.pnlCheckOut.Size = new System.Drawing.Size(984, 94);
+            this.pnlCheckOut.TabIndex = 20;
             // 
             // label2
             // 
@@ -150,14 +89,14 @@ namespace QuanLyTraoDoiHang
             this.rBCheckout.FlatAppearance.BorderSize = 0;
             this.rBCheckout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rBCheckout.Font = new System.Drawing.Font("Segoe UI", 11.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rBCheckout.ForeColor = System.Drawing.Color.Black;
+            this.rBCheckout.ForeColor = System.Drawing.Color.White;
             this.rBCheckout.Location = new System.Drawing.Point(782, 24);
             this.rBCheckout.Margin = new System.Windows.Forms.Padding(1);
             this.rBCheckout.Name = "rBCheckout";
             this.rBCheckout.Size = new System.Drawing.Size(111, 37);
             this.rBCheckout.TabIndex = 10;
             this.rBCheckout.Text = "Check Out";
-            this.rBCheckout.TextColor = System.Drawing.Color.Black;
+            this.rBCheckout.TextColor = System.Drawing.Color.White;
             this.rBCheckout.UseVisualStyleBackColor = false;
             // 
             // lblCheckOutPrice
@@ -221,65 +160,34 @@ namespace QuanLyTraoDoiHang
             this.cBPay.Text = "Select All";
             this.cBPay.UseVisualStyleBackColor = true;
             // 
-            // panel1
-            // 
-            this.panel1.AutoScroll = true;
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.ucCartProduct1);
-            this.panel1.Location = new System.Drawing.Point(24, 75);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(939, 386);
-            this.panel1.TabIndex = 14;
-            // 
-            // ucCartProduct1
-            // 
-            this.ucCartProduct1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
-            this.ucCartProduct1.Location = new System.Drawing.Point(34, 18);
-            this.ucCartProduct1.Margin = new System.Windows.Forms.Padding(1);
-            this.ucCartProduct1.Name = "ucCartProduct1";
-            this.ucCartProduct1.Size = new System.Drawing.Size(870, 83);
-            this.ucCartProduct1.TabIndex = 0;
-            // 
             // FormCart
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.pnlCheckOut);
-            this.Controls.Add(this.pnlMenu);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.ucCartProduct1);
             this.Margin = new System.Windows.Forms.Padding(1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormCart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormCart";
-            this.pnlMenu.ResumeLayout(false);
-            this.pnlMenu.PerformLayout();
             this.pnlCheckOut.ResumeLayout(false);
             this.pnlCheckOut.PerformLayout();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private Panel pnlMenu;
-        private CheckBox chBProducts;
-        private Label lblAction;
-        private Label lblTotalPrice;
-        private Label label1;
+        private UCCartProduct ucCartProduct1;
         private Panel pnlCheckOut;
-        private Panel panel1;
-        private CheckBox cBPay;
+        private Label label2;
+        private RJControls.RButton rBCheckout;
+        private Label lblCheckOutPrice;
+        private Label lblItemWriting;
         private Label lblPriceCheckOut;
         private Label lblItemsCart;
-        private Label lblItemWriting;
-        private Label lblCheckOutPrice;
-        private RJControls.RButton rBCheckout;
-        private Label label2;
-        private UCCartProduct ucCartProduct1;
+        private CheckBox cBPay;
     }
 }

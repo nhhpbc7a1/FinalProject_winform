@@ -29,7 +29,7 @@ namespace QuanLyTraoDoiHang
 
         private void ucShipment1_Load(object sender, EventArgs e)
         {
-            this.ucShipment1.dUDStatusShipment.ReadOnly = false; 
+            //this.ucShipment1.dUDStatusShipment.ReadOnly = false; 
         }
     }
 }

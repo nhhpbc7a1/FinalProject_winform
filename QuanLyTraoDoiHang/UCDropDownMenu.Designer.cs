@@ -29,135 +29,140 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCDropDownMenu));
-            fPanelDropDown = new FlowLayoutPanel();
-            rBSelect = new RJControls.RButton();
-            pnlOptions = new Panel();
-            rButton1 = new RJControls.RButton();
-            rButton2 = new RJControls.RButton();
-            rButton3 = new RJControls.RButton();
-            fPanelDropDown.SuspendLayout();
-            pnlOptions.SuspendLayout();
-            SuspendLayout();
+            this.fPanelDropDown = new System.Windows.Forms.FlowLayoutPanel();
+            this.rBSelect = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.pnlOptions = new System.Windows.Forms.Panel();
+            this.rButton1 = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.rButton2 = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.rButton3 = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.fPanelDropDown.SuspendLayout();
+            this.pnlOptions.SuspendLayout();
+            this.SuspendLayout();
             // 
             // fPanelDropDown
             // 
-            fPanelDropDown.BackColor = Color.FromArgb(164, 206, 149);
-            fPanelDropDown.Controls.Add(rBSelect);
-            fPanelDropDown.Controls.Add(pnlOptions);
-            fPanelDropDown.Location = new Point(3, 0);
-            fPanelDropDown.MaximumSize = new Size(487, 600);
-            fPanelDropDown.MinimumSize = new Size(487, 100);
-            fPanelDropDown.Name = "fPanelDropDown";
-            fPanelDropDown.Size = new Size(487, 464);
-            fPanelDropDown.TabIndex = 0;
-            fPanelDropDown.Paint += fPanelDropDown_Paint;
+            this.fPanelDropDown.BackColor = System.Drawing.Color.White;
+            this.fPanelDropDown.Controls.Add(this.rBSelect);
+            this.fPanelDropDown.Controls.Add(this.pnlOptions);
+            this.fPanelDropDown.Location = new System.Drawing.Point(1, 0);
+            this.fPanelDropDown.Margin = new System.Windows.Forms.Padding(1);
+            this.fPanelDropDown.MaximumSize = new System.Drawing.Size(201, 220);
+            this.fPanelDropDown.MinimumSize = new System.Drawing.Size(201, 37);
+            this.fPanelDropDown.Name = "fPanelDropDown";
+            this.fPanelDropDown.Size = new System.Drawing.Size(201, 170);
+            this.fPanelDropDown.TabIndex = 0;
             // 
             // rBSelect
             // 
-            rBSelect.AllowDrop = true;
-            rBSelect.BackColor = Color.FromArgb(244, 237, 204);
-            rBSelect.BackgroundColor = Color.FromArgb(244, 237, 204);
-            rBSelect.BorderColor = Color.PaleVioletRed;
-            rBSelect.BorderRadius = 0;
-            rBSelect.BorderSize = 0;
-            rBSelect.FlatAppearance.BorderSize = 0;
-            rBSelect.FlatStyle = FlatStyle.Flat;
-            rBSelect.ForeColor = Color.SaddleBrown;
-            rBSelect.Image = (Image)resources.GetObject("rBSelect.Image");
-            rBSelect.ImageAlign = ContentAlignment.MiddleRight;
-            rBSelect.Location = new Point(3, 3);
-            rBSelect.Name = "rBSelect";
-            rBSelect.Size = new Size(483, 102);
-            rBSelect.TabIndex = 1;
-            rBSelect.Text = "Select";
-            rBSelect.TextColor = Color.SaddleBrown;
-            rBSelect.UseVisualStyleBackColor = false;
-            rBSelect.Click += rButton1_Click;
+            this.rBSelect.AllowDrop = true;
+            this.rBSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
+            this.rBSelect.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
+            this.rBSelect.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rBSelect.BorderRadius = 0;
+            this.rBSelect.BorderSize = 0;
+            this.rBSelect.FlatAppearance.BorderSize = 0;
+            this.rBSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rBSelect.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.rBSelect.Image = ((System.Drawing.Image)(resources.GetObject("rBSelect.Image")));
+            this.rBSelect.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.rBSelect.Location = new System.Drawing.Point(1, 1);
+            this.rBSelect.Margin = new System.Windows.Forms.Padding(1);
+            this.rBSelect.Name = "rBSelect";
+            this.rBSelect.Size = new System.Drawing.Size(199, 37);
+            this.rBSelect.TabIndex = 1;
+            this.rBSelect.Text = "Select";
+            this.rBSelect.TextColor = System.Drawing.Color.SaddleBrown;
+            this.rBSelect.UseVisualStyleBackColor = false;
             // 
             // pnlOptions
             // 
-            pnlOptions.AutoScroll = true;
-            pnlOptions.AutoScrollMargin = new Size(0, 180);
-            pnlOptions.BackColor = Color.FromArgb(164, 206, 149);
-            pnlOptions.Controls.Add(rButton1);
-            pnlOptions.Controls.Add(rButton2);
-            pnlOptions.Controls.Add(rButton3);
-            pnlOptions.Location = new Point(3, 111);
-            pnlOptions.Name = "pnlOptions";
-            pnlOptions.Size = new Size(480, 337);
-            pnlOptions.TabIndex = 1;
+            this.pnlOptions.AutoScroll = true;
+            this.pnlOptions.AutoScrollMargin = new System.Drawing.Size(0, 180);
+            this.pnlOptions.BackColor = System.Drawing.Color.White;
+            this.pnlOptions.Controls.Add(this.rButton1);
+            this.pnlOptions.Controls.Add(this.rButton2);
+            this.pnlOptions.Controls.Add(this.rButton3);
+            this.pnlOptions.Location = new System.Drawing.Point(1, 40);
+            this.pnlOptions.Margin = new System.Windows.Forms.Padding(1);
+            this.pnlOptions.Name = "pnlOptions";
+            this.pnlOptions.Size = new System.Drawing.Size(198, 123);
+            this.pnlOptions.TabIndex = 1;
             // 
             // rButton1
             // 
-            rButton1.BackColor = Color.FromArgb(244, 237, 230);
-            rButton1.BackgroundColor = Color.FromArgb(244, 237, 230);
-            rButton1.BorderColor = Color.PaleVioletRed;
-            rButton1.BorderRadius = 0;
-            rButton1.BorderSize = 0;
-            rButton1.FlatAppearance.BorderSize = 0;
-            rButton1.FlatStyle = FlatStyle.Flat;
-            rButton1.ForeColor = Color.SaddleBrown;
-            rButton1.ImageAlign = ContentAlignment.MiddleRight;
-            rButton1.Location = new Point(-6, 0);
-            rButton1.Name = "rButton1";
-            rButton1.Size = new Size(480, 102);
-            rButton1.TabIndex = 2;
-            rButton1.Text = "Select";
-            rButton1.TextColor = Color.SaddleBrown;
-            rButton1.UseVisualStyleBackColor = false;
-            rButton1.Click += rButton1_Click_1;
+            this.rButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(230)))));
+            this.rButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(230)))));
+            this.rButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rButton1.BorderRadius = 0;
+            this.rButton1.BorderSize = 0;
+            this.rButton1.FlatAppearance.BorderSize = 0;
+            this.rButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rButton1.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.rButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.rButton1.Location = new System.Drawing.Point(-2, 0);
+            this.rButton1.Margin = new System.Windows.Forms.Padding(1);
+            this.rButton1.Name = "rButton1";
+            this.rButton1.Size = new System.Drawing.Size(198, 37);
+            this.rButton1.TabIndex = 2;
+            this.rButton1.Text = "Select";
+            this.rButton1.TextColor = System.Drawing.Color.SaddleBrown;
+            this.rButton1.UseVisualStyleBackColor = false;
+            this.rButton1.Click += new System.EventHandler(this.rButton1_Click_2);
             // 
             // rButton2
             // 
-            rButton2.BackColor = Color.FromArgb(244, 237, 230);
-            rButton2.BackgroundColor = Color.FromArgb(244, 237, 230);
-            rButton2.BorderColor = Color.PaleVioletRed;
-            rButton2.BorderRadius = 0;
-            rButton2.BorderSize = 0;
-            rButton2.FlatAppearance.BorderSize = 0;
-            rButton2.FlatStyle = FlatStyle.Flat;
-            rButton2.ForeColor = Color.SaddleBrown;
-            rButton2.ImageAlign = ContentAlignment.MiddleRight;
-            rButton2.Location = new Point(-6, 108);
-            rButton2.Name = "rButton2";
-            rButton2.Size = new Size(480, 102);
-            rButton2.TabIndex = 3;
-            rButton2.Text = "Select";
-            rButton2.TextColor = Color.SaddleBrown;
-            rButton2.UseVisualStyleBackColor = false;
-            rButton2.Click += rButton2_Click;
+            this.rButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(230)))));
+            this.rButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(230)))));
+            this.rButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rButton2.BorderRadius = 0;
+            this.rButton2.BorderSize = 0;
+            this.rButton2.FlatAppearance.BorderSize = 0;
+            this.rButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rButton2.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.rButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.rButton2.Location = new System.Drawing.Point(-2, 40);
+            this.rButton2.Margin = new System.Windows.Forms.Padding(1);
+            this.rButton2.Name = "rButton2";
+            this.rButton2.Size = new System.Drawing.Size(198, 37);
+            this.rButton2.TabIndex = 3;
+            this.rButton2.Text = "Select";
+            this.rButton2.TextColor = System.Drawing.Color.SaddleBrown;
+            this.rButton2.UseVisualStyleBackColor = false;
+            this.rButton2.Click += new System.EventHandler(this.rButton2_Click_1);
             // 
             // rButton3
             // 
-            rButton3.BackColor = Color.FromArgb(244, 237, 230);
-            rButton3.BackgroundColor = Color.FromArgb(244, 237, 230);
-            rButton3.BorderColor = Color.PaleVioletRed;
-            rButton3.BorderRadius = 0;
-            rButton3.BorderSize = 0;
-            rButton3.FlatAppearance.BorderSize = 0;
-            rButton3.FlatStyle = FlatStyle.Flat;
-            rButton3.ForeColor = Color.SaddleBrown;
-            rButton3.ImageAlign = ContentAlignment.MiddleRight;
-            rButton3.Location = new Point(-6, 216);
-            rButton3.Name = "rButton3";
-            rButton3.Size = new Size(480, 102);
-            rButton3.TabIndex = 4;
-            rButton3.Text = "Select";
-            rButton3.TextColor = Color.SaddleBrown;
-            rButton3.UseVisualStyleBackColor = false;
-            rButton3.Click += rButton3_Click;
+            this.rButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(230)))));
+            this.rButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(230)))));
+            this.rButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rButton3.BorderRadius = 0;
+            this.rButton3.BorderSize = 0;
+            this.rButton3.FlatAppearance.BorderSize = 0;
+            this.rButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rButton3.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.rButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.rButton3.Location = new System.Drawing.Point(-2, 79);
+            this.rButton3.Margin = new System.Windows.Forms.Padding(1);
+            this.rButton3.Name = "rButton3";
+            this.rButton3.Size = new System.Drawing.Size(198, 37);
+            this.rButton3.TabIndex = 4;
+            this.rButton3.Text = "Select";
+            this.rButton3.TextColor = System.Drawing.Color.SaddleBrown;
+            this.rButton3.UseVisualStyleBackColor = false;
+            this.rButton3.Click += new System.EventHandler(this.rButton3_Click);
             // 
             // UCDropDownMenu
             // 
-            AutoScaleDimensions = new SizeF(17F, 41F);
-            AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(fPanelDropDown);
-            Name = "UCDropDownMenu";
-            Size = new Size(1235, 869);
-            Load += UCDropDownMenu_Load;
-            fPanelDropDown.ResumeLayout(false);
-            pnlOptions.ResumeLayout(false);
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.fPanelDropDown);
+            this.Margin = new System.Windows.Forms.Padding(1);
+            this.Name = "UCDropDownMenu";
+            this.Size = new System.Drawing.Size(509, 318);
+            this.fPanelDropDown.ResumeLayout(false);
+            this.pnlOptions.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

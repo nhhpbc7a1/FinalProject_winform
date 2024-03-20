@@ -19,7 +19,7 @@ namespace QuanLyTraoDoiHang
 
         private void ucShipment1_Load(object sender, EventArgs e)
         {
-            this.ucShipment1.dUDStatusShipment.Text = "Cancelled";
+            //this..dUDStatusShipment.Text = "Cancelled";
         }
     }
 }
