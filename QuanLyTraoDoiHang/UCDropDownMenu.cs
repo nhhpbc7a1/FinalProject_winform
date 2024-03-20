@@ -19,28 +19,12 @@ namespace QuanLyTraoDoiHang
             InitializeComponent();
         }
 
-        private void btnDropDown_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnDropDown_Click_1(object sender, EventArgs e)
-        {
-
-        }
+      
+       
         bool expand = false;
 
 
-        private void btnOption3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnDropDown_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
+      
         private void rButton1_Click(object sender, EventArgs e)
         {
             if (pnlOptions.Visible == false)
@@ -61,24 +45,32 @@ namespace QuanLyTraoDoiHang
 
         }
 
-        private void rButton1_Click_1(object sender, EventArgs e)
+      
+      
+
+      
+        private void UCDropDownMenu_Load(object sender, EventArgs e)
+        {
+            pnlOptions.Visible = false;
+        }
+
+        private void rButton1_Click_2(object sender, EventArgs e)
+        {
+
+            HideOptions();
+
+        }
+
+        private void rButton2_Click_1(object sender, EventArgs e)
         {
             HideOptions();
+
         }
 
         private void rButton3_Click(object sender, EventArgs e)
         {
             HideOptions();
-        }
 
-        private void rButton2_Click(object sender, EventArgs e)
-        {
-            HideOptions();
-        }
-
-        private void UCDropDownMenu_Load(object sender, EventArgs e)
-        {
-            pnlOptions.Visible = false;
         }
     }
 }
