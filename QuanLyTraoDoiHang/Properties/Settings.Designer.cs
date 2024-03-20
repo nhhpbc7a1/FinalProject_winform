@@ -22,5 +22,15 @@ namespace QuanLyTraoDoiHang.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\mssqllocaldb;Initial Catalog=test_proj;Integrated Security=" +
+            "True")]
+        public string connStr {
+            get {
+                return ((string)(this["connStr"]));
+            }
+        }
     }
 }

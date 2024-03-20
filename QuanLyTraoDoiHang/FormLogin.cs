@@ -5,6 +5,7 @@ namespace QuanLyTraoDoiHang
         public Form1()
         {
             InitializeComponent();
+            ucPassword.txtPass.PlaceholderText = " Password";
         }
 
 
@@ -41,6 +42,26 @@ namespace QuanLyTraoDoiHang
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSignin_Click(object sender, EventArgs e)
+        {
+            Account account = AccountDAO.SelectByUsername(txtUsername.Text);
+            if (account == null)
+            {
+                MessageBox.Show("wrong username");
+                txtUsername.Focus();
+                return;
+            }
+            if (ucPassword.txtPass.Text != account.password)
+            {
+                MessageBox.Show("wrong password");
+                ucPassword.txtPass.Focus();
+                return;
+            }
+            MessageBox.Show("Login successfully","Notification", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+            Program.currentUser = UserDAO.SelectByUserId(account.userId);
+            Close();
         }
     }
 }

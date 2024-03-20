@@ -61,7 +61,7 @@
   <data name="rButton3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAAAfpJREFUWEftl08vA0EYxtefG7ozraRBd1fiJBLE3XcQItwl0tkSBxc3N5SDg6tI
+        DAAACwwBP0AiyAAAAfpJREFUWEftl08vA0EYxtefG7ozraRBd1fiJBLE3XcQItwl0tkSBxc3N5SDg6tI
         E5+BEC7OvoAE4cTBiSgHUp7ZfbtZNaTN1szFL3my6czknae7z7zdWv+YwFuymSv4dm+hK0NDBlm1Wh3B
         Dlyffzg+H6JRc8DIWmiG3eFjSzhqiJywJ2CmQoZ2adgMnkgP4lE9SjOB8ukpmtKPK2yOEF9GZgR/k8Gm
         ac3EQhwzdEaz+kFWil/MQDhdKzStF0/YkzAQhDguz7dHaYk++gQbdgV7rjWDx3ePab3HPTeXSiMnV7Vm
@@ -296,7 +296,7 @@
         /FD8/fir8afjN8Zb218PXu7zX/b/AT3HzSx3Ld22AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="pictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ptbImage.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAQDAwQDAwQEBAQFBQQFBwsHBwYGBw4KCggLEA4RERAOEA8S
         FBoWEhMYEw8QFh8XGBsbHR0dERYgIh8cIhocHRz/2wBDAQUFBQcGBw0HBw0cEhASHBwcHBwcHBwcHBwc
@@ -1467,7 +1467,7 @@
         BxwgjsW2YON+NwQrXlEJsTe71yIkupNv3//Z
 </value>
   </data>
-  <data name="richTextBox1.Text" xml:space="preserve">
+  <data name="richTextBoxDescription.Text" xml:space="preserve">
     <value>This device is unlocked from any phone company (factory unlocked).
 
 The Xiaomi Redmi 9A 2GB/32GB 6.53´´ Dual SIM Smartphone is one of the most simple but functional designs of this brand since it has a basic camera, expandible storage with microSD, and an excellent battery, which makes it ideal for seniors or children.
