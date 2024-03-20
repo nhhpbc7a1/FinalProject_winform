@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,6 +19,7 @@ namespace QuanLyTraoDoiHang
             pnl_ThisSellerPage.Visible = false;
 
         }
+        public static Product currentProduct = new Product();
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
@@ -26,8 +28,15 @@ namespace QuanLyTraoDoiHang
 
         private void FormProductDetail_Load(object sender, EventArgs e)
         {
-            pnl_ThisSellerPage.BringToFront();
-
+            ptbImage.BackgroundImage = currentProduct.image;
+            lblName.Text = currentProduct.name;
+            lblPrice.Text = currentProduct.price.ToString();
+            lblOriginalPrice.Text = currentProduct.originalPrice.ToString();
+            lblWarrantyPolicy.Text = currentProduct.warrantyPolicy.ToString();
+            lblBrand.Text = currentProduct.brand.ToString();
+            lblCondition.Text = currentProduct.condition.ToString();
+            lblBought.Text = currentProduct.dateBought.ToString();
+            richTextBoxDescription.Text = currentProduct.description;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -54,7 +63,6 @@ namespace QuanLyTraoDoiHang
             pnl_ThisSellerPage.BringToFront();
             pnl_ThisSellerPage.Dock = DockStyle.Left;
         }
-
 
     }
 }

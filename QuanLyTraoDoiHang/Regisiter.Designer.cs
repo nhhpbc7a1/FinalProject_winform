@@ -30,18 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Regisiter));
             this.lblBirthday = new System.Windows.Forms.Label();
-            this.txtRetypePass = new System.Windows.Forms.TextBox();
-            this.txtPass = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.dtBirthday = new System.Windows.Forms.DateTimePicker();
-            this.txtID = new System.Windows.Forms.TextBox();
+            this.txtPersonalId = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.ucPassword = new QuanLyTraoDoiHang.UCPasswordTextBox();
+            this.ucRetypePassword = new QuanLyTraoDoiHang.UCPasswordTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -53,9 +51,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -71,33 +67,9 @@
             this.lblBirthday.Location = new System.Drawing.Point(57, 158);
             this.lblBirthday.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBirthday.Name = "lblBirthday";
-            this.lblBirthday.Size = new System.Drawing.Size(71, 21);
+            this.lblBirthday.Size = new System.Drawing.Size(88, 28);
             this.lblBirthday.TabIndex = 3;
             this.lblBirthday.Text = "Birthday";
-            // 
-            // txtRetypePass
-            // 
-            this.txtRetypePass.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.txtRetypePass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRetypePass.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtRetypePass.Location = new System.Drawing.Point(57, 463);
-            this.txtRetypePass.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtRetypePass.Name = "txtRetypePass";
-            this.txtRetypePass.PlaceholderText = "  Re-type Password";
-            this.txtRetypePass.Size = new System.Drawing.Size(306, 29);
-            this.txtRetypePass.TabIndex = 8;
-            // 
-            // txtPass
-            // 
-            this.txtPass.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPass.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtPass.Location = new System.Drawing.Point(58, 402);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtPass.Name = "txtPass";
-            this.txtPass.PlaceholderText = "  Password";
-            this.txtPass.Size = new System.Drawing.Size(306, 29);
-            this.txtPass.TabIndex = 9;
             // 
             // txtEmail
             // 
@@ -108,7 +80,7 @@
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PlaceholderText = "  Email";
-            this.txtEmail.Size = new System.Drawing.Size(306, 29);
+            this.txtEmail.Size = new System.Drawing.Size(306, 34);
             this.txtEmail.TabIndex = 10;
             this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
@@ -121,7 +93,7 @@
             this.txtPhone.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.PlaceholderText = "  Phone";
-            this.txtPhone.Size = new System.Drawing.Size(306, 29);
+            this.txtPhone.Size = new System.Drawing.Size(306, 34);
             this.txtPhone.TabIndex = 11;
             // 
             // dtBirthday
@@ -133,21 +105,21 @@
             this.dtBirthday.Location = new System.Drawing.Point(58, 150);
             this.dtBirthday.Name = "dtBirthday";
             this.dtBirthday.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dtBirthday.Size = new System.Drawing.Size(306, 29);
+            this.dtBirthday.Size = new System.Drawing.Size(306, 34);
             this.dtBirthday.TabIndex = 15;
             this.dtBirthday.ValueChanged += new System.EventHandler(this.dtBirthday_ValueChanged);
             // 
-            // txtID
+            // txtPersonalId
             // 
-            this.txtID.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.txtID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtID.Location = new System.Drawing.Point(58, 217);
-            this.txtID.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtID.Name = "txtID";
-            this.txtID.PlaceholderText = "  ID number";
-            this.txtID.Size = new System.Drawing.Size(306, 29);
-            this.txtID.TabIndex = 14;
+            this.txtPersonalId.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txtPersonalId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPersonalId.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPersonalId.Location = new System.Drawing.Point(58, 217);
+            this.txtPersonalId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtPersonalId.Name = "txtPersonalId";
+            this.txtPersonalId.PlaceholderText = "  Personal ID";
+            this.txtPersonalId.Size = new System.Drawing.Size(306, 34);
+            this.txtPersonalId.TabIndex = 14;
             // 
             // txtUsername
             // 
@@ -158,24 +130,22 @@
             this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PlaceholderText = "  Username";
-            this.txtUsername.Size = new System.Drawing.Size(306, 29);
+            this.txtUsername.Size = new System.Drawing.Size(306, 34);
             this.txtUsername.TabIndex = 2;
             // 
             // panel3
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
+            this.panel3.Controls.Add(this.ucRetypePassword);
+            this.panel3.Controls.Add(this.ucPassword);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.pictureBox7);
-            this.panel3.Controls.Add(this.pictureBox6);
             this.panel3.Controls.Add(this.pictureBox4);
             this.panel3.Controls.Add(this.pictureBox5);
             this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Controls.Add(this.txtID);
-            this.panel3.Controls.Add(this.txtRetypePass);
+            this.panel3.Controls.Add(this.txtPersonalId);
             this.panel3.Controls.Add(this.dtBirthday);
-            this.panel3.Controls.Add(this.txtPass);
             this.panel3.Controls.Add(this.txtEmail);
             this.panel3.Controls.Add(this.btnRegister);
             this.panel3.Controls.Add(this.txtPhone);
@@ -186,6 +156,24 @@
             this.panel3.Size = new System.Drawing.Size(421, 615);
             this.panel3.TabIndex = 15;
             // 
+            // ucPassword
+            // 
+            this.ucPassword.BackColor = System.Drawing.Color.White;
+            this.ucPassword.Location = new System.Drawing.Point(58, 397);
+            this.ucPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ucPassword.Name = "ucPassword";
+            this.ucPassword.Size = new System.Drawing.Size(306, 34);
+            this.ucPassword.TabIndex = 28;
+            // 
+            // ucRetypePassword
+            // 
+            this.ucRetypePassword.BackColor = System.Drawing.Color.White;
+            this.ucRetypePassword.Location = new System.Drawing.Point(58, 457);
+            this.ucRetypePassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ucRetypePassword.Name = "ucRetypePassword";
+            this.ucRetypePassword.Size = new System.Drawing.Size(306, 34);
+            this.ucRetypePassword.TabIndex = 29;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -193,20 +181,9 @@
             this.label5.ForeColor = System.Drawing.SystemColors.InfoText;
             this.label5.Location = new System.Drawing.Point(147, 17);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(142, 45);
+            this.label5.Size = new System.Drawing.Size(178, 54);
             this.label5.TabIndex = 19;
             this.label5.Text = "Register";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(338, 468);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(18, 18);
-            this.pictureBox3.TabIndex = 27;
-            this.pictureBox3.TabStop = false;
             // 
             // pictureBox7
             // 
@@ -218,17 +195,6 @@
             this.pictureBox7.Size = new System.Drawing.Size(18, 18);
             this.pictureBox7.TabIndex = 26;
             this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(338, 407);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(18, 18);
-            this.pictureBox6.TabIndex = 25;
-            this.pictureBox6.TabStop = false;
             // 
             // pictureBox4
             // 
@@ -281,6 +247,7 @@
             this.btnRegister.Text = "Register";
             this.btnRegister.TextColor = System.Drawing.Color.White;
             this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // label3
             // 
@@ -289,16 +256,16 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(-18, 248);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 19);
+            this.label3.Size = new System.Drawing.Size(0, 23);
             this.label3.TabIndex = 17;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Cooper Black", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(-123, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 55);
+            this.label2.Size = new System.Drawing.Size(0, 69);
             this.label2.TabIndex = 16;
             // 
             // panel1
@@ -330,7 +297,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
             this.label4.Location = new System.Drawing.Point(67, 287);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(301, 24);
+            this.label4.Size = new System.Drawing.Size(393, 33);
             this.label4.TabIndex = 13;
             this.label4.Text = "Trade Goods, Seamless, Swift";
             // 
@@ -341,7 +308,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
             this.label1.Location = new System.Drawing.Point(122, 217);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(186, 70);
+            this.label1.Size = new System.Drawing.Size(234, 89);
             this.label1.TabIndex = 9;
             this.label1.Text = "KoHa";
             // 
@@ -361,9 +328,7 @@
             this.Text = "Regisiter";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -377,12 +342,10 @@
 
         #endregion
         private Label lblBirthday;
-        private TextBox txtRetypePass;
-        private TextBox txtPass;
         private TextBox txtEmail;
         private TextBox txtPhone;
         private DateTimePicker dtBirthday;
-        private TextBox txtID;
+        private TextBox txtPersonalId;
         private TextBox txtUsername;
         private Panel panel3;
         private RJControls.RButton btnRegister;
@@ -392,12 +355,12 @@
         private PictureBox pictureBox1;
         private Label label4;
         private Label label1;
-        private PictureBox pictureBox3;
         private PictureBox pictureBox7;
-        private PictureBox pictureBox6;
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
         private PictureBox pictureBox2;
         private Label label5;
+        private UCPasswordTextBox ucRetypePassword;
+        private UCPasswordTextBox ucPassword;
     }
 }
