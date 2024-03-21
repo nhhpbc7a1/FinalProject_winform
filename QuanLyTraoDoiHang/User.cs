@@ -14,11 +14,12 @@ namespace QuanLyTraoDoiHang
         public DateOnly birthday;
         public string email;
         public string phone; 
-        public string gender; 
+        public int gender; 
         public string address; 
         public Image image = Properties.Resources.empty_avatar;
+        public DateOnly dateJoined;
         public User() { }
-        public User(string personalId, string name, DateOnly birthday, string email, string phone, string gender, string address)
+        public User(string personalId, string name, DateOnly birthday, string email, string phone, int gender, string address)
         {
             this.personalId = personalId;
             this.userId = UserDAO.CreateID();
@@ -28,6 +29,7 @@ namespace QuanLyTraoDoiHang
             this.phone = phone;
             this.gender = gender;
             this.address = address;
+            dateJoined = DateOnly.FromDateTime(DateTime.Now);
         }
     }
 }

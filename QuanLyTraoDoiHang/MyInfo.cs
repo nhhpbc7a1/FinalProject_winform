@@ -15,8 +15,92 @@ namespace QuanLyTraoDoiHang
         public MyInfo()
         {
             InitializeComponent();
+            Load += MyInfo_Load;
+            btnSave.Click += btnSave_Click;
         }
 
-       
+        private void MyInfo_Load(object sender, EventArgs e)
+        {
+            txtName.Text = Program.currentUser.name;
+            txtPersonalID.Text = Program.currentUser.personalId;
+            dtBirthday.Text = Program.currentUser.birthday.ToString();
+            txtEmail.Text = Program.currentUser.email;
+            txtPhone.Text = Program.currentUser.phone;
+            txtAddress.Text = Program.currentUser.address;
+            switch (Program.currentUser.gender)
+            {
+                case 0:
+                    {
+                        radioBtnFemale.Checked = true; break;
+                    }
+                case 1:
+                    {
+                        radioBtnMale.Checked = true; break;
+                    }
+                case 2:
+                    {
+                        radioBtnOther.Checked = true; break;
+                    }
+            }
+            lblDateJoined.Text = Program.currentUser.dateJoined.ToString();
+        }
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if (txtName.Text.Trim() == "")
+            {
+                MessageBox.Show("You haven't input your Name!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtName.Focus();
+                return;
+            }
+            if (txtEmail.Text.Trim() == "")
+            {
+                MessageBox.Show("You haven't input your Email!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtEmail.Focus();
+                return;
+            }
+            if (txtAddress.Text.Trim() == "")
+            {
+                MessageBox.Show("You haven't input your Address!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtAddress.Focus();
+                return;
+            }
+            if (txtPhone.Text.Trim() == "")
+            {
+                MessageBox.Show("You haven't input your Phone!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtPhone.Focus();
+                return;
+            }
+            if (txtPersonalID.Text.Trim() == "")
+            {
+                MessageBox.Show("You haven't input your Personal ID!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtPersonalID.Focus();
+                return;
+            }
+            if (UserDAO.IsAdult(dtBirthday.Value) == false)
+            {
+                MessageBox.Show("You must be an adult !", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            User user = new User();
+            user.name = txtName.Text;
+            user.personalId = txtPersonalID.Text;
+            user.email = txtEmail.Text;
+            user.phone = txtPhone.Text;
+            user.address = txtAddress.Text;
+            if (radioBtnFemale.Checked == true)
+                user.gender = 0;
+            if (radioBtnMale.Checked == true)
+                user.gender = 1;
+            if (radioBtnOther.Checked == true)
+                user.gender = 2;
+
+            user.birthday = DateOnly.FromDateTime(dtBirthday.Value);
+            user.userId = Program.currentUser.userId;
+            user.image = Program.currentUser.image;
+            UserDAO.Update(user);
+            MessageBox.Show("Update info successfully");
+        }
+
     }
 }

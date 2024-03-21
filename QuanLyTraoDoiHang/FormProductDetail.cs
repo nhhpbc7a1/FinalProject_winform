@@ -37,6 +37,12 @@ namespace QuanLyTraoDoiHang
             lblCondition.Text = currentProduct.condition.ToString();
             lblBought.Text = currentProduct.dateBought.ToString();
             richTextBoxDescription.Text = currentProduct.description;
+            //seller info
+            User seller = UserDAO.SelectByUserId(currentProduct.sellerId);
+            lblSellerName.Text = seller.name;
+            ptbSellerImage.BackgroundImage = seller.image;
+            lblSellerAddress.Text = seller.address;
+            lblDateJoined.Text = seller.dateJoined.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -105,7 +105,7 @@ namespace QuanLyTraoDoiHang
                 return;
             }
 
-            User user = new User(txtPersonalId.Text,"",DateOnly.FromDateTime(dtBirthday.Value),txtEmail.Text,txtPhone.Text,"","");
+            User user = new User(txtPersonalId.Text,"",DateOnly.FromDateTime(dtBirthday.Value),txtEmail.Text,txtPhone.Text,0,"");
             Account account = new Account(user.userId,txtUsername.Text,ucPassword.txtPass.Text);
 
             UserDAO.Add(user);

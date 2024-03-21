@@ -8,9 +8,10 @@ create table UserTable (
 	birthday date, 
 	email nvarchar(100), 
 	phone nvarchar(100), 
-	gender nvarchar(100), 
+	gender int, 
 	address nvarchar(100), 
 	image varbinary(max),
+	dateJoined date,
 );
 go
 --drop table Product ;

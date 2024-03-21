@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyTraoDoiHang.RJControls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -40,6 +41,14 @@ namespace QuanLyTraoDoiHang
                 lblSellerChannel.Visible = true;
                 lblSignIn.Visible = false;
                 lblSignUp.Visible = false;
+            }
+            else
+            {
+                btnAccount.Visible = false;
+                lblSellerChannel.Visible = false;
+                lblSignIn.Visible = true;
+                lblSignUp.Visible = true;
+
             }
         }
 
@@ -93,8 +102,16 @@ namespace QuanLyTraoDoiHang
 
         private void btnAccount_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new PersonalInfor());
-
+            PersonalInfor form = new PersonalInfor();
+            void Logout(object sender, EventArgs e)
+            {
+                MessageBox.Show("Logout successfully");
+                Program.currentUser = null;
+                BackToMainpage(sender,e);
+                UpdateAccountByAction(sender, e);
+            }
+            form.btnLogout.Click += Logout;
+            OpenChildForm(form);
         }
 
         private void btnAddProduct_Click(object sender, EventArgs e)

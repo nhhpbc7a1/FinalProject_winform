@@ -96,7 +96,6 @@ namespace QuanLyTraoDoiHang
 
             productDAO.Add(x);
             MessageBox.Show("add successfully");
-            Close();
         }
 
 
