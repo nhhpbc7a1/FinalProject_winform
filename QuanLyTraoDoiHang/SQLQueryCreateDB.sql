@@ -1,24 +1,4 @@
 ﻿
-drop table Product ;
-go
-
-create table Product (
-	productId int primary key, 
-	sellerId int references UserTable(userId), 
-	type nvarchar(100), 
-	name nvarchar(100), 
-	price int, 
-	image varbinary(max),
-	originalPrice int, 
-	condition nvarchar(100), 
-	warrantyPolicy nvarchar(100), 
-	dateBought date, 
-	Brand nvarchar(100), 
-	Origin nvarchar(100), 
-	Description nvarchar(2000),
-);
-go
-
 --drop table UserTable;
 --go
 create table UserTable (
@@ -33,6 +13,26 @@ create table UserTable (
 	image varbinary(max),
 );
 go
+--drop table Product ;
+--go
+
+create table Product (
+	productId int primary key, 
+	sellerId int references UserTable(userId), 
+	category nvarchar(100), 
+	name nvarchar(100), 
+	price int, 
+	image varbinary(max),
+	originalPrice int, 
+	condition nvarchar(100), 
+	warrantyPolicy nvarchar(100), 
+	dateBought date, 
+	Brand nvarchar(100), 
+	Origin nvarchar(100), 
+	Description nvarchar(2000),
+);
+go
+
 
 --drop table Account;
 --go

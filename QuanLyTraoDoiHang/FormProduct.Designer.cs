@@ -79,7 +79,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(730, 561);
             this.panel4.TabIndex = 56;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // flowLayoutPanelProductList
             // 
@@ -116,7 +115,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(237, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(242, 32);
+            this.label1.Size = new System.Drawing.Size(191, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Suggestion for today";
             // 
@@ -142,7 +141,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(254, 561);
             this.panel2.TabIndex = 56;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // comboBox2
             // 
@@ -159,7 +157,7 @@
             "5000000"});
             this.comboBox2.Location = new System.Drawing.Point(129, 419);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(89, 36);
+            this.comboBox2.Size = new System.Drawing.Size(89, 29);
             this.comboBox2.TabIndex = 56;
             // 
             // comboBox1
@@ -175,7 +173,7 @@
             "500000"});
             this.comboBox1.Location = new System.Drawing.Point(129, 368);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(89, 36);
+            this.comboBox1.Size = new System.Drawing.Size(89, 29);
             this.comboBox1.TabIndex = 55;
             // 
             // btnApply
@@ -230,7 +228,7 @@
             this.checkBox2.Location = new System.Drawing.Point(46, 124);
             this.checkBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(180, 32);
+            this.checkBox2.Size = new System.Drawing.Size(144, 25);
             this.checkBox2.TabIndex = 44;
             this.checkBox2.Text = "Electronic device";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -244,9 +242,8 @@
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(103, 21);
             this.label20.TabIndex = 49;
-            this.label20.Text = "Catagory";
+            this.label20.Text = "Category";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
             // label22
             // 
@@ -280,7 +277,7 @@
             this.checkBox1.Location = new System.Drawing.Point(46, 96);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(100, 32);
+            this.checkBox1.Size = new System.Drawing.Size(82, 25);
             this.checkBox1.TabIndex = 43;
             this.checkBox1.Text = "Fashion";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -292,7 +289,7 @@
             this.checkBox3.Location = new System.Drawing.Point(46, 153);
             this.checkBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(175, 32);
+            this.checkBox3.Size = new System.Drawing.Size(141, 25);
             this.checkBox3.TabIndex = 45;
             this.checkBox3.Text = "Consumer good";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -304,7 +301,7 @@
             this.checkBox4.Location = new System.Drawing.Point(46, 220);
             this.checkBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(95, 32);
+            this.checkBox4.Size = new System.Drawing.Size(77, 25);
             this.checkBox4.TabIndex = 46;
             this.checkBox4.Text = "Hà Nội";
             this.checkBox4.UseVisualStyleBackColor = true;
@@ -316,7 +313,7 @@
             this.checkBox6.Location = new System.Drawing.Point(46, 278);
             this.checkBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(100, 32);
+            this.checkBox6.Size = new System.Drawing.Size(80, 25);
             this.checkBox6.TabIndex = 48;
             this.checkBox6.Text = "Abroad";
             this.checkBox6.UseVisualStyleBackColor = true;
@@ -328,7 +325,7 @@
             this.checkBox5.Location = new System.Drawing.Point(46, 249);
             this.checkBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(173, 32);
+            this.checkBox5.Size = new System.Drawing.Size(140, 25);
             this.checkBox5.TabIndex = 47;
             this.checkBox5.Text = "TP. Hồ Chí Minh";
             this.checkBox5.UseVisualStyleBackColor = true;

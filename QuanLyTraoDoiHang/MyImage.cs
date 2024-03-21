@@ -31,7 +31,7 @@ namespace QuanLyTraoDoiHang
             {
                 return Image.FromFile(openFileDialog1.FileName);
             }
-            return Image.FromFile("");
+            return Properties.Resources.empty_product;
         }
         public static Image ByteArrayToImage(byte[] imgData)
         {

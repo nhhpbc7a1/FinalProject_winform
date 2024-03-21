@@ -42,8 +42,8 @@ namespace QuanLyTraoDoiHang
         {
             byte[] imageData = MyImage.ImageToByteArray(product.image);
 
-            string SQL = string.Format(" UPDATE " + tableName + " SET sellerId = '{1}', type = '{2}', name = '{3}', price = '{4}', image = '{5}', originalPrice = '{6}', condition = '{7}', warrantyPolicy = '{8}', dateBought = '{9}', Brand = '{10}', Origin = '{11}', Description = '{12}'  WHERE productId = '{0}' ;",
-            product.productId, product.sellerId, product.type, product.name, product.price, null, product.originalPrice, product.condition, product.warrantyPolicy, product.dateBought, product.brand, product.origin, product.description);
+            string SQL = string.Format(" UPDATE " + tableName + " SET sellerId = '{1}', category = '{2}', name = '{3}', price = '{4}', image = '{5}', originalPrice = '{6}', condition = '{7}', warrantyPolicy = '{8}', dateBought = '{9}', Brand = '{10}', Origin = '{11}', Description = '{12}'  WHERE productId = '{0}' ;",
+            product.productId, product.sellerId, product.category, product.name, product.price, null, product.originalPrice, product.condition, product.warrantyPolicy, product.dateBought, product.brand, product.origin, product.description);
 
             dBConnection.Execute(SQL);
         }
@@ -54,8 +54,8 @@ namespace QuanLyTraoDoiHang
             using (SqlConnection connection = new SqlConnection(Properties.Settings.Default.connStr))
             {
                 connection.Open();
-                string sqlStr = string.Format("INSERT INTO " + tableName + "(productId,sellerId,type,name,price,image,originalPrice,condition,warrantyPolicy,dateBought,Brand,Origin,Description) VALUES ('{0}','{1}','{2}','{3}','{4}',@ImageData,'{6}','{7}','{8}','{9}','{10}','{11}',N'{12}')",
-                product.productId, product.sellerId, product.type, product.name, product.price, null, product.originalPrice, product.condition, product.warrantyPolicy, product.dateBought, product.brand, product.origin, product.description);
+                string sqlStr = string.Format("INSERT INTO " + tableName + "(productId,sellerId,category,name,price,image,originalPrice,condition,warrantyPolicy,dateBought,Brand,Origin,Description) VALUES ('{0}','{1}','{2}','{3}','{4}',@ImageData,'{6}','{7}','{8}','{9}','{10}','{11}',N'{12}')",
+                product.productId, product.sellerId, product.category, product.name, product.price, null, product.originalPrice, product.condition, product.warrantyPolicy, product.dateBought, product.brand, product.origin, product.description);
 
                 SqlCommand cmd = new SqlCommand(sqlStr, connection);
                 cmd.Parameters.Add("@ImageData", System.Data.SqlDbType.VarBinary, -1).Value = imageData;
@@ -74,7 +74,7 @@ namespace QuanLyTraoDoiHang
             Product product = new Product();
             product.productId = Convert.ToInt32(row["productId"]);
             product.sellerId = Convert.ToInt32(row["sellerId"]);
-            product.type = row["type"].ToString();
+            product.category = row["category"].ToString();
             product.name = row["name"].ToString();
             product.price = Convert.ToInt32(row["price"]);
             product.image = MyImage.ByteArrayToImage((byte[])row["image"]);
