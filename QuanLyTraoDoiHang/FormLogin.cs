@@ -63,5 +63,11 @@ namespace QuanLyTraoDoiHang
             Program.currentUser = UserDAO.SelectByUserId(account.userId);
             Close();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Form form = new Mainpage();
+            form.ShowDialog();
+        }
     }
 }

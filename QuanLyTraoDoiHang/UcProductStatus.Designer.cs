@@ -82,6 +82,7 @@
             this.dUDStatusShipment.Margin = new System.Windows.Forms.Padding(1);
             this.dUDStatusShipment.Name = "dUDStatusShipment";
             this.dUDStatusShipment.ReadOnly = true;
+            this.dUDStatusShipment.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dUDStatusShipment.Size = new System.Drawing.Size(114, 25);
             this.dUDStatusShipment.TabIndex = 38;
             this.dUDStatusShipment.Text = "(Status)";
@@ -145,17 +146,20 @@
             this.lblEstimateddate.Location = new System.Drawing.Point(324, 98);
             this.lblEstimateddate.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblEstimateddate.Name = "lblEstimateddate";
+            this.lblEstimateddate.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblEstimateddate.Size = new System.Drawing.Size(102, 17);
             this.lblEstimateddate.TabIndex = 42;
             this.lblEstimateddate.Text = "Estimated date: ";
             // 
             // dUDType
             // 
+            this.dUDType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.dUDType.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dUDType.Location = new System.Drawing.Point(476, 34);
             this.dUDType.Margin = new System.Windows.Forms.Padding(1);
             this.dUDType.Name = "dUDType";
             this.dUDType.ReadOnly = true;
+            this.dUDType.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dUDType.Size = new System.Drawing.Size(122, 25);
             this.dUDType.TabIndex = 40;
             this.dUDType.Text = "(Type)";
@@ -178,28 +182,30 @@
             this.lblOrderBy.Location = new System.Drawing.Point(29, 98);
             this.lblOrderBy.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblOrderBy.Name = "lblOrderBy";
-            this.lblOrderBy.Size = new System.Drawing.Size(68, 17);
+            this.lblOrderBy.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblOrderBy.Size = new System.Drawing.Size(64, 17);
             this.lblOrderBy.TabIndex = 44;
-            this.lblOrderBy.Text = "Order by: ";
+            this.lblOrderBy.Text = "Order by:";
             // 
             // lblOrderCode
             // 
             this.lblOrderCode.AutoSize = true;
             this.lblOrderCode.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblOrderCode.Location = new System.Drawing.Point(99, 98);
+            this.lblOrderCode.Location = new System.Drawing.Point(95, 98);
             this.lblOrderCode.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblOrderCode.Name = "lblOrderCode";
             this.lblOrderCode.Size = new System.Drawing.Size(82, 17);
             this.lblOrderCode.TabIndex = 45;
             this.lblOrderCode.Text = "(order code)";
+            this.lblOrderCode.Click += new System.EventHandler(this.lblOrderCode_Click);
             // 
             // rBCancel
             // 
-            this.rBCancel.BackColor = System.Drawing.Color.LightCoral;
-            this.rBCancel.BackgroundColor = System.Drawing.Color.LightCoral;
+            this.rBCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.rBCancel.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.rBCancel.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.rBCancel.BorderRadius = 20;
-            this.rBCancel.BorderSize = 0;
+            this.rBCancel.BorderSize = 1;
             this.rBCancel.FlatAppearance.BorderSize = 0;
             this.rBCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rBCancel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -287,7 +293,7 @@
             // 
             // pnlMenu
             // 
-            this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(149)))), ((int)(((byte)(210)))));
+            this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
             this.pnlMenu.Controls.Add(this.label4);
             this.pnlMenu.Controls.Add(this.label2);
             this.pnlMenu.Controls.Add(this.label1);

@@ -43,6 +43,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnExit = new QuanLyTraoDoiHang.RJControls.RButton();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -58,7 +59,7 @@
             this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PlaceholderText = "  Username";
-            this.txtUsername.Size = new System.Drawing.Size(264, 34);
+            this.txtUsername.Size = new System.Drawing.Size(264, 29);
             this.txtUsername.TabIndex = 2;
             // 
             // panel2
@@ -83,7 +84,7 @@
             this.ucPassword.Location = new System.Drawing.Point(54, 147);
             this.ucPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucPassword.Name = "ucPassword";
-            this.ucPassword.Size = new System.Drawing.Size(264, 34);
+            this.ucPassword.Size = new System.Drawing.Size(264, 29);
             this.ucPassword.TabIndex = 27;
             // 
             // pictureBox2
@@ -104,7 +105,7 @@
             this.label5.ForeColor = System.Drawing.SystemColors.InfoText;
             this.label5.Location = new System.Drawing.Point(119, 11);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(151, 54);
+            this.label5.Size = new System.Drawing.Size(123, 45);
             this.label5.TabIndex = 15;
             this.label5.Text = "Sign in";
             // 
@@ -155,7 +156,7 @@
             this.lblforgotpass.ForeColor = System.Drawing.SystemColors.GrayText;
             this.lblforgotpass.Location = new System.Drawing.Point(97, 194);
             this.lblforgotpass.Name = "lblforgotpass";
-            this.lblforgotpass.Size = new System.Drawing.Size(214, 28);
+            this.lblforgotpass.Size = new System.Drawing.Size(170, 21);
             this.lblforgotpass.TabIndex = 7;
             this.lblforgotpass.Text = "Forgot your password?";
             this.lblforgotpass.Click += new System.EventHandler(this.lblforgotpass_Click);
@@ -167,7 +168,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
             this.label1.Location = new System.Drawing.Point(122, 217);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(234, 89);
+            this.label1.Size = new System.Drawing.Size(186, 70);
             this.label1.TabIndex = 9;
             this.label1.Text = "KoHa";
             // 
@@ -177,7 +178,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(-2, 94);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 69);
+            this.label2.Size = new System.Drawing.Size(0, 55);
             this.label2.TabIndex = 10;
             // 
             // label3
@@ -187,7 +188,7 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(103, 308);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 23);
+            this.label3.Size = new System.Drawing.Size(0, 19);
             this.label3.TabIndex = 11;
             // 
             // label4
@@ -197,7 +198,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
             this.label4.Location = new System.Drawing.Point(67, 287);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(393, 33);
+            this.label4.Size = new System.Drawing.Size(301, 24);
             this.label4.TabIndex = 13;
             this.label4.Text = "Trade Goods, Seamless, Swift";
             // 
@@ -223,17 +224,41 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnExit.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnExit.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnExit.BorderRadius = 27;
+            this.btnExit.BorderSize = 0;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.Location = new System.Drawing.Point(12, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(26, 27);
+            this.btnExit.TabIndex = 20;
+            this.btnExit.TextColor = System.Drawing.Color.White;
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
             this.ClientSize = new System.Drawing.Size(984, 661);
+            this.ControlBox = false;
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -264,5 +289,6 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private UCPasswordTextBox ucPassword;
+        private RJControls.RButton btnExit;
     }
 }

@@ -21,5 +21,10 @@ namespace QuanLyTraoDoiHang
         {
 
         }
+
+        private void lblOrderCode_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

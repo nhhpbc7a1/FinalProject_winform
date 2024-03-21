@@ -82,6 +82,7 @@
             this.dUDStatusShipment.Margin = new System.Windows.Forms.Padding(1);
             this.dUDStatusShipment.Name = "dUDStatusShipment";
             this.dUDStatusShipment.ReadOnly = true;
+            this.dUDStatusShipment.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dUDStatusShipment.Size = new System.Drawing.Size(114, 25);
             this.dUDStatusShipment.TabIndex = 38;
             this.dUDStatusShipment.Text = "(Status)";
@@ -140,8 +141,8 @@
             // 
             // rBCancel
             // 
-            this.rBCancel.BackColor = System.Drawing.Color.LightCoral;
-            this.rBCancel.BackgroundColor = System.Drawing.Color.LightCoral;
+            this.rBCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.rBCancel.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.rBCancel.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.rBCancel.BorderRadius = 20;
             this.rBCancel.BorderSize = 0;
@@ -160,7 +161,7 @@
             // 
             // pnlMenu
             // 
-            this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(149)))), ((int)(((byte)(210)))));
+            this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
             this.pnlMenu.Controls.Add(this.label4);
             this.pnlMenu.Controls.Add(this.label1);
             this.pnlMenu.Controls.Add(this.lblAction);

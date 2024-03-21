@@ -125,5 +125,12 @@ namespace QuanLyTraoDoiHang
             MessageBox.Show("Regist successfully", "Notification", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
             Close();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Form form = new Mainpage();
+            form.ShowDialog();
+
+        }
     }
 }

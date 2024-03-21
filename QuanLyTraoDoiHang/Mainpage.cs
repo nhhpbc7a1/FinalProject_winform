@@ -50,13 +50,7 @@ namespace QuanLyTraoDoiHang
             Form form = new FSellermanagement();
             form.ShowDialog();
         }
-
-
-
-
-
-
-
+        
         private void btnCart_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormCart());
@@ -103,5 +97,34 @@ namespace QuanLyTraoDoiHang
             }
         }
 
+
+
+        private void lblSellerChannel_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForm(new FSellermanagement());
+
+        }
+
+        private void Mainpage_Load_1(object sender, EventArgs e)
+        {
+            MaximizeBox = false;
+            MinimizeBox = false;
+            ControlBox = false;
+        }
+
+        private void rButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnMaximize_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
