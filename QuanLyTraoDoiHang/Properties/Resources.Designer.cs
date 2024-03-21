@@ -59,5 +59,15 @@ namespace QuanLyTraoDoiHang.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap empty_avatar {
+            get {
+                object obj = ResourceManager.GetObject("empty_avatar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

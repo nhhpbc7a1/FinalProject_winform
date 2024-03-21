@@ -15,6 +15,9 @@ namespace QuanLyTraoDoiHang
         public UCPasswordTextBox()
         {
             InitializeComponent();
+            txtPass.UseSystemPasswordChar = true;
+            btnHide.Click += btnHide_Click;
+            btnShow.Click += btnShow_Click;
         }
 
         private void btnHide_Click(object sender, EventArgs e)
@@ -39,8 +42,8 @@ namespace QuanLyTraoDoiHang
         {
             txtPass.Width = this.Width;
             this.Height = txtPass.Height;
-            btnHide.Location = new Point(this.Width - btnHide.Width - 3, (this.Height - btnHide.Height) / 2);
-            btnShow.Location = new Point(this.Width - btnHide.Width - 3, (this.Height - btnHide.Height) / 2);
+            btnHide.Location = new Point(this.Width - btnHide.Width - 7, (this.Height - btnHide.Height) / 2);
+            btnShow.Location = new Point(this.Width - btnHide.Width - 7, (this.Height - btnHide.Height) / 2);
 
             btnHide.BringToFront();
             this.BringToFront();

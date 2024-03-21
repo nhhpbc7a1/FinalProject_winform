@@ -94,9 +94,14 @@ namespace QuanLyTraoDoiHang
 
         }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
+        private void btnAddProduct_Click(object sender, EventArgs e)
         {
+            if (Program.currentUser == null)
+            {
+                MessageBox.Show("Login successfully", "Notification", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
 
+            }
         }
+
     }
 }

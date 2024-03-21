@@ -15,6 +15,16 @@ namespace QuanLyTraoDoiHang
         public FormProduct()
         {
             InitializeComponent();
+            ProductDAO productDAO = new ProductDAO();
+            DataTable table = productDAO.Load();
+            foreach (DataRow row in table.Rows)
+            {
+                UCProductOnMainpage ucProduct = new UCProductOnMainpage();
+                ucProduct.product = ProductDAO.RowToProduct(row);
+
+                flowLayoutPanelProductList.Controls.Add(ucProduct);
+            }
+
         }
 
 
@@ -45,5 +55,6 @@ namespace QuanLyTraoDoiHang
         {
 
         }
+
     }
 }

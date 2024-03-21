@@ -74,7 +74,7 @@
             // 
             // txtPass
             // 
-            this.txtPass.BackColor = System.Drawing.SystemColors.Control;
+            this.txtPass.BackColor = System.Drawing.Color.White;
             this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPass.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtPass.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -88,6 +88,7 @@
             // UCPasswordTextBox
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnHide);
             this.Controls.Add(this.btnShow);
             this.Controls.Add(this.txtPass);
