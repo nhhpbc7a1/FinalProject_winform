@@ -74,12 +74,11 @@ namespace QuanLyTraoDoiHang
             user.birthday = DateOnly.FromDateTime(Convert.ToDateTime(row["birthday"]));
             user.email = row["email"].ToString();
             user.phone = row["phone"].ToString();
-            user.gender = row["gender"].ToString();
+            user.gender = Convert.ToInt32(row["gender"].ToString());
             user.address = row["address"].ToString();
             user.image = MyImage.ByteArrayToImage((byte[])row["image"]);
 
             return user;
-
         }
 
         public static User SelectByUserId(int userId)

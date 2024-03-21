@@ -83,7 +83,6 @@
             this.txtEmail.PlaceholderText = "  Email";
             this.txtEmail.Size = new System.Drawing.Size(306, 29);
             this.txtEmail.TabIndex = 10;
-            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // txtPhone
             // 
@@ -248,7 +247,6 @@
             this.btnRegister.Text = "Register";
             this.btnRegister.TextColor = System.Drawing.Color.White;
             this.btnRegister.UseVisualStyleBackColor = false;
-            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // label3
             // 

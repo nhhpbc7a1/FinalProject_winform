@@ -64,22 +64,23 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.rButton4 = new QuanLyTraoDoiHang.RJControls.RButton();
             this.rButton2 = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblSellerAddress = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.lblSellerPhone = new System.Windows.Forms.Label();
+            this.lblSellerName = new System.Windows.Forms.Label();
+            this.pnlRating = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.ptbSellerImage = new System.Windows.Forms.PictureBox();
+            this.lblDateJoined = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.pnl_ThisSellerPage.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -89,13 +90,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.panel3.SuspendLayout();
+            this.pnlRating.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbSellerImage)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -490,16 +491,17 @@
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.AutoScroll = true;
+            this.panel2.Controls.Add(this.lblDateJoined);
             this.panel2.Controls.Add(this.rButton4);
             this.panel2.Controls.Add(this.rButton2);
-            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.lblSellerAddress);
             this.panel2.Controls.Add(this.pictureBox10);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.pictureBox9);
             this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.lblSellerName);
+            this.panel2.Controls.Add(this.pnlRating);
+            this.panel2.Controls.Add(this.ptbSellerImage);
             this.panel2.Location = new System.Drawing.Point(648, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
@@ -547,14 +549,14 @@
             this.rButton2.UseVisualStyleBackColor = false;
             this.rButton2.Click += new System.EventHandler(this.rButton2_Click);
             // 
-            // label8
+            // lblSellerAddress
             // 
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(104, 359);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(213, 84);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Location: Cao Lanh City, Dong Thap, Viet Nam";
+            this.lblSellerAddress.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSellerAddress.Location = new System.Drawing.Point(104, 359);
+            this.lblSellerAddress.Name = "lblSellerAddress";
+            this.lblSellerAddress.Size = new System.Drawing.Size(213, 84);
+            this.lblSellerAddress.TabIndex = 10;
+            this.lblSellerAddress.Text = "Location: Cao Lanh City, Dong Thap, Viet Nam";
             // 
             // pictureBox10
             // 
@@ -573,9 +575,9 @@
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(104, 300);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(131, 28);
+            this.label7.Size = new System.Drawing.Size(78, 28);
             this.label7.TabIndex = 8;
-            this.label7.Text = "Joined: 2 year";
+            this.label7.Text = "Joined: ";
             // 
             // pictureBox9
             // 
@@ -592,7 +594,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
             this.panel4.Controls.Add(this.pictureBox8);
-            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.lblSellerPhone);
             this.panel4.Location = new System.Drawing.Point(47, 122);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
@@ -611,40 +613,40 @@
             this.pictureBox8.TabIndex = 2;
             this.pictureBox8.TabStop = false;
             // 
-            // label5
+            // lblSellerPhone
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(73, 18);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(110, 23);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "0783701185";
+            this.lblSellerPhone.AutoSize = true;
+            this.lblSellerPhone.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSellerPhone.ForeColor = System.Drawing.Color.White;
+            this.lblSellerPhone.Location = new System.Drawing.Point(73, 18);
+            this.lblSellerPhone.Name = "lblSellerPhone";
+            this.lblSellerPhone.Size = new System.Drawing.Size(110, 23);
+            this.lblSellerPhone.TabIndex = 0;
+            this.lblSellerPhone.Text = "0783701185";
             // 
-            // label1
+            // lblSellerName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(120, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 25);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Hoang Ha Mobile";
+            this.lblSellerName.AutoSize = true;
+            this.lblSellerName.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSellerName.Location = new System.Drawing.Point(120, 35);
+            this.lblSellerName.Name = "lblSellerName";
+            this.lblSellerName.Size = new System.Drawing.Size(162, 25);
+            this.lblSellerName.TabIndex = 3;
+            this.lblSellerName.Text = "Hoang Ha Mobile";
             // 
-            // panel3
+            // pnlRating
             // 
-            this.panel3.Controls.Add(this.pictureBox7);
-            this.panel3.Controls.Add(this.pictureBox6);
-            this.panel3.Controls.Add(this.pictureBox5);
-            this.panel3.Controls.Add(this.pictureBox4);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Location = new System.Drawing.Point(130, 65);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(182, 31);
-            this.panel3.TabIndex = 2;
+            this.pnlRating.Controls.Add(this.pictureBox7);
+            this.pnlRating.Controls.Add(this.pictureBox6);
+            this.pnlRating.Controls.Add(this.pictureBox5);
+            this.pnlRating.Controls.Add(this.pictureBox4);
+            this.pnlRating.Controls.Add(this.label2);
+            this.pnlRating.Controls.Add(this.pictureBox3);
+            this.pnlRating.Location = new System.Drawing.Point(130, 65);
+            this.pnlRating.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnlRating.Name = "pnlRating";
+            this.pnlRating.Size = new System.Drawing.Size(182, 31);
+            this.pnlRating.TabIndex = 2;
             // 
             // pictureBox7
             // 
@@ -706,16 +708,26 @@
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
             // 
-            // pictureBox2
+            // ptbSellerImage
             // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(47, 35);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(63, 61);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.ptbSellerImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptbSellerImage.BackgroundImage")));
+            this.ptbSellerImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptbSellerImage.Location = new System.Drawing.Point(47, 35);
+            this.ptbSellerImage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ptbSellerImage.Name = "ptbSellerImage";
+            this.ptbSellerImage.Size = new System.Drawing.Size(63, 61);
+            this.ptbSellerImage.TabIndex = 0;
+            this.ptbSellerImage.TabStop = false;
+            // 
+            // lblDateJoined
+            // 
+            this.lblDateJoined.AutoSize = true;
+            this.lblDateJoined.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDateJoined.Location = new System.Drawing.Point(188, 300);
+            this.lblDateJoined.Name = "lblDateJoined";
+            this.lblDateJoined.Size = new System.Drawing.Size(53, 28);
+            this.lblDateJoined.TabIndex = 13;
+            this.lblDateJoined.Text = "Date";
             // 
             // FormProductDetail
             // 
@@ -740,14 +752,14 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.pnlRating.ResumeLayout(false);
+            this.pnlRating.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbSellerImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -757,19 +769,19 @@
         private Panel panel1;
         private Panel panel2;
         private Label label2;
-        private Label label1;
-        private Panel panel3;
+        private Label lblSellerName;
+        private Panel pnlRating;
         private PictureBox pictureBox3;
-        private PictureBox pictureBox2;
+        private PictureBox ptbSellerImage;
         private RichTextBox richTextBoxDescription;
         private Panel panel4;
         private PictureBox pictureBox8;
-        private Label label5;
+        private Label lblSellerPhone;
         private PictureBox pictureBox7;
         private PictureBox pictureBox6;
         private PictureBox pictureBox5;
         private PictureBox pictureBox4;
-        private Label label8;
+        private Label lblSellerAddress;
         private PictureBox pictureBox10;
         private Label label7;
         private PictureBox pictureBox9;
@@ -805,5 +817,6 @@
         public Label lblBought;
         public Label lblOrigin;
         public Label lblBrand;
+        private Label lblDateJoined;
     }
 }

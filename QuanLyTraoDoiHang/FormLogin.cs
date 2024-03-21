@@ -6,43 +6,16 @@ namespace QuanLyTraoDoiHang
         {
             InitializeComponent();
             ucPassword.txtPass.PlaceholderText = " Password";
+            btnSignin.Click += btnSignin_Click;
+            btnRegister.Click += btnRegister_Click;
+            lblforgotpass.Click += lblforgotpass_Click;
         }
-
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnRegister_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-       
 
         private void lblforgotpass_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Contact Admin for further information!", "Notification", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
         }
 
-        private void rButton2_Click(object sender, EventArgs e)
-        {
-            Form form = new Regisiter();
-            this.Hide();
-            form.ShowDialog();
-            this.Show();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnSignin_Click(object sender, EventArgs e)
         {
@@ -61,6 +34,13 @@ namespace QuanLyTraoDoiHang
             }
             MessageBox.Show("Login successfully","Notification", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
             Program.currentUser = UserDAO.SelectByUserId(account.userId);
+            Close();
+        }
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            Form form = new Regisiter();
+            form.ShowDialog();
+            if (Program.currentUser != null)
             Close();
         }
 

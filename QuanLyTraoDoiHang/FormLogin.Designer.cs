@@ -127,7 +127,6 @@
             this.btnRegister.Text = "Register";
             this.btnRegister.TextColor = System.Drawing.Color.White;
             this.btnRegister.UseVisualStyleBackColor = false;
-            this.btnRegister.Click += new System.EventHandler(this.rButton2_Click);
             // 
             // btnSignin
             // 
@@ -147,7 +146,6 @@
             this.btnSignin.Text = "Sign in";
             this.btnSignin.TextColor = System.Drawing.Color.White;
             this.btnSignin.UseVisualStyleBackColor = false;
-            this.btnSignin.Click += new System.EventHandler(this.btnSignin_Click);
             // 
             // lblforgotpass
             // 
@@ -159,7 +157,6 @@
             this.lblforgotpass.Size = new System.Drawing.Size(170, 21);
             this.lblforgotpass.TabIndex = 7;
             this.lblforgotpass.Text = "Forgot your password?";
-            this.lblforgotpass.Click += new System.EventHandler(this.lblforgotpass_Click);
             // 
             // label1
             // 
@@ -262,7 +259,6 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

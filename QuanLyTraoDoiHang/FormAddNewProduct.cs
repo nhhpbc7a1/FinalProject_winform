@@ -17,6 +17,7 @@ namespace QuanLyTraoDoiHang
         public FormAddNewProduct()
         {
             InitializeComponent();
+            picboxProduct.BackgroundImage = Properties.Resources.empty_product;
         }
 
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
@@ -32,75 +33,71 @@ namespace QuanLyTraoDoiHang
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            if (txtCategory.Text.Trim() == "")
+            {
+                MessageBox.Show("You haven't input Category!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtCategory.Focus();
+                return;
+            }
+            if (txtName.Text.Trim() == "")
+            {
+                MessageBox.Show("You haven't input Name!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtName.Focus();
+                return;
+            }
+
             if (txtPrice.Text.Trim() == "")
             {
-                MessageBox.Show("You haven't input your price!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("You haven't input Price!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtPrice.Focus();
                 return;
             }
             if (txtOriginalPrice.Text.Trim() == "")
             {
-                MessageBox.Show("You haven't input your Original Price!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtOriginalPrice.Focus();
+                MessageBox.Show("You haven't input Original Price!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtPrice.Focus();
                 return;
             }
 
-            Product x = new Product(0, txtType.Text, txtName.Text, Convert.ToInt32(txtPrice.Text), picboxProduct.BackgroundImage,
-            Convert.ToInt32(txtOriginalPrice.Text), txtCondition.Text, txtWarranty.Text, DateOnly.FromDateTime(dtpBought.Value), txtBrand.Text, txtOrigin.Text, richTextBoxDescription.Text);
+            if (txtCondition.Text.Trim() == "")
+            {
+                MessageBox.Show("You haven't input Condition!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtCondition.Focus();
+                return;
+            }
+            if (txtWarranty.Text.Trim() == "")
+            {
+                MessageBox.Show("You haven't input Warranty Policy!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtWarranty.Focus();
+                return;
+            }
+            if (txtBrand.Text.Trim() == "")
+            {
+                MessageBox.Show("You haven't input Brand!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtBrand.Focus();
+                return;
+            }
+            if (txtOrigin.Text.Trim() == "")
+            {
+                MessageBox.Show("You haven't input Origin!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtOrigin.Focus();
+                return;
+            }
+            if (richTextBoxDescription.Text.Trim() == "")
+            {
+                MessageBox.Show("You haven't input Desciption!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                richTextBoxDescription.Focus();
+                return;
+            }
 
+
+            Product x = new Product(Program.currentUser.userId, txtCategory.Text, txtName.Text, Convert.ToInt32(txtPrice.Text), picboxProduct.BackgroundImage,
+            Convert.ToInt32(txtOriginalPrice.Text), txtCondition.Text, txtWarranty.Text, DateOnly.FromDateTime(dtpBought.Value), txtBrand.Text, txtOrigin.Text, richTextBoxDescription.Text);
 
             productDAO.Add(x);
+            MessageBox.Show("add successfully");
         }
 
-        private void btnTakeFirst_Click(object sender, EventArgs e)
-        {
-            DataTable x = productDAO.Load();
 
-            if (x.Rows.Count > 0)
-            {
-                DataRow row = x.Rows[0];
-                txtType.Text = row["type"].ToString();
-                txtName.Text = row["name"].ToString();
-                txtPrice.Text = row["price"].ToString();
-                picboxProduct.BackgroundImage = MyImage.ByteArrayToImage((byte[])row["image"]);
-                txtOriginalPrice.Text = row["originalPrice"].ToString();
-                txtCondition.Text = row["condition"].ToString();
-                txtWarranty.Text = row["warrantyPolicy"].ToString();
-                dtpBought.Value = Convert.ToDateTime(row["dateBought"]);
-                txtBrand.Text = row["brand"].ToString();
-                txtOrigin.Text = row["Origin"].ToString();
-                richTextBoxDescription.Text = row["Description"].ToString();
-                return;
-            }
-            else
-            {
-                MessageBox.Show("Empty", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void bntDelete_Click(object sender, EventArgs e)
-        {
-            if (txtPrice.Text.Trim() == "")
-            {
-                MessageBox.Show("You haven't input your price!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtPrice.Focus();
-                return;
-            }
-            if (txtOriginalPrice.Text.Trim() == "")
-            {
-                MessageBox.Show("You haven't input your Original Price!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtOriginalPrice.Focus();
-                return;
-            }
-
-            Product x = new Product(0, txtType.Text, txtName.Text, Convert.ToInt32(txtPrice.Text), picboxProduct.BackgroundImage,
-            Convert.ToInt32(txtOriginalPrice.Text), txtCondition.Text, txtWarranty.Text, DateOnly.FromDateTime(dtpBought.Value), txtBrand.Text, txtOrigin.Text, richTextBoxDescription.Text);
-
-            string sqlStr = string.Format("SELECT *  FROM Product ");
-            DataTable table = dBConnection.Load(sqlStr);
-            x.productId = Convert.ToInt32(table.Rows[0]["productId"]);
-
-            productDAO.Delete(x);
-        }
     }
 }

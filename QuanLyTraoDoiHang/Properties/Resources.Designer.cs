@@ -73,6 +73,16 @@ namespace QuanLyTraoDoiHang.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap empty_product {
+            get {
+                object obj = ResourceManager.GetObject("empty_product", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_down_16 {
             get {
                 object obj = ResourceManager.GetObject("icons8-down-16", resourceCulture);
