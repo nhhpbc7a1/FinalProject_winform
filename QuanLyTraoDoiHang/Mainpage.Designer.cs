@@ -34,13 +34,13 @@ namespace QuanLyTraoDoiHang
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCart = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.pnlMainPage = new System.Windows.Forms.Panel();
             this.btnMainPage = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblMainPage = new System.Windows.Forms.Label();
             this.btnSearch = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.rButton3 = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.lblSignin = new System.Windows.Forms.Label();
-            this.lblSignup = new System.Windows.Forms.Label();
+            this.btnAccount = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.lblSignIn = new System.Windows.Forms.Label();
+            this.lblSignUp = new System.Windows.Forms.Label();
             this.lblSellerChannel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnAddProduct = new QuanLyTraoDoiHang.RJControls.RButton();
@@ -48,7 +48,7 @@ namespace QuanLyTraoDoiHang
             this.panel4 = new System.Windows.Forms.Panel();
             this.pnl_Body = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.panel5.SuspendLayout();
+            this.pnlMainPage.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -76,7 +76,7 @@ namespace QuanLyTraoDoiHang
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(242)))), ((int)(((byte)(176)))));
             this.panel1.Controls.Add(this.btnCart);
-            this.panel1.Controls.Add(this.panel5);
+            this.panel1.Controls.Add(this.pnlMainPage);
             this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -105,15 +105,15 @@ namespace QuanLyTraoDoiHang
             this.btnCart.TextColor = System.Drawing.Color.White;
             this.btnCart.UseVisualStyleBackColor = false;
             // 
-            // panel5
+            // pnlMainPage
             // 
-            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel5.Controls.Add(this.btnMainPage);
-            this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(111, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(134, 55);
-            this.panel5.TabIndex = 1;
+            this.pnlMainPage.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlMainPage.Controls.Add(this.btnMainPage);
+            this.pnlMainPage.Controls.Add(this.lblMainPage);
+            this.pnlMainPage.Location = new System.Drawing.Point(111, 0);
+            this.pnlMainPage.Name = "pnlMainPage";
+            this.pnlMainPage.Size = new System.Drawing.Size(134, 55);
+            this.pnlMainPage.TabIndex = 1;
             // 
             // btnMainPage
             // 
@@ -134,16 +134,16 @@ namespace QuanLyTraoDoiHang
             this.btnMainPage.TextColor = System.Drawing.Color.White;
             this.btnMainPage.UseVisualStyleBackColor = false;
             // 
-            // label5
+            // lblMainPage
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
-            this.label5.Location = new System.Drawing.Point(71, 17);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 23);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "KoHa";
+            this.lblMainPage.AutoSize = true;
+            this.lblMainPage.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMainPage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
+            this.lblMainPage.Location = new System.Drawing.Point(71, 17);
+            this.lblMainPage.Name = "lblMainPage";
+            this.lblMainPage.Size = new System.Drawing.Size(63, 23);
+            this.lblMainPage.TabIndex = 1;
+            this.lblMainPage.Text = "KoHa";
             // 
             // btnSearch
             // 
@@ -169,46 +169,45 @@ namespace QuanLyTraoDoiHang
             this.btnSearch.TextColor = System.Drawing.Color.White;
             this.btnSearch.UseVisualStyleBackColor = false;
             // 
-            // rButton3
+            // btnAccount
             // 
-            this.rButton3.BackColor = System.Drawing.Color.YellowGreen;
-            this.rButton3.BackgroundColor = System.Drawing.Color.YellowGreen;
-            this.rButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rButton3.BorderRadius = 20;
-            this.rButton3.BorderSize = 0;
-            this.rButton3.FlatAppearance.BorderSize = 0;
-            this.rButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rButton3.ForeColor = System.Drawing.Color.White;
-            this.rButton3.Location = new System.Drawing.Point(537, 1);
-            this.rButton3.Name = "rButton3";
-            this.rButton3.Size = new System.Drawing.Size(88, 40);
-            this.rButton3.TabIndex = 0;
-            this.rButton3.Text = "account";
-            this.rButton3.TextColor = System.Drawing.Color.White;
-            this.rButton3.UseVisualStyleBackColor = false;
+            this.btnAccount.BackColor = System.Drawing.Color.YellowGreen;
+            this.btnAccount.BackgroundColor = System.Drawing.Color.YellowGreen;
+            this.btnAccount.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnAccount.BorderRadius = 20;
+            this.btnAccount.BorderSize = 0;
+            this.btnAccount.FlatAppearance.BorderSize = 0;
+            this.btnAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAccount.ForeColor = System.Drawing.Color.White;
+            this.btnAccount.Location = new System.Drawing.Point(572, 3);
+            this.btnAccount.Name = "btnAccount";
+            this.btnAccount.Size = new System.Drawing.Size(88, 40);
+            this.btnAccount.TabIndex = 0;
+            this.btnAccount.Text = "Account";
+            this.btnAccount.TextColor = System.Drawing.Color.White;
+            this.btnAccount.UseVisualStyleBackColor = false;
             // 
-            // lblSignin
+            // lblSignIn
             // 
-            this.lblSignin.AutoSize = true;
-            this.lblSignin.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSignin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblSignin.Location = new System.Drawing.Point(136, 12);
-            this.lblSignin.Name = "lblSignin";
-            this.lblSignin.Size = new System.Drawing.Size(70, 25);
-            this.lblSignin.TabIndex = 14;
-            this.lblSignin.Text = "Sign in";
-            this.lblSignin.Click += new System.EventHandler(this.lblSignin_Click);
+            this.lblSignIn.AutoSize = true;
+            this.lblSignIn.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSignIn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblSignIn.Location = new System.Drawing.Point(136, 12);
+            this.lblSignIn.Name = "lblSignIn";
+            this.lblSignIn.Size = new System.Drawing.Size(70, 25);
+            this.lblSignIn.TabIndex = 14;
+            this.lblSignIn.Text = "Sign in";
             // 
-            // lblSignup
+            // lblSignUp
             // 
-            this.lblSignup.AutoSize = true;
-            this.lblSignup.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSignup.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblSignup.Location = new System.Drawing.Point(224, 12);
-            this.lblSignup.Name = "lblSignup";
-            this.lblSignup.Size = new System.Drawing.Size(76, 25);
-            this.lblSignup.TabIndex = 15;
-            this.lblSignup.Text = "Sign up";
+            this.lblSignUp.AutoSize = true;
+            this.lblSignUp.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSignUp.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblSignUp.Location = new System.Drawing.Point(224, 12);
+            this.lblSignUp.Name = "lblSignUp";
+            this.lblSignUp.Size = new System.Drawing.Size(76, 25);
+            this.lblSignUp.TabIndex = 15;
+            this.lblSignUp.Text = "Sign up";
             // 
             // lblSellerChannel
             // 
@@ -225,7 +224,7 @@ namespace QuanLyTraoDoiHang
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
             this.panel2.Controls.Add(this.btnAddProduct);
-            this.panel2.Controls.Add(this.rButton3);
+            this.panel2.Controls.Add(this.btnAccount);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -250,14 +249,13 @@ namespace QuanLyTraoDoiHang
             this.btnAddProduct.Text = "Add Product";
             this.btnAddProduct.TextColor = System.Drawing.Color.White;
             this.btnAddProduct.UseVisualStyleBackColor = false;
-            this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
             // 
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
-            this.panel3.Controls.Add(this.lblSignup);
-            this.panel3.Controls.Add(this.lblSignin);
+            this.panel3.Controls.Add(this.lblSignUp);
+            this.panel3.Controls.Add(this.lblSignIn);
             this.panel3.Controls.Add(this.lblSellerChannel);
             this.panel3.Location = new System.Drawing.Point(674, 1);
             this.panel3.Name = "panel3";
@@ -293,8 +291,8 @@ namespace QuanLyTraoDoiHang
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mainpage";
             this.panel1.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            this.pnlMainPage.ResumeLayout(false);
+            this.pnlMainPage.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -307,17 +305,17 @@ namespace QuanLyTraoDoiHang
         private ComboBox comboBox1;
         private Panel panel1;
         private IconPictureBox iconPictureBox1;
-        private Label lblSignin;
-        private Label lblSignup;
+        private Label lblSignIn;
+        private Label lblSignUp;
         private Label lblSellerChannel;
         private RJControls.RButton btnSearch;
         private Panel panel2;
         private Panel panel3;
         private Panel panel4;
-        private Panel panel5;
-        private Label label5;
+        private Panel pnlMainPage;
+        private Label lblMainPage;
         private RJControls.RButton btnCart;
-        private RJControls.RButton rButton3;
+        private RJControls.RButton btnAccount;
         private RJControls.RButton btnMainPage;
         public Panel pnl_Body;
         private RJControls.RButton btnAddProduct;

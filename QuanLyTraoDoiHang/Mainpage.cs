@@ -16,12 +16,42 @@ namespace QuanLyTraoDoiHang
         {
             InitializeComponent();
             OpenChildForm(new FormProduct());
+
+            pnlMainPage.Click += BackToMainpage;
+            btnMainPage.Click += BackToMainpage;
+            lblMainPage.Click += BackToMainpage;
+
+            lblSellerChannel.Click += lblSellerChannel_Click;
+            btnCart.Click += btnCart_Click;
+            lblSignUp.Click += lblSignup_Click;
+            lblSignIn.Click += lblSignin_Click;
+            btnAccount.Click += btnAccount_Click;
+            btnAddProduct.Click += btnAddProduct_Click;
+
+            btnAccount.Visible = false;
+            lblSellerChannel.Visible = false;
+            this.Load += UpdateAccountByAction;
+        }
+        private void UpdateAccountByAction(object? sender, EventArgs e)
+        {
+            if (Program.currentUser != null)
+            {
+                btnAccount.Visible = true;
+                lblSellerChannel.Visible = true;
+                lblSignIn.Visible = false;
+                lblSignUp.Visible = false;
+            }
         }
 
 
-        private void Mainpage_Load(object sender, EventArgs e)
+        private void lblSellerChannel_Click(object? sender, EventArgs e)
         {
+            OpenChildForm(new FSellermanagement());
+        }
 
+        private void BackToMainpage(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormProduct());
         }
         private Form currentFormChild;
         private void OpenChildForm(Form childForm)
@@ -41,54 +71,27 @@ namespace QuanLyTraoDoiHang
             childForm.Show();
         }
 
-
-
-
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-            Form form = new FSellermanagement();
-            form.ShowDialog();
-        }
-
-
-
-
-
-
-
         private void btnCart_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormCart());
-
-        }
-
-        private void btnMainPage_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new FormProduct());
-
         }
 
         private void lblSignup_Click(object sender, EventArgs e)
         {
             Form form = new Regisiter();
             form.ShowDialog();
-
+            UpdateAccountByAction(sender,e);
         }
 
         private void lblSignin_Click(object sender, EventArgs e)
         {
             Form form = new Form1();
             form.ShowDialog();
+            UpdateAccountByAction(sender, e);
         }
 
-        private void lblSellerChannel_Click(object sender, EventArgs e)
-        {
-            Form form = new FSellermanagement();
-            form.ShowDialog();
-        }
 
-        private void rButton3_Click(object sender, EventArgs e)
+        private void btnAccount_Click(object sender, EventArgs e)
         {
             OpenChildForm(new PersonalInfor());
 
@@ -98,8 +101,14 @@ namespace QuanLyTraoDoiHang
         {
             if (Program.currentUser == null)
             {
-                MessageBox.Show("Login successfully", "Notification", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Please login before", "Notification", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
 
+            }
+            else
+            {
+                Form form = new FormAddNewProduct();
+                form.ShowDialog();
+                OpenChildForm(new FormProduct());
             }
         }
 
