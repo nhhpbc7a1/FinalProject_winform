@@ -23,7 +23,6 @@ namespace QuanLyTraoDoiHang
             lblMainPage.Click += BackToMainpage;
 
             lblSellerChannel.Click += lblSellerChannel_Click;
-            btnCart.Click += btnCart_Click;
             lblSignUp.Click += lblSignup_Click;
             lblSignIn.Click += lblSignin_Click;
             btnAccount.Click += btnAccount_Click;
@@ -32,6 +31,8 @@ namespace QuanLyTraoDoiHang
             btnAccount.Visible = false;
             lblSellerChannel.Visible = false;
             this.Load += UpdateAccountByAction;
+
+            btnExit.Click += btnExit_Click;
         }
         private void UpdateAccountByAction(object? sender, EventArgs e)
         {
@@ -80,6 +81,22 @@ namespace QuanLyTraoDoiHang
             childForm.Show();
         }
 
+
+
+
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Form form = new FSellermanagement();
+            form.ShowDialog();
+        }
+        
+
+
+
+
+
+
         private void btnCart_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormCart());
@@ -118,8 +135,7 @@ namespace QuanLyTraoDoiHang
         {
             if (Program.currentUser == null)
             {
-                MessageBox.Show("Please login before", "Notification", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
-
+                MessageBox.Show("please login before");
             }
             else
             {
@@ -129,5 +145,32 @@ namespace QuanLyTraoDoiHang
             }
         }
 
+
+
+        private void lblSellerChannel_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForm(new FSellermanagement());
+        }
+        private void Mainpage_Load_1(object sender, EventArgs e)
+        {
+            MaximizeBox = false;
+            MinimizeBox = false;
+            ControlBox = false;
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnMaximize_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

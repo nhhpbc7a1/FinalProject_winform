@@ -43,5 +43,11 @@ namespace QuanLyTraoDoiHang
             if (Program.currentUser != null)
             Close();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Form form = new Mainpage();
+            form.ShowDialog();
+        }
     }
 }

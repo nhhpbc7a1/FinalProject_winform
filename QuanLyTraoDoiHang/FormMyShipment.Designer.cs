@@ -52,7 +52,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(340, 23);
+            this.label2.Location = new System.Drawing.Point(309, 23);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(138, 30);
             this.label2.TabIndex = 59;
@@ -78,8 +78,8 @@
             // 
             // rButton2
             // 
-            this.rButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
-            this.rButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
+            this.rButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
+            this.rButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
             this.rButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.rButton2.BorderRadius = 20;
             this.rButton2.BorderSize = 0;

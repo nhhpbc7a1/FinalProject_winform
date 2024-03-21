@@ -52,7 +52,7 @@ namespace QuanLyTraoDoiHang
             // 
             // pnlCheckOut
             // 
-            this.pnlCheckOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(148)))), ((int)(((byte)(112)))));
+            this.pnlCheckOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(115)))), ((int)(((byte)(82)))));
             this.pnlCheckOut.Controls.Add(this.label2);
             this.pnlCheckOut.Controls.Add(this.rBCheckout);
             this.pnlCheckOut.Controls.Add(this.lblCheckOutPrice);
@@ -81,11 +81,11 @@ namespace QuanLyTraoDoiHang
             // 
             // rBCheckout
             // 
-            this.rBCheckout.BackColor = System.Drawing.Color.LightCoral;
-            this.rBCheckout.BackgroundColor = System.Drawing.Color.LightCoral;
-            this.rBCheckout.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rBCheckout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.rBCheckout.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.rBCheckout.BorderColor = System.Drawing.Color.White;
             this.rBCheckout.BorderRadius = 20;
-            this.rBCheckout.BorderSize = 0;
+            this.rBCheckout.BorderSize = 1;
             this.rBCheckout.FlatAppearance.BorderSize = 0;
             this.rBCheckout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rBCheckout.Font = new System.Drawing.Font("Segoe UI", 11.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
