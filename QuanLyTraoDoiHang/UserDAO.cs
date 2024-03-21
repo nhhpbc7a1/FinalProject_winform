@@ -79,7 +79,6 @@ namespace QuanLyTraoDoiHang
             user.image = MyImage.ByteArrayToImage((byte[])row["image"]);
 
             return user;
-
         }
 
         public static User SelectByUserId(int userId)

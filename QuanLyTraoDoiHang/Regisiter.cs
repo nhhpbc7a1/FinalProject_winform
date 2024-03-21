@@ -20,24 +20,14 @@ namespace QuanLyTraoDoiHang
 
             ucPassword.txtPass.PlaceholderText = "  Password";
             ucRetypePassword.txtPass.PlaceholderText = "  Re-type Password";
+            btnRegister.Click += btnRegister_Click;
         }
 
-      
-        private void btnBackRegister_Click(object sender, EventArgs e)
-        {
-            Form form = new Form1();
-            form.ShowDialog();
-           
-        }
+     
 
         private void dtBirthday_ValueChanged(object sender, EventArgs e)
         {
             dtBirthday.CustomFormat = "dd/MM/yyyy ";
-        }
-
-        private void txtEmail_TextChanged(object sender, EventArgs e)
-        {
-            
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
@@ -122,7 +112,6 @@ namespace QuanLyTraoDoiHang
             AccountDAO.Add(account);
 
             Program.currentUser = user;
-            MessageBox.Show("Regist successfully", "Notification", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
             Close();
         }
     }

@@ -26,35 +26,5 @@ namespace QuanLyTraoDoiHang
             }
 
         }
-
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void ucProductOnMainpage1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void ucProductOnMainpage7_Click(object sender, EventArgs e)
-        {
-            Form form = new FormProductDetail();
-            form.ShowDialog();
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label20_Click(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }
