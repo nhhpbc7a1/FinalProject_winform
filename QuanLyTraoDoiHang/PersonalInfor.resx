@@ -58,6 +58,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblChangeImage.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EAAACxABrSO9dQAAAVZJREFUSEtjGAUw8Li42PxRYaEZlEtdcGjxcuenRUXfQfhZYaEHVJg6YOPew0Eb
+        9h75tX/lun1Pi4v/gyx5XFhoAZWmDHitCwgq2lJzfP2+Iz837Dv6f9+qdfufFBf/e1pSEghVQj7wWe8f
+        DMS/HOa6/o+fl/F3/Z4jv9fvPfr71Iy5MVAl5APvDX4hIMMd57n+t+iz+Q+ypHRLw/F1Bw6HQpWQD7AZ
+        7rMu4J/P2sBsqBLyAU7D1/tnQZWQD8CGrwv4TRvD1wWG0t1w73UBmVAl5APfdQFhIMOd5rrRz3AgzoAq
+        IR/Q1HBgxIWjG+693v+v73r/BKgS8kHOJqcAoGF/0A0Hhnk8VAll4O8Bjj3Nqwzu08TwDZ3qvO+28/z4
+        f4D9J8gSkE+oZjgI9Nca5IVHO/9/vYX3x9/9HLtyNzr7Q6WoAybW6IdNrDPMBfkEKjQKgICBAQCpjgaM
+        wuRZQAAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="ptbUserImage.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABHcAAAOzCAYAAAAyceo3AAAABGdBTUEAALGPC/xhBQAAR+JJREFUeF7t

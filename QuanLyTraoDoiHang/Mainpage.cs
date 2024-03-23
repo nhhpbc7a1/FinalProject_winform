@@ -25,12 +25,16 @@ namespace QuanLyTraoDoiHang
             lblSellerChannel.Click += lblSellerChannel_Click;
             lblSignUp.Click += lblSignup_Click;
             lblSignIn.Click += lblSignin_Click;
-            btnAccount.Click += btnAccount_Click;
+            this.pnlAccount.Location = new Point(798, 9);
+
+            pnlAccount.Click += Account_Click;
+            picProfile.Click += Account_Click;
+            lblUsername.Click += Account_Click;
+            pnlAccount.Visible = false;
             btnAddProduct.Click += btnAddProduct_Click;
             btnCart.Click += btnCart_Click;
 
-            btnAccount.Visible = false;
-            lblSellerChannel.Visible = false;
+            //btnAccount.Visible = false;
             this.Load += UpdateAccountByAction;
 
             btnExit.Click += btnExit_Click;
@@ -43,15 +47,13 @@ namespace QuanLyTraoDoiHang
         {
             if (Program.CurrentUser() != null)
             {
-                btnAccount.Visible = true;
-                lblSellerChannel.Visible = true;
+                pnlAccount.Visible = true;
                 lblSignIn.Visible = false;
                 lblSignUp.Visible = false;
             }
             else
             {
-                btnAccount.Visible = false;
-                lblSellerChannel.Visible = false;
+                pnlAccount.Visible = false;
                 lblSignIn.Visible = true;
                 lblSignUp.Visible = true;
 
@@ -61,7 +63,14 @@ namespace QuanLyTraoDoiHang
 
         private void lblSellerChannel_Click(object? sender, EventArgs e)
         {
-            OpenChildForm(new FSellermanagement());
+            if (Program.CurrentUser() == null)
+            {
+                MessageBox.Show("please login first");
+            }
+            else
+            {              
+                OpenChildForm(new FSellermanagement());
+            }
         }
 
         private void BackToMainpage(object sender, EventArgs e)
@@ -105,9 +114,11 @@ namespace QuanLyTraoDoiHang
             UpdateAccountByAction(sender, e);
         }
 
-
-        private void btnAccount_Click(object sender, EventArgs e)
+        
+        private void Account_Click(object sender, EventArgs e)
         {
+
+           
             PersonalInfor form = new PersonalInfor();
             void Logout(object sender, EventArgs e)
             {
@@ -124,7 +135,7 @@ namespace QuanLyTraoDoiHang
         {
             if (Program.CurrentUser() == null)
             {
-                MessageBox.Show("please login before");
+                MessageBox.Show("please login first");
             }
             else
             {
@@ -139,5 +150,9 @@ namespace QuanLyTraoDoiHang
             this.Close();
         }
 
+        private void btnAccount_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

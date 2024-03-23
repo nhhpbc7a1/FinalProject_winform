@@ -57,6 +57,14 @@ namespace QuanLyTraoDoiHang
                 return RowToAccount(x.Rows[0]);
             return null;
         }
+        public static Account SelectByUserID(int userID)
+        {
+            string sqlStr = string.Format("SELECT * FROM " + tableName + " where userID ='{0}'", userID);
+            DataTable x = dBConnection.Load(sqlStr);
+            if (x.Rows.Count > 0)
+                return RowToAccount(x.Rows[0]);
+            return null;
+        }
         public static bool IsValidPassword(string password)
         {
             if (password.Length < 6)

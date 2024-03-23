@@ -81,7 +81,7 @@
             this.txtPass.Location = new System.Drawing.Point(0, 0);
             this.txtPass.Name = "txtPass";
             this.txtPass.PlaceholderText = "  Old password";
-            this.txtPass.Size = new System.Drawing.Size(222, 34);
+            this.txtPass.Size = new System.Drawing.Size(222, 29);
             this.txtPass.TabIndex = 18;
             this.txtPass.UseSystemPasswordChar = true;
             // 

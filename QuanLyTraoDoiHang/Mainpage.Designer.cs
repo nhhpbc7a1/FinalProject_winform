@@ -39,11 +39,13 @@ namespace QuanLyTraoDoiHang
             this.btnCart = new QuanLyTraoDoiHang.RJControls.RButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnSearch = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.btnAccount = new QuanLyTraoDoiHang.RJControls.RButton();
             this.lblSignIn = new System.Windows.Forms.Label();
             this.lblSignUp = new System.Windows.Forms.Label();
             this.lblSellerChannel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlAccount = new System.Windows.Forms.Panel();
+            this.picProfile = new System.Windows.Forms.PictureBox();
+            this.lblUsername = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.rButton2 = new QuanLyTraoDoiHang.RJControls.RButton();
             this.btnMinimize = new QuanLyTraoDoiHang.RJControls.RButton();
@@ -55,6 +57,8 @@ namespace QuanLyTraoDoiHang
             this.panel1.SuspendLayout();
             this.pnlMainPage.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.pnlAccount.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picProfile)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -75,7 +79,7 @@ namespace QuanLyTraoDoiHang
             this.comboBox1.Location = new System.Drawing.Point(254, 13);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(406, 36);
+            this.comboBox1.Size = new System.Drawing.Size(406, 29);
             this.comboBox1.TabIndex = 0;
             // 
             // panel1
@@ -128,7 +132,7 @@ namespace QuanLyTraoDoiHang
             this.lblMainPage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
             this.lblMainPage.Location = new System.Drawing.Point(71, 17);
             this.lblMainPage.Name = "lblMainPage";
-            this.lblMainPage.Size = new System.Drawing.Size(63, 23);
+            this.lblMainPage.Size = new System.Drawing.Size(51, 21);
             this.lblMainPage.TabIndex = 1;
             this.lblMainPage.Text = "KoHa";
             // 
@@ -181,43 +185,25 @@ namespace QuanLyTraoDoiHang
             this.btnSearch.TextColor = System.Drawing.Color.White;
             this.btnSearch.UseVisualStyleBackColor = false;
             // 
-            // btnAccount
-            // 
-            this.btnAccount.BackColor = System.Drawing.Color.YellowGreen;
-            this.btnAccount.BackgroundColor = System.Drawing.Color.YellowGreen;
-            this.btnAccount.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnAccount.BorderRadius = 20;
-            this.btnAccount.BorderSize = 0;
-            this.btnAccount.FlatAppearance.BorderSize = 0;
-            this.btnAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAccount.ForeColor = System.Drawing.Color.White;
-            this.btnAccount.Location = new System.Drawing.Point(572, 3);
-            this.btnAccount.Name = "btnAccount";
-            this.btnAccount.Size = new System.Drawing.Size(88, 40);
-            this.btnAccount.TabIndex = 0;
-            this.btnAccount.Text = "Account";
-            this.btnAccount.TextColor = System.Drawing.Color.White;
-            this.btnAccount.UseVisualStyleBackColor = false;
-            // 
             // lblSignIn
             // 
             this.lblSignIn.AutoSize = true;
-            this.lblSignIn.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSignIn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblSignIn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblSignIn.Location = new System.Drawing.Point(136, 12);
             this.lblSignIn.Name = "lblSignIn";
-            this.lblSignIn.Size = new System.Drawing.Size(70, 25);
+            this.lblSignIn.Size = new System.Drawing.Size(47, 17);
             this.lblSignIn.TabIndex = 14;
             this.lblSignIn.Text = "Sign in";
             // 
             // lblSignUp
             // 
             this.lblSignUp.AutoSize = true;
-            this.lblSignUp.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSignUp.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblSignUp.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblSignUp.Location = new System.Drawing.Point(224, 12);
             this.lblSignUp.Name = "lblSignUp";
-            this.lblSignUp.Size = new System.Drawing.Size(76, 25);
+            this.lblSignUp.Size = new System.Drawing.Size(52, 17);
             this.lblSignUp.TabIndex = 15;
             this.lblSignUp.Text = "Sign up";
             // 
@@ -226,24 +212,52 @@ namespace QuanLyTraoDoiHang
             this.lblSellerChannel.AutoSize = true;
             this.lblSellerChannel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblSellerChannel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblSellerChannel.Location = new System.Drawing.Point(3, 12);
+            this.lblSellerChannel.Location = new System.Drawing.Point(3, 13);
             this.lblSellerChannel.Name = "lblSellerChannel";
-            this.lblSellerChannel.Size = new System.Drawing.Size(116, 23);
+            this.lblSellerChannel.Size = new System.Drawing.Size(88, 17);
             this.lblSellerChannel.TabIndex = 16;
             this.lblSellerChannel.Text = "Seller channel";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
+            this.panel2.Controls.Add(this.pnlAccount);
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.btnAddProduct);
-            this.panel2.Controls.Add(this.btnAccount);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(982, 45);
             this.panel2.TabIndex = 14;
+            // 
+            // pnlAccount
+            // 
+            this.pnlAccount.Controls.Add(this.picProfile);
+            this.pnlAccount.Controls.Add(this.lblUsername);
+            this.pnlAccount.Location = new System.Drawing.Point(198, 10);
+            this.pnlAccount.Name = "pnlAccount";
+            this.pnlAccount.Size = new System.Drawing.Size(159, 27);
+            this.pnlAccount.TabIndex = 21;
+            // 
+            // picProfile
+            // 
+            this.picProfile.Location = new System.Drawing.Point(3, 5);
+            this.picProfile.Name = "picProfile";
+            this.picProfile.Size = new System.Drawing.Size(20, 17);
+            this.picProfile.TabIndex = 1;
+            this.picProfile.TabStop = false;
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblUsername.ForeColor = System.Drawing.Color.White;
+            this.lblUsername.Location = new System.Drawing.Point(26, 6);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(56, 15);
+            this.lblUsername.TabIndex = 0;
+            this.lblUsername.Text = "HuongLe";
             // 
             // panel6
             // 
@@ -372,6 +386,9 @@ namespace QuanLyTraoDoiHang
             this.pnlMainPage.ResumeLayout(false);
             this.pnlMainPage.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.pnlAccount.ResumeLayout(false);
+            this.pnlAccount.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picProfile)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -393,7 +410,6 @@ namespace QuanLyTraoDoiHang
         private Panel panel4;
         private Panel pnlMainPage;
         private Label lblMainPage;
-        private RJControls.RButton btnAccount;
         private Panel panel5;
         private Label label5;
         private RJControls.RButton rButton3;
@@ -405,5 +421,8 @@ namespace QuanLyTraoDoiHang
         private RJControls.RButton btnExit;
         private RJControls.RButton btnCart;
         private RJControls.RButton rButton2;
+        private Panel pnlAccount;
+        private PictureBox picProfile;
+        private Label lblUsername;
     }
 }
