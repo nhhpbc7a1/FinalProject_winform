@@ -43,3 +43,11 @@ create table Account (
 	password nvarchar(100)
 );
 go
+
+
+create table CartItem (
+	userId int references UserTable(userId),
+	productId int references Product(productId),
+	primary key(userId, productId),
+);
+go

@@ -19,9 +19,7 @@ namespace QuanLyTraoDoiHang
             DataTable table = productDAO.Load();
             foreach (DataRow row in table.Rows)
             {
-                UCProductOnMainpage ucProduct = new UCProductOnMainpage();
-                ucProduct.product = ProductDAO.RowToProduct(row);
-
+                UCProductOnMainpage ucProduct = new UCProductOnMainpage(ProductDAO.RowToProduct(row));
                 flowLayoutPanelProductList.Controls.Add(ucProduct);
             }
 

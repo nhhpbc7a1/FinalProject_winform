@@ -44,9 +44,8 @@ namespace QuanLyTraoDoiHang
             DataTable table = ProductDAO.SelectBySellerId(currentProduct.sellerId);
             foreach (DataRow row in table.Rows)
             {
-                UCProductOnMainpage ucProduct = new UCProductOnMainpage();
-                ucProduct.product = ProductDAO.RowToProduct(row);
-                ucProduct.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+                UCProductOnMainpage ucProduct = new UCProductOnMainpage(ProductDAO.RowToProduct(row)) 
+                { Margin = new System.Windows.Forms.Padding(5, 5, 5, 5) };
                 pnlSellerProduct.Controls.Add(ucProduct);
             }
 

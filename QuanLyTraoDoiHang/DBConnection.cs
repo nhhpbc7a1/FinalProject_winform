@@ -39,8 +39,7 @@ namespace QuanLyTraoDoiHang
                 // Ket noi
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(sqlStr, conn);
-                if (cmd.ExecuteNonQuery() > 0)
-                    MessageBox.Show("Thanh cong");
+                cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
