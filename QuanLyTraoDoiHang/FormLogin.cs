@@ -33,21 +33,20 @@ namespace QuanLyTraoDoiHang
                 return;
             }
             MessageBox.Show("Login successfully","Notification", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
-            Program.currentUser = UserDAO.SelectByUserId(account.userId);
+            Program.currentUserId = account.userId;
             Close();
         }
         private void btnRegister_Click(object sender, EventArgs e)
         {
             Form form = new Regisiter();
             form.ShowDialog();
-            if (Program.currentUser != null)
+            if (Program.CurrentUser() != null)
             Close();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Form form = new Mainpage();
-            form.ShowDialog();
+            this.Close();
         }
     }
 }

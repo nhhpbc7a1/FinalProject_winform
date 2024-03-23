@@ -14,6 +14,7 @@ namespace QuanLyTraoDoiHang
             ApplicationConfiguration.Initialize();
             Application.Run(new Mainpage());
         }
-        public static User currentUser = null;
+        public static int currentUserId = -1;
+        public static User CurrentUser() { return UserDAO.SelectByUserId(currentUserId); }
     }
 }

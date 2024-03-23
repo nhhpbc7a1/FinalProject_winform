@@ -57,15 +57,15 @@ namespace QuanLyTraoDoiHang
 
         private void PersonalInfor_Load(object sender, EventArgs e)
         {
-            ptbUserImage.BackgroundImage = Program.currentUser.image;
-            lblUsername.Text = Program.currentUser.name;
+            ptbUserImage.BackgroundImage = Program.CurrentUser().image;
+            lblUsername.Text = Program.CurrentUser().name;
         }
         private void lblChangeImage_Click(object sender, EventArgs e)
         {
             Image image = MyImage.ChooseImage();
             ptbUserImage.BackgroundImage = image;
-            Program.currentUser.image = image;
-            UserDAO.Update(Program.currentUser);
+            Program.CurrentUser().image = image;
+            UserDAO.Update(Program.CurrentUser());
         }
 
     }

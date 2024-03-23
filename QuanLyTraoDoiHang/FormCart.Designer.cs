@@ -75,7 +75,7 @@ namespace QuanLyTraoDoiHang
             this.label2.Location = new System.Drawing.Point(623, 31);
             this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(19, 21);
+            this.label2.Size = new System.Drawing.Size(24, 28);
             this.label2.TabIndex = 23;
             this.label2.Text = "đ";
             // 
@@ -107,7 +107,7 @@ namespace QuanLyTraoDoiHang
             this.lblCheckOutPrice.Location = new System.Drawing.Point(644, 31);
             this.lblCheckOutPrice.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblCheckOutPrice.Name = "lblCheckOutPrice";
-            this.lblCheckOutPrice.Size = new System.Drawing.Size(23, 21);
+            this.lblCheckOutPrice.Size = new System.Drawing.Size(30, 28);
             this.lblCheckOutPrice.TabIndex = 22;
             this.lblCheckOutPrice.Text = "0 ";
             // 
@@ -119,7 +119,7 @@ namespace QuanLyTraoDoiHang
             this.lblItemWriting.Location = new System.Drawing.Point(389, 31);
             this.lblItemWriting.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblItemWriting.Name = "lblItemWriting";
-            this.lblItemWriting.Size = new System.Drawing.Size(19, 21);
+            this.lblItemWriting.Size = new System.Drawing.Size(24, 28);
             this.lblItemWriting.TabIndex = 21;
             this.lblItemWriting.Text = "0";
             // 
@@ -131,7 +131,7 @@ namespace QuanLyTraoDoiHang
             this.lblPriceCheckOut.Location = new System.Drawing.Point(534, 31);
             this.lblPriceCheckOut.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblPriceCheckOut.Name = "lblPriceCheckOut";
-            this.lblPriceCheckOut.Size = new System.Drawing.Size(94, 21);
+            this.lblPriceCheckOut.Size = new System.Drawing.Size(117, 28);
             this.lblPriceCheckOut.TabIndex = 19;
             this.lblPriceCheckOut.Text = "Total Price:";
             // 
@@ -143,7 +143,7 @@ namespace QuanLyTraoDoiHang
             this.lblItemsCart.Location = new System.Drawing.Point(277, 31);
             this.lblItemsCart.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblItemsCart.Name = "lblItemsCart";
-            this.lblItemsCart.Size = new System.Drawing.Size(110, 21);
+            this.lblItemsCart.Size = new System.Drawing.Size(136, 28);
             this.lblItemsCart.TabIndex = 18;
             this.lblItemsCart.Text = "Total Item(s):";
             // 
@@ -155,13 +155,14 @@ namespace QuanLyTraoDoiHang
             this.cBPay.Location = new System.Drawing.Point(59, 31);
             this.cBPay.Margin = new System.Windows.Forms.Padding(1);
             this.cBPay.Name = "cBPay";
-            this.cBPay.Size = new System.Drawing.Size(92, 24);
+            this.cBPay.Size = new System.Drawing.Size(114, 29);
             this.cBPay.TabIndex = 0;
             this.cBPay.Text = "Select All";
             this.cBPay.UseVisualStyleBackColor = true;
             // 
             // FormCart
             // 
+            this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
             this.ClientSize = new System.Drawing.Size(984, 561);

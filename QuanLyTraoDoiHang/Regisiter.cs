@@ -111,14 +111,13 @@ namespace QuanLyTraoDoiHang
             UserDAO.Add(user);
             AccountDAO.Add(account);
 
-            Program.currentUser = user;
+            Program.currentUserId = user.userId;
             Close();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Form form = new Mainpage();
-            form.ShowDialog();
+            Close();
 
         }
     }
