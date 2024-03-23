@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyTraoDoiHang.RJControls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,7 +19,8 @@ namespace QuanLyTraoDoiHang
 
             foreach (Control c in this.Controls)
             {
-                c.Click += OpenFormDetail;
+                if (c.Name != "btnBuyNow" || !(c is RButton))
+                    c.Click += OpenFormDetail;
             }
             this.Click += OpenFormDetail;
         }

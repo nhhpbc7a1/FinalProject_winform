@@ -74,10 +74,10 @@
             this.panel4.Controls.Add(this.flowLayoutPanelProductList);
             this.panel4.Controls.Add(this.panel1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(254, 0);
+            this.panel4.Location = new System.Drawing.Point(258, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(730, 561);
+            this.panel4.Size = new System.Drawing.Size(726, 561);
             this.panel4.TabIndex = 56;
             // 
             // flowLayoutPanelProductList
@@ -139,7 +139,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(254, 561);
+            this.panel2.Size = new System.Drawing.Size(258, 561);
             this.panel2.TabIndex = 56;
             // 
             // comboBox2

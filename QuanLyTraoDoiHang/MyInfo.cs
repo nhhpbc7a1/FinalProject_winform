@@ -21,13 +21,14 @@ namespace QuanLyTraoDoiHang
 
         private void MyInfo_Load(object sender, EventArgs e)
         {
-            txtName.Text = Program.currentUser.name;
-            txtPersonalID.Text = Program.currentUser.personalId;
-            dtBirthday.Text = Program.currentUser.birthday.ToString();
-            txtEmail.Text = Program.currentUser.email;
-            txtPhone.Text = Program.currentUser.phone;
-            txtAddress.Text = Program.currentUser.address;
-            switch (Program.currentUser.gender)
+            User currentUser = Program.CurrentUser();
+            txtName.Text = currentUser.name;
+            txtPersonalID.Text = currentUser.personalId;
+            dtBirthday.Text = currentUser.birthday.ToString();
+            txtEmail.Text = currentUser.email;
+            txtPhone.Text = currentUser.phone;
+            txtAddress.Text = currentUser.address;
+            switch (currentUser.gender)
             {
                 case 0:
                     {
@@ -42,7 +43,7 @@ namespace QuanLyTraoDoiHang
                         radioBtnOther.Checked = true; break;
                     }
             }
-            lblDateJoined.Text = Program.currentUser.dateJoined.ToString();
+            lblDateJoined.Text = currentUser.dateJoined.ToString();
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
@@ -96,10 +97,13 @@ namespace QuanLyTraoDoiHang
                 user.gender = 2;
 
             user.birthday = DateOnly.FromDateTime(dtBirthday.Value);
-            user.userId = Program.currentUser.userId;
-            user.image = Program.currentUser.image;
+            user.userId = Program.CurrentUser().userId;
+            user.image = Program.CurrentUser().image;
+            user.dateJoined = Program.CurrentUser().dateJoined;
             UserDAO.Update(user);
+            Program.currentUserId = user.userId;
             MessageBox.Show("Update info successfully");
+            MyInfo_Load(sender, e);
         }
 
     }

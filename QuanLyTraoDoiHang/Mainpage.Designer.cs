@@ -36,7 +36,7 @@ namespace QuanLyTraoDoiHang
             this.pnlMainPage = new System.Windows.Forms.Panel();
             this.btnMainPage = new QuanLyTraoDoiHang.RJControls.RButton();
             this.lblMainPage = new System.Windows.Forms.Label();
-            this.rButton1 = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.btnCart = new QuanLyTraoDoiHang.RJControls.RButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnSearch = new QuanLyTraoDoiHang.RJControls.RButton();
             this.btnAccount = new QuanLyTraoDoiHang.RJControls.RButton();
@@ -75,14 +75,14 @@ namespace QuanLyTraoDoiHang
             this.comboBox1.Location = new System.Drawing.Point(254, 13);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(406, 29);
+            this.comboBox1.Size = new System.Drawing.Size(406, 36);
             this.comboBox1.TabIndex = 0;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(242)))), ((int)(((byte)(176)))));
             this.panel1.Controls.Add(this.pnlMainPage);
-            this.panel1.Controls.Add(this.rButton1);
+            this.panel1.Controls.Add(this.btnCart);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.comboBox1);
@@ -128,27 +128,27 @@ namespace QuanLyTraoDoiHang
             this.lblMainPage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
             this.lblMainPage.Location = new System.Drawing.Point(71, 17);
             this.lblMainPage.Name = "lblMainPage";
-            this.lblMainPage.Size = new System.Drawing.Size(51, 21);
+            this.lblMainPage.Size = new System.Drawing.Size(63, 23);
             this.lblMainPage.TabIndex = 1;
             this.lblMainPage.Text = "KoHa";
             // 
-            // rButton1
+            // btnCart
             // 
-            this.rButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(242)))), ((int)(((byte)(176)))));
-            this.rButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(242)))), ((int)(((byte)(176)))));
-            this.rButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rButton1.BorderRadius = 20;
-            this.rButton1.BorderSize = 0;
-            this.rButton1.FlatAppearance.BorderSize = 0;
-            this.rButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rButton1.ForeColor = System.Drawing.Color.White;
-            this.rButton1.Image = ((System.Drawing.Image)(resources.GetObject("rButton1.Image")));
-            this.rButton1.Location = new System.Drawing.Point(776, 7);
-            this.rButton1.Name = "rButton1";
-            this.rButton1.Size = new System.Drawing.Size(54, 40);
-            this.rButton1.TabIndex = 20;
-            this.rButton1.TextColor = System.Drawing.Color.White;
-            this.rButton1.UseVisualStyleBackColor = false;
+            this.btnCart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(242)))), ((int)(((byte)(176)))));
+            this.btnCart.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(242)))), ((int)(((byte)(176)))));
+            this.btnCart.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnCart.BorderRadius = 20;
+            this.btnCart.BorderSize = 0;
+            this.btnCart.FlatAppearance.BorderSize = 0;
+            this.btnCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCart.ForeColor = System.Drawing.Color.White;
+            this.btnCart.Image = ((System.Drawing.Image)(resources.GetObject("btnCart.Image")));
+            this.btnCart.Location = new System.Drawing.Point(776, 7);
+            this.btnCart.Name = "btnCart";
+            this.btnCart.Size = new System.Drawing.Size(54, 40);
+            this.btnCart.TabIndex = 20;
+            this.btnCart.TextColor = System.Drawing.Color.White;
+            this.btnCart.UseVisualStyleBackColor = false;
             // 
             // panel5
             // 
@@ -206,7 +206,7 @@ namespace QuanLyTraoDoiHang
             this.lblSignIn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblSignIn.Location = new System.Drawing.Point(136, 12);
             this.lblSignIn.Name = "lblSignIn";
-            this.lblSignIn.Size = new System.Drawing.Size(54, 20);
+            this.lblSignIn.Size = new System.Drawing.Size(70, 25);
             this.lblSignIn.TabIndex = 14;
             this.lblSignIn.Text = "Sign in";
             // 
@@ -217,7 +217,7 @@ namespace QuanLyTraoDoiHang
             this.lblSignUp.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblSignUp.Location = new System.Drawing.Point(224, 12);
             this.lblSignUp.Name = "lblSignUp";
-            this.lblSignUp.Size = new System.Drawing.Size(59, 20);
+            this.lblSignUp.Size = new System.Drawing.Size(76, 25);
             this.lblSignUp.TabIndex = 15;
             this.lblSignUp.Text = "Sign up";
             // 
@@ -228,7 +228,7 @@ namespace QuanLyTraoDoiHang
             this.lblSellerChannel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblSellerChannel.Location = new System.Drawing.Point(3, 12);
             this.lblSellerChannel.Name = "lblSellerChannel";
-            this.lblSellerChannel.Size = new System.Drawing.Size(88, 17);
+            this.lblSellerChannel.Size = new System.Drawing.Size(116, 23);
             this.lblSellerChannel.TabIndex = 16;
             this.lblSellerChannel.Text = "Seller channel";
             // 
@@ -367,7 +367,6 @@ namespace QuanLyTraoDoiHang
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Mainpage";
             this.ShowIcon = false;
-            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel1.ResumeLayout(false);
             this.pnlMainPage.ResumeLayout(false);
@@ -404,7 +403,7 @@ namespace QuanLyTraoDoiHang
         private Panel panel6;
         private RJControls.RButton btnMinimize;
         private RJControls.RButton btnExit;
-        private RJControls.RButton rButton1;
+        private RJControls.RButton btnCart;
         private RJControls.RButton rButton2;
     }
 }

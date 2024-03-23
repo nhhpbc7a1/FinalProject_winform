@@ -34,8 +34,8 @@ namespace QuanLyTraoDoiHang
             using (SqlConnection connection = new SqlConnection(Properties.Settings.Default.connStr))
             {
                 connection.Open();
-                string sqlStr = string.Format(" UPDATE " + tableName + " SET personalId = '{1}', name = '{2}', birthday = '{3}', email = '{4}', phone = '{5}', gender = '{6}', address = '{7}', image = @ImageData  WHERE userId = '{0}' ;",
-                user.userId, user.personalId, user.name, user.birthday, user.email, user.phone, user.gender, user.address, null);
+                string sqlStr = string.Format(" UPDATE " + tableName + " SET personalId = '{1}', name = '{2}', birthday = '{3}', email = '{4}', phone = '{5}', gender = '{6}', address = '{7}', image = @ImageData, dateJoined = '{8}'  WHERE userId = '{0}' ;",
+                user.userId, user.personalId, user.name, user.birthday, user.email, user.phone, user.gender, user.address, user.dateJoined);
                 
                 SqlCommand cmd = new SqlCommand(sqlStr, connection);
                 cmd.Parameters.Add("@ImageData", System.Data.SqlDbType.VarBinary, -1).Value = imageData;
@@ -50,8 +50,8 @@ namespace QuanLyTraoDoiHang
             using (SqlConnection connection = new SqlConnection(Properties.Settings.Default.connStr))
             {
                 connection.Open();
-                string sqlStr = string.Format("INSERT INTO " + tableName + " (userId, personalId, name, birthday, email, phone, gender, address, image) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}',@ImageData)",
-                user.userId, user.personalId, user.name, user.birthday, user.email, user.phone, user.gender, user.address, null);
+                string sqlStr = string.Format("INSERT INTO " + tableName + " (userId, personalId, name, birthday, email, phone, gender, address, image, dateJoined) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}',@ImageData, '{8}')",
+                user.userId, user.personalId, user.name, user.birthday, user.email, user.phone, user.gender, user.address, user.dateJoined);
 
                 SqlCommand cmd = new SqlCommand(sqlStr, connection);
                 cmd.Parameters.Add("@ImageData", System.Data.SqlDbType.VarBinary, -1).Value = imageData;

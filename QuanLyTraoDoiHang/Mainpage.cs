@@ -27,16 +27,21 @@ namespace QuanLyTraoDoiHang
             lblSignIn.Click += lblSignin_Click;
             btnAccount.Click += btnAccount_Click;
             btnAddProduct.Click += btnAddProduct_Click;
+            btnCart.Click += btnCart_Click;
 
             btnAccount.Visible = false;
             lblSellerChannel.Visible = false;
             this.Load += UpdateAccountByAction;
 
             btnExit.Click += btnExit_Click;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            ControlBox = false;
+
         }
         private void UpdateAccountByAction(object? sender, EventArgs e)
         {
-            if (Program.currentUser != null)
+            if (Program.CurrentUser() != null)
             {
                 btnAccount.Visible = true;
                 lblSellerChannel.Visible = true;
@@ -81,22 +86,6 @@ namespace QuanLyTraoDoiHang
             childForm.Show();
         }
 
-
-
-
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-            Form form = new FSellermanagement();
-            form.ShowDialog();
-        }
-        
-
-
-
-
-
-
         private void btnCart_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormCart());
@@ -123,7 +112,7 @@ namespace QuanLyTraoDoiHang
             void Logout(object sender, EventArgs e)
             {
                 MessageBox.Show("Logout successfully");
-                Program.currentUser = null;
+                Program.currentUserId = -1;
                 BackToMainpage(sender,e);
                 UpdateAccountByAction(sender, e);
             }
@@ -133,7 +122,7 @@ namespace QuanLyTraoDoiHang
 
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
-            if (Program.currentUser == null)
+            if (Program.CurrentUser() == null)
             {
                 MessageBox.Show("please login before");
             }
@@ -145,32 +134,10 @@ namespace QuanLyTraoDoiHang
             }
         }
 
-
-
-        private void lblSellerChannel_Click_1(object sender, EventArgs e)
-        {
-            OpenChildForm(new FSellermanagement());
-        }
-        private void Mainpage_Load_1(object sender, EventArgs e)
-        {
-            MaximizeBox = false;
-            MinimizeBox = false;
-            ControlBox = false;
-        }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
-        private void btnMinimize_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnMaximize_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
