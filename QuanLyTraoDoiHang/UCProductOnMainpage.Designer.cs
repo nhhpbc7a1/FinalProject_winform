@@ -46,19 +46,19 @@
             this.ptbImage.Location = new System.Drawing.Point(0, 0);
             this.ptbImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ptbImage.Name = "ptbImage";
-            this.ptbImage.Size = new System.Drawing.Size(200, 134);
+            this.ptbImage.Size = new System.Drawing.Size(200, 148);
             this.ptbImage.TabIndex = 0;
             this.ptbImage.TabStop = false;
             // 
             // lblName
             // 
-            this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblName.Location = new System.Drawing.Point(37, 134);
+            this.lblName.Location = new System.Drawing.Point(0, 150);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(147, 28);
+            this.lblName.Size = new System.Drawing.Size(200, 21);
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Product\'s name";
+            this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblPrice
             // 
@@ -67,7 +67,7 @@
             this.lblPrice.ForeColor = System.Drawing.Color.Red;
             this.lblPrice.Location = new System.Drawing.Point(37, 178);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(69, 28);
+            this.lblPrice.Size = new System.Drawing.Size(56, 21);
             this.lblPrice.TabIndex = 3;
             this.lblPrice.Text = "10.500";
             // 

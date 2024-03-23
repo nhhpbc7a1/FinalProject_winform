@@ -69,12 +69,13 @@
             // lblChangeImage
             // 
             this.lblChangeImage.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblChangeImage.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblChangeImage.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblChangeImage.ForeColor = System.Drawing.Color.Green;
+            this.lblChangeImage.Image = ((System.Drawing.Image)(resources.GetObject("lblChangeImage.Image")));
             this.lblChangeImage.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblChangeImage.Location = new System.Drawing.Point(55, 163);
             this.lblChangeImage.Name = "lblChangeImage";
-            this.lblChangeImage.Size = new System.Drawing.Size(169, 30);
+            this.lblChangeImage.Size = new System.Drawing.Size(158, 30);
             this.lblChangeImage.TabIndex = 8;
             this.lblChangeImage.Text = "Change image";
             this.lblChangeImage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -95,9 +96,10 @@
             this.ptbUserImage.BackColor = System.Drawing.SystemColors.Control;
             this.ptbUserImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptbUserImage.BackgroundImage")));
             this.ptbUserImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptbUserImage.Location = new System.Drawing.Point(22, 16);
+            this.ptbUserImage.Location = new System.Drawing.Point(0, 0);
+            this.ptbUserImage.Margin = new System.Windows.Forms.Padding(2, 3, 3, 3);
             this.ptbUserImage.Name = "ptbUserImage";
-            this.ptbUserImage.Size = new System.Drawing.Size(79, 55);
+            this.ptbUserImage.Size = new System.Drawing.Size(128, 100);
             this.ptbUserImage.TabIndex = 0;
             this.ptbUserImage.TabStop = false;
             // 
@@ -106,10 +108,10 @@
             this.lblUsername.AutoSize = true;
             this.lblUsername.BackColor = System.Drawing.SystemColors.Control;
             this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblUsername.ForeColor = System.Drawing.Color.DimGray;
-            this.lblUsername.Location = new System.Drawing.Point(22, 74);
+            this.lblUsername.ForeColor = System.Drawing.Color.Black;
+            this.lblUsername.Location = new System.Drawing.Point(25, 103);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(96, 28);
+            this.lblUsername.Size = new System.Drawing.Size(79, 21);
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "username";
             // 
@@ -143,7 +145,6 @@
             this.btnUpdateInfo.Size = new System.Drawing.Size(158, 51);
             this.btnUpdateInfo.TabIndex = 2;
             this.btnUpdateInfo.Text = "Update info";
-            this.btnUpdateInfo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnUpdateInfo.TextColor = System.Drawing.Color.White;
             this.btnUpdateInfo.UseVisualStyleBackColor = false;
             // 
@@ -184,6 +185,7 @@
             this.btnChangePass.Size = new System.Drawing.Size(158, 61);
             this.btnChangePass.TabIndex = 3;
             this.btnChangePass.Text = "Change password";
+            this.btnChangePass.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnChangePass.TextColor = System.Drawing.Color.White;
             this.btnChangePass.UseVisualStyleBackColor = false;
             // 
@@ -204,6 +206,7 @@
             this.btnHistory.Size = new System.Drawing.Size(158, 64);
             this.btnHistory.TabIndex = 4;
             this.btnHistory.Text = "Purchase History";
+            this.btnHistory.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHistory.TextColor = System.Drawing.Color.White;
             this.btnHistory.UseVisualStyleBackColor = false;
             // 

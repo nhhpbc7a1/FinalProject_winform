@@ -43,7 +43,7 @@ namespace QuanLyTraoDoiHang
                         radioBtnOther.Checked = true; break;
                     }
             }
-            lblDateJoined.Text = currentUser.dateJoined.ToString();
+            //lblDateJoined.Text = currentUser.dateJoined.ToString();
         }
         private void btnSave_Click(object sender, EventArgs e)
         {

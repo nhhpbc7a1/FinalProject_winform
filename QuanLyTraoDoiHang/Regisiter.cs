@@ -120,5 +120,15 @@ namespace QuanLyTraoDoiHang
             Close();
 
         }
+
+        private void btnExit_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
