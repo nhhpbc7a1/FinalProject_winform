@@ -77,13 +77,13 @@
             this.lblChangeImage.Name = "lblChangeImage";
             this.lblChangeImage.Size = new System.Drawing.Size(158, 30);
             this.lblChangeImage.TabIndex = 8;
-            this.lblChangeImage.Text = "Change image";
+            this.lblChangeImage.Text = "Change profile";
             this.lblChangeImage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel8
             // 
             this.panel8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel8.BackColor = System.Drawing.SystemColors.Control;
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
             this.panel8.Controls.Add(this.ptbUserImage);
             this.panel8.Controls.Add(this.lblUsername);
             this.panel8.Location = new System.Drawing.Point(72, 33);
@@ -96,17 +96,17 @@
             this.ptbUserImage.BackColor = System.Drawing.SystemColors.Control;
             this.ptbUserImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptbUserImage.BackgroundImage")));
             this.ptbUserImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptbUserImage.Location = new System.Drawing.Point(0, 0);
+            this.ptbUserImage.Location = new System.Drawing.Point(6, 5);
             this.ptbUserImage.Margin = new System.Windows.Forms.Padding(2, 3, 3, 3);
             this.ptbUserImage.Name = "ptbUserImage";
-            this.ptbUserImage.Size = new System.Drawing.Size(128, 100);
+            this.ptbUserImage.Size = new System.Drawing.Size(116, 95);
             this.ptbUserImage.TabIndex = 0;
             this.ptbUserImage.TabStop = false;
             // 
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.BackColor = System.Drawing.SystemColors.Control;
+            this.lblUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
             this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblUsername.ForeColor = System.Drawing.Color.Black;
             this.lblUsername.Location = new System.Drawing.Point(25, 103);
@@ -118,6 +118,7 @@
             // panel7
             // 
             this.panel7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel7.BackColor = System.Drawing.Color.White;
             this.panel7.Controls.Add(this.btnUpdateInfo);
             this.panel7.Controls.Add(this.btnLogout);
             this.panel7.Controls.Add(this.btnChangePass);
@@ -160,7 +161,7 @@
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(24, 249);
+            this.btnLogout.Location = new System.Drawing.Point(24, 233);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(158, 51);
             this.btnLogout.TabIndex = 5;
@@ -182,7 +183,7 @@
             this.btnChangePass.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnChangePass.Location = new System.Drawing.Point(24, 84);
             this.btnChangePass.Name = "btnChangePass";
-            this.btnChangePass.Size = new System.Drawing.Size(158, 61);
+            this.btnChangePass.Size = new System.Drawing.Size(158, 51);
             this.btnChangePass.TabIndex = 3;
             this.btnChangePass.Text = "Change password";
             this.btnChangePass.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -201,9 +202,9 @@
             this.btnHistory.ForeColor = System.Drawing.Color.White;
             this.btnHistory.Image = ((System.Drawing.Image)(resources.GetObject("btnHistory.Image")));
             this.btnHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHistory.Location = new System.Drawing.Point(24, 164);
+            this.btnHistory.Location = new System.Drawing.Point(24, 159);
             this.btnHistory.Name = "btnHistory";
-            this.btnHistory.Size = new System.Drawing.Size(158, 64);
+            this.btnHistory.Size = new System.Drawing.Size(158, 51);
             this.btnHistory.TabIndex = 4;
             this.btnHistory.Text = "Purchase History";
             this.btnHistory.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

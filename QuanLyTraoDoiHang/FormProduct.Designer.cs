@@ -83,9 +83,10 @@
             // flowLayoutPanelProductList
             // 
             this.flowLayoutPanelProductList.AutoScroll = true;
-            this.flowLayoutPanelProductList.Location = new System.Drawing.Point(24, 76);
+            this.flowLayoutPanelProductList.BackColor = System.Drawing.Color.LightGray;
+            this.flowLayoutPanelProductList.Location = new System.Drawing.Point(24, 67);
             this.flowLayoutPanelProductList.Name = "flowLayoutPanelProductList";
-            this.flowLayoutPanelProductList.Size = new System.Drawing.Size(680, 473);
+            this.flowLayoutPanelProductList.Size = new System.Drawing.Size(680, 482);
             this.flowLayoutPanelProductList.TabIndex = 62;
             // 
             // panel1

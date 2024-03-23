@@ -68,9 +68,7 @@ namespace QuanLyTraoDoiHang
                 MessageBox.Show("please login first");
             }
             else
-            {
-                Form form = new FormAddNewProduct();
-                form.ShowDialog();
+            {              
                 OpenChildForm(new FSellermanagement());
             }
         }
