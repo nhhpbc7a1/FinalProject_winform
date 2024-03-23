@@ -13,18 +13,36 @@ namespace QuanLyTraoDoiHang
 {
     public partial class UCProductOnMainpage : UserControl
     {
-        public UCProductOnMainpage()
+        public Product product = new Product();
+        public UCProductOnMainpage(Product product)
         {
             InitializeComponent();
+            this.product = product;
 
             foreach (Control c in this.Controls)
             {
                 if (c.Name != "btnBuyNow" || !(c is RButton))
                     c.Click += OpenFormDetail;
+                else
+                {
+                    c.Click += BuyNow;
+                }
             }
             this.Click += OpenFormDetail;
         }
-        public Product product = new Product();
+        void BuyNow(object sender, EventArgs e)
+        {
+            CartItem x = new CartItem(Program.currentUserId, product.productId);
+            if (Program.currentUserId == -1)
+            {
+                MessageBox.Show("please login before");
+                return;
+            }
+            CartItemDAO.Add(x);
+
+            MessageBox.Show("add successfully ");
+        }
+
         private void UCProductOnMainpage_Load(object sender, EventArgs e)
         {
             ptbImage.BackgroundImage = product.image;
@@ -37,7 +55,6 @@ namespace QuanLyTraoDoiHang
             FormProductDetail.currentProduct = product;
 
             formDetail.ShowDialog();
-
         }
     }
 }
