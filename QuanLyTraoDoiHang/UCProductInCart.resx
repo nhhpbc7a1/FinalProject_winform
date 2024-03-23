@@ -57,4 +57,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnCancel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAALxJREFUSEvtlM0OgjAQBvHGo/I66smnrTNmN6EJlD8xHphkYlO+3VWodBf/Ryml
+        xwFvsbWI2ajpY2ueCMoTF4eYiawMsT0PIQvun3gpL5wd4jV8GIRmtsIgNoe4h9ubJxbg5BDXuL95YiFW
+        Q8LjzRMbYD5EP8frY80TG2H+Ejn+zcfYDPO2yPcG2AjPuUU2wOqBhqv+J00sxMnT4hr3D7EAm0fRPdw+
+        xCCuOudew21DCJ3+sjv3dX3xY7ruDZxY0c3ob43wAAAAAElFTkSuQmCC
+</value>
+  </data>
 </root>
