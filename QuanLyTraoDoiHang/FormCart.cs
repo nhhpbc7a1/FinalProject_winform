@@ -23,14 +23,14 @@ namespace QuanLyTraoDoiHang
         private void form_Load(object sender, EventArgs e)
         {
             DataTable table = CartItemDAO.SelectByUserId(Program.currentUserId);
-            pnlProducts.Controls.Clear();
+            ucCartProducts.pnlProducts.Controls.Clear();
             foreach (DataRow row in table.Rows)
             {
                 UCProductInCart ucProduct = new UCProductInCart();
                 ucProduct.cartItem = CartItemDAO.RowToCartItem(row);
                 ucProduct.btnCancel.Click += form_Load;
 
-                pnlProducts.Controls.Add(ucProduct);
+                ucCartProducts.pnlProducts.Controls.Add(ucProduct);
             }
 
         }
