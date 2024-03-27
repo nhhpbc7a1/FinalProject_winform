@@ -31,5 +31,10 @@ namespace QuanLyTraoDoiHang
         {
 
         }
+
+        private void pnlShipment_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
