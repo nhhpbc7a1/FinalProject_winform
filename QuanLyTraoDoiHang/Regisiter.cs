@@ -21,9 +21,13 @@ namespace QuanLyTraoDoiHang
             ucPassword.txtPass.PlaceholderText = "  Password";
             ucRetypePassword.txtPass.PlaceholderText = "  Re-type Password";
             btnRegister.Click += btnRegister_Click;
+
+            ucPassword.txtPass.TextChanged += newPass_TextChanged;
+            ucRetypePassword.txtPass.TextChanged += RetypedPass_TextChanged;
+
         }
 
-     
+
 
         private void dtBirthday_ValueChanged(object sender, EventArgs e)
         {
@@ -129,6 +133,44 @@ namespace QuanLyTraoDoiHang
         private void btnHome_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        private void newPass_TextChanged(object sender, EventArgs e)
+        {
+            if (ucPassword.txtPass.Text == "")
+            {
+                lblValidPass.Visible = false;
+            }
+            else
+            {
+                if (!AccountDAO.IsValidPassword(ucPassword.txtPass.Text))
+                {
+                    lblValidPass.ForeColor = Color.Red;
+                }
+                else
+                {
+                    lblValidPass.ForeColor = Color.Green;
+                }
+            }
+
+        }
+        private void RetypedPass_TextChanged(object sender, EventArgs e)
+        {
+            if (ucRetypePassword.txtPass.Text == "")
+            {
+                lblRetypedPass.Visible = false;
+            }
+            else
+            {
+                if (!AccountDAO.IsMatchedPassword(ucRetypePassword.txtPass.Text, ucPassword.txtPass.Text))
+                {
+                    lblRetypedPass.ForeColor = Color.Red;
+                }
+                else
+                {
+                    lblRetypedPass.ForeColor = Color.Green;
+                }
+            }
+
         }
     }
 }
