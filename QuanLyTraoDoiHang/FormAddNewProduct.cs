@@ -91,12 +91,11 @@ namespace QuanLyTraoDoiHang
             }
 
 
-            Product x = new Product(Program.currentUser.userId, txtCategory.Text, txtName.Text, Convert.ToInt32(txtPrice.Text), picboxProduct.BackgroundImage,
+            Product x = new Product(Program.CurrentUser().userId, txtCategory.Text, txtName.Text, Convert.ToInt32(txtPrice.Text), picboxProduct.BackgroundImage,
             Convert.ToInt32(txtOriginalPrice.Text), txtCondition.Text, txtWarranty.Text, DateOnly.FromDateTime(dtpBought.Value), txtBrand.Text, txtOrigin.Text, richTextBoxDescription.Text);
 
             productDAO.Add(x);
             MessageBox.Show("add successfully");
-            Close();
         }
 
 

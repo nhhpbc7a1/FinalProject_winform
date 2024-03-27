@@ -31,19 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PersonalInfor));
             this.pnl_Infor = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnChangeProfile = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblChangeImage = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ptbUserImage = new System.Windows.Forms.PictureBox();
             this.lblUsername = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.btnUpdate = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.btnUpdateInfo = new QuanLyTraoDoiHang.RJControls.RButton();
             this.btnLogout = new QuanLyTraoDoiHang.RJControls.RButton();
             this.btnChangePass = new QuanLyTraoDoiHang.RJControls.RButton();
             this.btnHistory = new QuanLyTraoDoiHang.RJControls.RButton();
             this.panel2.SuspendLayout();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbUserImage)).BeginInit();
             this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,8 +58,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.btnChangeProfile);
-            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.lblChangeImage);
             this.panel2.Controls.Add(this.panel8);
             this.panel2.Controls.Add(this.panel7);
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -68,66 +66,50 @@
             this.panel2.Size = new System.Drawing.Size(267, 561);
             this.panel2.TabIndex = 1;
             // 
-            // btnChangeProfile
+            // lblChangeImage
             // 
-            this.btnChangeProfile.BackColor = System.Drawing.Color.White;
-            this.btnChangeProfile.BackgroundColor = System.Drawing.Color.White;
-            this.btnChangeProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnChangeProfile.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnChangeProfile.BorderRadius = 0;
-            this.btnChangeProfile.BorderSize = 0;
-            this.btnChangeProfile.FlatAppearance.BorderSize = 0;
-            this.btnChangeProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChangeProfile.ForeColor = System.Drawing.Color.White;
-            this.btnChangeProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnChangeProfile.Image")));
-            this.btnChangeProfile.Location = new System.Drawing.Point(179, 166);
-            this.btnChangeProfile.Name = "btnChangeProfile";
-            this.btnChangeProfile.Size = new System.Drawing.Size(21, 22);
-            this.btnChangeProfile.TabIndex = 9;
-            this.btnChangeProfile.TextColor = System.Drawing.Color.White;
-            this.btnChangeProfile.UseVisualStyleBackColor = false;
-            // 
-            // label8
-            // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.Green;
-            this.label8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label8.Location = new System.Drawing.Point(64, 166);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(128, 30);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Change profile";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblChangeImage.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblChangeImage.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblChangeImage.ForeColor = System.Drawing.Color.Green;
+            this.lblChangeImage.Image = ((System.Drawing.Image)(resources.GetObject("lblChangeImage.Image")));
+            this.lblChangeImage.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblChangeImage.Location = new System.Drawing.Point(55, 163);
+            this.lblChangeImage.Name = "lblChangeImage";
+            this.lblChangeImage.Size = new System.Drawing.Size(158, 30);
+            this.lblChangeImage.TabIndex = 8;
+            this.lblChangeImage.Text = "Change profile";
+            this.lblChangeImage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel8
             // 
             this.panel8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel8.BackColor = System.Drawing.SystemColors.Control;
-            this.panel8.Controls.Add(this.pictureBox1);
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
+            this.panel8.Controls.Add(this.ptbUserImage);
             this.panel8.Controls.Add(this.lblUsername);
-            this.panel8.Location = new System.Drawing.Point(64, 60);
+            this.panel8.Location = new System.Drawing.Point(72, 33);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(128, 100);
+            this.panel8.Size = new System.Drawing.Size(128, 127);
             this.panel8.TabIndex = 7;
             // 
-            // pictureBox1
+            // ptbUserImage
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(22, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(79, 55);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.ptbUserImage.BackColor = System.Drawing.SystemColors.Control;
+            this.ptbUserImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptbUserImage.BackgroundImage")));
+            this.ptbUserImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptbUserImage.Location = new System.Drawing.Point(6, 5);
+            this.ptbUserImage.Margin = new System.Windows.Forms.Padding(2, 3, 3, 3);
+            this.ptbUserImage.Name = "ptbUserImage";
+            this.ptbUserImage.Size = new System.Drawing.Size(116, 95);
+            this.ptbUserImage.TabIndex = 0;
+            this.ptbUserImage.TabStop = false;
             // 
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
+            this.lblUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
             this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblUsername.ForeColor = System.Drawing.Color.DimGray;
-            this.lblUsername.Location = new System.Drawing.Point(22, 74);
+            this.lblUsername.ForeColor = System.Drawing.Color.Black;
+            this.lblUsername.Location = new System.Drawing.Point(25, 103);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(79, 21);
             this.lblUsername.TabIndex = 1;
@@ -136,37 +118,36 @@
             // panel7
             // 
             this.panel7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel7.Controls.Add(this.btnUpdate);
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Controls.Add(this.btnUpdateInfo);
             this.panel7.Controls.Add(this.btnLogout);
             this.panel7.Controls.Add(this.btnChangePass);
             this.panel7.Controls.Add(this.btnHistory);
             this.panel7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.panel7.Location = new System.Drawing.Point(31, 204);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(197, 295);
+            this.panel7.Size = new System.Drawing.Size(197, 314);
             this.panel7.TabIndex = 6;
-            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
-            // btnUpdate
+            // btnUpdateInfo
             // 
-            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
-            this.btnUpdate.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
-            this.btnUpdate.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnUpdate.BorderRadius = 10;
-            this.btnUpdate.BorderSize = 0;
-            this.btnUpdate.FlatAppearance.BorderSize = 0;
-            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
-            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdate.Location = new System.Drawing.Point(24, 24);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(158, 40);
-            this.btnUpdate.TabIndex = 2;
-            this.btnUpdate.Text = "Update ";
-            this.btnUpdate.TextColor = System.Drawing.Color.White;
-            this.btnUpdate.UseVisualStyleBackColor = false;
-            this.btnUpdate.Click += new System.EventHandler(this.rButton1_Click);
+            this.btnUpdateInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
+            this.btnUpdateInfo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
+            this.btnUpdateInfo.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnUpdateInfo.BorderRadius = 10;
+            this.btnUpdateInfo.BorderSize = 0;
+            this.btnUpdateInfo.FlatAppearance.BorderSize = 0;
+            this.btnUpdateInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateInfo.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdateInfo.Image")));
+            this.btnUpdateInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdateInfo.Location = new System.Drawing.Point(24, 14);
+            this.btnUpdateInfo.Name = "btnUpdateInfo";
+            this.btnUpdateInfo.Size = new System.Drawing.Size(158, 51);
+            this.btnUpdateInfo.TabIndex = 2;
+            this.btnUpdateInfo.Text = "Update info";
+            this.btnUpdateInfo.TextColor = System.Drawing.Color.White;
+            this.btnUpdateInfo.UseVisualStyleBackColor = false;
             // 
             // btnLogout
             // 
@@ -180,9 +161,9 @@
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(24, 229);
+            this.btnLogout.Location = new System.Drawing.Point(24, 233);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(158, 40);
+            this.btnLogout.Size = new System.Drawing.Size(158, 51);
             this.btnLogout.TabIndex = 5;
             this.btnLogout.Text = "Log out";
             this.btnLogout.TextColor = System.Drawing.Color.White;
@@ -200,15 +181,14 @@
             this.btnChangePass.ForeColor = System.Drawing.Color.White;
             this.btnChangePass.Image = ((System.Drawing.Image)(resources.GetObject("btnChangePass.Image")));
             this.btnChangePass.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChangePass.Location = new System.Drawing.Point(24, 91);
+            this.btnChangePass.Location = new System.Drawing.Point(24, 84);
             this.btnChangePass.Name = "btnChangePass";
-            this.btnChangePass.Size = new System.Drawing.Size(158, 40);
+            this.btnChangePass.Size = new System.Drawing.Size(158, 51);
             this.btnChangePass.TabIndex = 3;
-            this.btnChangePass.Text = "Change Password";
+            this.btnChangePass.Text = "Change password";
             this.btnChangePass.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnChangePass.TextColor = System.Drawing.Color.White;
             this.btnChangePass.UseVisualStyleBackColor = false;
-            this.btnChangePass.Click += new System.EventHandler(this.rButton2_Click);
             // 
             // btnHistory
             // 
@@ -222,9 +202,9 @@
             this.btnHistory.ForeColor = System.Drawing.Color.White;
             this.btnHistory.Image = ((System.Drawing.Image)(resources.GetObject("btnHistory.Image")));
             this.btnHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHistory.Location = new System.Drawing.Point(24, 158);
+            this.btnHistory.Location = new System.Drawing.Point(24, 159);
             this.btnHistory.Name = "btnHistory";
-            this.btnHistory.Size = new System.Drawing.Size(158, 42);
+            this.btnHistory.Size = new System.Drawing.Size(158, 51);
             this.btnHistory.TabIndex = 4;
             this.btnHistory.Text = "Purchase History";
             this.btnHistory.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -243,7 +223,7 @@
             this.panel2.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbUserImage)).EndInit();
             this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -254,14 +234,13 @@
         private Panel pnl_Infor;
         private Panel panel2;
         private Label lblUsername;
-        private PictureBox pictureBox1;
+        private PictureBox ptbUserImage;
         private Panel panel7;
-        private RJControls.RButton btnUpdate;
-        private RJControls.RButton btnLogout;
+        private RJControls.RButton btnUpdateInfo;
         private RJControls.RButton btnChangePass;
         private RJControls.RButton btnHistory;
         private Panel panel8;
-        private RJControls.RButton btnChangeProfile;
-        private Label label8;
+        private Label lblChangeImage;
+        public RJControls.RButton btnLogout;
     }
 }

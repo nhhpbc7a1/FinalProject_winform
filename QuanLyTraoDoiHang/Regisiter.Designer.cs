@@ -36,8 +36,8 @@
             this.txtPersonalId = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.ucPassword = new QuanLyTraoDoiHang.UCPasswordTextBox();
             this.ucRetypePassword = new QuanLyTraoDoiHang.UCPasswordTextBox();
+            this.ucPassword = new QuanLyTraoDoiHang.UCPasswordTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -50,6 +50,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.btnHome = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.btnMinimize = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.btnExit = new QuanLyTraoDoiHang.RJControls.RButton();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -57,6 +61,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblBirthday
@@ -67,7 +72,7 @@
             this.lblBirthday.Location = new System.Drawing.Point(57, 158);
             this.lblBirthday.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBirthday.Name = "lblBirthday";
-            this.lblBirthday.Size = new System.Drawing.Size(88, 28);
+            this.lblBirthday.Size = new System.Drawing.Size(71, 21);
             this.lblBirthday.TabIndex = 3;
             this.lblBirthday.Text = "Birthday";
             // 
@@ -80,7 +85,7 @@
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PlaceholderText = "  Email";
-            this.txtEmail.Size = new System.Drawing.Size(306, 34);
+            this.txtEmail.Size = new System.Drawing.Size(306, 29);
             this.txtEmail.TabIndex = 10;
             // 
             // txtPhone
@@ -92,7 +97,7 @@
             this.txtPhone.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.PlaceholderText = "  Phone";
-            this.txtPhone.Size = new System.Drawing.Size(306, 34);
+            this.txtPhone.Size = new System.Drawing.Size(306, 29);
             this.txtPhone.TabIndex = 11;
             // 
             // dtBirthday
@@ -104,7 +109,7 @@
             this.dtBirthday.Location = new System.Drawing.Point(58, 150);
             this.dtBirthday.Name = "dtBirthday";
             this.dtBirthday.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dtBirthday.Size = new System.Drawing.Size(306, 34);
+            this.dtBirthday.Size = new System.Drawing.Size(306, 29);
             this.dtBirthday.TabIndex = 15;
             this.dtBirthday.ValueChanged += new System.EventHandler(this.dtBirthday_ValueChanged);
             // 
@@ -117,7 +122,7 @@
             this.txtPersonalId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtPersonalId.Name = "txtPersonalId";
             this.txtPersonalId.PlaceholderText = "  Personal ID";
-            this.txtPersonalId.Size = new System.Drawing.Size(306, 34);
+            this.txtPersonalId.Size = new System.Drawing.Size(306, 29);
             this.txtPersonalId.TabIndex = 14;
             // 
             // txtUsername
@@ -129,15 +134,15 @@
             this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PlaceholderText = "  Username";
-            this.txtUsername.Size = new System.Drawing.Size(306, 34);
+            this.txtUsername.Size = new System.Drawing.Size(306, 29);
             this.txtUsername.TabIndex = 2;
             // 
             // panel3
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
-            this.panel3.Controls.Add(this.ucRetypePassword);
             this.panel3.Controls.Add(this.ucPassword);
+            this.panel3.Controls.Add(this.ucRetypePassword);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.pictureBox7);
             this.panel3.Controls.Add(this.pictureBox4);
@@ -155,23 +160,23 @@
             this.panel3.Size = new System.Drawing.Size(421, 615);
             this.panel3.TabIndex = 15;
             // 
-            // ucPassword
-            // 
-            this.ucPassword.BackColor = System.Drawing.Color.White;
-            this.ucPassword.Location = new System.Drawing.Point(58, 397);
-            this.ucPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucPassword.Name = "ucPassword";
-            this.ucPassword.Size = new System.Drawing.Size(306, 34);
-            this.ucPassword.TabIndex = 28;
-            // 
             // ucRetypePassword
             // 
             this.ucRetypePassword.BackColor = System.Drawing.Color.White;
             this.ucRetypePassword.Location = new System.Drawing.Point(58, 457);
             this.ucRetypePassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucRetypePassword.Name = "ucRetypePassword";
-            this.ucRetypePassword.Size = new System.Drawing.Size(306, 34);
+            this.ucRetypePassword.Size = new System.Drawing.Size(306, 29);
             this.ucRetypePassword.TabIndex = 29;
+            // 
+            // ucPassword
+            // 
+            this.ucPassword.BackColor = System.Drawing.Color.White;
+            this.ucPassword.Location = new System.Drawing.Point(58, 397);
+            this.ucPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ucPassword.Name = "ucPassword";
+            this.ucPassword.Size = new System.Drawing.Size(306, 29);
+            this.ucPassword.TabIndex = 28;
             // 
             // label5
             // 
@@ -180,7 +185,7 @@
             this.label5.ForeColor = System.Drawing.SystemColors.InfoText;
             this.label5.Location = new System.Drawing.Point(147, 17);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(178, 54);
+            this.label5.Size = new System.Drawing.Size(142, 45);
             this.label5.TabIndex = 19;
             this.label5.Text = "Register";
             // 
@@ -254,7 +259,7 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(-18, 248);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 23);
+            this.label3.Size = new System.Drawing.Size(0, 19);
             this.label3.TabIndex = 17;
             // 
             // label2
@@ -263,7 +268,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(-123, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 69);
+            this.label2.Size = new System.Drawing.Size(0, 55);
             this.label2.TabIndex = 16;
             // 
             // panel1
@@ -295,7 +300,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
             this.label4.Location = new System.Drawing.Point(67, 287);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(393, 33);
+            this.label4.Size = new System.Drawing.Size(301, 24);
             this.label4.TabIndex = 13;
             this.label4.Text = "Trade Goods, Seamless, Swift";
             // 
@@ -306,20 +311,88 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
             this.label1.Location = new System.Drawing.Point(122, 217);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(234, 89);
+            this.label1.Size = new System.Drawing.Size(186, 70);
             this.label1.TabIndex = 9;
             this.label1.Text = "KoHa";
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.btnHome);
+            this.panel6.Controls.Add(this.btnMinimize);
+            this.panel6.Controls.Add(this.btnExit);
+            this.panel6.Location = new System.Drawing.Point(3, 3);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(103, 33);
+            this.panel6.TabIndex = 20;
+            // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnHome.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnHome.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnHome.BorderRadius = 21;
+            this.btnHome.BorderSize = 0;
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.ForeColor = System.Drawing.Color.Wheat;
+            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
+            this.btnHome.Location = new System.Drawing.Point(69, 7);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(22, 22);
+            this.btnHome.TabIndex = 20;
+            this.btnHome.TextColor = System.Drawing.Color.Wheat;
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(221)))), ((int)(((byte)(97)))));
+            this.btnMinimize.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(221)))), ((int)(((byte)(97)))));
+            this.btnMinimize.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnMinimize.BorderRadius = 20;
+            this.btnMinimize.BorderSize = 0;
+            this.btnMinimize.FlatAppearance.BorderSize = 0;
+            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimize.ForeColor = System.Drawing.Color.White;
+            this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
+            this.btnMinimize.Location = new System.Drawing.Point(42, 7);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(21, 21);
+            this.btnMinimize.TabIndex = 2;
+            this.btnMinimize.TextColor = System.Drawing.Color.White;
+            this.btnMinimize.UseVisualStyleBackColor = false;
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.LightCoral;
+            this.btnExit.BackgroundColor = System.Drawing.Color.LightCoral;
+            this.btnExit.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnExit.BorderRadius = 20;
+            this.btnExit.BorderSize = 0;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.Location = new System.Drawing.Point(16, 7);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(21, 21);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.TextColor = System.Drawing.Color.White;
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click_1);
             // 
             // Regisiter
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
             this.ClientSize = new System.Drawing.Size(984, 661);
+            this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Regisiter";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -333,6 +406,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -360,5 +434,9 @@
         private Label label5;
         private UCPasswordTextBox ucRetypePassword;
         private UCPasswordTextBox ucPassword;
+        private Panel panel6;
+        private RJControls.RButton btnHome;
+        private RJControls.RButton btnMinimize;
+        private RJControls.RButton btnExit;
     }
 }

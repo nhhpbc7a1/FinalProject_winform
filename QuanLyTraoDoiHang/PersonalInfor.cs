@@ -16,6 +16,11 @@ namespace QuanLyTraoDoiHang
         {
             InitializeComponent();
             OpenChildForm(new MyInfo());
+            btnChangePass.Click += btnChangePassword_Click;
+            btnUpdateInfo.Click += btnUpdateInfo_Click;
+            btnHistory.Click += btnHistory_Click;
+            Load += PersonalInfor_Load;
+            lblChangeImage.Click += lblChangeImage_Click;
         }
         private Form currentFormChild;
         private void OpenChildForm(Form childForm)
@@ -35,19 +40,33 @@ namespace QuanLyTraoDoiHang
             childForm.Show();
         }
       
-        private void rButton2_Click(object sender, EventArgs e)
+        private void btnChangePassword_Click(object sender, EventArgs e)
         {
             OpenChildForm(new ChangePassword());
         }
 
-        private void rButton1_Click(object sender, EventArgs e)
+        private void btnUpdateInfo_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new MyInfo());
+        }
+        private void btnHistory_Click(object sender, EventArgs e)
         {
             OpenChildForm(new MyInfo());
         }
 
-        private void panel7_Paint(object sender, PaintEventArgs e)
-        {
 
+        private void PersonalInfor_Load(object sender, EventArgs e)
+        {
+            ptbUserImage.BackgroundImage = Program.CurrentUser().image;
+            lblUsername.Text = AccountDAO.SelectByUserID(Program.currentUserId).username;
         }
+        private void lblChangeImage_Click(object sender, EventArgs e)
+        {
+            Image image = MyImage.ChooseImage();
+            ptbUserImage.BackgroundImage = image;
+            Program.CurrentUser().image = image;
+            UserDAO.Update(Program.CurrentUser());
+        }
+
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyTraoDoiHang.RJControls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,31 +23,54 @@ namespace QuanLyTraoDoiHang
             lblMainPage.Click += BackToMainpage;
 
             lblSellerChannel.Click += lblSellerChannel_Click;
-            btnCart.Click += btnCart_Click;
             lblSignUp.Click += lblSignup_Click;
             lblSignIn.Click += lblSignin_Click;
-            btnAccount.Click += btnAccount_Click;
-            btnAddProduct.Click += btnAddProduct_Click;
+            this.pnlAccount.Location = new Point(798, 9);
 
-            btnAccount.Visible = false;
-            lblSellerChannel.Visible = false;
+            pnlAccount.Click += Account_Click;
+            picProfile.Click += Account_Click;
+            lblUsername.Click += Account_Click;
+            pnlAccount.Visible = false;
+            btnAddProduct.Click += btnAddProduct_Click;
+            btnCart.Click += btnCart_Click;
+
+            //btnAccount.Visible = false;
             this.Load += UpdateAccountByAction;
+
+            btnExit.Click += btnExit_Click;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            ControlBox = false;
+
         }
         private void UpdateAccountByAction(object? sender, EventArgs e)
         {
-            if (Program.currentUser != null)
+            if (Program.CurrentUser() != null)
             {
-                btnAccount.Visible = true;
-                lblSellerChannel.Visible = true;
+                pnlAccount.Visible = true;
                 lblSignIn.Visible = false;
                 lblSignUp.Visible = false;
+            }
+            else
+            {
+                pnlAccount.Visible = false;
+                lblSignIn.Visible = true;
+                lblSignUp.Visible = true;
+
             }
         }
 
 
         private void lblSellerChannel_Click(object? sender, EventArgs e)
         {
-            OpenChildForm(new FSellermanagement());
+            if (Program.CurrentUser() == null)
+            {
+                MessageBox.Show("please login first");
+            }
+            else
+            {              
+                OpenChildForm(new FSellermanagement());
+            }
         }
 
         private void BackToMainpage(object sender, EventArgs e)
@@ -90,19 +114,28 @@ namespace QuanLyTraoDoiHang
             UpdateAccountByAction(sender, e);
         }
 
-
-        private void btnAccount_Click(object sender, EventArgs e)
+        
+        private void Account_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new PersonalInfor());
 
+           
+            PersonalInfor form = new PersonalInfor();
+            void Logout(object sender, EventArgs e)
+            {
+                MessageBox.Show("Logout successfully");
+                Program.currentUserId = -1;
+                BackToMainpage(sender,e);
+                UpdateAccountByAction(sender, e);
+            }
+            form.btnLogout.Click += Logout;
+            OpenChildForm(form);
         }
 
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
-            if (Program.currentUser == null)
+            if (Program.CurrentUser() == null)
             {
-                MessageBox.Show("Please login before", "Notification", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
-
+                MessageBox.Show("please login first");
             }
             else
             {
@@ -112,5 +145,14 @@ namespace QuanLyTraoDoiHang
             }
         }
 
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnAccount_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,82 +17,23 @@ namespace QuanLyTraoDoiHang
         public FormCart()
         {
             InitializeComponent();
+
+            Load += form_Load;
         }
-
-
-        private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
+        private void form_Load(object sender, EventArgs e)
         {
+            DataTable table = CartItemDAO.SelectByUserId(Program.currentUserId);
+            ucCartProducts.pnlProducts.Controls.Clear();
+            foreach (DataRow row in table.Rows)
+            {
+                UCProductInCart ucProduct = new UCProductInCart();
+                ucProduct.cartItem = CartItemDAO.RowToCartItem(row);
+                ucProduct.btnCancel.Click += form_Load;
+
+                ucCartProducts.pnlProducts.Controls.Add(ucProduct);
+            }
 
         }
 
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblAction_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblTotalPrice_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cBAccount_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblTotalPrice_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void icbtnHome_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cBAccount_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ucCartProduct1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblAction_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pBSearch_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtSearch_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblItemsCart_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

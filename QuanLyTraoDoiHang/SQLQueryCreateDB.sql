@@ -8,9 +8,10 @@ create table UserTable (
 	birthday date, 
 	email nvarchar(100), 
 	phone nvarchar(100), 
-	gender nvarchar(100), 
+	gender int, 
 	address nvarchar(100), 
 	image varbinary(max),
+	dateJoined date,
 );
 go
 --drop table Product ;
@@ -40,5 +41,13 @@ create table Account (
 	userId int references UserTable(userId) unique, 
 	username nvarchar(100) primary key, 
 	password nvarchar(100)
+);
+go
+
+
+create table CartItem (
+	userId int references UserTable(userId),
+	productId int references Product(productId),
+	primary key(userId, productId),
 );
 go

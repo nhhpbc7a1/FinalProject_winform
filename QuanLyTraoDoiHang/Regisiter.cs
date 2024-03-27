@@ -105,14 +105,30 @@ namespace QuanLyTraoDoiHang
                 return;
             }
 
-            User user = new User(txtPersonalId.Text,"",DateOnly.FromDateTime(dtBirthday.Value),txtEmail.Text,txtPhone.Text,"","");
+            User user = new User(txtPersonalId.Text,"",DateOnly.FromDateTime(dtBirthday.Value),txtEmail.Text,txtPhone.Text,0,"");
             Account account = new Account(user.userId,txtUsername.Text,ucPassword.txtPass.Text);
 
             UserDAO.Add(user);
             AccountDAO.Add(account);
 
-            Program.currentUser = user;
+            Program.currentUserId = user.userId;
             Close();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Close();
+
+        }
+
+        private void btnExit_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

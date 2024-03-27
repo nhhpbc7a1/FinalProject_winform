@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace QuanLyTraoDoiHang
 {
-    public partial class UcProductStatus : UserControl
+    public partial class UCProductStatusItem : UserControl
     {
-        public UcProductStatus()
+        public UCProductStatusItem()
         {
             InitializeComponent();
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblOrderCode_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -29,7 +29,6 @@ namespace QuanLyTraoDoiHang
         /// </summary>
         private void InitializeComponent()
         {
-            this.ucCartProduct1 = new QuanLyTraoDoiHang.UCCartProduct();
             this.pnlCheckOut = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.rBCheckout = new QuanLyTraoDoiHang.RJControls.RButton();
@@ -38,21 +37,13 @@ namespace QuanLyTraoDoiHang
             this.lblPriceCheckOut = new System.Windows.Forms.Label();
             this.lblItemsCart = new System.Windows.Forms.Label();
             this.cBPay = new System.Windows.Forms.CheckBox();
+            this.ucCartProducts = new QuanLyTraoDoiHang.UCCartProduct();
             this.pnlCheckOut.SuspendLayout();
             this.SuspendLayout();
             // 
-            // ucCartProduct1
-            // 
-            this.ucCartProduct1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
-            this.ucCartProduct1.Location = new System.Drawing.Point(122, 34);
-            this.ucCartProduct1.Margin = new System.Windows.Forms.Padding(1);
-            this.ucCartProduct1.Name = "ucCartProduct1";
-            this.ucCartProduct1.Size = new System.Drawing.Size(755, 439);
-            this.ucCartProduct1.TabIndex = 19;
-            // 
             // pnlCheckOut
             // 
-            this.pnlCheckOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(148)))), ((int)(((byte)(112)))));
+            this.pnlCheckOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(115)))), ((int)(((byte)(82)))));
             this.pnlCheckOut.Controls.Add(this.label2);
             this.pnlCheckOut.Controls.Add(this.rBCheckout);
             this.pnlCheckOut.Controls.Add(this.lblCheckOutPrice);
@@ -81,11 +72,11 @@ namespace QuanLyTraoDoiHang
             // 
             // rBCheckout
             // 
-            this.rBCheckout.BackColor = System.Drawing.Color.LightCoral;
-            this.rBCheckout.BackgroundColor = System.Drawing.Color.LightCoral;
-            this.rBCheckout.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rBCheckout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.rBCheckout.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.rBCheckout.BorderColor = System.Drawing.Color.White;
             this.rBCheckout.BorderRadius = 20;
-            this.rBCheckout.BorderSize = 0;
+            this.rBCheckout.BorderSize = 1;
             this.rBCheckout.FlatAppearance.BorderSize = 0;
             this.rBCheckout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rBCheckout.Font = new System.Drawing.Font("Segoe UI", 11.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -160,13 +151,23 @@ namespace QuanLyTraoDoiHang
             this.cBPay.Text = "Select All";
             this.cBPay.UseVisualStyleBackColor = true;
             // 
+            // ucCartProducts
+            // 
+            this.ucCartProducts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
+            this.ucCartProducts.Location = new System.Drawing.Point(114, 20);
+            this.ucCartProducts.Margin = new System.Windows.Forms.Padding(1);
+            this.ucCartProducts.Name = "ucCartProducts";
+            this.ucCartProducts.Size = new System.Drawing.Size(755, 469);
+            this.ucCartProducts.TabIndex = 21;
+            // 
             // FormCart
             // 
+            this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.pnlCheckOut);
-            this.Controls.Add(this.ucCartProduct1);
+            this.Controls.Add(this.ucCartProducts);
             this.Margin = new System.Windows.Forms.Padding(1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -180,7 +181,6 @@ namespace QuanLyTraoDoiHang
         }
 
         #endregion
-        private UCCartProduct ucCartProduct1;
         private Panel pnlCheckOut;
         private Label label2;
         private RJControls.RButton rBCheckout;
@@ -189,5 +189,6 @@ namespace QuanLyTraoDoiHang
         private Label lblPriceCheckOut;
         private Label lblItemsCart;
         private CheckBox cBPay;
+        private UCCartProduct ucCartProducts;
     }
 }
