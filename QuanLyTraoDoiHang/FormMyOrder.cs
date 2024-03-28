@@ -10,20 +10,24 @@ using System.Windows.Forms;
 
 namespace QuanLyTraoDoiHang
 {
-    public partial class ViewHistory : Form
+    public partial class FormMyOrder : Form
     {
-        public ViewHistory()
+        public FormMyOrder()
         {
             InitializeComponent();
         }
 
-        private void btnShip_Click(object sender, EventArgs e)
+        private void ucShipment1_Load(object sender, EventArgs e)
         {
-            btnShip.BorderSize = 2;
-            btnShip.BorderColor = Color.FromArgb(52, 255, 46);
+
         }
 
-        private void ucMyPurchase2_Load(object sender, EventArgs e)
+        private void ucProductStatus1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

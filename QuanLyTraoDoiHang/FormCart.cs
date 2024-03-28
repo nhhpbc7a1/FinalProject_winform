@@ -35,5 +35,15 @@ namespace QuanLyTraoDoiHang
 
         }
 
+        private void ucCartProducts_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rBCheckout_Click(object sender, EventArgs e)
+        {
+            FCheckOut fCheckOut = new FCheckOut();
+            fCheckOut.ShowDialog();
+        }
     }
 }

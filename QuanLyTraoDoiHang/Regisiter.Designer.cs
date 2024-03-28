@@ -36,10 +36,8 @@
             this.txtPersonalId = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.lblRetypedPass = new System.Windows.Forms.Label();
             this.ucRetypePassword = new QuanLyTraoDoiHang.UCPasswordTextBox();
             this.ucPassword = new QuanLyTraoDoiHang.UCPasswordTextBox();
-            this.lblValidPass = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -145,8 +143,6 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
             this.panel3.Controls.Add(this.ucPassword);
             this.panel3.Controls.Add(this.ucRetypePassword);
-            this.panel3.Controls.Add(this.lblRetypedPass);
-            this.panel3.Controls.Add(this.lblValidPass);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.pictureBox7);
             this.panel3.Controls.Add(this.pictureBox4);
@@ -163,16 +159,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(421, 615);
             this.panel3.TabIndex = 15;
-            // 
-            // lblRetypedPass
-            // 
-            this.lblRetypedPass.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblRetypedPass.ForeColor = System.Drawing.Color.Black;
-            this.lblRetypedPass.Location = new System.Drawing.Point(58, 493);
-            this.lblRetypedPass.Name = "lblRetypedPass";
-            this.lblRetypedPass.Size = new System.Drawing.Size(313, 39);
-            this.lblRetypedPass.TabIndex = 31;
-            this.lblRetypedPass.Text = "Retyped-new password need to be matched with the new password.";
             // 
             // ucRetypePassword
             // 
@@ -191,17 +177,6 @@
             this.ucPassword.Name = "ucPassword";
             this.ucPassword.Size = new System.Drawing.Size(306, 29);
             this.ucPassword.TabIndex = 28;
-            // 
-            // lblValidPass
-            // 
-            this.lblValidPass.AutoSize = true;
-            this.lblValidPass.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblValidPass.ForeColor = System.Drawing.Color.Black;
-            this.lblValidPass.Location = new System.Drawing.Point(58, 430);
-            this.lblValidPass.Name = "lblValidPass";
-            this.lblValidPass.Size = new System.Drawing.Size(197, 13);
-            this.lblValidPass.TabIndex = 30;
-            this.lblValidPass.Text = "It should be longer than 6 characters";
             // 
             // label5
             // 
@@ -463,7 +438,5 @@
         private RJControls.RButton btnHome;
         private RJControls.RButton btnMinimize;
         private RJControls.RButton btnExit;
-        private Label lblValidPass;
-        private Label lblRetypedPass;
     }
 }

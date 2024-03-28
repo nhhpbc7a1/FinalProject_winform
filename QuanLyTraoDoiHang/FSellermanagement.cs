@@ -22,12 +22,43 @@ namespace QuanLyTraoDoiHang
 
       
        
+        private void rButton3_Order_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FReturn());
+        }
         private void rButton1_Product_Click(object sender, EventArgs e)
         {
             OpenChildForm(new MyProduct());
         }
-     
-     
+        private void FSellermanagement_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void ucDropDownMenu1_Load(object sender, EventArgs e)
+        {
+            //this.ucOrder.rBSelect.Text = "Order";
+            //this.ucOrder.rButton1.Text = "My Order";
+            ////cancel by buyer, cancel by owner
+            //this.ucOrder.rButton2.Text = "Cancellation";
+            ////return reason
+            //this.ucOrder.rButton3.Text = "Return";
+
+        }
+        private void ucProduct_Load(object sender, EventArgs e)
+        {
+            //actions: update
+            //this.ucProduct.rBSelect.Text = "Product";
+            //this.ucProduct.rButton1.Text = "My Product";
+            //this.ucProduct.rButton2.Text = "Add New Products";
+            //this.ucProduct.rButton3.Visible = false;
+
+        }
 
         private void rButton1_Click(object sender, EventArgs e)
         {
@@ -51,15 +82,64 @@ namespace QuanLyTraoDoiHang
             childForm.Show();
         }
 
-     
+        private void pnlSellerTool_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void rBAnalysis_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FAnalysis());
         }
 
-     
+        private void rBAnalysis_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForm(new FAnalysis());
 
-    
+        }
+
+        private void ucOrder_Load(object sender, EventArgs e)
+        {
+            //this.ucOrder.rBSelect.Text = "Order";
+            //this.ucOrder.rButton1.Text = "My Order";
+            ////cancel by buyer, cancel by owner
+            //this.ucOrder.rButton2.Text = "Cancellation";
+            ////return reason
+            //this.ucOrder.rButton3.Text = "Return";
+        }
+
+        private void ucProduct_Load_1(object sender, EventArgs e)
+        {
+            ////actions: update
+            //this.ucProduct.rBSelect.Text = "Product";
+            //this.ucProduct.rButton1.Text = "My Product";
+            //this.ucProduct.rButton2.Text = "Add New Products";
+            //this.ucProduct.rButton3.Visible = false;
+        }
+
+        private void ucProduct_Load_2(object sender, EventArgs e)
+        {
+            //actions: update
+            //this.ucProduct.rBSelect.Text = "Product";
+            //this.ucProduct.rButton1.Text = "My Product";
+            //this.ucProduct.rButton2.Text = "Add New Products";
+            //this.ucProduct.rButton3.Visible = false;
+        }
+
+        private void ucOrder_Load_1(object sender, EventArgs e)
+        {
+            //this.ucOrder.rBSelect.Text = "Order";
+            //this.ucOrder.rButton1.Text = "My Order";
+            ////cancel by buyer, cancel by owner
+            //this.ucOrder.rButton2.Text = "Cancellation";
+            ////return reason
+            //this.ucOrder.rButton3.Text = "Return";
+        }
+
+        private void rBAnalysis_Click_2(object sender, EventArgs e)
+        {
+            OpenChildForm(new FAnalysis());
+        }
 
        
         private bool isCollapsed;
@@ -127,6 +207,17 @@ namespace QuanLyTraoDoiHang
 
         }
 
+        private void btnCancelled_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FCancellation());
+
+        }
+
+        private void btnReturned_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FReturn());
+
+        }
 
         private void btnMyProducts_Click(object sender, EventArgs e)
         {
@@ -151,13 +242,23 @@ namespace QuanLyTraoDoiHang
 
         }
 
-      
+        private void rButton5_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void rButton2_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormMyShipment());
 
         }
+
+        private void rButton1_Click_2(object sender, EventArgs e)
+        {
+            OpenChildForm(new FAnalysis());
+
+        }
+
         private void btnShipment_Click_1(object sender, EventArgs e)
         {
             OpenChildForm(new FormMyShipment());

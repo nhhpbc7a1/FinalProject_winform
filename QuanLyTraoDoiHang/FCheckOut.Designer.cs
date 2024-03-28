@@ -196,6 +196,130 @@
             ucCartProduct1.TabIndex = 3;
             ucCartProduct1.Load += ucCartProduct1_Load;
             // 
+            // panel4
+            // 
+            panel4.BackColor = Color.FromArgb(246, 250, 200);
+            panel4.Controls.Add(rBCheckout);
+            panel4.Controls.Add(lblTotalPrice);
+            panel4.Controls.Add(lblTotal);
+            panel4.Controls.Add(label2);
+            panel4.Controls.Add(lblShipping);
+            panel4.Controls.Add(lblPriceProduct);
+            panel4.Controls.Add(lblProducPrice);
+            panel4.Location = new Point(134, 602);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(730, 69);
+            panel4.TabIndex = 52;
+            // 
+            // dUDPaymentType
+            // 
+            dUDPaymentType.BorderStyle = BorderStyle.FixedSingle;
+            dUDPaymentType.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            dUDPaymentType.Location = new Point(508, 38);
+            dUDPaymentType.Margin = new Padding(1);
+            dUDPaymentType.Name = "dUDPaymentType";
+            dUDPaymentType.ReadOnly = true;
+            dUDPaymentType.RightToLeft = RightToLeft.No;
+            dUDPaymentType.Size = new Size(122, 25);
+            dUDPaymentType.TabIndex = 53;
+            dUDPaymentType.Text = "(Type)";
+            // 
+            // lblPayment
+            // 
+            lblPayment.AutoSize = true;
+            lblPayment.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblPayment.Location = new Point(354, 42);
+            lblPayment.Name = "lblPayment";
+            lblPayment.Size = new Size(122, 21);
+            lblPayment.TabIndex = 52;
+            lblPayment.Text = "Payment Option";
+            // 
+            // lblProducPrice
+            // 
+            lblProducPrice.AutoSize = true;
+            lblProducPrice.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblProducPrice.Location = new Point(3, 10);
+            lblProducPrice.Name = "lblProducPrice";
+            lblProducPrice.Size = new Size(164, 21);
+            lblProducPrice.TabIndex = 54;
+            lblProducPrice.Text = "Merchandise Subtotal:";
+            // 
+            // lblPriceProduct
+            // 
+            lblPriceProduct.AutoSize = true;
+            lblPriceProduct.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblPriceProduct.Location = new Point(115, 31);
+            lblPriceProduct.Name = "lblPriceProduct";
+            lblPriceProduct.Size = new Size(137, 21);
+            lblPriceProduct.TabIndex = 55;
+            lblPriceProduct.Text = "Merchandise Price";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(335, 31);
+            label2.Name = "label2";
+            label2.Size = new Size(110, 21);
+            label2.TabIndex = 57;
+            label2.Text = "Shipping Price";
+            label2.Click += label2_Click;
+            // 
+            // lblShipping
+            // 
+            lblShipping.AutoSize = true;
+            lblShipping.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblShipping.Location = new Point(238, 4);
+            lblShipping.Name = "lblShipping";
+            lblShipping.Size = new Size(105, 27);
+            lblShipping.TabIndex = 56;
+            lblShipping.Text = "Shiping Total:";
+            lblShipping.TextAlign = ContentAlignment.BottomRight;
+            lblShipping.UseCompatibleTextRendering = true;
+            // 
+            // lblTotalPrice
+            // 
+            lblTotalPrice.AutoSize = true;
+            lblTotalPrice.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTotalPrice.Location = new Point(511, 31);
+            lblTotalPrice.Name = "lblTotalPrice";
+            lblTotalPrice.Size = new Size(80, 21);
+            lblTotalPrice.TabIndex = 59;
+            lblTotalPrice.Text = "Total Price";
+            // 
+            // lblTotal
+            // 
+            lblTotal.AutoSize = true;
+            lblTotal.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTotal.ForeColor = Color.IndianRed;
+            lblTotal.Location = new Point(463, 10);
+            lblTotal.Name = "lblTotal";
+            lblTotal.Size = new Size(50, 27);
+            lblTotal.TabIndex = 58;
+            lblTotal.Text = "Total:";
+            lblTotal.TextAlign = ContentAlignment.BottomRight;
+            lblTotal.UseCompatibleTextRendering = true;
+            // 
+            // rBCheckout
+            // 
+            rBCheckout.BackColor = Color.FromArgb(231, 41, 41);
+            rBCheckout.BackgroundColor = Color.FromArgb(231, 41, 41);
+            rBCheckout.BorderColor = Color.White;
+            rBCheckout.BorderRadius = 20;
+            rBCheckout.BorderSize = 1;
+            rBCheckout.FlatAppearance.BorderSize = 0;
+            rBCheckout.FlatStyle = FlatStyle.Flat;
+            rBCheckout.Font = new Font("Segoe UI", 11.1F, FontStyle.Bold, GraphicsUnit.Point);
+            rBCheckout.ForeColor = Color.White;
+            rBCheckout.Location = new Point(605, 15);
+            rBCheckout.Margin = new Padding(1);
+            rBCheckout.Name = "rBCheckout";
+            rBCheckout.Size = new Size(111, 37);
+            rBCheckout.TabIndex = 53;
+            rBCheckout.Text = "Check Out";
+            rBCheckout.TextColor = Color.White;
+            rBCheckout.UseVisualStyleBackColor = false;
+            // 
             // FCheckOut
             // 
             AccessibleRole = AccessibleRole.Row;

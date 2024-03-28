@@ -28,453 +28,325 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FSellermanagement));
-            pnlSellerTool = new Panel();
-            pnlProducts = new FlowLayoutPanel();
-            pnlMenu = new Panel();
-            label4 = new Label();
-            label1 = new Label();
-            label3 = new Label();
-            lblAction = new Label();
-            lblTotalPrice = new Label();
-            timer1 = new System.Windows.Forms.Timer(components);
-            timer2 = new System.Windows.Forms.Timer(components);
-            pnlDropDownnn = new Panel();
-            btnReturned = new RJControls.RButton();
-            btnCancelled = new RJControls.RButton();
-            btnMyOrder = new RJControls.RButton();
-            btnOrder = new RJControls.RButton();
-            pnlDropDownProdu = new Panel();
-            btnAddProduct = new RJControls.RButton();
-            btnMyProducts = new RJControls.RButton();
-            btnProducts = new RJControls.RButton();
-            panel1 = new Panel();
-            rButton1 = new RJControls.RButton();
-            pictureBox1 = new PictureBox();
-            panel2 = new Panel();
-            btnShipment = new RJControls.RButton();
-            panel3 = new Panel();
-            label2 = new Label();
-            panel4 = new Panel();
-            pnlSellerTool.SuspendLayout();
-            pnlMenu.SuspendLayout();
-            pnlDropDownnn.SuspendLayout();
-            pnlDropDownProdu.SuspendLayout();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel2.SuspendLayout();
-            panel3.SuspendLayout();
-            SuspendLayout();
+            this.pnlSellerTool = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.pnlDropDownnn = new System.Windows.Forms.Panel();
+            this.btnReturned = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.btnCancelled = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.btnMyOrder = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.btnOrder = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.pnlDropDownProdu = new System.Windows.Forms.Panel();
+            this.btnAddProduct = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.btnMyProducts = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.btnProducts = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.rButton1 = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnShipment = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.pnlDropDownnn.SuspendLayout();
+            this.pnlDropDownProdu.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.SuspendLayout();
             // 
             // pnlSellerTool
             // 
-            pnlSellerTool.BackColor = Color.FromArgb(164, 206, 149);
-            pnlSellerTool.Controls.Add(pnlProducts);
-            pnlSellerTool.Controls.Add(pnlMenu);
-            pnlSellerTool.Location = new Point(216, 90);
-            pnlSellerTool.Margin = new Padding(1);
-            pnlSellerTool.Name = "pnlSellerTool";
-            pnlSellerTool.RightToLeft = RightToLeft.Yes;
-            pnlSellerTool.Size = new Size(752, 446);
-            pnlSellerTool.TabIndex = 2;
-            // 
-            // pnlProducts
-            // 
-            pnlProducts.BackColor = SystemColors.ButtonHighlight;
-            pnlProducts.Location = new Point(12, 47);
-            pnlProducts.Name = "pnlProducts";
-            pnlProducts.Size = new Size(725, 336);
-            pnlProducts.TabIndex = 21;
-            // 
-            // pnlMenu
-            // 
-            pnlMenu.BackColor = Color.FromArgb(11, 96, 176);
-            pnlMenu.Controls.Add(label4);
-            pnlMenu.Controls.Add(label1);
-            pnlMenu.Controls.Add(label3);
-            pnlMenu.Controls.Add(lblAction);
-            pnlMenu.Controls.Add(lblTotalPrice);
-            pnlMenu.Location = new Point(12, 12);
-            pnlMenu.Margin = new Padding(1);
-            pnlMenu.Name = "pnlMenu";
-            pnlMenu.Size = new Size(725, 31);
-            pnlMenu.TabIndex = 20;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = SystemColors.ButtonHighlight;
-            label4.Location = new Point(14, 5);
-            label4.Margin = new Padding(1, 0, 1, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(106, 21);
-            label4.TabIndex = 20;
-            label4.Text = "Your product";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(528, 5);
-            label1.Margin = new Padding(1, 0, 1, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(45, 21);
-            label1.TabIndex = 18;
-            label1.Text = "Type";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(359, 5);
-            label3.Margin = new Padding(1, 0, 1, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(55, 21);
-            label3.TabIndex = 17;
-            label3.Text = "Status";
-            // 
-            // lblAction
-            // 
-            lblAction.AutoSize = true;
-            lblAction.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblAction.ForeColor = Color.White;
-            lblAction.Location = new Point(639, 5);
-            lblAction.Margin = new Padding(1, 0, 1, 0);
-            lblAction.Name = "lblAction";
-            lblAction.Size = new Size(58, 21);
-            lblAction.TabIndex = 16;
-            lblAction.Text = "Action";
-            // 
-            // lblTotalPrice
-            // 
-            lblTotalPrice.AutoSize = true;
-            lblTotalPrice.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTotalPrice.ForeColor = Color.White;
-            lblTotalPrice.Location = new Point(194, 5);
-            lblTotalPrice.Margin = new Padding(1, 0, 1, 0);
-            lblTotalPrice.Name = "lblTotalPrice";
-            lblTotalPrice.Size = new Size(85, 21);
-            lblTotalPrice.TabIndex = 15;
-            lblTotalPrice.Text = "Total Price";
+            this.pnlSellerTool.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlSellerTool.Location = new System.Drawing.Point(214, 20);
+            this.pnlSellerTool.Margin = new System.Windows.Forms.Padding(1);
+            this.pnlSellerTool.Name = "pnlSellerTool";
+            this.pnlSellerTool.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.pnlSellerTool.Size = new System.Drawing.Size(752, 522);
+            this.pnlSellerTool.TabIndex = 2;
             // 
             // timer1
             // 
-            timer1.Interval = 15;
-            timer1.Tick += timer1_Tick;
+            this.timer1.Interval = 15;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // timer2
             // 
-            timer2.Interval = 15;
-            timer2.Tick += timer2_Tick;
+            this.timer2.Interval = 15;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // pnlDropDownnn
             // 
-            pnlDropDownnn.Controls.Add(btnReturned);
-            pnlDropDownnn.Controls.Add(btnCancelled);
-            pnlDropDownnn.Controls.Add(btnMyOrder);
-            pnlDropDownnn.Controls.Add(btnOrder);
-            pnlDropDownnn.Dock = DockStyle.Top;
-            pnlDropDownnn.Location = new Point(0, 0);
-            pnlDropDownnn.MaximumSize = new Size(156, 162);
-            pnlDropDownnn.MinimumSize = new Size(156, 40);
-            pnlDropDownnn.Name = "pnlDropDownnn";
-            pnlDropDownnn.Size = new Size(156, 40);
-            pnlDropDownnn.TabIndex = 2;
+            this.pnlDropDownnn.Controls.Add(this.btnReturned);
+            this.pnlDropDownnn.Controls.Add(this.btnCancelled);
+            this.pnlDropDownnn.Controls.Add(this.btnMyOrder);
+            this.pnlDropDownnn.Controls.Add(this.btnOrder);
+            this.pnlDropDownnn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlDropDownnn.Location = new System.Drawing.Point(0, 0);
+            this.pnlDropDownnn.MaximumSize = new System.Drawing.Size(156, 162);
+            this.pnlDropDownnn.MinimumSize = new System.Drawing.Size(156, 40);
+            this.pnlDropDownnn.Name = "pnlDropDownnn";
+            this.pnlDropDownnn.Size = new System.Drawing.Size(156, 40);
+            this.pnlDropDownnn.TabIndex = 2;
             // 
             // btnReturned
             // 
-            btnReturned.BackColor = Color.FromArgb(155, 207, 83);
-            btnReturned.BackgroundColor = Color.FromArgb(155, 207, 83);
-            btnReturned.BorderColor = Color.PaleVioletRed;
-            btnReturned.BorderRadius = 10;
-            btnReturned.BorderSize = 0;
-            btnReturned.Dock = DockStyle.Top;
-            btnReturned.FlatAppearance.BorderSize = 0;
-            btnReturned.FlatStyle = FlatStyle.Flat;
-            btnReturned.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnReturned.ForeColor = Color.White;
-            btnReturned.Location = new Point(0, 120);
-            btnReturned.MaximumSize = new Size(156, 40);
-            btnReturned.Name = "btnReturned";
-            btnReturned.Size = new Size(156, 40);
-            btnReturned.TabIndex = 6;
-            btnReturned.Text = "Returned orders";
-            btnReturned.TextColor = Color.White;
-            btnReturned.UseVisualStyleBackColor = false;
+            this.btnReturned.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(207)))), ((int)(((byte)(83)))));
+            this.btnReturned.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(207)))), ((int)(((byte)(83)))));
+            this.btnReturned.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnReturned.BorderRadius = 10;
+            this.btnReturned.BorderSize = 0;
+            this.btnReturned.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnReturned.FlatAppearance.BorderSize = 0;
+            this.btnReturned.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReturned.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnReturned.ForeColor = System.Drawing.Color.White;
+            this.btnReturned.Location = new System.Drawing.Point(0, 120);
+            this.btnReturned.MaximumSize = new System.Drawing.Size(156, 40);
+            this.btnReturned.Name = "btnReturned";
+            this.btnReturned.Size = new System.Drawing.Size(156, 40);
+            this.btnReturned.TabIndex = 6;
+            this.btnReturned.Text = "Returned orders";
+            this.btnReturned.TextColor = System.Drawing.Color.White;
+            this.btnReturned.UseVisualStyleBackColor = false;
+            this.btnReturned.Click += new System.EventHandler(this.btnReturned_Click);
             // 
             // btnCancelled
             // 
-            btnCancelled.BackColor = Color.FromArgb(155, 207, 83);
-            btnCancelled.BackgroundColor = Color.FromArgb(155, 207, 83);
-            btnCancelled.BorderColor = Color.PaleVioletRed;
-            btnCancelled.BorderRadius = 10;
-            btnCancelled.BorderSize = 0;
-            btnCancelled.Dock = DockStyle.Top;
-            btnCancelled.FlatAppearance.BorderSize = 0;
-            btnCancelled.FlatStyle = FlatStyle.Flat;
-            btnCancelled.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnCancelled.ForeColor = Color.White;
-            btnCancelled.Location = new Point(0, 80);
-            btnCancelled.Name = "btnCancelled";
-            btnCancelled.Size = new Size(156, 40);
-            btnCancelled.TabIndex = 5;
-            btnCancelled.Text = "Cancelled orders";
-            btnCancelled.TextColor = Color.White;
-            btnCancelled.UseVisualStyleBackColor = false;
+            this.btnCancelled.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(207)))), ((int)(((byte)(83)))));
+            this.btnCancelled.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(207)))), ((int)(((byte)(83)))));
+            this.btnCancelled.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnCancelled.BorderRadius = 10;
+            this.btnCancelled.BorderSize = 0;
+            this.btnCancelled.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCancelled.FlatAppearance.BorderSize = 0;
+            this.btnCancelled.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelled.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCancelled.ForeColor = System.Drawing.Color.White;
+            this.btnCancelled.Location = new System.Drawing.Point(0, 80);
+            this.btnCancelled.Name = "btnCancelled";
+            this.btnCancelled.Size = new System.Drawing.Size(156, 40);
+            this.btnCancelled.TabIndex = 5;
+            this.btnCancelled.Text = "Cancelled orders";
+            this.btnCancelled.TextColor = System.Drawing.Color.White;
+            this.btnCancelled.UseVisualStyleBackColor = false;
+            this.btnCancelled.Click += new System.EventHandler(this.btnCancelled_Click);
             // 
             // btnMyOrder
             // 
-            btnMyOrder.BackColor = Color.FromArgb(155, 207, 83);
-            btnMyOrder.BackgroundColor = Color.FromArgb(155, 207, 83);
-            btnMyOrder.BorderColor = Color.PaleVioletRed;
-            btnMyOrder.BorderRadius = 10;
-            btnMyOrder.BorderSize = 0;
-            btnMyOrder.Dock = DockStyle.Top;
-            btnMyOrder.FlatAppearance.BorderSize = 0;
-            btnMyOrder.FlatStyle = FlatStyle.Flat;
-            btnMyOrder.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnMyOrder.ForeColor = Color.White;
-            btnMyOrder.Location = new Point(0, 40);
-            btnMyOrder.Name = "btnMyOrder";
-            btnMyOrder.Size = new Size(156, 40);
-            btnMyOrder.TabIndex = 4;
-            btnMyOrder.Text = "My orders";
-            btnMyOrder.TextColor = Color.White;
-            btnMyOrder.UseVisualStyleBackColor = false;
+            this.btnMyOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(207)))), ((int)(((byte)(83)))));
+            this.btnMyOrder.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(207)))), ((int)(((byte)(83)))));
+            this.btnMyOrder.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnMyOrder.BorderRadius = 10;
+            this.btnMyOrder.BorderSize = 0;
+            this.btnMyOrder.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMyOrder.FlatAppearance.BorderSize = 0;
+            this.btnMyOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMyOrder.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMyOrder.ForeColor = System.Drawing.Color.White;
+            this.btnMyOrder.Location = new System.Drawing.Point(0, 40);
+            this.btnMyOrder.Name = "btnMyOrder";
+            this.btnMyOrder.Size = new System.Drawing.Size(156, 40);
+            this.btnMyOrder.TabIndex = 4;
+            this.btnMyOrder.Text = "My orders";
+            this.btnMyOrder.TextColor = System.Drawing.Color.White;
+            this.btnMyOrder.UseVisualStyleBackColor = false;
             // 
             // btnOrder
             // 
-            btnOrder.BackColor = Color.FromArgb(30, 106, 17);
-            btnOrder.BackgroundColor = Color.FromArgb(30, 106, 17);
-            btnOrder.BorderColor = Color.PaleVioletRed;
-            btnOrder.BorderRadius = 10;
-            btnOrder.BorderSize = 0;
-            btnOrder.Dock = DockStyle.Top;
-            btnOrder.FlatAppearance.BorderSize = 0;
-            btnOrder.FlatStyle = FlatStyle.Flat;
-            btnOrder.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnOrder.ForeColor = Color.White;
-            btnOrder.Image = Properties.Resources.icons8_down_161;
-            btnOrder.Location = new Point(0, 0);
-            btnOrder.Name = "btnOrder";
-            btnOrder.RightToLeft = RightToLeft.No;
-            btnOrder.Size = new Size(156, 40);
-            btnOrder.TabIndex = 1;
-            btnOrder.Text = "   Order  ";
-            btnOrder.TextAlign = ContentAlignment.MiddleRight;
-            btnOrder.TextColor = Color.White;
-            btnOrder.TextImageRelation = TextImageRelation.TextBeforeImage;
-            btnOrder.UseVisualStyleBackColor = false;
-            btnOrder.Click += btnOrder_Click;
+            this.btnOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
+            this.btnOrder.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
+            this.btnOrder.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnOrder.BorderRadius = 10;
+            this.btnOrder.BorderSize = 0;
+            this.btnOrder.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnOrder.FlatAppearance.BorderSize = 0;
+            this.btnOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrder.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnOrder.ForeColor = System.Drawing.Color.White;
+            this.btnOrder.Image = global::QuanLyTraoDoiHang.Properties.Resources.icons8_down_161;
+            this.btnOrder.Location = new System.Drawing.Point(0, 0);
+            this.btnOrder.Name = "btnOrder";
+            this.btnOrder.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnOrder.Size = new System.Drawing.Size(156, 40);
+            this.btnOrder.TabIndex = 1;
+            this.btnOrder.Text = "   Order  ";
+            this.btnOrder.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnOrder.TextColor = System.Drawing.Color.White;
+            this.btnOrder.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnOrder.UseVisualStyleBackColor = false;
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
             // pnlDropDownProdu
             // 
-            pnlDropDownProdu.Controls.Add(btnAddProduct);
-            pnlDropDownProdu.Controls.Add(btnMyProducts);
-            pnlDropDownProdu.Controls.Add(btnProducts);
-            pnlDropDownProdu.Dock = DockStyle.Top;
-            pnlDropDownProdu.Location = new Point(0, 40);
-            pnlDropDownProdu.MaximumSize = new Size(156, 120);
-            pnlDropDownProdu.MinimumSize = new Size(156, 40);
-            pnlDropDownProdu.Name = "pnlDropDownProdu";
-            pnlDropDownProdu.Size = new Size(156, 40);
-            pnlDropDownProdu.TabIndex = 7;
+            this.pnlDropDownProdu.Controls.Add(this.btnAddProduct);
+            this.pnlDropDownProdu.Controls.Add(this.btnMyProducts);
+            this.pnlDropDownProdu.Controls.Add(this.btnProducts);
+            this.pnlDropDownProdu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlDropDownProdu.Location = new System.Drawing.Point(0, 40);
+            this.pnlDropDownProdu.MaximumSize = new System.Drawing.Size(156, 120);
+            this.pnlDropDownProdu.MinimumSize = new System.Drawing.Size(156, 40);
+            this.pnlDropDownProdu.Name = "pnlDropDownProdu";
+            this.pnlDropDownProdu.Size = new System.Drawing.Size(156, 40);
+            this.pnlDropDownProdu.TabIndex = 7;
             // 
             // btnAddProduct
             // 
-            btnAddProduct.BackColor = Color.FromArgb(155, 207, 83);
-            btnAddProduct.BackgroundColor = Color.FromArgb(155, 207, 83);
-            btnAddProduct.BorderColor = Color.PaleVioletRed;
-            btnAddProduct.BorderRadius = 10;
-            btnAddProduct.BorderSize = 0;
-            btnAddProduct.Dock = DockStyle.Top;
-            btnAddProduct.FlatAppearance.BorderSize = 0;
-            btnAddProduct.FlatStyle = FlatStyle.Flat;
-            btnAddProduct.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnAddProduct.ForeColor = Color.White;
-            btnAddProduct.Location = new Point(0, 80);
-            btnAddProduct.Name = "btnAddProduct";
-            btnAddProduct.Size = new Size(156, 40);
-            btnAddProduct.TabIndex = 5;
-            btnAddProduct.Text = "Add new product";
-            btnAddProduct.TextColor = Color.White;
-            btnAddProduct.UseVisualStyleBackColor = false;
-            btnAddProduct.Click += btnAddProduct_Click;
+            this.btnAddProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(207)))), ((int)(((byte)(83)))));
+            this.btnAddProduct.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(207)))), ((int)(((byte)(83)))));
+            this.btnAddProduct.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnAddProduct.BorderRadius = 10;
+            this.btnAddProduct.BorderSize = 0;
+            this.btnAddProduct.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAddProduct.FlatAppearance.BorderSize = 0;
+            this.btnAddProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddProduct.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAddProduct.ForeColor = System.Drawing.Color.White;
+            this.btnAddProduct.Location = new System.Drawing.Point(0, 80);
+            this.btnAddProduct.Name = "btnAddProduct";
+            this.btnAddProduct.Size = new System.Drawing.Size(156, 40);
+            this.btnAddProduct.TabIndex = 5;
+            this.btnAddProduct.Text = "Add new product";
+            this.btnAddProduct.TextColor = System.Drawing.Color.White;
+            this.btnAddProduct.UseVisualStyleBackColor = false;
+            this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
             // 
             // btnMyProducts
             // 
-            btnMyProducts.BackColor = Color.FromArgb(155, 207, 83);
-            btnMyProducts.BackgroundColor = Color.FromArgb(155, 207, 83);
-            btnMyProducts.BorderColor = Color.PaleVioletRed;
-            btnMyProducts.BorderRadius = 10;
-            btnMyProducts.BorderSize = 0;
-            btnMyProducts.Dock = DockStyle.Top;
-            btnMyProducts.FlatAppearance.BorderSize = 0;
-            btnMyProducts.FlatStyle = FlatStyle.Flat;
-            btnMyProducts.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnMyProducts.ForeColor = Color.White;
-            btnMyProducts.Location = new Point(0, 40);
-            btnMyProducts.Name = "btnMyProducts";
-            btnMyProducts.Size = new Size(156, 40);
-            btnMyProducts.TabIndex = 4;
-            btnMyProducts.Text = "My products";
-            btnMyProducts.TextColor = Color.White;
-            btnMyProducts.UseVisualStyleBackColor = false;
-            btnMyProducts.Click += btnMyProducts_Click;
+            this.btnMyProducts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(207)))), ((int)(((byte)(83)))));
+            this.btnMyProducts.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(207)))), ((int)(((byte)(83)))));
+            this.btnMyProducts.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnMyProducts.BorderRadius = 10;
+            this.btnMyProducts.BorderSize = 0;
+            this.btnMyProducts.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMyProducts.FlatAppearance.BorderSize = 0;
+            this.btnMyProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMyProducts.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMyProducts.ForeColor = System.Drawing.Color.White;
+            this.btnMyProducts.Location = new System.Drawing.Point(0, 40);
+            this.btnMyProducts.Name = "btnMyProducts";
+            this.btnMyProducts.Size = new System.Drawing.Size(156, 40);
+            this.btnMyProducts.TabIndex = 4;
+            this.btnMyProducts.Text = "My products";
+            this.btnMyProducts.TextColor = System.Drawing.Color.White;
+            this.btnMyProducts.UseVisualStyleBackColor = false;
+            this.btnMyProducts.Click += new System.EventHandler(this.btnMyProducts_Click);
             // 
             // btnProducts
             // 
-            btnProducts.BackColor = Color.FromArgb(30, 106, 17);
-            btnProducts.BackgroundColor = Color.FromArgb(30, 106, 17);
-            btnProducts.BorderColor = Color.PaleVioletRed;
-            btnProducts.BorderRadius = 10;
-            btnProducts.BorderSize = 0;
-            btnProducts.Dock = DockStyle.Top;
-            btnProducts.FlatAppearance.BorderSize = 0;
-            btnProducts.FlatStyle = FlatStyle.Flat;
-            btnProducts.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnProducts.ForeColor = Color.White;
-            btnProducts.Image = Properties.Resources.icons8_down_16;
-            btnProducts.Location = new Point(0, 0);
-            btnProducts.Name = "btnProducts";
-            btnProducts.RightToLeft = RightToLeft.No;
-            btnProducts.Size = new Size(156, 40);
-            btnProducts.TabIndex = 2;
-            btnProducts.Text = "Products";
-            btnProducts.TextAlign = ContentAlignment.MiddleRight;
-            btnProducts.TextColor = Color.White;
-            btnProducts.TextImageRelation = TextImageRelation.TextBeforeImage;
-            btnProducts.UseVisualStyleBackColor = false;
-            btnProducts.Click += btnProducts_Click;
+            this.btnProducts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
+            this.btnProducts.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
+            this.btnProducts.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnProducts.BorderRadius = 10;
+            this.btnProducts.BorderSize = 0;
+            this.btnProducts.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnProducts.FlatAppearance.BorderSize = 0;
+            this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProducts.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnProducts.ForeColor = System.Drawing.Color.White;
+            this.btnProducts.Image = global::QuanLyTraoDoiHang.Properties.Resources.icons8_down_16;
+            this.btnProducts.Location = new System.Drawing.Point(0, 0);
+            this.btnProducts.Name = "btnProducts";
+            this.btnProducts.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnProducts.Size = new System.Drawing.Size(156, 40);
+            this.btnProducts.TabIndex = 2;
+            this.btnProducts.Text = "Products";
+            this.btnProducts.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnProducts.TextColor = System.Drawing.Color.White;
+            this.btnProducts.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnProducts.UseVisualStyleBackColor = false;
+            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(244, 237, 204);
-            panel1.Controls.Add(rButton1);
-            panel1.Controls.Add(pnlDropDownProdu);
-            panel1.Controls.Add(pnlDropDownnn);
-            panel1.Location = new Point(29, 168);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(156, 345);
-            panel1.TabIndex = 3;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
+            this.panel1.Controls.Add(this.rButton1);
+            this.panel1.Controls.Add(this.pnlDropDownProdu);
+            this.panel1.Controls.Add(this.pnlDropDownnn);
+            this.panel1.Location = new System.Drawing.Point(29, 168);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(158, 353);
+            this.panel1.TabIndex = 3;
             // 
             // rButton1
             // 
-            rButton1.BackColor = Color.FromArgb(30, 106, 17);
-            rButton1.BackgroundColor = Color.FromArgb(30, 106, 17);
-            rButton1.BorderColor = Color.PaleVioletRed;
-            rButton1.BorderRadius = 10;
-            rButton1.BorderSize = 0;
-            rButton1.Dock = DockStyle.Top;
-            rButton1.FlatAppearance.BorderSize = 0;
-            rButton1.FlatStyle = FlatStyle.Flat;
-            rButton1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            rButton1.ForeColor = Color.White;
-            rButton1.Location = new Point(0, 80);
-            rButton1.Name = "rButton1";
-            rButton1.Size = new Size(156, 40);
-            rButton1.TabIndex = 8;
-            rButton1.Text = "Data Analysis";
-            rButton1.TextColor = Color.White;
-            rButton1.UseVisualStyleBackColor = false;
+            this.rButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
+            this.rButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
+            this.rButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rButton1.BorderRadius = 10;
+            this.rButton1.BorderSize = 0;
+            this.rButton1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.rButton1.FlatAppearance.BorderSize = 0;
+            this.rButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rButton1.ForeColor = System.Drawing.Color.White;
+            this.rButton1.Location = new System.Drawing.Point(0, 80);
+            this.rButton1.Name = "rButton1";
+            this.rButton1.Size = new System.Drawing.Size(158, 40);
+            this.rButton1.TabIndex = 8;
+            this.rButton1.Text = "Data Analysis";
+            this.rButton1.TextColor = System.Drawing.Color.White;
+            this.rButton1.UseVisualStyleBackColor = false;
+            this.rButton1.Click += new System.EventHandler(this.rButton1_Click_2);
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(50, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(120, 94);
-            pictureBox1.TabIndex = 6;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(50, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(120, 94);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
-            panel2.BackColor = Color.FromArgb(244, 237, 204);
-            panel2.Controls.Add(btnShipment);
-            panel2.Location = new Point(29, 128);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(156, 39);
-            panel2.TabIndex = 7;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
+            this.panel2.Controls.Add(this.btnShipment);
+            this.panel2.Location = new System.Drawing.Point(29, 128);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(158, 39);
+            this.panel2.TabIndex = 7;
             // 
             // btnShipment
             // 
-            btnShipment.BackColor = Color.FromArgb(30, 106, 17);
-            btnShipment.BackgroundColor = Color.FromArgb(30, 106, 17);
-            btnShipment.BorderColor = Color.PaleVioletRed;
-            btnShipment.BorderRadius = 10;
-            btnShipment.BorderSize = 0;
-            btnShipment.Dock = DockStyle.Top;
-            btnShipment.FlatAppearance.BorderSize = 0;
-            btnShipment.FlatStyle = FlatStyle.Flat;
-            btnShipment.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnShipment.ForeColor = Color.White;
-            btnShipment.Location = new Point(0, 0);
-            btnShipment.Name = "btnShipment";
-            btnShipment.Size = new Size(156, 40);
-            btnShipment.TabIndex = 9;
-            btnShipment.Text = "My Shipment";
-            btnShipment.TextColor = Color.White;
-            btnShipment.UseVisualStyleBackColor = false;
-            btnShipment.Click += btnShipment_Click_1;
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.FromArgb(101, 183, 65);
-            panel3.Controls.Add(label2);
-            panel3.Controls.Add(panel4);
-            panel3.Location = new Point(216, 15);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(752, 76);
-            panel3.TabIndex = 8;
-            // 
-            // label2
-            // 
-            label2.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(256, 23);
-            label2.Name = "label2";
-            label2.Size = new Size(240, 30);
-            label2.TabIndex = 59;
-            label2.Text = "Content";
-            label2.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // panel4
-            // 
-            panel4.BackColor = Color.Black;
-            panel4.Dock = DockStyle.Bottom;
-            panel4.Location = new Point(0, 73);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(752, 3);
-            panel4.TabIndex = 58;
+            this.btnShipment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
+            this.btnShipment.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
+            this.btnShipment.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnShipment.BorderRadius = 10;
+            this.btnShipment.BorderSize = 0;
+            this.btnShipment.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnShipment.FlatAppearance.BorderSize = 0;
+            this.btnShipment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShipment.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnShipment.ForeColor = System.Drawing.Color.White;
+            this.btnShipment.Location = new System.Drawing.Point(0, 0);
+            this.btnShipment.Name = "btnShipment";
+            this.btnShipment.Size = new System.Drawing.Size(158, 40);
+            this.btnShipment.TabIndex = 9;
+            this.btnShipment.Text = "My Shipment";
+            this.btnShipment.TextColor = System.Drawing.Color.White;
+            this.btnShipment.UseVisualStyleBackColor = false;
+            this.btnShipment.Click += new System.EventHandler(this.btnShipment_Click_1);
             // 
             // FSellermanagement
             // 
-            AutoScaleMode = AutoScaleMode.None;
-            BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(984, 561);
-            Controls.Add(panel3);
-            Controls.Add(panel1);
-            Controls.Add(panel2);
-            Controls.Add(pictureBox1);
-            Controls.Add(pnlSellerTool);
-            Margin = new Padding(1);
-            Name = "FSellermanagement";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "FSellermanagement";
-            pnlSellerTool.ResumeLayout(false);
-            pnlMenu.ResumeLayout(false);
-            pnlMenu.PerformLayout();
-            pnlDropDownnn.ResumeLayout(false);
-            pnlDropDownProdu.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel2.ResumeLayout(false);
-            panel3.ResumeLayout(false);
-            ResumeLayout(false);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(984, 561);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pnlSellerTool);
+            this.Margin = new System.Windows.Forms.Padding(1);
+            this.Name = "FSellermanagement";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FSellermanagement";
+            this.pnlDropDownnn.ResumeLayout(false);
+            this.pnlDropDownProdu.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -495,15 +367,5 @@
         private PictureBox pictureBox1;
         private Panel panel2;
         private RJControls.RButton btnShipment;
-        private Panel pnlMenu;
-        private Label label4;
-        private Label label1;
-        private Label label3;
-        private Label lblAction;
-        private Label lblTotalPrice;
-        private FlowLayoutPanel pnlProducts;
-        private Panel panel3;
-        private Label label2;
-        private Panel panel4;
     }
 }
