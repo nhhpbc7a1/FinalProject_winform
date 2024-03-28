@@ -28,164 +28,189 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.rButton1 = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.rButton2 = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.rButton3 = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.rButton4 = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel3.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewHistory));
+            panel3 = new Panel();
+            panel1 = new Panel();
+            label2 = new Label();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            btnShip = new RJControls.RButton();
+            btnCompleted = new RJControls.RButton();
+            btnCancel = new RJControls.RButton();
+            btnReturn = new RJControls.RButton();
+            flowLayoutPanel2 = new FlowLayoutPanel();
+            pictureBox1 = new PictureBox();
+            panel3.SuspendLayout();
+            flowLayoutPanel1.SuspendLayout();
+            flowLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
-            this.panel3.Controls.Add(this.panel1);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(642, 72);
-            this.panel3.TabIndex = 1;
+            panel3.BackColor = Color.FromArgb(101, 183, 65);
+            panel3.Controls.Add(panel1);
+            panel3.Controls.Add(label2);
+            panel3.Dock = DockStyle.Top;
+            panel3.Location = new Point(0, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(642, 72);
+            panel3.TabIndex = 1;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 69);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(642, 3);
-            this.panel1.TabIndex = 57;
+            panel1.BackColor = Color.Black;
+            panel1.Dock = DockStyle.Bottom;
+            panel1.Location = new Point(0, 69);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(642, 3);
+            panel1.TabIndex = 57;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(267, 21);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(143, 30);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "My Purchases";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(267, 21);
+            label2.Name = "label2";
+            label2.Size = new Size(143, 30);
+            label2.TabIndex = 3;
+            label2.Text = "My Purchases";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanel1.Controls.Add(this.rButton1);
-            this.flowLayoutPanel1.Controls.Add(this.rButton2);
-            this.flowLayoutPanel1.Controls.Add(this.rButton3);
-            this.flowLayoutPanel1.Controls.Add(this.rButton4);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 72);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(642, 50);
-            this.flowLayoutPanel1.TabIndex = 2;
+            flowLayoutPanel1.BackColor = Color.FromArgb(244, 237, 204);
+            flowLayoutPanel1.Controls.Add(btnShip);
+            flowLayoutPanel1.Controls.Add(btnCompleted);
+            flowLayoutPanel1.Controls.Add(btnCancel);
+            flowLayoutPanel1.Controls.Add(btnReturn);
+            flowLayoutPanel1.Dock = DockStyle.Top;
+            flowLayoutPanel1.Location = new Point(0, 72);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(642, 50);
+            flowLayoutPanel1.TabIndex = 2;
             // 
-            // rButton1
+            // btnShip
             // 
-            this.rButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
-            this.rButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
-            this.rButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rButton1.BorderRadius = 10;
-            this.rButton1.BorderSize = 0;
-            this.rButton1.FlatAppearance.BorderSize = 0;
-            this.rButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rButton1.ForeColor = System.Drawing.Color.White;
-            this.rButton1.Location = new System.Drawing.Point(3, 3);
-            this.rButton1.Name = "rButton1";
-            this.rButton1.Size = new System.Drawing.Size(154, 40);
-            this.rButton1.TabIndex = 0;
-            this.rButton1.Text = "To Ship";
-            this.rButton1.TextColor = System.Drawing.Color.White;
-            this.rButton1.UseVisualStyleBackColor = false;
+            btnShip.BackColor = Color.WhiteSmoke;
+            btnShip.BackgroundColor = Color.WhiteSmoke;
+            btnShip.BorderColor = Color.FromArgb(64, 64, 64);
+            btnShip.BorderRadius = 10;
+            btnShip.BorderSize = 1;
+            btnShip.FlatAppearance.BorderSize = 0;
+            btnShip.FlatStyle = FlatStyle.Flat;
+            btnShip.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnShip.ForeColor = Color.Black;
+            btnShip.Image = (Image)resources.GetObject("btnShip.Image");
+            btnShip.ImageAlign = ContentAlignment.MiddleRight;
+            btnShip.Location = new Point(3, 3);
+            btnShip.Name = "btnShip";
+            btnShip.Size = new Size(154, 40);
+            btnShip.TabIndex = 0;
+            btnShip.Text = "To Ship";
+            btnShip.TextColor = Color.Black;
+            btnShip.UseVisualStyleBackColor = false;
+            btnShip.Click += btnShip_Click;
             // 
-            // rButton2
+            // btnCompleted
             // 
-            this.rButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
-            this.rButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
-            this.rButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rButton2.BorderRadius = 10;
-            this.rButton2.BorderSize = 0;
-            this.rButton2.FlatAppearance.BorderSize = 0;
-            this.rButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rButton2.ForeColor = System.Drawing.Color.White;
-            this.rButton2.Location = new System.Drawing.Point(163, 3);
-            this.rButton2.Name = "rButton2";
-            this.rButton2.Size = new System.Drawing.Size(154, 40);
-            this.rButton2.TabIndex = 1;
-            this.rButton2.Text = "Completed";
-            this.rButton2.TextColor = System.Drawing.Color.White;
-            this.rButton2.UseVisualStyleBackColor = false;
+            btnCompleted.BackColor = Color.WhiteSmoke;
+            btnCompleted.BackgroundColor = Color.WhiteSmoke;
+            btnCompleted.BorderColor = Color.FromArgb(64, 64, 64);
+            btnCompleted.BorderRadius = 10;
+            btnCompleted.BorderSize = 1;
+            btnCompleted.FlatAppearance.BorderSize = 0;
+            btnCompleted.FlatStyle = FlatStyle.Flat;
+            btnCompleted.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnCompleted.ForeColor = Color.Black;
+            btnCompleted.Image = (Image)resources.GetObject("btnCompleted.Image");
+            btnCompleted.ImageAlign = ContentAlignment.MiddleRight;
+            btnCompleted.Location = new Point(163, 3);
+            btnCompleted.Name = "btnCompleted";
+            btnCompleted.Size = new Size(154, 40);
+            btnCompleted.TabIndex = 1;
+            btnCompleted.Text = "Completed";
+            btnCompleted.TextColor = Color.Black;
+            btnCompleted.UseVisualStyleBackColor = false;
             // 
-            // rButton3
+            // btnCancel
             // 
-            this.rButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
-            this.rButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
-            this.rButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rButton3.BorderRadius = 10;
-            this.rButton3.BorderSize = 0;
-            this.rButton3.FlatAppearance.BorderSize = 0;
-            this.rButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rButton3.ForeColor = System.Drawing.Color.White;
-            this.rButton3.Location = new System.Drawing.Point(323, 3);
-            this.rButton3.Name = "rButton3";
-            this.rButton3.Size = new System.Drawing.Size(154, 40);
-            this.rButton3.TabIndex = 2;
-            this.rButton3.Text = "Cancelled";
-            this.rButton3.TextColor = System.Drawing.Color.White;
-            this.rButton3.UseVisualStyleBackColor = false;
+            btnCancel.BackColor = Color.WhiteSmoke;
+            btnCancel.BackgroundColor = Color.WhiteSmoke;
+            btnCancel.BorderColor = Color.FromArgb(64, 64, 64);
+            btnCancel.BorderRadius = 10;
+            btnCancel.BorderSize = 1;
+            btnCancel.FlatAppearance.BorderSize = 0;
+            btnCancel.FlatStyle = FlatStyle.Flat;
+            btnCancel.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnCancel.ForeColor = Color.Black;
+            btnCancel.Image = (Image)resources.GetObject("btnCancel.Image");
+            btnCancel.ImageAlign = ContentAlignment.MiddleRight;
+            btnCancel.Location = new Point(323, 3);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(154, 40);
+            btnCancel.TabIndex = 2;
+            btnCancel.Text = "Cancelled";
+            btnCancel.TextColor = Color.Black;
+            btnCancel.UseVisualStyleBackColor = false;
             // 
-            // rButton4
+            // btnReturn
             // 
-            this.rButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
-            this.rButton4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
-            this.rButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rButton4.BorderRadius = 10;
-            this.rButton4.BorderSize = 0;
-            this.rButton4.FlatAppearance.BorderSize = 0;
-            this.rButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rButton4.ForeColor = System.Drawing.Color.White;
-            this.rButton4.Location = new System.Drawing.Point(483, 3);
-            this.rButton4.Name = "rButton4";
-            this.rButton4.Size = new System.Drawing.Size(154, 40);
-            this.rButton4.TabIndex = 3;
-            this.rButton4.Text = "Retuned";
-            this.rButton4.TextColor = System.Drawing.Color.White;
-            this.rButton4.UseVisualStyleBackColor = false;
+            btnReturn.BackColor = Color.WhiteSmoke;
+            btnReturn.BackgroundColor = Color.WhiteSmoke;
+            btnReturn.BorderColor = Color.FromArgb(64, 64, 64);
+            btnReturn.BorderRadius = 10;
+            btnReturn.BorderSize = 1;
+            btnReturn.FlatAppearance.BorderSize = 0;
+            btnReturn.FlatStyle = FlatStyle.Flat;
+            btnReturn.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnReturn.ForeColor = Color.Black;
+            btnReturn.Image = (Image)resources.GetObject("btnReturn.Image");
+            btnReturn.ImageAlign = ContentAlignment.MiddleRight;
+            btnReturn.Location = new Point(483, 3);
+            btnReturn.Name = "btnReturn";
+            btnReturn.Size = new Size(154, 40);
+            btnReturn.TabIndex = 3;
+            btnReturn.Text = "Returned";
+            btnReturn.TextColor = Color.Black;
+            btnReturn.UseVisualStyleBackColor = false;
             // 
             // flowLayoutPanel2
             // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 128);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(642, 365);
-            this.flowLayoutPanel2.TabIndex = 3;
+            flowLayoutPanel2.AutoScroll = true;
+            flowLayoutPanel2.BackColor = Color.White;
+            flowLayoutPanel2.Controls.Add(pictureBox1);
+            flowLayoutPanel2.Location = new Point(5, 121);
+            flowLayoutPanel2.Name = "flowLayoutPanel2";
+            flowLayoutPanel2.Size = new Size(631, 369);
+            flowLayoutPanel2.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.Location = new Point(275, 140);
+            pictureBox1.Margin = new Padding(275, 140, 3, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(100, 93);
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // ViewHistory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(642, 495);
-            this.Controls.Add(this.flowLayoutPanel2);
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.panel3);
-            this.Name = "ViewHistory";
-            this.Text = "ViewHistory";
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleMode = AutoScaleMode.None;
+            BackColor = Color.FromArgb(244, 237, 204);
+            ClientSize = new Size(642, 495);
+            Controls.Add(flowLayoutPanel2);
+            Controls.Add(flowLayoutPanel1);
+            Controls.Add(panel3);
+            Name = "ViewHistory";
+            Text = "ViewHistory";
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
@@ -194,10 +219,11 @@
         private Panel panel1;
         private Label label2;
         private FlowLayoutPanel flowLayoutPanel1;
-        private RJControls.RButton rButton1;
-        private RJControls.RButton rButton2;
-        private RJControls.RButton rButton3;
-        private RJControls.RButton rButton4;
+        private RJControls.RButton btnShip;
+        private RJControls.RButton btnCompleted;
+        private RJControls.RButton btnCancel;
+        private RJControls.RButton btnReturn;
         private FlowLayoutPanel flowLayoutPanel2;
+        private PictureBox pictureBox1;
     }
 }
