@@ -34,7 +34,6 @@ namespace QuanLyTraoDoiHang
             btnAddProduct.Click += btnAddProduct_Click;
             btnCart.Click += btnCart_Click;
 
-            //btnAccount.Visible = false;
             this.Load += UpdateAccountByAction;
 
             btnExit.Click += btnExit_Click;
@@ -42,7 +41,21 @@ namespace QuanLyTraoDoiHang
             MinimizeBox = false;
             ControlBox = false;
 
+            //UploadSearchBoxHistory();
+            btnSearch.Click += btnSearch_Click;
         }
+        //private void UploadSearchBoxHistory()
+        //{
+        //    cbSearchBox.Items.Clear();
+        //}
+        private void btnSearch_Click(object? sender, EventArgs e)
+        {
+            FormProduct form = new FormProduct();
+            form.LoadBySearchText(cbSearchBox.Text);
+            OpenChildForm(form);
+        }
+
+
         private void UpdateAccountByAction(object? sender, EventArgs e)
         {
             if (Program.CurrentUser() != null)
@@ -97,7 +110,14 @@ namespace QuanLyTraoDoiHang
 
         private void btnCart_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormCart());
+            if (Program.CurrentUser() == null)
+            {
+                MessageBox.Show("please login first");
+            }
+            else
+            {
+                OpenChildForm(new FormCart());
+            }
         }
 
         private void lblSignup_Click(object sender, EventArgs e)
@@ -150,9 +170,6 @@ namespace QuanLyTraoDoiHang
             this.Close();
         }
 
-        private void btnAccount_Click_1(object sender, EventArgs e)
-        {
 
-        }
     }
 }
