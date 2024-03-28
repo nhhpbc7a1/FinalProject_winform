@@ -16,5 +16,16 @@ namespace QuanLyTraoDoiHang
         {
             InitializeComponent();
         }
+
+        private void btnShip_Click(object sender, EventArgs e)
+        {
+            btnShip.BorderSize = 2;
+            btnShip.BorderColor = Color.FromArgb(52, 255, 46);
+        }
+
+        private void ucMyPurchase2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -29,204 +29,203 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PersonalInfor));
-            this.pnl_Infor = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblChangeImage = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.ptbUserImage = new System.Windows.Forms.PictureBox();
-            this.lblUsername = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.btnUpdateInfo = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.btnLogout = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.btnChangePass = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.btnHistory = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.panel2.SuspendLayout();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbUserImage)).BeginInit();
-            this.panel7.SuspendLayout();
-            this.SuspendLayout();
+            pnl_Infor = new Panel();
+            panel2 = new Panel();
+            lblChangeImage = new Label();
+            panel8 = new Panel();
+            ptbUserImage = new PictureBox();
+            lblUsername = new Label();
+            panel7 = new Panel();
+            btnUpdateInfo = new RJControls.RButton();
+            btnLogout = new RJControls.RButton();
+            btnChangePass = new RJControls.RButton();
+            btnHistory = new RJControls.RButton();
+            panel2.SuspendLayout();
+            panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)ptbUserImage).BeginInit();
+            panel7.SuspendLayout();
+            SuspendLayout();
             // 
             // pnl_Infor
             // 
-            this.pnl_Infor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnl_Infor.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pnl_Infor.Location = new System.Drawing.Point(305, 33);
-            this.pnl_Infor.Name = "pnl_Infor";
-            this.pnl_Infor.Size = new System.Drawing.Size(642, 495);
-            this.pnl_Infor.TabIndex = 0;
+            pnl_Infor.Anchor = AnchorStyles.None;
+            pnl_Infor.BackColor = SystemColors.ControlLight;
+            pnl_Infor.Location = new Point(305, 33);
+            pnl_Infor.Name = "pnl_Infor";
+            pnl_Infor.Size = new Size(642, 495);
+            pnl_Infor.TabIndex = 0;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.lblChangeImage);
-            this.panel2.Controls.Add(this.panel8);
-            this.panel2.Controls.Add(this.panel7);
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(267, 561);
-            this.panel2.TabIndex = 1;
+            panel2.BackColor = Color.White;
+            panel2.Controls.Add(lblChangeImage);
+            panel2.Controls.Add(panel8);
+            panel2.Controls.Add(panel7);
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(267, 561);
+            panel2.TabIndex = 1;
             // 
             // lblChangeImage
             // 
-            this.lblChangeImage.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblChangeImage.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblChangeImage.ForeColor = System.Drawing.Color.Green;
-            this.lblChangeImage.Image = ((System.Drawing.Image)(resources.GetObject("lblChangeImage.Image")));
-            this.lblChangeImage.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblChangeImage.Location = new System.Drawing.Point(55, 163);
-            this.lblChangeImage.Name = "lblChangeImage";
-            this.lblChangeImage.Size = new System.Drawing.Size(158, 30);
-            this.lblChangeImage.TabIndex = 8;
-            this.lblChangeImage.Text = "Change profile";
-            this.lblChangeImage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblChangeImage.Anchor = AnchorStyles.None;
+            lblChangeImage.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblChangeImage.ForeColor = Color.Green;
+            lblChangeImage.Image = (Image)resources.GetObject("lblChangeImage.Image");
+            lblChangeImage.ImageAlign = ContentAlignment.MiddleRight;
+            lblChangeImage.Location = new Point(55, 163);
+            lblChangeImage.Name = "lblChangeImage";
+            lblChangeImage.Size = new Size(158, 30);
+            lblChangeImage.TabIndex = 8;
+            lblChangeImage.Text = "Change profile";
+            lblChangeImage.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panel8
             // 
-            this.panel8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
-            this.panel8.Controls.Add(this.ptbUserImage);
-            this.panel8.Controls.Add(this.lblUsername);
-            this.panel8.Location = new System.Drawing.Point(72, 33);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(128, 127);
-            this.panel8.TabIndex = 7;
+            panel8.Anchor = AnchorStyles.None;
+            panel8.BackColor = Color.FromArgb(244, 237, 204);
+            panel8.Controls.Add(ptbUserImage);
+            panel8.Controls.Add(lblUsername);
+            panel8.Location = new Point(72, 33);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(128, 127);
+            panel8.TabIndex = 7;
             // 
             // ptbUserImage
             // 
-            this.ptbUserImage.BackColor = System.Drawing.SystemColors.Control;
-            this.ptbUserImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptbUserImage.BackgroundImage")));
-            this.ptbUserImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptbUserImage.Location = new System.Drawing.Point(6, 5);
-            this.ptbUserImage.Margin = new System.Windows.Forms.Padding(2, 3, 3, 3);
-            this.ptbUserImage.Name = "ptbUserImage";
-            this.ptbUserImage.Size = new System.Drawing.Size(116, 95);
-            this.ptbUserImage.TabIndex = 0;
-            this.ptbUserImage.TabStop = false;
+            ptbUserImage.BackColor = SystemColors.Control;
+            ptbUserImage.BackgroundImage = (Image)resources.GetObject("ptbUserImage.BackgroundImage");
+            ptbUserImage.BackgroundImageLayout = ImageLayout.Stretch;
+            ptbUserImage.Location = new Point(6, 5);
+            ptbUserImage.Margin = new Padding(2, 3, 3, 3);
+            ptbUserImage.Name = "ptbUserImage";
+            ptbUserImage.Size = new Size(116, 95);
+            ptbUserImage.TabIndex = 0;
+            ptbUserImage.TabStop = false;
             // 
             // lblUsername
             // 
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
-            this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblUsername.ForeColor = System.Drawing.Color.Black;
-            this.lblUsername.Location = new System.Drawing.Point(25, 103);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(79, 21);
-            this.lblUsername.TabIndex = 1;
-            this.lblUsername.Text = "username";
+            lblUsername.AutoSize = true;
+            lblUsername.BackColor = Color.FromArgb(244, 237, 204);
+            lblUsername.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblUsername.ForeColor = Color.Black;
+            lblUsername.Location = new Point(25, 103);
+            lblUsername.Name = "lblUsername";
+            lblUsername.Size = new Size(79, 21);
+            lblUsername.TabIndex = 1;
+            lblUsername.Text = "username";
             // 
             // panel7
             // 
-            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Controls.Add(this.btnUpdateInfo);
-            this.panel7.Controls.Add(this.btnLogout);
-            this.panel7.Controls.Add(this.btnChangePass);
-            this.panel7.Controls.Add(this.btnHistory);
-            this.panel7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.panel7.Location = new System.Drawing.Point(31, 204);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(197, 314);
-            this.panel7.TabIndex = 6;
+            panel7.Anchor = AnchorStyles.None;
+            panel7.BackColor = Color.White;
+            panel7.Controls.Add(btnUpdateInfo);
+            panel7.Controls.Add(btnLogout);
+            panel7.Controls.Add(btnChangePass);
+            panel7.Controls.Add(btnHistory);
+            panel7.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            panel7.Location = new Point(31, 204);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(197, 314);
+            panel7.TabIndex = 6;
             // 
             // btnUpdateInfo
             // 
-            this.btnUpdateInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
-            this.btnUpdateInfo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
-            this.btnUpdateInfo.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnUpdateInfo.BorderRadius = 10;
-            this.btnUpdateInfo.BorderSize = 0;
-            this.btnUpdateInfo.FlatAppearance.BorderSize = 0;
-            this.btnUpdateInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateInfo.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdateInfo.Image")));
-            this.btnUpdateInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdateInfo.Location = new System.Drawing.Point(24, 14);
-            this.btnUpdateInfo.Name = "btnUpdateInfo";
-            this.btnUpdateInfo.Size = new System.Drawing.Size(158, 51);
-            this.btnUpdateInfo.TabIndex = 2;
-            this.btnUpdateInfo.Text = "Update info";
-            this.btnUpdateInfo.TextColor = System.Drawing.Color.White;
-            this.btnUpdateInfo.UseVisualStyleBackColor = false;
+            btnUpdateInfo.BackColor = Color.FromArgb(101, 183, 65);
+            btnUpdateInfo.BackgroundColor = Color.FromArgb(101, 183, 65);
+            btnUpdateInfo.BorderColor = Color.PaleVioletRed;
+            btnUpdateInfo.BorderRadius = 10;
+            btnUpdateInfo.BorderSize = 0;
+            btnUpdateInfo.FlatAppearance.BorderSize = 0;
+            btnUpdateInfo.FlatStyle = FlatStyle.Flat;
+            btnUpdateInfo.ForeColor = Color.White;
+            btnUpdateInfo.Image = (Image)resources.GetObject("btnUpdateInfo.Image");
+            btnUpdateInfo.ImageAlign = ContentAlignment.MiddleLeft;
+            btnUpdateInfo.Location = new Point(24, 14);
+            btnUpdateInfo.Name = "btnUpdateInfo";
+            btnUpdateInfo.Size = new Size(158, 51);
+            btnUpdateInfo.TabIndex = 2;
+            btnUpdateInfo.Text = "Update info";
+            btnUpdateInfo.TextColor = Color.White;
+            btnUpdateInfo.UseVisualStyleBackColor = false;
             // 
             // btnLogout
             // 
-            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(120)))), ((int)(((byte)(197)))));
-            this.btnLogout.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(120)))), ((int)(((byte)(197)))));
-            this.btnLogout.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnLogout.BorderRadius = 10;
-            this.btnLogout.BorderSize = 0;
-            this.btnLogout.FlatAppearance.BorderSize = 0;
-            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
-            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(24, 233);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(158, 51);
-            this.btnLogout.TabIndex = 5;
-            this.btnLogout.Text = "Log out";
-            this.btnLogout.TextColor = System.Drawing.Color.White;
-            this.btnLogout.UseVisualStyleBackColor = false;
+            btnLogout.BackColor = Color.FromArgb(225, 120, 197);
+            btnLogout.BackgroundColor = Color.FromArgb(225, 120, 197);
+            btnLogout.BorderColor = Color.PaleVioletRed;
+            btnLogout.BorderRadius = 10;
+            btnLogout.BorderSize = 0;
+            btnLogout.FlatAppearance.BorderSize = 0;
+            btnLogout.FlatStyle = FlatStyle.Flat;
+            btnLogout.ForeColor = Color.White;
+            btnLogout.Image = (Image)resources.GetObject("btnLogout.Image");
+            btnLogout.ImageAlign = ContentAlignment.MiddleLeft;
+            btnLogout.Location = new Point(24, 233);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(158, 51);
+            btnLogout.TabIndex = 5;
+            btnLogout.Text = "Log out";
+            btnLogout.TextColor = Color.White;
+            btnLogout.UseVisualStyleBackColor = false;
             // 
             // btnChangePass
             // 
-            this.btnChangePass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(196)))), ((int)(((byte)(237)))));
-            this.btnChangePass.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(196)))), ((int)(((byte)(237)))));
-            this.btnChangePass.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnChangePass.BorderRadius = 10;
-            this.btnChangePass.BorderSize = 0;
-            this.btnChangePass.FlatAppearance.BorderSize = 0;
-            this.btnChangePass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChangePass.ForeColor = System.Drawing.Color.White;
-            this.btnChangePass.Image = ((System.Drawing.Image)(resources.GetObject("btnChangePass.Image")));
-            this.btnChangePass.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChangePass.Location = new System.Drawing.Point(24, 84);
-            this.btnChangePass.Name = "btnChangePass";
-            this.btnChangePass.Size = new System.Drawing.Size(158, 51);
-            this.btnChangePass.TabIndex = 3;
-            this.btnChangePass.Text = "Change password";
-            this.btnChangePass.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnChangePass.TextColor = System.Drawing.Color.White;
-            this.btnChangePass.UseVisualStyleBackColor = false;
+            btnChangePass.BackColor = Color.FromArgb(80, 196, 237);
+            btnChangePass.BackgroundColor = Color.FromArgb(80, 196, 237);
+            btnChangePass.BorderColor = Color.PaleVioletRed;
+            btnChangePass.BorderRadius = 10;
+            btnChangePass.BorderSize = 0;
+            btnChangePass.FlatAppearance.BorderSize = 0;
+            btnChangePass.FlatStyle = FlatStyle.Flat;
+            btnChangePass.ForeColor = Color.White;
+            btnChangePass.Image = (Image)resources.GetObject("btnChangePass.Image");
+            btnChangePass.ImageAlign = ContentAlignment.MiddleLeft;
+            btnChangePass.Location = new Point(24, 84);
+            btnChangePass.Name = "btnChangePass";
+            btnChangePass.Size = new Size(158, 51);
+            btnChangePass.TabIndex = 3;
+            btnChangePass.Text = "Change password";
+            btnChangePass.TextAlign = ContentAlignment.MiddleRight;
+            btnChangePass.TextColor = Color.White;
+            btnChangePass.UseVisualStyleBackColor = false;
             // 
             // btnHistory
             // 
-            this.btnHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(93)))), ((int)(((byte)(156)))));
-            this.btnHistory.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(93)))), ((int)(((byte)(156)))));
-            this.btnHistory.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnHistory.BorderRadius = 10;
-            this.btnHistory.BorderSize = 0;
-            this.btnHistory.FlatAppearance.BorderSize = 0;
-            this.btnHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHistory.ForeColor = System.Drawing.Color.White;
-            this.btnHistory.Image = ((System.Drawing.Image)(resources.GetObject("btnHistory.Image")));
-            this.btnHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHistory.Location = new System.Drawing.Point(24, 159);
-            this.btnHistory.Name = "btnHistory";
-            this.btnHistory.Size = new System.Drawing.Size(158, 51);
-            this.btnHistory.TabIndex = 4;
-            this.btnHistory.Text = "Purchase History";
-            this.btnHistory.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnHistory.TextColor = System.Drawing.Color.White;
-            this.btnHistory.UseVisualStyleBackColor = false;
+            btnHistory.BackColor = Color.FromArgb(95, 93, 156);
+            btnHistory.BackgroundColor = Color.FromArgb(95, 93, 156);
+            btnHistory.BorderColor = Color.PaleVioletRed;
+            btnHistory.BorderRadius = 10;
+            btnHistory.BorderSize = 0;
+            btnHistory.FlatAppearance.BorderSize = 0;
+            btnHistory.FlatStyle = FlatStyle.Flat;
+            btnHistory.ForeColor = Color.White;
+            btnHistory.Image = (Image)resources.GetObject("btnHistory.Image");
+            btnHistory.ImageAlign = ContentAlignment.MiddleLeft;
+            btnHistory.Location = new Point(24, 159);
+            btnHistory.Name = "btnHistory";
+            btnHistory.Size = new Size(158, 51);
+            btnHistory.TabIndex = 4;
+            btnHistory.Text = "Purchase History";
+            btnHistory.TextAlign = ContentAlignment.MiddleRight;
+            btnHistory.TextColor = Color.White;
+            btnHistory.UseVisualStyleBackColor = false;
             // 
             // PersonalInfor
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(984, 561);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.pnl_Infor);
-            this.Name = "PersonalInfor";
-            this.Text = "PersonalInfor";
-            this.panel2.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbUserImage)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleMode = AutoScaleMode.None;
+            BackColor = Color.White;
+            ClientSize = new Size(984, 561);
+            Controls.Add(panel2);
+            Controls.Add(pnl_Infor);
+            Name = "PersonalInfor";
+            Text = "PersonalInfor";
+            panel2.ResumeLayout(false);
+            panel8.ResumeLayout(false);
+            panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)ptbUserImage).EndInit();
+            panel7.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion
