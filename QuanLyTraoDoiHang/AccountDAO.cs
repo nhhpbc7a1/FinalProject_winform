@@ -71,5 +71,32 @@ namespace QuanLyTraoDoiHang
                 return false;
             return true;
         }
+        public static bool IsMatchedPassword(string newpass, string retypedpass)
+        {
+            if (retypedpass != newpass)
+                return false;
+            return true;
+        }
+        public static bool IsChangablePassword(Account account,string oldPass, string newPass, string retypePass)
+        {
+            if(oldPass != account.password)
+            {
+                MessageBox.Show("Your old password doesn't exist");
+                return false;
+            }
+            if(!(IsValidPassword(newPass)))
+            {
+                MessageBox.Show("Your new password is not correct");
+
+                return false;
+            }
+            if( retypePass != newPass )
+            {
+                MessageBox.Show("Your retyped password is not correct");
+                return false;
+            }
+            return true;
+        }
+
     }
 }

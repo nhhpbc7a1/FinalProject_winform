@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace QuanLyTraoDoiHang
 {
-    public partial class FCancellation : Form
+    public partial class ucMyPurchase : UserControl
     {
-        public FCancellation()
+        public ucMyPurchase()
         {
             InitializeComponent();
-        }
-
-        private void ucShipment1_Load(object sender, EventArgs e)
-        {
-            //this..dUDStatusShipment.Text = "Cancelled";
         }
     }
 }

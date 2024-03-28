@@ -39,7 +39,7 @@ namespace QuanLyTraoDoiHang
             childForm.BringToFront();
             childForm.Show();
         }
-      
+
         private void btnChangePassword_Click(object sender, EventArgs e)
         {
             OpenChildForm(new ChangePassword());
@@ -51,7 +51,7 @@ namespace QuanLyTraoDoiHang
         }
         private void btnHistory_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new MyInfo());
+            OpenChildForm(new ViewHistory());
         }
 
 

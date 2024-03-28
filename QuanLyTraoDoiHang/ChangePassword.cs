@@ -12,67 +12,80 @@ namespace QuanLyTraoDoiHang
 {
     public partial class ChangePassword : Form
     {
+        
         public ChangePassword()
         {
             InitializeComponent();
+            ucOldPass.txtPass.PlaceholderText = " Old password";
+            ucNewPass.txtPass.PlaceholderText = " New password";
+            ucReTypePass.txtPass.PlaceholderText = " Retype new password";
+            ucNewPass.txtPass.TextChanged += newPass_TextChanged;
+            ucReTypePass.txtPass.TextChanged += RetypedPass_TextChanged;
+            ucNewPass.txtPass.TextChanged += UnableChangePassBtn;
+            ucReTypePass.txtPass.TextChanged += UnableChangePassBtn;
+
         }
 
+        private void btnChangePass_Click(object sender, EventArgs e)
+        {
+            Account x = AccountDAO.SelectByUserID(Program.currentUserId);
+            if (AccountDAO.IsChangablePassword(x, ucOldPass.txtPass.Text, ucNewPass.txtPass.Text, ucReTypePass.txtPass.Text))
+            {
+                x.password = ucNewPass.txtPass.Text;
+                AccountDAO.Update(x);
+                MessageBox.Show("Change password successfully");
+            }
+        }
+        private void newPass_TextChanged(object sender, EventArgs e)
+        {
+            if(ucNewPass.txtPass.Text == "")
+            {
+                lblValidPass.ForeColor = Color.Black;
+            }
+            else
+            {
+                if (!AccountDAO.IsValidPassword(ucNewPass.txtPass.Text))
+                {
+                    lblValidPass.ForeColor = Color.Red;
+                }
+                else
+                {
+                    lblValidPass.ForeColor = Color.Green;
+                }
+            }
+          
+        }
+        private void RetypedPass_TextChanged(object sender, EventArgs e)
+        {
+            if(ucReTypePass.txtPass.Text == "")
+            {
+                lblRetypedPass.ForeColor = Color.Black;
+            }
+            else
+            {
+                if (!AccountDAO.IsMatchedPassword(ucReTypePass.txtPass.Text, ucNewPass.txtPass.Text))
+                {
+                    lblRetypedPass.ForeColor = Color.Red;
+                }
+                else
+                {
+                    lblRetypedPass.ForeColor = Color.Green;
+                }
+            }
+          
+        }
+        private void UnableChangePassBtn(object sender, EventArgs e)
+        {
+            Account x = AccountDAO.SelectByUserID(Program.currentUserId);
+           if(AccountDAO.IsValidPassword(ucNewPass.txtPass.Text)&& (ucNewPass.txtPass.Text == ucReTypePass.txtPass.Text))
+           {
+                btnChangePass.Enabled = true;
+           }
+           else
+           {
+                btnChangePass.Enabled = false;
+           }
+        }
        
-        //
-        private void btnHideOldPass_Click(object sender, EventArgs e)
-        {
-            if (txtOldPass.UseSystemPasswordChar == false)
-            {
-                txtOldPass.UseSystemPasswordChar = true;
-                rButton5.BringToFront();
-            }
-        }
-
-     
-        private void rButton5_Click(object sender, EventArgs e)
-        {
-            if (txtOldPass.UseSystemPasswordChar == true)
-            {
-                txtOldPass.UseSystemPasswordChar = false;
-                btnHideOldPass.BringToFront();
-            }
-        }
-        //
-        private void btnViewNewPass_Click(object sender, EventArgs e)
-        {
-            if (txtNewPass.UseSystemPasswordChar == true)
-            {
-                txtNewPass.UseSystemPasswordChar = false;
-                btnHideNewPass.BringToFront();
-            }
-        }
-
-        private void btnHideNewPass_Click(object sender, EventArgs e)
-        {
-            if (txtNewPass.UseSystemPasswordChar == false)
-            {
-                txtNewPass.UseSystemPasswordChar = true;
-                btnViewNewPass.BringToFront();
-            }
-        }
-        //
-        private void btnViewPass_Click(object sender, EventArgs e)
-        {
-            if (txtPass.UseSystemPasswordChar == true)
-            {
-                txtPass.UseSystemPasswordChar = false;
-                btnHidePass.BringToFront();
-            }
-        }
-
-        private void btnHidePass_Click(object sender, EventArgs e)
-        {
-            if (txtPass.UseSystemPasswordChar == false)
-            {
-                txtPass.UseSystemPasswordChar = true;
-                btnViewPass.BringToFront();
-            }
-        }
-        //
     }
 }

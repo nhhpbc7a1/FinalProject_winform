@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace QuanLyTraoDoiHang
 {
-    public partial class FReturn : Form
+    public partial class ucHistoryItems : UserControl
     {
-        public FReturn()
+        public ucHistoryItems()
         {
             InitializeComponent();
-        }
-
-        private void ucShipment1_Load(object sender, EventArgs e)
-        {
-            //this.ucShipment1.dUDStatusShipment.Text = "Returned";
         }
     }
 }

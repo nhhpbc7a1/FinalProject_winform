@@ -29,371 +29,231 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChangePassword));
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.rButton3 = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.rButton4 = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.rButton2 = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnViewPass = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.btnHidePass = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.btnViewNewPass = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.btnHideNewPass = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.rButton5 = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.btnHideOldPass = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtPass = new System.Windows.Forms.TextBox();
-            this.txtNewPass = new System.Windows.Forms.TextBox();
-            this.txtOldPass = new System.Windows.Forms.TextBox();
-            this.rButton1 = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            panel3 = new Panel();
+            panel4 = new Panel();
+            label2 = new Label();
+            panel2 = new Panel();
+            lblRetypedPass = new Label();
+            ucOldPass = new UCPasswordTextBox();
+            ucNewPass = new UCPasswordTextBox();
+            ucReTypePass = new UCPasswordTextBox();
+            rButton3 = new RJControls.RButton();
+            rButton4 = new RJControls.RButton();
+            rButton2 = new RJControls.RButton();
+            panel1 = new Panel();
+            lblValidPass = new Label();
+            label4 = new Label();
+            btnChangePass = new RJControls.RButton();
+            panel3.SuspendLayout();
+            panel2.SuspendLayout();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
-            this.panel3.Controls.Add(this.panel4);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(642, 72);
-            this.panel3.TabIndex = 1;
+            panel3.BackColor = Color.FromArgb(101, 183, 65);
+            panel3.Controls.Add(panel4);
+            panel3.Controls.Add(label2);
+            panel3.Dock = DockStyle.Top;
+            panel3.Location = new Point(0, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(642, 72);
+            panel3.TabIndex = 1;
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Black;
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 67);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(642, 5);
-            this.panel4.TabIndex = 57;
+            panel4.BackColor = Color.Black;
+            panel4.Dock = DockStyle.Bottom;
+            panel4.Location = new Point(0, 67);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(642, 5);
+            panel4.TabIndex = 57;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(234, 22);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(181, 30);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Change Password";
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(234, 22);
+            label2.Name = "label2";
+            label2.Size = new Size(181, 30);
+            label2.TabIndex = 2;
+            label2.Text = "Change Password";
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.rButton3);
-            this.panel2.Controls.Add(this.rButton4);
-            this.panel2.Controls.Add(this.rButton2);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.btnViewPass);
-            this.panel2.Controls.Add(this.btnHidePass);
-            this.panel2.Controls.Add(this.btnViewNewPass);
-            this.panel2.Controls.Add(this.btnHideNewPass);
-            this.panel2.Controls.Add(this.rButton5);
-            this.panel2.Controls.Add(this.btnHideOldPass);
-            this.panel2.Controls.Add(this.panel1);
-            this.panel2.Controls.Add(this.txtPass);
-            this.panel2.Controls.Add(this.txtNewPass);
-            this.panel2.Controls.Add(this.txtOldPass);
-            this.panel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.panel2.Location = new System.Drawing.Point(41, 121);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(556, 266);
-            this.panel2.TabIndex = 6;
+            panel2.Controls.Add(ucReTypePass);
+            panel2.Controls.Add(ucNewPass);
+            panel2.Controls.Add(ucOldPass);
+            panel2.Controls.Add(lblRetypedPass);
+            panel2.Controls.Add(rButton3);
+            panel2.Controls.Add(rButton4);
+            panel2.Controls.Add(rButton2);
+            panel2.Controls.Add(panel1);
+            panel2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            panel2.Location = new Point(41, 121);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(556, 298);
+            panel2.TabIndex = 6;
+            // 
+            // lblRetypedPass
+            // 
+            lblRetypedPass.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lblRetypedPass.ForeColor = Color.Black;
+            lblRetypedPass.Location = new Point(120, 229);
+            lblRetypedPass.Name = "lblRetypedPass";
+            lblRetypedPass.Size = new Size(313, 39);
+            lblRetypedPass.TabIndex = 4;
+            lblRetypedPass.Text = "Retyped-new password need to be matched with the new password.";
+            // 
+            // ucOldPass
+            // 
+            ucOldPass.BackColor = Color.White;
+            ucOldPass.Location = new Point(120, 20);
+            ucOldPass.Margin = new Padding(3, 2, 3, 2);
+            ucOldPass.Name = "ucOldPass";
+            ucOldPass.Size = new Size(329, 29);
+            ucOldPass.TabIndex = 30;
+            // 
+            // ucNewPass
+            // 
+            ucNewPass.BackColor = Color.White;
+            ucNewPass.Location = new Point(120, 76);
+            ucNewPass.Margin = new Padding(3, 2, 3, 2);
+            ucNewPass.Name = "ucNewPass";
+            ucNewPass.Size = new Size(329, 29);
+            ucNewPass.TabIndex = 29;
+            // 
+            // ucReTypePass
+            // 
+            ucReTypePass.BackColor = Color.White;
+            ucReTypePass.Location = new Point(117, 186);
+            ucReTypePass.Margin = new Padding(3, 2, 3, 2);
+            ucReTypePass.Name = "ucReTypePass";
+            ucReTypePass.Size = new Size(332, 29);
+            ucReTypePass.TabIndex = 28;
             // 
             // rButton3
             // 
-            this.rButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(196)))), ((int)(((byte)(237)))));
-            this.rButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(196)))), ((int)(((byte)(237)))));
-            this.rButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rButton3.BorderRadius = 38;
-            this.rButton3.BorderSize = 0;
-            this.rButton3.FlatAppearance.BorderSize = 0;
-            this.rButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rButton3.ForeColor = System.Drawing.Color.White;
-            this.rButton3.Image = ((System.Drawing.Image)(resources.GetObject("rButton3.Image")));
-            this.rButton3.Location = new System.Drawing.Point(67, 11);
-            this.rButton3.Name = "rButton3";
-            this.rButton3.Size = new System.Drawing.Size(38, 38);
-            this.rButton3.TabIndex = 26;
-            this.rButton3.TextColor = System.Drawing.Color.White;
-            this.rButton3.UseVisualStyleBackColor = false;
+            rButton3.BackColor = Color.FromArgb(80, 196, 237);
+            rButton3.BackgroundColor = Color.FromArgb(80, 196, 237);
+            rButton3.BorderColor = Color.PaleVioletRed;
+            rButton3.BorderRadius = 38;
+            rButton3.BorderSize = 0;
+            rButton3.FlatAppearance.BorderSize = 0;
+            rButton3.FlatStyle = FlatStyle.Flat;
+            rButton3.ForeColor = Color.White;
+            rButton3.Image = (Image)resources.GetObject("rButton3.Image");
+            rButton3.Location = new Point(67, 14);
+            rButton3.Name = "rButton3";
+            rButton3.Size = new Size(38, 38);
+            rButton3.TabIndex = 26;
+            rButton3.TextColor = Color.White;
+            rButton3.UseVisualStyleBackColor = false;
             // 
             // rButton4
             // 
-            this.rButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
-            this.rButton4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
-            this.rButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rButton4.BorderRadius = 38;
-            this.rButton4.BorderSize = 0;
-            this.rButton4.FlatAppearance.BorderSize = 0;
-            this.rButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rButton4.ForeColor = System.Drawing.Color.White;
-            this.rButton4.Image = ((System.Drawing.Image)(resources.GetObject("rButton4.Image")));
-            this.rButton4.Location = new System.Drawing.Point(67, 195);
-            this.rButton4.Name = "rButton4";
-            this.rButton4.Size = new System.Drawing.Size(38, 38);
-            this.rButton4.TabIndex = 25;
-            this.rButton4.TextColor = System.Drawing.Color.White;
-            this.rButton4.UseVisualStyleBackColor = false;
+            rButton4.BackColor = Color.FromArgb(255, 104, 104);
+            rButton4.BackgroundColor = Color.FromArgb(255, 104, 104);
+            rButton4.BorderColor = Color.PaleVioletRed;
+            rButton4.BorderRadius = 38;
+            rButton4.BorderSize = 0;
+            rButton4.FlatAppearance.BorderSize = 0;
+            rButton4.FlatStyle = FlatStyle.Flat;
+            rButton4.ForeColor = Color.White;
+            rButton4.Image = (Image)resources.GetObject("rButton4.Image");
+            rButton4.Location = new Point(67, 182);
+            rButton4.Name = "rButton4";
+            rButton4.Size = new Size(38, 38);
+            rButton4.TabIndex = 25;
+            rButton4.TextColor = Color.White;
+            rButton4.UseVisualStyleBackColor = false;
             // 
             // rButton2
             // 
-            this.rButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
-            this.rButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
-            this.rButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rButton2.BorderRadius = 38;
-            this.rButton2.BorderSize = 0;
-            this.rButton2.FlatAppearance.BorderSize = 0;
-            this.rButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rButton2.ForeColor = System.Drawing.Color.White;
-            this.rButton2.Image = ((System.Drawing.Image)(resources.GetObject("rButton2.Image")));
-            this.rButton2.Location = new System.Drawing.Point(67, 76);
-            this.rButton2.Name = "rButton2";
-            this.rButton2.Size = new System.Drawing.Size(38, 38);
-            this.rButton2.TabIndex = 23;
-            this.rButton2.TextColor = System.Drawing.Color.White;
-            this.rButton2.UseVisualStyleBackColor = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(126, 125);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(125, 17);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Password strength:";
-            // 
-            // btnViewPass
-            // 
-            this.btnViewPass.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnViewPass.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnViewPass.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnViewPass.BackgroundImage")));
-            this.btnViewPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnViewPass.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnViewPass.BorderRadius = 0;
-            this.btnViewPass.BorderSize = 0;
-            this.btnViewPass.FlatAppearance.BorderSize = 0;
-            this.btnViewPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewPass.ForeColor = System.Drawing.Color.White;
-            this.btnViewPass.Location = new System.Drawing.Point(417, 204);
-            this.btnViewPass.Name = "btnViewPass";
-            this.btnViewPass.Size = new System.Drawing.Size(23, 21);
-            this.btnViewPass.TabIndex = 21;
-            this.btnViewPass.TextColor = System.Drawing.Color.White;
-            this.btnViewPass.UseVisualStyleBackColor = false;
-            this.btnViewPass.Click += new System.EventHandler(this.btnViewPass_Click);
-            // 
-            // btnHidePass
-            // 
-            this.btnHidePass.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnHidePass.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnHidePass.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnHidePass.BackgroundImage")));
-            this.btnHidePass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnHidePass.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnHidePass.BorderRadius = 0;
-            this.btnHidePass.BorderSize = 0;
-            this.btnHidePass.FlatAppearance.BorderSize = 0;
-            this.btnHidePass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHidePass.ForeColor = System.Drawing.Color.White;
-            this.btnHidePass.Location = new System.Drawing.Point(417, 204);
-            this.btnHidePass.Name = "btnHidePass";
-            this.btnHidePass.Size = new System.Drawing.Size(23, 21);
-            this.btnHidePass.TabIndex = 20;
-            this.btnHidePass.TextColor = System.Drawing.Color.White;
-            this.btnHidePass.UseVisualStyleBackColor = false;
-            this.btnHidePass.Click += new System.EventHandler(this.btnHidePass_Click);
-            // 
-            // btnViewNewPass
-            // 
-            this.btnViewNewPass.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnViewNewPass.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnViewNewPass.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnViewNewPass.BackgroundImage")));
-            this.btnViewNewPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnViewNewPass.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnViewNewPass.BorderRadius = 0;
-            this.btnViewNewPass.BorderSize = 0;
-            this.btnViewNewPass.FlatAppearance.BorderSize = 0;
-            this.btnViewNewPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewNewPass.ForeColor = System.Drawing.Color.White;
-            this.btnViewNewPass.Location = new System.Drawing.Point(417, 85);
-            this.btnViewNewPass.Name = "btnViewNewPass";
-            this.btnViewNewPass.Size = new System.Drawing.Size(23, 21);
-            this.btnViewNewPass.TabIndex = 19;
-            this.btnViewNewPass.TextColor = System.Drawing.Color.White;
-            this.btnViewNewPass.UseVisualStyleBackColor = false;
-            this.btnViewNewPass.Click += new System.EventHandler(this.btnViewNewPass_Click);
-            // 
-            // btnHideNewPass
-            // 
-            this.btnHideNewPass.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnHideNewPass.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnHideNewPass.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnHideNewPass.BackgroundImage")));
-            this.btnHideNewPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnHideNewPass.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnHideNewPass.BorderRadius = 0;
-            this.btnHideNewPass.BorderSize = 0;
-            this.btnHideNewPass.FlatAppearance.BorderSize = 0;
-            this.btnHideNewPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHideNewPass.ForeColor = System.Drawing.Color.White;
-            this.btnHideNewPass.Location = new System.Drawing.Point(417, 85);
-            this.btnHideNewPass.Name = "btnHideNewPass";
-            this.btnHideNewPass.Size = new System.Drawing.Size(23, 21);
-            this.btnHideNewPass.TabIndex = 18;
-            this.btnHideNewPass.TextColor = System.Drawing.Color.White;
-            this.btnHideNewPass.UseVisualStyleBackColor = false;
-            this.btnHideNewPass.Click += new System.EventHandler(this.btnHideNewPass_Click);
-            // 
-            // rButton5
-            // 
-            this.rButton5.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.rButton5.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.rButton5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rButton5.BackgroundImage")));
-            this.rButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.rButton5.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rButton5.BorderRadius = 0;
-            this.rButton5.BorderSize = 0;
-            this.rButton5.FlatAppearance.BorderSize = 0;
-            this.rButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rButton5.ForeColor = System.Drawing.Color.White;
-            this.rButton5.Location = new System.Drawing.Point(417, 20);
-            this.rButton5.Name = "rButton5";
-            this.rButton5.Size = new System.Drawing.Size(23, 21);
-            this.rButton5.TabIndex = 17;
-            this.rButton5.TextColor = System.Drawing.Color.White;
-            this.rButton5.UseVisualStyleBackColor = false;
-            this.rButton5.Click += new System.EventHandler(this.rButton5_Click);
-            // 
-            // btnHideOldPass
-            // 
-            this.btnHideOldPass.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnHideOldPass.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnHideOldPass.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnHideOldPass.BackgroundImage")));
-            this.btnHideOldPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnHideOldPass.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnHideOldPass.BorderRadius = 0;
-            this.btnHideOldPass.BorderSize = 0;
-            this.btnHideOldPass.FlatAppearance.BorderSize = 0;
-            this.btnHideOldPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHideOldPass.ForeColor = System.Drawing.Color.White;
-            this.btnHideOldPass.Location = new System.Drawing.Point(417, 20);
-            this.btnHideOldPass.Name = "btnHideOldPass";
-            this.btnHideOldPass.Size = new System.Drawing.Size(23, 21);
-            this.btnHideOldPass.TabIndex = 13;
-            this.btnHideOldPass.TextColor = System.Drawing.Color.White;
-            this.btnHideOldPass.UseVisualStyleBackColor = false;
-            this.btnHideOldPass.Click += new System.EventHandler(this.btnHideOldPass_Click);
+            rButton2.BackColor = Color.FromArgb(101, 183, 65);
+            rButton2.BackgroundColor = Color.FromArgb(101, 183, 65);
+            rButton2.BorderColor = Color.PaleVioletRed;
+            rButton2.BorderRadius = 38;
+            rButton2.BorderSize = 0;
+            rButton2.FlatAppearance.BorderSize = 0;
+            rButton2.FlatStyle = FlatStyle.Flat;
+            rButton2.ForeColor = Color.White;
+            rButton2.Image = (Image)resources.GetObject("rButton2.Image");
+            rButton2.Location = new Point(67, 72);
+            rButton2.Name = "rButton2";
+            rButton2.Size = new Size(38, 38);
+            rButton2.TabIndex = 23;
+            rButton2.TextColor = Color.White;
+            rButton2.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(123, 145);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(329, 40);
-            this.panel1.TabIndex = 8;
+            panel1.Controls.Add(lblValidPass);
+            panel1.Controls.Add(label4);
+            panel1.Location = new Point(120, 110);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(329, 71);
+            panel1.TabIndex = 8;
             // 
-            // label6
+            // lblValidPass
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label6.Location = new System.Drawing.Point(3, 4);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(329, 13);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Choose a more secure password you don\'t use anywhere else. ";
+            lblValidPass.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lblValidPass.ForeColor = Color.Black;
+            lblValidPass.Location = new Point(3, 29);
+            lblValidPass.Name = "lblValidPass";
+            lblValidPass.Size = new Size(323, 39);
+            lblValidPass.TabIndex = 4;
+            lblValidPass.Text = "Choose a more secure password you don't use anywhere else. It should be longer than 6 characters.";
             // 
-            // label3
+            // label4
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(3, 17);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(197, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "It should be longer than 6 characters";
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.Black;
+            label4.Location = new Point(3, 3);
+            label4.Name = "label4";
+            label4.Size = new Size(125, 17);
+            label4.TabIndex = 5;
+            label4.Text = "Password strength:";
             // 
-            // txtPass
+            // btnChangePass
             // 
-            this.txtPass.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPass.Location = new System.Drawing.Point(120, 202);
-            this.txtPass.Name = "txtPass";
-            this.txtPass.PlaceholderText = "  Re-type new password";
-            this.txtPass.Size = new System.Drawing.Size(329, 29);
-            this.txtPass.TabIndex = 2;
-            this.txtPass.UseSystemPasswordChar = true;
-            // 
-            // txtNewPass
-            // 
-            this.txtNewPass.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.txtNewPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNewPass.Location = new System.Drawing.Point(120, 83);
-            this.txtNewPass.Name = "txtNewPass";
-            this.txtNewPass.PlaceholderText = "  New password";
-            this.txtNewPass.Size = new System.Drawing.Size(329, 29);
-            this.txtNewPass.TabIndex = 1;
-            this.txtNewPass.UseSystemPasswordChar = true;
-            // 
-            // txtOldPass
-            // 
-            this.txtOldPass.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.txtOldPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtOldPass.Location = new System.Drawing.Point(120, 17);
-            this.txtOldPass.Name = "txtOldPass";
-            this.txtOldPass.PlaceholderText = "  Old password";
-            this.txtOldPass.Size = new System.Drawing.Size(329, 29);
-            this.txtOldPass.TabIndex = 0;
-            this.txtOldPass.UseSystemPasswordChar = true;
-            // 
-            // rButton1
-            // 
-            this.rButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
-            this.rButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
-            this.rButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
-            this.rButton1.BorderRadius = 15;
-            this.rButton1.BorderSize = 2;
-            this.rButton1.FlatAppearance.BorderSize = 0;
-            this.rButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rButton1.ForeColor = System.Drawing.Color.White;
-            this.rButton1.Location = new System.Drawing.Point(161, 425);
-            this.rButton1.Name = "rButton1";
-            this.rButton1.Size = new System.Drawing.Size(326, 42);
-            this.rButton1.TabIndex = 10;
-            this.rButton1.Text = "Change";
-            this.rButton1.TextColor = System.Drawing.Color.White;
-            this.rButton1.UseVisualStyleBackColor = false;
+            btnChangePass.BackColor = Color.FromArgb(101, 183, 65);
+            btnChangePass.BackgroundColor = Color.FromArgb(101, 183, 65);
+            btnChangePass.BorderColor = Color.FromArgb(30, 106, 17);
+            btnChangePass.BorderRadius = 15;
+            btnChangePass.BorderSize = 2;
+            btnChangePass.Enabled = false;
+            btnChangePass.FlatAppearance.BorderSize = 0;
+            btnChangePass.FlatStyle = FlatStyle.Flat;
+            btnChangePass.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnChangePass.ForeColor = Color.White;
+            btnChangePass.Location = new Point(161, 425);
+            btnChangePass.Name = "btnChangePass";
+            btnChangePass.Size = new Size(326, 42);
+            btnChangePass.TabIndex = 10;
+            btnChangePass.Text = "Change";
+            btnChangePass.TextColor = Color.White;
+            btnChangePass.UseVisualStyleBackColor = false;
+            btnChangePass.Click += btnChangePass_Click;
             // 
             // ChangePassword
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
-            this.ClientSize = new System.Drawing.Size(642, 495);
-            this.Controls.Add(this.rButton1);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel3);
-            this.Name = "ChangePassword";
-            this.Text = "ChangePassword";
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleMode = AutoScaleMode.None;
+            BackColor = Color.FromArgb(244, 237, 204);
+            ClientSize = new Size(642, 495);
+            Controls.Add(btnChangePass);
+            Controls.Add(panel2);
+            Controls.Add(panel3);
+            Name = "ChangePassword";
+            Text = "ChangePassword";
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion
@@ -401,23 +261,17 @@
         private Panel panel3;
         private Label label2;
         private Panel panel2;
-        private TextBox txtOldPass;
-        private Label label6;
-        private TextBox txtPass;
-        private TextBox txtNewPass;
-        private Label label3;
         private Label label4;
-        private Panel panel1;
-        private RJControls.RButton btnHideOldPass;
-        private RJControls.RButton rButton5;
-        private RJControls.RButton btnViewPass;
-        private RJControls.RButton btnHidePass;
-        private RJControls.RButton btnViewNewPass;
-        private RJControls.RButton btnHideNewPass;
         private RJControls.RButton rButton3;
         private RJControls.RButton rButton4;
         private RJControls.RButton rButton2;
         private Panel panel4;
-        private RJControls.RButton rButton1;
+        private RJControls.RButton btnChangePass;
+        private UCPasswordTextBox ucOldPass;
+        private UCPasswordTextBox ucNewPass;
+        private UCPasswordTextBox ucReTypePass;
+        private Panel panel1;
+        private Label lblValidPass;
+        private Label lblRetypedPass;
     }
 }
