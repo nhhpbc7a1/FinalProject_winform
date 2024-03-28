@@ -44,7 +44,7 @@ namespace QuanLyTraoDoiHang
             DataTable table = ProductDAO.SelectBySellerId(currentProduct.sellerId);
             foreach (DataRow row in table.Rows)
             {
-                UCProductOnMainpage ucProduct = new UCProductOnMainpage(ProductDAO.RowToProduct(row)) 
+                UCProductOnMainpage ucProduct = new UCProductOnMainpage(ProductDAO.RowToProduct(row))
                 { Margin = new System.Windows.Forms.Padding(5, 5, 5, 5) };
                 pnlSellerProduct.Controls.Add(ucProduct);
             }
@@ -79,6 +79,11 @@ namespace QuanLyTraoDoiHang
             //pnlThisSellerPage.Size = new System.Drawing.Size(648, 653);
             pnlThisSellerPage.BringToFront();
 
+
+        }
+
+        private void ptbImage_Click(object sender, EventArgs e)
+        {
 
         }
     }
