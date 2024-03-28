@@ -29,156 +29,155 @@ namespace QuanLyTraoDoiHang
         /// </summary>
         private void InitializeComponent()
         {
-            pnlCheckOut = new Panel();
-            label2 = new Label();
-            rBCheckout = new RJControls.RButton();
-            lblCheckOutPrice = new Label();
-            lblItemWriting = new Label();
-            lblPriceCheckOut = new Label();
-            lblItemsCart = new Label();
-            cBPay = new CheckBox();
-            ucCartProducts = new UCCartProduct();
-            pnlCheckOut.SuspendLayout();
-            SuspendLayout();
+            this.pnlCheckOut = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.rBCheckout = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.lblCheckOutPrice = new System.Windows.Forms.Label();
+            this.lblItemWriting = new System.Windows.Forms.Label();
+            this.lblPriceCheckOut = new System.Windows.Forms.Label();
+            this.lblItemsCart = new System.Windows.Forms.Label();
+            this.cBPay = new System.Windows.Forms.CheckBox();
+            this.ucCartProducts = new QuanLyTraoDoiHang.UCCartProduct();
+            this.pnlCheckOut.SuspendLayout();
+            this.SuspendLayout();
             // 
             // pnlCheckOut
             // 
-            pnlCheckOut.BackColor = Color.FromArgb(182, 115, 82);
-            pnlCheckOut.Controls.Add(label2);
-            pnlCheckOut.Controls.Add(rBCheckout);
-            pnlCheckOut.Controls.Add(lblCheckOutPrice);
-            pnlCheckOut.Controls.Add(lblItemWriting);
-            pnlCheckOut.Controls.Add(lblPriceCheckOut);
-            pnlCheckOut.Controls.Add(lblItemsCart);
-            pnlCheckOut.Controls.Add(cBPay);
-            pnlCheckOut.Dock = DockStyle.Bottom;
-            pnlCheckOut.Location = new Point(0, 467);
-            pnlCheckOut.Margin = new Padding(1);
-            pnlCheckOut.Name = "pnlCheckOut";
-            pnlCheckOut.Size = new Size(984, 94);
-            pnlCheckOut.TabIndex = 20;
+            this.pnlCheckOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(115)))), ((int)(((byte)(82)))));
+            this.pnlCheckOut.Controls.Add(this.label2);
+            this.pnlCheckOut.Controls.Add(this.rBCheckout);
+            this.pnlCheckOut.Controls.Add(this.lblCheckOutPrice);
+            this.pnlCheckOut.Controls.Add(this.lblItemWriting);
+            this.pnlCheckOut.Controls.Add(this.lblPriceCheckOut);
+            this.pnlCheckOut.Controls.Add(this.lblItemsCart);
+            this.pnlCheckOut.Controls.Add(this.cBPay);
+            this.pnlCheckOut.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlCheckOut.Location = new System.Drawing.Point(0, 467);
+            this.pnlCheckOut.Margin = new System.Windows.Forms.Padding(1);
+            this.pnlCheckOut.Name = "pnlCheckOut";
+            this.pnlCheckOut.Size = new System.Drawing.Size(984, 94);
+            this.pnlCheckOut.TabIndex = 20;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label2.ForeColor = SystemColors.ButtonHighlight;
-            label2.Location = new Point(623, 31);
-            label2.Margin = new Padding(1, 0, 1, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(19, 21);
-            label2.TabIndex = 23;
-            label2.Text = "đ";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(623, 31);
+            this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(19, 21);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "đ";
             // 
             // rBCheckout
             // 
-            rBCheckout.BackColor = Color.FromArgb(231, 41, 41);
-            rBCheckout.BackgroundColor = Color.FromArgb(231, 41, 41);
-            rBCheckout.BorderColor = Color.White;
-            rBCheckout.BorderRadius = 20;
-            rBCheckout.BorderSize = 1;
-            rBCheckout.FlatAppearance.BorderSize = 0;
-            rBCheckout.FlatStyle = FlatStyle.Flat;
-            rBCheckout.Font = new Font("Segoe UI", 11.1F, FontStyle.Bold, GraphicsUnit.Point);
-            rBCheckout.ForeColor = Color.White;
-            rBCheckout.Location = new Point(782, 24);
-            rBCheckout.Margin = new Padding(1);
-            rBCheckout.Name = "rBCheckout";
-            rBCheckout.Size = new Size(111, 37);
-            rBCheckout.TabIndex = 10;
-            rBCheckout.Text = "Check Out";
-            rBCheckout.TextColor = Color.White;
-            rBCheckout.UseVisualStyleBackColor = false;
-            rBCheckout.Click += rBCheckout_Click;
+            this.rBCheckout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.rBCheckout.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.rBCheckout.BorderColor = System.Drawing.Color.White;
+            this.rBCheckout.BorderRadius = 20;
+            this.rBCheckout.BorderSize = 1;
+            this.rBCheckout.FlatAppearance.BorderSize = 0;
+            this.rBCheckout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rBCheckout.Font = new System.Drawing.Font("Segoe UI", 11.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rBCheckout.ForeColor = System.Drawing.Color.White;
+            this.rBCheckout.Location = new System.Drawing.Point(782, 24);
+            this.rBCheckout.Margin = new System.Windows.Forms.Padding(1);
+            this.rBCheckout.Name = "rBCheckout";
+            this.rBCheckout.Size = new System.Drawing.Size(111, 37);
+            this.rBCheckout.TabIndex = 10;
+            this.rBCheckout.Text = "Check Out";
+            this.rBCheckout.TextColor = System.Drawing.Color.White;
+            this.rBCheckout.UseVisualStyleBackColor = false;
             // 
             // lblCheckOutPrice
             // 
-            lblCheckOutPrice.AutoSize = true;
-            lblCheckOutPrice.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblCheckOutPrice.ForeColor = SystemColors.ButtonHighlight;
-            lblCheckOutPrice.Location = new Point(644, 31);
-            lblCheckOutPrice.Margin = new Padding(1, 0, 1, 0);
-            lblCheckOutPrice.Name = "lblCheckOutPrice";
-            lblCheckOutPrice.Size = new Size(23, 21);
-            lblCheckOutPrice.TabIndex = 22;
-            lblCheckOutPrice.Text = "0 ";
+            this.lblCheckOutPrice.AutoSize = true;
+            this.lblCheckOutPrice.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lblCheckOutPrice.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblCheckOutPrice.Location = new System.Drawing.Point(644, 31);
+            this.lblCheckOutPrice.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.lblCheckOutPrice.Name = "lblCheckOutPrice";
+            this.lblCheckOutPrice.Size = new System.Drawing.Size(23, 21);
+            this.lblCheckOutPrice.TabIndex = 22;
+            this.lblCheckOutPrice.Text = "0 ";
             // 
             // lblItemWriting
             // 
-            lblItemWriting.AutoSize = true;
-            lblItemWriting.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblItemWriting.ForeColor = SystemColors.ButtonHighlight;
-            lblItemWriting.Location = new Point(389, 31);
-            lblItemWriting.Margin = new Padding(1, 0, 1, 0);
-            lblItemWriting.Name = "lblItemWriting";
-            lblItemWriting.Size = new Size(19, 21);
-            lblItemWriting.TabIndex = 21;
-            lblItemWriting.Text = "0";
+            this.lblItemWriting.AutoSize = true;
+            this.lblItemWriting.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lblItemWriting.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblItemWriting.Location = new System.Drawing.Point(389, 31);
+            this.lblItemWriting.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.lblItemWriting.Name = "lblItemWriting";
+            this.lblItemWriting.Size = new System.Drawing.Size(19, 21);
+            this.lblItemWriting.TabIndex = 21;
+            this.lblItemWriting.Text = "0";
             // 
             // lblPriceCheckOut
             // 
-            lblPriceCheckOut.AutoSize = true;
-            lblPriceCheckOut.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblPriceCheckOut.ForeColor = SystemColors.Control;
-            lblPriceCheckOut.Location = new Point(534, 31);
-            lblPriceCheckOut.Margin = new Padding(1, 0, 1, 0);
-            lblPriceCheckOut.Name = "lblPriceCheckOut";
-            lblPriceCheckOut.Size = new Size(94, 21);
-            lblPriceCheckOut.TabIndex = 19;
-            lblPriceCheckOut.Text = "Total Price:";
+            this.lblPriceCheckOut.AutoSize = true;
+            this.lblPriceCheckOut.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPriceCheckOut.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblPriceCheckOut.Location = new System.Drawing.Point(534, 31);
+            this.lblPriceCheckOut.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.lblPriceCheckOut.Name = "lblPriceCheckOut";
+            this.lblPriceCheckOut.Size = new System.Drawing.Size(94, 21);
+            this.lblPriceCheckOut.TabIndex = 19;
+            this.lblPriceCheckOut.Text = "Total Price:";
             // 
             // lblItemsCart
             // 
-            lblItemsCart.AutoSize = true;
-            lblItemsCart.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblItemsCart.ForeColor = SystemColors.Control;
-            lblItemsCart.Location = new Point(277, 31);
-            lblItemsCart.Margin = new Padding(1, 0, 1, 0);
-            lblItemsCart.Name = "lblItemsCart";
-            lblItemsCart.Size = new Size(110, 21);
-            lblItemsCart.TabIndex = 18;
-            lblItemsCart.Text = "Total Item(s):";
+            this.lblItemsCart.AutoSize = true;
+            this.lblItemsCart.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblItemsCart.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblItemsCart.Location = new System.Drawing.Point(277, 31);
+            this.lblItemsCart.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.lblItemsCart.Name = "lblItemsCart";
+            this.lblItemsCart.Size = new System.Drawing.Size(110, 21);
+            this.lblItemsCart.TabIndex = 18;
+            this.lblItemsCart.Text = "Total Item(s):";
             // 
             // cBPay
             // 
-            cBPay.AutoSize = true;
-            cBPay.Font = new Font("Segoe UI", 11.1F, FontStyle.Bold, GraphicsUnit.Point);
-            cBPay.ForeColor = Color.Bisque;
-            cBPay.Location = new Point(59, 31);
-            cBPay.Margin = new Padding(1);
-            cBPay.Name = "cBPay";
-            cBPay.Size = new Size(92, 24);
-            cBPay.TabIndex = 0;
-            cBPay.Text = "Select All";
-            cBPay.UseVisualStyleBackColor = true;
+            this.cBPay.AutoSize = true;
+            this.cBPay.Font = new System.Drawing.Font("Segoe UI", 11.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cBPay.ForeColor = System.Drawing.Color.Bisque;
+            this.cBPay.Location = new System.Drawing.Point(59, 31);
+            this.cBPay.Margin = new System.Windows.Forms.Padding(1);
+            this.cBPay.Name = "cBPay";
+            this.cBPay.Size = new System.Drawing.Size(92, 24);
+            this.cBPay.TabIndex = 0;
+            this.cBPay.Text = "Select All";
+            this.cBPay.UseVisualStyleBackColor = true;
             // 
             // ucCartProducts
             // 
-            ucCartProducts.BackColor = Color.FromArgb(164, 206, 149);
-            ucCartProducts.Location = new Point(114, 20);
-            ucCartProducts.Margin = new Padding(1);
-            ucCartProducts.Name = "ucCartProducts";
-            ucCartProducts.Size = new Size(755, 469);
-            ucCartProducts.TabIndex = 21;
-            ucCartProducts.Load += ucCartProducts_Load;
+            this.ucCartProducts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
+            this.ucCartProducts.Location = new System.Drawing.Point(114, 20);
+            this.ucCartProducts.Margin = new System.Windows.Forms.Padding(1);
+            this.ucCartProducts.Name = "ucCartProducts";
+            this.ucCartProducts.Size = new System.Drawing.Size(755, 469);
+            this.ucCartProducts.TabIndex = 21;
             // 
             // FormCart
             // 
-            AccessibleRole = AccessibleRole.None;
-            AutoScaleMode = AutoScaleMode.None;
-            BackColor = Color.FromArgb(164, 206, 149);
-            ClientSize = new Size(984, 561);
-            Controls.Add(pnlCheckOut);
-            Controls.Add(ucCartProducts);
-            Margin = new Padding(1);
-            MaximizeBox = false;
-            MinimizeBox = false;
-            Name = "FormCart";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "FormCart";
-            pnlCheckOut.ResumeLayout(false);
-            pnlCheckOut.PerformLayout();
-            ResumeLayout(false);
+            this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
+            this.ClientSize = new System.Drawing.Size(984, 561);
+            this.Controls.Add(this.pnlCheckOut);
+            this.Controls.Add(this.ucCartProducts);
+            this.Margin = new System.Windows.Forms.Padding(1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "FormCart";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FormCart";
+            this.pnlCheckOut.ResumeLayout(false);
+            this.pnlCheckOut.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

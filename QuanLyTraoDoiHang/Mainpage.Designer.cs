@@ -31,7 +31,7 @@ namespace QuanLyTraoDoiHang
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mainpage));
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbSearchBox = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlMainPage = new System.Windows.Forms.Panel();
             this.btnMainPage = new QuanLyTraoDoiHang.RJControls.RButton();
@@ -64,23 +64,23 @@ namespace QuanLyTraoDoiHang
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // cbSearchBox
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.comboBox1.DropDownWidth = 498;
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbSearchBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbSearchBox.BackColor = System.Drawing.SystemColors.Window;
+            this.cbSearchBox.DropDownWidth = 498;
+            this.cbSearchBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbSearchBox.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.cbSearchBox.FormattingEnabled = true;
+            this.cbSearchBox.Items.AddRange(new object[] {
             "totoro model",
             "susuwatari model",
             "snow ball"});
-            this.comboBox1.Location = new System.Drawing.Point(254, 13);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(406, 29);
-            this.comboBox1.TabIndex = 0;
+            this.cbSearchBox.Location = new System.Drawing.Point(254, 13);
+            this.cbSearchBox.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
+            this.cbSearchBox.Name = "cbSearchBox";
+            this.cbSearchBox.Size = new System.Drawing.Size(406, 29);
+            this.cbSearchBox.TabIndex = 0;
             // 
             // panel1
             // 
@@ -89,7 +89,7 @@ namespace QuanLyTraoDoiHang
             this.panel1.Controls.Add(this.btnCart);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.btnSearch);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.cbSearchBox);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 45);
             this.panel1.Name = "panel1";
@@ -325,8 +325,8 @@ namespace QuanLyTraoDoiHang
             // 
             // btnAddProduct
             // 
-            this.btnAddProduct.BackColor = System.Drawing.Color.YellowGreen;
-            this.btnAddProduct.BackgroundColor = System.Drawing.Color.YellowGreen;
+            this.btnAddProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
+            this.btnAddProduct.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
             this.btnAddProduct.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnAddProduct.BorderRadius = 20;
             this.btnAddProduct.BorderSize = 0;
@@ -398,7 +398,7 @@ namespace QuanLyTraoDoiHang
         }
 
         #endregion
-        private ComboBox comboBox1;
+        private ComboBox cbSearchBox;
         private Panel panel1;
         private IconPictureBox iconPictureBox1;
         private Label lblSignIn;
