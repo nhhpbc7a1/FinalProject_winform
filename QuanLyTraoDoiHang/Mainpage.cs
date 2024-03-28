@@ -42,7 +42,17 @@ namespace QuanLyTraoDoiHang
             MinimizeBox = false;
             ControlBox = false;
 
+            btnSearch.Click += btnSearch_Click;
+
         }
+
+        private void btnSearch_Click(object? sender, EventArgs e)
+        {
+            FormProduct form = new FormProduct();
+            form.LoadBySearchText(cbSearchBox.Text);
+            OpenChildForm(form);
+        }
+
         private void UpdateAccountByAction(object? sender, EventArgs e)
         {
             if (Program.CurrentUser() != null)
@@ -97,7 +107,16 @@ namespace QuanLyTraoDoiHang
 
         private void btnCart_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormCart());
+            if (Program.CurrentUser() == null)
+            {
+                MessageBox.Show("please login first");
+            }
+            else
+            {
+                Form form = new FormAddNewProduct();
+                form.ShowDialog();
+                OpenChildForm(new FormCart());
+            }
         }
 
         private void lblSignup_Click(object sender, EventArgs e)
