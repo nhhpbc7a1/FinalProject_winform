@@ -109,6 +109,18 @@ namespace QuanLyTraoDoiHang
             string sqlStr = string.Format("SELECT * FROM " + tableName + " where sellerId='{0}';", sellerId);
             return dBConnection.Load(sqlStr);
         }
+        public static List<Product> SearchProducts(List<Product> productList, string searchString)
+        {
+            List<Product> relatedProducts = new List<Product>();
+            foreach (Product product in productList)
+            {
+                if (product.name.ToLower().Contains(searchString.ToLower()))
+                {
+                    relatedProducts.Add(product);
+                }
+            }
+            return relatedProducts;
+        }
 
     }
 }
