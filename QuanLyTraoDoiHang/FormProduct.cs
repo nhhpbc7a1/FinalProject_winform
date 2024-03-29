@@ -6,57 +6,54 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Automation.Peers;
 using System.Windows.Forms;
 
 namespace QuanLyTraoDoiHang
 {
     public partial class FormProduct : Form
     {
+        List<Product> listProduct = new List<Product>();
         public FormProduct()
         {
             InitializeComponent();
-            ProductDAO productDAO = new ProductDAO();
-            DataTable table = productDAO.Load();
-            foreach (DataRow row in table.Rows)
-            {
-                UCProductOnMainpage ucProduct = new UCProductOnMainpage(ProductDAO.RowToProduct(row));
-                listProduct.Add(ProductDAO.RowToProduct(row));
-                flowLayoutPanelProductList.Controls.Add(ucProduct);
-            }
+
+            TakeAllProduct();
+            Load_flowLayoutPanelProductList(listProduct);
             ProductFilterEvent();
         }
-        List<Product> listProduct = new List<Product>();
-        public void LoadBySearchText(string x)
+        void TakeAllProduct()
         {
-            List<Product> SearchProducts(List<Product> productList, string searchString)
-            {
-                List<Product> relatedProducts = new List<Product>();
-                foreach (Product product in productList)
-                {
-                    if (product.name.ToLower().Contains(searchString.ToLower()))
-                    {
-                        relatedProducts.Add(product);
-                    }
-                }
-                return relatedProducts;
-            }
-
-            List<Product> listP = new List<Product>();
             ProductDAO productDAO = new ProductDAO();
             DataTable table = productDAO.Load();
             foreach (DataRow row in table.Rows)
             {
-                listP.Add(ProductDAO.RowToProduct(row));
+                listProduct.Add(ProductDAO.RowToProduct(row));
             }
 
+        }
+        private void Load_flowLayoutPanelProductList(List<Product> listP)
+        {
             flowLayoutPanelProductList.Controls.Clear();
-            listP = SearchProducts(listP, x);
-            foreach (Product product in listP)
+            foreach (Product x in listP)
             {
-                UCProductOnMainpage ucProduct = new UCProductOnMainpage(product);
+                if (x == null) continue;
+                UCProductOnMainpage ucProduct = new UCProductOnMainpage(x);
                 flowLayoutPanelProductList.Controls.Add(ucProduct);
             }
-            listProduct = listP;
+        }
+
+
+        public void LoadBySearchText(string x)
+        {
+
+            List<Product> listP = new List<Product>();
+            listP.AddRange(listProduct);
+
+            flowLayoutPanelProductList.Controls.Clear();
+            listP = ProductDAO.SearchProducts(listP, x);
+
+            Load_flowLayoutPanelProductList(listP);
         }
         void ProductFilterEvent()
         {
@@ -68,8 +65,8 @@ namespace QuanLyTraoDoiHang
         }
         private void btnApply_Click(object sender, EventArgs e)
         {
-            List<Product> listP = new List<Product>();
-            listP.AddRange(listProduct);
+            Product[] listP = listProduct.ToArray();
+
             if (cbMinPrice.Text != "" && cbMaxPrice.Text != "")
             {
                 if (Convert.ToInt32(cbMinPrice.Text) > Convert.ToInt32(cbMaxPrice.Text))
@@ -79,58 +76,61 @@ namespace QuanLyTraoDoiHang
                 }
                 else
                 {
-                    while (true)
+                    for (int i = 0; i < listP.Length; i++)
                     {
-                        bool kt = false;
-                        int i = 0;
-                        foreach (Product x in listP)
+                        Product x = listP[i];
+                        if (x.price > Convert.ToInt32(cbMaxPrice.Text) || x.price < Convert.ToInt32(cbMinPrice.Text))
                         {
-                            if (x.price > Convert.ToInt32(cbMaxPrice.Text) || x.price < Convert.ToInt32(cbMinPrice.Text))
-                            {
-                                listP.Remove(x);
-                                kt = true;
-                                break;
-                            }
-                            i++;
+                            listP[i] = null;
                         }
-                        if (kt == false) break;
                     }
                 }
             }
             List<string> categoryList = checkListBoxCategory.CheckedItems.OfType<string>().ToList();
             List<string> addressList = checkListBoxAddress.CheckedItems.OfType<string>().ToList();
-            while (true)
+
+            for (int i = 0; i < listP.Length; i++)
             {
-                bool kt = true;
-                foreach (Product x in listP)
+                if (listP[i] == null) continue;
+                Product x = listP[i];
+                bool kt = false;
+                if (categoryList.Count > 0)
                 {
                     foreach (string category in categoryList)
-                        if (x.category != category)
+                    {
+                        if (x.category == category)
                         {
-                            listP.Remove(x);
-                            kt = false;
+                            kt = true;
                             break;
                         }
-                    if (kt == false) break;
-                    foreach (string address in addressList)
-                        if (UserDAO.SelectByUserId(x.sellerId).address != address)
-                        {
-                            listP.Remove(x);
-                            kt = false;
-                            break;
-                        }
-                    if (kt == false) break;
+                    }
+                    if (kt == false)
+                    {
+                        listP[i] = null;
+                        continue;
+                    }
                 }
-                if (kt == true)
-                    break;
-            }
-            flowLayoutPanelProductList.Controls.Clear();
-            foreach (Product product in listP)
-            {
-                UCProductOnMainpage ucProduct = new UCProductOnMainpage(product);
-                flowLayoutPanelProductList.Controls.Add(ucProduct);
+                kt = false;
+                if (addressList.Count > 0)
+                {
+                    kt = false;
+                    foreach (string address in addressList)
+                    {
+                        if (UserDAO.SelectByUserId(x.sellerId).address == address)
+                        {
+                            kt = true;
+                            break;
+                        }
+                    }
+                    if (kt == false)
+                    {
+                        listP[i] = null;
+                        continue;
+                    }
+                }
             }
 
+            Load_flowLayoutPanelProductList(listP.ToList());
         }
         private void cbCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -155,20 +155,16 @@ namespace QuanLyTraoDoiHang
         }
         private void MoveCheckedCategoryToFront(object sender, EventArgs e)
         {
-            // Get the checked items and unchecked items
             var checkedItems = checkListBoxCategory.CheckedItems.Cast<object>().ToArray();
             var uncheckedItems = checkListBoxCategory.Items.Cast<object>().Except(checkedItems).ToArray();
 
-            // Clear the CheckBoxList
             checkListBoxCategory.Items.Clear();
 
-            // Add the checked items first
             foreach (var item in checkedItems)
             {
                 checkListBoxCategory.Items.Add(item, true);
             }
 
-            // Add the unchecked items after checked items
             foreach (var item in uncheckedItems)
             {
                 checkListBoxCategory.Items.Add(item, false);
@@ -199,20 +195,16 @@ namespace QuanLyTraoDoiHang
         }
         private void MoveCheckedAddressToFront(object sender, EventArgs e)
         {
-            // Get the checked items and unchecked items
             var checkedItems = checkListBoxAddress.CheckedItems.Cast<object>().ToArray();
             var uncheckedItems = checkListBoxAddress.Items.Cast<object>().Except(checkedItems).ToArray();
 
-            // Clear the CheckBoxList
             checkListBoxAddress.Items.Clear();
 
-            // Add the checked items first
             foreach (var item in checkedItems)
             {
                 checkListBoxAddress.Items.Add(item, true);
             }
 
-            // Add the unchecked items after checked items
             foreach (var item in uncheckedItems)
             {
                 checkListBoxAddress.Items.Add(item, false);

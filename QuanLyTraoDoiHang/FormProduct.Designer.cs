@@ -254,7 +254,7 @@
             "Bắc Ninh",
             "Bến Tre",
             "Bình Định",
-            "Bình Dương",
+            "Binh Duong",
             "Bình Phước",
             "Bình Thuận",
             "Cà Mau",
@@ -264,7 +264,7 @@
             "Đắk Lắk",
             "Đắk Nông",
             "Điện Biên",
-            "Đồng Nai",
+            "Dong Nai",
             "Đồng Tháp",
             "Gia Lai",
             "Hà Giang",
@@ -319,11 +319,11 @@
             this.checkListBoxAddress.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.checkListBoxAddress.FormattingEnabled = true;
             this.checkListBoxAddress.Items.AddRange(new object[] {
-            "Hà Nội",
-            "Hồ Chí Minh",
-            "Đà Nẵng",
-            "Hải Phòng",
-            "Bình Dương"});
+            "Ha Noi",
+            "Ho Chi Minh",
+            "Da Nang",
+            "Hai Phong",
+            "Binh Duong"});
             this.checkListBoxAddress.Location = new System.Drawing.Point(10, 30);
             this.checkListBoxAddress.Name = "checkListBoxAddress";
             this.checkListBoxAddress.Size = new System.Drawing.Size(190, 100);
@@ -371,10 +371,13 @@
             this.cbCategory.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbCategory.FormattingEnabled = true;
             this.cbCategory.Items.AddRange(new object[] {
-            "Smart Phone",
+            "Smart phone",
             "Laptop",
             "Motorbike",
-            "Car"});
+            "Car",
+            "tai nghe",
+            "Moc Khoa",
+            "Album"});
             this.cbCategory.Location = new System.Drawing.Point(10, 139);
             this.cbCategory.Name = "cbCategory";
             this.cbCategory.Size = new System.Drawing.Size(193, 29);
