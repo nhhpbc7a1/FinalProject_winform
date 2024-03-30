@@ -18,20 +18,54 @@ namespace QuanLyTraoDoiHang
         {
             InitializeComponent();
 
+            btnCheckOut.Enabled = false;
             Load += form_Load;
+            cbSellectAll.CheckedChanged += CbSellectAll_CheckedChanged;
+            btnCheckOut.Click += BtnCheckOut_Click;
         }
+
+        private void BtnCheckOut_Click(object? sender, EventArgs e)
+        {
+
+        }
+
+        private void CbSellectAll_CheckedChanged(object? sender, EventArgs e)
+        {
+            foreach (UCProductInCart c in pnlProducts.Controls)
+                c.cbChoose.Checked = cbSellectAll.Checked;
+        }
+
         private void form_Load(object sender, EventArgs e)
         {
             DataTable table = CartItemDAO.SelectByUserId(Program.currentUserId);
-            ucCartProducts.pnlProducts.Controls.Clear();
+            pnlProducts.Controls.Clear();
             foreach (DataRow row in table.Rows)
             {
                 UCProductInCart ucProduct = new UCProductInCart();
                 ucProduct.cartItem = CartItemDAO.RowToCartItem(row);
                 ucProduct.btnCancel.Click += form_Load;
+                ucProduct.cbChoose.CheckedChanged += Load_CheckOut_Calc;
 
-                ucCartProducts.pnlProducts.Controls.Add(ucProduct);
+                pnlProducts.Controls.Add(ucProduct);
             }
+        }
+        private void Load_CheckOut_Calc(object sender, EventArgs e)
+        {
+            int a = 0, b = 0;
+            foreach (UCProductInCart c in pnlProducts.Controls)
+            {
+                if (c.cbChoose.Checked == true)
+                {
+                    a++;
+                    b += Convert.ToInt32(c.lblPrice.Text);
+                }
+            }
+            lblTotalItem.Text = a.ToString();
+            lblTotalPrice.Text = b.ToString();
+
+            if (a > 0)
+                btnCheckOut.Enabled = true;
+            else btnCheckOut.Enabled = false;
 
         }
 

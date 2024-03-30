@@ -17,21 +17,21 @@ namespace QuanLyTraoDoiHang
         public FSellermanagement()
         {
             InitializeComponent();
-            OpenChildForm(new FormMyShipment());
+            //OpenChildForm(new FormMyShipment());
         }
 
       
        
         private void rButton1_Product_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new MyProduct());
+            //OpenChildForm(new MyProduct());
         }
      
      
 
         private void rButton1_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormMyShipment());
+            //OpenChildForm(new FormMyShipment());
         }
         private Form currentFormChild;
         private void OpenChildForm(Form childForm)
@@ -54,7 +54,7 @@ namespace QuanLyTraoDoiHang
      
         private void rBAnalysis_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FAnalysis());
+            //OpenChildForm(new FAnalysis());
         }
 
      
@@ -130,7 +130,7 @@ namespace QuanLyTraoDoiHang
 
         private void btnMyProducts_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new MyProduct());
+           // OpenChildForm(new MyProduct());
 
         }
 
@@ -141,13 +141,13 @@ namespace QuanLyTraoDoiHang
 
         private void btnShipment_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormMyShipment());
+            //OpenChildForm(new FormMyShipment());
 
         }
 
         private void rButton1_Click_1(object sender, EventArgs e)
         {
-            OpenChildForm(new FAnalysis());
+            //OpenChildForm(new FAnalysis());
 
         }
 
@@ -155,12 +155,12 @@ namespace QuanLyTraoDoiHang
 
         private void rButton2_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormMyShipment());
+            //OpenChildForm(new FormMyShipment());
 
         }
         private void btnShipment_Click_1(object sender, EventArgs e)
         {
-            OpenChildForm(new FormMyShipment());
+            //OpenChildForm(new FormMyShipment());
 
         }
     }
