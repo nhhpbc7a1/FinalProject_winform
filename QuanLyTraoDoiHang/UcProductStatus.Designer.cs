@@ -28,111 +28,110 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTotalPrice = new System.Windows.Forms.Label();
-            this.lblAction = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pnlMenu = new System.Windows.Forms.Panel();
-            this.pnlProducts = new System.Windows.Forms.FlowLayoutPanel();
-            this.pnlMenu.SuspendLayout();
-            this.SuspendLayout();
+            lblTotalPrice = new Label();
+            lblAction = new Label();
+            label1 = new Label();
+            label2 = new Label();
+            label4 = new Label();
+            pnlMenu = new Panel();
+            pnlProducts = new FlowLayoutPanel();
+            pnlMenu.SuspendLayout();
+            SuspendLayout();
             // 
             // lblTotalPrice
             // 
-            this.lblTotalPrice.AutoSize = true;
-            this.lblTotalPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTotalPrice.ForeColor = System.Drawing.Color.White;
-            this.lblTotalPrice.Location = new System.Drawing.Point(194, 5);
-            this.lblTotalPrice.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblTotalPrice.Name = "lblTotalPrice";
-            this.lblTotalPrice.Size = new System.Drawing.Size(85, 21);
-            this.lblTotalPrice.TabIndex = 15;
-            this.lblTotalPrice.Text = "Total Price";
+            lblTotalPrice.AutoSize = true;
+            lblTotalPrice.Font = new Font("Lato", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTotalPrice.ForeColor = Color.White;
+            lblTotalPrice.Location = new Point(194, 5);
+            lblTotalPrice.Margin = new Padding(1, 0, 1, 0);
+            lblTotalPrice.Name = "lblTotalPrice";
+            lblTotalPrice.Size = new Size(85, 19);
+            lblTotalPrice.TabIndex = 15;
+            lblTotalPrice.Text = "Total Price";
             // 
             // lblAction
             // 
-            this.lblAction.AutoSize = true;
-            this.lblAction.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblAction.ForeColor = System.Drawing.Color.White;
-            this.lblAction.Location = new System.Drawing.Point(639, 5);
-            this.lblAction.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblAction.Name = "lblAction";
-            this.lblAction.Size = new System.Drawing.Size(58, 21);
-            this.lblAction.TabIndex = 16;
-            this.lblAction.Text = "Action";
+            lblAction.AutoSize = true;
+            lblAction.Font = new Font("Lato", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            lblAction.ForeColor = Color.White;
+            lblAction.Location = new Point(639, 5);
+            lblAction.Margin = new Padding(1, 0, 1, 0);
+            lblAction.Name = "lblAction";
+            lblAction.Size = new Size(56, 19);
+            lblAction.TabIndex = 16;
+            lblAction.Text = "Action";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(359, 5);
-            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 21);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Status";
+            label1.AutoSize = true;
+            label1.Font = new Font("Lato", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(359, 5);
+            label1.Margin = new Padding(1, 0, 1, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(54, 19);
+            label1.TabIndex = 17;
+            label1.Text = "Status";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(528, 5);
-            this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 21);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Type";
+            label2.AutoSize = true;
+            label2.Font = new Font("Lato", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(528, 5);
+            label2.Margin = new Padding(1, 0, 1, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(44, 19);
+            label2.TabIndex = 18;
+            label2.Text = "Type";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(14, 5);
-            this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 21);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "Your product";
+            label4.AutoSize = true;
+            label4.Font = new Font("Lato", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = SystemColors.ButtonHighlight;
+            label4.Location = new Point(14, 5);
+            label4.Margin = new Padding(1, 0, 1, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(101, 19);
+            label4.TabIndex = 20;
+            label4.Text = "Your product";
             // 
             // pnlMenu
             // 
-            this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
-            this.pnlMenu.Controls.Add(this.label4);
-            this.pnlMenu.Controls.Add(this.label2);
-            this.pnlMenu.Controls.Add(this.label1);
-            this.pnlMenu.Controls.Add(this.lblAction);
-            this.pnlMenu.Controls.Add(this.lblTotalPrice);
-            this.pnlMenu.Location = new System.Drawing.Point(14, 10);
-            this.pnlMenu.Margin = new System.Windows.Forms.Padding(1);
-            this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(725, 31);
-            this.pnlMenu.TabIndex = 19;
+            pnlMenu.BackColor = Color.FromArgb(101, 183, 65);
+            pnlMenu.Controls.Add(label4);
+            pnlMenu.Controls.Add(label2);
+            pnlMenu.Controls.Add(label1);
+            pnlMenu.Controls.Add(lblAction);
+            pnlMenu.Controls.Add(lblTotalPrice);
+            pnlMenu.Location = new Point(14, 10);
+            pnlMenu.Margin = new Padding(1);
+            pnlMenu.Name = "pnlMenu";
+            pnlMenu.Size = new Size(725, 31);
+            pnlMenu.TabIndex = 19;
             // 
             // pnlProducts
             // 
-            this.pnlProducts.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pnlProducts.Location = new System.Drawing.Point(14, 45);
-            this.pnlProducts.Name = "pnlProducts";
-            this.pnlProducts.Size = new System.Drawing.Size(725, 336);
-            this.pnlProducts.TabIndex = 20;
+            pnlProducts.BackColor = SystemColors.ButtonHighlight;
+            pnlProducts.Location = new Point(14, 45);
+            pnlProducts.Name = "pnlProducts";
+            pnlProducts.Size = new Size(725, 336);
+            pnlProducts.TabIndex = 20;
             // 
             // UcProductStatus
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
-            this.Controls.Add(this.pnlProducts);
-            this.Controls.Add(this.pnlMenu);
-            this.Name = "UcProductStatus";
-            this.Size = new System.Drawing.Size(755, 393);
-            this.pnlMenu.ResumeLayout(false);
-            this.pnlMenu.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.WhiteSmoke;
+            Controls.Add(pnlProducts);
+            Controls.Add(pnlMenu);
+            Name = "UcProductStatus";
+            Size = new Size(755, 393);
+            pnlMenu.ResumeLayout(false);
+            pnlMenu.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion
