@@ -44,6 +44,8 @@ create table Account (
 );
 go
 
+--drop table CartItem;
+--go
 
 create table CartItem (
 	userId int references UserTable(userId),
@@ -51,3 +53,39 @@ create table CartItem (
 	primary key(userId, productId),
 );
 go
+
+--drop table ReceiveInfo;
+--go
+create table ReceiveInfo(
+	receiveId int primary key, 
+	userId int references UserTable(userId), 
+	name nvarchar(100), 
+	phone varchar(20), 
+	address nvarchar(200),
+);
+go
+--drop table OrderTable;
+--go
+
+create table OrderTable (
+	orderId int primary key, 
+	userId int references UserTable(userId), 
+	receiveId int references ReceiveInfo(receiveId), 
+	time datetime,
+	note nvarchar(2000), 
+	shippingMethod nvarchar(100),
+	shippingFee int,
+	paymentMethod nvarchar(100), 
+	status nvarchar(100)
+);
+go
+--drop table Rating;
+--go
+
+create table Rating (
+	senderUserId int references UserTable(userId),
+	receiverUserId int references UserTable(userId),
+	orderId int references OrderTable(OrderId),
+	marks int,
+	detail nvarchar(1000),
+);

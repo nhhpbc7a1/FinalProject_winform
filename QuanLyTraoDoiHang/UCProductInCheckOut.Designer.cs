@@ -1,6 +1,6 @@
 ﻿namespace QuanLyTraoDoiHang
 {
-    partial class UCProductInCart
+    partial class UCProductInCheckOut
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,50 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCProductInCart));
             this.lblPrice = new System.Windows.Forms.Label();
-            this.cbChoose = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblProductName = new System.Windows.Forms.Label();
             this.pbProductImage = new System.Windows.Forms.PictureBox();
-            this.btnCancel = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.lblCondition = new System.Windows.Forms.Label();
             this.lblOldPrice = new System.Windows.Forms.Label();
+            this.lblCondition = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbProductImage)).BeginInit();
             this.SuspendLayout();
             // 
             // lblPrice
             // 
-            this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblPrice.ForeColor = System.Drawing.Color.Red;
-            this.lblPrice.Location = new System.Drawing.Point(298, 51);
+            this.lblPrice.Location = new System.Drawing.Point(580, 58);
             this.lblPrice.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(47, 21);
-            this.lblPrice.TabIndex = 47;
+            this.lblPrice.Size = new System.Drawing.Size(111, 22);
+            this.lblPrice.TabIndex = 60;
             this.lblPrice.Text = "price";
-            // 
-            // cbChoose
-            // 
-            this.cbChoose.AutoSize = true;
-            this.cbChoose.Location = new System.Drawing.Point(1, 47);
-            this.cbChoose.Margin = new System.Windows.Forms.Padding(1);
-            this.cbChoose.Name = "cbChoose";
-            this.cbChoose.Size = new System.Drawing.Size(15, 14);
-            this.cbChoose.TabIndex = 49;
-            this.cbChoose.UseVisualStyleBackColor = true;
+            this.lblPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.lblProductName);
             this.panel1.Controls.Add(this.pbProductImage);
-            this.panel1.Location = new System.Drawing.Point(18, 15);
+            this.panel1.Location = new System.Drawing.Point(25, 16);
             this.panel1.Margin = new System.Windows.Forms.Padding(1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(229, 74);
-            this.panel1.TabIndex = 50;
+            this.panel1.TabIndex = 61;
             // 
             // lblProductName
             // 
@@ -95,75 +82,50 @@
             this.pbProductImage.TabIndex = 10;
             this.pbProductImage.TabStop = false;
             // 
-            // btnCancel
+            // lblOldPrice
             // 
-            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.btnCancel.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.btnCancel.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnCancel.BorderRadius = 20;
-            this.btnCancel.BorderSize = 0;
-            this.btnCancel.FlatAppearance.BorderSize = 0;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
-            this.btnCancel.Location = new System.Drawing.Point(608, 35);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(1);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(66, 37);
-            this.btnCancel.TabIndex = 51;
-            this.btnCancel.TextColor = System.Drawing.Color.White;
-            this.btnCancel.UseVisualStyleBackColor = false;
+            this.lblOldPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point);
+            this.lblOldPrice.Location = new System.Drawing.Point(580, 36);
+            this.lblOldPrice.Name = "lblOldPrice";
+            this.lblOldPrice.Size = new System.Drawing.Size(111, 22);
+            this.lblOldPrice.TabIndex = 63;
+            this.lblOldPrice.Text = "Old price";
+            this.lblOldPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblCondition
             // 
             this.lblCondition.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCondition.Location = new System.Drawing.Point(426, 32);
+            this.lblCondition.Location = new System.Drawing.Point(393, 34);
             this.lblCondition.Name = "lblCondition";
             this.lblCondition.Size = new System.Drawing.Size(134, 51);
-            this.lblCondition.TabIndex = 52;
+            this.lblCondition.TabIndex = 62;
             this.lblCondition.Text = "condition of product";
             // 
-            // lblOldPrice
-            // 
-            this.lblOldPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point);
-            this.lblOldPrice.Location = new System.Drawing.Point(269, 32);
-            this.lblOldPrice.Name = "lblOldPrice";
-            this.lblOldPrice.Size = new System.Drawing.Size(111, 22);
-            this.lblOldPrice.TabIndex = 53;
-            this.lblOldPrice.Text = "Old price";
-            this.lblOldPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // UCProductInCart
+            // UCProductInCheckOut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
+            this.Controls.Add(this.lblPrice);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblOldPrice);
             this.Controls.Add(this.lblCondition);
-            this.Controls.Add(this.lblPrice);
-            this.Controls.Add(this.cbChoose);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnCancel);
-            this.Margin = new System.Windows.Forms.Padding(5);
-            this.Name = "UCProductInCart";
+            this.Name = "UCProductInCheckOut";
             this.Size = new System.Drawing.Size(715, 128);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbProductImage)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
+
         public Label lblPrice;
-        public CheckBox cbChoose;
         public Panel panel1;
         public Label lblProductName;
         public PictureBox pbProductImage;
-        public RJControls.RButton btnCancel;
-        private Label lblCondition;
         private Label lblOldPrice;
+        private Label lblCondition;
     }
 }

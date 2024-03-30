@@ -30,7 +30,9 @@ namespace QuanLyTraoDoiHang
             Product product = ProductDAO.SelectById(cartItem.productId);
             pbProductImage.BackgroundImage = product.image;
             lblProductName.Text = product.name;
-            lblProductPrice.Text = product.price.ToString();
+            lblPrice.Text = product.price.ToString();
+            lblCondition.Text = product.condition.ToString();
+            lblOldPrice.Text = product.originalPrice.ToString();
         }
 
     }
