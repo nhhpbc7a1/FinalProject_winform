@@ -28,300 +28,306 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.picboxProduct = new System.Windows.Forms.PictureBox();
-            this.txtOriginalPrice = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnSave = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtCondition = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtWarranty = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtOrigin = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtPrice = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.richTextBoxDescription = new System.Windows.Forms.RichTextBox();
-            this.dtpBought = new System.Windows.Forms.DateTimePicker();
-            this.btnChangePicture = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.txtCategory = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtBrand = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.picboxProduct)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddNewProduct));
+            picboxProduct = new PictureBox();
+            txtOriginalPrice = new TextBox();
+            label1 = new Label();
+            btnSave = new RJControls.RButton();
+            label2 = new Label();
+            txtCondition = new TextBox();
+            label3 = new Label();
+            txtWarranty = new TextBox();
+            label4 = new Label();
+            label5 = new Label();
+            txtOrigin = new TextBox();
+            label6 = new Label();
+            txtName = new TextBox();
+            label7 = new Label();
+            txtPrice = new TextBox();
+            label8 = new Label();
+            richTextBoxDescription = new RichTextBox();
+            dtpBought = new DateTimePicker();
+            btnChangePicture = new Button();
+            panel1 = new Panel();
+            txtCategory = new TextBox();
+            label10 = new Label();
+            txtBrand = new TextBox();
+            label9 = new Label();
+            ((System.ComponentModel.ISupportInitialize)picboxProduct).BeginInit();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // picboxProduct
             // 
-            this.picboxProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picboxProduct.Location = new System.Drawing.Point(74, 12);
-            this.picboxProduct.Name = "picboxProduct";
-            this.picboxProduct.Size = new System.Drawing.Size(125, 102);
-            this.picboxProduct.TabIndex = 0;
-            this.picboxProduct.TabStop = false;
+            picboxProduct.BackColor = Color.White;
+            picboxProduct.BackgroundImage = (Image)resources.GetObject("picboxProduct.BackgroundImage");
+            picboxProduct.BackgroundImageLayout = ImageLayout.Center;
+            picboxProduct.Location = new Point(74, 12);
+            picboxProduct.Name = "picboxProduct";
+            picboxProduct.Size = new Size(125, 102);
+            picboxProduct.TabIndex = 0;
+            picboxProduct.TabStop = false;
             // 
             // txtOriginalPrice
             // 
-            this.txtOriginalPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtOriginalPrice.Location = new System.Drawing.Point(161, 173);
-            this.txtOriginalPrice.Name = "txtOriginalPrice";
-            this.txtOriginalPrice.Size = new System.Drawing.Size(318, 29);
-            this.txtOriginalPrice.TabIndex = 1;
+            txtOriginalPrice.Font = new Font("Lato Semibold", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            txtOriginalPrice.Location = new Point(161, 173);
+            txtOriginalPrice.Name = "txtOriginalPrice";
+            txtOriginalPrice.Size = new Size(318, 27);
+            txtOriginalPrice.TabIndex = 1;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(13, 173);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 21);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Original Price";
+            label1.AutoSize = true;
+            label1.Font = new Font("Lato Semibold", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(13, 173);
+            label1.Name = "label1";
+            label1.Size = new Size(106, 19);
+            label1.TabIndex = 2;
+            label1.Text = "Original Price";
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.LightCoral;
-            this.btnSave.BackgroundColor = System.Drawing.Color.LightCoral;
-            this.btnSave.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnSave.BorderRadius = 20;
-            this.btnSave.BorderSize = 0;
-            this.btnSave.FlatAppearance.BorderSize = 0;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(678, 570);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(188, 50);
-            this.btnSave.TabIndex = 3;
-            this.btnSave.Text = "Save";
-            this.btnSave.TextColor = System.Drawing.Color.White;
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            btnSave.BackColor = Color.FromArgb(30, 106, 17);
+            btnSave.BackgroundColor = Color.FromArgb(30, 106, 17);
+            btnSave.BorderColor = Color.PaleVioletRed;
+            btnSave.BorderRadius = 20;
+            btnSave.BorderSize = 0;
+            btnSave.FlatAppearance.BorderSize = 0;
+            btnSave.FlatStyle = FlatStyle.Flat;
+            btnSave.Font = new Font("Lato", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSave.ForeColor = Color.White;
+            btnSave.Location = new Point(713, 563);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(188, 50);
+            btnSave.TabIndex = 3;
+            btnSave.Text = "Save";
+            btnSave.TextColor = Color.White;
+            btnSave.UseVisualStyleBackColor = false;
+            btnSave.Click += btnSave_Click;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(13, 223);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 21);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Condition";
+            label2.AutoSize = true;
+            label2.Font = new Font("Lato Semibold", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(13, 223);
+            label2.Name = "label2";
+            label2.Size = new Size(79, 19);
+            label2.TabIndex = 5;
+            label2.Text = "Condition";
             // 
             // txtCondition
             // 
-            this.txtCondition.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtCondition.Location = new System.Drawing.Point(161, 223);
-            this.txtCondition.Name = "txtCondition";
-            this.txtCondition.Size = new System.Drawing.Size(318, 29);
-            this.txtCondition.TabIndex = 4;
+            txtCondition.Font = new Font("Lato Semibold", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            txtCondition.Location = new Point(161, 223);
+            txtCondition.Name = "txtCondition";
+            txtCondition.Size = new Size(318, 27);
+            txtCondition.TabIndex = 4;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(13, 273);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 21);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Warranty Policy";
+            label3.AutoSize = true;
+            label3.Font = new Font("Lato Semibold", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(13, 273);
+            label3.Name = "label3";
+            label3.Size = new Size(123, 19);
+            label3.TabIndex = 7;
+            label3.Text = "Warranty Policy";
             // 
             // txtWarranty
             // 
-            this.txtWarranty.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtWarranty.Location = new System.Drawing.Point(161, 273);
-            this.txtWarranty.Name = "txtWarranty";
-            this.txtWarranty.Size = new System.Drawing.Size(318, 29);
-            this.txtWarranty.TabIndex = 6;
+            txtWarranty.Font = new Font("Lato Semibold", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            txtWarranty.Location = new Point(161, 273);
+            txtWarranty.Name = "txtWarranty";
+            txtWarranty.Size = new Size(318, 27);
+            txtWarranty.TabIndex = 6;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(13, 323);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 21);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Day bought";
+            label4.AutoSize = true;
+            label4.Font = new Font("Lato Semibold", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(13, 323);
+            label4.Name = "label4";
+            label4.Size = new Size(91, 19);
+            label4.TabIndex = 9;
+            label4.Text = "Day bought";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(13, 423);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 21);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Origin";
+            label5.AutoSize = true;
+            label5.Font = new Font("Lato Semibold", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(13, 423);
+            label5.Name = "label5";
+            label5.Size = new Size(53, 19);
+            label5.TabIndex = 11;
+            label5.Text = "Origin";
             // 
             // txtOrigin
             // 
-            this.txtOrigin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtOrigin.Location = new System.Drawing.Point(161, 423);
-            this.txtOrigin.Name = "txtOrigin";
-            this.txtOrigin.Size = new System.Drawing.Size(318, 29);
-            this.txtOrigin.TabIndex = 10;
+            txtOrigin.Font = new Font("Lato Semibold", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            txtOrigin.Location = new Point(161, 423);
+            txtOrigin.Name = "txtOrigin";
+            txtOrigin.Size = new Size(318, 27);
+            txtOrigin.TabIndex = 10;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(13, 73);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 21);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Name";
+            label6.AutoSize = true;
+            label6.Font = new Font("Lato Semibold", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Location = new Point(13, 73);
+            label6.Name = "label6";
+            label6.Size = new Size(51, 19);
+            label6.TabIndex = 13;
+            label6.Text = "Name";
             // 
             // txtName
             // 
-            this.txtName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtName.Location = new System.Drawing.Point(161, 73);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(318, 29);
-            this.txtName.TabIndex = 12;
+            txtName.Font = new Font("Lato Semibold", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            txtName.Location = new Point(161, 73);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(318, 27);
+            txtName.TabIndex = 12;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(13, 123);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 21);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Price";
+            label7.AutoSize = true;
+            label7.Font = new Font("Lato Semibold", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Location = new Point(13, 123);
+            label7.Name = "label7";
+            label7.Size = new Size(46, 19);
+            label7.TabIndex = 15;
+            label7.Text = "Price";
             // 
             // txtPrice
             // 
-            this.txtPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtPrice.Location = new System.Drawing.Point(161, 123);
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(318, 29);
-            this.txtPrice.TabIndex = 14;
+            txtPrice.Font = new Font("Lato Semibold", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            txtPrice.Location = new Point(161, 123);
+            txtPrice.Name = "txtPrice";
+            txtPrice.Size = new Size(318, 27);
+            txtPrice.TabIndex = 14;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(724, 32);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(89, 21);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "Description";
+            label8.AutoSize = true;
+            label8.Font = new Font("Lato Semibold", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Location = new Point(737, 45);
+            label8.Name = "label8";
+            label8.Size = new Size(92, 19);
+            label8.TabIndex = 17;
+            label8.Text = "Description";
             // 
             // richTextBoxDescription
             // 
-            this.richTextBoxDescription.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.richTextBoxDescription.Location = new System.Drawing.Point(591, 75);
-            this.richTextBoxDescription.Name = "richTextBoxDescription";
-            this.richTextBoxDescription.Size = new System.Drawing.Size(356, 467);
-            this.richTextBoxDescription.TabIndex = 18;
-            this.richTextBoxDescription.Text = "";
+            richTextBoxDescription.Font = new Font("Lato Semibold", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            richTextBoxDescription.Location = new Point(591, 75);
+            richTextBoxDescription.Name = "richTextBoxDescription";
+            richTextBoxDescription.Size = new Size(356, 467);
+            richTextBoxDescription.TabIndex = 18;
+            richTextBoxDescription.Text = "";
             // 
             // dtpBought
             // 
-            this.dtpBought.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dtpBought.Location = new System.Drawing.Point(161, 323);
-            this.dtpBought.Name = "dtpBought";
-            this.dtpBought.Size = new System.Drawing.Size(318, 29);
-            this.dtpBought.TabIndex = 19;
+            dtpBought.Font = new Font("Lato Semibold", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            dtpBought.Location = new Point(161, 323);
+            dtpBought.Name = "dtpBought";
+            dtpBought.Size = new Size(318, 27);
+            dtpBought.TabIndex = 19;
             // 
             // btnChangePicture
             // 
-            this.btnChangePicture.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnChangePicture.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnChangePicture.Location = new System.Drawing.Point(224, 43);
-            this.btnChangePicture.Name = "btnChangePicture";
-            this.btnChangePicture.Size = new System.Drawing.Size(156, 45);
-            this.btnChangePicture.TabIndex = 20;
-            this.btnChangePicture.Text = "Change Image";
-            this.btnChangePicture.UseVisualStyleBackColor = false;
-            this.btnChangePicture.Click += new System.EventHandler(this.btnChangePicture_Click_1);
+            btnChangePicture.BackColor = Color.White;
+            btnChangePicture.BackgroundImageLayout = ImageLayout.Center;
+            btnChangePicture.Font = new Font("Lato", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            btnChangePicture.ForeColor = Color.FromArgb(30, 106, 17);
+            btnChangePicture.Location = new Point(297, 45);
+            btnChangePicture.Name = "btnChangePicture";
+            btnChangePicture.Size = new Size(156, 45);
+            btnChangePicture.TabIndex = 20;
+            btnChangePicture.Text = "Change Image";
+            btnChangePicture.UseVisualStyleBackColor = false;
+            btnChangePicture.Click += btnChangePicture_Click_1;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.txtCategory);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.txtBrand);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.txtName);
-            this.panel1.Controls.Add(this.txtOriginalPrice);
-            this.panel1.Controls.Add(this.dtpBought);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.txtCondition);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.txtWarranty);
-            this.panel1.Controls.Add(this.txtPrice);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.txtOrigin);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(25, 120);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(525, 505);
-            this.panel1.TabIndex = 21;
+            panel1.BackColor = Color.White;
+            panel1.Controls.Add(txtCategory);
+            panel1.Controls.Add(label10);
+            panel1.Controls.Add(txtBrand);
+            panel1.Controls.Add(label9);
+            panel1.Controls.Add(txtName);
+            panel1.Controls.Add(txtOriginalPrice);
+            panel1.Controls.Add(dtpBought);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(txtCondition);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(label7);
+            panel1.Controls.Add(txtWarranty);
+            panel1.Controls.Add(txtPrice);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(label6);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(txtOrigin);
+            panel1.Controls.Add(label5);
+            panel1.Font = new Font("Lato Semibold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point);
+            panel1.Location = new Point(25, 120);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(525, 505);
+            panel1.TabIndex = 21;
             // 
             // txtCategory
             // 
-            this.txtCategory.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtCategory.Location = new System.Drawing.Point(161, 23);
-            this.txtCategory.Name = "txtCategory";
-            this.txtCategory.Size = new System.Drawing.Size(318, 29);
-            this.txtCategory.TabIndex = 24;
+            txtCategory.Font = new Font("Lato Semibold", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            txtCategory.Location = new Point(161, 23);
+            txtCategory.Name = "txtCategory";
+            txtCategory.Size = new Size(318, 27);
+            txtCategory.TabIndex = 24;
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(13, 23);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(79, 21);
-            this.label10.TabIndex = 25;
-            this.label10.Text = "Catergory";
+            label10.AutoSize = true;
+            label10.Font = new Font("Lato Semibold", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.Location = new Point(13, 23);
+            label10.Name = "label10";
+            label10.Size = new Size(80, 19);
+            label10.TabIndex = 25;
+            label10.Text = "Catergory";
             // 
             // txtBrand
             // 
-            this.txtBrand.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtBrand.Location = new System.Drawing.Point(161, 373);
-            this.txtBrand.Name = "txtBrand";
-            this.txtBrand.Size = new System.Drawing.Size(318, 29);
-            this.txtBrand.TabIndex = 22;
+            txtBrand.Font = new Font("Lato Semibold", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            txtBrand.Location = new Point(161, 373);
+            txtBrand.Name = "txtBrand";
+            txtBrand.Size = new Size(318, 27);
+            txtBrand.TabIndex = 22;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(13, 373);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(51, 21);
-            this.label9.TabIndex = 23;
-            this.label9.Text = "Brand";
+            label9.AutoSize = true;
+            label9.Font = new Font("Lato Semibold", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.Location = new Point(13, 373);
+            label9.Name = "label9";
+            label9.Size = new Size(51, 19);
+            label9.TabIndex = 23;
+            label9.Text = "Brand";
             // 
             // FormAddNewProduct
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(984, 661);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnChangePicture);
-            this.Controls.Add(this.richTextBoxDescription);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.picboxProduct);
-            this.Name = "FormAddNewProduct";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormAddNewProduct";
-            ((System.ComponentModel.ISupportInitialize)(this.picboxProduct)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleMode = AutoScaleMode.None;
+            ClientSize = new Size(984, 661);
+            Controls.Add(panel1);
+            Controls.Add(btnChangePicture);
+            Controls.Add(richTextBoxDescription);
+            Controls.Add(label8);
+            Controls.Add(btnSave);
+            Controls.Add(picboxProduct);
+            Name = "FormAddNewProduct";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "FormAddNewProduct";
+            ((System.ComponentModel.ISupportInitialize)picboxProduct).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
