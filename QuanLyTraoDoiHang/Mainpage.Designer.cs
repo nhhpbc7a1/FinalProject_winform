@@ -81,7 +81,7 @@ namespace QuanLyTraoDoiHang
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(193, 242, 176);
+            panel1.BackColor = Color.White;
             panel1.Controls.Add(pnlMainPage);
             panel1.Controls.Add(btnCart);
             panel1.Controls.Add(btnAddProduct);
@@ -106,8 +106,8 @@ namespace QuanLyTraoDoiHang
             // 
             // btnMainPage
             // 
-            btnMainPage.BackColor = Color.FromArgb(193, 242, 176);
-            btnMainPage.BackgroundColor = Color.FromArgb(193, 242, 176);
+            btnMainPage.BackColor = Color.White;
+            btnMainPage.BackgroundColor = Color.White;
             btnMainPage.BackgroundImage = (Image)resources.GetObject("btnMainPage.BackgroundImage");
             btnMainPage.BackgroundImageLayout = ImageLayout.Stretch;
             btnMainPage.BorderColor = Color.FromArgb(244, 237, 204);
@@ -126,18 +126,18 @@ namespace QuanLyTraoDoiHang
             // lblMainPage
             // 
             lblMainPage.AutoSize = true;
-            lblMainPage.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblMainPage.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblMainPage.ForeColor = Color.FromArgb(30, 106, 17);
             lblMainPage.Location = new Point(71, 17);
             lblMainPage.Name = "lblMainPage";
-            lblMainPage.Size = new Size(51, 21);
+            lblMainPage.Size = new Size(51, 19);
             lblMainPage.TabIndex = 1;
             lblMainPage.Text = "KoHa";
             // 
             // btnCart
             // 
-            btnCart.BackColor = Color.FromArgb(193, 242, 176);
-            btnCart.BackgroundColor = Color.FromArgb(193, 242, 176);
+            btnCart.BackColor = Color.White;
+            btnCart.BackgroundColor = Color.White;
             btnCart.BorderColor = Color.PaleVioletRed;
             btnCart.BorderRadius = 20;
             btnCart.BorderSize = 0;
@@ -154,8 +154,8 @@ namespace QuanLyTraoDoiHang
             // 
             // btnAddProduct
             // 
-            btnAddProduct.BackColor = Color.FromArgb(193, 242, 176);
-            btnAddProduct.BackgroundColor = Color.FromArgb(193, 242, 176);
+            btnAddProduct.BackColor = Color.White;
+            btnAddProduct.BackgroundColor = Color.White;
             btnAddProduct.BorderColor = Color.FromArgb(193, 242, 176);
             btnAddProduct.BorderRadius = 20;
             btnAddProduct.BorderSize = 0;
@@ -192,7 +192,7 @@ namespace QuanLyTraoDoiHang
             btnSearch.BorderSize = 0;
             btnSearch.FlatAppearance.BorderSize = 0;
             btnSearch.FlatStyle = FlatStyle.Flat;
-            btnSearch.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSearch.Font = new Font("Lato", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnSearch.ForeColor = Color.White;
             btnSearch.Image = (Image)resources.GetObject("btnSearch.Image");
             btnSearch.ImageAlign = ContentAlignment.MiddleLeft;
@@ -208,39 +208,39 @@ namespace QuanLyTraoDoiHang
             // lblSignIn
             // 
             lblSignIn.AutoSize = true;
-            lblSignIn.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblSignIn.Font = new Font("Lato", 11F, FontStyle.Bold, GraphicsUnit.Point);
             lblSignIn.ForeColor = SystemColors.ButtonHighlight;
-            lblSignIn.Location = new Point(136, 12);
+            lblSignIn.Location = new Point(136, 13);
             lblSignIn.Name = "lblSignIn";
-            lblSignIn.Size = new Size(47, 17);
+            lblSignIn.Size = new Size(52, 18);
             lblSignIn.TabIndex = 14;
             lblSignIn.Text = "Sign in";
             // 
             // lblSignUp
             // 
             lblSignUp.AutoSize = true;
-            lblSignUp.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblSignUp.Font = new Font("Lato", 11F, FontStyle.Bold, GraphicsUnit.Point);
             lblSignUp.ForeColor = SystemColors.ButtonHighlight;
-            lblSignUp.Location = new Point(224, 12);
+            lblSignUp.Location = new Point(225, 13);
             lblSignUp.Name = "lblSignUp";
-            lblSignUp.Size = new Size(52, 17);
+            lblSignUp.Size = new Size(57, 18);
             lblSignUp.TabIndex = 15;
             lblSignUp.Text = "Sign up";
             // 
             // lblSellerChannel
             // 
             lblSellerChannel.AutoSize = true;
-            lblSellerChannel.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblSellerChannel.Font = new Font("Lato", 11F, FontStyle.Bold, GraphicsUnit.Point);
             lblSellerChannel.ForeColor = SystemColors.ButtonHighlight;
             lblSellerChannel.Location = new Point(3, 13);
             lblSellerChannel.Name = "lblSellerChannel";
-            lblSellerChannel.Size = new Size(88, 17);
+            lblSellerChannel.Size = new Size(101, 18);
             lblSellerChannel.TabIndex = 16;
             lblSellerChannel.Text = "Seller channel";
             // 
             // panel2
             // 
-            panel2.BackColor = Color.FromArgb(101, 183, 65);
+            panel2.BackColor = Color.FromArgb(30, 106, 17);
             panel2.Controls.Add(pnlAccount);
             panel2.Controls.Add(panel6);
             panel2.Controls.Add(panel3);
@@ -270,11 +270,11 @@ namespace QuanLyTraoDoiHang
             // lblUsername
             // 
             lblUsername.AutoSize = true;
-            lblUsername.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lblUsername.Font = new Font("Lato Heavy", 10F, FontStyle.Bold, GraphicsUnit.Point);
             lblUsername.ForeColor = Color.White;
             lblUsername.Location = new Point(26, 6);
             lblUsername.Name = "lblUsername";
-            lblUsername.Size = new Size(56, 15);
+            lblUsername.Size = new Size(65, 17);
             lblUsername.TabIndex = 0;
             lblUsername.Text = "HuongLe";
             // 
@@ -299,7 +299,7 @@ namespace QuanLyTraoDoiHang
             rButton2.FlatStyle = FlatStyle.Flat;
             rButton2.ForeColor = Color.Wheat;
             rButton2.Image = (Image)resources.GetObject("rButton2.Image");
-            rButton2.Location = new Point(69, 7);
+            rButton2.Location = new Point(69, 6);
             rButton2.Name = "rButton2";
             rButton2.Size = new Size(22, 22);
             rButton2.TabIndex = 20;
@@ -317,7 +317,7 @@ namespace QuanLyTraoDoiHang
             btnMinimize.FlatStyle = FlatStyle.Flat;
             btnMinimize.ForeColor = Color.White;
             btnMinimize.Image = (Image)resources.GetObject("btnMinimize.Image");
-            btnMinimize.Location = new Point(42, 7);
+            btnMinimize.Location = new Point(42, 6);
             btnMinimize.Name = "btnMinimize";
             btnMinimize.Size = new Size(21, 21);
             btnMinimize.TabIndex = 2;
@@ -335,7 +335,7 @@ namespace QuanLyTraoDoiHang
             btnExit.FlatStyle = FlatStyle.Flat;
             btnExit.ForeColor = Color.White;
             btnExit.Image = (Image)resources.GetObject("btnExit.Image");
-            btnExit.Location = new Point(16, 7);
+            btnExit.Location = new Point(16, 6);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(21, 21);
             btnExit.TabIndex = 0;
@@ -345,7 +345,7 @@ namespace QuanLyTraoDoiHang
             // panel3
             // 
             panel3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            panel3.BackColor = Color.FromArgb(101, 183, 65);
+            panel3.BackColor = Color.FromArgb(30, 106, 17);
             panel3.Controls.Add(lblSignUp);
             panel3.Controls.Add(lblSignIn);
             panel3.Controls.Add(lblSellerChannel);
@@ -366,6 +366,7 @@ namespace QuanLyTraoDoiHang
             // 
             // pnl_Body
             // 
+            pnl_Body.BackColor = Color.White;
             pnl_Body.Dock = DockStyle.Fill;
             pnl_Body.Location = new Point(0, 100);
             pnl_Body.Name = "pnl_Body";
