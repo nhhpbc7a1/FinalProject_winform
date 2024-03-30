@@ -15,16 +15,25 @@ namespace QuanLyTraoDoiHang
         public FCheckOut()
         {
             InitializeComponent();
+
+            Load += FCheckOut_Load;
         }
 
-        private void ucCartProduct1_Load(object sender, EventArgs e)
+        private void FCheckOut_Load(object? sender, EventArgs e)
         {
+            pnlProducts.Controls.Clear();
+            foreach (CartItem x in cartItems)
+            {
+                UCProductInCart ucProduct = new UCProductInCart();
+                ucProduct.cartItem = x;
+                ucProduct.btnCancel.Enabled = false;
+                ucProduct.cbChoose.Checked = true;
+                ucProduct.cbChoose.Enabled = false;
 
+                pnlProducts.Controls.Add(ucProduct);
+            }
         }
 
-        private void lblCustomerNote_Click(object sender, EventArgs e)
-        {
-
-        }
+        public List<CartItem> cartItems = new List<CartItem>();
     }
 }

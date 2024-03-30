@@ -116,7 +116,23 @@ namespace QuanLyTraoDoiHang
             }
             else
             {
-                OpenChildForm(new FormCart());
+                FormCart formCart = new FormCart();
+
+                void btnCheckOut_Click(object sender, EventArgs e)
+                {
+                    FCheckOut fCheckOut = new FCheckOut();
+                    foreach (UCProductInCart c in formCart.pnlProducts.Controls)
+                    {
+                        if (c.cbChoose.Checked == true)
+                        {
+                            fCheckOut.cartItems.Add(c.cartItem);
+                        }
+                    }
+
+                    OpenChildForm(fCheckOut);
+                }
+                formCart.btnCheckOut.Click += btnCheckOut_Click;
+                OpenChildForm(formCart);
             }
         }
 
