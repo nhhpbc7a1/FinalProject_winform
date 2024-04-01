@@ -33,9 +33,10 @@
             this.lblName = new System.Windows.Forms.Label();
             this.lblPrice = new System.Windows.Forms.Label();
             this.btnBuyNow = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblOriginalPrice = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // ptbImage
@@ -55,7 +56,7 @@
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblName.Location = new System.Drawing.Point(0, 150);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(200, 21);
+            this.lblName.Size = new System.Drawing.Size(200, 33);
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Product\'s name";
             this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -65,7 +66,7 @@
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblPrice.ForeColor = System.Drawing.Color.Red;
-            this.lblPrice.Location = new System.Drawing.Point(37, 178);
+            this.lblPrice.Location = new System.Drawing.Point(22, 222);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(56, 21);
             this.lblPrice.TabIndex = 3;
@@ -82,7 +83,7 @@
             this.btnBuyNow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuyNow.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnBuyNow.ForeColor = System.Drawing.Color.White;
-            this.btnBuyNow.Location = new System.Drawing.Point(114, 174);
+            this.btnBuyNow.Location = new System.Drawing.Point(115, 213);
             this.btnBuyNow.Name = "btnBuyNow";
             this.btnBuyNow.Size = new System.Drawing.Size(73, 30);
             this.btnBuyNow.TabIndex = 5;
@@ -90,30 +91,53 @@
             this.btnBuyNow.TextColor = System.Drawing.Color.White;
             this.btnBuyNow.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
+            // label1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(13, 181);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(27, 32);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(12, 225);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(14, 15);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "đ";
+            // 
+            // lblOriginalPrice
+            // 
+            this.lblOriginalPrice.AutoSize = true;
+            this.lblOriginalPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point);
+            this.lblOriginalPrice.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblOriginalPrice.Location = new System.Drawing.Point(22, 201);
+            this.lblOriginalPrice.Name = "lblOriginalPrice";
+            this.lblOriginalPrice.Size = new System.Drawing.Size(64, 21);
+            this.lblOriginalPrice.TabIndex = 6;
+            this.lblOriginalPrice.Text = "100000";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(12, 206);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(14, 15);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "đ";
             // 
             // UCProductOnMainpage
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.lblOriginalPrice);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnBuyNow);
             this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.ptbImage);
             this.Margin = new System.Windows.Forms.Padding(10, 4, 10, 4);
             this.Name = "UCProductOnMainpage";
-            this.Size = new System.Drawing.Size(200, 213);
+            this.Size = new System.Drawing.Size(200, 255);
             this.Load += new System.EventHandler(this.UCProductOnMainpage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ptbImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,6 +148,8 @@
         public Label lblName;
         public Label lblPrice;
         private RJControls.RButton btnBuyNow;
-        private PictureBox pictureBox1;
+        private Label label1;
+        private Label lblOriginalPrice;
+        private Label label2;
     }
 }

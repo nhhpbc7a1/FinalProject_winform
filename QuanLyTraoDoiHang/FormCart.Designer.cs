@@ -43,13 +43,15 @@ namespace QuanLyTraoDoiHang
             this.label1 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label100 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pnlCheckOut.SuspendLayout();
             this.pnlMenu.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlCheckOut
             // 
-            this.pnlCheckOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(115)))), ((int)(((byte)(82)))));
+            this.pnlCheckOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(6)))), ((int)(((byte)(55)))));
             this.pnlCheckOut.Controls.Add(this.label2);
             this.pnlCheckOut.Controls.Add(this.btnCheckOut);
             this.pnlCheckOut.Controls.Add(this.lblTotalPrice);
@@ -159,10 +161,13 @@ namespace QuanLyTraoDoiHang
             // 
             // pnlProducts
             // 
-            this.pnlProducts.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pnlProducts.Location = new System.Drawing.Point(124, 68);
+            this.pnlProducts.AutoSize = true;
+            this.pnlProducts.BackColor = System.Drawing.Color.Transparent;
+            this.pnlProducts.Location = new System.Drawing.Point(123, 64);
+            this.pnlProducts.MaximumSize = new System.Drawing.Size(725, 10000);
+            this.pnlProducts.MinimumSize = new System.Drawing.Size(725, 0);
             this.pnlProducts.Name = "pnlProducts";
-            this.pnlProducts.Size = new System.Drawing.Size(725, 403);
+            this.pnlProducts.Size = new System.Drawing.Size(725, 100);
             this.pnlProducts.TabIndex = 25;
             // 
             // pnlMenu
@@ -172,7 +177,7 @@ namespace QuanLyTraoDoiHang
             this.pnlMenu.Controls.Add(this.label1);
             this.pnlMenu.Controls.Add(this.label31);
             this.pnlMenu.Controls.Add(this.label100);
-            this.pnlMenu.Location = new System.Drawing.Point(124, 33);
+            this.pnlMenu.Location = new System.Drawing.Point(123, 29);
             this.pnlMenu.Margin = new System.Windows.Forms.Padding(1);
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(725, 31);
@@ -226,15 +231,26 @@ namespace QuanLyTraoDoiHang
             this.label100.TabIndex = 15;
             this.label100.Text = "Price";
             // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.Controls.Add(this.pnlMenu);
+            this.panel1.Controls.Add(this.pnlProducts);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(984, 467);
+            this.panel1.TabIndex = 26;
+            // 
             // FormCart
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
             this.ClientSize = new System.Drawing.Size(984, 561);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlCheckOut);
-            this.Controls.Add(this.pnlProducts);
-            this.Controls.Add(this.pnlMenu);
             this.Margin = new System.Windows.Forms.Padding(1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -245,6 +261,8 @@ namespace QuanLyTraoDoiHang
             this.pnlCheckOut.PerformLayout();
             this.pnlMenu.ResumeLayout(false);
             this.pnlMenu.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -264,5 +282,6 @@ namespace QuanLyTraoDoiHang
         private Label label31;
         private Label label100;
         public RJControls.RButton btnCheckOut;
+        private Panel panel1;
     }
 }

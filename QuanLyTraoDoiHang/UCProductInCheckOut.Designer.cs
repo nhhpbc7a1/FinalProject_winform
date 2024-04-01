@@ -106,12 +106,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblOldPrice);
             this.Controls.Add(this.lblCondition);
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "UCProductInCheckOut";
-            this.Size = new System.Drawing.Size(715, 128);
+            this.Size = new System.Drawing.Size(713, 126);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbProductImage)).EndInit();

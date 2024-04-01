@@ -25,7 +25,7 @@ namespace QuanLyTraoDoiHang
             lblSellerChannel.Click += lblSellerChannel_Click;
             lblSignUp.Click += lblSignup_Click;
             lblSignIn.Click += lblSignin_Click;
-            this.pnlAccount.Location = new Point(798, 9);
+            this.pnlAccount.Location = new Point(850, 9);
 
             pnlAccount.Click += Account_Click;
             picProfile.Click += Account_Click;
@@ -63,13 +63,15 @@ namespace QuanLyTraoDoiHang
                 pnlAccount.Visible = true;
                 lblSignIn.Visible = false;
                 lblSignUp.Visible = false;
+                lblUsername.Text = AccountDAO.SelectByUserID(Program.currentUserId).username;
+                picProfile.BackgroundImage = Program.CurrentUser().image;
+
             }
             else
             {
                 pnlAccount.Visible = false;
                 lblSignIn.Visible = true;
                 lblSignUp.Visible = true;
-
             }
         }
 
@@ -120,15 +122,16 @@ namespace QuanLyTraoDoiHang
 
                 void btnCheckOut_Click(object sender, EventArgs e)
                 {
-                    FCheckOut fCheckOut = new FCheckOut();
-                    foreach (UCProductInCart c in formCart.pnlProducts.Controls)
+                    List<Product> listTmp = new List<Product>();
+                    foreach (UCCartEachShop c in formCart.pnlProducts.Controls)
                     {
-                        if (c.cbChoose.Checked == true)
-                        {
-                            fCheckOut.cartItems.Add(c.cartItem);
-                        }
+                        foreach (UCProductInCart x in c.pnlProducts.Controls)
+                            if (x.cbChoose.Checked == true)
+                            {
+                                listTmp.Add(ProductDAO.SelectById(x.cartItem.productId));
+                            }
                     }
-
+                    FCheckOut fCheckOut = new FCheckOut(listTmp);
                     OpenChildForm(fCheckOut);
                 }
                 formCart.btnCheckOut.Click += btnCheckOut_Click;

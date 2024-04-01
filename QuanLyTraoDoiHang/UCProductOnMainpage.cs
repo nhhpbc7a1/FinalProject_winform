@@ -30,6 +30,7 @@ namespace QuanLyTraoDoiHang
             }
             this.Click += OpenFormDetail;
         }
+
         void BuyNow(object sender, EventArgs e)
         {
             CartItem x = new CartItem(Program.currentUserId, product.productId);
@@ -48,6 +49,7 @@ namespace QuanLyTraoDoiHang
             ptbImage.BackgroundImage = product.image;
             lblName.Text = product.name;
             lblPrice.Text = product.price.ToString();
+            lblOriginalPrice.Text = product.originalPrice.ToString();
         }
         private void OpenFormDetail(object sender, EventArgs e)
         {
