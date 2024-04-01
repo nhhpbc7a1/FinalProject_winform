@@ -12,9 +12,17 @@ namespace QuanLyTraoDoiHang
 {
     public partial class UCProductInCheckOut : UserControl
     {
-        public UCProductInCheckOut()
+        public Product product; 
+        public UCProductInCheckOut(Product product)
         {
             InitializeComponent();
+            this.product = product;
+            pbProductImage.BackgroundImage = product.image;
+            lblProductName.Text = product.name;
+            lblCondition.Text = product.condition;
+            lblOldPrice.Text = product.originalPrice.ToString();
+            lblPrice.Text = product.price.ToString();
         }
+
     }
 }

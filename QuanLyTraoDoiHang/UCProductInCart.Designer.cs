@@ -145,7 +145,7 @@
             this.Controls.Add(this.cbChoose);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnCancel);
-            this.Margin = new System.Windows.Forms.Padding(5);
+            this.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.Name = "UCProductInCart";
             this.Size = new System.Drawing.Size(715, 128);
             this.panel1.ResumeLayout(false);

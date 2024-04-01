@@ -292,7 +292,6 @@
             btnExit.TabIndex = 0;
             btnExit.TextColor = Color.White;
             btnExit.UseVisualStyleBackColor = false;
-            btnExit.Click += btnExit_Click_1;
             // 
             // panel3
             // 

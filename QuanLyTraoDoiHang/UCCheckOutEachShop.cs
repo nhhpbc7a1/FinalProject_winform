@@ -15,11 +15,18 @@ namespace QuanLyTraoDoiHang
         public UCCheckOutEachShop()
         {
             InitializeComponent();
+            Load += UCCheckOutEachShop_Load;
+            comboBoxShippingMethod.SelectedIndexChanged += ComboBoxShippingMethod_SelectedIndexChanged;
         }
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void ComboBoxShippingMethod_SelectedIndexChanged(object? sender, EventArgs e)
         {
+            lblShippingFee.Text = ((comboBoxShippingMethod.SelectedIndex + 1) * 20000).ToString();
+        }
 
+        private void UCCheckOutEachShop_Load(object? sender, EventArgs e)
+        {
+            comboBoxShippingMethod.SelectedIndex = 0;
         }
     }
 }

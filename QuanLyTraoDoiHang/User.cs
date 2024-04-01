@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuanLyTraoDoiHang
 {
-    internal class User
+    public class User
     {
         public int userId;
         public string personalId;

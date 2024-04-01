@@ -9,6 +9,8 @@ namespace QuanLyTraoDoiHang
             btnSignin.Click += btnSignin_Click;
             btnRegister.Click += btnRegister_Click;
             lblforgotpass.Click += lblforgotpass_Click;
+            btnExit.Click += btnExit_Click;
+            
         }
 
         private void lblforgotpass_Click(object sender, EventArgs e)
@@ -47,11 +49,6 @@ namespace QuanLyTraoDoiHang
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void btnExit_Click_1(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
 
         private void btnHome_Click(object sender, EventArgs e)

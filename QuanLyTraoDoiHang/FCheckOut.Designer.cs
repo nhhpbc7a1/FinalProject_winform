@@ -39,9 +39,9 @@
             this.rBCheckout = new QuanLyTraoDoiHang.RJControls.RButton();
             this.lblTotalPrice = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblTotalShippingFee = new System.Windows.Forms.Label();
             this.lblShipping = new System.Windows.Forms.Label();
-            this.lblPriceProduct = new System.Windows.Forms.Label();
+            this.lblTotalProductPrice = new System.Windows.Forms.Label();
             this.lblProducPrice = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pnlProducts = new System.Windows.Forms.FlowLayoutPanel();
@@ -49,11 +49,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.pnlMenu.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -61,7 +65,8 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(96)))), ((int)(((byte)(176)))));
             this.panel1.Controls.Add(this.lblAddressDelivery);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(134, 12);
+            this.panel1.Location = new System.Drawing.Point(128, 40);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 40, 3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(726, 86);
             this.panel1.TabIndex = 0;
@@ -141,17 +146,12 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(250)))), ((int)(((byte)(200)))));
-            this.panel4.Controls.Add(this.rBCheckout);
-            this.panel4.Controls.Add(this.lblTotalPrice);
-            this.panel4.Controls.Add(this.lblTotal);
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Controls.Add(this.lblShipping);
-            this.panel4.Controls.Add(this.lblPriceProduct);
-            this.panel4.Controls.Add(this.lblProducPrice);
-            this.panel4.Location = new System.Drawing.Point(134, 602);
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.Controls.Add(this.panel3);
+            this.panel4.Location = new System.Drawing.Point(128, 399);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 20, 3, 40);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(730, 69);
+            this.panel4.Size = new System.Drawing.Size(730, 182);
             this.panel4.TabIndex = 52;
             // 
             // rBCheckout
@@ -165,7 +165,7 @@
             this.rBCheckout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rBCheckout.Font = new System.Drawing.Font("Segoe UI", 11.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.rBCheckout.ForeColor = System.Drawing.Color.White;
-            this.rBCheckout.Location = new System.Drawing.Point(605, 15);
+            this.rBCheckout.Location = new System.Drawing.Point(211, 121);
             this.rBCheckout.Margin = new System.Windows.Forms.Padding(1);
             this.rBCheckout.Name = "rBCheckout";
             this.rBCheckout.Size = new System.Drawing.Size(111, 37);
@@ -178,7 +178,7 @@
             // 
             this.lblTotalPrice.AutoSize = true;
             this.lblTotalPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTotalPrice.Location = new System.Drawing.Point(511, 31);
+            this.lblTotalPrice.Location = new System.Drawing.Point(242, 88);
             this.lblTotalPrice.Name = "lblTotalPrice";
             this.lblTotalPrice.Size = new System.Drawing.Size(80, 21);
             this.lblTotalPrice.TabIndex = 59;
@@ -189,7 +189,7 @@
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTotal.ForeColor = System.Drawing.Color.IndianRed;
-            this.lblTotal.Location = new System.Drawing.Point(463, 10);
+            this.lblTotal.Location = new System.Drawing.Point(3, 88);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(50, 27);
             this.lblTotal.TabIndex = 58;
@@ -197,21 +197,21 @@
             this.lblTotal.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.lblTotal.UseCompatibleTextRendering = true;
             // 
-            // label2
+            // lblTotalShippingFee
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(335, 31);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 21);
-            this.label2.TabIndex = 57;
-            this.label2.Text = "Shipping Price";
+            this.lblTotalShippingFee.AutoSize = true;
+            this.lblTotalShippingFee.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTotalShippingFee.Location = new System.Drawing.Point(212, 52);
+            this.lblTotalShippingFee.Name = "lblTotalShippingFee";
+            this.lblTotalShippingFee.Size = new System.Drawing.Size(110, 21);
+            this.lblTotalShippingFee.TabIndex = 57;
+            this.lblTotalShippingFee.Text = "Shipping Price";
             // 
             // lblShipping
             // 
             this.lblShipping.AutoSize = true;
             this.lblShipping.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblShipping.Location = new System.Drawing.Point(238, 4);
+            this.lblShipping.Location = new System.Drawing.Point(3, 52);
             this.lblShipping.Name = "lblShipping";
             this.lblShipping.Size = new System.Drawing.Size(105, 27);
             this.lblShipping.TabIndex = 56;
@@ -219,21 +219,21 @@
             this.lblShipping.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.lblShipping.UseCompatibleTextRendering = true;
             // 
-            // lblPriceProduct
+            // lblTotalProductPrice
             // 
-            this.lblPriceProduct.AutoSize = true;
-            this.lblPriceProduct.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPriceProduct.Location = new System.Drawing.Point(115, 31);
-            this.lblPriceProduct.Name = "lblPriceProduct";
-            this.lblPriceProduct.Size = new System.Drawing.Size(137, 21);
-            this.lblPriceProduct.TabIndex = 55;
-            this.lblPriceProduct.Text = "Merchandise Price";
+            this.lblTotalProductPrice.AutoSize = true;
+            this.lblTotalProductPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTotalProductPrice.Location = new System.Drawing.Point(190, 19);
+            this.lblTotalProductPrice.Name = "lblTotalProductPrice";
+            this.lblTotalProductPrice.Size = new System.Drawing.Size(137, 21);
+            this.lblTotalProductPrice.TabIndex = 55;
+            this.lblTotalProductPrice.Text = "Merchandise Price";
             // 
             // lblProducPrice
             // 
             this.lblProducPrice.AutoSize = true;
             this.lblProducPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblProducPrice.Location = new System.Drawing.Point(3, 10);
+            this.lblProducPrice.Location = new System.Drawing.Point(3, 19);
             this.lblProducPrice.Name = "lblProducPrice";
             this.lblProducPrice.Size = new System.Drawing.Size(164, 21);
             this.lblProducPrice.TabIndex = 54;
@@ -241,19 +241,28 @@
             // 
             // panel5
             // 
+            this.panel5.AutoSize = true;
+            this.panel5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel5.Controls.Add(this.pnlProducts);
             this.panel5.Controls.Add(this.pnlMenu);
-            this.panel5.Location = new System.Drawing.Point(121, 96);
+            this.panel5.Location = new System.Drawing.Point(128, 132);
+            this.panel5.MaximumSize = new System.Drawing.Size(725, 10000);
+            this.panel5.MinimumSize = new System.Drawing.Size(725, 200);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(756, 424);
+            this.panel5.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.panel5.Size = new System.Drawing.Size(725, 244);
             this.panel5.TabIndex = 53;
             // 
             // pnlProducts
             // 
-            this.pnlProducts.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pnlProducts.Location = new System.Drawing.Point(14, 41);
+            this.pnlProducts.AutoSize = true;
+            this.pnlProducts.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.pnlProducts.BackColor = System.Drawing.Color.Transparent;
+            this.pnlProducts.Location = new System.Drawing.Point(4, 41);
+            this.pnlProducts.MaximumSize = new System.Drawing.Size(719, 10000);
+            this.pnlProducts.MinimumSize = new System.Drawing.Size(719, 200);
             this.pnlProducts.Name = "pnlProducts";
-            this.pnlProducts.Size = new System.Drawing.Size(725, 403);
+            this.pnlProducts.Size = new System.Drawing.Size(719, 200);
             this.pnlProducts.TabIndex = 25;
             // 
             // pnlMenu
@@ -262,7 +271,7 @@
             this.pnlMenu.Controls.Add(this.label4);
             this.pnlMenu.Controls.Add(this.label3);
             this.pnlMenu.Controls.Add(this.label5);
-            this.pnlMenu.Location = new System.Drawing.Point(14, 6);
+            this.pnlMenu.Location = new System.Drawing.Point(4, 6);
             this.pnlMenu.Margin = new System.Windows.Forms.Padding(1);
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(725, 31);
@@ -304,6 +313,34 @@
             this.label5.TabIndex = 15;
             this.label5.Text = "Price";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Controls.Add(this.panel1);
+            this.flowLayoutPanel1.Controls.Add(this.panel5);
+            this.flowLayoutPanel1.Controls.Add(this.panel4);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(125, 0, 0, 0);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(984, 701);
+            this.flowLayoutPanel1.TabIndex = 54;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(250)))), ((int)(((byte)(200)))));
+            this.panel3.Controls.Add(this.rBCheckout);
+            this.panel3.Controls.Add(this.lblTotalProductPrice);
+            this.panel3.Controls.Add(this.lblTotalShippingFee);
+            this.panel3.Controls.Add(this.lblProducPrice);
+            this.panel3.Controls.Add(this.lblTotalPrice);
+            this.panel3.Controls.Add(this.lblShipping);
+            this.panel3.Controls.Add(this.lblTotal);
+            this.panel3.Location = new System.Drawing.Point(383, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(347, 170);
+            this.panel3.TabIndex = 60;
+            // 
             // FCheckOut
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.Row;
@@ -313,9 +350,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
             this.ClientSize = new System.Drawing.Size(984, 701);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "FCheckOut";
             this.Text = "FCheckOut";
             this.panel1.ResumeLayout(false);
@@ -323,10 +358,14 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.pnlMenu.ResumeLayout(false);
             this.pnlMenu.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -341,9 +380,9 @@
         private Label lblAddressDeliver;
         private RJControls.RButton rButton1;
         private Panel panel4;
-        private Label lblPriceProduct;
+        private Label lblTotalProductPrice;
         private Label lblProducPrice;
-        private Label label2;
+        private Label lblTotalShippingFee;
         private Label lblShipping;
         private Label lblTotalPrice;
         private Label lblTotal;
@@ -354,5 +393,7 @@
         private Label label4;
         private Label label3;
         private Label label5;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private Panel panel3;
     }
 }
