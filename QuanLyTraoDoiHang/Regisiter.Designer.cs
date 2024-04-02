@@ -29,15 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Regisiter));
-            lblBirthday = new Label();
             txtEmail = new TextBox();
             txtPhone = new TextBox();
             dtBirthday = new DateTimePicker();
             txtPersonalId = new TextBox();
             txtUsername = new TextBox();
             panel3 = new Panel();
-            ucPassword = new UCPasswordTextBox();
             ucRetypePassword = new UCPasswordTextBox();
+            ucPassword = new UCPasswordTextBox();
             lblRetypedPass = new Label();
             lblValidPass = new Label();
             label5 = new Label();
@@ -66,40 +65,28 @@
             panel6.SuspendLayout();
             SuspendLayout();
             // 
-            // lblBirthday
-            // 
-            lblBirthday.AutoSize = true;
-            lblBirthday.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblBirthday.ForeColor = SystemColors.GrayText;
-            lblBirthday.Location = new Point(57, 158);
-            lblBirthday.Margin = new Padding(4, 0, 4, 0);
-            lblBirthday.Name = "lblBirthday";
-            lblBirthday.Size = new Size(71, 21);
-            lblBirthday.TabIndex = 3;
-            lblBirthday.Text = "Birthday";
-            // 
             // txtEmail
             // 
             txtEmail.BackColor = SystemColors.ControlLightLight;
             txtEmail.BorderStyle = BorderStyle.FixedSingle;
-            txtEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtEmail.Location = new Point(57, 337);
+            txtEmail.Font = new Font("Lato", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            txtEmail.Location = new Point(69, 321);
             txtEmail.Margin = new Padding(4, 3, 4, 3);
             txtEmail.Name = "txtEmail";
             txtEmail.PlaceholderText = "  Email";
-            txtEmail.Size = new Size(306, 29);
+            txtEmail.Size = new Size(306, 27);
             txtEmail.TabIndex = 10;
             // 
             // txtPhone
             // 
             txtPhone.BackColor = SystemColors.ControlLightLight;
             txtPhone.BorderStyle = BorderStyle.FixedSingle;
-            txtPhone.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtPhone.Location = new Point(58, 274);
+            txtPhone.Font = new Font("Lato", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPhone.Location = new Point(70, 258);
             txtPhone.Margin = new Padding(4, 3, 4, 3);
             txtPhone.Name = "txtPhone";
             txtPhone.PlaceholderText = "  Phone";
-            txtPhone.Size = new Size(306, 29);
+            txtPhone.Size = new Size(306, 27);
             txtPhone.TabIndex = 11;
             // 
             // dtBirthday
@@ -107,11 +94,11 @@
             dtBirthday.CalendarForeColor = Color.FromArgb(244, 237, 204);
             dtBirthday.CalendarMonthBackground = SystemColors.InfoText;
             dtBirthday.CalendarTitleForeColor = SystemColors.ControlDarkDark;
-            dtBirthday.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dtBirthday.Location = new Point(58, 150);
+            dtBirthday.Font = new Font("Lato", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            dtBirthday.Location = new Point(70, 134);
             dtBirthday.Name = "dtBirthday";
             dtBirthday.RightToLeft = RightToLeft.Yes;
-            dtBirthday.Size = new Size(306, 29);
+            dtBirthday.Size = new Size(306, 27);
             dtBirthday.TabIndex = 15;
             dtBirthday.ValueChanged += dtBirthday_ValueChanged;
             // 
@@ -119,32 +106,33 @@
             // 
             txtPersonalId.BackColor = SystemColors.ControlLightLight;
             txtPersonalId.BorderStyle = BorderStyle.FixedSingle;
-            txtPersonalId.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtPersonalId.Location = new Point(58, 217);
+            txtPersonalId.Font = new Font("Lato", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPersonalId.Location = new Point(70, 201);
             txtPersonalId.Margin = new Padding(4, 3, 4, 3);
             txtPersonalId.Name = "txtPersonalId";
             txtPersonalId.PlaceholderText = "  Personal ID";
-            txtPersonalId.Size = new Size(306, 29);
+            txtPersonalId.Size = new Size(306, 27);
             txtPersonalId.TabIndex = 14;
             // 
             // txtUsername
             // 
             txtUsername.BackColor = SystemColors.ControlLightLight;
             txtUsername.BorderStyle = BorderStyle.FixedSingle;
-            txtUsername.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtUsername.Location = new Point(58, 95);
+            txtUsername.Font = new Font("Lato", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            txtUsername.Location = new Point(70, 79);
             txtUsername.Margin = new Padding(3, 2, 3, 2);
             txtUsername.Name = "txtUsername";
             txtUsername.PlaceholderText = "  Username";
-            txtUsername.Size = new Size(306, 29);
+            txtUsername.Size = new Size(306, 27);
             txtUsername.TabIndex = 2;
             // 
             // panel3
             // 
             panel3.Anchor = AnchorStyles.None;
             panel3.BackColor = Color.FromArgb(244, 237, 204);
-            panel3.Controls.Add(ucRetypePassword);
             panel3.Controls.Add(ucPassword);
+            panel3.Controls.Add(panel1);
+            panel3.Controls.Add(ucRetypePassword);
             panel3.Controls.Add(lblRetypedPass);
             panel3.Controls.Add(lblValidPass);
             panel3.Controls.Add(label5);
@@ -158,35 +146,36 @@
             panel3.Controls.Add(btnRegister);
             panel3.Controls.Add(txtPhone);
             panel3.Controls.Add(txtUsername);
-            panel3.Controls.Add(lblBirthday);
-            panel3.Location = new Point(494, 23);
+            panel3.Location = new Point(56, 53);
             panel3.Name = "panel3";
-            panel3.Size = new Size(421, 615);
+            panel3.Size = new Size(877, 582);
             panel3.TabIndex = 15;
-            // 
-            // ucPassword
-            // 
-            ucPassword.BackColor = Color.White;
-            ucPassword.Location = new Point(58, 397);
-            ucPassword.Margin = new Padding(3, 2, 3, 2);
-            ucPassword.Name = "ucPassword";
-            ucPassword.Size = new Size(306, 29);
-            ucPassword.TabIndex = 28;
             // 
             // ucRetypePassword
             // 
             ucRetypePassword.BackColor = Color.White;
-            ucRetypePassword.Location = new Point(58, 457);
+            ucRetypePassword.Font = new Font("Lato", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            ucRetypePassword.Location = new Point(70, 441);
             ucRetypePassword.Margin = new Padding(3, 2, 3, 2);
             ucRetypePassword.Name = "ucRetypePassword";
             ucRetypePassword.Size = new Size(306, 29);
             ucRetypePassword.TabIndex = 29;
             // 
+            // ucPassword
+            // 
+            ucPassword.BackColor = Color.White;
+            ucPassword.Font = new Font("Lato", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            ucPassword.Location = new Point(70, 381);
+            ucPassword.Margin = new Padding(3, 2, 3, 2);
+            ucPassword.Name = "ucPassword";
+            ucPassword.Size = new Size(306, 29);
+            ucPassword.TabIndex = 28;
+            // 
             // lblRetypedPass
             // 
-            lblRetypedPass.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lblRetypedPass.Font = new Font("Lato Semibold", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblRetypedPass.ForeColor = Color.Black;
-            lblRetypedPass.Location = new Point(58, 493);
+            lblRetypedPass.Location = new Point(70, 477);
             lblRetypedPass.Name = "lblRetypedPass";
             lblRetypedPass.Size = new Size(313, 39);
             lblRetypedPass.TabIndex = 31;
@@ -196,11 +185,11 @@
             // lblValidPass
             // 
             lblValidPass.AutoSize = true;
-            lblValidPass.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblValidPass.Font = new Font("Lato Semibold", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblValidPass.ForeColor = Color.Black;
-            lblValidPass.Location = new Point(58, 430);
+            lblValidPass.Location = new Point(70, 414);
             lblValidPass.Name = "lblValidPass";
-            lblValidPass.Size = new Size(197, 13);
+            lblValidPass.Size = new Size(186, 13);
             lblValidPass.TabIndex = 30;
             lblValidPass.Text = "It should be longer than 6 characters";
             lblValidPass.Visible = false;
@@ -208,11 +197,11 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Font = new Font("Lato Black", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = SystemColors.InfoText;
-            label5.Location = new Point(147, 17);
+            label5.Location = new Point(159, 24);
             label5.Name = "label5";
-            label5.Size = new Size(142, 45);
+            label5.Size = new Size(124, 35);
             label5.TabIndex = 19;
             label5.Text = "Register";
             // 
@@ -221,7 +210,7 @@
             pictureBox7.BackColor = SystemColors.ControlLightLight;
             pictureBox7.BackgroundImage = (Image)resources.GetObject("pictureBox7.BackgroundImage");
             pictureBox7.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox7.Location = new Point(338, 343);
+            pictureBox7.Location = new Point(350, 327);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(18, 18);
             pictureBox7.TabIndex = 26;
@@ -232,7 +221,7 @@
             pictureBox4.BackColor = SystemColors.ControlLightLight;
             pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
             pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox4.Location = new Point(338, 280);
+            pictureBox4.Location = new Point(350, 264);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(18, 18);
             pictureBox4.TabIndex = 24;
@@ -243,7 +232,7 @@
             pictureBox5.BackColor = SystemColors.ControlLightLight;
             pictureBox5.BackgroundImage = (Image)resources.GetObject("pictureBox5.BackgroundImage");
             pictureBox5.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox5.Location = new Point(338, 222);
+            pictureBox5.Location = new Point(350, 206);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(18, 18);
             pictureBox5.TabIndex = 22;
@@ -254,7 +243,7 @@
             pictureBox2.BackColor = SystemColors.ControlLightLight;
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
             pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox2.Location = new Point(338, 100);
+            pictureBox2.Location = new Point(350, 84);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(18, 18);
             pictureBox2.TabIndex = 19;
@@ -262,8 +251,8 @@
             // 
             // btnRegister
             // 
-            btnRegister.BackColor = Color.FromArgb(97, 150, 166);
-            btnRegister.BackgroundColor = Color.FromArgb(97, 150, 166);
+            btnRegister.BackColor = Color.FromArgb(11, 96, 176);
+            btnRegister.BackgroundColor = Color.FromArgb(11, 96, 176);
             btnRegister.BorderColor = Color.PaleVioletRed;
             btnRegister.BorderRadius = 20;
             btnRegister.BorderSize = 0;
@@ -271,7 +260,7 @@
             btnRegister.FlatStyle = FlatStyle.Flat;
             btnRegister.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnRegister.ForeColor = Color.White;
-            btnRegister.Location = new Point(57, 536);
+            btnRegister.Location = new Point(70, 519);
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(306, 40);
             btnRegister.TabIndex = 16;
@@ -304,9 +293,9 @@
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(12, 143);
+            panel1.Location = new Point(430, 134);
             panel1.Name = "panel1";
-            panel1.Size = new Size(449, 372);
+            panel1.Size = new Size(405, 326);
             panel1.TabIndex = 18;
             // 
             // pictureBox1
@@ -314,7 +303,7 @@
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox1.InitialImage = (Image)resources.GetObject("pictureBox1.InitialImage");
-            pictureBox1.Location = new Point(95, 10);
+            pictureBox1.Location = new Point(85, 18);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(239, 211);
             pictureBox1.TabIndex = 12;
@@ -411,10 +400,9 @@
             // Regisiter
             // 
             AutoScaleMode = AutoScaleMode.None;
-            BackColor = Color.FromArgb(164, 206, 149);
+            BackColor = Color.FromArgb(30, 106, 17);
             ClientSize = new Size(984, 661);
             Controls.Add(panel6);
-            Controls.Add(panel1);
             Controls.Add(panel3);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -439,7 +427,6 @@
         }
 
         #endregion
-        private Label lblBirthday;
         private TextBox txtEmail;
         private TextBox txtPhone;
         private DateTimePicker dtBirthday;
