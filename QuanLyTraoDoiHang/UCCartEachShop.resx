@@ -57,4 +57,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblPhone.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAO1JREFUOE9joCqQT+dXkMvgd4JySQNymfzGslkCn+SyBP/IZ/AbQoWJB3KZAtuB
+        mv+DcabgYaAQI0SGSAA04ArcACCWzRIMg0oRB2QzBeYiGyCXJRANlSIOyGQL6gI1/oHYLnAVKESaF0AA
+        6IouiAGCH6SyRdSgwsQD4zQGVmAAHgR7IVPwjmKemDhUinggn88vIJspeAFmCNQljMBAjoEGLGGvgWwG
+        GnIe5h1QmIANhBh6mKh0AnIJUMMBuEZU/Ie4FFvPwAK0vROsAckAUIpVyBKQh6oiDGQyBHWAmuYA08Zl
+        oJe2kJXUaQQYGAA+MVoh7E8anwAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>

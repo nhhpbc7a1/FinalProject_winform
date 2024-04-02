@@ -18,20 +18,103 @@ namespace QuanLyTraoDoiHang
         {
             InitializeComponent();
 
+            btnCheckOut.Enabled = false;
             Load += form_Load;
+            cbSellectAll.Click += CbSellectAll_CheckedChanged;
+            btnCheckOut.Click += BtnCheckOut_Click;
         }
+
+        private void BtnCheckOut_Click(object? sender, EventArgs e)
+        {
+
+        }
+
+        private void CbSellectAll_CheckedChanged(object? sender, EventArgs e)
+        {
+            foreach (UCCartEachShop c in pnlProducts.Controls)
+            {
+                c.cbShop.Checked = cbSellectAll.Checked;
+                foreach (UCProductInCart control in c.pnlProducts.Controls)
+                {
+                    control.cbChoose.Checked = cbSellectAll.Checked;
+                }
+            }
+        }
+        private void update_CbSellectAll(object? sender, EventArgs e)
+        {
+            bool kt = true;
+            foreach (UCCartEachShop c in pnlProducts.Controls)
+                if (c.cbShop.Checked == false)
+                {
+                    kt = false;
+                    break;
+                }
+            cbSellectAll.Checked = kt;
+        }
+
         private void form_Load(object sender, EventArgs e)
         {
             DataTable table = CartItemDAO.SelectByUserId(Program.currentUserId);
-            ucCartProducts.pnlProducts.Controls.Clear();
+            List<Product> listProduct = new List<Product>();
             foreach (DataRow row in table.Rows)
             {
-                UCProductInCart ucProduct = new UCProductInCart();
-                ucProduct.cartItem = CartItemDAO.RowToCartItem(row);
-                ucProduct.btnCancel.Click += form_Load;
-
-                ucCartProducts.pnlProducts.Controls.Add(ucProduct);
+                listProduct.Add(ProductDAO.SelectById(CartItemDAO.RowToCartItem(row).productId));
             }
+            //MessageBox.Show(listProduct.Count.ToString());
+            bool[] ch = new bool[100000] ;
+            pnlProducts.Controls.Clear();
+            for (int i = 0; i < listProduct.Count; i++)
+            {
+                Product product = listProduct[i];
+                if (ch[product.sellerId] == false)
+                {
+                    ch[product.sellerId] = true;
+                    UCCartEachShop x = new UCCartEachShop();
+                    x.seller = UserDAO.SelectByUserId(product.sellerId);
+
+                    pnlProducts.Controls.Add(x);
+                    for (int j = i; j < listProduct.Count; j++)
+                    {
+                        if (listProduct[j].sellerId != product.sellerId) continue;
+                        UCProductInCart y = new UCProductInCart();
+                        y.cartItem = new CartItem(Program.currentUserId, listProduct[j].productId);
+                        y.btnCancel.Click += form_Load;
+                        y.cbChoose.CheckedChanged += Load_CheckOut_Calc;
+                        y.cbChoose.Click += x.update_cbShop;
+                        y.cbChoose.Click += update_CbSellectAll;
+
+
+                        x.pnlProducts.Controls.Add(y);
+                    }
+                    x.cbShop.Click += update_CbSellectAll;
+
+                }
+            }
+            cbSellectAll.Checked = false;
+            Load_CheckOut_Calc(sender, e);
+        }
+
+
+        private void Load_CheckOut_Calc(object sender, EventArgs e)
+        {
+            int a = 0, b = 0;
+            foreach (UCCartEachShop c in pnlProducts.Controls)
+            {
+                foreach (UCProductInCart control in c.pnlProducts.Controls)
+                {
+                    if (control.cbChoose.Checked == true)
+                    {
+                        a++;
+                        b += Convert.ToInt32(control.lblPrice.Text);
+                    }
+                }
+            }
+            lblTotalItem.Text = a.ToString();
+            lblTotalPrice.Text = b.ToString();
+
+            if (a > 0)
+                btnCheckOut.Enabled = true;
+            else btnCheckOut.Enabled = false;
 
         }
 
