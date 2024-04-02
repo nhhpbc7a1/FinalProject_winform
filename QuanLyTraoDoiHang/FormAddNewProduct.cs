@@ -28,7 +28,7 @@ namespace QuanLyTraoDoiHang
         private void btnChangePicture_Click_1(object sender, EventArgs e)
         {
             picboxProduct.BackgroundImage = MyImage.ChooseImage();
-            picboxProduct.Refresh(); 
+            picboxProduct.Refresh();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -98,6 +98,21 @@ namespace QuanLyTraoDoiHang
             MessageBox.Show("add successfully");
         }
 
+        private void FormAddNewProduct_Load(object sender, EventArgs e)
+        {
 
+        }
+
+        private void picboxProduct_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rBChangeImage_Click(object sender, EventArgs e)
+        {
+
+            picboxProduct.BackgroundImage = MyImage.ChooseImage();
+            picboxProduct.Refresh();
+        }
     }
 }
