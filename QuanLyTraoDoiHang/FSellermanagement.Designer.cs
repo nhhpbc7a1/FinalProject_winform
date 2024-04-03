@@ -1,4 +1,6 @@
-﻿namespace QuanLyTraoDoiHang
+﻿using QuanLyTraoDoiHang.RJControls;
+
+namespace QuanLyTraoDoiHang
 {
     partial class FSellermanagement
     {
@@ -56,7 +58,7 @@
             btnShipment = new RJControls.RButton();
             panel3 = new Panel();
             label2 = new Label();
-            rButton2 = new RJControls.RButton();
+            panel4 = new Panel();
             pnlSellerTool.SuspendLayout();
             pnlMenu.SuspendLayout();
             pnlDropDownnn.SuspendLayout();
@@ -65,25 +67,25 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
+            panel4.SuspendLayout();
             SuspendLayout();
             // 
             // pnlSellerTool
             // 
-            pnlSellerTool.BackColor = SystemColors.ControlLight;
-            pnlSellerTool.Controls.Add(rButton2);
+            pnlSellerTool.BackColor = SystemColors.Control;
             pnlSellerTool.Controls.Add(pnlProducts);
             pnlSellerTool.Controls.Add(pnlMenu);
             pnlSellerTool.Location = new Point(216, 90);
             pnlSellerTool.Margin = new Padding(1);
             pnlSellerTool.Name = "pnlSellerTool";
             pnlSellerTool.RightToLeft = RightToLeft.Yes;
-            pnlSellerTool.Size = new Size(752, 446);
+            pnlSellerTool.Size = new Size(751, 459);
             pnlSellerTool.TabIndex = 2;
             // 
             // pnlProducts
             // 
             pnlProducts.BackColor = SystemColors.ButtonHighlight;
-            pnlProducts.Location = new Point(12, 47);
+            pnlProducts.Location = new Point(12, 59);
             pnlProducts.Name = "pnlProducts";
             pnlProducts.Size = new Size(725, 336);
             pnlProducts.TabIndex = 21;
@@ -96,7 +98,7 @@
             pnlMenu.Controls.Add(label3);
             pnlMenu.Controls.Add(lblAction);
             pnlMenu.Controls.Add(lblTotalPrice);
-            pnlMenu.Location = new Point(12, 12);
+            pnlMenu.Location = new Point(12, 24);
             pnlMenu.Margin = new Padding(1);
             pnlMenu.Name = "pnlMenu";
             pnlMenu.Size = new Size(725, 31);
@@ -354,7 +356,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.White;
+            panel1.BackColor = SystemColors.Control;
             panel1.Controls.Add(rButton1);
             panel1.Controls.Add(pnlDropDownProdu);
             panel1.Controls.Add(pnlDropDownnn);
@@ -385,8 +387,9 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.BackColor = SystemColors.Control;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(50, 12);
+            pictureBox1.Location = new Point(46, 16);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(120, 94);
             pictureBox1.TabIndex = 6;
@@ -424,23 +427,32 @@
             // 
             // panel3
             // 
-            panel3.BackColor = Color.FromArgb(30, 106, 17);
+            panel3.BackColor = SystemColors.Control;
             panel3.Controls.Add(label2);
-            panel3.Location = new Point(216, 15);
+            panel3.Location = new Point(216, 12);
             panel3.Name = "panel3";
-            panel3.Size = new Size(752, 76);
+            panel3.Size = new Size(751, 79);
             panel3.TabIndex = 8;
             // 
             // label2
             // 
-            label2.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(256, 23);
+            label2.Font = new Font("Lato Black", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(12, 30);
             label2.Name = "label2";
             label2.Size = new Size(240, 30);
             label2.TabIndex = 59;
             label2.Text = "Content";
-            label2.TextAlign = ContentAlignment.MiddleCenter;
+            label2.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = SystemColors.Control;
+            panel4.Controls.Add(pictureBox1);
+            panel4.Location = new Point(3, 12);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(207, 537);
+            panel4.TabIndex = 9;
             // 
             // rButton2
             // 
@@ -466,13 +478,13 @@
             // FSellermanagement
             // 
             AutoScaleMode = AutoScaleMode.None;
-            BackColor = Color.White;
+            BackColor = SystemColors.ControlLight;
             ClientSize = new Size(984, 561);
             Controls.Add(panel3);
             Controls.Add(panel1);
             Controls.Add(panel2);
-            Controls.Add(pictureBox1);
             Controls.Add(pnlSellerTool);
+            Controls.Add(panel4);
             Margin = new Padding(1);
             Name = "FSellermanagement";
             StartPosition = FormStartPosition.CenterScreen;
@@ -486,6 +498,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
             panel3.ResumeLayout(false);
+            panel4.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -516,6 +529,7 @@
         private FlowLayoutPanel pnlProducts;
         private Panel panel3;
         private Label label2;
-        private RJControls.RButton rButton2;
+        private Panel panel4;
+        private RButton rButton2;
     }
 }
