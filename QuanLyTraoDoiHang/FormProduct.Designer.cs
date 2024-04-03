@@ -33,7 +33,6 @@
             panel4 = new Panel();
             flowLayoutPanelProductList = new FlowLayoutPanel();
             panel1 = new Panel();
-            panel3 = new Panel();
             label1 = new Label();
             panel2 = new Panel();
             panel7 = new Panel();
@@ -78,10 +77,10 @@
             panel4.Controls.Add(flowLayoutPanelProductList);
             panel4.Controls.Add(panel1);
             panel4.Dock = DockStyle.Fill;
-            panel4.Location = new Point(231, 0);
+            panel4.Location = new Point(257, 0);
             panel4.Margin = new Padding(3, 2, 3, 2);
             panel4.Name = "panel4";
-            panel4.Size = new Size(753, 561);
+            panel4.Size = new Size(727, 561);
             panel4.TabIndex = 56;
             // 
             // flowLayoutPanelProductList
@@ -90,28 +89,18 @@
             flowLayoutPanelProductList.BackColor = Color.LightGray;
             flowLayoutPanelProductList.Location = new Point(24, 67);
             flowLayoutPanelProductList.Name = "flowLayoutPanelProductList";
-            flowLayoutPanelProductList.Size = new Size(707, 482);
+            flowLayoutPanelProductList.Size = new Size(680, 482);
             flowLayoutPanelProductList.TabIndex = 62;
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(30, 106, 17);
-            panel1.Controls.Add(panel3);
+            panel1.BackColor = Color.FromArgb(101, 183, 65);
             panel1.Controls.Add(label1);
             panel1.Location = new Point(24, 15);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(707, 54);
+            panel1.Size = new Size(680, 54);
             panel1.TabIndex = 61;
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.Black;
-            panel3.Dock = DockStyle.Bottom;
-            panel3.Location = new Point(0, 54);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(707, 0);
-            panel3.TabIndex = 56;
             // 
             // label1
             // 
@@ -134,7 +123,7 @@
             panel2.Dock = DockStyle.Left;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(231, 561);
+            panel2.Size = new Size(257, 561);
             panel2.TabIndex = 56;
             // 
             // panel7
@@ -144,10 +133,9 @@
             panel7.Controls.Add(btnApply);
             panel7.Controls.Add(cbMaxPrice);
             panel7.Controls.Add(cbMinPrice);
-            panel7.Dock = DockStyle.Bottom;
-            panel7.Location = new Point(0, 419);
+            panel7.Location = new Point(18, 419);
             panel7.Name = "panel7";
-            panel7.Size = new Size(231, 142);
+            panel7.Size = new Size(214, 142);
             panel7.TabIndex = 59;
             // 
             // label5
@@ -155,7 +143,7 @@
             label5.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label5.Image = (Image)resources.GetObject("label5.Image");
             label5.ImageAlign = ContentAlignment.MiddleLeft;
-            label5.Location = new Point(18, 13);
+            label5.Location = new Point(3, 13);
             label5.Name = "label5";
             label5.Size = new Size(106, 21);
             label5.TabIndex = 50;
@@ -168,7 +156,7 @@
             label6.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label6.Image = (Image)resources.GetObject("label6.Image");
             label6.ImageAlign = ContentAlignment.MiddleLeft;
-            label6.Location = new Point(18, 45);
+            label6.Location = new Point(3, 44);
             label6.Name = "label6";
             label6.Size = new Size(106, 21);
             label6.TabIndex = 51;
@@ -179,17 +167,17 @@
             // 
             btnApply.BackColor = Color.FromArgb(101, 183, 65);
             btnApply.BackgroundColor = Color.FromArgb(101, 183, 65);
-            btnApply.BorderColor = Color.FromArgb(30, 106, 17);
-            btnApply.BorderRadius = 40;
-            btnApply.BorderSize = 1;
+            btnApply.BorderColor = Color.PaleVioletRed;
+            btnApply.BorderRadius = 15;
+            btnApply.BorderSize = 0;
             btnApply.FlatAppearance.BorderSize = 0;
             btnApply.FlatStyle = FlatStyle.Flat;
             btnApply.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnApply.ForeColor = Color.White;
-            btnApply.Location = new Point(18, 79);
+            btnApply.Location = new Point(13, 82);
             btnApply.Margin = new Padding(3, 2, 3, 2);
             btnApply.Name = "btnApply";
-            btnApply.Size = new Size(185, 46);
+            btnApply.Size = new Size(187, 51);
             btnApply.TabIndex = 54;
             btnApply.Text = "Apply";
             btnApply.TextColor = Color.White;
@@ -226,7 +214,7 @@
             panel6.Controls.Add(label21);
             panel6.Location = new Point(18, 248);
             panel6.Name = "panel6";
-            panel6.Size = new Size(172, 165);
+            panel6.Size = new Size(214, 165);
             panel6.TabIndex = 58;
             // 
             // cbAddress
@@ -239,24 +227,22 @@
             cbAddress.Items.AddRange(new object[] { "An Giang", "Bà Rịa - Vũng Tàu", "Bạc Liêu", "Bắc Giang", "Bắc Kạn", "Bắc Ninh", "Bến Tre", "Bình Định", "Binh Duong", "Bình Phước", "Bình Thuận", "Cà Mau", "Cần Thơ", "Cao Bằng", "Đà Nẵng", "Đắk Lắk", "Đắk Nông", "Điện Biên", "Dong Nai", "Đồng Tháp", "Gia Lai", "Hà Giang", "Hà Nam", "Hà Nội", "Hà Tĩnh", "Hải Dương", "Hải Phòng", "Hậu Giang", "Hòa Bình", "Hồ Chí Minh (TP.HCM)", "Hưng Yên", "Khánh Hòa", "Kiên Giang", "Kon Tum", "Lai Châu", "Lâm Đồng", "Lạng Sơn", "Lào Cai", "Long An", "Nam Định", "Nghệ An", "Ninh Bình", "Ninh Thuận", "Phú Thọ", "Phú Yên", "Quảng Bình", "Quảng Nam", "Quảng Ngãi", "Quảng Ninh", "Quảng Trị", "Sóc Trăng", "Sơn La", "Tây Ninh", "Thái Bình", "Thái Nguyên", "Thanh Hóa", "Thừa Thiên Huế", "Tiền Giang", "Trà Vinh", "Tuyên Quang", "Vĩnh Long", "Vĩnh Phúc", "Yên Bái" });
             cbAddress.Location = new Point(8, 133);
             cbAddress.Name = "cbAddress";
-            cbAddress.Size = new Size(151, 29);
+            cbAddress.Size = new Size(192, 29);
             cbAddress.TabIndex = 53;
             // 
             // checkListBoxAddress
             // 
-            checkListBoxAddress.BorderStyle = BorderStyle.None;
             checkListBoxAddress.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             checkListBoxAddress.FormattingEnabled = true;
             checkListBoxAddress.Items.AddRange(new object[] { "Ha Noi", "Ho Chi Minh", "Da Nang", "Hai Phong", "Binh Duong" });
             checkListBoxAddress.Location = new Point(10, 30);
             checkListBoxAddress.Name = "checkListBoxAddress";
-            checkListBoxAddress.Size = new Size(149, 96);
+            checkListBoxAddress.Size = new Size(190, 100);
             checkListBoxAddress.TabIndex = 54;
             // 
             // label21
             // 
             label21.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label21.Image = (Image)resources.GetObject("label21.Image");
             label21.ImageAlign = ContentAlignment.MiddleLeft;
             label21.Location = new Point(0, 0);
             label21.Name = "label21";
@@ -272,18 +258,17 @@
             panel5.Controls.Add(label20);
             panel5.Location = new Point(18, 67);
             panel5.Name = "panel5";
-            panel5.Size = new Size(172, 175);
+            panel5.Size = new Size(214, 175);
             panel5.TabIndex = 57;
             // 
             // checkListBoxCategory
             // 
-            checkListBoxCategory.BorderStyle = BorderStyle.None;
             checkListBoxCategory.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             checkListBoxCategory.FormattingEnabled = true;
             checkListBoxCategory.Items.AddRange(new object[] { "Smart Phone", "Laptop", "Motorbike", "Car" });
-            checkListBoxCategory.Location = new Point(8, 33);
+            checkListBoxCategory.Location = new Point(10, 33);
             checkListBoxCategory.Name = "checkListBoxCategory";
-            checkListBoxCategory.Size = new Size(151, 96);
+            checkListBoxCategory.Size = new Size(190, 100);
             checkListBoxCategory.TabIndex = 52;
             // 
             // cbCategory
@@ -294,13 +279,12 @@
             cbCategory.Items.AddRange(new object[] { "Smart phone", "Laptop", "Motorbike", "Car", "tai nghe", "Moc Khoa", "Album" });
             cbCategory.Location = new Point(10, 139);
             cbCategory.Name = "cbCategory";
-            cbCategory.Size = new Size(149, 29);
+            cbCategory.Size = new Size(193, 29);
             cbCategory.TabIndex = 51;
             // 
             // label20
             // 
             label20.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label20.Image = (Image)resources.GetObject("label20.Image");
             label20.ImageAlign = ContentAlignment.MiddleLeft;
             label20.Location = new Point(0, 0);
             label20.Name = "label20";
@@ -346,7 +330,6 @@
         private Panel pnlChildForm;
         private Panel panel4;
         private Panel panel1;
-        private Panel panel3;
         private Label label1;
         private Panel panel2;
         private ComboBox cbMaxPrice;
