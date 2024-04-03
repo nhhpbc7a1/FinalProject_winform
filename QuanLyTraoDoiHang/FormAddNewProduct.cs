@@ -105,12 +105,18 @@ namespace QuanLyTraoDoiHang
 
         private void picboxProduct_Click(object sender, EventArgs e)
         {
-
+            picboxProduct.BackgroundImage = MyImage.ChooseImage();
+            picboxProduct.Refresh();
         }
 
         private void rBChangeImage_Click(object sender, EventArgs e)
         {
+            picboxProduct.BackgroundImage = MyImage.ChooseImage();
+            picboxProduct.Refresh();
+        }
 
+        private void lblAddPhoto_Click(object sender, EventArgs e)
+        {
             picboxProduct.BackgroundImage = MyImage.ChooseImage();
             picboxProduct.Refresh();
         }

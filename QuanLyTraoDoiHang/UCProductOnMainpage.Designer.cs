@@ -47,7 +47,7 @@
             ptbImage.Location = new Point(0, 0);
             ptbImage.Margin = new Padding(3, 2, 3, 2);
             ptbImage.Name = "ptbImage";
-            ptbImage.Size = new Size(200, 148);
+            ptbImage.Size = new Size(196, 148);
             ptbImage.TabIndex = 0;
             ptbImage.TabStop = false;
             // 
@@ -126,6 +126,7 @@
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.White;
+            BorderStyle = BorderStyle.Fixed3D;
             Controls.Add(lblOriginalPrice);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -135,7 +136,7 @@
             Controls.Add(ptbImage);
             Margin = new Padding(10, 4, 10, 4);
             Name = "UCProductOnMainpage";
-            Size = new Size(200, 255);
+            Size = new Size(196, 251);
             Load += UCProductOnMainpage_Load;
             ((System.ComponentModel.ISupportInitialize)ptbImage).EndInit();
             ResumeLayout(false);
