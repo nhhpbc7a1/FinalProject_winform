@@ -56,7 +56,6 @@
             btnShipment = new RJControls.RButton();
             panel3 = new Panel();
             label2 = new Label();
-            panel4 = new Panel();
             pnlSellerTool.SuspendLayout();
             pnlMenu.SuspendLayout();
             pnlDropDownnn.SuspendLayout();
@@ -69,7 +68,7 @@
             // 
             // pnlSellerTool
             // 
-            pnlSellerTool.BackColor = Color.FromArgb(164, 206, 149);
+            pnlSellerTool.BackColor = SystemColors.ControlLight;
             pnlSellerTool.Controls.Add(pnlProducts);
             pnlSellerTool.Controls.Add(pnlMenu);
             pnlSellerTool.Location = new Point(216, 90);
@@ -89,7 +88,7 @@
             // 
             // pnlMenu
             // 
-            pnlMenu.BackColor = Color.FromArgb(11, 96, 176);
+            pnlMenu.BackColor = Color.FromArgb(101, 183, 65);
             pnlMenu.Controls.Add(label4);
             pnlMenu.Controls.Add(label1);
             pnlMenu.Controls.Add(label3);
@@ -353,7 +352,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(244, 237, 204);
+            panel1.BackColor = Color.White;
             panel1.Controls.Add(rButton1);
             panel1.Controls.Add(pnlDropDownProdu);
             panel1.Controls.Add(pnlDropDownnn);
@@ -423,9 +422,8 @@
             // 
             // panel3
             // 
-            panel3.BackColor = Color.FromArgb(101, 183, 65);
+            panel3.BackColor = Color.FromArgb(30, 106, 17);
             panel3.Controls.Add(label2);
-            panel3.Controls.Add(panel4);
             panel3.Location = new Point(216, 15);
             panel3.Name = "panel3";
             panel3.Size = new Size(752, 76);
@@ -442,19 +440,10 @@
             label2.Text = "Content";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // panel4
-            // 
-            panel4.BackColor = Color.Black;
-            panel4.Dock = DockStyle.Bottom;
-            panel4.Location = new Point(0, 73);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(752, 3);
-            panel4.TabIndex = 58;
-            // 
             // FSellermanagement
             // 
             AutoScaleMode = AutoScaleMode.None;
-            BackColor = Color.WhiteSmoke;
+            BackColor = Color.White;
             ClientSize = new Size(984, 561);
             Controls.Add(panel3);
             Controls.Add(panel1);
@@ -504,6 +493,5 @@
         private FlowLayoutPanel pnlProducts;
         private Panel panel3;
         private Label label2;
-        private Panel panel4;
     }
 }

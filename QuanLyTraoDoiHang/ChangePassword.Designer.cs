@@ -33,10 +33,10 @@
             panel4 = new Panel();
             label2 = new Label();
             panel2 = new Panel();
-            lblRetypedPass = new Label();
-            ucOldPass = new UCPasswordTextBox();
-            ucNewPass = new UCPasswordTextBox();
             ucReTypePass = new UCPasswordTextBox();
+            ucNewPass = new UCPasswordTextBox();
+            ucOldPass = new UCPasswordTextBox();
+            lblRetypedPass = new Label();
             rButton3 = new RJControls.RButton();
             rButton4 = new RJControls.RButton();
             rButton2 = new RJControls.RButton();
@@ -64,9 +64,9 @@
             // 
             panel4.BackColor = Color.Black;
             panel4.Dock = DockStyle.Bottom;
-            panel4.Location = new Point(0, 67);
+            panel4.Location = new Point(0, 69);
             panel4.Name = "panel4";
-            panel4.Size = new Size(642, 5);
+            panel4.Size = new Size(642, 3);
             panel4.TabIndex = 57;
             // 
             // label2
@@ -82,9 +82,9 @@
             // 
             // panel2
             // 
-            panel2.Controls.Add(ucReTypePass);
-            panel2.Controls.Add(ucNewPass);
             panel2.Controls.Add(ucOldPass);
+            panel2.Controls.Add(ucNewPass);
+            panel2.Controls.Add(ucReTypePass);
             panel2.Controls.Add(lblRetypedPass);
             panel2.Controls.Add(rButton3);
             panel2.Controls.Add(rButton4);
@@ -96,24 +96,14 @@
             panel2.Size = new Size(556, 298);
             panel2.TabIndex = 6;
             // 
-            // lblRetypedPass
+            // ucReTypePass
             // 
-            lblRetypedPass.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            lblRetypedPass.ForeColor = Color.Black;
-            lblRetypedPass.Location = new Point(120, 229);
-            lblRetypedPass.Name = "lblRetypedPass";
-            lblRetypedPass.Size = new Size(313, 39);
-            lblRetypedPass.TabIndex = 4;
-            lblRetypedPass.Text = "Retyped-new password need to be matched with the new password.";
-            // 
-            // ucOldPass
-            // 
-            ucOldPass.BackColor = Color.White;
-            ucOldPass.Location = new Point(120, 20);
-            ucOldPass.Margin = new Padding(3, 2, 3, 2);
-            ucOldPass.Name = "ucOldPass";
-            ucOldPass.Size = new Size(329, 29);
-            ucOldPass.TabIndex = 30;
+            ucReTypePass.BackColor = Color.White;
+            ucReTypePass.Location = new Point(117, 186);
+            ucReTypePass.Margin = new Padding(3, 2, 3, 2);
+            ucReTypePass.Name = "ucReTypePass";
+            ucReTypePass.Size = new Size(332, 29);
+            ucReTypePass.TabIndex = 28;
             // 
             // ucNewPass
             // 
@@ -124,19 +114,29 @@
             ucNewPass.Size = new Size(329, 29);
             ucNewPass.TabIndex = 29;
             // 
-            // ucReTypePass
+            // ucOldPass
             // 
-            ucReTypePass.BackColor = Color.White;
-            ucReTypePass.Location = new Point(117, 186);
-            ucReTypePass.Margin = new Padding(3, 2, 3, 2);
-            ucReTypePass.Name = "ucReTypePass";
-            ucReTypePass.Size = new Size(332, 29);
-            ucReTypePass.TabIndex = 28;
+            ucOldPass.BackColor = Color.White;
+            ucOldPass.Location = new Point(120, 20);
+            ucOldPass.Margin = new Padding(3, 2, 3, 2);
+            ucOldPass.Name = "ucOldPass";
+            ucOldPass.Size = new Size(329, 29);
+            ucOldPass.TabIndex = 30;
+            // 
+            // lblRetypedPass
+            // 
+            lblRetypedPass.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lblRetypedPass.ForeColor = Color.Black;
+            lblRetypedPass.Location = new Point(120, 229);
+            lblRetypedPass.Name = "lblRetypedPass";
+            lblRetypedPass.Size = new Size(313, 39);
+            lblRetypedPass.TabIndex = 4;
+            lblRetypedPass.Text = "Retyped-new password need to be matched with the new password.";
             // 
             // rButton3
             // 
-            rButton3.BackColor = Color.FromArgb(80, 196, 237);
-            rButton3.BackgroundColor = Color.FromArgb(80, 196, 237);
+            rButton3.BackColor = Color.FromArgb(36, 10, 52);
+            rButton3.BackgroundColor = Color.FromArgb(36, 10, 52);
             rButton3.BorderColor = Color.PaleVioletRed;
             rButton3.BorderRadius = 38;
             rButton3.BorderSize = 0;
@@ -153,8 +153,8 @@
             // 
             // rButton4
             // 
-            rButton4.BackColor = Color.FromArgb(255, 104, 104);
-            rButton4.BackgroundColor = Color.FromArgb(255, 104, 104);
+            rButton4.BackColor = Color.FromArgb(36, 10, 52);
+            rButton4.BackgroundColor = Color.FromArgb(36, 10, 52);
             rButton4.BorderColor = Color.PaleVioletRed;
             rButton4.BorderRadius = 38;
             rButton4.BorderSize = 0;
@@ -171,8 +171,8 @@
             // 
             // rButton2
             // 
-            rButton2.BackColor = Color.FromArgb(101, 183, 65);
-            rButton2.BackgroundColor = Color.FromArgb(101, 183, 65);
+            rButton2.BackColor = Color.FromArgb(36, 10, 52);
+            rButton2.BackgroundColor = Color.FromArgb(36, 10, 52);
             rButton2.BorderColor = Color.PaleVioletRed;
             rButton2.BorderRadius = 38;
             rButton2.BorderSize = 0;
@@ -222,8 +222,8 @@
             btnChangePass.BackColor = Color.FromArgb(101, 183, 65);
             btnChangePass.BackgroundColor = Color.FromArgb(101, 183, 65);
             btnChangePass.BorderColor = Color.FromArgb(30, 106, 17);
-            btnChangePass.BorderRadius = 15;
-            btnChangePass.BorderSize = 2;
+            btnChangePass.BorderRadius = 40;
+            btnChangePass.BorderSize = 1;
             btnChangePass.Enabled = false;
             btnChangePass.FlatAppearance.BorderSize = 0;
             btnChangePass.FlatStyle = FlatStyle.Flat;
@@ -241,7 +241,7 @@
             // ChangePassword
             // 
             AutoScaleMode = AutoScaleMode.None;
-            BackColor = Color.FromArgb(244, 237, 204);
+            BackColor = Color.FromArgb(224, 224, 224);
             ClientSize = new Size(642, 495);
             Controls.Add(btnChangePass);
             Controls.Add(panel2);
