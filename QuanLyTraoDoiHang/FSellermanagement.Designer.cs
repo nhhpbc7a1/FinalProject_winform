@@ -43,19 +43,19 @@ namespace QuanLyTraoDoiHang
             timer1 = new System.Windows.Forms.Timer(components);
             timer2 = new System.Windows.Forms.Timer(components);
             pnlDropDownnn = new Panel();
-            btnReturned = new RJControls.RButton();
-            btnCancelled = new RJControls.RButton();
-            btnMyOrder = new RJControls.RButton();
-            btnOrder = new RJControls.RButton();
+            btnReturned = new RButton();
+            btnCancelled = new RButton();
+            btnMyOrder = new RButton();
+            btnOrder = new RButton();
             pnlDropDownProdu = new Panel();
-            btnAddProduct = new RJControls.RButton();
-            btnMyProducts = new RJControls.RButton();
-            btnProducts = new RJControls.RButton();
+            btnAddProduct = new RButton();
+            btnMyProducts = new RButton();
+            btnProducts = new RButton();
             panel1 = new Panel();
-            rButton1 = new RJControls.RButton();
+            rButton1 = new RButton();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
-            btnShipment = new RJControls.RButton();
+            btnShipment = new RButton();
             panel3 = new Panel();
             label2 = new Label();
             panel4 = new Panel();
@@ -72,7 +72,7 @@ namespace QuanLyTraoDoiHang
             // 
             // pnlSellerTool
             // 
-            pnlSellerTool.BackColor = SystemColors.Control;
+            pnlSellerTool.BackColor = Color.White;
             pnlSellerTool.Controls.Add(pnlProducts);
             pnlSellerTool.Controls.Add(pnlMenu);
             pnlSellerTool.Location = new Point(216, 90);
@@ -84,7 +84,7 @@ namespace QuanLyTraoDoiHang
             // 
             // pnlProducts
             // 
-            pnlProducts.BackColor = SystemColors.ButtonHighlight;
+            pnlProducts.BackColor = SystemColors.Control;
             pnlProducts.Location = new Point(12, 59);
             pnlProducts.Name = "pnlProducts";
             pnlProducts.Size = new Size(725, 336);
@@ -356,7 +356,7 @@ namespace QuanLyTraoDoiHang
             // 
             // panel1
             // 
-            panel1.BackColor = SystemColors.Control;
+            panel1.BackColor = Color.White;
             panel1.Controls.Add(rButton1);
             panel1.Controls.Add(pnlDropDownProdu);
             panel1.Controls.Add(pnlDropDownnn);
@@ -387,7 +387,7 @@ namespace QuanLyTraoDoiHang
             // 
             // pictureBox1
             // 
-            pictureBox1.BackColor = SystemColors.Control;
+            pictureBox1.BackColor = Color.White;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(46, 16);
             pictureBox1.Name = "pictureBox1";
@@ -427,7 +427,7 @@ namespace QuanLyTraoDoiHang
             // 
             // panel3
             // 
-            panel3.BackColor = SystemColors.Control;
+            panel3.BackColor = Color.White;
             panel3.Controls.Add(label2);
             panel3.Location = new Point(216, 12);
             panel3.Name = "panel3";
@@ -447,33 +447,12 @@ namespace QuanLyTraoDoiHang
             // 
             // panel4
             // 
-            panel4.BackColor = SystemColors.Control;
+            panel4.BackColor = Color.White;
             panel4.Controls.Add(pictureBox1);
             panel4.Location = new Point(3, 12);
             panel4.Name = "panel4";
             panel4.Size = new Size(207, 537);
             panel4.TabIndex = 9;
-            // 
-            // rButton2
-            // 
-            rButton2.BackColor = Color.FromArgb(30, 106, 17);
-            rButton2.BackgroundColor = Color.FromArgb(30, 106, 17);
-            rButton2.BorderColor = Color.PaleVioletRed;
-            rButton2.BorderRadius = 20;
-            rButton2.BorderSize = 0;
-            rButton2.FlatAppearance.BorderSize = 0;
-            rButton2.FlatStyle = FlatStyle.Flat;
-            rButton2.Font = new Font("Segoe UI Black", 9.900001F, FontStyle.Bold, GraphicsUnit.Point);
-            rButton2.ForeColor = Color.White;
-            rButton2.Location = new Point(318, 395);
-            rButton2.Margin = new Padding(1);
-            rButton2.Name = "rButton2";
-            rButton2.Size = new Size(154, 37);
-            rButton2.TabIndex = 24;
-            rButton2.Text = "Update";
-            rButton2.TextColor = Color.White;
-            rButton2.UseVisualStyleBackColor = false;
-            rButton2.Visible = false;
             // 
             // FSellermanagement
             // 
