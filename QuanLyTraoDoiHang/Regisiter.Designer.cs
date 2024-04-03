@@ -35,8 +35,12 @@
             txtPersonalId = new TextBox();
             txtUsername = new TextBox();
             panel3 = new Panel();
-            ucRetypePassword = new UCPasswordTextBox();
             ucPassword = new UCPasswordTextBox();
+            panel1 = new Panel();
+            pictureBox1 = new PictureBox();
+            label4 = new Label();
+            label1 = new Label();
+            ucRetypePassword = new UCPasswordTextBox();
             lblRetypedPass = new Label();
             lblValidPass = new Label();
             label5 = new Label();
@@ -47,21 +51,17 @@
             btnRegister = new RJControls.RButton();
             label3 = new Label();
             label2 = new Label();
-            panel1 = new Panel();
-            pictureBox1 = new PictureBox();
-            label4 = new Label();
-            label1 = new Label();
             panel6 = new Panel();
             btnHome = new RJControls.RButton();
             btnMinimize = new RJControls.RButton();
             btnExit = new RJControls.RButton();
             panel3.SuspendLayout();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel6.SuspendLayout();
             SuspendLayout();
             // 
@@ -129,10 +129,10 @@
             // panel3
             // 
             panel3.Anchor = AnchorStyles.None;
-            panel3.BackColor = Color.FromArgb(244, 237, 204);
+            panel3.BackColor = Color.White;
+            panel3.Controls.Add(ucRetypePassword);
             panel3.Controls.Add(ucPassword);
             panel3.Controls.Add(panel1);
-            panel3.Controls.Add(ucRetypePassword);
             panel3.Controls.Add(lblRetypedPass);
             panel3.Controls.Add(lblValidPass);
             panel3.Controls.Add(label5);
@@ -151,16 +151,6 @@
             panel3.Size = new Size(877, 582);
             panel3.TabIndex = 15;
             // 
-            // ucRetypePassword
-            // 
-            ucRetypePassword.BackColor = Color.White;
-            ucRetypePassword.Font = new Font("Lato", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point);
-            ucRetypePassword.Location = new Point(70, 441);
-            ucRetypePassword.Margin = new Padding(3, 2, 3, 2);
-            ucRetypePassword.Name = "ucRetypePassword";
-            ucRetypePassword.Size = new Size(306, 29);
-            ucRetypePassword.TabIndex = 29;
-            // 
             // ucPassword
             // 
             ucPassword.BackColor = Color.White;
@@ -170,6 +160,60 @@
             ucPassword.Name = "ucPassword";
             ucPassword.Size = new Size(306, 29);
             ucPassword.TabIndex = 28;
+            // 
+            // panel1
+            // 
+            panel1.Anchor = AnchorStyles.None;
+            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(label1);
+            panel1.Location = new Point(430, 134);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(405, 326);
+            panel1.TabIndex = 18;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox1.InitialImage = (Image)resources.GetObject("pictureBox1.InitialImage");
+            pictureBox1.Location = new Point(85, 18);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(239, 211);
+            pictureBox1.TabIndex = 12;
+            pictureBox1.TabStop = false;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = Color.FromArgb(30, 106, 17);
+            label4.Location = new Point(67, 287);
+            label4.Name = "label4";
+            label4.Size = new Size(301, 24);
+            label4.TabIndex = 13;
+            label4.Text = "Trade Goods, Seamless, Swift";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 45F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.FromArgb(30, 106, 17);
+            label1.Location = new Point(122, 217);
+            label1.Name = "label1";
+            label1.Size = new Size(186, 70);
+            label1.TabIndex = 9;
+            label1.Text = "KoHa";
+            // 
+            // ucRetypePassword
+            // 
+            ucRetypePassword.BackColor = Color.White;
+            ucRetypePassword.Font = new Font("Lato", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            ucRetypePassword.Location = new Point(70, 441);
+            ucRetypePassword.Margin = new Padding(3, 2, 3, 2);
+            ucRetypePassword.Name = "ucRetypePassword";
+            ucRetypePassword.Size = new Size(306, 29);
+            ucRetypePassword.TabIndex = 29;
             // 
             // lblRetypedPass
             // 
@@ -287,50 +331,6 @@
             label2.Size = new Size(0, 55);
             label2.TabIndex = 16;
             // 
-            // panel1
-            // 
-            panel1.Anchor = AnchorStyles.None;
-            panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(label1);
-            panel1.Location = new Point(430, 134);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(405, 326);
-            panel1.TabIndex = 18;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox1.InitialImage = (Image)resources.GetObject("pictureBox1.InitialImage");
-            pictureBox1.Location = new Point(85, 18);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(239, 211);
-            pictureBox1.TabIndex = 12;
-            pictureBox1.TabStop = false;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.FromArgb(30, 106, 17);
-            label4.Location = new Point(67, 287);
-            label4.Name = "label4";
-            label4.Size = new Size(301, 24);
-            label4.TabIndex = 13;
-            label4.Text = "Trade Goods, Seamless, Swift";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 45F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.FromArgb(30, 106, 17);
-            label1.Location = new Point(122, 217);
-            label1.Name = "label1";
-            label1.Size = new Size(186, 70);
-            label1.TabIndex = 9;
-            label1.Text = "KoHa";
-            // 
             // panel6
             // 
             panel6.Controls.Add(btnHome);
@@ -414,13 +414,13 @@
             Text = "Regisiter";
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel6.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
