@@ -60,12 +60,12 @@
             // 
             txtUsername.BackColor = SystemColors.ControlLightLight;
             txtUsername.BorderStyle = BorderStyle.FixedSingle;
-            txtUsername.Font = new Font("Lato", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtUsername.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtUsername.Location = new Point(54, 89);
             txtUsername.Margin = new Padding(3, 2, 3, 2);
             txtUsername.Name = "txtUsername";
             txtUsername.PlaceholderText = "  Username";
-            txtUsername.Size = new Size(264, 27);
+            txtUsername.Size = new Size(264, 26);
             txtUsername.TabIndex = 2;
             // 
             // panel2
@@ -87,7 +87,7 @@
             // ucPassword
             // 
             ucPassword.BackColor = Color.White;
-            ucPassword.Font = new Font("Lato", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ucPassword.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             ucPassword.Location = new Point(54, 147);
             ucPassword.Margin = new Padding(3, 2, 3, 2);
             ucPassword.Name = "ucPassword";
@@ -108,11 +108,11 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Lato", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = SystemColors.InfoText;
             label5.Location = new Point(116, 16);
             label5.Name = "label5";
-            label5.Size = new Size(151, 39);
+            label5.Size = new Size(157, 37);
             label5.TabIndex = 15;
             label5.Text = "Welcome";
             // 
@@ -125,7 +125,7 @@
             btnRegister.BorderSize = 3;
             btnRegister.FlatAppearance.BorderSize = 0;
             btnRegister.FlatStyle = FlatStyle.Flat;
-            btnRegister.Font = new Font("Lato", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRegister.Font = new Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
             btnRegister.ForeColor = Color.FromArgb(11, 96, 176);
             btnRegister.Location = new Point(54, 326);
             btnRegister.Name = "btnRegister";
@@ -144,7 +144,7 @@
             btnSignin.BorderSize = 0;
             btnSignin.FlatAppearance.BorderSize = 0;
             btnSignin.FlatStyle = FlatStyle.Flat;
-            btnSignin.Font = new Font("Lato", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSignin.Font = new Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
             btnSignin.ForeColor = Color.White;
             btnSignin.Location = new Point(54, 256);
             btnSignin.Name = "btnSignin";
@@ -157,13 +157,15 @@
             // lblforgotpass
             // 
             lblforgotpass.AutoSize = true;
-            lblforgotpass.Font = new Font("Lato", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblforgotpass.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblforgotpass.ForeColor = SystemColors.GrayText;
             lblforgotpass.Location = new Point(97, 194);
             lblforgotpass.Name = "lblforgotpass";
-            lblforgotpass.Size = new Size(170, 19);
+            lblforgotpass.Size = new Size(171, 20);
             lblforgotpass.TabIndex = 7;
             lblforgotpass.Text = "Forgot your password?";
+            lblforgotpass.MouseEnter += lblforgotpass_MouseEnter;
+            lblforgotpass.MouseLeave += lblforgotpass_MouseLeave;
             // 
             // label1
             // 
@@ -198,11 +200,11 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Lato", 15.7499981F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Font = new Font("Microsoft Sans Serif", 15.7499981F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.FromArgb(30, 106, 17);
             label4.Location = new Point(75, 287);
             label4.Name = "label4";
-            label4.Size = new Size(278, 25);
+            label4.Size = new Size(301, 25);
             label4.TabIndex = 13;
             label4.Text = "Trade Goods, Seamless, Swift";
             // 

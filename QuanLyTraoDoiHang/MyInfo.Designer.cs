@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyInfo));
             panel3 = new Panel();
-            panel1 = new Panel();
             label2 = new Label();
             flowLayoutPanel1 = new FlowLayoutPanel();
             radioBtnFemale = new RadioButton();
@@ -52,16 +51,17 @@
             rButton5 = new RJControls.RButton();
             rButton6 = new RJControls.RButton();
             rButton7 = new RJControls.RButton();
+            panel1 = new Panel();
             panel3.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
             flowLayoutPanel3.SuspendLayout();
             flowLayoutPanel4.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel3
             // 
-            panel3.BackColor = Color.FromArgb(101, 183, 65);
-            panel3.Controls.Add(panel1);
+            panel3.BackColor = Color.FromArgb(224, 224, 224);
             panel3.Controls.Add(label2);
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
@@ -69,21 +69,12 @@
             panel3.Size = new Size(642, 72);
             panel3.TabIndex = 0;
             // 
-            // panel1
-            // 
-            panel1.BackColor = Color.Black;
-            panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(0, 69);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(642, 3);
-            panel1.TabIndex = 57;
-            // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(225, 21);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(210, 21);
             label2.Name = "label2";
             label2.Size = new Size(213, 30);
             label2.TabIndex = 3;
@@ -227,10 +218,10 @@
             flowLayoutPanel3.Controls.Add(txtPhone);
             flowLayoutPanel3.Controls.Add(txtAddress);
             flowLayoutPanel3.Controls.Add(flowLayoutPanel1);
-            flowLayoutPanel3.Location = new Point(205, 95);
+            flowLayoutPanel3.Location = new Point(190, 6);
             flowLayoutPanel3.Margin = new Padding(0);
             flowLayoutPanel3.Name = "flowLayoutPanel3";
-            flowLayoutPanel3.Size = new Size(299, 344);
+            flowLayoutPanel3.Size = new Size(428, 344);
             flowLayoutPanel3.TabIndex = 10;
             // 
             // txtPersonalID
@@ -273,7 +264,7 @@
             flowLayoutPanel4.Controls.Add(rButton5);
             flowLayoutPanel4.Controls.Add(rButton6);
             flowLayoutPanel4.Controls.Add(rButton7);
-            flowLayoutPanel4.Location = new Point(133, 90);
+            flowLayoutPanel4.Location = new Point(124, 3);
             flowLayoutPanel4.Name = "flowLayoutPanel4";
             flowLayoutPanel4.Size = new Size(47, 340);
             flowLayoutPanel4.TabIndex = 13;
@@ -392,13 +383,22 @@
             rButton7.TextColor = Color.White;
             rButton7.UseVisualStyleBackColor = false;
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(244, 237, 219);
+            panel1.Controls.Add(flowLayoutPanel4);
+            panel1.Controls.Add(flowLayoutPanel3);
+            panel1.Location = new Point(12, 72);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(618, 360);
+            panel1.TabIndex = 14;
+            // 
             // MyInfo
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(224, 224, 224);
             ClientSize = new Size(642, 495);
-            Controls.Add(flowLayoutPanel4);
-            Controls.Add(flowLayoutPanel3);
+            Controls.Add(panel1);
             Controls.Add(btnSave);
             Controls.Add(panel3);
             Name = "MyInfo";
@@ -410,6 +410,7 @@
             flowLayoutPanel3.ResumeLayout(false);
             flowLayoutPanel3.PerformLayout();
             flowLayoutPanel4.ResumeLayout(false);
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -421,7 +422,6 @@
         private TextBox txtName;
         private RJControls.RButton btnSave;
         private Label label2;
-        private Panel panel1;
         private TextBox txtAddress;
         private FlowLayoutPanel flowLayoutPanel1;
         private RadioButton radioBtnFemale;
@@ -437,5 +437,6 @@
         private RJControls.RButton rButton5;
         private RJControls.RButton rButton6;
         private RJControls.RButton rButton7;
+        private Panel panel1;
     }
 }

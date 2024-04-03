@@ -56,6 +56,7 @@
             btnShipment = new RJControls.RButton();
             panel3 = new Panel();
             label2 = new Label();
+            rButton2 = new RJControls.RButton();
             pnlSellerTool.SuspendLayout();
             pnlMenu.SuspendLayout();
             pnlDropDownnn.SuspendLayout();
@@ -69,6 +70,7 @@
             // pnlSellerTool
             // 
             pnlSellerTool.BackColor = SystemColors.ControlLight;
+            pnlSellerTool.Controls.Add(rButton2);
             pnlSellerTool.Controls.Add(pnlProducts);
             pnlSellerTool.Controls.Add(pnlMenu);
             pnlSellerTool.Location = new Point(216, 90);
@@ -440,6 +442,27 @@
             label2.Text = "Content";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // rButton2
+            // 
+            rButton2.BackColor = Color.FromArgb(30, 106, 17);
+            rButton2.BackgroundColor = Color.FromArgb(30, 106, 17);
+            rButton2.BorderColor = Color.PaleVioletRed;
+            rButton2.BorderRadius = 20;
+            rButton2.BorderSize = 0;
+            rButton2.FlatAppearance.BorderSize = 0;
+            rButton2.FlatStyle = FlatStyle.Flat;
+            rButton2.Font = new Font("Segoe UI Black", 9.900001F, FontStyle.Bold, GraphicsUnit.Point);
+            rButton2.ForeColor = Color.White;
+            rButton2.Location = new Point(318, 395);
+            rButton2.Margin = new Padding(1);
+            rButton2.Name = "rButton2";
+            rButton2.Size = new Size(154, 37);
+            rButton2.TabIndex = 24;
+            rButton2.Text = "Update";
+            rButton2.TextColor = Color.White;
+            rButton2.UseVisualStyleBackColor = false;
+            rButton2.Visible = false;
+            // 
             // FSellermanagement
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -493,5 +516,6 @@
         private FlowLayoutPanel pnlProducts;
         private Panel panel3;
         private Label label2;
+        private RJControls.RButton rButton2;
     }
 }

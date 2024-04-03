@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewHistory));
             panel3 = new Panel();
-            panel1 = new Panel();
             label2 = new Label();
             flowLayoutPanel1 = new FlowLayoutPanel();
             btnShip = new RJControls.RButton();
@@ -47,8 +46,7 @@
             // 
             // panel3
             // 
-            panel3.BackColor = Color.FromArgb(101, 183, 65);
-            panel3.Controls.Add(panel1);
+            panel3.BackColor = Color.FromArgb(224, 224, 224);
             panel3.Controls.Add(label2);
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
@@ -56,21 +54,12 @@
             panel3.Size = new Size(642, 72);
             panel3.TabIndex = 1;
             // 
-            // panel1
-            // 
-            panel1.BackColor = Color.Black;
-            panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(0, 69);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(642, 3);
-            panel1.TabIndex = 57;
-            // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(267, 21);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(250, 22);
             label2.Name = "label2";
             label2.Size = new Size(143, 30);
             label2.TabIndex = 3;
@@ -79,7 +68,7 @@
             // 
             // flowLayoutPanel1
             // 
-            flowLayoutPanel1.BackColor = Color.FromArgb(244, 237, 204);
+            flowLayoutPanel1.BackColor = Color.FromArgb(224, 224, 224);
             flowLayoutPanel1.Controls.Add(btnShip);
             flowLayoutPanel1.Controls.Add(btnCompleted);
             flowLayoutPanel1.Controls.Add(btnCancel);
@@ -198,7 +187,7 @@
             // ViewHistory
             // 
             AutoScaleMode = AutoScaleMode.None;
-            BackColor = Color.FromArgb(244, 237, 204);
+            BackColor = Color.FromArgb(224, 224, 224);
             ClientSize = new Size(642, 495);
             Controls.Add(flowLayoutPanel2);
             Controls.Add(flowLayoutPanel1);
@@ -216,7 +205,6 @@
         #endregion
 
         private Panel panel3;
-        private Panel panel1;
         private Label label2;
         private FlowLayoutPanel flowLayoutPanel1;
         private RJControls.RButton btnShip;
