@@ -30,12 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChangePassword));
             panel3 = new Panel();
-            panel4 = new Panel();
             label2 = new Label();
             panel2 = new Panel();
-            ucReTypePass = new UCPasswordTextBox();
-            ucNewPass = new UCPasswordTextBox();
             ucOldPass = new UCPasswordTextBox();
+            ucNewPass = new UCPasswordTextBox();
+            ucReTypePass = new UCPasswordTextBox();
             lblRetypedPass = new Label();
             rButton3 = new RJControls.RButton();
             rButton4 = new RJControls.RButton();
@@ -51,8 +50,7 @@
             // 
             // panel3
             // 
-            panel3.BackColor = Color.FromArgb(101, 183, 65);
-            panel3.Controls.Add(panel4);
+            panel3.BackColor = Color.FromArgb(224, 224, 224);
             panel3.Controls.Add(label2);
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
@@ -60,21 +58,12 @@
             panel3.Size = new Size(642, 72);
             panel3.TabIndex = 1;
             // 
-            // panel4
-            // 
-            panel4.BackColor = Color.Black;
-            panel4.Dock = DockStyle.Bottom;
-            panel4.Location = new Point(0, 69);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(642, 3);
-            panel4.TabIndex = 57;
-            // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(234, 22);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(230, 22);
             label2.Name = "label2";
             label2.Size = new Size(181, 30);
             label2.TabIndex = 2;
@@ -82,52 +71,53 @@
             // 
             // panel2
             // 
-            panel2.Controls.Add(ucOldPass);
-            panel2.Controls.Add(ucNewPass);
+            panel2.BackColor = Color.FromArgb(244, 237, 219);
             panel2.Controls.Add(ucReTypePass);
+            panel2.Controls.Add(ucNewPass);
+            panel2.Controls.Add(ucOldPass);
             panel2.Controls.Add(lblRetypedPass);
             panel2.Controls.Add(rButton3);
             panel2.Controls.Add(rButton4);
             panel2.Controls.Add(rButton2);
             panel2.Controls.Add(panel1);
             panel2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            panel2.Location = new Point(41, 121);
+            panel2.Location = new Point(10, 78);
             panel2.Name = "panel2";
-            panel2.Size = new Size(556, 298);
+            panel2.Size = new Size(620, 348);
             panel2.TabIndex = 6;
-            // 
-            // ucReTypePass
-            // 
-            ucReTypePass.BackColor = Color.White;
-            ucReTypePass.Location = new Point(117, 186);
-            ucReTypePass.Margin = new Padding(3, 2, 3, 2);
-            ucReTypePass.Name = "ucReTypePass";
-            ucReTypePass.Size = new Size(332, 29);
-            ucReTypePass.TabIndex = 28;
-            // 
-            // ucNewPass
-            // 
-            ucNewPass.BackColor = Color.White;
-            ucNewPass.Location = new Point(120, 76);
-            ucNewPass.Margin = new Padding(3, 2, 3, 2);
-            ucNewPass.Name = "ucNewPass";
-            ucNewPass.Size = new Size(329, 29);
-            ucNewPass.TabIndex = 29;
             // 
             // ucOldPass
             // 
             ucOldPass.BackColor = Color.White;
-            ucOldPass.Location = new Point(120, 20);
+            ucOldPass.Location = new Point(169, 57);
             ucOldPass.Margin = new Padding(3, 2, 3, 2);
             ucOldPass.Name = "ucOldPass";
             ucOldPass.Size = new Size(329, 29);
             ucOldPass.TabIndex = 30;
             // 
+            // ucNewPass
+            // 
+            ucNewPass.BackColor = Color.White;
+            ucNewPass.Location = new Point(169, 115);
+            ucNewPass.Margin = new Padding(3, 2, 3, 2);
+            ucNewPass.Name = "ucNewPass";
+            ucNewPass.Size = new Size(329, 29);
+            ucNewPass.TabIndex = 29;
+            // 
+            // ucReTypePass
+            // 
+            ucReTypePass.BackColor = Color.White;
+            ucReTypePass.Location = new Point(166, 225);
+            ucReTypePass.Margin = new Padding(3, 2, 3, 2);
+            ucReTypePass.Name = "ucReTypePass";
+            ucReTypePass.Size = new Size(332, 29);
+            ucReTypePass.TabIndex = 28;
+            // 
             // lblRetypedPass
             // 
             lblRetypedPass.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             lblRetypedPass.ForeColor = Color.Black;
-            lblRetypedPass.Location = new Point(120, 229);
+            lblRetypedPass.Location = new Point(169, 269);
             lblRetypedPass.Name = "lblRetypedPass";
             lblRetypedPass.Size = new Size(313, 39);
             lblRetypedPass.TabIndex = 4;
@@ -144,7 +134,7 @@
             rButton3.FlatStyle = FlatStyle.Flat;
             rButton3.ForeColor = Color.White;
             rButton3.Image = (Image)resources.GetObject("rButton3.Image");
-            rButton3.Location = new Point(67, 14);
+            rButton3.Location = new Point(105, 50);
             rButton3.Name = "rButton3";
             rButton3.Size = new Size(38, 38);
             rButton3.TabIndex = 26;
@@ -162,7 +152,7 @@
             rButton4.FlatStyle = FlatStyle.Flat;
             rButton4.ForeColor = Color.White;
             rButton4.Image = (Image)resources.GetObject("rButton4.Image");
-            rButton4.Location = new Point(67, 182);
+            rButton4.Location = new Point(105, 220);
             rButton4.Name = "rButton4";
             rButton4.Size = new Size(38, 38);
             rButton4.TabIndex = 25;
@@ -180,7 +170,7 @@
             rButton2.FlatStyle = FlatStyle.Flat;
             rButton2.ForeColor = Color.White;
             rButton2.Image = (Image)resources.GetObject("rButton2.Image");
-            rButton2.Location = new Point(67, 72);
+            rButton2.Location = new Point(105, 110);
             rButton2.Name = "rButton2";
             rButton2.Size = new Size(38, 38);
             rButton2.TabIndex = 23;
@@ -191,7 +181,7 @@
             // 
             panel1.Controls.Add(lblValidPass);
             panel1.Controls.Add(label4);
-            panel1.Location = new Point(120, 110);
+            panel1.Location = new Point(169, 149);
             panel1.Name = "panel1";
             panel1.Size = new Size(329, 71);
             panel1.TabIndex = 8;
@@ -229,7 +219,7 @@
             btnChangePass.FlatStyle = FlatStyle.Flat;
             btnChangePass.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnChangePass.ForeColor = Color.White;
-            btnChangePass.Location = new Point(161, 425);
+            btnChangePass.Location = new Point(152, 441);
             btnChangePass.Name = "btnChangePass";
             btnChangePass.Size = new Size(326, 42);
             btnChangePass.TabIndex = 10;
@@ -265,7 +255,6 @@
         private RJControls.RButton rButton3;
         private RJControls.RButton rButton4;
         private RJControls.RButton rButton2;
-        private Panel panel4;
         private RJControls.RButton btnChangePass;
         private UCPasswordTextBox ucOldPass;
         private UCPasswordTextBox ucNewPass;

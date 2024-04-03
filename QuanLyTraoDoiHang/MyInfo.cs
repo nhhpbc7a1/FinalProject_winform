@@ -106,5 +106,9 @@ namespace QuanLyTraoDoiHang
             MyInfo_Load(sender, e);
         }
 
+        private void MyInfo_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

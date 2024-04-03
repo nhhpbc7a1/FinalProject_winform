@@ -161,10 +161,13 @@ namespace QuanLyTraoDoiHang
             PersonalInfor form = new PersonalInfor();
             void Logout(object sender, EventArgs e)
             {
-                MessageBox.Show("Logout successfully");
-                Program.currentUserId = -1;
-                BackToMainpage(sender,e);
-                UpdateAccountByAction(sender, e);
+                if(MessageBox.Show("Do you really want to log out?","Confirmation",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.OK)
+                {
+                    MessageBox.Show("Logout successfully");
+                    Program.currentUserId = -1;
+                    BackToMainpage(sender, e);
+                    UpdateAccountByAction(sender, e);
+                }
             }
             form.btnLogout.Click += Logout;
             OpenChildForm(form);
