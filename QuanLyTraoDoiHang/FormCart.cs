@@ -61,7 +61,7 @@ namespace QuanLyTraoDoiHang
                 listProduct.Add(ProductDAO.SelectById(CartItemDAO.RowToCartItem(row).productId));
             }
             //MessageBox.Show(listProduct.Count.ToString());
-            bool[] ch = new bool[100000] ;
+            bool[] ch = new bool[100000];
             pnlProducts.Controls.Clear();
             for (int i = 0; i < listProduct.Count; i++)
             {
@@ -118,5 +118,9 @@ namespace QuanLyTraoDoiHang
 
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

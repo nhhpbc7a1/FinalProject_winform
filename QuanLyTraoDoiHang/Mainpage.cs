@@ -83,7 +83,7 @@ namespace QuanLyTraoDoiHang
                 MessageBox.Show("please login first");
             }
             else
-            {              
+            {
                 OpenChildForm(new FSellermanagement());
             }
         }
@@ -143,7 +143,7 @@ namespace QuanLyTraoDoiHang
         {
             Form form = new Regisiter();
             form.ShowDialog();
-            UpdateAccountByAction(sender,e);
+            UpdateAccountByAction(sender, e);
         }
 
         private void lblSignin_Click(object sender, EventArgs e)
@@ -153,15 +153,15 @@ namespace QuanLyTraoDoiHang
             UpdateAccountByAction(sender, e);
         }
 
-        
+
         private void Account_Click(object sender, EventArgs e)
         {
 
-           
+
             PersonalInfor form = new PersonalInfor();
             void Logout(object sender, EventArgs e)
             {
-                if(MessageBox.Show("Do you really want to log out?","Confirmation",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.OK)
+                if (MessageBox.Show("Do you really want to log out?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.OK)
                 {
                     MessageBox.Show("Logout successfully");
                     Program.currentUserId = -1;
@@ -182,8 +182,7 @@ namespace QuanLyTraoDoiHang
             else
             {
                 Form form = new FormAddNewProduct();
-                form.ShowDialog();
-                OpenChildForm(new FormProduct());
+                OpenChildForm(form);
             }
         }
 
@@ -192,6 +191,14 @@ namespace QuanLyTraoDoiHang
             this.Close();
         }
 
+        private void pnl_Body_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
+
+        private void btnAddProduct_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
