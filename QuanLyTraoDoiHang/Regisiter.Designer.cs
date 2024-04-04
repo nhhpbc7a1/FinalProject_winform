@@ -36,11 +36,11 @@
             txtUsername = new TextBox();
             panel3 = new Panel();
             ucPassword = new UCPasswordTextBox();
+            ucRetypePassword = new UCPasswordTextBox();
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
             label4 = new Label();
             label1 = new Label();
-            ucRetypePassword = new UCPasswordTextBox();
             lblRetypedPass = new Label();
             lblValidPass = new Label();
             label5 = new Label();
@@ -69,24 +69,24 @@
             // 
             txtEmail.BackColor = SystemColors.ControlLightLight;
             txtEmail.BorderStyle = BorderStyle.FixedSingle;
-            txtEmail.Font = new Font("Lato", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            txtEmail.Font = new Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             txtEmail.Location = new Point(69, 321);
             txtEmail.Margin = new Padding(4, 3, 4, 3);
             txtEmail.Name = "txtEmail";
             txtEmail.PlaceholderText = "  Email";
-            txtEmail.Size = new Size(306, 27);
+            txtEmail.Size = new Size(306, 26);
             txtEmail.TabIndex = 10;
             // 
             // txtPhone
             // 
             txtPhone.BackColor = SystemColors.ControlLightLight;
             txtPhone.BorderStyle = BorderStyle.FixedSingle;
-            txtPhone.Font = new Font("Lato", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPhone.Font = new Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             txtPhone.Location = new Point(70, 258);
             txtPhone.Margin = new Padding(4, 3, 4, 3);
             txtPhone.Name = "txtPhone";
             txtPhone.PlaceholderText = "  Phone";
-            txtPhone.Size = new Size(306, 27);
+            txtPhone.Size = new Size(306, 26);
             txtPhone.TabIndex = 11;
             // 
             // dtBirthday
@@ -94,11 +94,11 @@
             dtBirthday.CalendarForeColor = Color.FromArgb(244, 237, 204);
             dtBirthday.CalendarMonthBackground = SystemColors.InfoText;
             dtBirthday.CalendarTitleForeColor = SystemColors.ControlDarkDark;
-            dtBirthday.Font = new Font("Lato", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            dtBirthday.Font = new Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             dtBirthday.Location = new Point(70, 134);
             dtBirthday.Name = "dtBirthday";
             dtBirthday.RightToLeft = RightToLeft.Yes;
-            dtBirthday.Size = new Size(306, 27);
+            dtBirthday.Size = new Size(306, 26);
             dtBirthday.TabIndex = 15;
             dtBirthday.ValueChanged += dtBirthday_ValueChanged;
             // 
@@ -106,24 +106,24 @@
             // 
             txtPersonalId.BackColor = SystemColors.ControlLightLight;
             txtPersonalId.BorderStyle = BorderStyle.FixedSingle;
-            txtPersonalId.Font = new Font("Lato", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPersonalId.Font = new Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             txtPersonalId.Location = new Point(70, 201);
             txtPersonalId.Margin = new Padding(4, 3, 4, 3);
             txtPersonalId.Name = "txtPersonalId";
             txtPersonalId.PlaceholderText = "  Personal ID";
-            txtPersonalId.Size = new Size(306, 27);
+            txtPersonalId.Size = new Size(306, 26);
             txtPersonalId.TabIndex = 14;
             // 
             // txtUsername
             // 
             txtUsername.BackColor = SystemColors.ControlLightLight;
             txtUsername.BorderStyle = BorderStyle.FixedSingle;
-            txtUsername.Font = new Font("Lato", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            txtUsername.Font = new Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             txtUsername.Location = new Point(70, 79);
             txtUsername.Margin = new Padding(3, 2, 3, 2);
             txtUsername.Name = "txtUsername";
             txtUsername.PlaceholderText = "  Username";
-            txtUsername.Size = new Size(306, 27);
+            txtUsername.Size = new Size(306, 26);
             txtUsername.TabIndex = 2;
             // 
             // panel3
@@ -154,12 +154,22 @@
             // ucPassword
             // 
             ucPassword.BackColor = Color.White;
-            ucPassword.Font = new Font("Lato", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            ucPassword.Font = new Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point);
             ucPassword.Location = new Point(70, 381);
             ucPassword.Margin = new Padding(3, 2, 3, 2);
             ucPassword.Name = "ucPassword";
             ucPassword.Size = new Size(306, 29);
             ucPassword.TabIndex = 28;
+            // 
+            // ucRetypePassword
+            // 
+            ucRetypePassword.BackColor = Color.White;
+            ucRetypePassword.Font = new Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point);
+            ucRetypePassword.Location = new Point(70, 441);
+            ucRetypePassword.Margin = new Padding(3, 2, 3, 2);
+            ucRetypePassword.Name = "ucRetypePassword";
+            ucRetypePassword.Size = new Size(306, 29);
+            ucRetypePassword.TabIndex = 29;
             // 
             // panel1
             // 
@@ -205,19 +215,9 @@
             label1.TabIndex = 9;
             label1.Text = "KoHa";
             // 
-            // ucRetypePassword
-            // 
-            ucRetypePassword.BackColor = Color.White;
-            ucRetypePassword.Font = new Font("Lato", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point);
-            ucRetypePassword.Location = new Point(70, 441);
-            ucRetypePassword.Margin = new Padding(3, 2, 3, 2);
-            ucRetypePassword.Name = "ucRetypePassword";
-            ucRetypePassword.Size = new Size(306, 29);
-            ucRetypePassword.TabIndex = 29;
-            // 
             // lblRetypedPass
             // 
-            lblRetypedPass.Font = new Font("Lato Semibold", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblRetypedPass.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblRetypedPass.ForeColor = Color.Black;
             lblRetypedPass.Location = new Point(70, 477);
             lblRetypedPass.Name = "lblRetypedPass";
@@ -229,11 +229,11 @@
             // lblValidPass
             // 
             lblValidPass.AutoSize = true;
-            lblValidPass.Font = new Font("Lato Semibold", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblValidPass.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblValidPass.ForeColor = Color.Black;
             lblValidPass.Location = new Point(70, 414);
             lblValidPass.Name = "lblValidPass";
-            lblValidPass.Size = new Size(186, 13);
+            lblValidPass.Size = new Size(180, 13);
             lblValidPass.TabIndex = 30;
             lblValidPass.Text = "It should be longer than 6 characters";
             lblValidPass.Visible = false;
@@ -241,11 +241,11 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Lato Black", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = SystemColors.InfoText;
             label5.Location = new Point(159, 24);
             label5.Name = "label5";
-            label5.Size = new Size(124, 35);
+            label5.Size = new Size(132, 33);
             label5.TabIndex = 19;
             label5.Text = "Register";
             // 
@@ -302,7 +302,7 @@
             btnRegister.BorderSize = 0;
             btnRegister.FlatAppearance.BorderSize = 0;
             btnRegister.FlatStyle = FlatStyle.Flat;
-            btnRegister.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnRegister.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnRegister.ForeColor = Color.White;
             btnRegister.Location = new Point(70, 519);
             btnRegister.Name = "btnRegister";

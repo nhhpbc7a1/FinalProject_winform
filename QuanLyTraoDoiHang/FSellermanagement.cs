@@ -20,14 +20,14 @@ namespace QuanLyTraoDoiHang
             //OpenChildForm(new FormMyShipment());
         }
 
-      
-       
+
+
         private void rButton1_Product_Click(object sender, EventArgs e)
         {
             //OpenChildForm(new MyProduct());
         }
-     
-     
+
+
 
         private void rButton1_Click(object sender, EventArgs e)
         {
@@ -51,23 +51,19 @@ namespace QuanLyTraoDoiHang
             childForm.Show();
         }
 
-     
+
         private void rBAnalysis_Click(object sender, EventArgs e)
         {
             //OpenChildForm(new FAnalysis());
         }
 
-     
 
-    
-
-       
         private bool isCollapsed;
         private bool isCollapsed1;
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if(isCollapsed)
+            if (isCollapsed)
             {
                 btnOrder.Image = Resources.icons8_up_16;
                 pnlDropDownnn.Height += 10;
@@ -86,7 +82,7 @@ namespace QuanLyTraoDoiHang
                     timer1.Stop();
                     isCollapsed = true;
                 }
-            }    
+            }
         }
 
         private void btnOrder_Click(object sender, EventArgs e)
@@ -119,18 +115,21 @@ namespace QuanLyTraoDoiHang
                 }
             }
         }
-     
+
         private void btnProducts_Click(object sender, EventArgs e)
         {
             timer2.Start();
             //btnProducts.BackColor = Color.FromArgb(30, 106, 17);
 
         }
+        private void btnShipment_Click(object sender, EventArgs e)
+        {
 
-
+        }
+        // btn Product
         private void btnMyProducts_Click(object sender, EventArgs e)
         {
-           // OpenChildForm(new MyProduct());
+            OpenChildForm(new MyProduct());
 
         }
 
@@ -138,29 +137,24 @@ namespace QuanLyTraoDoiHang
         {
 
         }
-
-        private void btnShipment_Click(object sender, EventArgs e)
+        private void btnDataAnalysis_Click(object sender, EventArgs e)
         {
-            //OpenChildForm(new FormMyShipment());
+            OpenChildForm(new FAnalysis());
+
+        }
+        // btn Order
+        private void btnMyOrder_Click(object sender, EventArgs e)
+        {
 
         }
 
-        private void rButton1_Click_1(object sender, EventArgs e)
+        private void btnReturned_Click(object sender, EventArgs e)
         {
-            //OpenChildForm(new FAnalysis());
 
         }
 
-      
-
-        private void rButton2_Click(object sender, EventArgs e)
+        private void btnCancelled_Click(object sender, EventArgs e)
         {
-            //OpenChildForm(new FormMyShipment());
-
-        }
-        private void btnShipment_Click_1(object sender, EventArgs e)
-        {
-            //OpenChildForm(new FormMyShipment());
 
         }
     }

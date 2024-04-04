@@ -33,7 +33,7 @@ namespace QuanLyTraoDoiHang
             {
                 x.password = ucNewPass.txtPass.Text;
                 AccountDAO.Update(x);
-                MessageBox.Show("Change password successfully");
+                MessageBox.Show("Change password successfully","Notification");
             }
         }
         private void newPass_TextChanged(object sender, EventArgs e)

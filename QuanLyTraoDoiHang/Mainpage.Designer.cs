@@ -38,7 +38,6 @@ namespace QuanLyTraoDoiHang
             lblMainPage = new Label();
             btnCart = new RJControls.RButton();
             btnAddProduct = new RJControls.RButton();
-            panel5 = new Panel();
             btnSearch = new RJControls.RButton();
             lblSignIn = new Label();
             lblSignUp = new Label();
@@ -73,7 +72,7 @@ namespace QuanLyTraoDoiHang
             cbSearchBox.ForeColor = SystemColors.InfoText;
             cbSearchBox.FormattingEnabled = true;
             cbSearchBox.Items.AddRange(new object[] { "totoro model", "susuwatari model", "snow ball" });
-            cbSearchBox.Location = new Point(254, 17);
+            cbSearchBox.Location = new Point(254, 13);
             cbSearchBox.Margin = new Padding(6, 3, 6, 3);
             cbSearchBox.Name = "cbSearchBox";
             cbSearchBox.Size = new Size(406, 29);
@@ -85,7 +84,6 @@ namespace QuanLyTraoDoiHang
             panel1.Controls.Add(pnlMainPage);
             panel1.Controls.Add(btnCart);
             panel1.Controls.Add(btnAddProduct);
-            panel1.Controls.Add(panel5);
             panel1.Controls.Add(btnSearch);
             panel1.Controls.Add(cbSearchBox);
             panel1.Dock = DockStyle.Top;
@@ -145,9 +143,9 @@ namespace QuanLyTraoDoiHang
             btnCart.FlatStyle = FlatStyle.Flat;
             btnCart.ForeColor = Color.White;
             btnCart.Image = (Image)resources.GetObject("btnCart.Image");
-            btnCart.Location = new Point(776, 7);
+            btnCart.Location = new Point(776, 11);
             btnCart.Name = "btnCart";
-            btnCart.Size = new Size(54, 40);
+            btnCart.Size = new Size(42, 34);
             btnCart.TabIndex = 20;
             btnCart.TextColor = Color.White;
             btnCart.UseVisualStyleBackColor = false;
@@ -165,22 +163,14 @@ namespace QuanLyTraoDoiHang
             btnAddProduct.ForeColor = Color.FromArgb(11, 96, 176);
             btnAddProduct.Image = (Image)resources.GetObject("btnAddProduct.Image");
             btnAddProduct.ImageAlign = ContentAlignment.TopCenter;
-            btnAddProduct.Location = new Point(826, 7);
+            btnAddProduct.Location = new Point(822, 7);
             btnAddProduct.Name = "btnAddProduct";
-            btnAddProduct.Size = new Size(69, 44);
+            btnAddProduct.Size = new Size(62, 42);
             btnAddProduct.TabIndex = 18;
             btnAddProduct.Text = "Add Product";
             btnAddProduct.TextAlign = ContentAlignment.BottomCenter;
             btnAddProduct.TextColor = Color.FromArgb(11, 96, 176);
             btnAddProduct.UseVisualStyleBackColor = false;
-            btnAddProduct.Click += btnAddProduct_Click_1;
-            // 
-            // panel5
-            // 
-            panel5.Location = new Point(0, 0);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(200, 100);
-            panel5.TabIndex = 21;
             // 
             // btnSearch
             // 
@@ -373,15 +363,14 @@ namespace QuanLyTraoDoiHang
             pnl_Body.Dock = DockStyle.Fill;
             pnl_Body.Location = new Point(0, 100);
             pnl_Body.Name = "pnl_Body";
-            pnl_Body.Size = new Size(982, 553);
+            pnl_Body.Size = new Size(982, 561);
             pnl_Body.TabIndex = 19;
-            pnl_Body.Paint += pnl_Body_Paint;
             // 
             // Mainpage
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.Control;
-            ClientSize = new Size(982, 653);
+            ClientSize = new Size(982, 661);
             Controls.Add(pnl_Body);
             Controls.Add(panel4);
             FormBorderStyle = FormBorderStyle.None;
@@ -415,7 +404,6 @@ namespace QuanLyTraoDoiHang
         private Panel panel4;
         private Panel pnlMainPage;
         private Label lblMainPage;
-        private Panel panel5;
         private Label label5;
         private RJControls.RButton rButton3;
         private RJControls.RButton btnMainPage;

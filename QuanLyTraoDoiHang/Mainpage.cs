@@ -81,7 +81,7 @@ namespace QuanLyTraoDoiHang
         {
             if (Program.CurrentUser() == null)
             {
-                MessageBox.Show("please login first");
+                MessageBox.Show("please login first", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
             {
@@ -115,7 +115,7 @@ namespace QuanLyTraoDoiHang
         {
             if (Program.CurrentUser() == null)
             {
-                MessageBox.Show("please login first");
+                MessageBox.Show("Please login first", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
             {
@@ -178,7 +178,7 @@ namespace QuanLyTraoDoiHang
         {
             if (Program.CurrentUser() == null)
             {
-                MessageBox.Show("please login first");
+                MessageBox.Show("Please login first", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
             {
@@ -192,14 +192,6 @@ namespace QuanLyTraoDoiHang
             this.Close();
         }
 
-        private void pnl_Body_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnAddProduct_Click_1(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }

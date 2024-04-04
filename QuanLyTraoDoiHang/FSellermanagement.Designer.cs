@@ -33,6 +33,7 @@ namespace QuanLyTraoDoiHang
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FSellermanagement));
             pnlSellerTool = new Panel();
+            rButton2 = new RButton();
             pnlProducts = new FlowLayoutPanel();
             pnlMenu = new Panel();
             label4 = new Label();
@@ -52,7 +53,7 @@ namespace QuanLyTraoDoiHang
             btnMyProducts = new RButton();
             btnProducts = new RButton();
             panel1 = new Panel();
-            rButton1 = new RButton();
+            btnDataAnalysis = new RButton();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
             btnShipment = new RButton();
@@ -73,19 +74,39 @@ namespace QuanLyTraoDoiHang
             // pnlSellerTool
             // 
             pnlSellerTool.BackColor = Color.White;
+            pnlSellerTool.Controls.Add(rButton2);
             pnlSellerTool.Controls.Add(pnlProducts);
             pnlSellerTool.Controls.Add(pnlMenu);
             pnlSellerTool.Location = new Point(216, 90);
             pnlSellerTool.Margin = new Padding(1);
             pnlSellerTool.Name = "pnlSellerTool";
             pnlSellerTool.RightToLeft = RightToLeft.Yes;
-            pnlSellerTool.Size = new Size(751, 459);
+            pnlSellerTool.Size = new Size(758, 465);
             pnlSellerTool.TabIndex = 2;
+            // 
+            // rButton2
+            // 
+            rButton2.BackColor = Color.FromArgb(30, 106, 17);
+            rButton2.BackgroundColor = Color.FromArgb(30, 106, 17);
+            rButton2.BorderColor = Color.PaleVioletRed;
+            rButton2.BorderRadius = 35;
+            rButton2.BorderSize = 0;
+            rButton2.FlatAppearance.BorderSize = 0;
+            rButton2.FlatStyle = FlatStyle.Flat;
+            rButton2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            rButton2.ForeColor = Color.White;
+            rButton2.Location = new Point(301, 410);
+            rButton2.Name = "rButton2";
+            rButton2.Size = new Size(168, 40);
+            rButton2.TabIndex = 22;
+            rButton2.Text = "Update";
+            rButton2.TextColor = Color.White;
+            rButton2.UseVisualStyleBackColor = false;
             // 
             // pnlProducts
             // 
-            pnlProducts.BackColor = SystemColors.Control;
-            pnlProducts.Location = new Point(12, 59);
+            pnlProducts.BackColor = SystemColors.ControlLight;
+            pnlProducts.Location = new Point(16, 59);
             pnlProducts.Name = "pnlProducts";
             pnlProducts.Size = new Size(725, 336);
             pnlProducts.TabIndex = 21;
@@ -98,7 +119,7 @@ namespace QuanLyTraoDoiHang
             pnlMenu.Controls.Add(label3);
             pnlMenu.Controls.Add(lblAction);
             pnlMenu.Controls.Add(lblTotalPrice);
-            pnlMenu.Location = new Point(12, 24);
+            pnlMenu.Location = new Point(16, 24);
             pnlMenu.Margin = new Padding(1);
             pnlMenu.Name = "pnlMenu";
             pnlMenu.Size = new Size(725, 31);
@@ -208,6 +229,7 @@ namespace QuanLyTraoDoiHang
             btnReturned.Text = "Returned orders";
             btnReturned.TextColor = Color.White;
             btnReturned.UseVisualStyleBackColor = false;
+            btnReturned.Click += btnReturned_Click;
             // 
             // btnCancelled
             // 
@@ -228,6 +250,7 @@ namespace QuanLyTraoDoiHang
             btnCancelled.Text = "Cancelled orders";
             btnCancelled.TextColor = Color.White;
             btnCancelled.UseVisualStyleBackColor = false;
+            btnCancelled.Click += btnCancelled_Click;
             // 
             // btnMyOrder
             // 
@@ -248,6 +271,7 @@ namespace QuanLyTraoDoiHang
             btnMyOrder.Text = "My orders";
             btnMyOrder.TextColor = Color.White;
             btnMyOrder.UseVisualStyleBackColor = false;
+            btnMyOrder.Click += btnMyOrder_Click;
             // 
             // btnOrder
             // 
@@ -357,33 +381,34 @@ namespace QuanLyTraoDoiHang
             // panel1
             // 
             panel1.BackColor = Color.White;
-            panel1.Controls.Add(rButton1);
+            panel1.Controls.Add(btnDataAnalysis);
             panel1.Controls.Add(pnlDropDownProdu);
             panel1.Controls.Add(pnlDropDownnn);
             panel1.Location = new Point(29, 168);
             panel1.Name = "panel1";
-            panel1.Size = new Size(156, 345);
+            panel1.Size = new Size(156, 338);
             panel1.TabIndex = 3;
             // 
-            // rButton1
+            // btnDataAnalysis
             // 
-            rButton1.BackColor = Color.FromArgb(30, 106, 17);
-            rButton1.BackgroundColor = Color.FromArgb(30, 106, 17);
-            rButton1.BorderColor = Color.PaleVioletRed;
-            rButton1.BorderRadius = 10;
-            rButton1.BorderSize = 0;
-            rButton1.Dock = DockStyle.Top;
-            rButton1.FlatAppearance.BorderSize = 0;
-            rButton1.FlatStyle = FlatStyle.Flat;
-            rButton1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            rButton1.ForeColor = Color.White;
-            rButton1.Location = new Point(0, 80);
-            rButton1.Name = "rButton1";
-            rButton1.Size = new Size(156, 40);
-            rButton1.TabIndex = 8;
-            rButton1.Text = "Data Analysis";
-            rButton1.TextColor = Color.White;
-            rButton1.UseVisualStyleBackColor = false;
+            btnDataAnalysis.BackColor = Color.FromArgb(30, 106, 17);
+            btnDataAnalysis.BackgroundColor = Color.FromArgb(30, 106, 17);
+            btnDataAnalysis.BorderColor = Color.PaleVioletRed;
+            btnDataAnalysis.BorderRadius = 10;
+            btnDataAnalysis.BorderSize = 0;
+            btnDataAnalysis.Dock = DockStyle.Top;
+            btnDataAnalysis.FlatAppearance.BorderSize = 0;
+            btnDataAnalysis.FlatStyle = FlatStyle.Flat;
+            btnDataAnalysis.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDataAnalysis.ForeColor = Color.White;
+            btnDataAnalysis.Location = new Point(0, 80);
+            btnDataAnalysis.Name = "btnDataAnalysis";
+            btnDataAnalysis.Size = new Size(156, 40);
+            btnDataAnalysis.TabIndex = 8;
+            btnDataAnalysis.Text = "Data Analysis";
+            btnDataAnalysis.TextColor = Color.White;
+            btnDataAnalysis.UseVisualStyleBackColor = false;
+            btnDataAnalysis.Click += btnDataAnalysis_Click;
             // 
             // pictureBox1
             // 
@@ -423,20 +448,19 @@ namespace QuanLyTraoDoiHang
             btnShipment.Text = "My Shipment";
             btnShipment.TextColor = Color.White;
             btnShipment.UseVisualStyleBackColor = false;
-            btnShipment.Click += btnShipment_Click_1;
             // 
             // panel3
             // 
             panel3.BackColor = Color.White;
             panel3.Controls.Add(label2);
-            panel3.Location = new Point(216, 12);
+            panel3.Location = new Point(216, 6);
             panel3.Name = "panel3";
-            panel3.Size = new Size(751, 79);
+            panel3.Size = new Size(758, 85);
             panel3.TabIndex = 8;
             // 
             // label2
             // 
-            label2.Font = new Font("Lato Black", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.Black;
             label2.Location = new Point(12, 30);
             label2.Name = "label2";
@@ -449,9 +473,9 @@ namespace QuanLyTraoDoiHang
             // 
             panel4.BackColor = Color.White;
             panel4.Controls.Add(pictureBox1);
-            panel4.Location = new Point(3, 12);
+            panel4.Location = new Point(6, 6);
             panel4.Name = "panel4";
-            panel4.Size = new Size(207, 537);
+            panel4.Size = new Size(200, 549);
             panel4.TabIndex = 9;
             // 
             // FSellermanagement
@@ -464,6 +488,7 @@ namespace QuanLyTraoDoiHang
             Controls.Add(panel2);
             Controls.Add(pnlSellerTool);
             Controls.Add(panel4);
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(1);
             Name = "FSellermanagement";
             StartPosition = FormStartPosition.CenterScreen;
@@ -495,7 +520,7 @@ namespace QuanLyTraoDoiHang
         private RJControls.RButton btnMyProducts;
         private RJControls.RButton btnProducts;
         private Panel panel1;
-        private RJControls.RButton rButton1;
+        private RJControls.RButton btnDataAnalysis;
         private PictureBox pictureBox1;
         private Panel panel2;
         private RJControls.RButton btnShipment;
