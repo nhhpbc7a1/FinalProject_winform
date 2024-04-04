@@ -48,6 +48,7 @@ namespace QuanLyTraoDoiHang
         //{
         //    cbSearchBox.Items.Clear();
         //}
+        Product currentProductDetail = new Product();
         private void btnSearch_Click(object? sender, EventArgs e)
         {
             FormProduct form = new FormProduct();
@@ -93,7 +94,7 @@ namespace QuanLyTraoDoiHang
             OpenChildForm(new FormProduct());
         }
         private Form currentFormChild;
-        private void OpenChildForm(Form childForm)
+        public void OpenChildForm(Form childForm)
         {
             if (currentFormChild != null)
             {

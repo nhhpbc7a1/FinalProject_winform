@@ -54,9 +54,9 @@ namespace QuanLyTraoDoiHang
         private void OpenFormDetail(object sender, EventArgs e)
         {
             FProductDetail formDetail = new FProductDetail();
-            FProductDetail.currentProduct = product;
+            formDetail.currentProduct = product;
 
-            formDetail.ShowDialog();
+            Program.mainpage.OpenChildForm(formDetail);
         }
     }
 }
