@@ -12,8 +12,9 @@ namespace QuanLyTraoDoiHang
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Mainpage());
+            Application.Run(mainpage);
         }
+        public static Mainpage mainpage = new Mainpage();
         public static int currentUserId = -1;
         public static User CurrentUser() { return UserDAO.SelectByUserId(currentUserId); }
     }

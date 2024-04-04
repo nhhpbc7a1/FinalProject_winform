@@ -15,10 +15,9 @@ namespace QuanLyTraoDoiHang
         public FProductDetail()
         {
             InitializeComponent();
-            pnlThisSellerPage.Visible = false;
             btnBack.Click += btnBack_Click;
             btnViewPage.Click += btnViewPage_Click;
-            pnlProductDetail.Dock = DockStyle.Fill;
+            Load += FProductDetail_Load;
         }
 
         private void lblPrice_Click(object sender, EventArgs e)
@@ -30,7 +29,7 @@ namespace QuanLyTraoDoiHang
         {
 
         }
-        public static Product currentProduct = new Product();
+        public Product currentProduct = new Product();
         private void FProductDetail_Load(object sender, EventArgs e)
         {
             ptbImage.BackgroundImage = currentProduct.image;
@@ -49,33 +48,21 @@ namespace QuanLyTraoDoiHang
             lblSellerAddress.Text = seller.address;
             lblDateJoined.Text = seller.dateJoined.ToString();
 
-            DataTable table = ProductDAO.SelectBySellerId(currentProduct.sellerId);
-            foreach (DataRow row in table.Rows)
-            {
-                UCProductOnMainpage ucProduct = new UCProductOnMainpage(ProductDAO.RowToProduct(row))
-                { Margin = new System.Windows.Forms.Padding(5, 5, 5, 5) };
-                pnlSellerProduct.Controls.Add(ucProduct);
-            }
+            //DataTable table = ProductDAO.SelectBySellerId(currentProduct.sellerId);
+            //foreach (DataRow row in table.Rows)
+            //{
+            //    UCProductOnMainpage ucProduct = new UCProductOnMainpage(ProductDAO.RowToProduct(row))
+            //    { Margin = new System.Windows.Forms.Padding(5, 5, 5, 5) };
+            //    pnlSellerProduct.Controls.Add(ucProduct);
+            //}
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            pnlThisSellerPage.Visible = false;
-            pnlProductDetail.Visible = true;
-            pnlThisSellerPage.Dock = DockStyle.None;
-            pnlProductDetail.Dock = DockStyle.Fill;
         }
 
         private void btnViewPage_Click(object sender, EventArgs e)
         {
-            pnlThisSellerPage.Visible = true;
-            pnlProductDetail.Visible = false;
-            pnlProductDetail.Dock = DockStyle.None;
-            pnlThisSellerPage.Dock = DockStyle.Fill;
-
-            //pnlThisSellerPage.Size = new System.Drawing.Size(648, 653);
-            pnlThisSellerPage.BringToFront();
-
         }
     }
 }

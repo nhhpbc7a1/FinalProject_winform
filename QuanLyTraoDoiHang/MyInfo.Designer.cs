@@ -61,7 +61,7 @@
             // 
             // panel3
             // 
-            panel3.BackColor = Color.FromArgb(224, 224, 224);
+            panel3.BackColor = Color.LightGray;
             panel3.Controls.Add(label2);
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
@@ -192,9 +192,9 @@
             // 
             // btnSave
             // 
-            btnSave.BackColor = Color.FromArgb(101, 183, 65);
-            btnSave.BackgroundColor = Color.FromArgb(101, 183, 65);
-            btnSave.BorderColor = Color.FromArgb(30, 106, 17);
+            btnSave.BackColor = Color.FromArgb(36, 10, 52);
+            btnSave.BackgroundColor = Color.FromArgb(36, 10, 52);
+            btnSave.BorderColor = Color.FromArgb(0, 192, 192);
             btnSave.BorderRadius = 40;
             btnSave.BorderSize = 1;
             btnSave.FlatAppearance.BorderSize = 0;
@@ -211,6 +211,7 @@
             // 
             // flowLayoutPanel3
             // 
+            flowLayoutPanel3.BackColor = Color.FromArgb(244, 237, 204);
             flowLayoutPanel3.Controls.Add(txtName);
             flowLayoutPanel3.Controls.Add(txtPersonalID);
             flowLayoutPanel3.Controls.Add(dtBirthday);
@@ -385,7 +386,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(244, 237, 219);
+            panel1.BackColor = Color.FromArgb(244, 237, 204);
             panel1.Controls.Add(flowLayoutPanel4);
             panel1.Controls.Add(flowLayoutPanel3);
             panel1.Location = new Point(12, 72);
@@ -396,7 +397,7 @@
             // MyInfo
             // 
             AutoScaleMode = AutoScaleMode.None;
-            BackColor = Color.FromArgb(224, 224, 224);
+            BackColor = Color.LightGray;
             ClientSize = new Size(642, 495);
             Controls.Add(panel1);
             Controls.Add(btnSave);

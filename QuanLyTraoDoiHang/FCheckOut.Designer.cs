@@ -31,18 +31,19 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblAddressDelivery = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.rButton1 = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.btnChangeReceiveInfo = new QuanLyTraoDoiHang.RJControls.RButton();
             this.lblAddressDeliver = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblNameDelivery = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.rBCheckout = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.lblTotalPrice = new System.Windows.Forms.Label();
-            this.lblTotal = new System.Windows.Forms.Label();
-            this.lblTotalShippingFee = new System.Windows.Forms.Label();
-            this.lblShipping = new System.Windows.Forms.Label();
             this.lblTotalProductPrice = new System.Windows.Forms.Label();
+            this.lblTotalShippingFee = new System.Windows.Forms.Label();
             this.lblProducPrice = new System.Windows.Forms.Label();
+            this.lblTotalPrice = new System.Windows.Forms.Label();
+            this.lblShipping = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pnlProducts = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlMenu = new System.Windows.Forms.Panel();
@@ -50,14 +51,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -86,7 +86,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel2.Controls.Add(this.rButton1);
+            this.panel2.Controls.Add(this.btnChangeReceiveInfo);
             this.panel2.Controls.Add(this.lblAddressDeliver);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.lblNameDelivery);
@@ -95,24 +95,24 @@
             this.panel2.Size = new System.Drawing.Size(701, 46);
             this.panel2.TabIndex = 1;
             // 
-            // rButton1
+            // btnChangeReceiveInfo
             // 
-            this.rButton1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rButton1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rButton1.BorderColor = System.Drawing.Color.PeachPuff;
-            this.rButton1.BorderRadius = 20;
-            this.rButton1.BorderSize = 0;
-            this.rButton1.FlatAppearance.BorderSize = 0;
-            this.rButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rButton1.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.rButton1.ForeColor = System.Drawing.Color.SteelBlue;
-            this.rButton1.Location = new System.Drawing.Point(616, 4);
-            this.rButton1.Name = "rButton1";
-            this.rButton1.Size = new System.Drawing.Size(69, 40);
-            this.rButton1.TabIndex = 3;
-            this.rButton1.Text = "change";
-            this.rButton1.TextColor = System.Drawing.Color.SteelBlue;
-            this.rButton1.UseVisualStyleBackColor = false;
+            this.btnChangeReceiveInfo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnChangeReceiveInfo.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnChangeReceiveInfo.BorderColor = System.Drawing.Color.PeachPuff;
+            this.btnChangeReceiveInfo.BorderRadius = 20;
+            this.btnChangeReceiveInfo.BorderSize = 0;
+            this.btnChangeReceiveInfo.FlatAppearance.BorderSize = 0;
+            this.btnChangeReceiveInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChangeReceiveInfo.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.btnChangeReceiveInfo.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btnChangeReceiveInfo.Location = new System.Drawing.Point(616, 4);
+            this.btnChangeReceiveInfo.Name = "btnChangeReceiveInfo";
+            this.btnChangeReceiveInfo.Size = new System.Drawing.Size(69, 40);
+            this.btnChangeReceiveInfo.TabIndex = 3;
+            this.btnChangeReceiveInfo.Text = "change";
+            this.btnChangeReceiveInfo.TextColor = System.Drawing.Color.SteelBlue;
+            this.btnChangeReceiveInfo.UseVisualStyleBackColor = false;
             // 
             // lblAddressDeliver
             // 
@@ -154,6 +154,21 @@
             this.panel4.Size = new System.Drawing.Size(730, 182);
             this.panel4.TabIndex = 52;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(250)))), ((int)(((byte)(200)))));
+            this.panel3.Controls.Add(this.rBCheckout);
+            this.panel3.Controls.Add(this.lblTotalProductPrice);
+            this.panel3.Controls.Add(this.lblTotalShippingFee);
+            this.panel3.Controls.Add(this.lblProducPrice);
+            this.panel3.Controls.Add(this.lblTotalPrice);
+            this.panel3.Controls.Add(this.lblShipping);
+            this.panel3.Controls.Add(this.lblTotal);
+            this.panel3.Location = new System.Drawing.Point(383, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(347, 170);
+            this.panel3.TabIndex = 60;
+            // 
             // rBCheckout
             // 
             this.rBCheckout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
@@ -174,28 +189,15 @@
             this.rBCheckout.TextColor = System.Drawing.Color.White;
             this.rBCheckout.UseVisualStyleBackColor = false;
             // 
-            // lblTotalPrice
+            // lblTotalProductPrice
             // 
-            this.lblTotalPrice.AutoSize = true;
-            this.lblTotalPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTotalPrice.Location = new System.Drawing.Point(242, 88);
-            this.lblTotalPrice.Name = "lblTotalPrice";
-            this.lblTotalPrice.Size = new System.Drawing.Size(80, 21);
-            this.lblTotalPrice.TabIndex = 59;
-            this.lblTotalPrice.Text = "Total Price";
-            // 
-            // lblTotal
-            // 
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTotal.ForeColor = System.Drawing.Color.IndianRed;
-            this.lblTotal.Location = new System.Drawing.Point(3, 88);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(50, 27);
-            this.lblTotal.TabIndex = 58;
-            this.lblTotal.Text = "Total:";
-            this.lblTotal.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.lblTotal.UseCompatibleTextRendering = true;
+            this.lblTotalProductPrice.AutoSize = true;
+            this.lblTotalProductPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTotalProductPrice.Location = new System.Drawing.Point(190, 19);
+            this.lblTotalProductPrice.Name = "lblTotalProductPrice";
+            this.lblTotalProductPrice.Size = new System.Drawing.Size(137, 21);
+            this.lblTotalProductPrice.TabIndex = 55;
+            this.lblTotalProductPrice.Text = "Merchandise Price";
             // 
             // lblTotalShippingFee
             // 
@@ -206,6 +208,26 @@
             this.lblTotalShippingFee.Size = new System.Drawing.Size(110, 21);
             this.lblTotalShippingFee.TabIndex = 57;
             this.lblTotalShippingFee.Text = "Shipping Price";
+            // 
+            // lblProducPrice
+            // 
+            this.lblProducPrice.AutoSize = true;
+            this.lblProducPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblProducPrice.Location = new System.Drawing.Point(3, 19);
+            this.lblProducPrice.Name = "lblProducPrice";
+            this.lblProducPrice.Size = new System.Drawing.Size(164, 21);
+            this.lblProducPrice.TabIndex = 54;
+            this.lblProducPrice.Text = "Merchandise Subtotal:";
+            // 
+            // lblTotalPrice
+            // 
+            this.lblTotalPrice.AutoSize = true;
+            this.lblTotalPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTotalPrice.Location = new System.Drawing.Point(242, 88);
+            this.lblTotalPrice.Name = "lblTotalPrice";
+            this.lblTotalPrice.Size = new System.Drawing.Size(80, 21);
+            this.lblTotalPrice.TabIndex = 59;
+            this.lblTotalPrice.Text = "Total Price";
             // 
             // lblShipping
             // 
@@ -219,25 +241,18 @@
             this.lblShipping.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.lblShipping.UseCompatibleTextRendering = true;
             // 
-            // lblTotalProductPrice
+            // lblTotal
             // 
-            this.lblTotalProductPrice.AutoSize = true;
-            this.lblTotalProductPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTotalProductPrice.Location = new System.Drawing.Point(190, 19);
-            this.lblTotalProductPrice.Name = "lblTotalProductPrice";
-            this.lblTotalProductPrice.Size = new System.Drawing.Size(137, 21);
-            this.lblTotalProductPrice.TabIndex = 55;
-            this.lblTotalProductPrice.Text = "Merchandise Price";
-            // 
-            // lblProducPrice
-            // 
-            this.lblProducPrice.AutoSize = true;
-            this.lblProducPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblProducPrice.Location = new System.Drawing.Point(3, 19);
-            this.lblProducPrice.Name = "lblProducPrice";
-            this.lblProducPrice.Size = new System.Drawing.Size(164, 21);
-            this.lblProducPrice.TabIndex = 54;
-            this.lblProducPrice.Text = "Merchandise Subtotal:";
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTotal.ForeColor = System.Drawing.Color.IndianRed;
+            this.lblTotal.Location = new System.Drawing.Point(3, 88);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(50, 27);
+            this.lblTotal.TabIndex = 58;
+            this.lblTotal.Text = "Total:";
+            this.lblTotal.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.lblTotal.UseCompatibleTextRendering = true;
             // 
             // panel5
             // 
@@ -326,21 +341,6 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(984, 701);
             this.flowLayoutPanel1.TabIndex = 54;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(250)))), ((int)(((byte)(200)))));
-            this.panel3.Controls.Add(this.rBCheckout);
-            this.panel3.Controls.Add(this.lblTotalProductPrice);
-            this.panel3.Controls.Add(this.lblTotalShippingFee);
-            this.panel3.Controls.Add(this.lblProducPrice);
-            this.panel3.Controls.Add(this.lblTotalPrice);
-            this.panel3.Controls.Add(this.lblShipping);
-            this.panel3.Controls.Add(this.lblTotal);
-            this.panel3.Location = new System.Drawing.Point(383, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(347, 170);
-            this.panel3.TabIndex = 60;
-            // 
             // FCheckOut
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.Row;
@@ -358,14 +358,14 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.pnlMenu.ResumeLayout(false);
             this.pnlMenu.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -378,7 +378,7 @@
         private Label label1;
         private Label lblNameDelivery;
         private Label lblAddressDeliver;
-        private RJControls.RButton rButton1;
+        private RJControls.RButton btnChangeReceiveInfo;
         private Panel panel4;
         private Label lblTotalProductPrice;
         private Label lblProducPrice;

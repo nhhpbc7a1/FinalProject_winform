@@ -27,17 +27,17 @@ namespace QuanLyTraoDoiHang
             Account account = AccountDAO.SelectByUsername(txtUsername.Text);
             if (account == null)
             {
-                MessageBox.Show("wrong username");
+                MessageBox.Show("Your username does not exist","Notification",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 txtUsername.Focus();
                 return;
             }
             if (ucPassword.txtPass.Text != account.password)
             {
-                MessageBox.Show("wrong password");
+                MessageBox.Show("Your password is not correct","Notification",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 ucPassword.txtPass.Focus();
                 return;
             }
-            MessageBox.Show("Login successfully", "Notification", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+            MessageBox.Show("Login successfully", "Notification", MessageBoxButtons.OK);
             Program.currentUserId = account.userId;
             Close();
         }

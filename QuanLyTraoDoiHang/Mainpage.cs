@@ -48,6 +48,7 @@ namespace QuanLyTraoDoiHang
         //{
         //    cbSearchBox.Items.Clear();
         //}
+        Product currentProductDetail = new Product();
         private void btnSearch_Click(object? sender, EventArgs e)
         {
             FormProduct form = new FormProduct();
@@ -80,7 +81,7 @@ namespace QuanLyTraoDoiHang
         {
             if (Program.CurrentUser() == null)
             {
-                MessageBox.Show("please login first");
+                MessageBox.Show("please login first", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
             {
@@ -93,7 +94,7 @@ namespace QuanLyTraoDoiHang
             OpenChildForm(new FormProduct());
         }
         private Form currentFormChild;
-        private void OpenChildForm(Form childForm)
+        public void OpenChildForm(Form childForm)
         {
             if (currentFormChild != null)
             {
@@ -114,7 +115,7 @@ namespace QuanLyTraoDoiHang
         {
             if (Program.CurrentUser() == null)
             {
-                MessageBox.Show("please login first");
+                MessageBox.Show("Please login first", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
             {
@@ -177,7 +178,7 @@ namespace QuanLyTraoDoiHang
         {
             if (Program.CurrentUser() == null)
             {
-                MessageBox.Show("please login first");
+                MessageBox.Show("Please login first", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
             {
@@ -191,14 +192,6 @@ namespace QuanLyTraoDoiHang
             this.Close();
         }
 
-        private void pnl_Body_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnAddProduct_Click_1(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }

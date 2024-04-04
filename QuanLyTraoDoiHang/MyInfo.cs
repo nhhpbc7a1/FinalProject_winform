@@ -102,7 +102,7 @@ namespace QuanLyTraoDoiHang
             user.dateJoined = Program.CurrentUser().dateJoined;
             UserDAO.Update(user);
             Program.currentUserId = user.userId;
-            MessageBox.Show("Update info successfully");
+            MessageBox.Show("Update info successfully","Notification");
             MyInfo_Load(sender, e);
         }
 

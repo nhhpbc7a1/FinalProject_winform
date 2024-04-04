@@ -57,7 +57,7 @@
             // 
             // panel2
             // 
-            panel2.BackColor = Color.White;
+            panel2.BackColor = Color.WhiteSmoke;
             panel2.Controls.Add(lblChangeImage);
             panel2.Controls.Add(panel8);
             panel2.Controls.Add(panel7);
@@ -83,7 +83,7 @@
             // panel8
             // 
             panel8.Anchor = AnchorStyles.None;
-            panel8.BackColor = Color.FromArgb(244, 237, 204);
+            panel8.BackColor = Color.WhiteSmoke;
             panel8.Controls.Add(ptbUserImage);
             panel8.Controls.Add(lblUsername);
             panel8.Location = new Point(72, 33);
@@ -96,6 +96,7 @@
             ptbUserImage.BackColor = SystemColors.Control;
             ptbUserImage.BackgroundImage = (Image)resources.GetObject("ptbUserImage.BackgroundImage");
             ptbUserImage.BackgroundImageLayout = ImageLayout.Stretch;
+            ptbUserImage.BorderStyle = BorderStyle.FixedSingle;
             ptbUserImage.Location = new Point(6, 5);
             ptbUserImage.Margin = new Padding(2, 3, 3, 3);
             ptbUserImage.Name = "ptbUserImage";
@@ -106,7 +107,7 @@
             // lblUsername
             // 
             lblUsername.AutoSize = true;
-            lblUsername.BackColor = Color.FromArgb(244, 237, 204);
+            lblUsername.BackColor = Color.WhiteSmoke;
             lblUsername.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblUsername.ForeColor = Color.Black;
             lblUsername.Location = new Point(25, 103);
@@ -118,13 +119,13 @@
             // panel7
             // 
             panel7.Anchor = AnchorStyles.None;
-            panel7.BackColor = Color.White;
+            panel7.BackColor = Color.WhiteSmoke;
             panel7.Controls.Add(btnUpdateInfo);
             panel7.Controls.Add(btnLogout);
             panel7.Controls.Add(btnChangePass);
             panel7.Controls.Add(btnHistory);
             panel7.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            panel7.Location = new Point(31, 204);
+            panel7.Location = new Point(36, 204);
             panel7.Name = "panel7";
             panel7.Size = new Size(197, 314);
             panel7.TabIndex = 6;
@@ -142,9 +143,9 @@
             btnUpdateInfo.ForeColor = Color.White;
             btnUpdateInfo.Image = (Image)resources.GetObject("btnUpdateInfo.Image");
             btnUpdateInfo.ImageAlign = ContentAlignment.MiddleLeft;
-            btnUpdateInfo.Location = new Point(24, 14);
+            btnUpdateInfo.Location = new Point(13, 14);
             btnUpdateInfo.Name = "btnUpdateInfo";
-            btnUpdateInfo.Size = new Size(158, 51);
+            btnUpdateInfo.Size = new Size(169, 51);
             btnUpdateInfo.TabIndex = 2;
             btnUpdateInfo.Text = "Update info";
             btnUpdateInfo.TextColor = Color.White;
@@ -163,9 +164,9 @@
             btnLogout.ForeColor = Color.Black;
             btnLogout.Image = (Image)resources.GetObject("btnLogout.Image");
             btnLogout.ImageAlign = ContentAlignment.MiddleLeft;
-            btnLogout.Location = new Point(24, 233);
+            btnLogout.Location = new Point(13, 233);
             btnLogout.Name = "btnLogout";
-            btnLogout.Size = new Size(158, 51);
+            btnLogout.Size = new Size(169, 51);
             btnLogout.TabIndex = 5;
             btnLogout.Text = "Log out";
             btnLogout.TextColor = Color.Black;
@@ -184,9 +185,9 @@
             btnChangePass.ForeColor = Color.Black;
             btnChangePass.Image = (Image)resources.GetObject("btnChangePass.Image");
             btnChangePass.ImageAlign = ContentAlignment.MiddleLeft;
-            btnChangePass.Location = new Point(24, 84);
+            btnChangePass.Location = new Point(13, 84);
             btnChangePass.Name = "btnChangePass";
-            btnChangePass.Size = new Size(158, 51);
+            btnChangePass.Size = new Size(169, 51);
             btnChangePass.TabIndex = 3;
             btnChangePass.Text = "Change password";
             btnChangePass.TextAlign = ContentAlignment.MiddleRight;
@@ -206,9 +207,9 @@
             btnHistory.ForeColor = Color.White;
             btnHistory.Image = (Image)resources.GetObject("btnHistory.Image");
             btnHistory.ImageAlign = ContentAlignment.MiddleLeft;
-            btnHistory.Location = new Point(24, 159);
+            btnHistory.Location = new Point(13, 159);
             btnHistory.Name = "btnHistory";
-            btnHistory.Size = new Size(158, 51);
+            btnHistory.Size = new Size(169, 51);
             btnHistory.TabIndex = 4;
             btnHistory.Text = "Purchase History";
             btnHistory.TextAlign = ContentAlignment.MiddleRight;
@@ -218,7 +219,7 @@
             // PersonalInfor
             // 
             AutoScaleMode = AutoScaleMode.None;
-            BackColor = Color.White;
+            BackColor = Color.WhiteSmoke;
             ClientSize = new Size(984, 561);
             Controls.Add(panel2);
             Controls.Add(pnl_Infor);
