@@ -21,6 +21,7 @@ namespace QuanLyTraoDoiHang
             Load += FCheckOut_Load;
             this.listProducts = listProducts;
             btnChangeReceiveInfo.Click += BtnChangeReceiveInfo_Click;
+            this.AcceptButton = rBCheckout;
         }
 
         private void BtnChangeReceiveInfo_Click(object? sender, EventArgs e)
@@ -65,12 +66,17 @@ namespace QuanLyTraoDoiHang
                 totalShip += Convert.ToInt32(x.lblShippingFee.Text);
                 foreach (UCProductInCheckOut y in x.ucCartEachShop1.pnlProducts.Controls)
                 {
-                    totalProductPrice += Convert.ToInt32(y.lblPrice.Text) ;
+                    totalProductPrice += Convert.ToInt32(y.lblPrice.Text);
                 }
             }
             lblTotalProductPrice.Text = totalProductPrice.ToString();
             lblTotalShippingFee.Text = totalShip.ToString();
             lblTotalPrice.Text = (totalShip + totalProductPrice).ToString();
+        }
+
+        private void rBCheckout_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
