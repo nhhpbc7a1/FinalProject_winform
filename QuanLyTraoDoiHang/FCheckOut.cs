@@ -13,6 +13,7 @@ namespace QuanLyTraoDoiHang
     public partial class FCheckOut : Form
     {
         public List<Product> listProducts = new List<Product>();
+        public static ReceiveInfo currentReceiveInfo = new ReceiveInfo();
 
         public FCheckOut(List<Product> listProducts)
         {
@@ -21,13 +22,27 @@ namespace QuanLyTraoDoiHang
             Load += FCheckOut_Load;
             this.listProducts = listProducts;
             btnChangeReceiveInfo.Click += BtnChangeReceiveInfo_Click;
+            if (ReceiveInfoDAO.Load().Rows.Count > 0)
+                currentReceiveInfo = ReceiveInfoDAO.RowToReceiveInfo(ReceiveInfoDAO.Load().Rows[0]);
+
+            btnCheckOut.Click += BtnCheckOut_Click;
+        }
+
+        private void BtnCheckOut_Click(object? sender, EventArgs e)
+        {
+            if (MessageBox.Show("Do you really want to checkout?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                
+            }
         }
 
         private void BtnChangeReceiveInfo_Click(object? sender, EventArgs e)
         {
             FormReceiveAddress x = new FormReceiveAddress();
+            x.btnConfirm.Click += FCheckOut_Load;
             x.ShowDialog();
         }
+
 
         private void FCheckOut_Load(object? sender, EventArgs e)
         {
@@ -54,6 +69,9 @@ namespace QuanLyTraoDoiHang
 
                 }
             }
+            lblPhoneDelivery.Text = currentReceiveInfo.phone;
+            lblNameDelivery.Text = currentReceiveInfo.name;
+            lblAddressDelivery.Text = currentReceiveInfo.address;
 
         }
 

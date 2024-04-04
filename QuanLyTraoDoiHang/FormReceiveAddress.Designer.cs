@@ -112,7 +112,7 @@
 
         private FlowLayoutPanel pnlAddresses;
         private Panel panel1;
-        private RJControls.RButton btnConfirm;
         private RJControls.RButton btnAddAddress;
+        public RJControls.RButton btnConfirm;
     }
 }
