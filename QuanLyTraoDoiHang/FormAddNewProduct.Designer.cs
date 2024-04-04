@@ -101,7 +101,7 @@
             btnSave.FlatStyle = FlatStyle.Flat;
             btnSave.Font = new Font("Lato", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
             btnSave.ForeColor = Color.White;
-            btnSave.Location = new Point(437, 520);
+            btnSave.Location = new Point(422, 520);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(188, 32);
             btnSave.TabIndex = 3;
@@ -333,7 +333,7 @@
             label8.BackColor = Color.White;
             label8.Font = new Font("Lato Black", 15.7499981F, FontStyle.Bold, GraphicsUnit.Point);
             label8.ForeColor = Color.FromArgb(64, 64, 64);
-            label8.Location = new Point(365, 15);
+            label8.Location = new Point(350, 15);
             label8.Name = "label8";
             label8.Size = new Size(180, 25);
             label8.TabIndex = 0;
@@ -342,7 +342,9 @@
             // FormAddNewProduct
             // 
             AutoScaleMode = AutoScaleMode.None;
-            BackColor = SystemColors.Control;
+            BackColor = SystemColors.ActiveCaptionText;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(984, 561);
             Controls.Add(panel9);
             Controls.Add(lblAddPhoto);
