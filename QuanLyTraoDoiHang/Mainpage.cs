@@ -80,10 +80,10 @@ namespace QuanLyTraoDoiHang
         {
             if (Program.CurrentUser() == null)
             {
-                MessageBox.Show("please login first");
+                MessageBox.Show("please login first", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
-            {              
+            {
                 OpenChildForm(new FSellermanagement());
             }
         }
@@ -114,7 +114,7 @@ namespace QuanLyTraoDoiHang
         {
             if (Program.CurrentUser() == null)
             {
-                MessageBox.Show("please login first");
+                MessageBox.Show("Please login first", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
             {
@@ -143,7 +143,7 @@ namespace QuanLyTraoDoiHang
         {
             Form form = new Regisiter();
             form.ShowDialog();
-            UpdateAccountByAction(sender,e);
+            UpdateAccountByAction(sender, e);
         }
 
         private void lblSignin_Click(object sender, EventArgs e)
@@ -153,15 +153,15 @@ namespace QuanLyTraoDoiHang
             UpdateAccountByAction(sender, e);
         }
 
-        
+
         private void Account_Click(object sender, EventArgs e)
         {
 
-           
+
             PersonalInfor form = new PersonalInfor();
             void Logout(object sender, EventArgs e)
             {
-                if(MessageBox.Show("Do you really want to log out?","Confirmation",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.OK)
+                if (MessageBox.Show("Do you really want to log out?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.OK)
                 {
                     MessageBox.Show("Logout successfully");
                     Program.currentUserId = -1;
@@ -177,7 +177,7 @@ namespace QuanLyTraoDoiHang
         {
             if (Program.CurrentUser() == null)
             {
-                MessageBox.Show("please login first");
+                MessageBox.Show("Please login first", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
             {
@@ -192,6 +192,6 @@ namespace QuanLyTraoDoiHang
             this.Close();
         }
 
-
+      
     }
 }

@@ -73,7 +73,7 @@
             // 
             panel4.AutoScroll = true;
             panel4.AutoSize = true;
-            panel4.BackColor = Color.Gainsboro;
+            panel4.BackColor = Color.WhiteSmoke;
             panel4.Controls.Add(flowLayoutPanelProductList);
             panel4.Controls.Add(panel1);
             panel4.Dock = DockStyle.Fill;

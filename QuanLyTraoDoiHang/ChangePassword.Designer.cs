@@ -32,9 +32,9 @@
             panel3 = new Panel();
             label2 = new Label();
             panel2 = new Panel();
-            ucOldPass = new UCPasswordTextBox();
-            ucNewPass = new UCPasswordTextBox();
             ucReTypePass = new UCPasswordTextBox();
+            ucNewPass = new UCPasswordTextBox();
+            ucOldPass = new UCPasswordTextBox();
             lblRetypedPass = new Label();
             rButton3 = new RJControls.RButton();
             rButton4 = new RJControls.RButton();
@@ -50,7 +50,7 @@
             // 
             // panel3
             // 
-            panel3.BackColor = Color.FromArgb(224, 224, 224);
+            panel3.BackColor = Color.LightGray;
             panel3.Controls.Add(label2);
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
@@ -71,10 +71,10 @@
             // 
             // panel2
             // 
-            panel2.BackColor = Color.FromArgb(244, 237, 219);
-            panel2.Controls.Add(ucReTypePass);
-            panel2.Controls.Add(ucNewPass);
+            panel2.BackColor = Color.FromArgb(244, 237, 204);
             panel2.Controls.Add(ucOldPass);
+            panel2.Controls.Add(ucNewPass);
+            panel2.Controls.Add(ucReTypePass);
             panel2.Controls.Add(lblRetypedPass);
             panel2.Controls.Add(rButton3);
             panel2.Controls.Add(rButton4);
@@ -86,14 +86,14 @@
             panel2.Size = new Size(620, 348);
             panel2.TabIndex = 6;
             // 
-            // ucOldPass
+            // ucReTypePass
             // 
-            ucOldPass.BackColor = Color.White;
-            ucOldPass.Location = new Point(169, 57);
-            ucOldPass.Margin = new Padding(3, 2, 3, 2);
-            ucOldPass.Name = "ucOldPass";
-            ucOldPass.Size = new Size(329, 29);
-            ucOldPass.TabIndex = 30;
+            ucReTypePass.BackColor = Color.White;
+            ucReTypePass.Location = new Point(166, 225);
+            ucReTypePass.Margin = new Padding(3, 2, 3, 2);
+            ucReTypePass.Name = "ucReTypePass";
+            ucReTypePass.Size = new Size(332, 29);
+            ucReTypePass.TabIndex = 28;
             // 
             // ucNewPass
             // 
@@ -104,14 +104,14 @@
             ucNewPass.Size = new Size(329, 29);
             ucNewPass.TabIndex = 29;
             // 
-            // ucReTypePass
+            // ucOldPass
             // 
-            ucReTypePass.BackColor = Color.White;
-            ucReTypePass.Location = new Point(166, 225);
-            ucReTypePass.Margin = new Padding(3, 2, 3, 2);
-            ucReTypePass.Name = "ucReTypePass";
-            ucReTypePass.Size = new Size(332, 29);
-            ucReTypePass.TabIndex = 28;
+            ucOldPass.BackColor = Color.White;
+            ucOldPass.Location = new Point(169, 57);
+            ucOldPass.Margin = new Padding(3, 2, 3, 2);
+            ucOldPass.Name = "ucOldPass";
+            ucOldPass.Size = new Size(329, 29);
+            ucOldPass.TabIndex = 30;
             // 
             // lblRetypedPass
             // 
@@ -209,8 +209,8 @@
             // 
             // btnChangePass
             // 
-            btnChangePass.BackColor = Color.FromArgb(101, 183, 65);
-            btnChangePass.BackgroundColor = Color.FromArgb(101, 183, 65);
+            btnChangePass.BackColor = Color.FromArgb(36, 10, 52);
+            btnChangePass.BackgroundColor = Color.FromArgb(36, 10, 52);
             btnChangePass.BorderColor = Color.FromArgb(30, 106, 17);
             btnChangePass.BorderRadius = 40;
             btnChangePass.BorderSize = 1;
@@ -231,7 +231,7 @@
             // ChangePassword
             // 
             AutoScaleMode = AutoScaleMode.None;
-            BackColor = Color.FromArgb(224, 224, 224);
+            BackColor = Color.LightGray;
             ClientSize = new Size(642, 495);
             Controls.Add(btnChangePass);
             Controls.Add(panel2);

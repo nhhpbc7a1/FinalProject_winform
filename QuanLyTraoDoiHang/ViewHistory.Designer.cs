@@ -46,7 +46,7 @@
             // 
             // panel3
             // 
-            panel3.BackColor = Color.FromArgb(224, 224, 224);
+            panel3.BackColor = Color.LightGray;
             panel3.Controls.Add(label2);
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
@@ -68,7 +68,7 @@
             // 
             // flowLayoutPanel1
             // 
-            flowLayoutPanel1.BackColor = Color.FromArgb(224, 224, 224);
+            flowLayoutPanel1.BackColor = Color.LightGray;
             flowLayoutPanel1.Controls.Add(btnShip);
             flowLayoutPanel1.Controls.Add(btnCompleted);
             flowLayoutPanel1.Controls.Add(btnCancel);
@@ -187,7 +187,7 @@
             // ViewHistory
             // 
             AutoScaleMode = AutoScaleMode.None;
-            BackColor = Color.FromArgb(224, 224, 224);
+            BackColor = Color.LightGray;
             ClientSize = new Size(642, 495);
             Controls.Add(flowLayoutPanel2);
             Controls.Add(flowLayoutPanel1);

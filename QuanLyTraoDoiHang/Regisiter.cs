@@ -68,43 +68,43 @@ namespace QuanLyTraoDoiHang
             }
             if (ucRetypePassword.txtPass.Text.Trim() == "")
             {
-                MessageBox.Show("You haven't input your Retype password !", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("You haven't input your Retyped password !", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtPhone.Focus();
                 return;
             }
 
             if (UserDAO.IsAdult(dtBirthday.Value) == false)
             {
-                MessageBox.Show("You must be an adult !", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("You are  under 18 !", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             if (UserDAO.IsValidEmail(txtEmail.Text) == false)
             {
-                MessageBox.Show("Email isn't validate !", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Email isn't valid !", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtEmail.Focus();
                 return;
             }
             if (UserDAO.IsValidPhone(txtPhone.Text) == false)
             {
-                MessageBox.Show("Phone isn't validate !", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Phone isn't valid !", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtPhone.Focus();
                 return;
             }           
             if (AccountDAO.SelectByUsername(txtUsername.Text) != null)
             {
-                MessageBox.Show("Username is exist, Try another !", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Username already exists, Try another !", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtUsername.Focus();
                 return;
             }
             if (AccountDAO.IsValidPassword(ucPassword.txtPass.Text) == false)
             {
-                MessageBox.Show("Password is unvalid ( length must be at least 6 characters), Try another !", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Password is unvalid, Try another !", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 ucPassword.txtPass.Focus();
                 return;
             }
             if (ucPassword.txtPass.Text != ucRetypePassword.txtPass.Text)
             {
-                MessageBox.Show("Retype password wrong!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Your retyped password is not matched!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 ucRetypePassword.txtPass.Focus();
                 return;
             }
