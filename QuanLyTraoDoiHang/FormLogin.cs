@@ -12,6 +12,7 @@ namespace QuanLyTraoDoiHang
             btnExit.Click += btnExit_Click;
             lblforgotpass.MouseEnter += lblforgotpass_MouseEnter;
             lblforgotpass.MouseLeave += lblforgotpass_MouseLeave;
+            this.AcceptButton = btnSignin;
            
          }
 
