@@ -12,6 +12,7 @@ namespace QuanLyTraoDoiHang
             btnExit.Click += btnExit_Click;
             lblforgotpass.MouseEnter += lblforgotpass_MouseEnter;
             lblforgotpass.MouseLeave += lblforgotpass_MouseLeave;
+           
          }
 
         private void lblforgotpass_Click(object sender, EventArgs e)
@@ -67,6 +68,14 @@ namespace QuanLyTraoDoiHang
         {
             lblforgotpass.Font = new Font(lblforgotpass.Font, FontStyle.Regular);
 
+        }
+        private void textBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnSignin.PerformClick(); 
+                e.SuppressKeyPress = true; 
+            }
         }
     }
 }
