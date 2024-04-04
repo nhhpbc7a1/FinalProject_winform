@@ -32,7 +32,8 @@ namespace QuanLyTraoDoiHang
         {
             if (MessageBox.Show("Do you really want to checkout?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                
+               // OrderTable x = new OrderTable(Program.currentUserId,currentReceiveInfo.receiveId,DateTime.Now);
+
             }
         }
 
@@ -83,12 +84,13 @@ namespace QuanLyTraoDoiHang
                 totalShip += Convert.ToInt32(x.lblShippingFee.Text);
                 foreach (UCProductInCheckOut y in x.ucCartEachShop1.pnlProducts.Controls)
                 {
-                    totalProductPrice += Convert.ToInt32(y.lblPrice.Text) ;
+                    totalProductPrice += Convert.ToInt32(y.lblPrice.Text);
                 }
             }
             lblTotalProductPrice.Text = totalProductPrice.ToString();
             lblTotalShippingFee.Text = totalShip.ToString();
             lblTotalPrice.Text = (totalShip + totalProductPrice).ToString();
         }
+
     }
 }

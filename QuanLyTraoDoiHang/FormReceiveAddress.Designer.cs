@@ -37,6 +37,7 @@
             // 
             // pnlAddresses
             // 
+            this.pnlAddresses.AutoScroll = true;
             this.pnlAddresses.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlAddresses.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pnlAddresses.Location = new System.Drawing.Point(0, 0);

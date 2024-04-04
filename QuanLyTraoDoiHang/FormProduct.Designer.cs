@@ -31,11 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProduct));
             this.pnlChildForm = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.flowLayoutPanelProductList = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -56,7 +54,6 @@
             this.label22 = new System.Windows.Forms.Label();
             this.pnlChildForm.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel9.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -79,9 +76,7 @@
             this.panel4.AutoScroll = true;
             this.panel4.AutoSize = true;
             this.panel4.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel4.Controls.Add(this.panel8);
             this.panel4.Controls.Add(this.flowLayoutPanelProductList);
-            this.panel4.Controls.Add(this.panel9);
             this.panel4.Controls.Add(this.panel1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(257, 0);
@@ -90,63 +85,42 @@
             this.panel4.Size = new System.Drawing.Size(727, 561);
             this.panel4.TabIndex = 56;
             // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
-            this.panel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
-            this.panel8.Location = new System.Drawing.Point(24, 57);
-            this.panel8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(680, 10);
-            this.panel8.TabIndex = 62;
-            // 
             // flowLayoutPanelProductList
             // 
             this.flowLayoutPanelProductList.AutoScroll = true;
             this.flowLayoutPanelProductList.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanelProductList.Location = new System.Drawing.Point(24, 67);
+            this.flowLayoutPanelProductList.Location = new System.Drawing.Point(16, 66);
             this.flowLayoutPanelProductList.Name = "flowLayoutPanelProductList";
-            this.flowLayoutPanelProductList.Size = new System.Drawing.Size(680, 482);
+            this.flowLayoutPanelProductList.Size = new System.Drawing.Size(680, 483);
             this.flowLayoutPanelProductList.TabIndex = 62;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.White;
-            this.panel9.Controls.Add(this.label2);
-            this.panel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
-            this.panel9.Location = new System.Drawing.Point(24, 15);
-            this.panel9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(680, 54);
-            this.panel9.TabIndex = 61;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(260, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(191, 25);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Suggestion for today";
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.label1);
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
-            this.panel1.Location = new System.Drawing.Point(24, 15);
+            this.panel1.Location = new System.Drawing.Point(16, 13);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(680, 54);
             this.panel1.TabIndex = 61;
             // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(90)))), ((int)(((byte)(12)))));
+            this.panel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
+            this.panel8.Location = new System.Drawing.Point(0, 46);
+            this.panel8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(680, 10);
+            this.panel8.TabIndex = 62;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(260, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(191, 25);
@@ -184,7 +158,7 @@
             this.panel7.Controls.Add(this.cbMinPrice);
             this.panel7.Location = new System.Drawing.Point(18, 408);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(214, 130);
+            this.panel7.Size = new System.Drawing.Size(214, 141);
             this.panel7.TabIndex = 59;
             // 
             // label5
@@ -212,27 +186,27 @@
             // 
             // btnApply
             // 
-            this.btnApply.BackColor = System.Drawing.Color.White;
-            this.btnApply.BackgroundColor = System.Drawing.Color.White;
+            this.btnApply.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
+            this.btnApply.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
             this.btnApply.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
             this.btnApply.BorderRadius = 25;
             this.btnApply.BorderSize = 2;
             this.btnApply.FlatAppearance.BorderSize = 0;
             this.btnApply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnApply.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnApply.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
-            this.btnApply.Location = new System.Drawing.Point(16, 79);
+            this.btnApply.ForeColor = System.Drawing.Color.White;
+            this.btnApply.Location = new System.Drawing.Point(17, 88);
             this.btnApply.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnApply.Name = "btnApply";
             this.btnApply.Size = new System.Drawing.Size(187, 34);
             this.btnApply.TabIndex = 54;
             this.btnApply.Text = "Apply";
-            this.btnApply.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
+            this.btnApply.TextColor = System.Drawing.Color.White;
             this.btnApply.UseVisualStyleBackColor = false;
             // 
             // cbMaxPrice
             // 
-            this.cbMaxPrice.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cbMaxPrice.BackColor = System.Drawing.SystemColors.ControlLight;
             this.cbMaxPrice.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cbMaxPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbMaxPrice.FormattingEnabled = true;
@@ -250,7 +224,7 @@
             // 
             // cbMinPrice
             // 
-            this.cbMinPrice.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cbMinPrice.BackColor = System.Drawing.SystemColors.ControlLight;
             this.cbMinPrice.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cbMinPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbMinPrice.FormattingEnabled = true;
@@ -276,9 +250,10 @@
             // 
             // cbAddress
             // 
+            this.cbAddress.BackColor = System.Drawing.SystemColors.ControlLight;
             this.cbAddress.DropDownHeight = 110;
             this.cbAddress.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbAddress.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbAddress.FormattingEnabled = true;
             this.cbAddress.IntegralHeight = false;
             this.cbAddress.Items.AddRange(new object[] {
@@ -345,36 +320,36 @@
             "Vĩnh Long",
             "Vĩnh Phúc",
             "Yên Bái"});
-            this.cbAddress.Location = new System.Drawing.Point(8, 133);
+            this.cbAddress.Location = new System.Drawing.Point(17, 132);
             this.cbAddress.Name = "cbAddress";
-            this.cbAddress.Size = new System.Drawing.Size(192, 29);
+            this.cbAddress.Size = new System.Drawing.Size(172, 28);
             this.cbAddress.TabIndex = 53;
             // 
             // checkListBoxAddress
             // 
+            this.checkListBoxAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.checkListBoxAddress.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.checkListBoxAddress.FormattingEnabled = true;
             this.checkListBoxAddress.Items.AddRange(new object[] {
             "Ha Noi",
             "Ho Chi Minh",
             "Da Nang",
-            "Hai Phong",
-            "Binh Duong"});
+            "Hai Phong"});
             this.checkListBoxAddress.Location = new System.Drawing.Point(10, 30);
             this.checkListBoxAddress.Name = "checkListBoxAddress";
-            this.checkListBoxAddress.Size = new System.Drawing.Size(190, 100);
+            this.checkListBoxAddress.Size = new System.Drawing.Size(190, 96);
             this.checkListBoxAddress.TabIndex = 54;
             // 
             // label21
             // 
             this.label21.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label21.Location = new System.Drawing.Point(8, 6);
+            this.label21.Location = new System.Drawing.Point(35, 6);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(137, 21);
             this.label21.TabIndex = 42;
             this.label21.Text = "Store address";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel5
             // 
@@ -388,6 +363,7 @@
             // 
             // checkListBoxCategory
             // 
+            this.checkListBoxCategory.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.checkListBoxCategory.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.checkListBoxCategory.FormattingEnabled = true;
             this.checkListBoxCategory.Items.AddRange(new object[] {
@@ -397,13 +373,14 @@
             "Car"});
             this.checkListBoxCategory.Location = new System.Drawing.Point(10, 33);
             this.checkListBoxCategory.Name = "checkListBoxCategory";
-            this.checkListBoxCategory.Size = new System.Drawing.Size(190, 100);
+            this.checkListBoxCategory.Size = new System.Drawing.Size(190, 96);
             this.checkListBoxCategory.TabIndex = 52;
             // 
             // cbCategory
             // 
+            this.cbCategory.BackColor = System.Drawing.SystemColors.ControlLight;
             this.cbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbCategory.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbCategory.FormattingEnabled = true;
             this.cbCategory.Items.AddRange(new object[] {
             "Smart phone",
@@ -413,21 +390,20 @@
             "tai nghe",
             "Moc Khoa",
             "Album"});
-            this.cbCategory.Location = new System.Drawing.Point(10, 139);
+            this.cbCategory.Location = new System.Drawing.Point(17, 135);
             this.cbCategory.Name = "cbCategory";
-            this.cbCategory.Size = new System.Drawing.Size(193, 29);
+            this.cbCategory.Size = new System.Drawing.Size(172, 28);
             this.cbCategory.TabIndex = 51;
             // 
             // label20
             // 
             this.label20.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label20.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label20.Location = new System.Drawing.Point(10, 9);
+            this.label20.Location = new System.Drawing.Point(57, 9);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(103, 21);
             this.label20.TabIndex = 49;
             this.label20.Text = "Category";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label22
             // 
@@ -445,6 +421,7 @@
             // FormProduct
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.pnlChildForm);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -453,8 +430,6 @@
             this.pnlChildForm.ResumeLayout(false);
             this.pnlChildForm.PerformLayout();
             this.panel4.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -487,9 +462,7 @@
         private CheckedListBox checkListBoxCategory;
         private ComboBox cbCategory;
         private Panel panel3;
-        private Panel panel8;
-        private Panel panel9;
-        private Label label2;
         public FlowLayoutPanel flowLayoutPanelProductList;
+        private Panel panel8;
     }
 }

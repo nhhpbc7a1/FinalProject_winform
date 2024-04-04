@@ -36,33 +36,39 @@ namespace QuanLyTraoDoiHang
         }
 
 
-        public static void Update(ReceiveInfo receiveInfo)
+        public static void Update(OrderTable orderTable)
         {
-            string SQL = string.Format(" UPDATE " + tableName + " SET userId = '{1}', name = '{2}', phone = '{3}', address = '{4}'  WHERE receiveId = '{0}' ;",
-            receiveInfo.receiveId, receiveInfo.userId, receiveInfo.name, receiveInfo.phone, receiveInfo.address);
+            string SQL = string.Format(" UPDATE " + tableName + " SET userId = '{1}', receiveId = '{2}', time = '{3}', note = '{4}', shippingMethod = '{5}', shippingFee = '{5}', paymentMethod = '{6}', status = '{7}'  WHERE orderId = '{0}' ;",
+            orderTable.orderId, orderTable.userId, orderTable.receiveId, orderTable.time, orderTable.note, orderTable.shippingMethod, orderTable.shippingFee, orderTable.paymentMethod, orderTable.status);
             dBConnection.Execute(SQL);
         }
-        public static void Add(ReceiveInfo receiveInfo)
+        public static void Add(OrderTable orderTable)
         {
-            string SQL = string.Format(" INSERT INTO " + tableName + " (receiveId, userId, name, phone, address) VALUES ('{0}','{1}','{2}','{3}','{4}');",
-            receiveInfo.receiveId, receiveInfo.userId, receiveInfo.name, receiveInfo.phone, receiveInfo.address);
+            string SQL = string.Format(" INSERT INTO " + tableName + " (orderId, userId, receiveId, time, note, shippingMetohd, shippingFee, paymentMethod, status) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}');",
+            orderTable.orderId, orderTable.userId, orderTable.receiveId, orderTable.time, orderTable.note, orderTable.shippingMethod, orderTable.shippingFee, orderTable.paymentMethod, orderTable.status);
             dBConnection.Execute(SQL);
         }
-        public static void Delete(ReceiveInfo receiveInfo)
+        public static void Delete(OrderTable orderTable)
         {
-            string SQL = string.Format("DELETE FROM " + tableName + " WHERE receiveId = '{0}';", receiveInfo.receiveId);
+            string SQL = string.Format("DELETE FROM " + tableName + " WHERE orderId = '{0}';", orderTable.orderId);
             dBConnection.Execute(SQL);
         }
-        public static ReceiveInfo RowToReceiveInfo(DataRow row)
+        public static OrderTable RowToOrderTable(DataRow row)
         {
-            ReceiveInfo receiveInfo = new ReceiveInfo();
-            receiveInfo.receiveId = Convert.ToInt32(row["receiveId"]);
-            receiveInfo.userId = Convert.ToInt32(row["userId"]);
-            receiveInfo.name = row["name"].ToString();
-            receiveInfo.phone = row["phone"].ToString();
-            receiveInfo.address = row["address"].ToString();
+            OrderTable orderTable = new OrderTable();
+            orderTable.orderId = Convert.ToInt32(row["orderId"]);
+            orderTable.userId = Convert.ToInt32(row["userId"]);
+            orderTable.receiveId = Convert.ToInt32(row["orderId"]);
+            orderTable.time = Convert.ToDateTime(row["time"].ToString());
+            orderTable.note = row["note"].ToString();
+            orderTable.shippingFee = row["shippingFee"].ToString();
+            orderTable.shippingMethod = row["shippingMethod"].ToString();
+            orderTable.paymentMethod = row["paymentMethod"].ToString();
+            orderTable.status = row["status"].ToString();
 
-            return receiveInfo;
+
+
+            return orderTable;
         }
     }
 }
