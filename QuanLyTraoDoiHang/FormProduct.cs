@@ -72,7 +72,7 @@ namespace QuanLyTraoDoiHang
                 if (Convert.ToInt32(cbMinPrice.Text) > Convert.ToInt32(cbMaxPrice.Text))
                 {
                     MessageBox.Show("Please input valid price");
-                    
+
                 }
                 else
                 {
@@ -150,7 +150,7 @@ namespace QuanLyTraoDoiHang
             {
                 checkListBoxCategory.Items.Add(cbCategory.SelectedItem);
                 checkListBoxCategory.SetItemChecked(checkListBoxCategory.Items.Count - 1, true);
-                MoveCheckedCategoryToFront(sender,e);
+                MoveCheckedCategoryToFront(sender, e);
             }
         }
         private void MoveCheckedCategoryToFront(object sender, EventArgs e)
@@ -211,5 +211,14 @@ namespace QuanLyTraoDoiHang
             }
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanelProductList_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

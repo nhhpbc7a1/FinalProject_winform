@@ -20,6 +20,13 @@ namespace QuanLyTraoDoiHang
 
             Load += FCheckOut_Load;
             this.listProducts = listProducts;
+            btnChangeReceiveInfo.Click += BtnChangeReceiveInfo_Click;
+        }
+
+        private void BtnChangeReceiveInfo_Click(object? sender, EventArgs e)
+        {
+            FormReceiveAddress x = new FormReceiveAddress();
+            x.ShowDialog();
         }
 
         private void FCheckOut_Load(object? sender, EventArgs e)
