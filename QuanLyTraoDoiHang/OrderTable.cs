@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuanLyTraoDoiHang
 {
-    class OrderTable
+    public class OrderTable
     {
         public int orderId;
         public int userId;

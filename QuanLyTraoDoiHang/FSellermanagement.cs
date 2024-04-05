@@ -14,9 +14,11 @@ namespace QuanLyTraoDoiHang
 {
     public partial class FSellermanagement : Form
     {
+
         public FSellermanagement()
         {
             InitializeComponent();
+            btnShipment_Click_1(null, null);
             //OpenChildForm(new FormMyShipment());
         }
 
@@ -124,7 +126,14 @@ namespace QuanLyTraoDoiHang
         }
         private void btnShipment_Click(object sender, EventArgs e)
         {
+            //DataTable x = OrderTableDAO.SellectByUserId(Program.currentUserId);
+            //foreach (DataRow row in x.Rows)
+            //{
+            //    OrderTable order = OrderTableDAO.RowToOrderTable(row);
+            //    ucOrder item = new ucOrder(order);
+            //    pnlItems.Controls.Add(item);
 
+            //}
         }
         // btn Product
         private void btnMyProducts_Click(object sender, EventArgs e)
@@ -145,15 +154,103 @@ namespace QuanLyTraoDoiHang
         // btn Order
         private void btnMyOrder_Click(object sender, EventArgs e)
         {
+            btnUpdate.Visible = false;
+            lblContent.Text = "Completed Orders";
 
+            DataTable x = OrderTableDAO.SellectByUserId(Program.currentUserId);
+            pnlItems.Controls.Clear();
+            foreach (DataRow row in x.Rows)
+            {
+
+                OrderTable order = OrderTableDAO.RowToOrderTable(row);
+                if (order.status == "completed")
+                {
+                    ucOrder item = new ucOrder(order);
+                    pnlItems.Controls.Add(item);
+                }
+
+
+            }
         }
 
         private void btnReturned_Click(object sender, EventArgs e)
         {
+            btnUpdate.Visible = false;
+            lblContent.Text = "Returned Orders";
 
+            DataTable x = OrderTableDAO.SellectByUserId(Program.currentUserId);
+            pnlItems.Controls.Clear();
+            foreach (DataRow row in x.Rows)
+            {
+
+                OrderTable order = OrderTableDAO.RowToOrderTable(row);
+                if (order.status == "returned")
+                {
+                    ucOrder item = new ucOrder(order);
+                    pnlItems.Controls.Add(item);
+                }
+
+
+            }
         }
 
         private void btnCancelled_Click(object sender, EventArgs e)
+        {
+            btnUpdate.Visible = false;
+            lblContent.Text = "Cancelled Orders";
+
+            DataTable x = OrderTableDAO.SellectByUserId(Program.currentUserId);
+            pnlItems.Controls.Clear();
+            foreach (DataRow row in x.Rows)
+            {
+
+                OrderTable order = OrderTableDAO.RowToOrderTable(row);
+                if (order.status == "cancelled")
+                {
+                    ucOrder item = new ucOrder(order);
+                    pnlItems.Controls.Add(item);
+                }
+
+
+            }
+        }
+
+        private void btnShipment_Click_1(object sender, EventArgs e)
+        {
+            lblContent.Text = "Shipment";
+
+            DataTable x = OrderTableDAO.SellectByUserId(Program.currentUserId);
+            pnlItems.Controls.Clear();
+            foreach (DataRow row in x.Rows)
+            {
+
+                OrderTable order = OrderTableDAO.RowToOrderTable(row);
+
+
+                if ((order.status == "waiting") || (order.status) == "shipping")
+                {
+                    ucOrder item = new ucOrder(order);
+                    item.cbxStatus.Visible = true;
+                    item.lblStatus.Visible = true;
+                    pnlItems.Controls.Add(item);
+                }
+
+
+            }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+
+            foreach (ucOrder ucorder in pnlItems.Controls)
+            {
+                OrderTableDAO.Update(ucorder.order);
+            }
+            btnShipment_Click_1(sender, e);
+
+        }
+
+        private void lblContent_Click(object sender, EventArgs e)
         {
 
         }

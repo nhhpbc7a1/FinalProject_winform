@@ -38,7 +38,7 @@ namespace QuanLyTraoDoiHang
         }
         public static DataTable SelectByOrderId(int orderId)
         {
-            string sqlStr = string.Format("SELECT * FROM " + tableName + " where orderId='{1}';", orderId);
+            string sqlStr = string.Format("SELECT * FROM " + tableName + " where orderId='{0}';", orderId);
             return dBConnection.Load(sqlStr);
 
         }

@@ -70,5 +70,10 @@ namespace QuanLyTraoDoiHang
 
             return orderTable;
         }
+        public static DataTable SellectByUserId(int userId)
+        {
+            string sqlStr = string.Format("SELECT * FROM " + tableName + " WHERE userId = '{0}' ",userId );
+            return dBConnection.Load(sqlStr);
+        }
     }
 }
