@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace QuanLyTraoDoiHang
 {
@@ -65,6 +66,20 @@ namespace QuanLyTraoDoiHang
             string sqlStr = string.Format("SELECT * FROM " + tableName + " where userId='{0}';", userId);
             return dBConnection.Load(sqlStr);
         }
-
+        public static ReceiveInfo SelectByReceiveId(int receiveId)
+        {
+            string SQL = string.Format("Select * FROM " + tableName + " WHERE receiveId = '{0}';", receiveId);
+            DataTable x = dBConnection.Load(SQL);
+            ReceiveInfo receiveInfo = new ReceiveInfo();
+            if (x.Rows.Count > 0)
+            {
+                receiveInfo = RowToReceiveInfo(x.Rows[0]);
+            }
+            else
+            {
+                MessageBox.Show("not exit");
+            }
+            return receiveInfo;
+        }
     }
 }

@@ -17,6 +17,7 @@ namespace QuanLyTraoDoiHang
             InitializeComponent();
             Load += MyInfo_Load;
             btnSave.Click += btnSave_Click;
+            this.AcceptButton = btnSave;
         }
 
         private void MyInfo_Load(object sender, EventArgs e)

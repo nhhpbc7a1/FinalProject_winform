@@ -23,6 +23,7 @@ namespace QuanLyTraoDoiHang
             ucReTypePass.txtPass.TextChanged += RetypedPass_TextChanged;
             ucNewPass.txtPass.TextChanged += UnableChangePassBtn;
             ucReTypePass.txtPass.TextChanged += UnableChangePassBtn;
+            this.AcceptButton = btnChangePass;
 
         }
 

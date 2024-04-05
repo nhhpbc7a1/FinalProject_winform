@@ -12,9 +12,20 @@ namespace QuanLyTraoDoiHang
 {
     public partial class UCProductStatusItem : UserControl
     {
-        public UCProductStatusItem()
+        public Product product = new Product();
+        public UCProductStatusItem(Product product)
         {
+
             InitializeComponent();
+            this.product = product;
+            picItems.BackgroundImage = product.image;
+            lblProductName.Text = product.name;
+            lblCondition.Text = product.condition;
+            lblPrice.Text = product.price.ToString();
+            lblOriginPrice.Text = product.originalPrice.ToString();
+
         }
+
+      
     }
 }
