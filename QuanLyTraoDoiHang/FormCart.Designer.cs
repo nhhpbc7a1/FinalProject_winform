@@ -242,7 +242,6 @@ namespace QuanLyTraoDoiHang
             panel1.Name = "panel1";
             panel1.Size = new Size(984, 467);
             panel1.TabIndex = 26;
-            panel1.Paint += panel1_Paint;
             // 
             // FormCart
             // 

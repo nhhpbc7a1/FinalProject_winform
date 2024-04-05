@@ -26,7 +26,17 @@ namespace QuanLyTraoDoiHang
 
         private void BtnCheckOut_Click(object? sender, EventArgs e)
         {
-
+            List<Product> listTmp = new List<Product>();
+            foreach (UCCartEachShop c in pnlProducts.Controls)
+            {
+                foreach (UCProductInCart x in c.pnlProducts.Controls)
+                    if (x.cbChoose.Checked == true)
+                    {
+                        listTmp.Add(ProductDAO.SelectById(x.cartItem.productId));
+                    }
+            }
+            FCheckOut fCheckOut = new FCheckOut(listTmp);
+            Program.mainpage.OpenChildForm(fCheckOut);
         }
 
         private void CbSellectAll_CheckedChanged(object? sender, EventArgs e)
@@ -118,9 +128,5 @@ namespace QuanLyTraoDoiHang
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

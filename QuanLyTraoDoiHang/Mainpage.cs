@@ -109,6 +109,7 @@ namespace QuanLyTraoDoiHang
             pnl_Body.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
+            UpdateAccountByAction(null, null);
         }
 
         private void btnCart_Click(object sender, EventArgs e)
@@ -120,22 +121,6 @@ namespace QuanLyTraoDoiHang
             else
             {
                 FormCart formCart = new FormCart();
-
-                void btnCheckOut_Click(object sender, EventArgs e)
-                {
-                    List<Product> listTmp = new List<Product>();
-                    foreach (UCCartEachShop c in formCart.pnlProducts.Controls)
-                    {
-                        foreach (UCProductInCart x in c.pnlProducts.Controls)
-                            if (x.cbChoose.Checked == true)
-                            {
-                                listTmp.Add(ProductDAO.SelectById(x.cartItem.productId));
-                            }
-                    }
-                    FCheckOut fCheckOut = new FCheckOut(listTmp);
-                    OpenChildForm(fCheckOut);
-                }
-                formCart.btnCheckOut.Click += btnCheckOut_Click;
                 OpenChildForm(formCart);
             }
         }
@@ -157,20 +142,7 @@ namespace QuanLyTraoDoiHang
 
         private void Account_Click(object sender, EventArgs e)
         {
-
-
             PersonalInfor form = new PersonalInfor();
-            void Logout(object sender, EventArgs e)
-            {
-                if (MessageBox.Show("Do you really want to log out?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.OK)
-                {
-                    MessageBox.Show("Logout successfully");
-                    Program.currentUserId = -1;
-                    BackToMainpage(sender, e);
-                    UpdateAccountByAction(sender, e);
-                }
-            }
-            form.btnLogout.Click += Logout;
             OpenChildForm(form);
         }
 
@@ -189,9 +161,10 @@ namespace QuanLyTraoDoiHang
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (MessageBox.Show("Do you really want to log out?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
-
-      
     }
 }

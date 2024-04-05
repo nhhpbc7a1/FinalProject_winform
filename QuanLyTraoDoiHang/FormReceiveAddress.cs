@@ -18,7 +18,20 @@ namespace QuanLyTraoDoiHang
             InitializeComponent();
             Load += FormReceiveAddress_Load;
             btnAddAddress.Click += BtnAddAddress_Click;
+            btnConfirm.Click += BtnConfirm_Click;
         }
+
+        private void BtnConfirm_Click(object? sender, EventArgs e)
+        {
+            foreach (ucReceiveAddressItem x in pnlAddresses.Controls)
+                if (x.indexChoose == indexChoose)
+                {
+                    FCheckOut.currentReceiveInfo = x.receiveInfo;
+                    MessageBox.Show("Change successfully");
+                    Close();
+                }
+        }
+
         private void BtnAddAddress_Click(object? sender, EventArgs e)
         {
             FormAddReceiveInfo x = new FormAddReceiveInfo();
@@ -28,7 +41,7 @@ namespace QuanLyTraoDoiHang
 
         private void FormReceiveAddress_Load(object? sender, EventArgs e)
         {
-            DataTable dt = ReceiveInfoDAO.Load();
+            DataTable dt = ReceiveInfoDAO.SelectByUserId(Program.currentUserId);
             for (int i = 0; i < dt.Rows.Count; i++)
             {
                 DataRow dataRow = dt.Rows[i];

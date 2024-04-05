@@ -83,9 +83,17 @@ go
 --go
 
 create table Rating (
+	ratingId int primary key,
 	senderUserId int references UserTable(userId),
 	receiverUserId int references UserTable(userId),
 	orderId int references OrderTable(OrderId),
 	marks int,
 	detail nvarchar(1000),
+);
+
+--drop table OrderItem;
+--go
+create table OrderItem (
+	orderId int references OrderTable(orderId),
+	productId int references Product(productId),
 );

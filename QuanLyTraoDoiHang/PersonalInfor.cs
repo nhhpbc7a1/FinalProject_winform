@@ -21,7 +21,19 @@ namespace QuanLyTraoDoiHang
             btnHistory.Click += btnHistory_Click;
             Load += PersonalInfor_Load;
             lblChangeImage.Click += lblChangeImage_Click;
+            btnLogout.Click += BtnLogout_Click;
         }
+
+        private void BtnLogout_Click(object? sender, EventArgs e)
+        {
+            if (MessageBox.Show("Do you really want to log out?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                MessageBox.Show("Logout successfully");
+                Program.currentUserId = -1;
+                Program.mainpage.OpenChildForm(new FormProduct());
+            }
+        }
+
         private Form currentFormChild;
         private void OpenChildForm(Form childForm)
         {

@@ -13,6 +13,7 @@ namespace QuanLyTraoDoiHang
     public partial class FCheckOut : Form
     {
         public List<Product> listProducts = new List<Product>();
+        public static ReceiveInfo currentReceiveInfo = null;
 
         public FCheckOut(List<Product> listProducts)
         {
@@ -21,14 +22,37 @@ namespace QuanLyTraoDoiHang
             Load += FCheckOut_Load;
             this.listProducts = listProducts;
             btnChangeReceiveInfo.Click += BtnChangeReceiveInfo_Click;
-            this.AcceptButton = rBCheckout;
+            if (ReceiveInfoDAO.SelectByUserId(Program.currentUserId).Rows.Count > 0)
+                currentReceiveInfo = ReceiveInfoDAO.RowToReceiveInfo(ReceiveInfoDAO.Load().Rows[0]);
+
+            btnCheckOut.Click += BtnCheckOut_Click;
+        }
+
+        private void BtnCheckOut_Click(object? sender, EventArgs e)
+        {
+            if (MessageBox.Show("Do you really want to checkout?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                foreach (UCCheckOutEachShop ucShop in pnlProducts.Controls)
+                {
+                    OrderTable x = new OrderTable(Program.currentUserId,currentReceiveInfo.receiveId,DateTime.Now,ucShop.txtNote.Text, ucShop.comboBoxShippingMethod.Text, Convert.ToInt32(ucShop.lblShippingFee.Text),"","waiting");
+                    OrderTableDAO.Add(x);
+                    foreach (UCProductInCheckOut ucProduct in ucShop.ucCartEachShop1.pnlProducts.Controls)
+                    {
+                        OrderItemDAO.Add(new OrderItem(x.orderId, ucProduct.product.productId));
+                    }
+                }
+                CartItemDAO.DeleteProductBeOrdered();
+                Program.mainpage.OpenChildForm(new FormProduct());
+            }
         }
 
         private void BtnChangeReceiveInfo_Click(object? sender, EventArgs e)
         {
             FormReceiveAddress x = new FormReceiveAddress();
+            x.btnConfirm.Click += FCheckOut_Load;
             x.ShowDialog();
         }
+
 
         private void FCheckOut_Load(object? sender, EventArgs e)
         {
@@ -55,7 +79,12 @@ namespace QuanLyTraoDoiHang
 
                 }
             }
-
+            if (currentReceiveInfo != null)
+            {
+                lblPhoneDelivery.Text = currentReceiveInfo.phone;
+                lblNameDelivery.Text = currentReceiveInfo.name;
+                lblAddressDelivery.Text = currentReceiveInfo.address;
+            }
         }
 
         private void ComboBoxShippingMethod_SelectedIndexChanged(object? sender, EventArgs e)
@@ -74,9 +103,5 @@ namespace QuanLyTraoDoiHang
             lblTotalPrice.Text = (totalShip + totalProductPrice).ToString();
         }
 
-        private void rBCheckout_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

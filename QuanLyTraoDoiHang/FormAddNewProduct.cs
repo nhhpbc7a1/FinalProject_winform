@@ -17,7 +17,7 @@ namespace QuanLyTraoDoiHang
         public FormAddNewProduct()
         {
             InitializeComponent();
-            picboxProduct.BackgroundImage = Properties.Resources.empty_product;
+            //picboxProduct.BackgroundImage = Properties.Resources.empty_product;
         }
 
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
