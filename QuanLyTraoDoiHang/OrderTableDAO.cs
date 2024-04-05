@@ -38,13 +38,13 @@ namespace QuanLyTraoDoiHang
 
         public static void Update(OrderTable orderTable)
         {
-            string SQL = string.Format(" UPDATE " + tableName + " SET userId = '{1}', receiveId = '{2}', time = '{3}', note = '{4}', shippingMethod = '{5}', shippingFee = '{5}', paymentMethod = '{6}', status = '{7}'  WHERE orderId = '{0}' ;",
+            string SQL = string.Format(" UPDATE " + tableName + " SET userId = '{1}', receiveId = '{2}', time = '{3}', note = '{4}', shippingMethod = '{5}', shippingFee = '{6}', paymentMethod = '{7}', status = '{8}'  WHERE orderId = '{0}' ;",
             orderTable.orderId, orderTable.userId, orderTable.receiveId, orderTable.time, orderTable.note, orderTable.shippingMethod, orderTable.shippingFee, orderTable.paymentMethod, orderTable.status);
             dBConnection.Execute(SQL);
         }
         public static void Add(OrderTable orderTable)
         {
-            string SQL = string.Format(" INSERT INTO " + tableName + " (orderId, userId, receiveId, time, note, shippingMetohd, shippingFee, paymentMethod, status) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}');",
+            string SQL = string.Format(" INSERT INTO " + tableName + " (orderId, userId, receiveId, time, note, shippingMethod, shippingFee, paymentMethod, status) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}');",
             orderTable.orderId, orderTable.userId, orderTable.receiveId, orderTable.time, orderTable.note, orderTable.shippingMethod, orderTable.shippingFee, orderTable.paymentMethod, orderTable.status);
             dBConnection.Execute(SQL);
         }
@@ -61,7 +61,7 @@ namespace QuanLyTraoDoiHang
             orderTable.receiveId = Convert.ToInt32(row["orderId"]);
             orderTable.time = Convert.ToDateTime(row["time"].ToString());
             orderTable.note = row["note"].ToString();
-            orderTable.shippingFee = row["shippingFee"].ToString();
+            orderTable.shippingFee = Convert.ToInt32(row["shippingFee"].ToString());
             orderTable.shippingMethod = row["shippingMethod"].ToString();
             orderTable.paymentMethod = row["paymentMethod"].ToString();
             orderTable.status = row["status"].ToString();

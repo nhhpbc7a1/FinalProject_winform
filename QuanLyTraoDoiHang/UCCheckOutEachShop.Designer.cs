@@ -141,10 +141,10 @@
         #endregion
         private Panel panel3;
         private Label lblShippingType;
-        private TextBox txtNote;
         private Label lblCustomerNote;
         public UCCartEachShop ucCartEachShop1;
         public ComboBox comboBoxShippingMethod;
         public Label lblShippingFee;
+        public TextBox txtNote;
     }
 }

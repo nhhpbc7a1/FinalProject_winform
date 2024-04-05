@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Security.Principal;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Menu;
 
 namespace QuanLyTraoDoiHang
 {
@@ -47,6 +48,20 @@ namespace QuanLyTraoDoiHang
                 return RowToCartItem(x.Rows[0]);
             return null;
         }
+        public static void DeleteProductBeOrdered()
+        {
+            string sqlStr = string.Format("SELECT productId FROM OrderTable,OrderItem where status != 'cancel' ");
+            DataTable x = dBConnection.Load(sqlStr);
+            foreach (DataRow row in x.Rows)
+            {
+                DeletedByProductId(Convert.ToInt32(row["productId"]));
+            }
+        }
+        public static void DeletedByProductId(int productId)
+        {
+            string SQL = string.Format("DELETE FROM " + tableName + " WHERE productId = '{0}';", productId);
+            dBConnection.Execute(SQL);
 
+        }
     }
 }

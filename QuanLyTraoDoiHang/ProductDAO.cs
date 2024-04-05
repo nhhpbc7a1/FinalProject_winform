@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Security.Policy;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -21,7 +22,7 @@ namespace QuanLyTraoDoiHang
 
         public static int CreateID()
         {
-            string sqlStr = string.Format("SELECT * FROM " + tableName);
+            string sqlStr = string.Format("SELECT * FROM " + tableName );
             DataTable x = dBConnection.Load(sqlStr);
             int maxValue = 0;
             foreach (DataRow row in x.Rows)
@@ -35,8 +36,32 @@ namespace QuanLyTraoDoiHang
         public ProductDAO() { }
         public DataTable Load()
         {
-            string sqlStr = string.Format("SELECT * FROM " + tableName);
-            return dBConnection.Load(sqlStr);
+            string sqlStr = string.Format("SELECT * FROM " + tableName );
+            DataTable x = dBConnection.Load(sqlStr);
+            //return x; 
+            sqlStr = string.Format("SELECT productId FROM OrderTable,OrderItem where status<>'cancel' and OrderTable.orderId = orderItem.orderId");
+            DataTable y = dBConnection.Load(sqlStr);
+            //return y;
+            DataTable z = x;
+            for (int i = 0; i < x.Rows.Count; i ++)
+            {
+                DataRow rowX = x.Rows[i];
+                bool kt = true;
+                foreach (DataRow rowY in y.Rows)
+                {
+                    if (rowX["productId"].ToString() == rowY["productId"].ToString())
+                    {
+                        kt = false;
+                        break;
+                    }
+                }
+                if (kt == false)
+                {
+                    x.Rows.RemoveAt(i--);
+                }
+
+            }
+            return z;
         }
         public void Update(Product product)
         {

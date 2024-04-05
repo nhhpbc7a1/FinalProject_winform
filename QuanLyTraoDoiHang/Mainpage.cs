@@ -109,6 +109,7 @@ namespace QuanLyTraoDoiHang
             pnl_Body.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
+            UpdateAccountByAction(null, null);
         }
 
         private void btnCart_Click(object sender, EventArgs e)

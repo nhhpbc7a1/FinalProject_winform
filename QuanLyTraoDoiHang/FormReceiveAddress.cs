@@ -41,7 +41,7 @@ namespace QuanLyTraoDoiHang
 
         private void FormReceiveAddress_Load(object? sender, EventArgs e)
         {
-            DataTable dt = ReceiveInfoDAO.Load();
+            DataTable dt = ReceiveInfoDAO.SelectByUserId(Program.currentUserId);
             for (int i = 0; i < dt.Rows.Count; i++)
             {
                 DataRow dataRow = dt.Rows[i];

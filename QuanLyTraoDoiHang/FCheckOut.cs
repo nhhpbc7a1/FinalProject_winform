@@ -13,7 +13,7 @@ namespace QuanLyTraoDoiHang
     public partial class FCheckOut : Form
     {
         public List<Product> listProducts = new List<Product>();
-        public static ReceiveInfo currentReceiveInfo = new ReceiveInfo();
+        public static ReceiveInfo currentReceiveInfo = null;
 
         public FCheckOut(List<Product> listProducts)
         {
@@ -22,7 +22,7 @@ namespace QuanLyTraoDoiHang
             Load += FCheckOut_Load;
             this.listProducts = listProducts;
             btnChangeReceiveInfo.Click += BtnChangeReceiveInfo_Click;
-            if (ReceiveInfoDAO.Load().Rows.Count > 0)
+            if (ReceiveInfoDAO.SelectByUserId(Program.currentUserId).Rows.Count > 0)
                 currentReceiveInfo = ReceiveInfoDAO.RowToReceiveInfo(ReceiveInfoDAO.Load().Rows[0]);
 
             btnCheckOut.Click += BtnCheckOut_Click;
@@ -32,8 +32,17 @@ namespace QuanLyTraoDoiHang
         {
             if (MessageBox.Show("Do you really want to checkout?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-               // OrderTable x = new OrderTable(Program.currentUserId,currentReceiveInfo.receiveId,DateTime.Now);
-
+                foreach (UCCheckOutEachShop ucShop in pnlProducts.Controls)
+                {
+                    OrderTable x = new OrderTable(Program.currentUserId,currentReceiveInfo.receiveId,DateTime.Now,ucShop.txtNote.Text, ucShop.comboBoxShippingMethod.Text, Convert.ToInt32(ucShop.lblShippingFee.Text),"","waiting");
+                    OrderTableDAO.Add(x);
+                    foreach (UCProductInCheckOut ucProduct in ucShop.ucCartEachShop1.pnlProducts.Controls)
+                    {
+                        OrderItemDAO.Add(new OrderItem(x.orderId, ucProduct.product.productId));
+                    }
+                }
+                CartItemDAO.DeleteProductBeOrdered();
+                Program.mainpage.OpenChildForm(new FormProduct());
             }
         }
 
@@ -70,10 +79,12 @@ namespace QuanLyTraoDoiHang
 
                 }
             }
-            lblPhoneDelivery.Text = currentReceiveInfo.phone;
-            lblNameDelivery.Text = currentReceiveInfo.name;
-            lblAddressDelivery.Text = currentReceiveInfo.address;
-
+            if (currentReceiveInfo != null)
+            {
+                lblPhoneDelivery.Text = currentReceiveInfo.phone;
+                lblNameDelivery.Text = currentReceiveInfo.name;
+                lblAddressDelivery.Text = currentReceiveInfo.address;
+            }
         }
 
         private void ComboBoxShippingMethod_SelectedIndexChanged(object? sender, EventArgs e)
