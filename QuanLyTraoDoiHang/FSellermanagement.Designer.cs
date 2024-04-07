@@ -35,6 +35,7 @@ namespace QuanLyTraoDoiHang
             pnlSellerTool = new Panel();
             btnUpdate = new RButton();
             pnlItems = new FlowLayoutPanel();
+            picEmpty = new PictureBox();
             pnlMenu = new Panel();
             timer1 = new System.Windows.Forms.Timer(components);
             timer2 = new System.Windows.Forms.Timer(components);
@@ -56,6 +57,8 @@ namespace QuanLyTraoDoiHang
             lblContent = new Label();
             panel4 = new Panel();
             pnlSellerTool.SuspendLayout();
+            pnlItems.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picEmpty).BeginInit();
             pnlDropDownnn.SuspendLayout();
             pnlDropDownProdu.SuspendLayout();
             panel1.SuspendLayout();
@@ -102,10 +105,22 @@ namespace QuanLyTraoDoiHang
             // 
             pnlItems.AutoScroll = true;
             pnlItems.BackColor = SystemColors.ControlLight;
+            pnlItems.Controls.Add(picEmpty);
             pnlItems.Location = new Point(16, 59);
             pnlItems.Name = "pnlItems";
             pnlItems.Size = new Size(725, 336);
             pnlItems.TabIndex = 21;
+            // 
+            // picEmpty
+            // 
+            picEmpty.BackgroundImage = (Image)resources.GetObject("picEmpty.BackgroundImage");
+            picEmpty.Location = new Point(315, 120);
+            picEmpty.Margin = new Padding(310, 120, 3, 3);
+            picEmpty.Name = "picEmpty";
+            picEmpty.Size = new Size(100, 93);
+            picEmpty.TabIndex = 1;
+            picEmpty.TabStop = false;
+            picEmpty.Visible = false;
             // 
             // pnlMenu
             // 
@@ -427,6 +442,8 @@ namespace QuanLyTraoDoiHang
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FSellermanagement";
             pnlSellerTool.ResumeLayout(false);
+            pnlItems.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)picEmpty).EndInit();
             pnlDropDownnn.ResumeLayout(false);
             pnlDropDownProdu.ResumeLayout(false);
             panel1.ResumeLayout(false);
@@ -461,5 +478,6 @@ namespace QuanLyTraoDoiHang
         private Label lblContent;
         private Panel panel4;
         private RButton btnUpdate;
+        private PictureBox picEmpty;
     }
 }

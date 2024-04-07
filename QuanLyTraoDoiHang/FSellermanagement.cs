@@ -154,6 +154,14 @@ namespace QuanLyTraoDoiHang
         // btn Order
         private void btnMyOrder_Click(object sender, EventArgs e)
         {
+            if (pnlItems.Controls == null)
+            {
+                picEmpty.Visible = true;
+            }
+            else
+            {
+                picEmpty.Visible = false;
+            }
             btnUpdate.Visible = false;
             lblContent.Text = "Completed Orders";
 
@@ -175,6 +183,14 @@ namespace QuanLyTraoDoiHang
 
         private void btnReturned_Click(object sender, EventArgs e)
         {
+            if(pnlItems.Controls == null)
+            {
+                picEmpty.Visible = true;
+            }
+            else
+            {
+                picEmpty.Visible = false;
+            }
             btnUpdate.Visible = false;
             lblContent.Text = "Returned Orders";
 
@@ -196,6 +212,14 @@ namespace QuanLyTraoDoiHang
 
         private void btnCancelled_Click(object sender, EventArgs e)
         {
+            if (pnlItems.Controls == null)
+            {
+                picEmpty.Visible = true;
+            }
+            else
+            {
+                picEmpty.Visible = false;
+            }
             btnUpdate.Visible = false;
             lblContent.Text = "Cancelled Orders";
 
@@ -217,6 +241,14 @@ namespace QuanLyTraoDoiHang
 
         private void btnShipment_Click_1(object sender, EventArgs e)
         {
+            if (pnlItems.Controls == null)
+            {
+                picEmpty.Visible = true;
+            }
+            else
+            {
+                picEmpty.Visible = false;
+            }
             lblContent.Text = "Shipment";
 
             DataTable x = OrderTableDAO.SellectByUserId(Program.currentUserId);
