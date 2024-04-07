@@ -12,11 +12,13 @@ namespace QuanLyTraoDoiHang
 {
     public partial class UCCheckOutEachShop : UserControl
     {
-        public UCCheckOutEachShop()
+        public User shopInfo = new User();
+        public UCCheckOutEachShop(User shopInfo)
         {
             InitializeComponent();
             Load += UCCheckOutEachShop_Load;
             comboBoxShippingMethod.SelectedIndexChanged += ComboBoxShippingMethod_SelectedIndexChanged;
+            this.shopInfo = shopInfo;
         }
 
         private void ComboBoxShippingMethod_SelectedIndexChanged(object? sender, EventArgs e)

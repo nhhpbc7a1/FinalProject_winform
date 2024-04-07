@@ -15,11 +15,19 @@ namespace QuanLyTraoDoiHang
         public MyProduct()
         {
             InitializeComponent();
+            Load += MyProduct_Load;
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void MyProduct_Load(object? sender, EventArgs e)
         {
-
+            pnlProducts.Controls.Clear();
+            DataTable x = ProductDAO.SelectBySellerId(Program.currentUserId);
+            foreach (DataRow row in x.Rows)
+            {
+                UCManageProduct tmp = new UCManageProduct(ProductDAO.RowToProduct(row));
+                pnlProducts.Controls.Add(tmp);
+            }
         }
+
     }
 }

@@ -74,12 +74,13 @@ namespace QuanLyTraoDoiHang
             if (x.Rows.Count > 0)
             {
                 receiveInfo = RowToReceiveInfo(x.Rows[0]);
+                return receiveInfo;
             }
             else
             {
                 MessageBox.Show("not exit");
+                return new ReceiveInfo(Program.currentUserId,"null","null","null");
             }
-            return receiveInfo;
         }
     }
 }

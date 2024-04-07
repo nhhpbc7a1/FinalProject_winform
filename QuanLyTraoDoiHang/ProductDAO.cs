@@ -39,7 +39,7 @@ namespace QuanLyTraoDoiHang
             string sqlStr = string.Format("SELECT * FROM " + tableName );
             DataTable x = dBConnection.Load(sqlStr);
             //return x; 
-            sqlStr = string.Format("SELECT productId FROM OrderTable,OrderItem where status<>'cancel' and OrderTable.orderId = orderItem.orderId");
+            sqlStr = string.Format("SELECT productId FROM OrderTable,OrderItem where status<>'cancelled' and OrderTable.orderId = orderItem.orderId");
             DataTable y = dBConnection.Load(sqlStr);
             //return y;
             DataTable z = x;
@@ -65,12 +65,32 @@ namespace QuanLyTraoDoiHang
         }
         public void Update(Product product)
         {
+            string sqlStr = string.Format("SELECT productId FROM OrderTable,OrderItem where status<>'cancelled' and OrderTable.orderId = orderItem.orderId");
+            DataTable y = dBConnection.Load(sqlStr);
+            foreach (DataRow rowY in y.Rows)
+            {
+                if (product.productId.ToString() == rowY["productId"].ToString())
+                {
+                    MessageBox.Show("This product are being ordered");
+                    return;
+                }
+            }
+
             byte[] imageData = MyImage.ImageToByteArray(product.image);
 
-            string SQL = string.Format(" UPDATE " + tableName + " SET sellerId = '{1}', category = '{2}', name = '{3}', price = '{4}', image = '{5}', originalPrice = '{6}', condition = '{7}', warrantyPolicy = '{8}', dateBought = '{9}', Brand = '{10}', Origin = '{11}', Description = '{12}'  WHERE productId = '{0}' ;",
-            product.productId, product.sellerId, product.category, product.name, product.price, null, product.originalPrice, product.condition, product.warrantyPolicy, product.dateBought, product.brand, product.origin, product.description);
+            using (SqlConnection connection = new SqlConnection(Properties.Settings.Default.connStr))
+            {
+                connection.Open();
 
-            dBConnection.Execute(SQL);
+                string SQL = string.Format(" UPDATE " + tableName + " SET sellerId = '{1}', category = '{2}', name = '{3}', price = '{4}', image = @ImageData, originalPrice = '{6}', condition = '{7}', warrantyPolicy = '{8}', dateBought = '{9}', Brand = '{10}', Origin = '{11}', Description = N'{12}'  WHERE productId = '{0}' ;",
+                product.productId, product.sellerId, product.category, product.name, product.price, null, product.originalPrice, product.condition, product.warrantyPolicy, product.dateBought, product.brand, product.origin, product.description);
+
+                SqlCommand cmd = new SqlCommand(SQL, connection);
+                cmd.Parameters.Add("@ImageData", System.Data.SqlDbType.VarBinary, -1).Value = imageData;
+                cmd.ExecuteNonQuery();
+                connection.Close();
+                MessageBox.Show("save successfully");
+            }
         }
         public void Add(Product product)
         {
@@ -86,13 +106,33 @@ namespace QuanLyTraoDoiHang
                 cmd.Parameters.Add("@ImageData", System.Data.SqlDbType.VarBinary, -1).Value = imageData;
                 cmd.ExecuteNonQuery();
                 connection.Close();
+                MessageBox.Show("add successfully");
+
             }
 
         }
-        public void Delete(Product product)
+        public static void Delete(Product product)
         {
-            string SQL = string.Format("DELETE FROM " + tableName + " WHERE productId = '{0}';", product.productId);
-            dBConnection.Execute(SQL);
+            string sqlStr = string.Format("SELECT productId FROM OrderTable,OrderItem where status<>'cancelled' and OrderTable.orderId = orderItem.orderId");
+            DataTable y = dBConnection.Load(sqlStr);
+            foreach (DataRow rowY in y.Rows)
+            {
+                if (product.productId.ToString() == rowY["productId"].ToString())
+                {
+                    MessageBox.Show("This product are being ordered");
+                    return;
+                }
+            }
+
+
+            if (MessageBox.Show("Do you really want to delete this product?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                string SQL = string.Format("DELETE FROM " + tableName + " WHERE productId = '{0}';", product.productId);
+                dBConnection.Execute(SQL);
+                MessageBox.Show("Delete successfully");
+            }
+
+
         }
         public static Product RowToProduct(DataRow row)
         {

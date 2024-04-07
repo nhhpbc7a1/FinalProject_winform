@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace QuanLyTraoDoiHang
 {
@@ -38,14 +39,14 @@ namespace QuanLyTraoDoiHang
 
         public static void Update(OrderTable orderTable)
         {
-            string SQL = string.Format(" UPDATE " + tableName + " SET userId = '{1}', receiveId = '{2}', time = '{3}', note = '{4}', shippingMethod = '{5}', shippingFee = '{6}', paymentMethod = '{7}', status = '{8}'  WHERE orderId = '{0}' ;",
-            orderTable.orderId, orderTable.userId, orderTable.receiveId, orderTable.time, orderTable.note, orderTable.shippingMethod, orderTable.shippingFee, orderTable.paymentMethod, orderTable.status);
+            string SQL = string.Format(" UPDATE " + tableName + " SET buyerId = '{1}', sellerId='{2}', receiveId = '{3}', time = '{4}', note = '{5}', shippingMethod = '{6}', shippingFee = '{7}', paymentMethod = '{8}', status = '{9}'  WHERE orderId = '{0}' ;",
+            orderTable.orderId, orderTable.buyerId, orderTable.sellerId, orderTable.receiveId, orderTable.time, orderTable.note, orderTable.shippingMethod, orderTable.shippingFee, orderTable.paymentMethod, orderTable.status);
             dBConnection.Execute(SQL);
         }
         public static void Add(OrderTable orderTable)
         {
-            string SQL = string.Format(" INSERT INTO " + tableName + " (orderId, userId, receiveId, time, note, shippingMethod, shippingFee, paymentMethod, status) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}');",
-            orderTable.orderId, orderTable.userId, orderTable.receiveId, orderTable.time, orderTable.note, orderTable.shippingMethod, orderTable.shippingFee, orderTable.paymentMethod, orderTable.status);
+            string SQL = string.Format(" INSERT INTO " + tableName + " (orderId, buyerId, sellerId, receiveId, time, note, shippingMethod, shippingFee, paymentMethod, status) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}');",
+            orderTable.orderId, orderTable.buyerId, orderTable.sellerId, orderTable.receiveId, orderTable.time, orderTable.note, orderTable.shippingMethod, orderTable.shippingFee, orderTable.paymentMethod, orderTable.status);
             dBConnection.Execute(SQL);
         }
         public static void Delete(OrderTable orderTable)
@@ -57,8 +58,9 @@ namespace QuanLyTraoDoiHang
         {
             OrderTable orderTable = new OrderTable();
             orderTable.orderId = Convert.ToInt32(row["orderId"]);
-            orderTable.userId = Convert.ToInt32(row["userId"]);
-            orderTable.receiveId = Convert.ToInt32(row["orderId"]);
+            orderTable.buyerId = Convert.ToInt32(row["buyerId"]);
+            orderTable.sellerId = Convert.ToInt32(row["sellerId"]);
+            orderTable.receiveId = Convert.ToInt32(row["receiveId"]);
             orderTable.time = Convert.ToDateTime(row["time"].ToString());
             orderTable.note = row["note"].ToString();
             orderTable.shippingFee = Convert.ToInt32(row["shippingFee"].ToString());
@@ -70,10 +72,11 @@ namespace QuanLyTraoDoiHang
 
             return orderTable;
         }
-        public static DataTable SellectByUserId(int userId)
+        public static DataTable SellectBySellerId(int sellerId)
         {
-            string sqlStr = string.Format("SELECT * FROM " + tableName + " WHERE userId = '{0}' ",userId );
+            string sqlStr = string.Format("SELECT * FROM " + tableName + " WHERE sellerId = '{0}' ",sellerId );
             return dBConnection.Load(sqlStr);
         }
+
     }
 }

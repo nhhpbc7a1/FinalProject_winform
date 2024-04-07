@@ -138,8 +138,10 @@ namespace QuanLyTraoDoiHang
         // btn Product
         private void btnMyProducts_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new MyProduct());
+            lblContent.Text = "My Products";
 
+            MyProduct formMyProduct = new MyProduct();
+            OpenChildForm(formMyProduct);
         }
 
         private void btnAddProduct_Click(object sender, EventArgs e)
@@ -154,99 +156,44 @@ namespace QuanLyTraoDoiHang
         // btn Order
         private void btnMyOrder_Click(object sender, EventArgs e)
         {
-            btnUpdate.Visible = false;
             lblContent.Text = "Completed Orders";
-
-            DataTable x = OrderTableDAO.SellectByUserId(Program.currentUserId);
-            pnlItems.Controls.Clear();
-            foreach (DataRow row in x.Rows)
-            {
-
-                OrderTable order = OrderTableDAO.RowToOrderTable(row);
-                if (order.status == "completed")
-                {
-                    ucOrder item = new ucOrder(order);
-                    pnlItems.Controls.Add(item);
-                }
-
-
-            }
+            List<string> strings = new List<string>();
+            strings.Add("completed");
+            FormProductStatus formProductStatus = new FormProductStatus(strings, false);
+            OpenChildForm(formProductStatus);
         }
 
         private void btnReturned_Click(object sender, EventArgs e)
         {
-            btnUpdate.Visible = false;
             lblContent.Text = "Returned Orders";
-
-            DataTable x = OrderTableDAO.SellectByUserId(Program.currentUserId);
-            pnlItems.Controls.Clear();
-            foreach (DataRow row in x.Rows)
-            {
-
-                OrderTable order = OrderTableDAO.RowToOrderTable(row);
-                if (order.status == "returned")
-                {
-                    ucOrder item = new ucOrder(order);
-                    pnlItems.Controls.Add(item);
-                }
-
-
-            }
+            List<string> strings = new List<string>();
+            strings.Add("returned");
+            FormProductStatus formProductStatus = new FormProductStatus(strings, false);
+            OpenChildForm(formProductStatus);
         }
 
         private void btnCancelled_Click(object sender, EventArgs e)
         {
-            btnUpdate.Visible = false;
             lblContent.Text = "Cancelled Orders";
-
-            DataTable x = OrderTableDAO.SellectByUserId(Program.currentUserId);
-            pnlItems.Controls.Clear();
-            foreach (DataRow row in x.Rows)
-            {
-
-                OrderTable order = OrderTableDAO.RowToOrderTable(row);
-                if (order.status == "cancelled")
-                {
-                    ucOrder item = new ucOrder(order);
-                    pnlItems.Controls.Add(item);
-                }
-
-
-            }
+            List<string> strings = new List<string>();
+            strings.Add("cancelled");
+            FormProductStatus formProductStatus = new FormProductStatus(strings, false);
+            OpenChildForm(formProductStatus);
         }
 
         private void btnShipment_Click_1(object sender, EventArgs e)
         {
             lblContent.Text = "Shipment";
-
-            DataTable x = OrderTableDAO.SellectByUserId(Program.currentUserId);
-            pnlItems.Controls.Clear();
-            foreach (DataRow row in x.Rows)
-            {
-
-                OrderTable order = OrderTableDAO.RowToOrderTable(row);
-
-
-                if ((order.status == "waiting") || (order.status) == "shipping")
-                {
-                    ucOrder item = new ucOrder(order);
-                    item.cbxStatus.Visible = true;
-                    item.lblStatus.Visible = true;
-                    pnlItems.Controls.Add(item);
-                }
-
-
-            }
+            List<string> strings = new List<string>();
+            strings.Add("waiting");
+            strings.Add("shipping");
+            FormProductStatus formProductStatus = new FormProductStatus(strings, true);
+            OpenChildForm(formProductStatus);
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
 
-            foreach (ucOrder ucorder in pnlItems.Controls)
-            {
-                OrderTableDAO.Update(ucorder.order);
-            }
-            btnShipment_Click_1(sender, e);
 
         }
 
