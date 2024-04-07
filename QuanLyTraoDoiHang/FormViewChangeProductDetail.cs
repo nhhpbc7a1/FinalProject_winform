@@ -12,43 +12,15 @@ using System.Windows.Forms;
 
 namespace QuanLyTraoDoiHang
 {
-    public partial class FormAddNewProduct : Form
+    public partial class FormViewChangeProductDetail : Form
     {
-        public FormAddNewProduct()
+        Product Product { get; set; }
+        public FormViewChangeProductDetail(Product product)
         {
             InitializeComponent();
-            picboxProduct.Click += picboxProduct_Click;
-            lblAddPhoto.Click += lblAddPhoto_Click;
-            btnSave.Click += btnSave_Click;
-
+            Product = product;
             //picboxProduct.BackgroundImage = Properties.Resources.empty_product;
         }
-        Product product = null;
-        public FormAddNewProduct(Product product)
-        {
-            InitializeComponent();
-            picboxProduct.Click += picboxProduct_Click;
-            lblAddPhoto.Click += lblAddPhoto_Click;
-            btnSave.Click += btnSave_Click;
-            this.product = product;
-            txtCategory.Text = product.category;
-            txtName.Text = product.name;
-            txtPrice.Text = product.price.ToString();
-            txtOriginalPrice.Text = product.originalPrice.ToString();
-            txtCondition.Text = product.condition;
-            txtWarranty.Text = product.warrantyPolicy;
-            dtpBought.Text = product.dateBought.ToString();
-            txtBrand.Text = product.brand;
-            txtOrigin.Text = product.origin;
-            richTextBoxDescription.Text = product.description;
-            picboxProduct.BackgroundImage = product.image;
-            if(product.image != null)
-            {
-                lblAddPhoto.Visible = false;
-            }
-            //picboxProduct.BackgroundImage = Properties.Resources.empty_product;
-        }
-
 
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
         ProductDAO productDAO = new ProductDAO();
@@ -120,21 +92,12 @@ namespace QuanLyTraoDoiHang
                 return;
             }
 
-            if (product == null)
-            {
-                Product x = new Product(Program.CurrentUser().userId, txtCategory.Text, txtName.Text, Convert.ToInt32(txtPrice.Text), picboxProduct.BackgroundImage,
-                Convert.ToInt32(txtOriginalPrice.Text), txtCondition.Text, txtWarranty.Text, DateOnly.FromDateTime(dtpBought.Value), txtBrand.Text, txtOrigin.Text, richTextBoxDescription.Text);
 
-                productDAO.Add(x);
+            Product x = new Product(Program.CurrentUser().userId, txtCategory.Text, txtName.Text, Convert.ToInt32(txtPrice.Text), picboxProduct.BackgroundImage,
+            Convert.ToInt32(txtOriginalPrice.Text), txtCondition.Text, txtWarranty.Text, DateOnly.FromDateTime(dtpBought.Value), txtBrand.Text, txtOrigin.Text, richTextBoxDescription.Text);
 
-            }
-            else
-            {
-                Product x = new Product(Program.CurrentUser().userId, txtCategory.Text, txtName.Text, Convert.ToInt32(txtPrice.Text), picboxProduct.BackgroundImage,
-                Convert.ToInt32(txtOriginalPrice.Text), txtCondition.Text, txtWarranty.Text, DateOnly.FromDateTime(dtpBought.Value), txtBrand.Text, txtOrigin.Text, richTextBoxDescription.Text);
-                x.productId = product.productId;
-                productDAO.Update(x);
-            }
+            productDAO.Add(x);
+            MessageBox.Show("add successfully");
         }
 
         private void FormAddNewProduct_Load(object sender, EventArgs e)

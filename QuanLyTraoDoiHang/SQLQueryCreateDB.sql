@@ -69,7 +69,8 @@ go
 
 create table OrderTable (
 	orderId int primary key, 
-	userId int references UserTable(userId), 
+	buyerId int references UserTable(userId),
+	sellerId int references UserTable(userId), 
 	receiveId int references ReceiveInfo(receiveId), 
 	time datetime,
 	note nvarchar(2000), 

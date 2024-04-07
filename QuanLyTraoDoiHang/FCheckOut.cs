@@ -34,7 +34,7 @@ namespace QuanLyTraoDoiHang
             {
                 foreach (UCCheckOutEachShop ucShop in pnlProducts.Controls)
                 {
-                    OrderTable x = new OrderTable(Program.currentUserId,currentReceiveInfo.receiveId,DateTime.Now,ucShop.txtNote.Text, ucShop.comboBoxShippingMethod.Text, Convert.ToInt32(ucShop.lblShippingFee.Text),"","waiting");
+                    OrderTable x = new OrderTable(Program.currentUserId, ucShop.shopInfo.userId, currentReceiveInfo.receiveId,DateTime.Now,ucShop.txtNote.Text, ucShop.comboBoxShippingMethod.Text, Convert.ToInt32(ucShop.lblShippingFee.Text),"","waiting");
                     OrderTableDAO.Add(x);
                     foreach (UCProductInCheckOut ucProduct in ucShop.ucCartEachShop1.pnlProducts.Controls)
                     {
@@ -44,6 +44,7 @@ namespace QuanLyTraoDoiHang
                 CartItemDAO.DeleteProductBeOrdered();
                 Program.mainpage.OpenChildForm(new FormProduct());
             }
+            
         }
 
         private void BtnChangeReceiveInfo_Click(object? sender, EventArgs e)
@@ -64,7 +65,7 @@ namespace QuanLyTraoDoiHang
                 if (ch[product.sellerId] == false)
                 {
                     ch[product.sellerId] = true;
-                    UCCheckOutEachShop x = new UCCheckOutEachShop();
+                    UCCheckOutEachShop x = new UCCheckOutEachShop(UserDAO.SelectByUserId(product.sellerId));
                     x.ucCartEachShop1.seller = UserDAO.SelectByUserId(product.sellerId);
                     x.ucCartEachShop1.cbShop.Visible = false;
 

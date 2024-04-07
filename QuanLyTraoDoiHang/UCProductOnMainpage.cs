@@ -34,14 +34,7 @@ namespace QuanLyTraoDoiHang
         void BuyNow(object sender, EventArgs e)
         {
             CartItem x = new CartItem(Program.currentUserId, product.productId);
-            if (Program.currentUserId == -1)
-            {
-                MessageBox.Show("please login first");
-                return;
-            }
             CartItemDAO.Add(x);
-
-            MessageBox.Show("add successfully ");
         }
 
         private void UCProductOnMainpage_Load(object sender, EventArgs e)
