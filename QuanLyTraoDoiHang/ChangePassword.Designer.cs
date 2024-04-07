@@ -43,6 +43,7 @@
             lblValidPass = new Label();
             label4 = new Label();
             btnChangePass = new RJControls.RButton();
+            panel4 = new Panel();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -50,9 +51,11 @@
             // 
             // panel3
             // 
-            panel3.BackColor = Color.LightGray;
+            panel3.BackColor = Color.FromArgb(101, 183, 65);
+            panel3.Controls.Add(panel4);
             panel3.Controls.Add(label2);
             panel3.Dock = DockStyle.Top;
+            panel3.ForeColor = Color.White;
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
             panel3.Size = new Size(642, 72);
@@ -62,7 +65,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.Black;
+            label2.ForeColor = Color.White;
             label2.Location = new Point(230, 22);
             label2.Name = "label2";
             label2.Size = new Size(181, 30);
@@ -228,10 +231,19 @@
             btnChangePass.UseVisualStyleBackColor = false;
             btnChangePass.Click += btnChangePass_Click;
             // 
+            // panel4
+            // 
+            panel4.BackColor = Color.Black;
+            panel4.Dock = DockStyle.Bottom;
+            panel4.Location = new Point(0, 69);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(642, 3);
+            panel4.TabIndex = 5;
+            // 
             // ChangePassword
             // 
             AutoScaleMode = AutoScaleMode.None;
-            BackColor = Color.LightGray;
+            BackColor = Color.FromArgb(244, 237, 204);
             ClientSize = new Size(642, 495);
             Controls.Add(btnChangePass);
             Controls.Add(panel2);
@@ -262,5 +274,6 @@
         private Panel panel1;
         private Label lblValidPass;
         private Label lblRetypedPass;
+        private Panel panel4;
     }
 }

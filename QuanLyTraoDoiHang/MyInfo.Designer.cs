@@ -52,6 +52,7 @@
             rButton6 = new RJControls.RButton();
             rButton7 = new RJControls.RButton();
             panel1 = new Panel();
+            panel2 = new Panel();
             panel3.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
             flowLayoutPanel3.SuspendLayout();
@@ -61,7 +62,8 @@
             // 
             // panel3
             // 
-            panel3.BackColor = Color.LightGray;
+            panel3.BackColor = Color.FromArgb(101, 183, 65);
+            panel3.Controls.Add(panel2);
             panel3.Controls.Add(label2);
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
@@ -73,7 +75,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.Black;
+            label2.ForeColor = Color.White;
             label2.Location = new Point(210, 21);
             label2.Name = "label2";
             label2.Size = new Size(213, 30);
@@ -394,10 +396,19 @@
             panel1.Size = new Size(618, 360);
             panel1.TabIndex = 14;
             // 
+            // panel2
+            // 
+            panel2.BackColor = Color.Black;
+            panel2.Dock = DockStyle.Bottom;
+            panel2.Location = new Point(0, 69);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(642, 3);
+            panel2.TabIndex = 5;
+            // 
             // MyInfo
             // 
             AutoScaleMode = AutoScaleMode.None;
-            BackColor = Color.LightGray;
+            BackColor = Color.FromArgb(244, 237, 204);
             ClientSize = new Size(642, 495);
             Controls.Add(panel1);
             Controls.Add(btnSave);
@@ -439,5 +450,6 @@
         private RJControls.RButton rButton6;
         private RJControls.RButton rButton7;
         private Panel panel1;
+        private Panel panel2;
     }
 }

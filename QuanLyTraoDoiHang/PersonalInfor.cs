@@ -35,7 +35,7 @@ namespace QuanLyTraoDoiHang
         }
 
         private Form currentFormChild;
-        private void OpenChildForm(Form childForm)
+        public void OpenChildForm(Form childForm)
         {
             if (currentFormChild != null)
             {

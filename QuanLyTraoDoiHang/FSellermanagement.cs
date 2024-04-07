@@ -183,6 +183,14 @@ namespace QuanLyTraoDoiHang
 
         private void btnShipment_Click_1(object sender, EventArgs e)
         {
+            if (pnlItems.Controls == null)
+            {
+                picEmpty.Visible = true;
+            }
+            else
+            {
+                picEmpty.Visible = false;
+            }
             lblContent.Text = "Shipment";
             List<string> strings = new List<string>();
             strings.Add("waiting");
