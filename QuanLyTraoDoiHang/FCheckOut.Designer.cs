@@ -185,7 +185,7 @@ namespace QuanLyTraoDoiHang
             btnCheckOut.FlatStyle = FlatStyle.Flat;
             btnCheckOut.Font = new Font("Segoe UI", 11.1F, FontStyle.Bold, GraphicsUnit.Point);
             btnCheckOut.ForeColor = Color.White;
-            btnCheckOut.Location = new Point(592, 120);
+            btnCheckOut.Location = new Point(819, 117);
             btnCheckOut.Margin = new Padding(1);
             btnCheckOut.Name = "btnCheckOut";
             btnCheckOut.Size = new Size(111, 37);
@@ -198,7 +198,7 @@ namespace QuanLyTraoDoiHang
             // 
             lblTotalProductPrice.AutoSize = true;
             lblTotalProductPrice.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblTotalProductPrice.Location = new Point(571, 18);
+            lblTotalProductPrice.Location = new Point(798, 15);
             lblTotalProductPrice.Name = "lblTotalProductPrice";
             lblTotalProductPrice.Size = new Size(137, 21);
             lblTotalProductPrice.TabIndex = 55;
@@ -208,7 +208,7 @@ namespace QuanLyTraoDoiHang
             // 
             lblTotalShippingFee.AutoSize = true;
             lblTotalShippingFee.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblTotalShippingFee.Location = new Point(593, 51);
+            lblTotalShippingFee.Location = new Point(820, 48);
             lblTotalShippingFee.Name = "lblTotalShippingFee";
             lblTotalShippingFee.Size = new Size(110, 21);
             lblTotalShippingFee.TabIndex = 57;
@@ -218,7 +218,7 @@ namespace QuanLyTraoDoiHang
             // 
             lblProducPrice.AutoSize = true;
             lblProducPrice.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblProducPrice.Location = new Point(384, 18);
+            lblProducPrice.Location = new Point(611, 15);
             lblProducPrice.Name = "lblProducPrice";
             lblProducPrice.Size = new Size(164, 21);
             lblProducPrice.TabIndex = 54;
@@ -228,7 +228,7 @@ namespace QuanLyTraoDoiHang
             // 
             lblTotalPrice.AutoSize = true;
             lblTotalPrice.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblTotalPrice.Location = new Point(623, 87);
+            lblTotalPrice.Location = new Point(850, 84);
             lblTotalPrice.Name = "lblTotalPrice";
             lblTotalPrice.Size = new Size(80, 21);
             lblTotalPrice.TabIndex = 59;
@@ -238,7 +238,7 @@ namespace QuanLyTraoDoiHang
             // 
             lblShipping.AutoSize = true;
             lblShipping.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblShipping.Location = new Point(384, 51);
+            lblShipping.Location = new Point(611, 48);
             lblShipping.Name = "lblShipping";
             lblShipping.Size = new Size(105, 27);
             lblShipping.TabIndex = 56;
@@ -251,7 +251,7 @@ namespace QuanLyTraoDoiHang
             lblTotal.AutoSize = true;
             lblTotal.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblTotal.ForeColor = Color.IndianRed;
-            lblTotal.Location = new Point(384, 87);
+            lblTotal.Location = new Point(611, 84);
             lblTotal.Name = "lblTotal";
             lblTotal.Size = new Size(50, 27);
             lblTotal.TabIndex = 58;
