@@ -29,340 +29,338 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddNewProduct));
-            picboxProduct = new PictureBox();
-            txtOriginalPrice = new TextBox();
-            label1 = new Label();
-            btnSave = new RJControls.RButton();
-            label2 = new Label();
-            txtCondition = new TextBox();
-            label3 = new Label();
-            txtWarranty = new TextBox();
-            label4 = new Label();
-            label5 = new Label();
-            txtOrigin = new TextBox();
-            label6 = new Label();
-            txtName = new TextBox();
-            label7 = new Label();
-            txtPrice = new TextBox();
-            richTextBoxDescription = new RichTextBox();
-            dtpBought = new DateTimePicker();
-            panel1 = new Panel();
-            txtCategory = new TextBox();
-            label10 = new Label();
-            txtBrand = new TextBox();
-            label9 = new Label();
-            lblAddPhoto = new Label();
-            panel9 = new Panel();
-            panel8 = new Panel();
-            label8 = new Label();
-            ((System.ComponentModel.ISupportInitialize)picboxProduct).BeginInit();
-            panel1.SuspendLayout();
-            panel9.SuspendLayout();
-            SuspendLayout();
+            this.picboxProduct = new System.Windows.Forms.PictureBox();
+            this.txtOriginalPrice = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnSave = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtCondition = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtWarranty = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtOrigin = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtPrice = new System.Windows.Forms.TextBox();
+            this.richTextBoxDescription = new System.Windows.Forms.RichTextBox();
+            this.dtpBought = new System.Windows.Forms.DateTimePicker();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txtCategory = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtBrand = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.lblAddPhoto = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxProduct)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.SuspendLayout();
             // 
             // picboxProduct
             // 
-            picboxProduct.BackColor = Color.White;
-            picboxProduct.BackgroundImage = (Image)resources.GetObject("picboxProduct.BackgroundImage");
-            picboxProduct.BackgroundImageLayout = ImageLayout.Center;
-            picboxProduct.Location = new Point(550, 74);
-            picboxProduct.Name = "picboxProduct";
-            picboxProduct.Size = new Size(372, 222);
-            picboxProduct.TabIndex = 0;
-            picboxProduct.TabStop = false;
-            picboxProduct.Click += picboxProduct_Click;
+            this.picboxProduct.BackColor = System.Drawing.Color.White;
+            this.picboxProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picboxProduct.ImageLocation = "";
+            this.picboxProduct.Location = new System.Drawing.Point(550, 74);
+            this.picboxProduct.Name = "picboxProduct";
+            this.picboxProduct.Size = new System.Drawing.Size(372, 222);
+            this.picboxProduct.TabIndex = 0;
+            this.picboxProduct.TabStop = false;
             // 
             // txtOriginalPrice
             // 
-            txtOriginalPrice.Font = new Font("Lato", 9.749999F, FontStyle.Regular, GraphicsUnit.Point);
-            txtOriginalPrice.Location = new Point(201, 156);
-            txtOriginalPrice.Name = "txtOriginalPrice";
-            txtOriginalPrice.Size = new Size(217, 23);
-            txtOriginalPrice.TabIndex = 1;
+            this.txtOriginalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtOriginalPrice.Location = new System.Drawing.Point(201, 156);
+            this.txtOriginalPrice.Name = "txtOriginalPrice";
+            this.txtOriginalPrice.Size = new System.Drawing.Size(217, 22);
+            this.txtOriginalPrice.TabIndex = 1;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Lato Semibold", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.Location = new Point(32, 161);
-            label1.Name = "label1";
-            label1.Size = new Size(110, 18);
-            label1.TabIndex = 2;
-            label1.Text = "Original Price *";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(32, 161);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(122, 18);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Original Price *";
             // 
             // btnSave
             // 
-            btnSave.BackColor = Color.FromArgb(64, 64, 64);
-            btnSave.BackgroundColor = Color.FromArgb(64, 64, 64);
-            btnSave.BorderColor = Color.PaleVioletRed;
-            btnSave.BorderRadius = 20;
-            btnSave.BorderSize = 0;
-            btnSave.FlatAppearance.BorderSize = 0;
-            btnSave.FlatStyle = FlatStyle.Flat;
-            btnSave.Font = new Font("Lato", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSave.ForeColor = Color.White;
-            btnSave.Location = new Point(422, 520);
-            btnSave.Name = "btnSave";
-            btnSave.Size = new Size(188, 32);
-            btnSave.TabIndex = 3;
-            btnSave.Text = "Save";
-            btnSave.TextColor = Color.White;
-            btnSave.UseVisualStyleBackColor = false;
-            btnSave.Click += btnSave_Click;
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSave.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSave.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnSave.BorderRadius = 20;
+            this.btnSave.BorderSize = 0;
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.Location = new System.Drawing.Point(422, 520);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(188, 32);
+            this.btnSave.TabIndex = 3;
+            this.btnSave.Text = "Save";
+            this.btnSave.TextColor = System.Drawing.Color.White;
+            this.btnSave.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Lato Semibold", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label2.Location = new Point(32, 211);
-            label2.Name = "label2";
-            label2.Size = new Size(83, 18);
-            label2.TabIndex = 5;
-            label2.Text = "Condition *";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(32, 211);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(92, 18);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Condition *";
             // 
             // txtCondition
             // 
-            txtCondition.Font = new Font("Lato", 9.749999F, FontStyle.Regular, GraphicsUnit.Point);
-            txtCondition.Location = new Point(201, 206);
-            txtCondition.Name = "txtCondition";
-            txtCondition.Size = new Size(217, 23);
-            txtCondition.TabIndex = 4;
+            this.txtCondition.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCondition.Location = new System.Drawing.Point(201, 206);
+            this.txtCondition.Name = "txtCondition";
+            this.txtCondition.Size = new System.Drawing.Size(217, 22);
+            this.txtCondition.TabIndex = 4;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Lato Semibold", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label3.Location = new Point(32, 261);
-            label3.Name = "label3";
-            label3.Size = new Size(127, 18);
-            label3.TabIndex = 7;
-            label3.Text = "Warranty Policy *";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(32, 261);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(139, 18);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Warranty Policy *";
             // 
             // txtWarranty
             // 
-            txtWarranty.Font = new Font("Lato", 9.749999F, FontStyle.Regular, GraphicsUnit.Point);
-            txtWarranty.Location = new Point(201, 256);
-            txtWarranty.Name = "txtWarranty";
-            txtWarranty.Size = new Size(217, 23);
-            txtWarranty.TabIndex = 6;
+            this.txtWarranty.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtWarranty.Location = new System.Drawing.Point(201, 256);
+            this.txtWarranty.Name = "txtWarranty";
+            this.txtWarranty.Size = new System.Drawing.Size(217, 22);
+            this.txtWarranty.TabIndex = 6;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Lato Semibold", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label4.Location = new Point(32, 311);
-            label4.Name = "label4";
-            label4.Size = new Size(99, 18);
-            label4.TabIndex = 9;
-            label4.Text = "Day bought * ";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(32, 311);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(110, 18);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Day bought * ";
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Lato Semibold", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label5.Location = new Point(32, 404);
-            label5.Name = "label5";
-            label5.Size = new Size(60, 18);
-            label5.TabIndex = 11;
-            label5.Text = "Origin *";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(32, 404);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 18);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Origin *";
             // 
             // txtOrigin
             // 
-            txtOrigin.Font = new Font("Lato", 9.749999F, FontStyle.Regular, GraphicsUnit.Point);
-            txtOrigin.Location = new Point(201, 402);
-            txtOrigin.Name = "txtOrigin";
-            txtOrigin.Size = new Size(217, 23);
-            txtOrigin.TabIndex = 10;
+            this.txtOrigin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtOrigin.Location = new System.Drawing.Point(201, 402);
+            this.txtOrigin.Name = "txtOrigin";
+            this.txtOrigin.Size = new System.Drawing.Size(217, 22);
+            this.txtOrigin.TabIndex = 10;
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Lato Semibold", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label6.Location = new Point(32, 61);
-            label6.Name = "label6";
-            label6.Size = new Size(58, 18);
-            label6.TabIndex = 13;
-            label6.Text = "Name *";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(32, 61);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(64, 18);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Name *";
             // 
             // txtName
             // 
-            txtName.Font = new Font("Lato", 9.749999F, FontStyle.Regular, GraphicsUnit.Point);
-            txtName.Location = new Point(201, 56);
-            txtName.Name = "txtName";
-            txtName.Size = new Size(217, 23);
-            txtName.TabIndex = 12;
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtName.Location = new System.Drawing.Point(201, 56);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(217, 22);
+            this.txtName.TabIndex = 12;
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Lato Semibold", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label7.Location = new Point(32, 111);
-            label7.Name = "label7";
-            label7.Size = new Size(52, 18);
-            label7.TabIndex = 15;
-            label7.Text = "Price *";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(32, 111);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(59, 18);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Price *";
             // 
             // txtPrice
             // 
-            txtPrice.Font = new Font("Lato", 9.749999F, FontStyle.Regular, GraphicsUnit.Point);
-            txtPrice.Location = new Point(201, 106);
-            txtPrice.Name = "txtPrice";
-            txtPrice.Size = new Size(217, 23);
-            txtPrice.TabIndex = 14;
+            this.txtPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPrice.Location = new System.Drawing.Point(201, 106);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(217, 22);
+            this.txtPrice.TabIndex = 14;
             // 
             // richTextBoxDescription
             // 
-            richTextBoxDescription.BackColor = Color.White;
-            richTextBoxDescription.BorderStyle = BorderStyle.None;
-            richTextBoxDescription.Font = new Font("Lato", 11.95F, FontStyle.Italic, GraphicsUnit.Point);
-            richTextBoxDescription.ForeColor = SystemColors.InfoText;
-            richTextBoxDescription.Location = new Point(550, 302);
-            richTextBoxDescription.Name = "richTextBoxDescription";
-            richTextBoxDescription.Size = new Size(372, 212);
-            richTextBoxDescription.TabIndex = 18;
-            richTextBoxDescription.Text = "  Description *";
+            this.richTextBoxDescription.BackColor = System.Drawing.Color.White;
+            this.richTextBoxDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBoxDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.95F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxDescription.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.richTextBoxDescription.Location = new System.Drawing.Point(550, 302);
+            this.richTextBoxDescription.Name = "richTextBoxDescription";
+            this.richTextBoxDescription.Size = new System.Drawing.Size(372, 212);
+            this.richTextBoxDescription.TabIndex = 18;
+            this.richTextBoxDescription.Text = "  Description *";
             // 
             // dtpBought
             // 
-            dtpBought.Font = new Font("Lato", 9.749999F, FontStyle.Regular, GraphicsUnit.Point);
-            dtpBought.Location = new Point(201, 304);
-            dtpBought.Name = "dtpBought";
-            dtpBought.Size = new Size(217, 23);
-            dtpBought.TabIndex = 19;
+            this.dtpBought.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpBought.Location = new System.Drawing.Point(201, 304);
+            this.dtpBought.Name = "dtpBought";
+            this.dtpBought.Size = new System.Drawing.Size(217, 22);
+            this.dtpBought.TabIndex = 19;
             // 
             // panel1
             // 
-            panel1.BackColor = Color.White;
-            panel1.Controls.Add(txtCategory);
-            panel1.Controls.Add(label10);
-            panel1.Controls.Add(txtBrand);
-            panel1.Controls.Add(label9);
-            panel1.Controls.Add(txtName);
-            panel1.Controls.Add(txtOriginalPrice);
-            panel1.Controls.Add(dtpBought);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(txtCondition);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label7);
-            panel1.Controls.Add(txtWarranty);
-            panel1.Controls.Add(txtPrice);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(label6);
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(txtOrigin);
-            panel1.Controls.Add(label5);
-            panel1.Font = new Font("Lato Semibold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point);
-            panel1.Location = new Point(72, 74);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(472, 440);
-            panel1.TabIndex = 21;
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.txtCategory);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.txtBrand);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.txtName);
+            this.panel1.Controls.Add(this.txtOriginalPrice);
+            this.panel1.Controls.Add(this.dtpBought);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.txtCondition);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.txtWarranty);
+            this.panel1.Controls.Add(this.txtPrice);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.txtOrigin);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.panel1.Location = new System.Drawing.Point(72, 74);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(472, 440);
+            this.panel1.TabIndex = 21;
             // 
             // txtCategory
             // 
-            txtCategory.Font = new Font("Lato", 9.749999F, FontStyle.Regular, GraphicsUnit.Point);
-            txtCategory.Location = new Point(201, 6);
-            txtCategory.Name = "txtCategory";
-            txtCategory.Size = new Size(217, 23);
-            txtCategory.TabIndex = 24;
+            this.txtCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCategory.Location = new System.Drawing.Point(201, 6);
+            this.txtCategory.Name = "txtCategory";
+            this.txtCategory.Size = new System.Drawing.Size(217, 22);
+            this.txtCategory.TabIndex = 24;
             // 
             // label10
             // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Lato Semibold", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label10.Location = new Point(32, 11);
-            label10.Name = "label10";
-            label10.Size = new Size(86, 18);
-            label10.TabIndex = 25;
-            label10.Text = "Catergory *";
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(32, 11);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(94, 18);
+            this.label10.TabIndex = 25;
+            this.label10.Text = "Catergory *";
             // 
             // txtBrand
             // 
-            txtBrand.Font = new Font("Lato", 9.749999F, FontStyle.Regular, GraphicsUnit.Point);
-            txtBrand.Location = new Point(201, 352);
-            txtBrand.Name = "txtBrand";
-            txtBrand.Size = new Size(217, 23);
-            txtBrand.TabIndex = 22;
+            this.txtBrand.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtBrand.Location = new System.Drawing.Point(201, 352);
+            this.txtBrand.Name = "txtBrand";
+            this.txtBrand.Size = new System.Drawing.Size(217, 22);
+            this.txtBrand.TabIndex = 22;
             // 
             // label9
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Lato Semibold", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label9.Location = new Point(32, 361);
-            label9.Name = "label9";
-            label9.Size = new Size(58, 18);
-            label9.TabIndex = 23;
-            label9.Text = "Brand *";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(32, 361);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(64, 18);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "Brand *";
             // 
             // lblAddPhoto
             // 
-            lblAddPhoto.AutoSize = true;
-            lblAddPhoto.BackColor = Color.White;
-            lblAddPhoto.Font = new Font("Lato", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblAddPhoto.Location = new Point(696, 235);
-            lblAddPhoto.Name = "lblAddPhoto";
-            lblAddPhoto.Size = new Size(91, 18);
-            lblAddPhoto.TabIndex = 23;
-            lblAddPhoto.Text = "Add Pictures";
-            lblAddPhoto.Click += lblAddPhoto_Click;
+            this.lblAddPhoto.BackColor = System.Drawing.Color.White;
+            this.lblAddPhoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAddPhoto.Image = ((System.Drawing.Image)(resources.GetObject("lblAddPhoto.Image")));
+            this.lblAddPhoto.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblAddPhoto.Location = new System.Drawing.Point(657, 130);
+            this.lblAddPhoto.Name = "lblAddPhoto";
+            this.lblAddPhoto.Size = new System.Drawing.Size(140, 122);
+            this.lblAddPhoto.TabIndex = 23;
+            this.lblAddPhoto.Text = "Add Pictures";
+            this.lblAddPhoto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // panel9
             // 
-            panel9.BackColor = Color.White;
-            panel9.Controls.Add(panel8);
-            panel9.Controls.Add(label8);
-            panel9.ForeColor = Color.FromArgb(30, 106, 17);
-            panel9.Location = new Point(72, 13);
-            panel9.Margin = new Padding(3, 4, 3, 4);
-            panel9.Name = "panel9";
-            panel9.Size = new Size(850, 54);
-            panel9.TabIndex = 62;
+            this.panel9.BackColor = System.Drawing.Color.White;
+            this.panel9.Controls.Add(this.panel8);
+            this.panel9.Controls.Add(this.label8);
+            this.panel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
+            this.panel9.Location = new System.Drawing.Point(72, 13);
+            this.panel9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(850, 54);
+            this.panel9.TabIndex = 62;
             // 
             // panel8
             // 
-            panel8.BackColor = Color.FromArgb(30, 106, 17);
-            panel8.ForeColor = Color.FromArgb(30, 106, 17);
-            panel8.Location = new Point(0, 44);
-            panel8.Margin = new Padding(3, 4, 3, 4);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(850, 10);
-            panel8.TabIndex = 63;
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
+            this.panel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
+            this.panel8.Location = new System.Drawing.Point(0, 44);
+            this.panel8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(850, 10);
+            this.panel8.TabIndex = 63;
             // 
             // label8
             // 
-            label8.AutoSize = true;
-            label8.BackColor = Color.White;
-            label8.Font = new Font("Lato Black", 15.7499981F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.ForeColor = Color.FromArgb(64, 64, 64);
-            label8.Location = new Point(350, 15);
-            label8.Name = "label8";
-            label8.Size = new Size(180, 25);
-            label8.TabIndex = 0;
-            label8.Text = "Add New Product";
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.White;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label8.Location = new System.Drawing.Point(350, 15);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(193, 25);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Add New Product";
             // 
             // FormAddNewProduct
             // 
-            AutoScaleMode = AutoScaleMode.None;
-            BackColor = SystemColors.ActiveCaptionText;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(984, 561);
-            Controls.Add(panel9);
-            Controls.Add(lblAddPhoto);
-            Controls.Add(panel1);
-            Controls.Add(richTextBoxDescription);
-            Controls.Add(btnSave);
-            Controls.Add(picboxProduct);
-            Name = "FormAddNewProduct";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "FormAddNewProduct";
-            Load += FormAddNewProduct_Load;
-            ((System.ComponentModel.ISupportInitialize)picboxProduct).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            panel9.ResumeLayout(false);
-            panel9.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(984, 561);
+            this.Controls.Add(this.panel9);
+            this.Controls.Add(this.lblAddPhoto);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.richTextBoxDescription);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.picboxProduct);
+            this.Name = "FormAddNewProduct";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FormAddNewProduct";
+            ((System.ComponentModel.ISupportInitialize)(this.picboxProduct)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

@@ -9,7 +9,8 @@ namespace QuanLyTraoDoiHang
     public class OrderTable
     {
         public int orderId;
-        public int userId;
+        public int buyerId;
+        public int sellerId;
         public int receiveId;
         public DateTime time;
         public string note;
@@ -18,10 +19,11 @@ namespace QuanLyTraoDoiHang
         public string paymentMethod;
         public string status;
         public OrderTable() { }
-        public OrderTable(int userId, int receiveId, DateTime time, string note, string shippingMethod, int shippingFee, string paymentMethod, string status)
+        public OrderTable(int buyerId, int sellerId, int receiveId, DateTime time, string note, string shippingMethod, int shippingFee, string paymentMethod, string status)
         {
             this.orderId = OrderTableDAO.CreateID();
-            this.userId = userId;
+            this.buyerId = buyerId;
+            this.sellerId = sellerId;
             this.receiveId = receiveId;
             this.time = time;
             this.note = note;
