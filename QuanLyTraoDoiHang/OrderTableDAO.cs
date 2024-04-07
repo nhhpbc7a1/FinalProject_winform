@@ -77,6 +77,11 @@ namespace QuanLyTraoDoiHang
             string sqlStr = string.Format("SELECT * FROM " + tableName + " WHERE sellerId = '{0}' ",sellerId );
             return dBConnection.Load(sqlStr);
         }
+        public static DataTable SellectByBuyerId(int buyerId)
+        {
+            string sqlStr = string.Format("SELECT * FROM " + tableName + " WHERE buyerId = '{0}' ", buyerId);
+            return dBConnection.Load(sqlStr);
+        }
 
     }
 }

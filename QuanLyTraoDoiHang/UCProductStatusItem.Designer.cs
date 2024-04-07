@@ -84,7 +84,7 @@
             // 
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPrice.Location = new System.Drawing.Point(578, 55);
+            this.lblPrice.Location = new System.Drawing.Point(496, 55);
             this.lblPrice.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(55, 21);
@@ -95,7 +95,7 @@
             // 
             this.lblOriginPrice.AutoSize = true;
             this.lblOriginPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point);
-            this.lblOriginPrice.Location = new System.Drawing.Point(578, 27);
+            this.lblOriginPrice.Location = new System.Drawing.Point(496, 27);
             this.lblOriginPrice.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblOriginPrice.Name = "lblOriginPrice";
             this.lblOriginPrice.Size = new System.Drawing.Size(55, 21);
@@ -112,7 +112,7 @@
             this.Controls.Add(this.lblCondition);
             this.Controls.Add(this.panel1);
             this.Name = "UCProductStatusItem";
-            this.Size = new System.Drawing.Size(693, 128);
+            this.Size = new System.Drawing.Size(618, 128);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picItems)).EndInit();
             this.ResumeLayout(false);

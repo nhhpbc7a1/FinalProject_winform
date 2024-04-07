@@ -48,13 +48,6 @@ namespace QuanLyTraoDoiHang
             lblSellerAddress.Text = seller.address;
             lblDateJoined.Text = seller.dateJoined.ToString();
 
-            //DataTable table = ProductDAO.SelectBySellerId(currentProduct.sellerId);
-            //foreach (DataRow row in table.Rows)
-            //{
-            //    UCProductOnMainpage ucProduct = new UCProductOnMainpage(ProductDAO.RowToProduct(row))
-            //    { Margin = new System.Windows.Forms.Padding(5, 5, 5, 5) };
-            //    pnlSellerProduct.Controls.Add(ucProduct);
-            //}
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -63,6 +56,7 @@ namespace QuanLyTraoDoiHang
 
         private void btnViewPage_Click(object sender, EventArgs e)
         {
+            Program.mainpage.OpenChildForm(new FormInShop(UserDAO.SelectByUserId(currentProduct.sellerId)));
         }
     }
 }

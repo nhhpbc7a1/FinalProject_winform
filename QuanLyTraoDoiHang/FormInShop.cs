@@ -12,9 +12,38 @@ namespace QuanLyTraoDoiHang
 {
     public partial class FormInShop : Form
     {
-        public FormInShop()
+        User user;
+        DataTable products;
+        DataTable ratings;
+        public FormInShop(User user)
         {
             InitializeComponent();
+            this.user = user;
+            lblSellerName.Text = user.name;
+            lblSellerPhone.Text = user.phone;
+            lblSellerAddress.Text = user.address;
+            lblDateJoined.Text = user.dateJoined.ToString();
+            ptbSellerImage.BackgroundImage = user.image;
+            products = ProductDAO.SelectBySellerId(user.userId);
+            ratings = RatingDAO.SellectBySellerId(user.userId);
+            btnViewProducts.Click += BtnViewProducts_Click;
+            btnViewRating.Click += BtnViewRating_Click;
+            BtnViewProducts_Click(null, null);
+        }
+
+        private void BtnViewRating_Click(object? sender, EventArgs e)
+        {
+            pnlItems.Controls.Clear();
+        }
+
+        private void BtnViewProducts_Click(object? sender, EventArgs e)
+        {
+            pnlItems.Controls.Clear();
+            foreach (DataRow row in products.Rows)
+            {
+                Product x = ProductDAO.RowToProduct(row);
+                pnlItems.Controls.Add(new UCProductOnMainpage(x));
+            }
         }
     }
 }

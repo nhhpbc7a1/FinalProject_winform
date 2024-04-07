@@ -66,6 +66,10 @@ namespace QuanLyTraoDoiHang
 
             return rating;
         }
-
+        public static DataTable SellectBySellerId(int sellerId)
+        {
+            string sqlStr = string.Format("SELECT * FROM " + tableName + " where receiverUserId='{0}';", sellerId);
+            return dBConnection.Load(sqlStr);
+        }
     }
 }

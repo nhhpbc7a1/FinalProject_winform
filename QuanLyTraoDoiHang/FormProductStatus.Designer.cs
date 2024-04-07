@@ -28,9 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProductStatus));
             this.btnUpdate = new QuanLyTraoDoiHang.RJControls.RButton();
             this.pnlItems = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlMenu = new System.Windows.Forms.Panel();
+            this.picEmpty = new System.Windows.Forms.PictureBox();
+            this.pnlItems.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picEmpty)).BeginInit();
             this.SuspendLayout();
             // 
             // btnUpdate
@@ -56,6 +60,7 @@
             // 
             this.pnlItems.AutoScroll = true;
             this.pnlItems.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnlItems.Controls.Add(this.picEmpty);
             this.pnlItems.Location = new System.Drawing.Point(10, 45);
             this.pnlItems.Name = "pnlItems";
             this.pnlItems.Size = new System.Drawing.Size(725, 328);
@@ -70,6 +75,16 @@
             this.pnlMenu.Size = new System.Drawing.Size(725, 32);
             this.pnlMenu.TabIndex = 26;
             // 
+            // picEmpty
+            // 
+            this.picEmpty.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picEmpty.BackgroundImage")));
+            this.picEmpty.Location = new System.Drawing.Point(310, 120);
+            this.picEmpty.Margin = new System.Windows.Forms.Padding(310, 120, 3, 3);
+            this.picEmpty.Name = "picEmpty";
+            this.picEmpty.Size = new System.Drawing.Size(100, 93);
+            this.picEmpty.TabIndex = 29;
+            this.picEmpty.TabStop = false;
+            // 
             // FormProductStatus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -80,6 +95,8 @@
             this.Controls.Add(this.pnlMenu);
             this.Name = "FormProductStatus";
             this.Text = "FormProductStatus";
+            this.pnlItems.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picEmpty)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -89,5 +106,6 @@
         private RJControls.RButton btnUpdate;
         private FlowLayoutPanel pnlItems;
         private Panel pnlMenu;
+        private PictureBox picEmpty;
     }
 }
