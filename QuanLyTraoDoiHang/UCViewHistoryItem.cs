@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace QuanLyTraoDoiHang
 {
-    public partial class UCProductStatusItem : UserControl
+    public partial class UCViewHistoryItem : UserControl
     {
         public Product product = new Product();
-        public UCProductStatusItem(Product product)
+        public UCViewHistoryItem(Product product)
         {
 
             InitializeComponent();
@@ -25,6 +25,5 @@ namespace QuanLyTraoDoiHang
             lblOriginPrice.Text = product.originalPrice.ToString();
 
         }
-
     }
 }

@@ -82,6 +82,21 @@ namespace QuanLyTraoDoiHang
             string sqlStr = string.Format("SELECT * FROM " + tableName + " WHERE buyerId = '{0}' ", buyerId);
             return dBConnection.Load(sqlStr);
         }
+        public static OrderTable SelectById(int id)
+        {
+            string SQL = string.Format("Select * FROM " + tableName + " WHERE orderId = '{0}';", id);
+            DataTable x = dBConnection.Load(SQL);
+            OrderTable order = new OrderTable();
+            if (x.Rows.Count > 0)
+            {
+                order = RowToOrderTable(x.Rows[0]);
+            }
+            else
+            {
+                MessageBox.Show("not exit");
+            }
+            return order;
+        }
 
     }
 }

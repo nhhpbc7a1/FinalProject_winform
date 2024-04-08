@@ -88,9 +88,11 @@ create table Rating (
 	senderUserId int references UserTable(userId),
 	receiverUserId int references UserTable(userId),
 	orderId int references OrderTable(OrderId),
+	productId int references Product(ProductId),
 	marks int,
 	detail nvarchar(1000),
 );
+
 
 --drop table OrderItem;
 --go

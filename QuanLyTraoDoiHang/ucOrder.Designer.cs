@@ -36,14 +36,14 @@
             this.lblName = new System.Windows.Forms.Label();
             this.flwpnlOrder = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblItemsQuantity = new System.Windows.Forms.Label();
             this.lblMethod = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
             this.cbxStatus = new System.Windows.Forms.ComboBox();
             this.lblTotalPrice = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblItemsQuantity = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -58,10 +58,10 @@
             this.flowLayoutPanel1.Controls.Add(this.panel2);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.MaximumSize = new System.Drawing.Size(725, 100000);
-            this.flowLayoutPanel1.MinimumSize = new System.Drawing.Size(725, 252);
+            this.flowLayoutPanel1.MaximumSize = new System.Drawing.Size(718, 100000);
+            this.flowLayoutPanel1.MinimumSize = new System.Drawing.Size(718, 252);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(725, 252);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(718, 252);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // panel1
@@ -75,7 +75,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(725, 58);
+            this.panel1.Size = new System.Drawing.Size(718, 58);
             this.panel1.TabIndex = 0;
             // 
             // lblTime
@@ -124,10 +124,10 @@
             this.flwpnlOrder.Dock = System.Windows.Forms.DockStyle.Top;
             this.flwpnlOrder.Location = new System.Drawing.Point(0, 58);
             this.flwpnlOrder.Margin = new System.Windows.Forms.Padding(0);
-            this.flwpnlOrder.MaximumSize = new System.Drawing.Size(725, 100000);
-            this.flwpnlOrder.MinimumSize = new System.Drawing.Size(725, 128);
+            this.flwpnlOrder.MaximumSize = new System.Drawing.Size(718, 100000);
+            this.flwpnlOrder.MinimumSize = new System.Drawing.Size(718, 128);
             this.flwpnlOrder.Name = "flwpnlOrder";
-            this.flwpnlOrder.Size = new System.Drawing.Size(725, 128);
+            this.flwpnlOrder.Size = new System.Drawing.Size(718, 128);
             this.flwpnlOrder.TabIndex = 1;
             // 
             // panel2
@@ -144,8 +144,28 @@
             this.panel2.Location = new System.Drawing.Point(0, 186);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(725, 66);
+            this.panel2.Size = new System.Drawing.Size(718, 66);
             this.panel2.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(438, 21);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 21);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Items";
+            // 
+            // lblItemsQuantity
+            // 
+            this.lblItemsQuantity.AutoSize = true;
+            this.lblItemsQuantity.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblItemsQuantity.Location = new System.Drawing.Point(483, 21);
+            this.lblItemsQuantity.Name = "lblItemsQuantity";
+            this.lblItemsQuantity.Size = new System.Drawing.Size(28, 21);
+            this.lblItemsQuantity.TabIndex = 6;
+            this.lblItemsQuantity.Text = "no";
             // 
             // lblMethod
             // 
@@ -214,26 +234,6 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Total Price";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(438, 21);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 21);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Items";
-            // 
-            // lblItemsQuantity
-            // 
-            this.lblItemsQuantity.AutoSize = true;
-            this.lblItemsQuantity.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblItemsQuantity.Location = new System.Drawing.Point(483, 21);
-            this.lblItemsQuantity.Name = "lblItemsQuantity";
-            this.lblItemsQuantity.Size = new System.Drawing.Size(28, 21);
-            this.lblItemsQuantity.TabIndex = 6;
-            this.lblItemsQuantity.Text = "no";
-            // 
             // ucOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -241,10 +241,10 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Controls.Add(this.flowLayoutPanel1);
-            this.MaximumSize = new System.Drawing.Size(725, 100000);
-            this.MinimumSize = new System.Drawing.Size(725, 252);
+            this.MaximumSize = new System.Drawing.Size(718, 100000);
+            this.MinimumSize = new System.Drawing.Size(718, 252);
             this.Name = "ucOrder";
-            this.Size = new System.Drawing.Size(725, 252);
+            this.Size = new System.Drawing.Size(718, 252);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.panel1.ResumeLayout(false);

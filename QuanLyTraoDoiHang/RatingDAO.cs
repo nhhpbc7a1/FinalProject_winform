@@ -39,14 +39,14 @@ namespace QuanLyTraoDoiHang
 
         public static void Update(Rating rating)
         {
-            string SQL = string.Format(" UPDATE " + tableName + " SET senderUserId = '{1}', receiverUserId = '{2}', orderId = '{3}', marks = '{4}', detail = '{5}'  WHERE ratingId = '{0}' ;",
-            rating.ratingId, rating.senderUserId, rating.receiverUserId, rating.orderId, rating.marks, rating.detail);
+            string SQL = string.Format(" UPDATE " + tableName + " SET senderUserId = '{1}', receiverUserId = '{2}', orderId = '{3}', productId='{4}', marks = '{5}', detail = '{6}'  WHERE ratingId = '{0}' ;",
+            rating.ratingId, rating.senderUserId, rating.receiverUserId, rating.orderId, rating.productId, rating.marks, rating.detail);
             dBConnection.Execute(SQL);
         }
         public static void Add(Rating rating)
         {
-            string SQL = string.Format(" INSERT INTO " + tableName + " (ratingId, senderUserId, receiverUserId, orderId, marks, detail) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}');",
-            rating.ratingId, rating.senderUserId, rating.receiverUserId, rating.orderId, rating.marks, rating.detail);
+            string SQL = string.Format(" INSERT INTO " + tableName + " (ratingId, senderUserId, receiverUserId, orderId, productId, marks, detail) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}', '{6}');",
+            rating.ratingId, rating.senderUserId, rating.receiverUserId, rating.orderId, rating.productId, rating.marks, rating.detail);
             dBConnection.Execute(SQL);
         }
         public static void Delete(Rating rating)
@@ -61,6 +61,7 @@ namespace QuanLyTraoDoiHang
             rating.senderUserId = Convert.ToInt32(row["sennderUserId"]);
             rating.receiverUserId = Convert.ToInt32(row["receiverUserId"]);
             rating.orderId = Convert.ToInt32(row["orderId"]);
+            rating.productId = Convert.ToInt32(row["productId"]);
             rating.marks = Convert.ToInt32(row["marks"]);
             rating.detail = row["detail"].ToString();
 
