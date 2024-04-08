@@ -283,7 +283,7 @@
             this.btnViewRating.FlatAppearance.BorderSize = 0;
             this.btnViewRating.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnViewRating.ForeColor = System.Drawing.Color.White;
-            this.btnViewRating.Location = new System.Drawing.Point(470, 14);
+            this.btnViewRating.Location = new System.Drawing.Point(487, 14);
             this.btnViewRating.Name = "btnViewRating";
             this.btnViewRating.Size = new System.Drawing.Size(150, 40);
             this.btnViewRating.TabIndex = 0;
@@ -301,7 +301,7 @@
             this.btnViewProducts.FlatAppearance.BorderSize = 0;
             this.btnViewProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnViewProducts.ForeColor = System.Drawing.Color.White;
-            this.btnViewProducts.Location = new System.Drawing.Point(278, 14);
+            this.btnViewProducts.Location = new System.Drawing.Point(295, 14);
             this.btnViewProducts.Name = "btnViewProducts";
             this.btnViewProducts.Size = new System.Drawing.Size(150, 40);
             this.btnViewProducts.TabIndex = 0;

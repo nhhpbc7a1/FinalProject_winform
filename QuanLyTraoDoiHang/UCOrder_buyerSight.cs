@@ -49,7 +49,7 @@ namespace QuanLyTraoDoiHang
             foreach (DataRow row in productList.Rows)
             {
                 Product tmp = ProductDAO.SelectById(OrderItemDAO.RowToOrderItem(row).productId);
-                UCProductStatusItem uc = new UCProductStatusItem(tmp);
+                UCViewHistoryItem uc = new UCViewHistoryItem(tmp);
                 flwpnlOrder.Controls.Add(uc);
                 total += tmp.price;
             }
