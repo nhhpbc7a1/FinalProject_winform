@@ -57,8 +57,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="lblRatingText.Text" xml:space="preserve">
-    <value>STW3 nghe cứ như đang ngồi sát bên ca sĩ, nghe ca sĩ live, thậm chí nghe được khúc ca sĩ rung và lấy hơi. Chất âm chi tiết mang thương hiệu sen hồi giờ, nghe nhạc epic, mấy đoạn đánh trống cảm nhận được tiếng vang màn trống từng lớp âm khá thú 
-</value>
-  </data>
+  <metadata name="bindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

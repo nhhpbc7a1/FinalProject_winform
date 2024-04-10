@@ -13,7 +13,8 @@ namespace QuanLyTraoDoiHang
     public partial class UCViewHistoryItem : UserControl
     {
         public Product product = new Product();
-        public UCViewHistoryItem(Product product)
+        public OrderTable orderTable;
+        public UCViewHistoryItem(Product product, string status, OrderTable orderTable)
         {
 
             InitializeComponent();
@@ -23,7 +24,28 @@ namespace QuanLyTraoDoiHang
             lblCondition.Text = product.condition;
             lblPrice.Text = product.price.ToString();
             lblOriginPrice.Text = product.originalPrice.ToString();
+            if (status == "completed")
+            {
+                btnRating.Visible = true;
+                if (RatingDAO.SelectByProductId(product.productId) != null)
+                {
+                    btnRating.Enabled = false;
+                }
+                else Enabled = true;
+            }
+            btnRating.Click += BtnRating_Click;
+            this.orderTable = orderTable;
+        }
 
+        private void BtnRating_Click(object? sender, EventArgs e)
+        {
+            FormAddRating x = new FormAddRating(product, orderTable);
+            x.ShowDialog();
+            if (RatingDAO.SelectByProductId(product.productId) != null)
+            {
+                btnRating.Enabled = false;
+            }
+            else Enabled = true;
         }
     }
 }
