@@ -24,10 +24,9 @@ namespace QuanLyTraoDoiHang
             lblProductName.Text = ProductDAO.SelectById(rating.productId).name;
             lblRatingText.Text = rating.detail;
 
-            pnlRating.Controls.Clear();
-            for (int i = 1; i <= rating.marks; i++)
-                pnlRating.Controls.Add(star1);
-
+            ucStars1.comboBoxNum.SelectedIndex = rating.marks;
+            ucStars1.comboBoxNum.Text = rating.marks.ToString();
+            ucStars1.comboBoxNum.Enabled = false;
         }
 
     }

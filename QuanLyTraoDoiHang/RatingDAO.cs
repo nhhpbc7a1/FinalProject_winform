@@ -58,7 +58,7 @@ namespace QuanLyTraoDoiHang
         {
             Rating rating = new Rating();
             rating.ratingId = Convert.ToInt32(row["ratingId"]);
-            rating.senderUserId = Convert.ToInt32(row["sennderUserId"]);
+            rating.senderUserId = Convert.ToInt32(row["senderUserId"]);
             rating.receiverUserId = Convert.ToInt32(row["receiverUserId"]);
             rating.orderId = Convert.ToInt32(row["orderId"]);
             rating.productId = Convert.ToInt32(row["productId"]);
@@ -72,5 +72,16 @@ namespace QuanLyTraoDoiHang
             string sqlStr = string.Format("SELECT * FROM " + tableName + " where receiverUserId='{0}';", sellerId);
             return dBConnection.Load(sqlStr);
         }
+        public static Rating SelectByProductId(int productId)
+        {
+            string SQL = string.Format("Select * FROM " + tableName + " WHERE productId = '{0}';", productId);
+            DataTable x = dBConnection.Load(SQL);
+            if (x.Rows.Count > 0)
+            {
+                return RowToRating(x.Rows[0]);
+            }
+            return null;
+        }
+
     }
 }
