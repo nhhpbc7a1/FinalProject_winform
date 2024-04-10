@@ -28,93 +28,116 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblProductName = new System.Windows.Forms.Label();
-            this.picItems = new System.Windows.Forms.PictureBox();
-            this.lblCondition = new System.Windows.Forms.Label();
-            this.lblPrice = new System.Windows.Forms.Label();
-            this.lblOriginPrice = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.picItems)).BeginInit();
-            this.SuspendLayout();
+            lblProductName = new Label();
+            picItems = new PictureBox();
+            lblCondition = new Label();
+            lblPrice = new Label();
+            lblOriginPrice = new Label();
+            label1 = new Label();
+            label2 = new Label();
+            ((System.ComponentModel.ISupportInitialize)picItems).BeginInit();
+            SuspendLayout();
             // 
             // lblProductName
             // 
-            this.lblProductName.AutoSize = true;
-            this.lblProductName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblProductName.Location = new System.Drawing.Point(101, 27);
-            this.lblProductName.Margin = new System.Windows.Forms.Padding(1, 0, 1, 15);
-            this.lblProductName.MaximumSize = new System.Drawing.Size(220, 10000);
-            this.lblProductName.MinimumSize = new System.Drawing.Size(220, 61);
-            this.lblProductName.Name = "lblProductName";
-            this.lblProductName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProductName.Size = new System.Drawing.Size(220, 61);
-            this.lblProductName.TabIndex = 11;
-            this.lblProductName.Text = "(name)";
+            lblProductName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblProductName.Location = new Point(83, 25);
+            lblProductName.Margin = new Padding(1, 0, 1, 15);
+            lblProductName.MaximumSize = new Size(220, 10000);
+            lblProductName.Name = "lblProductName";
+            lblProductName.RightToLeft = RightToLeft.No;
+            lblProductName.Size = new Size(159, 61);
+            lblProductName.TabIndex = 11;
+            lblProductName.Text = "(name)";
             // 
             // picItems
             // 
-            this.picItems.BackColor = System.Drawing.SystemColors.Control;
-            this.picItems.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picItems.Location = new System.Drawing.Point(35, 25);
-            this.picItems.Margin = new System.Windows.Forms.Padding(1);
-            this.picItems.Name = "picItems";
-            this.picItems.Size = new System.Drawing.Size(64, 63);
-            this.picItems.TabIndex = 10;
-            this.picItems.TabStop = false;
+            picItems.BackColor = SystemColors.Control;
+            picItems.BackgroundImageLayout = ImageLayout.Stretch;
+            picItems.Location = new Point(17, 23);
+            picItems.Margin = new Padding(1);
+            picItems.Name = "picItems";
+            picItems.Size = new Size(64, 63);
+            picItems.TabIndex = 10;
+            picItems.TabStop = false;
             // 
             // lblCondition
             // 
-            this.lblCondition.AutoSize = true;
-            this.lblCondition.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCondition.Location = new System.Drawing.Point(335, 27);
-            this.lblCondition.Margin = new System.Windows.Forms.Padding(1, 0, 1, 15);
-            this.lblCondition.MaximumSize = new System.Drawing.Size(264, 10000);
-            this.lblCondition.MinimumSize = new System.Drawing.Size(264, 61);
-            this.lblCondition.Name = "lblCondition";
-            this.lblCondition.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblCondition.Size = new System.Drawing.Size(264, 61);
-            this.lblCondition.TabIndex = 56;
-            this.lblCondition.Text = "Condition";
+            lblCondition.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCondition.Location = new Point(244, 28);
+            lblCondition.Margin = new Padding(1, 0, 1, 15);
+            lblCondition.MaximumSize = new Size(264, 10000);
+            lblCondition.Name = "lblCondition";
+            lblCondition.RightToLeft = RightToLeft.No;
+            lblCondition.Size = new Size(184, 61);
+            lblCondition.TabIndex = 56;
+            lblCondition.Text = "Condition";
             // 
             // lblPrice
             // 
-            this.lblPrice.AutoSize = true;
-            this.lblPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPrice.Location = new System.Drawing.Point(617, 55);
-            this.lblPrice.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(55, 21);
-            this.lblPrice.TabIndex = 58;
-            this.lblPrice.Text = "10000";
+            lblPrice.AutoSize = true;
+            lblPrice.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblPrice.ForeColor = Color.Red;
+            lblPrice.Location = new Point(554, 48);
+            lblPrice.Margin = new Padding(1, 0, 1, 0);
+            lblPrice.Name = "lblPrice";
+            lblPrice.Size = new Size(52, 21);
+            lblPrice.TabIndex = 58;
+            lblPrice.Text = "10000";
             // 
             // lblOriginPrice
             // 
-            this.lblOriginPrice.AutoSize = true;
-            this.lblOriginPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point);
-            this.lblOriginPrice.Location = new System.Drawing.Point(617, 27);
-            this.lblOriginPrice.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblOriginPrice.Name = "lblOriginPrice";
-            this.lblOriginPrice.Size = new System.Drawing.Size(55, 21);
-            this.lblOriginPrice.TabIndex = 59;
-            this.lblOriginPrice.Text = "10000";
+            lblOriginPrice.AutoSize = true;
+            lblOriginPrice.Font = new Font("Segoe UI", 12F, FontStyle.Strikeout, GraphicsUnit.Point);
+            lblOriginPrice.Location = new Point(554, 27);
+            lblOriginPrice.Margin = new Padding(1, 0, 1, 0);
+            lblOriginPrice.Name = "lblOriginPrice";
+            lblOriginPrice.Size = new Size(55, 21);
+            lblOriginPrice.TabIndex = 59;
+            lblOriginPrice.Text = "10000";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
+            label1.ForeColor = Color.Red;
+            label1.Location = new Point(540, 50);
+            label1.Margin = new Padding(1, 0, 1, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(18, 20);
+            label1.TabIndex = 60;
+            label1.Text = "đ";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Underline, GraphicsUnit.Point);
+            label2.Location = new Point(540, 28);
+            label2.Margin = new Padding(1, 0, 1, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(18, 20);
+            label2.TabIndex = 61;
+            label2.Text = "đ";
             // 
             // UCProductStatusItem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
-            this.Controls.Add(this.lblProductName);
-            this.Controls.Add(this.lblOriginPrice);
-            this.Controls.Add(this.picItems);
-            this.Controls.Add(this.lblPrice);
-            this.Controls.Add(this.lblCondition);
-            this.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
-            this.Name = "UCProductStatusItem";
-            this.Size = new System.Drawing.Size(725, 128);
-            ((System.ComponentModel.ISupportInitialize)(this.picItems)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ButtonHighlight;
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(lblProductName);
+            Controls.Add(lblOriginPrice);
+            Controls.Add(picItems);
+            Controls.Add(lblPrice);
+            Controls.Add(lblCondition);
+            Margin = new Padding(0, 0, 0, 5);
+            Name = "UCProductStatusItem";
+            RightToLeft = RightToLeft.No;
+            Size = new Size(720, 128);
+            ((System.ComponentModel.ISupportInitialize)picItems).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -123,5 +146,7 @@
         public Label lblCondition;
         public Label lblPrice;
         public Label lblOriginPrice;
+        public Label label1;
+        public Label label2;
     }
 }

@@ -24,6 +24,7 @@ namespace QuanLyTraoDoiHang
         private void ComboBoxShippingMethod_SelectedIndexChanged(object? sender, EventArgs e)
         {
             lblShippingFee.Text = ((comboBoxShippingMethod.SelectedIndex + 1) * 20000).ToString();
+         
         }
 
         private void UCCheckOutEachShop_Load(object? sender, EventArgs e)

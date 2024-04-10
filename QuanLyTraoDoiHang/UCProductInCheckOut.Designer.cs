@@ -1,6 +1,6 @@
 ﻿namespace QuanLyTraoDoiHang
 {
-    partial class UCProductInCheckOut
+    partial class ucItemsInCheckOut
     {
         /// <summary> 
         /// Required designer variable.
@@ -34,6 +34,8 @@
             pbProductImage = new PictureBox();
             lblOldPrice = new Label();
             lblCondition = new Label();
+            label1 = new Label();
+            label2 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbProductImage).BeginInit();
             SuspendLayout();
@@ -42,31 +44,31 @@
             // 
             lblPrice.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblPrice.ForeColor = Color.Red;
-            lblPrice.Location = new Point(565, 51);
+            lblPrice.Location = new Point(603, 59);
             lblPrice.Margin = new Padding(1, 0, 1, 0);
             lblPrice.Name = "lblPrice";
-            lblPrice.Size = new Size(111, 22);
+            lblPrice.Size = new Size(102, 22);
             lblPrice.TabIndex = 60;
             lblPrice.Text = "price";
-            lblPrice.TextAlign = ContentAlignment.MiddleCenter;
+            lblPrice.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // panel1
             // 
             panel1.Controls.Add(lblProductName);
             panel1.Controls.Add(pbProductImage);
-            panel1.Location = new Point(25, 16);
+            panel1.Location = new Point(11, 13);
             panel1.Margin = new Padding(1);
             panel1.Name = "panel1";
-            panel1.Size = new Size(278, 74);
+            panel1.Size = new Size(239, 74);
             panel1.TabIndex = 61;
             // 
             // lblProductName
             // 
-            lblProductName.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lblProductName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblProductName.Location = new Point(70, 13);
             lblProductName.Margin = new Padding(1, 0, 1, 0);
             lblProductName.Name = "lblProductName";
-            lblProductName.Size = new Size(207, 55);
+            lblProductName.Size = new Size(169, 55);
             lblProductName.TabIndex = 11;
             lblProductName.Text = "(name)";
             // 
@@ -84,35 +86,60 @@
             // lblOldPrice
             // 
             lblOldPrice.Font = new Font("Segoe UI", 12F, FontStyle.Strikeout, GraphicsUnit.Point);
-            lblOldPrice.Location = new Point(565, 29);
+            lblOldPrice.Location = new Point(603, 37);
             lblOldPrice.Name = "lblOldPrice";
-            lblOldPrice.Size = new Size(111, 22);
+            lblOldPrice.Size = new Size(107, 22);
             lblOldPrice.TabIndex = 63;
             lblOldPrice.Text = "Old price";
-            lblOldPrice.TextAlign = ContentAlignment.MiddleCenter;
+            lblOldPrice.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lblCondition
             // 
             lblCondition.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblCondition.Location = new Point(307, 26);
+            lblCondition.Location = new Point(248, 26);
             lblCondition.Name = "lblCondition";
             lblCondition.Size = new Size(152, 61);
             lblCondition.TabIndex = 62;
             lblCondition.Text = "condition of product";
             // 
-            // UCProductInCheckOut
+            // label1
+            // 
+            label1.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
+            label1.ForeColor = Color.Red;
+            label1.Location = new Point(584, 59);
+            label1.Margin = new Padding(1, 0, 1, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(24, 22);
+            label1.TabIndex = 64;
+            label1.Text = "đ";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            label2.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(584, 38);
+            label2.Margin = new Padding(1, 0, 1, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(24, 22);
+            label2.TabIndex = 65;
+            label2.Text = "đ";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // ucItemsInCheckOut
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(224, 224, 224);
-            BorderStyle = BorderStyle.FixedSingle;
+            BackColor = SystemColors.ButtonHighlight;
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(lblPrice);
             Controls.Add(panel1);
             Controls.Add(lblOldPrice);
             Controls.Add(lblCondition);
             Margin = new Padding(0);
-            Name = "UCProductInCheckOut";
-            Size = new Size(713, 126);
+            Name = "ucItemsInCheckOut";
+            Size = new Size(715, 128);
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pbProductImage).EndInit();
             ResumeLayout(false);
@@ -126,5 +153,7 @@
         public PictureBox pbProductImage;
         private Label lblOldPrice;
         private Label lblCondition;
+        public Label label1;
+        public Label label2;
     }
 }

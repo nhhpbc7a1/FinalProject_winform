@@ -62,7 +62,7 @@ namespace QuanLyTraoDoiHang
             // panel1
             // 
             panel1.AutoScroll = true;
-            panel1.BackColor = Color.WhiteSmoke;
+            panel1.BackColor = SystemColors.ControlLight;
             panel1.Controls.Add(label2);
             panel1.Controls.Add(panel5);
             panel1.Controls.Add(panel2);

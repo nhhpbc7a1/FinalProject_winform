@@ -44,6 +44,7 @@ namespace QuanLyTraoDoiHang
             label31 = new Label();
             label100 = new Label();
             panel1 = new Panel();
+            panel2 = new Panel();
             pnlCheckOut.SuspendLayout();
             pnlMenu.SuspendLayout();
             panel1.SuspendLayout();
@@ -87,12 +88,12 @@ namespace QuanLyTraoDoiHang
             btnCheckOut.BorderSize = 1;
             btnCheckOut.FlatAppearance.BorderSize = 0;
             btnCheckOut.FlatStyle = FlatStyle.Flat;
-            btnCheckOut.Font = new Font("Segoe UI", 11.1F, FontStyle.Bold, GraphicsUnit.Point);
+            btnCheckOut.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnCheckOut.ForeColor = Color.White;
             btnCheckOut.Location = new Point(782, 24);
             btnCheckOut.Margin = new Padding(1);
             btnCheckOut.Name = "btnCheckOut";
-            btnCheckOut.Size = new Size(111, 37);
+            btnCheckOut.Size = new Size(129, 50);
             btnCheckOut.TabIndex = 10;
             btnCheckOut.Text = "Check Out";
             btnCheckOut.TextColor = Color.White;
@@ -162,17 +163,17 @@ namespace QuanLyTraoDoiHang
             // pnlProducts
             // 
             pnlProducts.AutoSize = true;
-            pnlProducts.BackColor = Color.White;
+            pnlProducts.BackColor = SystemColors.ControlLight;
             pnlProducts.Location = new Point(123, 64);
             pnlProducts.MaximumSize = new Size(725, 10000);
             pnlProducts.MinimumSize = new Size(725, 0);
             pnlProducts.Name = "pnlProducts";
-            pnlProducts.Size = new Size(725, 100);
+            pnlProducts.Size = new Size(725, 403);
             pnlProducts.TabIndex = 25;
             // 
             // pnlMenu
             // 
-            pnlMenu.BackColor = Color.FromArgb(30, 106, 17);
+            pnlMenu.BackColor = Color.FromArgb(101, 183, 65);
             pnlMenu.Controls.Add(label4);
             pnlMenu.Controls.Add(label1);
             pnlMenu.Controls.Add(label31);
@@ -200,7 +201,7 @@ namespace QuanLyTraoDoiHang
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(463, 4);
+            label1.Location = new Point(253, 4);
             label1.Margin = new Padding(1, 0, 1, 0);
             label1.Name = "label1";
             label1.Size = new Size(82, 21);
@@ -212,7 +213,7 @@ namespace QuanLyTraoDoiHang
             label31.AutoSize = true;
             label31.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label31.ForeColor = SystemColors.ButtonHighlight;
-            label31.Location = new Point(634, 4);
+            label31.Location = new Point(614, 4);
             label31.Margin = new Padding(1, 0, 1, 0);
             label31.Name = "label31";
             label31.Size = new Size(58, 21);
@@ -224,7 +225,7 @@ namespace QuanLyTraoDoiHang
             label100.AutoSize = true;
             label100.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label100.ForeColor = SystemColors.ButtonHighlight;
-            label100.Location = new Point(269, 4);
+            label100.Location = new Point(483, 4);
             label100.Margin = new Padding(1, 0, 1, 0);
             label100.Name = "label100";
             label100.Size = new Size(46, 21);
@@ -234,14 +235,23 @@ namespace QuanLyTraoDoiHang
             // panel1
             // 
             panel1.AutoScroll = true;
-            panel1.BackColor = Color.WhiteSmoke;
+            panel1.BackColor = SystemColors.ControlLight;
             panel1.Controls.Add(pnlMenu);
             panel1.Controls.Add(pnlProducts);
+            panel1.Controls.Add(panel2);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(984, 467);
             panel1.TabIndex = 26;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.White;
+            panel2.Location = new Point(12, 12);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(960, 452);
+            panel2.TabIndex = 26;
             // 
             // FormCart
             // 
@@ -282,5 +292,6 @@ namespace QuanLyTraoDoiHang
         private Label label100;
         public RJControls.RButton btnCheckOut;
         private Panel panel1;
+        private Panel panel2;
     }
 }
