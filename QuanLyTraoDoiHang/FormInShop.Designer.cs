@@ -39,34 +39,23 @@
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.lblSellerName = new System.Windows.Forms.Label();
             this.ptbSellerImage = new System.Windows.Forms.PictureBox();
-            this.pnlRating = new System.Windows.Forms.Panel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pnlItems = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnViewRating = new QuanLyTraoDoiHang.RJControls.RButton();
             this.btnViewProducts = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.ucStars1 = new QuanLyTraoDoiHang.UCStars();
             this.pnlThisSellerPage.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbSellerImage)).BeginInit();
-            this.pnlRating.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlThisSellerPage
             // 
             this.pnlThisSellerPage.BackColor = System.Drawing.Color.White;
+            this.pnlThisSellerPage.Controls.Add(this.ucStars1);
             this.pnlThisSellerPage.Controls.Add(this.lblDateJoined);
             this.pnlThisSellerPage.Controls.Add(this.panel6);
             this.pnlThisSellerPage.Controls.Add(this.lblSellerAddress);
@@ -74,7 +63,6 @@
             this.pnlThisSellerPage.Controls.Add(this.pictureBox10);
             this.pnlThisSellerPage.Controls.Add(this.lblSellerName);
             this.pnlThisSellerPage.Controls.Add(this.ptbSellerImage);
-            this.pnlThisSellerPage.Controls.Add(this.pnlRating);
             this.pnlThisSellerPage.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.pnlThisSellerPage.Location = new System.Drawing.Point(12, 12);
             this.pnlThisSellerPage.Name = "pnlThisSellerPage";
@@ -179,80 +167,6 @@
             this.ptbSellerImage.TabIndex = 4;
             this.ptbSellerImage.TabStop = false;
             // 
-            // pnlRating
-            // 
-            this.pnlRating.Controls.Add(this.pictureBox7);
-            this.pnlRating.Controls.Add(this.pictureBox6);
-            this.pnlRating.Controls.Add(this.pictureBox5);
-            this.pnlRating.Controls.Add(this.pictureBox4);
-            this.pnlRating.Controls.Add(this.label8);
-            this.pnlRating.Controls.Add(this.pictureBox3);
-            this.pnlRating.Location = new System.Drawing.Point(86, 44);
-            this.pnlRating.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pnlRating.Name = "pnlRating";
-            this.pnlRating.Size = new System.Drawing.Size(180, 31);
-            this.pnlRating.TabIndex = 5;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(117, 3);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(23, 20);
-            this.pictureBox7.TabIndex = 7;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(87, 3);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(23, 20);
-            this.pictureBox6.TabIndex = 6;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(58, 3);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(23, 20);
-            this.pictureBox5.TabIndex = 6;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(29, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(23, 20);
-            this.pictureBox4.TabIndex = 5;
-            this.pictureBox4.TabStop = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(145, 3);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(29, 19);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "4.6";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(23, 20);
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            // 
             // pnlItems
             // 
             this.pnlItems.AutoSize = true;
@@ -309,6 +223,13 @@
             this.btnViewProducts.TextColor = System.Drawing.Color.White;
             this.btnViewProducts.UseVisualStyleBackColor = false;
             // 
+            // ucStars1
+            // 
+            this.ucStars1.Location = new System.Drawing.Point(86, 38);
+            this.ucStars1.Name = "ucStars1";
+            this.ucStars1.Size = new System.Drawing.Size(195, 37);
+            this.ucStars1.TabIndex = 20;
+            // 
             // FormInShop
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -326,13 +247,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbSellerImage)).EndInit();
-            this.pnlRating.ResumeLayout(false);
-            this.pnlRating.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -351,16 +265,10 @@
         private PictureBox pictureBox10;
         private Label lblSellerName;
         private PictureBox ptbSellerImage;
-        private Panel pnlRating;
-        private PictureBox pictureBox7;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox4;
-        private Label label8;
-        private PictureBox pictureBox3;
         private FlowLayoutPanel pnlItems;
         private Panel panel1;
         private RJControls.RButton btnViewRating;
         private RJControls.RButton btnViewProducts;
+        private UCStars ucStars1;
     }
 }

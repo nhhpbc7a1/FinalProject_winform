@@ -29,6 +29,33 @@ namespace QuanLyTraoDoiHang
                 }
             }
             this.Click += OpenFormDetail;
+            ptbImage.BackgroundImage = product.image;
+            lblName.Text = product.name;
+            lblPrice.Text = product.price.ToString();
+            lblOriginalPrice.Text = product.originalPrice.ToString();
+            lblDateStart.Text = product.dateBought.ToString();
+
+            DataTable ratings = RatingDAO.SellectBySellerId(product.sellerId);
+            if (ratings.Rows.Count == 0)
+            {
+                ucStars1.Visible = false;
+            }
+            else
+            {
+                double avgRating = 0;
+                foreach (DataRow row in ratings.Rows)
+                {
+                    Rating x = RatingDAO.RowToRating(row);
+                    avgRating += x.marks;
+                }
+                double tmp = ratings.Rows.Count;
+                ucStars1.lblNumStar.Text = (avgRating / tmp).ToString();
+                ucStars1.lblNumStar.Visible = true;
+                ucStars1.comboBoxNum.Text = (avgRating / tmp).ToString();
+                ucStars1.comboBoxNum.Visible = false;
+                ucStars1.comboBoxNum.Enabled = false;
+            }
+
         }
 
         void BuyNow(object sender, EventArgs e)
@@ -39,10 +66,6 @@ namespace QuanLyTraoDoiHang
 
         private void UCProductOnMainpage_Load(object sender, EventArgs e)
         {
-            ptbImage.BackgroundImage = product.image;
-            lblName.Text = product.name;
-            lblPrice.Text = product.price.ToString();
-            lblOriginalPrice.Text = product.originalPrice.ToString();
         }
         private void OpenFormDetail(object sender, EventArgs e)
         {

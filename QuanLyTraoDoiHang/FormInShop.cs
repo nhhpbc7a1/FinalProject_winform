@@ -29,6 +29,19 @@ namespace QuanLyTraoDoiHang
             btnViewProducts.Click += BtnViewProducts_Click;
             btnViewRating.Click += BtnViewRating_Click;
             BtnViewProducts_Click(null, null);
+
+            double avgRating = 0;
+            foreach (DataRow row in ratings.Rows)
+            {
+                Rating x = RatingDAO.RowToRating(row);
+                avgRating += x.marks;
+            }
+            double tmp = ratings.Rows.Count;
+            ucStars1.lblNumStar.Text = (avgRating / tmp).ToString();
+            ucStars1.lblNumStar.Visible = true;
+            ucStars1.comboBoxNum.Text = (avgRating/tmp).ToString();
+            ucStars1.comboBoxNum.Visible = false;
+            ucStars1.comboBoxNum.Enabled = false;
         }
 
         private void BtnViewRating_Click(object? sender, EventArgs e)
