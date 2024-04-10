@@ -40,36 +40,36 @@
             // lblUsername
             // 
             lblUsername.AutoSize = true;
-            lblUsername.BackColor = Color.Green;
-            lblUsername.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblUsername.ForeColor = Color.White;
+            lblUsername.BackColor = Color.FromArgb(229, 228, 131);
+            lblUsername.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblUsername.ForeColor = Color.Black;
             lblUsername.Location = new Point(34, 16);
             lblUsername.Name = "lblUsername";
-            lblUsername.Size = new Size(79, 21);
+            lblUsername.Size = new Size(85, 21);
             lblUsername.TabIndex = 0;
             lblUsername.Text = "username";
             // 
             // lblPhone
             // 
-            lblPhone.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblPhone.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblPhone.Image = (Image)resources.GetObject("lblPhone.Image");
             lblPhone.ImageAlign = ContentAlignment.MiddleLeft;
             lblPhone.Location = new Point(221, 13);
             lblPhone.Name = "lblPhone";
-            lblPhone.Size = new Size(133, 26);
+            lblPhone.Size = new Size(150, 26);
             lblPhone.TabIndex = 0;
             lblPhone.Text = "phone";
             lblPhone.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
-            panel1.BackColor = Color.White;
-            panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.BackColor = Color.FromArgb(229, 228, 131);
             panel1.Controls.Add(cbShop);
             panel1.Controls.Add(lblUsername);
             panel1.Controls.Add(lblPhone);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
             panel1.Size = new Size(715, 58);
             panel1.TabIndex = 2;
@@ -89,11 +89,11 @@
             pnlProducts.BackColor = Color.WhiteSmoke;
             pnlProducts.Dock = DockStyle.Fill;
             pnlProducts.Location = new Point(0, 58);
+            pnlProducts.Margin = new Padding(0, 0, 0, 5);
             pnlProducts.MaximumSize = new Size(715, 10000);
-            pnlProducts.MinimumSize = new Size(715, 50);
+            pnlProducts.MinimumSize = new Size(715, 121);
             pnlProducts.Name = "pnlProducts";
-            pnlProducts.Padding = new Padding(0, 0, 5, 0);
-            pnlProducts.Size = new Size(715, 92);
+            pnlProducts.Size = new Size(715, 121);
             pnlProducts.TabIndex = 3;
             // 
             // UCCartEachShop
@@ -104,11 +104,11 @@
             BackColor = Color.WhiteSmoke;
             Controls.Add(pnlProducts);
             Controls.Add(panel1);
-            Margin = new Padding(3, 3, 10, 3);
+            Margin = new Padding(6, 5, 0, 0);
             MaximumSize = new Size(715, 10000);
-            MinimumSize = new Size(715, 150);
+            MinimumSize = new Size(715, 121);
             Name = "UCCartEachShop";
-            Size = new Size(715, 150);
+            Size = new Size(715, 179);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);

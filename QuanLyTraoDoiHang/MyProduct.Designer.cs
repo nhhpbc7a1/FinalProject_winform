@@ -79,7 +79,7 @@
             label31.AutoSize = true;
             label31.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label31.ForeColor = SystemColors.ButtonHighlight;
-            label31.Location = new Point(633, 4);
+            label31.Location = new Point(626, 4);
             label31.Margin = new Padding(1, 0, 1, 0);
             label31.Name = "label31";
             label31.Size = new Size(58, 21);
@@ -91,7 +91,7 @@
             label100.AutoSize = true;
             label100.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label100.ForeColor = SystemColors.ButtonHighlight;
-            label100.Location = new Point(497, 4);
+            label100.Location = new Point(480, 4);
             label100.Margin = new Padding(1, 0, 1, 0);
             label100.Name = "label100";
             label100.Size = new Size(46, 21);
@@ -100,21 +100,20 @@
             // 
             // pnlProducts
             // 
-            pnlProducts.AutoSize = true;
+            pnlProducts.AutoScroll = true;
             pnlProducts.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             pnlProducts.BackColor = SystemColors.ControlLight;
-            pnlProducts.Location = new Point(16, 45);
+            pnlProducts.Location = new Point(16, 41);
             pnlProducts.MaximumSize = new Size(723, 100000);
             pnlProducts.MinimumSize = new Size(723, 330);
             pnlProducts.Name = "pnlProducts";
-            pnlProducts.Size = new Size(723, 330);
+            pnlProducts.Size = new Size(723, 428);
             pnlProducts.TabIndex = 26;
             // 
             // MyProduct
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            AutoScroll = true;
             BackColor = Color.White;
             ClientSize = new Size(758, 498);
             Controls.Add(pnlProducts);
@@ -127,7 +126,6 @@
             pnlMenu.ResumeLayout(false);
             pnlMenu.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion

@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProductStatus));
-            this.btnUpdate = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.pnlItems = new System.Windows.Forms.FlowLayoutPanel();
-            this.pnlMenu = new System.Windows.Forms.Panel();
-            this.picEmpty = new System.Windows.Forms.PictureBox();
-            this.pnlItems.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picEmpty)).BeginInit();
-            this.SuspendLayout();
+            btnUpdate = new RJControls.RButton();
+            pnlItems = new FlowLayoutPanel();
+            picEmpty = new PictureBox();
+            panel1 = new Panel();
+            pnlItems.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picEmpty).BeginInit();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // btnUpdate
             // 
@@ -48,7 +49,7 @@
             btnUpdate.FlatStyle = FlatStyle.Flat;
             btnUpdate.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnUpdate.ForeColor = Color.White;
-            btnUpdate.Location = new Point(307, 438);
+            btnUpdate.Location = new Point(294, 13);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(168, 41);
             btnUpdate.TabIndex = 28;
@@ -58,54 +59,56 @@
             // 
             // pnlItems
             // 
-            this.pnlItems.AutoScroll = true;
-            this.pnlItems.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pnlItems.Controls.Add(this.picEmpty);
-            this.pnlItems.Location = new System.Drawing.Point(10, 45);
-            this.pnlItems.Name = "pnlItems";
-            this.pnlItems.Size = new System.Drawing.Size(725, 328);
-            this.pnlItems.TabIndex = 27;
-            // 
-            // pnlMenu
-            // 
-            pnlMenu.BackColor = Color.FromArgb(30, 106, 17);
-            pnlMenu.Location = new Point(16, 10);
-            pnlMenu.Margin = new Padding(1);
-            pnlMenu.Name = "pnlMenu";
-            pnlMenu.Size = new Size(725, 32);
-            pnlMenu.TabIndex = 26;
+            pnlItems.AutoScroll = true;
+            pnlItems.BackColor = SystemColors.ControlLight;
+            pnlItems.Controls.Add(picEmpty);
+            pnlItems.Location = new Point(9, 0);
+            pnlItems.Margin = new Padding(0);
+            pnlItems.Name = "pnlItems";
+            pnlItems.Size = new Size(740, 418);
+            pnlItems.TabIndex = 27;
             // 
             // picEmpty
             // 
-            this.picEmpty.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picEmpty.BackgroundImage")));
-            this.picEmpty.Location = new System.Drawing.Point(310, 120);
-            this.picEmpty.Margin = new System.Windows.Forms.Padding(310, 120, 3, 3);
-            this.picEmpty.Name = "picEmpty";
-            this.picEmpty.Size = new System.Drawing.Size(100, 93);
-            this.picEmpty.TabIndex = 29;
-            this.picEmpty.TabStop = false;
+            picEmpty.BackgroundImage = (Image)resources.GetObject("picEmpty.BackgroundImage");
+            picEmpty.Location = new Point(310, 120);
+            picEmpty.Margin = new Padding(310, 120, 3, 3);
+            picEmpty.Name = "picEmpty";
+            picEmpty.Size = new Size(100, 93);
+            picEmpty.TabIndex = 29;
+            picEmpty.TabStop = false;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = SystemColors.ControlLight;
+            panel1.Controls.Add(btnUpdate);
+            panel1.Location = new Point(9, 418);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(740, 68);
+            panel1.TabIndex = 29;
             // 
             // FormProductStatus
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(742, 426);
-            this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.pnlItems);
-            this.Controls.Add(this.pnlMenu);
-            this.Name = "FormProductStatus";
-            this.Text = "FormProductStatus";
-            this.pnlItems.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picEmpty)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            ClientSize = new Size(758, 496);
+            Controls.Add(panel1);
+            Controls.Add(pnlItems);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "FormProductStatus";
+            Text = "FormProductStatus";
+            pnlItems.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)picEmpty).EndInit();
+            panel1.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion
 
         private RJControls.RButton btnUpdate;
         private FlowLayoutPanel pnlItems;
-        private Panel pnlMenu;
         private PictureBox picEmpty;
+        private Panel panel1;
     }
 }
