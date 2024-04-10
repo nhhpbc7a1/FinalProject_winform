@@ -28,80 +28,78 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.checkChoose = new System.Windows.Forms.RadioButton();
-            this.lblName = new System.Windows.Forms.Label();
-            this.lblUpdate = new System.Windows.Forms.Label();
-            this.lblPhone = new System.Windows.Forms.Label();
-            this.lblAddress = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            checkChoose = new RadioButton();
+            lblName = new Label();
+            lblUpdate = new Label();
+            lblPhone = new Label();
+            lblAddress = new Label();
+            SuspendLayout();
             // 
             // checkChoose
             // 
-            this.checkChoose.AutoSize = true;
-            this.checkChoose.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkChoose.Location = new System.Drawing.Point(31, 58);
-            this.checkChoose.Name = "checkChoose";
-            this.checkChoose.Size = new System.Drawing.Size(14, 13);
-            this.checkChoose.TabIndex = 6;
-            this.checkChoose.TabStop = true;
-            this.checkChoose.UseVisualStyleBackColor = true;
+            checkChoose.AutoSize = true;
+            checkChoose.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            checkChoose.Location = new Point(26, 26);
+            checkChoose.Name = "checkChoose";
+            checkChoose.Size = new Size(14, 13);
+            checkChoose.TabIndex = 6;
+            checkChoose.TabStop = true;
+            checkChoose.UseVisualStyleBackColor = true;
             // 
             // lblName
             // 
-            this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblName.Location = new System.Drawing.Point(94, 18);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(52, 21);
-            this.lblName.TabIndex = 2;
-            this.lblName.Text = "Name";
+            lblName.AutoSize = true;
+            lblName.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblName.Location = new Point(94, 18);
+            lblName.Name = "lblName";
+            lblName.Size = new Size(53, 21);
+            lblName.TabIndex = 2;
+            lblName.Text = "Name";
             // 
             // lblUpdate
             // 
-            this.lblUpdate.AutoSize = true;
-            this.lblUpdate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
-            this.lblUpdate.ForeColor = System.Drawing.Color.Navy;
-            this.lblUpdate.Location = new System.Drawing.Point(380, 58);
-            this.lblUpdate.Name = "lblUpdate";
-            this.lblUpdate.Size = new System.Drawing.Size(60, 21);
-            this.lblUpdate.TabIndex = 3;
-            this.lblUpdate.Text = "Update";
+            lblUpdate.AutoSize = true;
+            lblUpdate.Font = new Font("Segoe UI", 12F, FontStyle.Underline, GraphicsUnit.Point);
+            lblUpdate.ForeColor = Color.FromArgb(30, 106, 17);
+            lblUpdate.Location = new Point(670, 46);
+            lblUpdate.Name = "lblUpdate";
+            lblUpdate.Size = new Size(36, 21);
+            lblUpdate.TabIndex = 3;
+            lblUpdate.Text = "Edit";
             // 
             // lblPhone
             // 
-            this.lblPhone.AutoSize = true;
-            this.lblPhone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPhone.Location = new System.Drawing.Point(238, 18);
-            this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(54, 21);
-            this.lblPhone.TabIndex = 4;
-            this.lblPhone.Text = "Phone";
+            lblPhone.AutoSize = true;
+            lblPhone.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblPhone.Location = new Point(317, 18);
+            lblPhone.Name = "lblPhone";
+            lblPhone.Size = new Size(54, 21);
+            lblPhone.TabIndex = 4;
+            lblPhone.Text = "Phone";
             // 
             // lblAddress
             // 
-            this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblAddress.Location = new System.Drawing.Point(94, 58);
-            this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(249, 64);
-            this.lblAddress.TabIndex = 5;
-            this.lblAddress.Text = "detailed adress, detailed adress, detailed adress, detailed adress, detailed adre" +
-    "ss, detailed adress, detailed adress, detailed adress, detailed adress, ";
+            lblAddress.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblAddress.Location = new Point(94, 46);
+            lblAddress.Name = "lblAddress";
+            lblAddress.Size = new Size(570, 64);
+            lblAddress.TabIndex = 5;
+            lblAddress.Text = "detailed adress, detailed adress, detailed adress, detailed adress, detailed adress, detailed adress, detailed adress, detailed adress, detailed adress, ";
             // 
             // ucReceiveAddressItem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Controls.Add(this.checkChoose);
-            this.Controls.Add(this.lblName);
-            this.Controls.Add(this.lblUpdate);
-            this.Controls.Add(this.lblPhone);
-            this.Controls.Add(this.lblAddress);
-            this.Name = "ucReceiveAddressItem";
-            this.Size = new System.Drawing.Size(471, 140);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.WhiteSmoke;
+            Controls.Add(checkChoose);
+            Controls.Add(lblName);
+            Controls.Add(lblUpdate);
+            Controls.Add(lblPhone);
+            Controls.Add(lblAddress);
+            Name = "ucReceiveAddressItem";
+            Size = new Size(721, 119);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

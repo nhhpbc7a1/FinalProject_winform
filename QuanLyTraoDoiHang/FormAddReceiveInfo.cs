@@ -48,8 +48,13 @@ namespace QuanLyTraoDoiHang
                 receiveInfo.address = txtAddress.Text;
                 ReceiveInfoDAO.Update(receiveInfo);
                 MessageBox.Show("Update successfully");
-                Close(); 
+                Close();
             }
+        }
+
+        private void btnDeliverAdress_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

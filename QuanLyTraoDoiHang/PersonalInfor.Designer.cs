@@ -132,8 +132,8 @@
             // 
             // btnUpdateInfo
             // 
-            btnUpdateInfo.BackColor = Color.FromArgb(101, 183, 65);
-            btnUpdateInfo.BackgroundColor = Color.FromArgb(101, 183, 65);
+            btnUpdateInfo.BackColor = Color.FromArgb(0, 192, 0);
+            btnUpdateInfo.BackgroundColor = Color.FromArgb(0, 192, 0);
             btnUpdateInfo.BorderColor = Color.PaleVioletRed;
             btnUpdateInfo.BorderRadius = 10;
             btnUpdateInfo.BorderSize = 0;

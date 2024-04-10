@@ -42,7 +42,8 @@ namespace QuanLyTraoDoiHang
                     }
                 }
                 CartItemDAO.DeleteProductBeOrdered();
-                Program.mainpage.OpenChildForm(new FormProduct());
+                FPurchaseDone fPurchaseDone = new FPurchaseDone();
+                fPurchaseDone.ShowDialog();
             }
             
         }

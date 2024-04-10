@@ -28,97 +28,94 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblPrice = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblProductName = new System.Windows.Forms.Label();
-            this.pbProductImage = new System.Windows.Forms.PictureBox();
-            this.lblOldPrice = new System.Windows.Forms.Label();
-            this.lblCondition = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbProductImage)).BeginInit();
-            this.SuspendLayout();
+            lblPrice = new Label();
+            panel1 = new Panel();
+            lblProductName = new Label();
+            pbProductImage = new PictureBox();
+            lblOldPrice = new Label();
+            lblCondition = new Label();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbProductImage).BeginInit();
+            SuspendLayout();
             // 
             // lblPrice
             // 
-            this.lblPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPrice.ForeColor = System.Drawing.Color.Red;
-            this.lblPrice.Location = new System.Drawing.Point(580, 58);
-            this.lblPrice.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(111, 22);
-            this.lblPrice.TabIndex = 60;
-            this.lblPrice.Text = "price";
-            this.lblPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblPrice.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblPrice.ForeColor = Color.Red;
+            lblPrice.Location = new Point(565, 51);
+            lblPrice.Margin = new Padding(1, 0, 1, 0);
+            lblPrice.Name = "lblPrice";
+            lblPrice.Size = new Size(111, 22);
+            lblPrice.TabIndex = 60;
+            lblPrice.Text = "price";
+            lblPrice.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.lblProductName);
-            this.panel1.Controls.Add(this.pbProductImage);
-            this.panel1.Location = new System.Drawing.Point(25, 16);
-            this.panel1.Margin = new System.Windows.Forms.Padding(1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(229, 74);
-            this.panel1.TabIndex = 61;
+            panel1.Controls.Add(lblProductName);
+            panel1.Controls.Add(pbProductImage);
+            panel1.Location = new Point(25, 16);
+            panel1.Margin = new Padding(1);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(278, 74);
+            panel1.TabIndex = 61;
             // 
             // lblProductName
             // 
-            this.lblProductName.AutoSize = true;
-            this.lblProductName.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblProductName.Location = new System.Drawing.Point(70, 27);
-            this.lblProductName.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblProductName.Name = "lblProductName";
-            this.lblProductName.Size = new System.Drawing.Size(51, 19);
-            this.lblProductName.TabIndex = 11;
-            this.lblProductName.Text = "(name)";
+            lblProductName.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lblProductName.Location = new Point(70, 13);
+            lblProductName.Margin = new Padding(1, 0, 1, 0);
+            lblProductName.Name = "lblProductName";
+            lblProductName.Size = new Size(207, 55);
+            lblProductName.TabIndex = 11;
+            lblProductName.Text = "(name)";
             // 
             // pbProductImage
             // 
-            this.pbProductImage.BackColor = System.Drawing.SystemColors.Control;
-            this.pbProductImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbProductImage.Location = new System.Drawing.Point(4, 5);
-            this.pbProductImage.Margin = new System.Windows.Forms.Padding(1);
-            this.pbProductImage.Name = "pbProductImage";
-            this.pbProductImage.Size = new System.Drawing.Size(64, 63);
-            this.pbProductImage.TabIndex = 10;
-            this.pbProductImage.TabStop = false;
+            pbProductImage.BackColor = SystemColors.Control;
+            pbProductImage.BackgroundImageLayout = ImageLayout.Stretch;
+            pbProductImage.Location = new Point(4, 5);
+            pbProductImage.Margin = new Padding(1);
+            pbProductImage.Name = "pbProductImage";
+            pbProductImage.Size = new Size(64, 63);
+            pbProductImage.TabIndex = 10;
+            pbProductImage.TabStop = false;
             // 
             // lblOldPrice
             // 
-            this.lblOldPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point);
-            this.lblOldPrice.Location = new System.Drawing.Point(580, 36);
-            this.lblOldPrice.Name = "lblOldPrice";
-            this.lblOldPrice.Size = new System.Drawing.Size(111, 22);
-            this.lblOldPrice.TabIndex = 63;
-            this.lblOldPrice.Text = "Old price";
-            this.lblOldPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblOldPrice.Font = new Font("Segoe UI", 12F, FontStyle.Strikeout, GraphicsUnit.Point);
+            lblOldPrice.Location = new Point(565, 29);
+            lblOldPrice.Name = "lblOldPrice";
+            lblOldPrice.Size = new Size(111, 22);
+            lblOldPrice.TabIndex = 63;
+            lblOldPrice.Text = "Old price";
+            lblOldPrice.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblCondition
             // 
-            this.lblCondition.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCondition.Location = new System.Drawing.Point(393, 34);
-            this.lblCondition.Name = "lblCondition";
-            this.lblCondition.Size = new System.Drawing.Size(134, 51);
-            this.lblCondition.TabIndex = 62;
-            this.lblCondition.Text = "condition of product";
+            lblCondition.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCondition.Location = new Point(307, 26);
+            lblCondition.Name = "lblCondition";
+            lblCondition.Size = new Size(152, 61);
+            lblCondition.TabIndex = 62;
+            lblCondition.Text = "condition of product";
             // 
             // UCProductInCheckOut
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Controls.Add(this.lblPrice);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lblOldPrice);
-            this.Controls.Add(this.lblCondition);
-            this.Margin = new System.Windows.Forms.Padding(0);
-            this.Name = "UCProductInCheckOut";
-            this.Size = new System.Drawing.Size(713, 126);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbProductImage)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(224, 224, 224);
+            BorderStyle = BorderStyle.FixedSingle;
+            Controls.Add(lblPrice);
+            Controls.Add(panel1);
+            Controls.Add(lblOldPrice);
+            Controls.Add(lblCondition);
+            Margin = new Padding(0);
+            Name = "UCProductInCheckOut";
+            Size = new Size(713, 126);
+            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pbProductImage).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion

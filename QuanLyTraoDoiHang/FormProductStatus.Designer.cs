@@ -39,22 +39,22 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
-            this.btnUpdate.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
-            this.btnUpdate.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnUpdate.BorderRadius = 35;
-            this.btnUpdate.BorderSize = 0;
-            this.btnUpdate.FlatAppearance.BorderSize = 0;
-            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(295, 379);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(168, 41);
-            this.btnUpdate.TabIndex = 28;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.TextColor = System.Drawing.Color.White;
-            this.btnUpdate.UseVisualStyleBackColor = false;
+            btnUpdate.BackColor = Color.FromArgb(30, 106, 17);
+            btnUpdate.BackgroundColor = Color.FromArgb(30, 106, 17);
+            btnUpdate.BorderColor = Color.PaleVioletRed;
+            btnUpdate.BorderRadius = 35;
+            btnUpdate.BorderSize = 0;
+            btnUpdate.FlatAppearance.BorderSize = 0;
+            btnUpdate.FlatStyle = FlatStyle.Flat;
+            btnUpdate.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnUpdate.ForeColor = Color.White;
+            btnUpdate.Location = new Point(307, 438);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new Size(168, 41);
+            btnUpdate.TabIndex = 28;
+            btnUpdate.Text = "Update";
+            btnUpdate.TextColor = Color.White;
+            btnUpdate.UseVisualStyleBackColor = false;
             // 
             // pnlItems
             // 
@@ -68,12 +68,12 @@
             // 
             // pnlMenu
             // 
-            this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
-            this.pnlMenu.Location = new System.Drawing.Point(10, 10);
-            this.pnlMenu.Margin = new System.Windows.Forms.Padding(1);
-            this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(725, 32);
-            this.pnlMenu.TabIndex = 26;
+            pnlMenu.BackColor = Color.FromArgb(30, 106, 17);
+            pnlMenu.Location = new Point(16, 10);
+            pnlMenu.Margin = new Padding(1);
+            pnlMenu.Name = "pnlMenu";
+            pnlMenu.Size = new Size(725, 32);
+            pnlMenu.TabIndex = 26;
             // 
             // picEmpty
             // 
