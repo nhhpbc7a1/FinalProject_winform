@@ -61,7 +61,7 @@ namespace QuanLyTraoDoiHang
 
         private void CheckChoose_Click(object? sender, EventArgs e)
         {
-            
+
             foreach (ucReceiveAddressItem x in pnlAddresses.Controls)
             {
                 if (x.checkChoose.Checked == true && x.indexChoose != this.indexChoose)
@@ -73,7 +73,27 @@ namespace QuanLyTraoDoiHang
             foreach (ucReceiveAddressItem x in pnlAddresses.Controls)
                 if (x.indexChoose != indexChoose)
                     x.checkChoose.Checked = false;
-                    
+
+        }
+
+        private void rButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void FormReceiveAddress_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDeliverAdress_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

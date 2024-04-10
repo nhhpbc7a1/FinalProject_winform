@@ -17,22 +17,10 @@ namespace QuanLyTraoDoiHang
             InitializeComponent();
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void btnCart_Click(object sender, EventArgs e)
         {
             Program.mainpage.OpenChildForm(new FormCart());
             this.Close();
-        }
-
-        private void btnHome_Click(object sender, EventArgs e)
-        {
-            Program.mainpage.OpenChildForm(new FormProduct());
-            this.Close();
-
         }
 
         private void btnMyPurchases_Click(object sender, EventArgs e)
@@ -40,6 +28,18 @@ namespace QuanLyTraoDoiHang
             PersonalInfor p = new PersonalInfor();
             p.OpenChildForm(new ViewHistory());
             Program.mainpage.OpenChildForm(p);
+            this.Close();
+
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnHome_Click_1(object sender, EventArgs e)
+        {
+            Program.mainpage.OpenChildForm(new FormProduct());
             this.Close();
 
         }

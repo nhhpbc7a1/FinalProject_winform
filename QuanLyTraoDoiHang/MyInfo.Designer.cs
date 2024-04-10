@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyInfo));
             panel3 = new Panel();
+            panel2 = new Panel();
             label2 = new Label();
             flowLayoutPanel1 = new FlowLayoutPanel();
             radioBtnFemale = new RadioButton();
@@ -52,7 +53,6 @@
             rButton6 = new RJControls.RButton();
             rButton7 = new RJControls.RButton();
             panel1 = new Panel();
-            panel2 = new Panel();
             panel3.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
             flowLayoutPanel3.SuspendLayout();
@@ -70,6 +70,15 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(642, 72);
             panel3.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.Black;
+            panel2.Dock = DockStyle.Bottom;
+            panel2.Location = new Point(0, 69);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(642, 3);
+            panel2.TabIndex = 5;
             // 
             // label2
             // 
@@ -203,7 +212,7 @@
             btnSave.FlatStyle = FlatStyle.Flat;
             btnSave.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnSave.ForeColor = Color.White;
-            btnSave.Location = new Point(191, 441);
+            btnSave.Location = new Point(190, 425);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(277, 42);
             btnSave.TabIndex = 9;
@@ -393,17 +402,8 @@
             panel1.Controls.Add(flowLayoutPanel3);
             panel1.Location = new Point(12, 72);
             panel1.Name = "panel1";
-            panel1.Size = new Size(618, 360);
+            panel1.Size = new Size(618, 347);
             panel1.TabIndex = 14;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.Black;
-            panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 69);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(642, 3);
-            panel2.TabIndex = 5;
             // 
             // MyInfo
             // 

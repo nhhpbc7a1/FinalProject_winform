@@ -30,5 +30,15 @@ namespace QuanLyTraoDoiHang
         {
             comboBoxShippingMethod.SelectedIndex = 0;
         }
+
+        private void ucCartEachShop1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
