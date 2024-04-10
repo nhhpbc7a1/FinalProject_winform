@@ -36,7 +36,7 @@ namespace QuanLyTraoDoiHang
                 {
                     OrderTable x = new OrderTable(Program.currentUserId, ucShop.shopInfo.userId, currentReceiveInfo.receiveId,DateTime.Now,ucShop.txtNote.Text, ucShop.comboBoxShippingMethod.Text, Convert.ToInt32(ucShop.lblShippingFee.Text),"","waiting");
                     OrderTableDAO.Add(x);
-                    foreach (UCProductInCheckOut ucProduct in ucShop.ucCartEachShop1.pnlProducts.Controls)
+                    foreach (ucItemsInCheckOut ucProduct in ucShop.ucCartEachShop1.pnlProducts.Controls)
                     {
                         OrderItemDAO.Add(new OrderItem(x.orderId, ucProduct.product.productId));
                     }
@@ -73,7 +73,7 @@ namespace QuanLyTraoDoiHang
                     for (int j = i; j < listProducts.Count; j++)
                     {
                         if (listProducts[j].sellerId != product.sellerId) continue;
-                        UCProductInCheckOut y = new UCProductInCheckOut(listProducts[j]);
+                        ucItemsInCheckOut y = new ucItemsInCheckOut(listProducts[j]);
                         x.ucCartEachShop1.pnlProducts.Controls.Add(y);
                     }
                     x.comboBoxShippingMethod.SelectedIndexChanged += ComboBoxShippingMethod_SelectedIndexChanged;
@@ -95,7 +95,7 @@ namespace QuanLyTraoDoiHang
             foreach (UCCheckOutEachShop x in pnlProducts.Controls)
             {
                 totalShip += Convert.ToInt32(x.lblShippingFee.Text);
-                foreach (UCProductInCheckOut y in x.ucCartEachShop1.pnlProducts.Controls)
+                foreach (ucItemsInCheckOut y in x.ucCartEachShop1.pnlProducts.Controls)
                 {
                     totalProductPrice += Convert.ToInt32(y.lblPrice.Text);
                 }
@@ -103,6 +103,7 @@ namespace QuanLyTraoDoiHang
             lblTotalProductPrice.Text = totalProductPrice.ToString();
             lblTotalShippingFee.Text = totalShip.ToString();
             lblTotalPrice.Text = (totalShip + totalProductPrice).ToString();
+            
         }
 
     }

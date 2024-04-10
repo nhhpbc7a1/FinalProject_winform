@@ -35,5 +35,9 @@ namespace QuanLyTraoDoiHang
             lblOldPrice.Text = product.originalPrice.ToString();
         }
 
+        private void UCProductInCart_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

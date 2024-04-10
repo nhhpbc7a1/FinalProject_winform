@@ -34,7 +34,7 @@
             panel1 = new Panel();
             label7 = new Label();
             label6 = new Label();
-            label5 = new Label();
+            lblItemNo = new Label();
             label4 = new Label();
             label3 = new Label();
             comboBoxShippingMethod = new ComboBox();
@@ -49,8 +49,7 @@
             // 
             // panel3
             // 
-            panel3.BackColor = Color.White;
-            panel3.BorderStyle = BorderStyle.FixedSingle;
+            panel3.BackColor = Color.WhiteSmoke;
             panel3.Controls.Add(label2);
             panel3.Controls.Add(label1);
             panel3.Controls.Add(panel1);
@@ -91,15 +90,16 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(101, 183, 65);
+            panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(label7);
             panel1.Controls.Add(label6);
-            panel1.Controls.Add(label5);
+            panel1.Controls.Add(lblItemNo);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label3);
             panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(0, 66);
+            panel1.Location = new Point(0, 68);
             panel1.Name = "panel1";
-            panel1.Size = new Size(713, 60);
+            panel1.Size = new Size(715, 60);
             panel1.TabIndex = 8;
             // 
             // label7
@@ -125,15 +125,15 @@
             label6.Text = "54220000";
             label6.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label5
+            // lblItemNo
             // 
-            label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.ForeColor = Color.White;
-            label5.Location = new Point(103, 18);
-            label5.Name = "label5";
-            label5.Size = new Size(28, 21);
-            label5.TabIndex = 9;
-            label5.Text = "10";
+            lblItemNo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblItemNo.ForeColor = Color.White;
+            lblItemNo.Location = new Point(103, 18);
+            lblItemNo.Name = "lblItemNo";
+            lblItemNo.Size = new Size(28, 21);
+            lblItemNo.TabIndex = 9;
+            lblItemNo.Text = "10";
             // 
             // label4
             // 
@@ -159,11 +159,12 @@
             // 
             // comboBoxShippingMethod
             // 
+            comboBoxShippingMethod.BackColor = Color.WhiteSmoke;
             comboBoxShippingMethod.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxShippingMethod.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             comboBoxShippingMethod.FormattingEnabled = true;
             comboBoxShippingMethod.Items.AddRange(new object[] { "Standard", "Fast" });
-            comboBoxShippingMethod.Location = new Point(419, 12);
+            comboBoxShippingMethod.Location = new Point(351, 15);
             comboBoxShippingMethod.Name = "comboBoxShippingMethod";
             comboBoxShippingMethod.Size = new Size(101, 29);
             comboBoxShippingMethod.TabIndex = 7;
@@ -185,7 +186,7 @@
             lblShippingType.AutoSize = true;
             lblShippingType.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblShippingType.ForeColor = Color.Black;
-            lblShippingType.Location = new Point(289, 15);
+            lblShippingType.Location = new Point(221, 15);
             lblShippingType.Name = "lblShippingType";
             lblShippingType.Size = new Size(124, 21);
             lblShippingType.TabIndex = 6;
@@ -193,6 +194,7 @@
             // 
             // txtNote
             // 
+            txtNote.BackColor = Color.WhiteSmoke;
             txtNote.BorderStyle = BorderStyle.None;
             txtNote.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtNote.ForeColor = SystemColors.WindowFrame;
@@ -200,7 +202,7 @@
             txtNote.Multiline = true;
             txtNote.Name = "txtNote";
             txtNote.PlaceholderText = "Note for seller";
-            txtNote.Size = new Size(198, 41);
+            txtNote.Size = new Size(152, 41);
             txtNote.TabIndex = 5;
             txtNote.TabStop = false;
             // 
@@ -236,7 +238,7 @@
             BackColor = Color.White;
             Controls.Add(ucCartEachShop1);
             Controls.Add(panel3);
-            Margin = new Padding(3, 3, 3, 6);
+            Margin = new Padding(2, 3, 3, 6);
             MaximumSize = new Size(715, 10000);
             MinimumSize = new Size(715, 250);
             Name = "UCCheckOutEachShop";
@@ -261,7 +263,7 @@
         public Label label2;
         public Label label1;
         private Label label3;
-        private Label label5;
+        private Label lblItemNo;
         private Label label4;
         public Label label7;
         public Label label6;

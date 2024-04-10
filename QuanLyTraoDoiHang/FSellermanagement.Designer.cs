@@ -74,11 +74,11 @@ namespace QuanLyTraoDoiHang
             pnlSellerTool.Controls.Add(btnUpdate);
             pnlSellerTool.Controls.Add(pnlItems);
             pnlSellerTool.Controls.Add(pnlMenu);
-            pnlSellerTool.Location = new Point(216, 90);
+            pnlSellerTool.Location = new Point(216, 57);
             pnlSellerTool.Margin = new Padding(1);
             pnlSellerTool.Name = "pnlSellerTool";
             pnlSellerTool.RightToLeft = RightToLeft.Yes;
-            pnlSellerTool.Size = new Size(758, 465);
+            pnlSellerTool.Size = new Size(758, 494);
             pnlSellerTool.TabIndex = 2;
             // 
             // btnUpdate
@@ -92,7 +92,7 @@ namespace QuanLyTraoDoiHang
             btnUpdate.FlatStyle = FlatStyle.Flat;
             btnUpdate.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnUpdate.ForeColor = Color.White;
-            btnUpdate.Location = new Point(301, 410);
+            btnUpdate.Location = new Point(309, 436);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(168, 40);
             btnUpdate.TabIndex = 22;
@@ -106,14 +106,13 @@ namespace QuanLyTraoDoiHang
             pnlItems.AutoScroll = true;
             pnlItems.BackColor = SystemColors.ControlLight;
             pnlItems.Controls.Add(picEmpty);
-            pnlItems.Location = new Point(16, 59);
+            pnlItems.Location = new Point(16, 42);
             pnlItems.Name = "pnlItems";
-            pnlItems.Size = new Size(725, 336);
+            pnlItems.Size = new Size(725, 375);
             pnlItems.TabIndex = 21;
             // 
             // picEmpty
             // 
-            picEmpty.BackgroundImage = (Image)resources.GetObject("picEmpty.BackgroundImage");
             picEmpty.Location = new Point(315, 120);
             picEmpty.Margin = new Padding(310, 120, 3, 3);
             picEmpty.Name = "picEmpty";
@@ -124,8 +123,8 @@ namespace QuanLyTraoDoiHang
             // 
             // pnlMenu
             // 
-            pnlMenu.BackColor = Color.FromArgb(30, 106, 17);
-            pnlMenu.Location = new Point(16, 24);
+            pnlMenu.BackColor = Color.FromArgb(101, 183, 65);
+            pnlMenu.Location = new Point(16, 10);
             pnlMenu.Margin = new Padding(1);
             pnlMenu.Name = "pnlMenu";
             pnlMenu.Size = new Size(725, 31);
@@ -402,14 +401,14 @@ namespace QuanLyTraoDoiHang
             panel3.Controls.Add(lblContent);
             panel3.Location = new Point(216, 6);
             panel3.Name = "panel3";
-            panel3.Size = new Size(758, 85);
+            panel3.Size = new Size(758, 51);
             panel3.TabIndex = 8;
             // 
             // lblContent
             // 
-            lblContent.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblContent.ForeColor = Color.Black;
-            lblContent.Location = new Point(16, 26);
+            lblContent.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblContent.ForeColor = Color.FromArgb(30, 106, 17);
+            lblContent.Location = new Point(16, 3);
             lblContent.Name = "lblContent";
             lblContent.Size = new Size(240, 40);
             lblContent.TabIndex = 59;

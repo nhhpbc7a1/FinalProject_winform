@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace QuanLyTraoDoiHang
 {
-    public partial class UCProductInCheckOut : UserControl
+    public partial class ucItemsInCheckOut : UserControl
     {
         public Product product; 
-        public UCProductInCheckOut(Product product)
+        public ucItemsInCheckOut(Product product)
         {
             InitializeComponent();
             this.product = product;
