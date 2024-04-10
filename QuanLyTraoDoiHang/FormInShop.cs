@@ -34,6 +34,12 @@ namespace QuanLyTraoDoiHang
         private void BtnViewRating_Click(object? sender, EventArgs e)
         {
             pnlItems.Controls.Clear();
+            foreach (DataRow row in ratings.Rows)
+            {
+                Rating x = RatingDAO.RowToRating(row);
+                pnlItems.Controls.Add(new UCRatingInShop(x));
+            }
+
         }
 
         private void BtnViewProducts_Click(object? sender, EventArgs e)

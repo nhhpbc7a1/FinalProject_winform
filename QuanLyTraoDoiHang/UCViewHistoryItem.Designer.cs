@@ -34,6 +34,7 @@
             this.lblCondition = new System.Windows.Forms.Label();
             this.lblPrice = new System.Windows.Forms.Label();
             this.lblOriginPrice = new System.Windows.Forms.Label();
+            this.btnRating = new QuanLyTraoDoiHang.RJControls.RButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picItems)).BeginInit();
             this.SuspendLayout();
@@ -102,16 +103,36 @@
             this.lblOriginPrice.TabIndex = 59;
             this.lblOriginPrice.Text = "10000";
             // 
-            // UCProductStatusItem
+            // btnRating
+            // 
+            this.btnRating.BackColor = System.Drawing.Color.LightCoral;
+            this.btnRating.BackgroundColor = System.Drawing.Color.LightCoral;
+            this.btnRating.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnRating.BorderRadius = 20;
+            this.btnRating.BorderSize = 0;
+            this.btnRating.FlatAppearance.BorderSize = 0;
+            this.btnRating.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRating.ForeColor = System.Drawing.Color.White;
+            this.btnRating.Location = new System.Drawing.Point(401, 79);
+            this.btnRating.Name = "btnRating";
+            this.btnRating.Size = new System.Drawing.Size(150, 40);
+            this.btnRating.TabIndex = 60;
+            this.btnRating.Text = "Rating";
+            this.btnRating.TextColor = System.Drawing.Color.White;
+            this.btnRating.UseVisualStyleBackColor = false;
+            this.btnRating.Visible = false;
+            // 
+            // UCViewHistoryItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
+            this.Controls.Add(this.btnRating);
             this.Controls.Add(this.lblOriginPrice);
             this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.lblCondition);
             this.Controls.Add(this.panel1);
-            this.Name = "UCProductStatusItem";
+            this.Name = "UCViewHistoryItem";
             this.Size = new System.Drawing.Size(618, 128);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picItems)).EndInit();
@@ -127,5 +148,6 @@
         public Label lblCondition;
         public Label lblPrice;
         public Label lblOriginPrice;
+        private RJControls.RButton btnRating;
     }
 }
