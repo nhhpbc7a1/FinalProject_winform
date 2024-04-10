@@ -36,6 +36,11 @@ namespace QuanLyTraoDoiHang
                         pnlItems.Controls.Add(item);
                     }
             }
+            if (pnlItems.Controls.Count == 0)
+            {
+               pnlItems.Controls.Add(picEmpty);
+
+            }
             btnUpdate.Click += BtnUpdate_Click;
         }
 
