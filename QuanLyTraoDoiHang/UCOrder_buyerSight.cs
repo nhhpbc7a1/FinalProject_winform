@@ -21,6 +21,13 @@ namespace QuanLyTraoDoiHang
             this.order = order;
             this.Load += UcOrder_Load;
             cbxStatus.TextChanged += CbxStatus_TextChanged;
+            btnViewShop.Click += BtnViewShop_Click1;
+        }
+
+        private void BtnViewShop_Click1(object? sender, EventArgs e)
+        {
+            Form x = new FormInShop(UserDAO.SelectByUserId(order.sellerId));
+            x.ShowDialog();
         }
 
         private void BtnViewShop_Click(object? sender, EventArgs e)
@@ -56,14 +63,5 @@ namespace QuanLyTraoDoiHang
             lblTotalPrice.Text = (total + order.shippingFee).ToString();
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnViewShop_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
