@@ -14,6 +14,7 @@ namespace QuanLyTraoDoiHang
     {
         public List<Product> listProducts = new List<Product>();
         public static ReceiveInfo currentReceiveInfo = null;
+        int totalPrice = 0;
 
         public FCheckOut(List<Product> listProducts)
         {
@@ -22,8 +23,9 @@ namespace QuanLyTraoDoiHang
             Load += FCheckOut_Load;
             this.listProducts = listProducts;
             btnChangeReceiveInfo.Click += BtnChangeReceiveInfo_Click;
-            if (ReceiveInfoDAO.SelectByUserId(Program.currentUserId).Rows.Count > 0)
-                currentReceiveInfo = ReceiveInfoDAO.RowToReceiveInfo(ReceiveInfoDAO.Load().Rows[0]);
+            DataTable x = ReceiveInfoDAO.SelectByUserId(Program.currentUserId);
+            if (x.Rows.Count > 0)
+                currentReceiveInfo = ReceiveInfoDAO.RowToReceiveInfo(x.Rows[0]);
 
             btnCheckOut.Click += BtnCheckOut_Click;
         }
@@ -42,7 +44,7 @@ namespace QuanLyTraoDoiHang
                     }
                 }
                 CartItemDAO.DeleteProductBeOrdered();
-                FPurchaseDone fPurchaseDone = new FPurchaseDone();
+                FPurchaseDone fPurchaseDone = new FPurchaseDone(totalPrice);
                 fPurchaseDone.ShowDialog();
             }
             
@@ -69,16 +71,22 @@ namespace QuanLyTraoDoiHang
                     UCCheckOutEachShop x = new UCCheckOutEachShop(UserDAO.SelectByUserId(product.sellerId));
                     x.ucCartEachShop1.seller = UserDAO.SelectByUserId(product.sellerId);
                     x.ucCartEachShop1.cbShop.Visible = false;
+                    int cnt = 0;
+                    int totalPriceThisShop = 0;
 
                     for (int j = i; j < listProducts.Count; j++)
                     {
                         if (listProducts[j].sellerId != product.sellerId) continue;
                         ucItemsInCheckOut y = new ucItemsInCheckOut(listProducts[j]);
                         x.ucCartEachShop1.pnlProducts.Controls.Add(y);
+                        totalPriceThisShop += product.price;
+                        cnt++;
                     }
                     x.comboBoxShippingMethod.SelectedIndexChanged += ComboBoxShippingMethod_SelectedIndexChanged;
+                    totalPriceThisShop += Convert.ToInt32(x.lblShippingFee.Text);
+                    x.lblItemNo.Text = cnt.ToString();
+                    x.lblTotalPriceThisShop.Text = totalPriceThisShop.ToString();
                     pnlProducts.Controls.Add(x);
-
                 }
             }
             if (currentReceiveInfo != null)
@@ -91,19 +99,23 @@ namespace QuanLyTraoDoiHang
 
         private void ComboBoxShippingMethod_SelectedIndexChanged(object? sender, EventArgs e)
         {
-            int totalShip = 0, totalProductPrice = 0;
+            int totalShip = 0,totalProductPrice = 0;
             foreach (UCCheckOutEachShop x in pnlProducts.Controls)
             {
                 totalShip += Convert.ToInt32(x.lblShippingFee.Text);
+                int totalPriceThisShop = 0;
                 foreach (ucItemsInCheckOut y in x.ucCartEachShop1.pnlProducts.Controls)
                 {
                     totalProductPrice += Convert.ToInt32(y.lblPrice.Text);
+                    totalPriceThisShop += y.product.price;
                 }
+                totalPriceThisShop += Convert.ToInt32(x.lblShippingFee.Text);
+                x.lblTotalPriceThisShop.Text = totalPriceThisShop.ToString();
             }
             lblTotalProductPrice.Text = totalProductPrice.ToString();
             lblTotalShippingFee.Text = totalShip.ToString();
             lblTotalPrice.Text = (totalShip + totalProductPrice).ToString();
-            
+            totalPrice = totalShip + totalProductPrice;
         }
 
     }

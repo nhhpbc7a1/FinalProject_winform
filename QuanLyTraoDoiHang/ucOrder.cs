@@ -55,6 +55,7 @@ namespace QuanLyTraoDoiHang
             lblItemsQuantity.Text = productList.Rows.Count.ToString();
             lblTotalPrice.Text = (total + order.shippingFee).ToString();
         }
+
     }
 }
 

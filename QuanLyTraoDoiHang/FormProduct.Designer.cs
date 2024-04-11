@@ -96,7 +96,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
             this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.label1);
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
@@ -113,7 +113,7 @@
             this.panel8.Location = new System.Drawing.Point(0, 46);
             this.panel8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(680, 10);
+            this.panel8.Size = new System.Drawing.Size(680, 5);
             this.panel8.TabIndex = 62;
             // 
             // label1
@@ -186,9 +186,9 @@
             // 
             // btnApply
             // 
-            this.btnApply.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
-            this.btnApply.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
-            this.btnApply.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(106)))), ((int)(((byte)(17)))));
+            this.btnApply.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
+            this.btnApply.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
+            this.btnApply.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
             this.btnApply.BorderRadius = 25;
             this.btnApply.BorderSize = 2;
             this.btnApply.FlatAppearance.BorderSize = 0;
@@ -198,7 +198,7 @@
             this.btnApply.Location = new System.Drawing.Point(17, 88);
             this.btnApply.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnApply.Name = "btnApply";
-            this.btnApply.Size = new System.Drawing.Size(187, 34);
+            this.btnApply.Size = new System.Drawing.Size(187, 51);
             this.btnApply.TabIndex = 54;
             this.btnApply.Text = "Apply";
             this.btnApply.TextColor = System.Drawing.Color.White;
@@ -389,7 +389,17 @@
             "Car",
             "tai nghe",
             "Moc Khoa",
-            "Album"});
+            "Album",
+            "Clothes",
+            "Furnitures",
+            "Electronic Devices",
+            "Mini Models",
+            "Stationeries",
+            "Decorations",
+            "Books",
+            "Robot Toys",
+            "Accessories",
+            "Cosmetics"});
             this.cbCategory.Location = new System.Drawing.Point(17, 135);
             this.cbCategory.Name = "cbCategory";
             this.cbCategory.Size = new System.Drawing.Size(172, 28);

@@ -20,7 +20,7 @@ namespace QuanLyTraoDoiHang
             picboxProduct.Click += picboxProduct_Click;
             lblAddPhoto.Click += lblAddPhoto_Click;
             btnSave.Click += btnSave_Click;
-
+            btnDeliverAdress.Click += btnDeliverAdress_Click; 
             //picboxProduct.BackgroundImage = Properties.Resources.empty_product;
         }
         Product product = null;

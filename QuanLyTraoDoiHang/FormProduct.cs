@@ -210,15 +210,5 @@ namespace QuanLyTraoDoiHang
                 checkListBoxAddress.Items.Add(item, false);
             }
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanelProductList_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

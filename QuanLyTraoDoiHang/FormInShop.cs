@@ -64,5 +64,63 @@ namespace QuanLyTraoDoiHang
                 pnlItems.Controls.Add(new UCProductOnMainpage(x));
             }
         }
+
+        private void btnViewProducts_MouseHover(object sender, EventArgs e)
+        {
+            btnViewProducts.BackColor = Color.FromArgb(229, 228, 131);
+            
+        }
+
+        private void btnViewProducts_MouseEnter(object sender, EventArgs e)
+        {
+            btnViewProducts.BackColor = Color.FromArgb(229, 228, 131);
+
+        }
+
+        private void btnViewProducts_MouseLeave(object sender, EventArgs e)
+        {
+            btnViewProducts.BackColor = Color.FromArgb(101, 183, 65);
+
+        }
+
+        private void btnViewRating_MouseEnter(object sender, EventArgs e)
+        {
+            btnViewRating.BackColor = Color.FromArgb(229, 228, 131);
+        }
+
+        private void btnViewRating_MouseLeave(object sender, EventArgs e)
+        {
+            btnViewRating.BackColor = Color.FromArgb(101, 183, 65);
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            Program.mainpage.OpenChildForm(new FormProduct());
+            this.Close();
+
+        }
+
+        private void FormInShop_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnViewShop_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+
+        //
     }
 }

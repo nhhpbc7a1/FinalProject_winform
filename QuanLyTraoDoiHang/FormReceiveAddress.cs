@@ -12,7 +12,7 @@ namespace QuanLyTraoDoiHang
 {
     public partial class FormReceiveAddress : Form
     {
-        public int indexChoose;
+        public int indexChoose = 0;
         public FormReceiveAddress()
         {
             InitializeComponent();
@@ -55,7 +55,10 @@ namespace QuanLyTraoDoiHang
 
                 x.receiveInfo = info;
                 pnlAddresses.Controls.Add(x);
+
             }
+            indexChoose = 0;
+            CheckChoose_Click(null, null);
         }
 
 

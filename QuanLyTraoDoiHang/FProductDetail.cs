@@ -17,17 +17,23 @@ namespace QuanLyTraoDoiHang
             InitializeComponent();
             btnViewPage.Click += btnViewPage_Click;
             Load += FProductDetail_Load;
+            btnDeliverAdress.Click += btnDeliverAdress_Click;
+            btnAddToCart.Click += BtnAddToCart_Click;
+            btnBuyNow.Click += BtnBuyNow_Click;
         }
 
-        private void lblPrice_Click(object sender, EventArgs e)
+        private void BtnBuyNow_Click(object? sender, EventArgs e)
         {
-
+            CartItem x = new CartItem(Program.currentUserId, currentProduct.productId);
+            CartItemDAO.Add(x);
         }
 
-        private void richTextBoxDescription_TextChanged(object sender, EventArgs e)
+        private void BtnAddToCart_Click(object? sender, EventArgs e)
         {
-
+            CartItem x = new CartItem(Program.currentUserId, currentProduct.productId);
+            CartItemDAO.Add(x);
         }
+
         public Product currentProduct = new Product();
         private void FProductDetail_Load(object sender, EventArgs e)
         {
@@ -60,7 +66,8 @@ namespace QuanLyTraoDoiHang
 
         private void btnDeliverAdress_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Program.mainpage.OpenChildForm(new FormProduct());
         }
+
     }
 }

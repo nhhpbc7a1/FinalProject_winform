@@ -12,9 +12,10 @@ namespace QuanLyTraoDoiHang
 {
     public partial class FPurchaseDone : Form
     {
-        public FPurchaseDone()
+        public FPurchaseDone(int totalPrice)
         {
             InitializeComponent();
+            lblTotalPrice.Text = totalPrice.ToString();
         }
 
         private void btnCart_Click(object sender, EventArgs e)

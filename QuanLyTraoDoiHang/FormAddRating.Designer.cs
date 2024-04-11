@@ -28,269 +28,270 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddRating));
-            panel1 = new Panel();
-            lblProductName = new Label();
-            picProductImage = new PictureBox();
-            panel2 = new Panel();
-            ucStars1 = new UCStars();
-            label1 = new Label();
-            txtDetail = new RichTextBox();
-            panel3 = new Panel();
-            label2 = new Label();
-            btnSubmit = new RJControls.RButton();
-            bindingSource1 = new BindingSource(components);
-            panel4 = new Panel();
-            panel5 = new Panel();
-            btnDeliverAdress = new RJControls.RButton();
-            panel6 = new Panel();
-            panel7 = new Panel();
-            label3 = new Label();
-            panel8 = new Panel();
-            label4 = new Label();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)picProductImage).BeginInit();
-            panel2.SuspendLayout();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
-            panel4.SuspendLayout();
-            panel6.SuspendLayout();
-            panel7.SuspendLayout();
-            panel8.SuspendLayout();
-            SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblProductName = new System.Windows.Forms.Label();
+            this.picProductImage = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.ucStars1 = new QuanLyTraoDoiHang.UCStars();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtDetail = new System.Windows.Forms.RichTextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnSubmit = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btnDeliverAdress = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picProductImage)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.SuspendLayout();
             // 
             // panel1
             // 
-            panel1.Controls.Add(lblProductName);
-            panel1.Controls.Add(picProductImage);
-            panel1.Controls.Add(panel2);
-            panel1.Location = new Point(40, 139);
-            panel1.Margin = new Padding(1);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(515, 143);
-            panel1.TabIndex = 52;
+            this.panel1.Controls.Add(this.lblProductName);
+            this.panel1.Controls.Add(this.picProductImage);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Location = new System.Drawing.Point(40, 139);
+            this.panel1.Margin = new System.Windows.Forms.Padding(1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(515, 143);
+            this.panel1.TabIndex = 52;
             // 
             // lblProductName
             // 
-            lblProductName.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblProductName.Location = new Point(159, 14);
-            lblProductName.Margin = new Padding(1, 0, 1, 0);
-            lblProductName.Name = "lblProductName";
-            lblProductName.Size = new Size(267, 49);
-            lblProductName.TabIndex = 11;
-            lblProductName.Text = "(name)";
+            this.lblProductName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblProductName.Location = new System.Drawing.Point(159, 14);
+            this.lblProductName.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.lblProductName.Name = "lblProductName";
+            this.lblProductName.Size = new System.Drawing.Size(267, 49);
+            this.lblProductName.TabIndex = 11;
+            this.lblProductName.Text = "(name)";
             // 
             // picProductImage
             // 
-            picProductImage.BackColor = SystemColors.Control;
-            picProductImage.BackgroundImageLayout = ImageLayout.Stretch;
-            picProductImage.Location = new Point(0, 1);
-            picProductImage.Margin = new Padding(1);
-            picProductImage.Name = "picProductImage";
-            picProductImage.Size = new Size(155, 142);
-            picProductImage.TabIndex = 10;
-            picProductImage.TabStop = false;
+            this.picProductImage.BackColor = System.Drawing.SystemColors.Control;
+            this.picProductImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picProductImage.Location = new System.Drawing.Point(0, 1);
+            this.picProductImage.Margin = new System.Windows.Forms.Padding(1);
+            this.picProductImage.Name = "picProductImage";
+            this.picProductImage.Size = new System.Drawing.Size(155, 142);
+            this.picProductImage.TabIndex = 10;
+            this.picProductImage.TabStop = false;
             // 
             // panel2
             // 
-            panel2.Controls.Add(ucStars1);
-            panel2.Controls.Add(label1);
-            panel2.Location = new Point(159, 66);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(267, 74);
-            panel2.TabIndex = 57;
+            this.panel2.Controls.Add(this.ucStars1);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(159, 66);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(267, 74);
+            this.panel2.TabIndex = 57;
             // 
             // ucStars1
             // 
-            ucStars1.Location = new Point(4, 33);
-            ucStars1.Name = "ucStars1";
-            ucStars1.Size = new Size(243, 38);
-            ucStars1.TabIndex = 56;
+            this.ucStars1.Location = new System.Drawing.Point(4, 33);
+            this.ucStars1.Name = "ucStars1";
+            this.ucStars1.Size = new System.Drawing.Size(243, 38);
+            this.ucStars1.TabIndex = 56;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(3, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(58, 21);
-            label1.TabIndex = 55;
-            label1.Text = "Points";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(3, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 21);
+            this.label1.TabIndex = 55;
+            this.label1.Text = "Points";
             // 
             // txtDetail
             // 
-            txtDetail.BackColor = SystemColors.ControlLight;
-            txtDetail.BorderStyle = BorderStyle.None;
-            txtDetail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtDetail.ForeColor = Color.Black;
-            txtDetail.Location = new Point(0, 33);
-            txtDetail.Name = "txtDetail";
-            txtDetail.Size = new Size(907, 118);
-            txtDetail.TabIndex = 54;
-            txtDetail.Text = "";
+            this.txtDetail.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.txtDetail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDetail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDetail.ForeColor = System.Drawing.Color.Black;
+            this.txtDetail.Location = new System.Drawing.Point(0, 33);
+            this.txtDetail.Name = "txtDetail";
+            this.txtDetail.Size = new System.Drawing.Size(907, 118);
+            this.txtDetail.TabIndex = 54;
+            this.txtDetail.Text = "";
             // 
             // panel3
             // 
-            panel3.Controls.Add(label2);
-            panel3.Controls.Add(txtDetail);
-            panel3.Location = new Point(40, 377);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(903, 151);
-            panel3.TabIndex = 58;
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.txtDetail);
+            this.panel3.Location = new System.Drawing.Point(40, 377);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(903, 151);
+            this.panel3.TabIndex = 58;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(3, 9);
-            label2.Name = "label2";
-            label2.Size = new Size(56, 21);
-            label2.TabIndex = 55;
-            label2.Text = "Detail";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(3, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 21);
+            this.label2.TabIndex = 55;
+            this.label2.Text = "Detail";
             // 
             // btnSubmit
             // 
-            btnSubmit.BackColor = Color.FromArgb(101, 183, 65);
-            btnSubmit.BackgroundColor = Color.FromArgb(101, 183, 65);
-            btnSubmit.BorderColor = Color.White;
-            btnSubmit.BorderRadius = 10;
-            btnSubmit.BorderSize = 1;
-            btnSubmit.FlatAppearance.BorderSize = 0;
-            btnSubmit.FlatStyle = FlatStyle.Flat;
-            btnSubmit.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSubmit.ForeColor = Color.White;
-            btnSubmit.Location = new Point(370, 20);
-            btnSubmit.Name = "btnSubmit";
-            btnSubmit.Size = new Size(302, 62);
-            btnSubmit.TabIndex = 59;
-            btnSubmit.Text = "Submit";
-            btnSubmit.TextColor = Color.White;
-            btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
+            this.btnSubmit.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
+            this.btnSubmit.BorderColor = System.Drawing.Color.White;
+            this.btnSubmit.BorderRadius = 10;
+            this.btnSubmit.BorderSize = 1;
+            this.btnSubmit.FlatAppearance.BorderSize = 0;
+            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSubmit.ForeColor = System.Drawing.Color.White;
+            this.btnSubmit.Location = new System.Drawing.Point(370, 20);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(302, 62);
+            this.btnSubmit.TabIndex = 59;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.TextColor = System.Drawing.Color.White;
+            this.btnSubmit.UseVisualStyleBackColor = false;
             // 
             // panel4
             // 
-            panel4.Controls.Add(panel5);
-            panel4.Controls.Add(btnDeliverAdress);
-            panel4.Dock = DockStyle.Top;
-            panel4.Location = new Point(0, 0);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(982, 61);
-            panel4.TabIndex = 60;
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Controls.Add(this.btnDeliverAdress);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(982, 61);
+            this.panel4.TabIndex = 60;
             // 
             // panel5
             // 
-            panel5.BackColor = Color.Green;
-            panel5.Dock = DockStyle.Bottom;
-            panel5.Location = new Point(0, 59);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(982, 2);
-            panel5.TabIndex = 1;
+            this.panel5.BackColor = System.Drawing.Color.Green;
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel5.Location = new System.Drawing.Point(0, 59);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(982, 2);
+            this.panel5.TabIndex = 1;
             // 
             // btnDeliverAdress
             // 
-            btnDeliverAdress.BackColor = Color.White;
-            btnDeliverAdress.BackgroundColor = Color.White;
-            btnDeliverAdress.BorderColor = Color.PaleVioletRed;
-            btnDeliverAdress.BorderRadius = 20;
-            btnDeliverAdress.BorderSize = 0;
-            btnDeliverAdress.DialogResult = DialogResult.TryAgain;
-            btnDeliverAdress.FlatAppearance.BorderSize = 0;
-            btnDeliverAdress.FlatStyle = FlatStyle.Flat;
-            btnDeliverAdress.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnDeliverAdress.ForeColor = Color.Black;
-            btnDeliverAdress.Image = (Image)resources.GetObject("btnDeliverAdress.Image");
-            btnDeliverAdress.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDeliverAdress.Location = new Point(3, 12);
-            btnDeliverAdress.Name = "btnDeliverAdress";
-            btnDeliverAdress.Size = new Size(82, 40);
-            btnDeliverAdress.TabIndex = 0;
-            btnDeliverAdress.TextAlign = ContentAlignment.MiddleRight;
-            btnDeliverAdress.TextColor = Color.Black;
-            btnDeliverAdress.UseVisualStyleBackColor = false;
-            btnDeliverAdress.Click += btnDeliverAdress_Click;
+            this.btnDeliverAdress.BackColor = System.Drawing.Color.White;
+            this.btnDeliverAdress.BackgroundColor = System.Drawing.Color.White;
+            this.btnDeliverAdress.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnDeliverAdress.BorderRadius = 20;
+            this.btnDeliverAdress.BorderSize = 0;
+            this.btnDeliverAdress.DialogResult = System.Windows.Forms.DialogResult.TryAgain;
+            this.btnDeliverAdress.FlatAppearance.BorderSize = 0;
+            this.btnDeliverAdress.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeliverAdress.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDeliverAdress.ForeColor = System.Drawing.Color.Black;
+            this.btnDeliverAdress.Image = ((System.Drawing.Image)(resources.GetObject("btnDeliverAdress.Image")));
+            this.btnDeliverAdress.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDeliverAdress.Location = new System.Drawing.Point(3, 12);
+            this.btnDeliverAdress.Name = "btnDeliverAdress";
+            this.btnDeliverAdress.Size = new System.Drawing.Size(192, 40);
+            this.btnDeliverAdress.TabIndex = 0;
+            this.btnDeliverAdress.Text = "Product Rating";
+            this.btnDeliverAdress.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDeliverAdress.TextColor = System.Drawing.Color.Black;
+            this.btnDeliverAdress.UseVisualStyleBackColor = false;
             // 
             // panel6
             // 
-            panel6.BackColor = Color.FromArgb(101, 183, 65);
-            panel6.Controls.Add(btnSubmit);
-            panel6.Dock = DockStyle.Bottom;
-            panel6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            panel6.Location = new Point(0, 567);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(982, 94);
-            panel6.TabIndex = 61;
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
+            this.panel6.Controls.Add(this.btnSubmit);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.panel6.Location = new System.Drawing.Point(0, 567);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(982, 94);
+            this.panel6.TabIndex = 61;
             // 
             // panel7
             // 
-            panel7.BackColor = Color.FromArgb(238, 234, 234);
-            panel7.Controls.Add(label3);
-            panel7.Location = new Point(0, 311);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(982, 38);
-            panel7.TabIndex = 62;
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
+            this.panel7.Controls.Add(this.label3);
+            this.panel7.Location = new System.Drawing.Point(0, 311);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(982, 38);
+            this.panel7.TabIndex = 62;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = SystemColors.ControlDarkDark;
-            label3.Location = new Point(27, 8);
-            label3.Name = "label3";
-            label3.Size = new Size(86, 17);
-            label3.TabIndex = 1;
-            label3.Text = "Detail Rating ";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label3.Location = new System.Drawing.Point(27, 8);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(86, 17);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Detail Rating ";
             // 
             // panel8
             // 
-            panel8.BackColor = Color.FromArgb(238, 234, 234);
-            panel8.Controls.Add(label4);
-            panel8.Location = new Point(0, 62);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(982, 38);
-            panel8.TabIndex = 63;
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
+            this.panel8.Controls.Add(this.label4);
+            this.panel8.Location = new System.Drawing.Point(0, 62);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(982, 38);
+            this.panel8.TabIndex = 63;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = SystemColors.ControlDarkDark;
-            label4.Location = new Point(27, 8);
-            label4.Name = "label4";
-            label4.Size = new Size(95, 17);
-            label4.TabIndex = 1;
-            label4.Text = "Rating by stars";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label4.Location = new System.Drawing.Point(27, 8);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(95, 17);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Rating by stars";
             // 
             // FormAddRating
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            ClientSize = new Size(982, 661);
-            Controls.Add(panel8);
-            Controls.Add(panel7);
-            Controls.Add(panel6);
-            Controls.Add(panel4);
-            Controls.Add(panel1);
-            Controls.Add(panel3);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "FormAddRating";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "FormAddRating";
-            panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)picProductImage).EndInit();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
-            panel4.ResumeLayout(false);
-            panel6.ResumeLayout(false);
-            panel7.ResumeLayout(false);
-            panel7.PerformLayout();
-            panel8.ResumeLayout(false);
-            panel8.PerformLayout();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(982, 661);
+            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "FormAddRating";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FormAddRating";
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picProductImage)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
