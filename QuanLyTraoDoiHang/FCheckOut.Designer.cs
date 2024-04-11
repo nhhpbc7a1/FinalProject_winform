@@ -208,7 +208,7 @@ namespace QuanLyTraoDoiHang
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Underline, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(169, 40);
+            label3.Location = new Point(181, 40);
             label3.Name = "label3";
             label3.RightToLeft = RightToLeft.Yes;
             label3.Size = new Size(19, 21);
@@ -251,7 +251,7 @@ namespace QuanLyTraoDoiHang
             lblTotalProductPrice.AutoSize = true;
             lblTotalProductPrice.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblTotalProductPrice.ForeColor = Color.White;
-            lblTotalProductPrice.Location = new Point(184, 40);
+            lblTotalProductPrice.Location = new Point(200, 40);
             lblTotalProductPrice.Name = "lblTotalProductPrice";
             lblTotalProductPrice.RightToLeft = RightToLeft.Yes;
             lblTotalProductPrice.Size = new Size(70, 21);

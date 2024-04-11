@@ -184,6 +184,7 @@
             Controls.Add(panel3);
             Controls.Add(lblPrice);
             Controls.Add(lblCondition);
+            Margin = new Padding(0, 5, 0, 0);
             Name = "UCManageProduct";
             Size = new Size(723, 150);
             panel3.ResumeLayout(false);

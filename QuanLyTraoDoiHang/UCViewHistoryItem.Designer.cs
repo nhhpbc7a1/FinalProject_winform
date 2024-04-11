@@ -28,117 +28,168 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblProductName = new System.Windows.Forms.Label();
-            this.picItems = new System.Windows.Forms.PictureBox();
-            this.lblCondition = new System.Windows.Forms.Label();
-            this.lblPrice = new System.Windows.Forms.Label();
-            this.lblOriginPrice = new System.Windows.Forms.Label();
-            this.btnRating = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picItems)).BeginInit();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            lblProductName = new Label();
+            picItems = new PictureBox();
+            lblCondition = new Label();
+            lblPrice = new Label();
+            lblOriginPrice = new Label();
+            btnRating = new RJControls.RButton();
+            btnViewShop = new RJControls.RButton();
+            label1 = new Label();
+            label2 = new Label();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picItems).BeginInit();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.lblProductName);
-            this.panel1.Controls.Add(this.picItems);
-            this.panel1.Location = new System.Drawing.Point(28, 8);
-            this.panel1.Margin = new System.Windows.Forms.Padding(1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(285, 74);
-            this.panel1.TabIndex = 51;
+            panel1.Controls.Add(lblProductName);
+            panel1.Controls.Add(picItems);
+            panel1.Location = new Point(14, 29);
+            panel1.Margin = new Padding(1);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(231, 74);
+            panel1.TabIndex = 51;
             // 
             // lblProductName
             // 
-            this.lblProductName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblProductName.Location = new System.Drawing.Point(70, 19);
-            this.lblProductName.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblProductName.Name = "lblProductName";
-            this.lblProductName.Size = new System.Drawing.Size(202, 49);
-            this.lblProductName.TabIndex = 11;
-            this.lblProductName.Text = "(name)";
+            lblProductName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblProductName.Location = new Point(70, 8);
+            lblProductName.Margin = new Padding(1, 0, 1, 0);
+            lblProductName.Name = "lblProductName";
+            lblProductName.Size = new Size(160, 60);
+            lblProductName.TabIndex = 11;
+            lblProductName.Text = "(name)";
             // 
             // picItems
             // 
-            this.picItems.BackColor = System.Drawing.SystemColors.Control;
-            this.picItems.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picItems.Location = new System.Drawing.Point(4, 5);
-            this.picItems.Margin = new System.Windows.Forms.Padding(1);
-            this.picItems.Name = "picItems";
-            this.picItems.Size = new System.Drawing.Size(64, 63);
-            this.picItems.TabIndex = 10;
-            this.picItems.TabStop = false;
+            picItems.BackColor = SystemColors.Control;
+            picItems.BackgroundImageLayout = ImageLayout.Stretch;
+            picItems.Location = new Point(4, 5);
+            picItems.Margin = new Padding(1);
+            picItems.Name = "picItems";
+            picItems.Size = new Size(64, 63);
+            picItems.TabIndex = 10;
+            picItems.TabStop = false;
             // 
             // lblCondition
             // 
-            this.lblCondition.AutoSize = true;
-            this.lblCondition.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCondition.Location = new System.Drawing.Point(335, 27);
-            this.lblCondition.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblCondition.Name = "lblCondition";
-            this.lblCondition.Size = new System.Drawing.Size(78, 21);
-            this.lblCondition.TabIndex = 56;
-            this.lblCondition.Text = "Condition";
+            lblCondition.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCondition.Location = new Point(262, 37);
+            lblCondition.Margin = new Padding(1, 0, 1, 0);
+            lblCondition.Name = "lblCondition";
+            lblCondition.Size = new Size(153, 70);
+            lblCondition.TabIndex = 56;
+            lblCondition.Text = "Condition";
             // 
             // lblPrice
             // 
-            this.lblPrice.AutoSize = true;
-            this.lblPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPrice.Location = new System.Drawing.Point(496, 55);
-            this.lblPrice.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(55, 21);
-            this.lblPrice.TabIndex = 58;
-            this.lblPrice.Text = "10000";
+            lblPrice.AutoSize = true;
+            lblPrice.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblPrice.ForeColor = Color.Red;
+            lblPrice.Location = new Point(465, 63);
+            lblPrice.Margin = new Padding(1, 0, 1, 0);
+            lblPrice.Name = "lblPrice";
+            lblPrice.Size = new Size(52, 21);
+            lblPrice.TabIndex = 58;
+            lblPrice.Text = "10000";
             // 
             // lblOriginPrice
             // 
-            this.lblOriginPrice.AutoSize = true;
-            this.lblOriginPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point);
-            this.lblOriginPrice.Location = new System.Drawing.Point(496, 27);
-            this.lblOriginPrice.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblOriginPrice.Name = "lblOriginPrice";
-            this.lblOriginPrice.Size = new System.Drawing.Size(55, 21);
-            this.lblOriginPrice.TabIndex = 59;
-            this.lblOriginPrice.Text = "10000";
+            lblOriginPrice.AutoSize = true;
+            lblOriginPrice.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Strikeout, GraphicsUnit.Point);
+            lblOriginPrice.Location = new Point(465, 36);
+            lblOriginPrice.Margin = new Padding(1, 0, 1, 0);
+            lblOriginPrice.Name = "lblOriginPrice";
+            lblOriginPrice.Size = new Size(52, 21);
+            lblOriginPrice.TabIndex = 59;
+            lblOriginPrice.Text = "10000";
             // 
             // btnRating
             // 
-            this.btnRating.BackColor = System.Drawing.Color.LightCoral;
-            this.btnRating.BackgroundColor = System.Drawing.Color.LightCoral;
-            this.btnRating.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnRating.BorderRadius = 20;
-            this.btnRating.BorderSize = 0;
-            this.btnRating.FlatAppearance.BorderSize = 0;
-            this.btnRating.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRating.ForeColor = System.Drawing.Color.White;
-            this.btnRating.Location = new System.Drawing.Point(401, 79);
-            this.btnRating.Name = "btnRating";
-            this.btnRating.Size = new System.Drawing.Size(150, 40);
-            this.btnRating.TabIndex = 60;
-            this.btnRating.Text = "Rating";
-            this.btnRating.TextColor = System.Drawing.Color.White;
-            this.btnRating.UseVisualStyleBackColor = false;
-            this.btnRating.Visible = false;
+            btnRating.BackColor = Color.Transparent;
+            btnRating.BackgroundColor = Color.Transparent;
+            btnRating.BorderColor = Color.LightCoral;
+            btnRating.BorderRadius = 10;
+            btnRating.BorderSize = 1;
+            btnRating.FlatAppearance.BorderSize = 0;
+            btnRating.FlatStyle = FlatStyle.Flat;
+            btnRating.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRating.ForeColor = Color.LightCoral;
+            btnRating.Location = new Point(562, 17);
+            btnRating.Name = "btnRating";
+            btnRating.Size = new Size(119, 40);
+            btnRating.TabIndex = 60;
+            btnRating.Text = "Rating";
+            btnRating.TextColor = Color.LightCoral;
+            btnRating.UseVisualStyleBackColor = false;
+            // 
+            // btnViewShop
+            // 
+            btnViewShop.BackColor = Color.LightCoral;
+            btnViewShop.BackgroundColor = Color.LightCoral;
+            btnViewShop.BorderColor = Color.PaleVioletRed;
+            btnViewShop.BorderRadius = 10;
+            btnViewShop.BorderSize = 1;
+            btnViewShop.FlatAppearance.BorderSize = 0;
+            btnViewShop.FlatStyle = FlatStyle.Flat;
+            btnViewShop.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnViewShop.ForeColor = Color.White;
+            btnViewShop.Location = new Point(562, 63);
+            btnViewShop.Name = "btnViewShop";
+            btnViewShop.Size = new Size(119, 40);
+            btnViewShop.TabIndex = 61;
+            btnViewShop.Text = "View shop";
+            btnViewShop.TextColor = Color.White;
+            btnViewShop.UseVisualStyleBackColor = false;
+            btnViewShop.Click += rButton1_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 11.25F, FontStyle.Underline, GraphicsUnit.Point);
+            label1.ForeColor = Color.Red;
+            label1.Location = new Point(451, 64);
+            label1.Margin = new Padding(1, 0, 1, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(18, 20);
+            label1.TabIndex = 67;
+            label1.Text = "đ";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Underline, GraphicsUnit.Point);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(451, 37);
+            label2.Margin = new Padding(1, 0, 1, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(18, 20);
+            label2.TabIndex = 68;
+            label2.Text = "đ";
             // 
             // UCViewHistoryItem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(237)))), ((int)(((byte)(204)))));
-            this.Controls.Add(this.btnRating);
-            this.Controls.Add(this.lblOriginPrice);
-            this.Controls.Add(this.lblPrice);
-            this.Controls.Add(this.lblCondition);
-            this.Controls.Add(this.panel1);
-            this.Name = "UCViewHistoryItem";
-            this.Size = new System.Drawing.Size(618, 128);
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picItems)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ButtonHighlight;
+            BorderStyle = BorderStyle.FixedSingle;
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(btnViewShop);
+            Controls.Add(btnRating);
+            Controls.Add(lblOriginPrice);
+            Controls.Add(lblPrice);
+            Controls.Add(lblCondition);
+            Controls.Add(panel1);
+            Margin = new Padding(0);
+            Name = "UCViewHistoryItem";
+            Size = new Size(723, 126);
+            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)picItems).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -149,5 +200,8 @@
         public Label lblPrice;
         public Label lblOriginPrice;
         private RJControls.RButton btnRating;
+        private RJControls.RButton btnViewShop;
+        public Label label1;
+        public Label label2;
     }
 }

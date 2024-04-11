@@ -78,7 +78,7 @@
             lblPrice.AutoSize = true;
             lblPrice.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblPrice.ForeColor = Color.Red;
-            lblPrice.Location = new Point(554, 48);
+            lblPrice.Location = new Point(628, 63);
             lblPrice.Margin = new Padding(1, 0, 1, 0);
             lblPrice.Name = "lblPrice";
             lblPrice.Size = new Size(52, 21);
@@ -89,7 +89,7 @@
             // 
             lblOriginPrice.AutoSize = true;
             lblOriginPrice.Font = new Font("Segoe UI", 12F, FontStyle.Strikeout, GraphicsUnit.Point);
-            lblOriginPrice.Location = new Point(554, 27);
+            lblOriginPrice.Location = new Point(628, 42);
             lblOriginPrice.Margin = new Padding(1, 0, 1, 0);
             lblOriginPrice.Name = "lblOriginPrice";
             lblOriginPrice.Size = new Size(55, 21);
@@ -101,7 +101,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
             label1.ForeColor = Color.Red;
-            label1.Location = new Point(540, 50);
+            label1.Location = new Point(614, 65);
             label1.Margin = new Padding(1, 0, 1, 0);
             label1.Name = "label1";
             label1.Size = new Size(18, 20);
@@ -112,7 +112,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Underline, GraphicsUnit.Point);
-            label2.Location = new Point(540, 28);
+            label2.Location = new Point(614, 43);
             label2.Margin = new Padding(1, 0, 1, 0);
             label2.Name = "label2";
             label2.Size = new Size(18, 20);
@@ -124,6 +124,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
+            BorderStyle = BorderStyle.FixedSingle;
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(lblProductName);
@@ -131,7 +132,7 @@
             Controls.Add(picItems);
             Controls.Add(lblPrice);
             Controls.Add(lblCondition);
-            Margin = new Padding(0, 0, 0, 5);
+            Margin = new Padding(0);
             Name = "UCProductStatusItem";
             RightToLeft = RightToLeft.No;
             Size = new Size(720, 128);

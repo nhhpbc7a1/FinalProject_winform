@@ -4,7 +4,6 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,7 +16,7 @@ namespace QuanLyTraoDoiHang
         public UCStars()
         {
             InitializeComponent();
-
+            
             pnlRating.Controls.Clear();
             if (numStar >= 1)
                 pnlRating.Controls.Add(picStar1);
@@ -29,9 +28,6 @@ namespace QuanLyTraoDoiHang
                 pnlRating.Controls.Add(picStar4);
             if (numStar >= 5)
                 pnlRating.Controls.Add(picStar5);
-
-            pnlRating.Controls.Add(comboBoxNum);
-            pnlRating.Controls.Add(lblNumStar);
 
             comboBoxNum.SelectedIndex = 4;
 
@@ -53,8 +49,6 @@ namespace QuanLyTraoDoiHang
             if (numStar >= 5)
                 pnlRating.Controls.Add(picStar5);
 
-            pnlRating.Controls.Add(comboBoxNum);
-            pnlRating.Controls.Add(lblNumStar);
 
         }
     }

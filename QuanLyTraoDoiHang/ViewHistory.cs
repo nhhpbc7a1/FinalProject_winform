@@ -118,5 +118,9 @@ namespace QuanLyTraoDoiHang
             pnlItems.Controls.Clear();
         }
 
+        private void pnlItems_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

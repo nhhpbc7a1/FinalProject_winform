@@ -68,7 +68,7 @@
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(642, 72);
+            panel3.Size = new Size(736, 72);
             panel3.TabIndex = 0;
             // 
             // panel2
@@ -77,7 +77,7 @@
             panel2.Dock = DockStyle.Bottom;
             panel2.Location = new Point(0, 69);
             panel2.Name = "panel2";
-            panel2.Size = new Size(642, 3);
+            panel2.Size = new Size(736, 3);
             panel2.TabIndex = 5;
             // 
             // label2
@@ -85,7 +85,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(210, 21);
+            label2.Location = new Point(276, 22);
             label2.Name = "label2";
             label2.Size = new Size(213, 30);
             label2.TabIndex = 3;
@@ -212,7 +212,7 @@
             btnSave.FlatStyle = FlatStyle.Flat;
             btnSave.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnSave.ForeColor = Color.White;
-            btnSave.Location = new Point(190, 425);
+            btnSave.Location = new Point(235, 431);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(277, 42);
             btnSave.TabIndex = 9;
@@ -222,7 +222,7 @@
             // 
             // flowLayoutPanel3
             // 
-            flowLayoutPanel3.BackColor = Color.FromArgb(244, 237, 204);
+            flowLayoutPanel3.BackColor = Color.FromArgb(224, 224, 224);
             flowLayoutPanel3.Controls.Add(txtName);
             flowLayoutPanel3.Controls.Add(txtPersonalID);
             flowLayoutPanel3.Controls.Add(dtBirthday);
@@ -233,7 +233,7 @@
             flowLayoutPanel3.Location = new Point(190, 6);
             flowLayoutPanel3.Margin = new Padding(0);
             flowLayoutPanel3.Name = "flowLayoutPanel3";
-            flowLayoutPanel3.Size = new Size(428, 344);
+            flowLayoutPanel3.Size = new Size(428, 341);
             flowLayoutPanel3.TabIndex = 10;
             // 
             // txtPersonalID
@@ -397,10 +397,10 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(244, 237, 204);
+            panel1.BackColor = Color.FromArgb(224, 224, 224);
             panel1.Controls.Add(flowLayoutPanel4);
             panel1.Controls.Add(flowLayoutPanel3);
-            panel1.Location = new Point(12, 72);
+            panel1.Location = new Point(66, 78);
             panel1.Name = "panel1";
             panel1.Size = new Size(618, 347);
             panel1.TabIndex = 14;
@@ -408,11 +408,12 @@
             // MyInfo
             // 
             AutoScaleMode = AutoScaleMode.None;
-            BackColor = Color.FromArgb(244, 237, 204);
-            ClientSize = new Size(642, 495);
+            BackColor = Color.FromArgb(224, 224, 224);
+            ClientSize = new Size(736, 502);
             Controls.Add(panel1);
             Controls.Add(btnSave);
             Controls.Add(panel3);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "MyInfo";
             Text = "MyInfo";
             panel3.ResumeLayout(false);

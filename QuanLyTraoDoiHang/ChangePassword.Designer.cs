@@ -58,7 +58,7 @@
             panel3.ForeColor = Color.White;
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(642, 72);
+            panel3.Size = new Size(736, 72);
             panel3.TabIndex = 1;
             // 
             // panel4
@@ -67,7 +67,7 @@
             panel4.Dock = DockStyle.Bottom;
             panel4.Location = new Point(0, 69);
             panel4.Name = "panel4";
-            panel4.Size = new Size(642, 3);
+            panel4.Size = new Size(736, 3);
             panel4.TabIndex = 5;
             // 
             // label2
@@ -75,7 +75,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(230, 22);
+            label2.Location = new Point(295, 21);
             label2.Name = "label2";
             label2.Size = new Size(181, 30);
             label2.TabIndex = 2;
@@ -83,7 +83,7 @@
             // 
             // panel2
             // 
-            panel2.BackColor = Color.FromArgb(244, 237, 204);
+            panel2.BackColor = Color.FromArgb(224, 224, 224);
             panel2.Controls.Add(ucReTypePass);
             panel2.Controls.Add(ucNewPass);
             panel2.Controls.Add(ucOldPass);
@@ -93,7 +93,7 @@
             panel2.Controls.Add(rButton2);
             panel2.Controls.Add(panel1);
             panel2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            panel2.Location = new Point(10, 78);
+            panel2.Location = new Point(60, 78);
             panel2.Name = "panel2";
             panel2.Size = new Size(620, 309);
             panel2.TabIndex = 6;
@@ -231,7 +231,7 @@
             btnChangePass.FlatStyle = FlatStyle.Flat;
             btnChangePass.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnChangePass.ForeColor = Color.White;
-            btnChangePass.Location = new Point(166, 415);
+            btnChangePass.Location = new Point(216, 416);
             btnChangePass.Name = "btnChangePass";
             btnChangePass.Size = new Size(326, 42);
             btnChangePass.TabIndex = 10;
@@ -243,11 +243,12 @@
             // ChangePassword
             // 
             AutoScaleMode = AutoScaleMode.None;
-            BackColor = Color.FromArgb(244, 237, 204);
-            ClientSize = new Size(642, 495);
+            BackColor = Color.FromArgb(224, 224, 224);
+            ClientSize = new Size(736, 502);
             Controls.Add(btnChangePass);
             Controls.Add(panel2);
             Controls.Add(panel3);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "ChangePassword";
             Text = "ChangePassword";
             panel3.ResumeLayout(false);

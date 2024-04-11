@@ -51,7 +51,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(101, 183, 65);
+            panel1.BackColor = Color.FromArgb(229, 228, 131);
             panel1.Controls.Add(lblTime);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(lblPhone);
@@ -68,8 +68,8 @@
             // 
             lblTime.AutoSize = true;
             lblTime.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTime.ForeColor = Color.White;
-            lblTime.Location = new Point(522, 20);
+            lblTime.ForeColor = Color.Black;
+            lblTime.Location = new Point(512, 20);
             lblTime.Name = "lblTime";
             lblTime.RightToLeft = RightToLeft.No;
             lblTime.Size = new Size(87, 21);
@@ -80,8 +80,8 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(427, 20);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(417, 20);
             label1.Name = "label1";
             label1.RightToLeft = RightToLeft.No;
             label1.Size = new Size(98, 21);
@@ -91,7 +91,7 @@
             // lblPhone
             // 
             lblPhone.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblPhone.ForeColor = Color.White;
+            lblPhone.ForeColor = Color.Black;
             lblPhone.Image = (Image)resources.GetObject("lblPhone.Image");
             lblPhone.ImageAlign = ContentAlignment.MiddleLeft;
             lblPhone.Location = new Point(217, 20);
@@ -106,7 +106,7 @@
             // 
             lblName.AutoSize = true;
             lblName.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblName.ForeColor = Color.White;
+            lblName.ForeColor = Color.Black;
             lblName.Location = new Point(37, 19);
             lblName.Name = "lblName";
             lblName.RightToLeft = RightToLeft.No;
@@ -130,7 +130,7 @@
             // panel2
             // 
             panel2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            panel2.BackColor = Color.White;
+            panel2.BackColor = Color.FromArgb(101, 183, 65);
             panel2.BorderStyle = BorderStyle.FixedSingle;
             panel2.Controls.Add(label2);
             panel2.Controls.Add(label6);
@@ -151,7 +151,7 @@
             // label2
             // 
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.Black;
+            label2.ForeColor = Color.White;
             label2.Location = new Point(153, 17);
             label2.Name = "label2";
             label2.RightToLeft = RightToLeft.No;
@@ -163,7 +163,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.ForeColor = Color.Black;
+            label6.ForeColor = Color.White;
             label6.Location = new Point(35, 17);
             label6.Name = "label6";
             label6.RightToLeft = RightToLeft.No;
@@ -175,6 +175,7 @@
             // 
             lblItemsQuantity.AutoSize = true;
             lblItemsQuantity.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblItemsQuantity.ForeColor = Color.White;
             lblItemsQuantity.Location = new Point(128, 17);
             lblItemsQuantity.Name = "lblItemsQuantity";
             lblItemsQuantity.RightToLeft = RightToLeft.No;
@@ -186,6 +187,7 @@
             // 
             lblMethod.AutoSize = true;
             lblMethod.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblMethod.ForeColor = Color.White;
             lblMethod.Location = new Point(240, 17);
             lblMethod.Name = "lblMethod";
             lblMethod.RightToLeft = RightToLeft.No;
@@ -197,6 +199,7 @@
             // 
             lblStatus.AutoSize = true;
             lblStatus.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblStatus.ForeColor = Color.White;
             lblStatus.Location = new Point(416, 19);
             lblStatus.Name = "lblStatus";
             lblStatus.Size = new Size(52, 21);
@@ -220,7 +223,7 @@
             // 
             lblTotalPrice.AutoSize = true;
             lblTotalPrice.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTotalPrice.ForeColor = Color.Red;
+            lblTotalPrice.ForeColor = Color.Yellow;
             lblTotalPrice.Location = new Point(628, 31);
             lblTotalPrice.Name = "lblTotalPrice";
             lblTotalPrice.RightToLeft = RightToLeft.No;
@@ -232,7 +235,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
-            label4.ForeColor = Color.Red;
+            label4.ForeColor = Color.Yellow;
             label4.Location = new Point(607, 31);
             label4.Name = "label4";
             label4.RightToLeft = RightToLeft.No;
@@ -244,6 +247,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.White;
             label3.Location = new Point(617, 10);
             label3.Name = "label3";
             label3.Size = new Size(85, 21);
