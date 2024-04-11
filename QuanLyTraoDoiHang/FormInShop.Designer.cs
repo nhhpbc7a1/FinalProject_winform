@@ -29,315 +29,228 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormInShop));
-            pnlThisSellerPage = new Panel();
-            lblDateJoined = new Label();
-            panel6 = new Panel();
-            pictureBox8 = new PictureBox();
-            lblSellerPhone = new Label();
-            lblSellerAddress = new Label();
-            label11 = new Label();
-            pictureBox10 = new PictureBox();
-            lblSellerName = new Label();
-            ptbSellerImage = new PictureBox();
-            pnlRating = new Panel();
-            pictureBox7 = new PictureBox();
-            pictureBox6 = new PictureBox();
-            pictureBox5 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            label8 = new Label();
-            pictureBox3 = new PictureBox();
-            pnlItems = new FlowLayoutPanel();
-            panel1 = new Panel();
-            btnViewRating = new RJControls.RButton();
-            btnViewProducts = new RJControls.RButton();
-            pnlThisSellerPage.SuspendLayout();
-            panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)ptbSellerImage).BeginInit();
-            pnlRating.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            panel1.SuspendLayout();
-            SuspendLayout();
+            this.pnlThisSellerPage = new System.Windows.Forms.Panel();
+            this.lblDateJoined = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.lblSellerPhone = new System.Windows.Forms.Label();
+            this.lblSellerAddress = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.lblSellerName = new System.Windows.Forms.Label();
+            this.ptbSellerImage = new System.Windows.Forms.PictureBox();
+            this.pnlItems = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnViewRating = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.btnViewProducts = new QuanLyTraoDoiHang.RJControls.RButton();
+            this.ucStars1 = new QuanLyTraoDoiHang.UCStars();
+            this.pnlThisSellerPage.SuspendLayout();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbSellerImage)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // pnlThisSellerPage
             // 
-            pnlThisSellerPage.BackColor = Color.White;
-            pnlThisSellerPage.Controls.Add(lblDateJoined);
-            pnlThisSellerPage.Controls.Add(panel6);
-            pnlThisSellerPage.Controls.Add(lblSellerAddress);
-            pnlThisSellerPage.Controls.Add(label11);
-            pnlThisSellerPage.Controls.Add(pictureBox10);
-            pnlThisSellerPage.Controls.Add(lblSellerName);
-            pnlThisSellerPage.Controls.Add(ptbSellerImage);
-            pnlThisSellerPage.Controls.Add(pnlRating);
-            pnlThisSellerPage.ForeColor = SystemColors.ControlDark;
-            pnlThisSellerPage.Location = new Point(29, 70);
-            pnlThisSellerPage.Name = "pnlThisSellerPage";
-            pnlThisSellerPage.Size = new Size(942, 85);
-            pnlThisSellerPage.TabIndex = 4;
+            this.pnlThisSellerPage.BackColor = System.Drawing.Color.White;
+            this.pnlThisSellerPage.Controls.Add(this.ucStars1);
+            this.pnlThisSellerPage.Controls.Add(this.lblDateJoined);
+            this.pnlThisSellerPage.Controls.Add(this.panel6);
+            this.pnlThisSellerPage.Controls.Add(this.lblSellerAddress);
+            this.pnlThisSellerPage.Controls.Add(this.label11);
+            this.pnlThisSellerPage.Controls.Add(this.pictureBox10);
+            this.pnlThisSellerPage.Controls.Add(this.lblSellerName);
+            this.pnlThisSellerPage.Controls.Add(this.ptbSellerImage);
+            this.pnlThisSellerPage.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.pnlThisSellerPage.Location = new System.Drawing.Point(12, 12);
+            this.pnlThisSellerPage.Name = "pnlThisSellerPage";
+            this.pnlThisSellerPage.Size = new System.Drawing.Size(942, 85);
+            this.pnlThisSellerPage.TabIndex = 4;
             // 
             // lblDateJoined
             // 
-            lblDateJoined.AutoSize = true;
-            lblDateJoined.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDateJoined.Location = new Point(543, 38);
-            lblDateJoined.Name = "lblDateJoined";
-            lblDateJoined.Size = new Size(42, 21);
-            lblDateJoined.TabIndex = 19;
-            lblDateJoined.Text = "Date";
+            this.lblDateJoined.AutoSize = true;
+            this.lblDateJoined.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDateJoined.Location = new System.Drawing.Point(543, 38);
+            this.lblDateJoined.Name = "lblDateJoined";
+            this.lblDateJoined.Size = new System.Drawing.Size(42, 21);
+            this.lblDateJoined.TabIndex = 19;
+            this.lblDateJoined.Text = "Date";
             // 
             // panel6
             // 
-            panel6.BackColor = Color.FromArgb(164, 206, 149);
-            panel6.Controls.Add(pictureBox8);
-            panel6.Controls.Add(lblSellerPhone);
-            panel6.Location = new Point(294, 23);
-            panel6.Margin = new Padding(3, 4, 3, 4);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(152, 35);
-            panel6.TabIndex = 13;
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(206)))), ((int)(((byte)(149)))));
+            this.panel6.Controls.Add(this.pictureBox8);
+            this.panel6.Controls.Add(this.lblSellerPhone);
+            this.panel6.Location = new System.Drawing.Point(294, 23);
+            this.panel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(152, 35);
+            this.panel6.TabIndex = 13;
             // 
             // pictureBox8
             // 
-            pictureBox8.BackColor = Color.Transparent;
-            pictureBox8.BackgroundImage = (Image)resources.GetObject("pictureBox8.BackgroundImage");
-            pictureBox8.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox8.Location = new Point(12, 4);
-            pictureBox8.Margin = new Padding(3, 4, 3, 4);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(31, 29);
-            pictureBox8.TabIndex = 2;
-            pictureBox8.TabStop = false;
+            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox8.Location = new System.Drawing.Point(12, 4);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(31, 29);
+            this.pictureBox8.TabIndex = 2;
+            this.pictureBox8.TabStop = false;
             // 
             // lblSellerPhone
             // 
-            lblSellerPhone.Anchor = AnchorStyles.Top;
-            lblSellerPhone.AutoSize = true;
-            lblSellerPhone.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblSellerPhone.ForeColor = Color.White;
-            lblSellerPhone.Location = new Point(49, 9);
-            lblSellerPhone.Name = "lblSellerPhone";
-            lblSellerPhone.Size = new Size(89, 19);
-            lblSellerPhone.TabIndex = 0;
-            lblSellerPhone.Text = "0783701185";
+            this.lblSellerPhone.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblSellerPhone.AutoSize = true;
+            this.lblSellerPhone.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSellerPhone.ForeColor = System.Drawing.Color.White;
+            this.lblSellerPhone.Location = new System.Drawing.Point(49, 9);
+            this.lblSellerPhone.Name = "lblSellerPhone";
+            this.lblSellerPhone.Size = new System.Drawing.Size(89, 19);
+            this.lblSellerPhone.TabIndex = 0;
+            this.lblSellerPhone.Text = "0783701185";
             // 
             // lblSellerAddress
             // 
-            lblSellerAddress.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblSellerAddress.ForeColor = Color.Black;
-            lblSellerAddress.Location = new Point(682, 23);
-            lblSellerAddress.Name = "lblSellerAddress";
-            lblSellerAddress.Size = new Size(191, 52);
-            lblSellerAddress.TabIndex = 18;
-            lblSellerAddress.Text = "Location: Cao Lanh City, Dong Thap, Viet Nam";
+            this.lblSellerAddress.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSellerAddress.ForeColor = System.Drawing.Color.Black;
+            this.lblSellerAddress.Location = new System.Drawing.Point(682, 23);
+            this.lblSellerAddress.Name = "lblSellerAddress";
+            this.lblSellerAddress.Size = new System.Drawing.Size(191, 52);
+            this.lblSellerAddress.TabIndex = 18;
+            this.lblSellerAddress.Text = "Location: Cao Lanh City, Dong Thap, Viet Nam";
             // 
             // label11
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.ForeColor = Color.Black;
-            label11.Location = new Point(487, 17);
-            label11.Name = "label11";
-            label11.Size = new Size(62, 21);
-            label11.TabIndex = 16;
-            label11.Text = "Joined: ";
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(487, 17);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(62, 21);
+            this.label11.TabIndex = 16;
+            this.label11.Text = "Joined: ";
             // 
             // pictureBox10
             // 
-            pictureBox10.BackgroundImage = (Image)resources.GetObject("pictureBox10.BackgroundImage");
-            pictureBox10.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox10.Location = new Point(645, 11);
-            pictureBox10.Margin = new Padding(3, 4, 3, 4);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(31, 27);
-            pictureBox10.TabIndex = 17;
-            pictureBox10.TabStop = false;
+            this.pictureBox10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox10.BackgroundImage")));
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox10.Location = new System.Drawing.Point(645, 11);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(31, 27);
+            this.pictureBox10.TabIndex = 17;
+            this.pictureBox10.TabStop = false;
             // 
             // lblSellerName
             // 
-            lblSellerName.AutoSize = true;
-            lblSellerName.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            lblSellerName.Location = new Point(86, 20);
-            lblSellerName.Name = "lblSellerName";
-            lblSellerName.Size = new Size(130, 20);
-            lblSellerName.TabIndex = 6;
-            lblSellerName.Text = "Hoang Ha Mobile";
+            this.lblSellerName.AutoSize = true;
+            this.lblSellerName.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSellerName.Location = new System.Drawing.Point(86, 20);
+            this.lblSellerName.Name = "lblSellerName";
+            this.lblSellerName.Size = new System.Drawing.Size(130, 20);
+            this.lblSellerName.TabIndex = 6;
+            this.lblSellerName.Text = "Hoang Ha Mobile";
             // 
             // ptbSellerImage
             // 
-            ptbSellerImage.BackgroundImage = (Image)resources.GetObject("ptbSellerImage.BackgroundImage");
-            ptbSellerImage.BackgroundImageLayout = ImageLayout.Stretch;
-            ptbSellerImage.Location = new Point(17, 14);
-            ptbSellerImage.Margin = new Padding(3, 4, 3, 4);
-            ptbSellerImage.Name = "ptbSellerImage";
-            ptbSellerImage.Size = new Size(63, 61);
-            ptbSellerImage.TabIndex = 4;
-            ptbSellerImage.TabStop = false;
-            // 
-            // pnlRating
-            // 
-            pnlRating.Controls.Add(pictureBox7);
-            pnlRating.Controls.Add(pictureBox6);
-            pnlRating.Controls.Add(pictureBox5);
-            pnlRating.Controls.Add(pictureBox4);
-            pnlRating.Controls.Add(label8);
-            pnlRating.Controls.Add(pictureBox3);
-            pnlRating.Location = new Point(86, 44);
-            pnlRating.Margin = new Padding(3, 4, 3, 4);
-            pnlRating.Name = "pnlRating";
-            pnlRating.Size = new Size(180, 31);
-            pnlRating.TabIndex = 5;
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.BackgroundImage = (Image)resources.GetObject("pictureBox7.BackgroundImage");
-            pictureBox7.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox7.Location = new Point(117, 3);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(23, 20);
-            pictureBox7.TabIndex = 7;
-            pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.BackgroundImage = (Image)resources.GetObject("pictureBox6.BackgroundImage");
-            pictureBox6.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox6.Location = new Point(87, 3);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(23, 20);
-            pictureBox6.TabIndex = 6;
-            pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.BackgroundImage = (Image)resources.GetObject("pictureBox5.BackgroundImage");
-            pictureBox5.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox5.Location = new Point(58, 3);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(23, 20);
-            pictureBox5.TabIndex = 6;
-            pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
-            pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox4.Location = new Point(29, 3);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(23, 20);
-            pictureBox4.TabIndex = 5;
-            pictureBox4.TabStop = false;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(145, 3);
-            label8.Name = "label8";
-            label8.Size = new Size(29, 19);
-            label8.TabIndex = 4;
-            label8.Text = "4.6";
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
-            pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox3.Location = new Point(0, 3);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(23, 20);
-            pictureBox3.TabIndex = 1;
-            pictureBox3.TabStop = false;
+            this.ptbSellerImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptbSellerImage.BackgroundImage")));
+            this.ptbSellerImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptbSellerImage.Location = new System.Drawing.Point(17, 14);
+            this.ptbSellerImage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ptbSellerImage.Name = "ptbSellerImage";
+            this.ptbSellerImage.Size = new System.Drawing.Size(63, 61);
+            this.ptbSellerImage.TabIndex = 4;
+            this.ptbSellerImage.TabStop = false;
             // 
             // pnlItems
             // 
-            pnlItems.AutoSize = true;
-            pnlItems.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            pnlItems.Location = new Point(29, 216);
-            pnlItems.MaximumSize = new Size(882, 100000);
-            pnlItems.MinimumSize = new Size(882, 330);
-            pnlItems.Name = "pnlItems";
-            pnlItems.Size = new Size(882, 330);
-            pnlItems.TabIndex = 5;
+            this.pnlItems.AutoSize = true;
+            this.pnlItems.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.pnlItems.Location = new System.Drawing.Point(49, 180);
+            this.pnlItems.MaximumSize = new System.Drawing.Size(882, 100000);
+            this.pnlItems.MinimumSize = new System.Drawing.Size(882, 330);
+            this.pnlItems.Name = "pnlItems";
+            this.pnlItems.Size = new System.Drawing.Size(882, 330);
+            this.pnlItems.TabIndex = 5;
             // 
             // panel1
             // 
-            panel1.Controls.Add(btnViewRating);
-            panel1.Controls.Add(btnViewProducts);
-            panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(0, 590);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(982, 71);
-            panel1.TabIndex = 6;
+            this.panel1.Controls.Add(this.btnViewRating);
+            this.panel1.Controls.Add(this.btnViewProducts);
+            this.panel1.Location = new System.Drawing.Point(12, 103);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(942, 71);
+            this.panel1.TabIndex = 6;
             // 
             // btnViewRating
             // 
-            btnViewRating.BackColor = Color.LightCoral;
-            btnViewRating.BackgroundColor = Color.LightCoral;
-            btnViewRating.BorderColor = Color.PaleVioletRed;
-            btnViewRating.BorderRadius = 20;
-            btnViewRating.BorderSize = 0;
-            btnViewRating.FlatAppearance.BorderSize = 0;
-            btnViewRating.FlatStyle = FlatStyle.Flat;
-            btnViewRating.ForeColor = Color.White;
-            btnViewRating.Location = new Point(487, 14);
-            btnViewRating.Name = "btnViewRating";
-            btnViewRating.Size = new Size(150, 40);
-            btnViewRating.TabIndex = 0;
-            btnViewRating.Text = "View Rating";
-            btnViewRating.TextColor = Color.White;
-            btnViewRating.UseVisualStyleBackColor = false;
+            this.btnViewRating.BackColor = System.Drawing.Color.LightCoral;
+            this.btnViewRating.BackgroundColor = System.Drawing.Color.LightCoral;
+            this.btnViewRating.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnViewRating.BorderRadius = 20;
+            this.btnViewRating.BorderSize = 0;
+            this.btnViewRating.FlatAppearance.BorderSize = 0;
+            this.btnViewRating.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewRating.ForeColor = System.Drawing.Color.White;
+            this.btnViewRating.Location = new System.Drawing.Point(487, 14);
+            this.btnViewRating.Name = "btnViewRating";
+            this.btnViewRating.Size = new System.Drawing.Size(150, 40);
+            this.btnViewRating.TabIndex = 0;
+            this.btnViewRating.Text = "View Rating";
+            this.btnViewRating.TextColor = System.Drawing.Color.White;
+            this.btnViewRating.UseVisualStyleBackColor = false;
             // 
             // btnViewProducts
             // 
-            btnViewProducts.BackColor = Color.LightCoral;
-            btnViewProducts.BackgroundColor = Color.LightCoral;
-            btnViewProducts.BorderColor = Color.PaleVioletRed;
-            btnViewProducts.BorderRadius = 20;
-            btnViewProducts.BorderSize = 0;
-            btnViewProducts.FlatAppearance.BorderSize = 0;
-            btnViewProducts.FlatStyle = FlatStyle.Flat;
-            btnViewProducts.ForeColor = Color.White;
-            btnViewProducts.Location = new Point(295, 14);
-            btnViewProducts.Name = "btnViewProducts";
-            btnViewProducts.Size = new Size(150, 40);
-            btnViewProducts.TabIndex = 0;
-            btnViewProducts.Text = "View products";
-            btnViewProducts.TextColor = Color.White;
-            btnViewProducts.UseVisualStyleBackColor = false;
+            this.btnViewProducts.BackColor = System.Drawing.Color.LightCoral;
+            this.btnViewProducts.BackgroundColor = System.Drawing.Color.LightCoral;
+            this.btnViewProducts.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnViewProducts.BorderRadius = 20;
+            this.btnViewProducts.BorderSize = 0;
+            this.btnViewProducts.FlatAppearance.BorderSize = 0;
+            this.btnViewProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewProducts.ForeColor = System.Drawing.Color.White;
+            this.btnViewProducts.Location = new System.Drawing.Point(295, 14);
+            this.btnViewProducts.Name = "btnViewProducts";
+            this.btnViewProducts.Size = new System.Drawing.Size(150, 40);
+            this.btnViewProducts.TabIndex = 0;
+            this.btnViewProducts.Text = "View products";
+            this.btnViewProducts.TextColor = System.Drawing.Color.White;
+            this.btnViewProducts.UseVisualStyleBackColor = false;
+            // 
+            // ucStars1
+            // 
+            this.ucStars1.Location = new System.Drawing.Point(86, 38);
+            this.ucStars1.Name = "ucStars1";
+            this.ucStars1.Size = new System.Drawing.Size(195, 37);
+            this.ucStars1.TabIndex = 20;
             // 
             // FormInShop
             // 
-            AutoScaleMode = AutoScaleMode.None;
-            AutoScroll = true;
-            ClientSize = new Size(982, 661);
-            Controls.Add(panel1);
-            Controls.Add(pnlItems);
-            Controls.Add(pnlThisSellerPage);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "FormInShop";
-            Text = "FormInShop";
-            pnlThisSellerPage.ResumeLayout(false);
-            pnlThisSellerPage.PerformLayout();
-            panel6.ResumeLayout(false);
-            panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
-            ((System.ComponentModel.ISupportInitialize)ptbSellerImage).EndInit();
-            pnlRating.ResumeLayout(false);
-            pnlRating.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            panel1.ResumeLayout(false);
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(966, 522);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlItems);
+            this.Controls.Add(this.pnlThisSellerPage);
+            this.Name = "FormInShop";
+            this.Text = "FormInShop";
+            this.pnlThisSellerPage.ResumeLayout(false);
+            this.pnlThisSellerPage.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbSellerImage)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -352,16 +265,10 @@
         private PictureBox pictureBox10;
         private Label lblSellerName;
         private PictureBox ptbSellerImage;
-        private Panel pnlRating;
-        private PictureBox pictureBox7;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox4;
-        private Label label8;
-        private PictureBox pictureBox3;
         private FlowLayoutPanel pnlItems;
         private Panel panel1;
         private RJControls.RButton btnViewRating;
         private RJControls.RButton btnViewProducts;
+        private UCStars ucStars1;
     }
 }
