@@ -33,5 +33,10 @@ namespace QuanLyTraoDoiHang
                 Close();
             }
         }
+
+        private void btnDeliverAdress_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

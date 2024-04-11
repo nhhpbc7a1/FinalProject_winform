@@ -47,5 +47,10 @@ namespace QuanLyTraoDoiHang
             }
             else Enabled = true;
         }
+
+        private void rButton1_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

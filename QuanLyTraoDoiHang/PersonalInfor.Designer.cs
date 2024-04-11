@@ -50,9 +50,9 @@
             // 
             pnl_Infor.Anchor = AnchorStyles.None;
             pnl_Infor.BackColor = SystemColors.ControlLight;
-            pnl_Infor.Location = new Point(305, 33);
+            pnl_Infor.Location = new Point(226, 32);
             pnl_Infor.Name = "pnl_Infor";
-            pnl_Infor.Size = new Size(642, 495);
+            pnl_Infor.Size = new Size(736, 502);
             pnl_Infor.TabIndex = 0;
             // 
             // panel2
@@ -63,7 +63,7 @@
             panel2.Controls.Add(panel7);
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(267, 561);
+            panel2.Size = new Size(210, 561);
             panel2.TabIndex = 1;
             // 
             // lblChangeImage
@@ -73,7 +73,7 @@
             lblChangeImage.ForeColor = Color.Green;
             lblChangeImage.Image = (Image)resources.GetObject("lblChangeImage.Image");
             lblChangeImage.ImageAlign = ContentAlignment.MiddleRight;
-            lblChangeImage.Location = new Point(55, 163);
+            lblChangeImage.Location = new Point(27, 163);
             lblChangeImage.Name = "lblChangeImage";
             lblChangeImage.Size = new Size(158, 30);
             lblChangeImage.TabIndex = 8;
@@ -86,7 +86,7 @@
             panel8.BackColor = Color.WhiteSmoke;
             panel8.Controls.Add(ptbUserImage);
             panel8.Controls.Add(lblUsername);
-            panel8.Location = new Point(72, 33);
+            panel8.Location = new Point(44, 33);
             panel8.Name = "panel8";
             panel8.Size = new Size(128, 127);
             panel8.TabIndex = 7;
@@ -125,15 +125,15 @@
             panel7.Controls.Add(btnChangePass);
             panel7.Controls.Add(btnHistory);
             panel7.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            panel7.Location = new Point(36, 204);
+            panel7.Location = new Point(8, 204);
             panel7.Name = "panel7";
             panel7.Size = new Size(197, 314);
             panel7.TabIndex = 6;
             // 
             // btnUpdateInfo
             // 
-            btnUpdateInfo.BackColor = Color.FromArgb(0, 192, 0);
-            btnUpdateInfo.BackgroundColor = Color.FromArgb(0, 192, 0);
+            btnUpdateInfo.BackColor = Color.FromArgb(36, 10, 52);
+            btnUpdateInfo.BackgroundColor = Color.FromArgb(36, 10, 52);
             btnUpdateInfo.BorderColor = Color.PaleVioletRed;
             btnUpdateInfo.BorderRadius = 10;
             btnUpdateInfo.BorderSize = 0;

@@ -131,6 +131,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
+            BorderStyle = BorderStyle.FixedSingle;
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(lblPrice);
@@ -139,7 +140,7 @@
             Controls.Add(lblCondition);
             Margin = new Padding(0);
             Name = "ucItemsInCheckOut";
-            Size = new Size(715, 128);
+            Size = new Size(713, 128);
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pbProductImage).EndInit();
             ResumeLayout(false);
