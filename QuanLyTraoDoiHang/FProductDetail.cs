@@ -15,7 +15,6 @@ namespace QuanLyTraoDoiHang
         public FProductDetail()
         {
             InitializeComponent();
-            btnBack.Click += btnBack_Click;
             btnViewPage.Click += btnViewPage_Click;
             Load += FProductDetail_Load;
         }
@@ -57,6 +56,11 @@ namespace QuanLyTraoDoiHang
         private void btnViewPage_Click(object sender, EventArgs e)
         {
             Program.mainpage.OpenChildForm(new FormInShop(UserDAO.SelectByUserId(currentProduct.sellerId)));
+        }
+
+        private void btnDeliverAdress_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
