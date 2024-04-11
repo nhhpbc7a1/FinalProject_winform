@@ -148,15 +148,7 @@ namespace QuanLyTraoDoiHang
 
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
-            if (Program.CurrentUser() == null)
-            {
-                MessageBox.Show("Please login first", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
-            else
-            {
-                Form form = new FormAddNewProduct();
-                OpenChildForm(form);
-            }
+          
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -165,6 +157,20 @@ namespace QuanLyTraoDoiHang
             {
                 this.Close();
             }
+        }
+
+        private void btnAddProduct_Click_1(object sender, EventArgs e)
+        {
+            if (Program.CurrentUser() == null)
+            {
+                MessageBox.Show("Please login first", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                Form form = new FormAddNewProduct();
+                form.ShowDialog();
+            }
+
         }
     }
 }

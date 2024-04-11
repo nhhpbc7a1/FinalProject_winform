@@ -42,7 +42,7 @@ namespace QuanLyTraoDoiHang
             txtOrigin.Text = product.origin;
             richTextBoxDescription.Text = product.description;
             picboxProduct.BackgroundImage = product.image;
-            if(product.image != null)
+            if (product.image != null)
             {
                 lblAddPhoto.Visible = false;
             }
@@ -158,6 +158,11 @@ namespace QuanLyTraoDoiHang
         {
             picboxProduct.BackgroundImage = MyImage.ChooseImage();
             picboxProduct.Refresh();
+        }
+
+        private void btnDeliverAdress_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

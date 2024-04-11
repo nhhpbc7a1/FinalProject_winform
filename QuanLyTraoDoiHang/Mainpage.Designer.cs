@@ -171,6 +171,7 @@ namespace QuanLyTraoDoiHang
             btnAddProduct.TextAlign = ContentAlignment.BottomCenter;
             btnAddProduct.TextColor = Color.FromArgb(11, 96, 176);
             btnAddProduct.UseVisualStyleBackColor = false;
+            btnAddProduct.Click += btnAddProduct_Click_1;
             // 
             // btnSearch
             // 

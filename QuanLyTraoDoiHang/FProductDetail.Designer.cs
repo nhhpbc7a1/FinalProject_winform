@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FProductDetail));
             pnlSellerProduct = new Panel();
-            btnBack = new RJControls.RButton();
+            btnDeliverAdress = new RJControls.RButton();
             rButton1 = new RJControls.RButton();
             rButton3 = new RJControls.RButton();
             lblOrigin = new Label();
@@ -99,7 +99,7 @@
             // pnlSellerProduct
             // 
             pnlSellerProduct.BackColor = Color.White;
-            pnlSellerProduct.Controls.Add(btnBack);
+            pnlSellerProduct.Controls.Add(btnDeliverAdress);
             pnlSellerProduct.Controls.Add(rButton1);
             pnlSellerProduct.Controls.Add(rButton3);
             pnlSellerProduct.Controls.Add(lblOrigin);
@@ -122,28 +122,30 @@
             pnlSellerProduct.Controls.Add(ptbImage);
             pnlSellerProduct.Location = new Point(12, 12);
             pnlSellerProduct.Name = "pnlSellerProduct";
-            pnlSellerProduct.Size = new Size(952, 385);
+            pnlSellerProduct.Size = new Size(952, 437);
             pnlSellerProduct.TabIndex = 0;
             // 
-            // btnBack
+            // btnDeliverAdress
             // 
-            btnBack.BackColor = Color.FromArgb(104, 149, 210);
-            btnBack.BackgroundColor = Color.FromArgb(104, 149, 210);
-            btnBack.BorderColor = Color.PaleVioletRed;
-            btnBack.BorderRadius = 20;
-            btnBack.BorderSize = 0;
-            btnBack.FlatAppearance.BorderSize = 0;
-            btnBack.FlatStyle = FlatStyle.Flat;
-            btnBack.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Italic, GraphicsUnit.Point);
-            btnBack.ForeColor = Color.White;
-            btnBack.Location = new Point(718, 335);
-            btnBack.Margin = new Padding(3, 4, 3, 4);
-            btnBack.Name = "btnBack";
-            btnBack.Size = new Size(174, 31);
-            btnBack.TabIndex = 41;
-            btnBack.Text = "Go back";
-            btnBack.TextColor = Color.White;
-            btnBack.UseVisualStyleBackColor = false;
+            btnDeliverAdress.BackColor = SystemColors.ControlLightLight;
+            btnDeliverAdress.BackgroundColor = SystemColors.ControlLightLight;
+            btnDeliverAdress.BorderColor = Color.PaleVioletRed;
+            btnDeliverAdress.BorderRadius = 20;
+            btnDeliverAdress.BorderSize = 0;
+            btnDeliverAdress.FlatAppearance.BorderSize = 0;
+            btnDeliverAdress.FlatStyle = FlatStyle.Flat;
+            btnDeliverAdress.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDeliverAdress.ForeColor = Color.Black;
+            btnDeliverAdress.Image = (Image)resources.GetObject("btnDeliverAdress.Image");
+            btnDeliverAdress.ImageAlign = ContentAlignment.MiddleLeft;
+            btnDeliverAdress.Location = new Point(3, 4);
+            btnDeliverAdress.Name = "btnDeliverAdress";
+            btnDeliverAdress.Size = new Size(123, 40);
+            btnDeliverAdress.TabIndex = 65;
+            btnDeliverAdress.Text = "Back";
+            btnDeliverAdress.TextColor = Color.Black;
+            btnDeliverAdress.UseVisualStyleBackColor = false;
+            btnDeliverAdress.Click += btnDeliverAdress_Click;
             // 
             // rButton1
             // 
@@ -158,7 +160,7 @@
             rButton1.ForeColor = Color.FromArgb(104, 149, 210);
             rButton1.Image = (Image)resources.GetObject("rButton1.Image");
             rButton1.ImageAlign = ContentAlignment.MiddleLeft;
-            rButton1.Location = new Point(718, 196);
+            rButton1.Location = new Point(10, 343);
             rButton1.Margin = new Padding(3, 4, 3, 4);
             rButton1.Name = "rButton1";
             rButton1.Size = new Size(174, 51);
@@ -181,7 +183,7 @@
             rButton3.ForeColor = Color.Transparent;
             rButton3.Image = (Image)resources.GetObject("rButton3.Image");
             rButton3.ImageAlign = ContentAlignment.MiddleLeft;
-            rButton3.Location = new Point(718, 255);
+            rButton3.Location = new Point(197, 343);
             rButton3.Margin = new Padding(3, 4, 3, 4);
             rButton3.Name = "rButton3";
             rButton3.Size = new Size(174, 51);
@@ -192,9 +194,8 @@
             // 
             // lblOrigin
             // 
-            lblOrigin.AutoSize = true;
             lblOrigin.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblOrigin.Location = new Point(590, 316);
+            lblOrigin.Location = new Point(590, 343);
             lblOrigin.Name = "lblOrigin";
             lblOrigin.Size = new Size(48, 20);
             lblOrigin.TabIndex = 38;
@@ -205,7 +206,7 @@
             label21.AutoSize = true;
             label21.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label21.ForeColor = Color.Gray;
-            label21.Location = new Point(399, 316);
+            label21.Location = new Point(399, 343);
             label21.Name = "label21";
             label21.Size = new Size(53, 18);
             label21.TabIndex = 37;
@@ -213,9 +214,8 @@
             // 
             // lblBrand
             // 
-            lblBrand.AutoSize = true;
             lblBrand.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblBrand.Location = new Point(590, 355);
+            lblBrand.Location = new Point(590, 382);
             lblBrand.Name = "lblBrand";
             lblBrand.Size = new Size(56, 20);
             lblBrand.TabIndex = 36;
@@ -226,7 +226,7 @@
             label19.AutoSize = true;
             label19.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label19.ForeColor = Color.Gray;
-            label19.Location = new Point(399, 357);
+            label19.Location = new Point(399, 384);
             label19.Name = "label19";
             label19.Size = new Size(52, 18);
             label19.TabIndex = 35;
@@ -234,9 +234,8 @@
             // 
             // lblBought
             // 
-            lblBought.AutoSize = true;
             lblBought.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblBought.Location = new Point(590, 270);
+            lblBought.Location = new Point(590, 297);
             lblBought.Name = "lblBought";
             lblBought.Size = new Size(57, 20);
             lblBought.TabIndex = 34;
@@ -247,7 +246,7 @@
             label17.AutoSize = true;
             label17.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label17.ForeColor = Color.Gray;
-            label17.Location = new Point(399, 272);
+            label17.Location = new Point(399, 299);
             label17.Name = "label17";
             label17.Size = new Size(84, 18);
             label17.TabIndex = 33;
@@ -255,9 +254,8 @@
             // 
             // lblWarrantyPolicy
             // 
-            lblWarrantyPolicy.AutoSize = true;
             lblWarrantyPolicy.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblWarrantyPolicy.Location = new Point(590, 229);
+            lblWarrantyPolicy.Location = new Point(590, 256);
             lblWarrantyPolicy.Name = "lblWarrantyPolicy";
             lblWarrantyPolicy.Size = new Size(115, 20);
             lblWarrantyPolicy.TabIndex = 32;
@@ -268,7 +266,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label7.ForeColor = Color.Gray;
-            label7.Location = new Point(399, 231);
+            label7.Location = new Point(399, 258);
             label7.Name = "label7";
             label7.Size = new Size(132, 20);
             label7.TabIndex = 31;
@@ -276,11 +274,10 @@
             // 
             // lblCondition
             // 
-            lblCondition.AutoSize = true;
             lblCondition.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblCondition.Location = new Point(591, 186);
             lblCondition.Name = "lblCondition";
-            lblCondition.Size = new Size(38, 20);
+            lblCondition.Size = new Size(301, 70);
             lblCondition.TabIndex = 30;
             lblCondition.Text = "98%";
             // 
@@ -307,7 +304,6 @@
             // 
             // label4
             // 
-            label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label4.Location = new Point(590, 143);
             label4.Name = "label4";
@@ -393,7 +389,7 @@
             // 
             lblName.AutoSize = true;
             lblName.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblName.Location = new Point(395, 11);
+            lblName.Location = new Point(395, 19);
             lblName.Name = "lblName";
             lblName.Size = new Size(191, 25);
             lblName.TabIndex = 6;
@@ -406,7 +402,7 @@
             iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
             iconButton1.IconColor = Color.Black;
             iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.Location = new Point(343, 122);
+            iconButton1.Location = new Point(338, 143);
             iconButton1.Margin = new Padding(3, 4, 3, 4);
             iconButton1.Name = "iconButton1";
             iconButton1.Size = new Size(24, 41);
@@ -420,7 +416,7 @@
             iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
             iconButton2.IconColor = Color.Black;
             iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton2.Location = new Point(30, 124);
+            iconButton2.Location = new Point(17, 144);
             iconButton2.Margin = new Padding(3, 4, 3, 4);
             iconButton2.Name = "iconButton2";
             iconButton2.Size = new Size(23, 41);
@@ -432,7 +428,7 @@
             ptbImage.BackColor = SystemColors.Control;
             ptbImage.BackgroundImageLayout = ImageLayout.Stretch;
             ptbImage.BorderStyle = BorderStyle.FixedSingle;
-            ptbImage.Location = new Point(17, 25);
+            ptbImage.Location = new Point(10, 60);
             ptbImage.Margin = new Padding(3, 4, 3, 4);
             ptbImage.Name = "ptbImage";
             ptbImage.Size = new Size(361, 256);
@@ -442,13 +438,14 @@
             // pnlProductDetail
             // 
             pnlProductDetail.AutoScroll = true;
+            pnlProductDetail.AutoSize = true;
             pnlProductDetail.BackColor = Color.White;
             pnlProductDetail.Controls.Add(label9);
             pnlProductDetail.Controls.Add(richTextBoxDescription);
             pnlProductDetail.Controls.Add(label10);
-            pnlProductDetail.Location = new Point(12, 494);
+            pnlProductDetail.Location = new Point(12, 543);
             pnlProductDetail.Name = "pnlProductDetail";
-            pnlProductDetail.Size = new Size(970, 118);
+            pnlProductDetail.Size = new Size(970, 177);
             pnlProductDetail.TabIndex = 1;
             // 
             // label9
@@ -498,7 +495,7 @@
             pnlThisSellerPage.Controls.Add(ptbSellerImage);
             pnlThisSellerPage.Controls.Add(pnlRating);
             pnlThisSellerPage.ForeColor = SystemColors.ControlDark;
-            pnlThisSellerPage.Location = new Point(12, 403);
+            pnlThisSellerPage.Location = new Point(12, 455);
             pnlThisSellerPage.Name = "pnlThisSellerPage";
             pnlThisSellerPage.Size = new Size(952, 85);
             pnlThisSellerPage.TabIndex = 2;
@@ -507,7 +504,7 @@
             // 
             lblDateJoined.AutoSize = true;
             lblDateJoined.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDateJoined.Location = new Point(508, 35);
+            lblDateJoined.Location = new Point(511, 23);
             lblDateJoined.Name = "lblDateJoined";
             lblDateJoined.Size = new Size(42, 21);
             lblDateJoined.TabIndex = 19;
@@ -537,7 +534,7 @@
             panel6.BackColor = Color.FromArgb(164, 206, 149);
             panel6.Controls.Add(pictureBox8);
             panel6.Controls.Add(lblSellerPhone);
-            panel6.Location = new Point(276, 5);
+            panel6.Location = new Point(280, 5);
             panel6.Margin = new Padding(3, 4, 3, 4);
             panel6.Name = "panel6";
             panel6.Size = new Size(152, 35);
@@ -582,7 +579,7 @@
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label11.ForeColor = Color.Black;
-            label11.Location = new Point(452, 14);
+            label11.Location = new Point(452, 19);
             label11.Name = "label11";
             label11.Size = new Size(62, 21);
             label11.TabIndex = 16;
@@ -729,6 +726,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -781,6 +779,6 @@
         private Label lblSellerAddress;
         private Label label11;
         private PictureBox pictureBox10;
-        private RJControls.RButton btnBack;
+        private RJControls.RButton btnDeliverAdress;
     }
 }
