@@ -9,27 +9,58 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xaml;
 
 namespace QuanLyTraoDoiHang
 {
     public partial class FormAddNewProduct : Form
     {
+        void AddEvents()
+        {
+            picboxProduct.Click += ChangeProductImage_Click;
+            lblAddPhoto.Click += ChangeProductImage_Click;
+            btnSave.Click += btnSave_Click;
+            btnDeliverAdress.Click += btnDeliverAdress_Click;
+
+            picDetailImage1.Click += PicDetailImage1_Click;
+            picDetailImage2.Click += PicDetailImage2_Click;
+            picDetailImage3.Click += PicDetailImage3_Click;
+        }
+
+        private void PicDetailImage3_Click(object? sender, EventArgs e)
+        {
+            picDetailImage3.BackgroundImage = MyImage.ChooseImage();
+            listImage[2] = picDetailImage3.BackgroundImage;
+            picDetailImage3.Refresh();
+        }
+
+        private void PicDetailImage2_Click(object? sender, EventArgs e)
+        {
+            picDetailImage2.BackgroundImage = MyImage.ChooseImage();
+            listImage[1] = picDetailImage2.BackgroundImage;
+            picDetailImage2.Refresh();
+        }
+
+        private void PicDetailImage1_Click(object? sender, EventArgs e)
+        {
+            picDetailImage1.BackgroundImage = MyImage.ChooseImage();
+            listImage[0] = picDetailImage1.BackgroundImage;
+            picDetailImage1.Refresh();
+        }
+
         public FormAddNewProduct()
         {
             InitializeComponent();
-            picboxProduct.Click += picboxProduct_Click;
-            lblAddPhoto.Click += lblAddPhoto_Click;
-            btnSave.Click += btnSave_Click;
-            btnDeliverAdress.Click += btnDeliverAdress_Click; 
+            AddEvents();
             //picboxProduct.BackgroundImage = Properties.Resources.empty_product;
         }
+
         Product product = null;
+        List<Image> listImage = new List<Image>();
         public FormAddNewProduct(Product product)
         {
             InitializeComponent();
-            picboxProduct.Click += picboxProduct_Click;
-            lblAddPhoto.Click += lblAddPhoto_Click;
-            btnSave.Click += btnSave_Click;
+            AddEvents();
             this.product = product;
             txtCategory.Text = product.category;
             txtName.Text = product.name;
@@ -46,6 +77,13 @@ namespace QuanLyTraoDoiHang
             {
                 lblAddPhoto.Visible = false;
             }
+
+            listImage = DetailImageDAO.TakeListByProductId(product.productId);
+            picDetailImage1.BackgroundImage = listImage[0];
+            picDetailImage2.BackgroundImage = listImage[1];
+            picDetailImage3.BackgroundImage = listImage[2];
+
+
             //picboxProduct.BackgroundImage = Properties.Resources.empty_product;
         }
 
@@ -55,11 +93,6 @@ namespace QuanLyTraoDoiHang
         DBConnection dBConnection = new DBConnection();
 
 
-        private void btnChangePicture_Click_1(object sender, EventArgs e)
-        {
-            picboxProduct.BackgroundImage = MyImage.ChooseImage();
-            picboxProduct.Refresh();
-        }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
@@ -119,6 +152,12 @@ namespace QuanLyTraoDoiHang
                 richTextBoxDescription.Focus();
                 return;
             }
+            if (picboxProduct.BackgroundImage == null)
+            {
+                MessageBox.Show("You haven't input Main Image!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
 
             if (product == null)
             {
@@ -126,7 +165,8 @@ namespace QuanLyTraoDoiHang
                 Convert.ToInt32(txtOriginalPrice.Text), txtCondition.Text, txtWarranty.Text, DateOnly.FromDateTime(dtpBought.Value), txtBrand.Text, txtOrigin.Text, richTextBoxDescription.Text);
 
                 productDAO.Add(x);
-
+                foreach (Image img in listImage)
+                    DetailImageDAO.Add(x.productId, img);
             }
             else
             {
@@ -134,35 +174,27 @@ namespace QuanLyTraoDoiHang
                 Convert.ToInt32(txtOriginalPrice.Text), txtCondition.Text, txtWarranty.Text, DateOnly.FromDateTime(dtpBought.Value), txtBrand.Text, txtOrigin.Text, richTextBoxDescription.Text);
                 x.productId = product.productId;
                 productDAO.Update(x);
+
+                DetailImageDAO.DeleteByProductId(x.productId);
+                foreach (Image img in listImage)
+                    DetailImageDAO.Add(x.productId, img);
+
             }
         }
-
-        private void FormAddNewProduct_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void picboxProduct_Click(object sender, EventArgs e)
+        private void ChangeProductImage_Click(object sender, EventArgs e)
         {
             picboxProduct.BackgroundImage = MyImage.ChooseImage();
             picboxProduct.Refresh();
-        }
-
-        private void rBChangeImage_Click(object sender, EventArgs e)
-        {
-            picboxProduct.BackgroundImage = MyImage.ChooseImage();
-            picboxProduct.Refresh();
-        }
-
-        private void lblAddPhoto_Click(object sender, EventArgs e)
-        {
-            picboxProduct.BackgroundImage = MyImage.ChooseImage();
-            picboxProduct.Refresh();
+            if (picboxProduct.BackgroundImage != null)
+            {
+                lblAddPhoto.Visible = false;
+            }
         }
 
         private void btnDeliverAdress_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
     }
 }

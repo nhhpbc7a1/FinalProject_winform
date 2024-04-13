@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FProductDetail));
             this.pnlSellerProduct = new System.Windows.Forms.Panel();
+            this.pnlDetailImages = new System.Windows.Forms.FlowLayoutPanel();
             this.btnDeliverAdress = new QuanLyTraoDoiHang.RJControls.RButton();
             this.btnAddToCart = new QuanLyTraoDoiHang.RJControls.RButton();
             this.btnBuyNow = new QuanLyTraoDoiHang.RJControls.RButton();
@@ -53,8 +54,6 @@
             this.lblPrice = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.ptbImage = new System.Windows.Forms.PictureBox();
             this.pnlProductDetail = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
@@ -99,6 +98,7 @@
             // pnlSellerProduct
             // 
             this.pnlSellerProduct.BackColor = System.Drawing.Color.White;
+            this.pnlSellerProduct.Controls.Add(this.pnlDetailImages);
             this.pnlSellerProduct.Controls.Add(this.btnDeliverAdress);
             this.pnlSellerProduct.Controls.Add(this.btnAddToCart);
             this.pnlSellerProduct.Controls.Add(this.btnBuyNow);
@@ -117,13 +117,21 @@
             this.pnlSellerProduct.Controls.Add(this.panel3);
             this.pnlSellerProduct.Controls.Add(this.panel2);
             this.pnlSellerProduct.Controls.Add(this.lblName);
-            this.pnlSellerProduct.Controls.Add(this.iconButton1);
-            this.pnlSellerProduct.Controls.Add(this.iconButton2);
             this.pnlSellerProduct.Controls.Add(this.ptbImage);
             this.pnlSellerProduct.Location = new System.Drawing.Point(12, 12);
             this.pnlSellerProduct.Name = "pnlSellerProduct";
             this.pnlSellerProduct.Size = new System.Drawing.Size(952, 520);
             this.pnlSellerProduct.TabIndex = 0;
+            // 
+            // pnlDetailImages
+            // 
+            this.pnlDetailImages.BackColor = System.Drawing.SystemColors.Control;
+            this.pnlDetailImages.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlDetailImages.Location = new System.Drawing.Point(10, 323);
+            this.pnlDetailImages.Name = "pnlDetailImages";
+            this.pnlDetailImages.Size = new System.Drawing.Size(361, 103);
+            this.pnlDetailImages.TabIndex = 66;
+            this.pnlDetailImages.WrapContents = false;
             // 
             // btnDeliverAdress
             // 
@@ -159,7 +167,7 @@
             this.btnAddToCart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(149)))), ((int)(((byte)(210)))));
             this.btnAddToCart.Image = ((System.Drawing.Image)(resources.GetObject("btnAddToCart.Image")));
             this.btnAddToCart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddToCart.Location = new System.Drawing.Point(10, 340);
+            this.btnAddToCart.Location = new System.Drawing.Point(17, 446);
             this.btnAddToCart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAddToCart.Name = "btnAddToCart";
             this.btnAddToCart.Size = new System.Drawing.Size(174, 51);
@@ -182,7 +190,7 @@
             this.btnBuyNow.ForeColor = System.Drawing.Color.Transparent;
             this.btnBuyNow.Image = ((System.Drawing.Image)(resources.GetObject("btnBuyNow.Image")));
             this.btnBuyNow.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuyNow.Location = new System.Drawing.Point(197, 340);
+            this.btnBuyNow.Location = new System.Drawing.Point(197, 446);
             this.btnBuyNow.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBuyNow.Name = "btnBuyNow";
             this.btnBuyNow.Size = new System.Drawing.Size(174, 51);
@@ -392,34 +400,6 @@
             this.lblName.Size = new System.Drawing.Size(497, 70);
             this.lblName.TabIndex = 6;
             this.lblName.Text = "Xiaomi Redmi 9A";
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("iconButton1.BackgroundImage")));
-            this.iconButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(338, 143);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(24, 41);
-            this.iconButton1.TabIndex = 3;
-            this.iconButton1.UseVisualStyleBackColor = true;
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("iconButton2.BackgroundImage")));
-            this.iconButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton2.IconColor = System.Drawing.Color.Black;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(17, 144);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(23, 41);
-            this.iconButton2.TabIndex = 4;
-            this.iconButton2.UseVisualStyleBackColor = true;
             // 
             // ptbImage
             // 
@@ -732,8 +712,6 @@
 
         public Panel pnlSellerProduct;
         public PictureBox ptbImage;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private FontAwesome.Sharp.IconButton iconButton2;
         public Label lblName;
         private Panel panel3;
         private Panel panel2;
@@ -779,5 +757,6 @@
         private Label label11;
         private PictureBox pictureBox10;
         private RJControls.RButton btnDeliverAdress;
+        private FlowLayoutPanel pnlDetailImages;
     }
 }
