@@ -29,154 +29,153 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewHistory));
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnShip = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.btnCompleted = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.btnCancel = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.btnReturn = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.pnlItems = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.pnlItems.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            btnShip = new RJControls.RButton();
+            btnCompleted = new RJControls.RButton();
+            btnCancel = new RJControls.RButton();
+            btnReturn = new RJControls.RButton();
+            pictureBox1 = new PictureBox();
+            pnlItems = new FlowLayoutPanel();
+            flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            pnlItems.SuspendLayout();
+            SuspendLayout();
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(183)))), ((int)(((byte)(65)))));
-            this.flowLayoutPanel1.Controls.Add(this.btnShip);
-            this.flowLayoutPanel1.Controls.Add(this.btnCompleted);
-            this.flowLayoutPanel1.Controls.Add(this.btnCancel);
-            this.flowLayoutPanel1.Controls.Add(this.btnReturn);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(736, 50);
-            this.flowLayoutPanel1.TabIndex = 2;
+            flowLayoutPanel1.BackColor = Color.White;
+            flowLayoutPanel1.Controls.Add(btnShip);
+            flowLayoutPanel1.Controls.Add(btnCompleted);
+            flowLayoutPanel1.Controls.Add(btnCancel);
+            flowLayoutPanel1.Controls.Add(btnReturn);
+            flowLayoutPanel1.Dock = DockStyle.Top;
+            flowLayoutPanel1.Location = new Point(0, 0);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(747, 50);
+            flowLayoutPanel1.TabIndex = 2;
             // 
             // btnShip
             // 
-            this.btnShip.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnShip.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.btnShip.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnShip.BorderRadius = 5;
-            this.btnShip.BorderSize = 0;
-            this.btnShip.FlatAppearance.BorderSize = 0;
-            this.btnShip.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnShip.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnShip.ForeColor = System.Drawing.Color.Black;
-            this.btnShip.Image = ((System.Drawing.Image)(resources.GetObject("btnShip.Image")));
-            this.btnShip.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnShip.Location = new System.Drawing.Point(0, 10);
-            this.btnShip.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.btnShip.Name = "btnShip";
-            this.btnShip.Size = new System.Drawing.Size(184, 40);
-            this.btnShip.TabIndex = 0;
-            this.btnShip.Text = "To Ship";
-            this.btnShip.TextColor = System.Drawing.Color.Black;
-            this.btnShip.UseVisualStyleBackColor = false;
+            btnShip.BackColor = Color.White;
+            btnShip.BackgroundColor = Color.White;
+            btnShip.BorderColor = Color.DarkGray;
+            btnShip.BorderRadius = 5;
+            btnShip.BorderSize = 1;
+            btnShip.FlatAppearance.BorderSize = 0;
+            btnShip.FlatStyle = FlatStyle.Flat;
+            btnShip.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnShip.ForeColor = Color.Black;
+            btnShip.Image = (Image)resources.GetObject("btnShip.Image");
+            btnShip.ImageAlign = ContentAlignment.MiddleRight;
+            btnShip.Location = new Point(0, 3);
+            btnShip.Margin = new Padding(0, 3, 0, 0);
+            btnShip.Name = "btnShip";
+            btnShip.Size = new Size(187, 45);
+            btnShip.TabIndex = 0;
+            btnShip.Text = "To Ship";
+            btnShip.TextColor = Color.Black;
+            btnShip.UseVisualStyleBackColor = false;
             // 
             // btnCompleted
             // 
-            this.btnCompleted.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnCompleted.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.btnCompleted.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnCompleted.BorderRadius = 5;
-            this.btnCompleted.BorderSize = 0;
-            this.btnCompleted.FlatAppearance.BorderSize = 0;
-            this.btnCompleted.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCompleted.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCompleted.ForeColor = System.Drawing.Color.Black;
-            this.btnCompleted.Image = ((System.Drawing.Image)(resources.GetObject("btnCompleted.Image")));
-            this.btnCompleted.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCompleted.Location = new System.Drawing.Point(184, 10);
-            this.btnCompleted.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.btnCompleted.Name = "btnCompleted";
-            this.btnCompleted.Size = new System.Drawing.Size(184, 40);
-            this.btnCompleted.TabIndex = 1;
-            this.btnCompleted.Text = "Completed";
-            this.btnCompleted.TextColor = System.Drawing.Color.Black;
-            this.btnCompleted.UseVisualStyleBackColor = false;
+            btnCompleted.BackColor = Color.White;
+            btnCompleted.BackgroundColor = Color.White;
+            btnCompleted.BorderColor = Color.DarkGray;
+            btnCompleted.BorderRadius = 5;
+            btnCompleted.BorderSize = 1;
+            btnCompleted.FlatAppearance.BorderSize = 0;
+            btnCompleted.FlatStyle = FlatStyle.Flat;
+            btnCompleted.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnCompleted.ForeColor = Color.Black;
+            btnCompleted.Image = (Image)resources.GetObject("btnCompleted.Image");
+            btnCompleted.ImageAlign = ContentAlignment.MiddleRight;
+            btnCompleted.Location = new Point(187, 3);
+            btnCompleted.Margin = new Padding(0, 3, 0, 0);
+            btnCompleted.Name = "btnCompleted";
+            btnCompleted.Size = new Size(187, 45);
+            btnCompleted.TabIndex = 1;
+            btnCompleted.Text = "Completed";
+            btnCompleted.TextColor = Color.Black;
+            btnCompleted.UseVisualStyleBackColor = false;
             // 
             // btnCancel
             // 
-            this.btnCancel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnCancel.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.btnCancel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnCancel.BorderRadius = 5;
-            this.btnCancel.BorderSize = 0;
-            this.btnCancel.FlatAppearance.BorderSize = 0;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCancel.ForeColor = System.Drawing.Color.Black;
-            this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
-            this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancel.Location = new System.Drawing.Point(368, 10);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(184, 40);
-            this.btnCancel.TabIndex = 2;
-            this.btnCancel.Text = "Cancelled";
-            this.btnCancel.TextColor = System.Drawing.Color.Black;
-            this.btnCancel.UseVisualStyleBackColor = false;
+            btnCancel.BackColor = Color.White;
+            btnCancel.BackgroundColor = Color.White;
+            btnCancel.BorderColor = Color.DarkGray;
+            btnCancel.BorderRadius = 5;
+            btnCancel.BorderSize = 1;
+            btnCancel.FlatAppearance.BorderSize = 0;
+            btnCancel.FlatStyle = FlatStyle.Flat;
+            btnCancel.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnCancel.ForeColor = Color.Black;
+            btnCancel.Image = (Image)resources.GetObject("btnCancel.Image");
+            btnCancel.ImageAlign = ContentAlignment.MiddleRight;
+            btnCancel.Location = new Point(374, 3);
+            btnCancel.Margin = new Padding(0, 3, 0, 0);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(187, 45);
+            btnCancel.TabIndex = 2;
+            btnCancel.Text = "Cancelled";
+            btnCancel.TextColor = Color.Black;
+            btnCancel.UseVisualStyleBackColor = false;
             // 
             // btnReturn
             // 
-            this.btnReturn.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnReturn.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.btnReturn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnReturn.BorderRadius = 5;
-            this.btnReturn.BorderSize = 0;
-            this.btnReturn.FlatAppearance.BorderSize = 0;
-            this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReturn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnReturn.ForeColor = System.Drawing.Color.Black;
-            this.btnReturn.Image = ((System.Drawing.Image)(resources.GetObject("btnReturn.Image")));
-            this.btnReturn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnReturn.Location = new System.Drawing.Point(552, 10);
-            this.btnReturn.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(184, 40);
-            this.btnReturn.TabIndex = 3;
-            this.btnReturn.Text = "Returned";
-            this.btnReturn.TextColor = System.Drawing.Color.Black;
-            this.btnReturn.UseVisualStyleBackColor = false;
-            // 
-            // pnlItems
-            // 
-            this.pnlItems.AutoScroll = true;
-            this.pnlItems.BackColor = System.Drawing.Color.LightGray;
-            this.pnlItems.Controls.Add(this.pictureBox1);
-            this.pnlItems.Location = new System.Drawing.Point(5, 49);
-            this.pnlItems.Name = "pnlItems";
-            this.pnlItems.Size = new System.Drawing.Size(725, 447);
-            this.pnlItems.TabIndex = 3;
+            btnReturn.BackColor = Color.White;
+            btnReturn.BackgroundColor = Color.White;
+            btnReturn.BorderColor = Color.DarkGray;
+            btnReturn.BorderRadius = 5;
+            btnReturn.BorderSize = 1;
+            btnReturn.FlatAppearance.BorderSize = 0;
+            btnReturn.FlatStyle = FlatStyle.Flat;
+            btnReturn.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnReturn.ForeColor = Color.Black;
+            btnReturn.Image = (Image)resources.GetObject("btnReturn.Image");
+            btnReturn.ImageAlign = ContentAlignment.MiddleRight;
+            btnReturn.Location = new Point(561, 3);
+            btnReturn.Margin = new Padding(0, 3, 0, 0);
+            btnReturn.Name = "btnReturn";
+            btnReturn.Size = new Size(183, 45);
+            btnReturn.TabIndex = 3;
+            btnReturn.Text = "Returned";
+            btnReturn.TextColor = Color.Black;
+            btnReturn.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(320, 160);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(320, 160, 3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 93);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.Location = new Point(320, 160);
+            pictureBox1.Margin = new Padding(320, 160, 3, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(100, 93);
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
+            // pnlItems
+            // 
+            pnlItems.AutoScroll = true;
+            pnlItems.BackColor = SystemColors.ControlLight;
+            pnlItems.Controls.Add(pictureBox1);
+            pnlItems.Location = new Point(0, 56);
+            pnlItems.Name = "pnlItems";
+            pnlItems.Size = new Size(747, 446);
+            pnlItems.TabIndex = 3;
             // 
             // ViewHistory
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(736, 502);
-            this.Controls.Add(this.pnlItems);
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ViewHistory";
-            this.Text = "ViewHistory";
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.pnlItems.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleMode = AutoScaleMode.None;
+            BackColor = Color.White;
+            ClientSize = new Size(747, 502);
+            Controls.Add(pnlItems);
+            Controls.Add(flowLayoutPanel1);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "ViewHistory";
+            Text = "ViewHistory";
+            flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            pnlItems.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion
@@ -185,7 +184,7 @@
         private RJControls.RButton btnCompleted;
         private RJControls.RButton btnCancel;
         private RJControls.RButton btnReturn;
-        private FlowLayoutPanel pnlItems;
         private PictureBox pictureBox1;
+        private FlowLayoutPanel pnlItems;
     }
 }

@@ -68,7 +68,7 @@
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(736, 72);
+            panel3.Size = new Size(747, 72);
             panel3.TabIndex = 0;
             // 
             // panel2
@@ -77,7 +77,7 @@
             panel2.Dock = DockStyle.Bottom;
             panel2.Location = new Point(0, 69);
             panel2.Name = "panel2";
-            panel2.Size = new Size(736, 3);
+            panel2.Size = new Size(747, 3);
             panel2.TabIndex = 5;
             // 
             // label2
@@ -409,7 +409,7 @@
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(224, 224, 224);
-            ClientSize = new Size(736, 502);
+            ClientSize = new Size(747, 502);
             Controls.Add(panel1);
             Controls.Add(btnSave);
             Controls.Add(panel3);

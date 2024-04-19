@@ -74,5 +74,10 @@ namespace QuanLyTraoDoiHang
 
             Program.mainpage.OpenChildForm(formDetail);
         }
+
+        private void lblName_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
