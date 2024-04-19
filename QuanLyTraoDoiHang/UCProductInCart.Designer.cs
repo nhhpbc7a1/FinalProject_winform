@@ -39,6 +39,7 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
+            panel2 = new Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbProductImage).BeginInit();
             SuspendLayout();
@@ -70,19 +71,19 @@
             // 
             panel1.Controls.Add(lblProductName);
             panel1.Controls.Add(pbProductImage);
-            panel1.Location = new Point(33, 23);
+            panel1.Location = new Point(33, 11);
             panel1.Margin = new Padding(1);
             panel1.Name = "panel1";
-            panel1.Size = new Size(196, 74);
+            panel1.Size = new Size(196, 99);
             panel1.TabIndex = 50;
             // 
             // lblProductName
             // 
             lblProductName.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblProductName.Location = new Point(70, 12);
+            lblProductName.Location = new Point(74, 12);
             lblProductName.Margin = new Padding(1, 0, 1, 0);
             lblProductName.Name = "lblProductName";
-            lblProductName.Size = new Size(125, 56);
+            lblProductName.Size = new Size(121, 74);
             lblProductName.TabIndex = 11;
             lblProductName.Text = "(name)";
             // 
@@ -90,10 +91,10 @@
             // 
             pbProductImage.BackColor = SystemColors.Control;
             pbProductImage.BackgroundImageLayout = ImageLayout.Stretch;
-            pbProductImage.Location = new Point(4, 5);
+            pbProductImage.Location = new Point(4, 12);
             pbProductImage.Margin = new Padding(1);
             pbProductImage.Name = "pbProductImage";
-            pbProductImage.Size = new Size(64, 63);
+            pbProductImage.Size = new Size(68, 74);
             pbProductImage.TabIndex = 10;
             pbProductImage.TabStop = false;
             // 
@@ -140,10 +141,10 @@
             // 
             // label1
             // 
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(236, 29);
+            label1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(246, 23);
             label1.Name = "label1";
-            label1.Size = new Size(197, 62);
+            label1.Size = new Size(197, 87);
             label1.TabIndex = 54;
             label1.Text = "condition of product";
             // 
@@ -173,11 +174,20 @@
             label3.Text = "đ";
             label3.TextAlign = ContentAlignment.MiddleLeft;
             // 
+            // panel2
+            // 
+            panel2.BackColor = SystemColors.AppWorkspace;
+            panel2.Location = new Point(4, 120);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(707, 1);
+            panel2.TabIndex = 57;
+            // 
             // UCProductInCart
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
+            Controls.Add(panel2);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -209,5 +219,6 @@
         private Label label1;
         public Label label2;
         public Label label3;
+        private Panel panel2;
     }
 }

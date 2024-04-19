@@ -33,10 +33,6 @@ namespace QuanLyTraoDoiHang
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FSellermanagement));
             pnlSellerTool = new Panel();
-            btnUpdate = new RButton();
-            pnlItems = new FlowLayoutPanel();
-            picEmpty = new PictureBox();
-            pnlMenu = new Panel();
             timer1 = new System.Windows.Forms.Timer(components);
             timer2 = new System.Windows.Forms.Timer(components);
             pnlDropDownnn = new Panel();
@@ -53,82 +49,26 @@ namespace QuanLyTraoDoiHang
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
             btnShipment = new RButton();
-            panel3 = new Panel();
-            lblContent = new Label();
             panel4 = new Panel();
-            pnlSellerTool.SuspendLayout();
-            pnlItems.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)picEmpty).BeginInit();
             pnlDropDownnn.SuspendLayout();
             pnlDropDownProdu.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
-            panel3.SuspendLayout();
             panel4.SuspendLayout();
             SuspendLayout();
             // 
             // pnlSellerTool
             // 
             pnlSellerTool.BackColor = Color.White;
-            pnlSellerTool.Controls.Add(btnUpdate);
-            pnlSellerTool.Controls.Add(pnlItems);
-            pnlSellerTool.Controls.Add(pnlMenu);
-            pnlSellerTool.Location = new Point(216, 57);
-            pnlSellerTool.Margin = new Padding(1);
+            pnlSellerTool.Location = new Point(217, 6);
+            pnlSellerTool.Margin = new Padding(0);
+            pnlSellerTool.MaximumSize = new Size(758, 100000);
+            pnlSellerTool.MinimumSize = new Size(758, 545);
             pnlSellerTool.Name = "pnlSellerTool";
             pnlSellerTool.RightToLeft = RightToLeft.Yes;
-            pnlSellerTool.Size = new Size(758, 494);
+            pnlSellerTool.Size = new Size(758, 545);
             pnlSellerTool.TabIndex = 2;
-            // 
-            // btnUpdate
-            // 
-            btnUpdate.BackColor = Color.FromArgb(30, 106, 17);
-            btnUpdate.BackgroundColor = Color.FromArgb(30, 106, 17);
-            btnUpdate.BorderColor = Color.PaleVioletRed;
-            btnUpdate.BorderRadius = 35;
-            btnUpdate.BorderSize = 0;
-            btnUpdate.FlatAppearance.BorderSize = 0;
-            btnUpdate.FlatStyle = FlatStyle.Flat;
-            btnUpdate.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnUpdate.ForeColor = Color.White;
-            btnUpdate.Location = new Point(309, 436);
-            btnUpdate.Name = "btnUpdate";
-            btnUpdate.Size = new Size(168, 40);
-            btnUpdate.TabIndex = 22;
-            btnUpdate.Text = "Update";
-            btnUpdate.TextColor = Color.White;
-            btnUpdate.UseVisualStyleBackColor = false;
-            btnUpdate.Click += btnUpdate_Click;
-            // 
-            // pnlItems
-            // 
-            pnlItems.AutoScroll = true;
-            pnlItems.BackColor = SystemColors.ControlLight;
-            pnlItems.Controls.Add(picEmpty);
-            pnlItems.Location = new Point(16, 42);
-            pnlItems.Name = "pnlItems";
-            pnlItems.Size = new Size(725, 375);
-            pnlItems.TabIndex = 21;
-            // 
-            // picEmpty
-            // 
-            picEmpty.Location = new Point(315, 120);
-            picEmpty.Margin = new Padding(310, 120, 3, 3);
-            picEmpty.Name = "picEmpty";
-            picEmpty.Size = new Size(100, 93);
-            picEmpty.TabIndex = 1;
-            picEmpty.TabStop = false;
-            picEmpty.Visible = false;
-            // 
-            // pnlMenu
-            // 
-            pnlMenu.BackColor = Color.FromArgb(101, 183, 65);
-            pnlMenu.Location = new Point(16, 10);
-            pnlMenu.Margin = new Padding(1);
-            pnlMenu.Name = "pnlMenu";
-            pnlMenu.Size = new Size(725, 31);
-            pnlMenu.TabIndex = 20;
             // 
             // timer1
             // 
@@ -395,34 +335,13 @@ namespace QuanLyTraoDoiHang
             btnShipment.UseVisualStyleBackColor = false;
             btnShipment.Click += btnShipment_Click_1;
             // 
-            // panel3
-            // 
-            panel3.BackColor = Color.White;
-            panel3.Controls.Add(lblContent);
-            panel3.Location = new Point(216, 6);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(758, 51);
-            panel3.TabIndex = 8;
-            // 
-            // lblContent
-            // 
-            lblContent.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblContent.ForeColor = Color.FromArgb(30, 106, 17);
-            lblContent.Location = new Point(16, 3);
-            lblContent.Name = "lblContent";
-            lblContent.Size = new Size(240, 40);
-            lblContent.TabIndex = 59;
-            lblContent.Text = "Shipment";
-            lblContent.TextAlign = ContentAlignment.MiddleLeft;
-            lblContent.Click += lblContent_Click;
-            // 
             // panel4
             // 
             panel4.BackColor = Color.White;
             panel4.Controls.Add(pictureBox1);
             panel4.Location = new Point(6, 6);
             panel4.Name = "panel4";
-            panel4.Size = new Size(200, 549);
+            panel4.Size = new Size(211, 545);
             panel4.TabIndex = 9;
             // 
             // FSellermanagement
@@ -430,25 +349,20 @@ namespace QuanLyTraoDoiHang
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.ControlLight;
             ClientSize = new Size(984, 561);
-            Controls.Add(panel3);
+            Controls.Add(pnlSellerTool);
             Controls.Add(panel1);
             Controls.Add(panel2);
-            Controls.Add(pnlSellerTool);
             Controls.Add(panel4);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(1);
             Name = "FSellermanagement";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FSellermanagement";
-            pnlSellerTool.ResumeLayout(false);
-            pnlItems.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)picEmpty).EndInit();
             pnlDropDownnn.ResumeLayout(false);
             pnlDropDownProdu.ResumeLayout(false);
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
-            panel3.ResumeLayout(false);
             panel4.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -471,12 +385,6 @@ namespace QuanLyTraoDoiHang
         private PictureBox pictureBox1;
         private Panel panel2;
         private RJControls.RButton btnShipment;
-        private Panel pnlMenu;
-        private FlowLayoutPanel pnlItems;
-        private Panel panel3;
-        private Label lblContent;
         private Panel panel4;
-        private RButton btnUpdate;
-        private PictureBox picEmpty;
     }
 }

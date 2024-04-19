@@ -138,7 +138,6 @@ namespace QuanLyTraoDoiHang
         // btn Product
         private void btnMyProducts_Click(object sender, EventArgs e)
         {
-            lblContent.Text = "My Products";
 
             MyProduct formMyProduct = new MyProduct();
             OpenChildForm(formMyProduct);
@@ -156,7 +155,6 @@ namespace QuanLyTraoDoiHang
         // btn Order
         private void btnMyOrder_Click(object sender, EventArgs e)
         {
-            lblContent.Text = "Completed Orders";
             List<string> strings = new List<string>();
             strings.Add("completed");
             FormProductStatus formProductStatus = new FormProductStatus(strings, false);
@@ -165,7 +163,6 @@ namespace QuanLyTraoDoiHang
 
         private void btnReturned_Click(object sender, EventArgs e)
         {
-            lblContent.Text = "Returned Orders";
             List<string> strings = new List<string>();
             strings.Add("returned");
             FormProductStatus formProductStatus = new FormProductStatus(strings, false);
@@ -174,7 +171,6 @@ namespace QuanLyTraoDoiHang
 
         private void btnCancelled_Click(object sender, EventArgs e)
         {
-            lblContent.Text = "Cancelled Orders";
             List<string> strings = new List<string>();
             strings.Add("cancelled");
             FormProductStatus formProductStatus = new FormProductStatus(strings, false);
@@ -183,15 +179,6 @@ namespace QuanLyTraoDoiHang
 
         private void btnShipment_Click_1(object sender, EventArgs e)
         {
-            if (pnlItems.Controls == null)
-            {
-                picEmpty.Visible = true;
-            }
-            else
-            {
-                picEmpty.Visible = false;
-            }
-            lblContent.Text = "Shipment";
             List<string> strings = new List<string>();
             strings.Add("waiting");
             strings.Add("shipping");

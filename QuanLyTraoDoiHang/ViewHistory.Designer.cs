@@ -58,14 +58,13 @@
             // 
             btnShip.BackColor = Color.White;
             btnShip.BackgroundColor = Color.White;
-            btnShip.BorderColor = Color.DarkGray;
+            btnShip.BorderColor = Color.White;
             btnShip.BorderRadius = 5;
             btnShip.BorderSize = 1;
             btnShip.FlatAppearance.BorderSize = 0;
             btnShip.FlatStyle = FlatStyle.Flat;
             btnShip.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnShip.ForeColor = Color.Black;
-            btnShip.Image = (Image)resources.GetObject("btnShip.Image");
             btnShip.ImageAlign = ContentAlignment.MiddleRight;
             btnShip.Location = new Point(0, 3);
             btnShip.Margin = new Padding(0, 3, 0, 0);
@@ -80,14 +79,13 @@
             // 
             btnCompleted.BackColor = Color.White;
             btnCompleted.BackgroundColor = Color.White;
-            btnCompleted.BorderColor = Color.DarkGray;
+            btnCompleted.BorderColor = Color.White;
             btnCompleted.BorderRadius = 5;
             btnCompleted.BorderSize = 1;
             btnCompleted.FlatAppearance.BorderSize = 0;
             btnCompleted.FlatStyle = FlatStyle.Flat;
             btnCompleted.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnCompleted.ForeColor = Color.Black;
-            btnCompleted.Image = (Image)resources.GetObject("btnCompleted.Image");
             btnCompleted.ImageAlign = ContentAlignment.MiddleRight;
             btnCompleted.Location = new Point(187, 3);
             btnCompleted.Margin = new Padding(0, 3, 0, 0);
@@ -102,14 +100,13 @@
             // 
             btnCancel.BackColor = Color.White;
             btnCancel.BackgroundColor = Color.White;
-            btnCancel.BorderColor = Color.DarkGray;
+            btnCancel.BorderColor = Color.White;
             btnCancel.BorderRadius = 5;
             btnCancel.BorderSize = 1;
             btnCancel.FlatAppearance.BorderSize = 0;
             btnCancel.FlatStyle = FlatStyle.Flat;
             btnCancel.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnCancel.ForeColor = Color.Black;
-            btnCancel.Image = (Image)resources.GetObject("btnCancel.Image");
             btnCancel.ImageAlign = ContentAlignment.MiddleRight;
             btnCancel.Location = new Point(374, 3);
             btnCancel.Margin = new Padding(0, 3, 0, 0);
@@ -124,14 +121,13 @@
             // 
             btnReturn.BackColor = Color.White;
             btnReturn.BackgroundColor = Color.White;
-            btnReturn.BorderColor = Color.DarkGray;
+            btnReturn.BorderColor = Color.White;
             btnReturn.BorderRadius = 5;
             btnReturn.BorderSize = 1;
             btnReturn.FlatAppearance.BorderSize = 0;
             btnReturn.FlatStyle = FlatStyle.Flat;
             btnReturn.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnReturn.ForeColor = Color.Black;
-            btnReturn.Image = (Image)resources.GetObject("btnReturn.Image");
             btnReturn.ImageAlign = ContentAlignment.MiddleRight;
             btnReturn.Location = new Point(561, 3);
             btnReturn.Margin = new Padding(0, 3, 0, 0);

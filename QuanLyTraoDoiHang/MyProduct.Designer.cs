@@ -44,10 +44,10 @@
             pnlMenu.Controls.Add(label1);
             pnlMenu.Controls.Add(label31);
             pnlMenu.Controls.Add(label100);
-            pnlMenu.Location = new Point(16, 10);
+            pnlMenu.Location = new Point(8, 22);
             pnlMenu.Margin = new Padding(1);
             pnlMenu.Name = "pnlMenu";
-            pnlMenu.Size = new Size(725, 31);
+            pnlMenu.Size = new Size(740, 31);
             pnlMenu.TabIndex = 25;
             // 
             // label4
@@ -103,25 +103,30 @@
             pnlProducts.AutoScroll = true;
             pnlProducts.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             pnlProducts.BackColor = SystemColors.ControlLight;
-            pnlProducts.Location = new Point(16, 41);
+            pnlProducts.Location = new Point(8, 53);
+            pnlProducts.Margin = new Padding(0);
             pnlProducts.MaximumSize = new Size(723, 100000);
-            pnlProducts.MinimumSize = new Size(723, 330);
+            pnlProducts.MinimumSize = new Size(740, 470);
             pnlProducts.Name = "pnlProducts";
-            pnlProducts.Size = new Size(723, 428);
+            pnlProducts.Padding = new Padding(5, 0, 0, 0);
+            pnlProducts.Size = new Size(740, 470);
             pnlProducts.TabIndex = 26;
+            pnlProducts.Paint += pnlProducts_Paint;
             // 
             // MyProduct
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(758, 498);
+            ClientSize = new Size(758, 545);
             Controls.Add(pnlProducts);
             Controls.Add(pnlMenu);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(1);
+            MaximumSize = new Size(758, 100000);
+            MinimumSize = new Size(758, 545);
             Name = "MyProduct";
-            RightToLeft = RightToLeft.Yes;
+            RightToLeft = RightToLeft.No;
             Text = "MyProduct";
             pnlMenu.ResumeLayout(false);
             pnlMenu.PerformLayout();

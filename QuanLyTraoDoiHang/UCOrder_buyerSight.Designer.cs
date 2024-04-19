@@ -206,7 +206,7 @@
             lblMethod.AutoSize = true;
             lblMethod.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblMethod.ForeColor = Color.Black;
-            lblMethod.Location = new Point(243, 17);
+            lblMethod.Location = new Point(27, 19);
             lblMethod.Name = "lblMethod";
             lblMethod.Size = new Size(115, 21);
             lblMethod.TabIndex = 3;
@@ -217,7 +217,7 @@
             lblStatus.AutoSize = true;
             lblStatus.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblStatus.ForeColor = Color.Black;
-            lblStatus.Location = new Point(16, 17);
+            lblStatus.Location = new Point(243, 19);
             lblStatus.Name = "lblStatus";
             lblStatus.Size = new Size(52, 21);
             lblStatus.TabIndex = 5;
@@ -226,11 +226,12 @@
             // cbxStatus
             // 
             cbxStatus.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbxStatus.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cbxStatus.FormattingEnabled = true;
             cbxStatus.Items.AddRange(new object[] { "waiting", "shipping", "completed", "cancelled", "returned" });
-            cbxStatus.Location = new Point(74, 19);
+            cbxStatus.Location = new Point(301, 16);
             cbxStatus.Name = "cbxStatus";
-            cbxStatus.Size = new Size(121, 23);
+            cbxStatus.Size = new Size(121, 29);
             cbxStatus.TabIndex = 4;
             // 
             // panel3
@@ -262,7 +263,7 @@
             // 
             label8.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
             label8.ForeColor = Color.Yellow;
-            label8.Location = new Point(569, 23);
+            label8.Location = new Point(584, 17);
             label8.Name = "label8";
             label8.Size = new Size(13, 25);
             label8.TabIndex = 11;
@@ -295,7 +296,7 @@
             lblTotalPrice.AutoSize = true;
             lblTotalPrice.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lblTotalPrice.ForeColor = Color.Yellow;
-            lblTotalPrice.Location = new Point(577, 17);
+            lblTotalPrice.Location = new Point(592, 11);
             lblTotalPrice.Name = "lblTotalPrice";
             lblTotalPrice.Size = new Size(85, 30);
             lblTotalPrice.TabIndex = 3;

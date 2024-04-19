@@ -29,5 +29,9 @@ namespace QuanLyTraoDoiHang
             }
         }
 
+        private void pnlProducts_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
