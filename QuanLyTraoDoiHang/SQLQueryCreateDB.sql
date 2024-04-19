@@ -100,3 +100,9 @@ create table OrderItem (
 	orderId int references OrderTable(orderId),
 	productId int references Product(productId),
 );
+
+--drop table detailImage
+create table DetailImage (
+	productId int references Product(productId),
+	image varbinary(max),
+);
