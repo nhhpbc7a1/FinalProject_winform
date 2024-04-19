@@ -56,10 +56,11 @@
             this.lblName = new System.Windows.Forms.Label();
             this.ptbImage = new System.Windows.Forms.PictureBox();
             this.pnlProductDetail = new System.Windows.Forms.Panel();
+            this.lblDetailDescription = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.richTextBoxDescription = new System.Windows.Forms.RichTextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.pnlThisSellerPage = new System.Windows.Forms.Panel();
+            this.ucStarsSeller = new QuanLyTraoDoiHang.UCStars();
             this.lblDateJoined = new System.Windows.Forms.Label();
             this.btnViewPage = new QuanLyTraoDoiHang.RJControls.RButton();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -70,13 +71,13 @@
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.lblSellerName = new System.Windows.Forms.Label();
             this.ptbSellerImage = new System.Windows.Forms.PictureBox();
-            this.pnlRating = new System.Windows.Forms.Panel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.fpnlShowProductOfThisSeller = new System.Windows.Forms.FlowLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.fpnlShowSimilarProduct = new System.Windows.Forms.FlowLayoutPanel();
+            this.label12 = new System.Windows.Forms.Label();
             this.pnlSellerProduct.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -87,12 +88,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbSellerImage)).BeginInit();
-            this.pnlRating.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlSellerProduct
@@ -118,7 +116,7 @@
             this.pnlSellerProduct.Controls.Add(this.panel2);
             this.pnlSellerProduct.Controls.Add(this.lblName);
             this.pnlSellerProduct.Controls.Add(this.ptbImage);
-            this.pnlSellerProduct.Location = new System.Drawing.Point(12, 12);
+            this.pnlSellerProduct.Location = new System.Drawing.Point(3, 3);
             this.pnlSellerProduct.Name = "pnlSellerProduct";
             this.pnlSellerProduct.Size = new System.Drawing.Size(952, 520);
             this.pnlSellerProduct.TabIndex = 0;
@@ -415,16 +413,32 @@
             // 
             // pnlProductDetail
             // 
-            this.pnlProductDetail.AutoScroll = true;
             this.pnlProductDetail.AutoSize = true;
+            this.pnlProductDetail.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.pnlProductDetail.BackColor = System.Drawing.Color.White;
+            this.pnlProductDetail.Controls.Add(this.lblDetailDescription);
             this.pnlProductDetail.Controls.Add(this.label9);
-            this.pnlProductDetail.Controls.Add(this.richTextBoxDescription);
             this.pnlProductDetail.Controls.Add(this.label10);
-            this.pnlProductDetail.Location = new System.Drawing.Point(12, 629);
+            this.pnlProductDetail.Location = new System.Drawing.Point(3, 620);
+            this.pnlProductDetail.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
+            this.pnlProductDetail.MaximumSize = new System.Drawing.Size(952, 100000);
+            this.pnlProductDetail.MinimumSize = new System.Drawing.Size(952, 539);
             this.pnlProductDetail.Name = "pnlProductDetail";
-            this.pnlProductDetail.Size = new System.Drawing.Size(970, 177);
+            this.pnlProductDetail.Size = new System.Drawing.Size(952, 559);
             this.pnlProductDetail.TabIndex = 1;
+            // 
+            // lblDetailDescription
+            // 
+            this.lblDetailDescription.AutoSize = true;
+            this.lblDetailDescription.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDetailDescription.Location = new System.Drawing.Point(10, 35);
+            this.lblDetailDescription.Margin = new System.Windows.Forms.Padding(3, 0, 3, 20);
+            this.lblDetailDescription.MaximumSize = new System.Drawing.Size(934, 100000);
+            this.lblDetailDescription.MinimumSize = new System.Drawing.Size(934, 0);
+            this.lblDetailDescription.Name = "lblDetailDescription";
+            this.lblDetailDescription.Size = new System.Drawing.Size(934, 504);
+            this.lblDetailDescription.TabIndex = 17;
+            this.lblDetailDescription.Text = resources.GetString("lblDetailDescription.Text");
             // 
             // label9
             // 
@@ -437,18 +451,6 @@
             this.label9.Size = new System.Drawing.Size(149, 20);
             this.label9.TabIndex = 16;
             this.label9.Text = "Detail description";
-            // 
-            // richTextBoxDescription
-            // 
-            this.richTextBoxDescription.BackColor = System.Drawing.Color.White;
-            this.richTextBoxDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxDescription.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.richTextBoxDescription.Location = new System.Drawing.Point(18, 22);
-            this.richTextBoxDescription.Name = "richTextBoxDescription";
-            this.richTextBoxDescription.ReadOnly = true;
-            this.richTextBoxDescription.Size = new System.Drawing.Size(934, 145);
-            this.richTextBoxDescription.TabIndex = 13;
-            this.richTextBoxDescription.Text = resources.GetString("richTextBoxDescription.Text");
             // 
             // label10
             // 
@@ -463,6 +465,7 @@
             // pnlThisSellerPage
             // 
             this.pnlThisSellerPage.BackColor = System.Drawing.Color.White;
+            this.pnlThisSellerPage.Controls.Add(this.ucStarsSeller);
             this.pnlThisSellerPage.Controls.Add(this.lblDateJoined);
             this.pnlThisSellerPage.Controls.Add(this.btnViewPage);
             this.pnlThisSellerPage.Controls.Add(this.panel6);
@@ -471,12 +474,18 @@
             this.pnlThisSellerPage.Controls.Add(this.pictureBox10);
             this.pnlThisSellerPage.Controls.Add(this.lblSellerName);
             this.pnlThisSellerPage.Controls.Add(this.ptbSellerImage);
-            this.pnlThisSellerPage.Controls.Add(this.pnlRating);
             this.pnlThisSellerPage.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.pnlThisSellerPage.Location = new System.Drawing.Point(12, 538);
+            this.pnlThisSellerPage.Location = new System.Drawing.Point(3, 529);
             this.pnlThisSellerPage.Name = "pnlThisSellerPage";
             this.pnlThisSellerPage.Size = new System.Drawing.Size(952, 85);
             this.pnlThisSellerPage.TabIndex = 2;
+            // 
+            // ucStarsSeller
+            // 
+            this.ucStarsSeller.Location = new System.Drawing.Point(86, 38);
+            this.ucStarsSeller.Name = "ucStarsSeller";
+            this.ucStarsSeller.Size = new System.Drawing.Size(163, 37);
+            this.ucStarsSeller.TabIndex = 20;
             // 
             // lblDateJoined
             // 
@@ -595,79 +604,93 @@
             this.ptbSellerImage.TabIndex = 4;
             this.ptbSellerImage.TabStop = false;
             // 
-            // pnlRating
+            // flowLayoutPanel1
             // 
-            this.pnlRating.Controls.Add(this.pictureBox7);
-            this.pnlRating.Controls.Add(this.pictureBox6);
-            this.pnlRating.Controls.Add(this.pictureBox5);
-            this.pnlRating.Controls.Add(this.pictureBox4);
-            this.pnlRating.Controls.Add(this.label8);
-            this.pnlRating.Controls.Add(this.pictureBox3);
-            this.pnlRating.Location = new System.Drawing.Point(86, 44);
-            this.pnlRating.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pnlRating.Name = "pnlRating";
-            this.pnlRating.Size = new System.Drawing.Size(180, 31);
-            this.pnlRating.TabIndex = 5;
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Controls.Add(this.pnlSellerProduct);
+            this.flowLayoutPanel1.Controls.Add(this.pnlThisSellerPage);
+            this.flowLayoutPanel1.Controls.Add(this.pnlProductDetail);
+            this.flowLayoutPanel1.Controls.Add(this.panel1);
+            this.flowLayoutPanel1.Controls.Add(this.panel4);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(984, 641);
+            this.flowLayoutPanel1.TabIndex = 3;
             // 
-            // pictureBox7
+            // panel1
             // 
-            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(117, 3);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(23, 20);
-            this.pictureBox7.TabIndex = 7;
-            this.pictureBox7.TabStop = false;
+            this.panel1.AutoSize = true;
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.fpnlShowProductOfThisSeller);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Location = new System.Drawing.Point(3, 1212);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
+            this.panel1.MaximumSize = new System.Drawing.Size(952, 100000);
+            this.panel1.MinimumSize = new System.Drawing.Size(952, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(952, 141);
+            this.panel1.TabIndex = 3;
             // 
-            // pictureBox6
+            // fpnlShowProductOfThisSeller
             // 
-            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(87, 3);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(23, 20);
-            this.pictureBox6.TabIndex = 6;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(58, 3);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(23, 20);
-            this.pictureBox5.TabIndex = 6;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(29, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(23, 20);
-            this.pictureBox4.TabIndex = 5;
-            this.pictureBox4.TabStop = false;
+            this.fpnlShowProductOfThisSeller.AutoSize = true;
+            this.fpnlShowProductOfThisSeller.BackColor = System.Drawing.Color.LightGray;
+            this.fpnlShowProductOfThisSeller.Location = new System.Drawing.Point(17, 31);
+            this.fpnlShowProductOfThisSeller.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
+            this.fpnlShowProductOfThisSeller.MaximumSize = new System.Drawing.Size(923, 1000);
+            this.fpnlShowProductOfThisSeller.MinimumSize = new System.Drawing.Size(923, 100);
+            this.fpnlShowProductOfThisSeller.Name = "fpnlShowProductOfThisSeller";
+            this.fpnlShowProductOfThisSeller.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.fpnlShowProductOfThisSeller.Size = new System.Drawing.Size(923, 100);
+            this.fpnlShowProductOfThisSeller.TabIndex = 1;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(145, 3);
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(17, 7);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(29, 19);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "4.6";
+            this.label8.Size = new System.Drawing.Size(174, 21);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Products of this seller";
             // 
-            // pictureBox3
+            // panel4
             // 
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(23, 20);
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
+            this.panel4.AutoSize = true;
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.fpnlShowSimilarProduct);
+            this.panel4.Controls.Add(this.label12);
+            this.panel4.Location = new System.Drawing.Point(3, 1386);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.panel4.MaximumSize = new System.Drawing.Size(952, 100000);
+            this.panel4.MinimumSize = new System.Drawing.Size(952, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(952, 141);
+            this.panel4.TabIndex = 4;
+            // 
+            // fpnlShowSimilarProduct
+            // 
+            this.fpnlShowSimilarProduct.AutoSize = true;
+            this.fpnlShowSimilarProduct.BackColor = System.Drawing.Color.LightGray;
+            this.fpnlShowSimilarProduct.Location = new System.Drawing.Point(17, 31);
+            this.fpnlShowSimilarProduct.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
+            this.fpnlShowSimilarProduct.MaximumSize = new System.Drawing.Size(923, 1000);
+            this.fpnlShowSimilarProduct.MinimumSize = new System.Drawing.Size(923, 100);
+            this.fpnlShowSimilarProduct.Name = "fpnlShowSimilarProduct";
+            this.fpnlShowSimilarProduct.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.fpnlShowSimilarProduct.Size = new System.Drawing.Size(923, 100);
+            this.fpnlShowSimilarProduct.TabIndex = 1;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label12.Location = new System.Drawing.Point(17, 7);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(139, 21);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Similar products ";
             // 
             // FProductDetail
             // 
@@ -675,9 +698,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(984, 641);
-            this.Controls.Add(this.pnlThisSellerPage);
-            this.Controls.Add(this.pnlProductDetail);
-            this.Controls.Add(this.pnlSellerProduct);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "FProductDetail";
             this.Text = "FProductDetail";
             this.pnlSellerProduct.ResumeLayout(false);
@@ -696,15 +717,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbSellerImage)).EndInit();
-            this.pnlRating.ResumeLayout(false);
-            this.pnlRating.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -735,19 +754,11 @@
         private RJControls.RButton btnAddToCart;
         private RJControls.RButton btnBuyNow;
         private Panel pnlProductDetail;
-        private RichTextBox richTextBoxDescription;
         private Label label10;
         private Label label9;
         public Panel pnlThisSellerPage;
         private Label lblSellerName;
         private PictureBox ptbSellerImage;
-        private Panel pnlRating;
-        private PictureBox pictureBox7;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox4;
-        private Label label8;
-        private PictureBox pictureBox3;
         private RJControls.RButton btnViewPage;
         private Panel panel6;
         private PictureBox pictureBox8;
@@ -758,5 +769,14 @@
         private PictureBox pictureBox10;
         private RJControls.RButton btnDeliverAdress;
         private FlowLayoutPanel pnlDetailImages;
+        private UCStars ucStarsSeller;
+        private Label lblDetailDescription;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private Panel panel1;
+        private FlowLayoutPanel fpnlShowProductOfThisSeller;
+        private Label label8;
+        private Panel panel4;
+        private FlowLayoutPanel fpnlShowSimilarProduct;
+        private Label label12;
     }
 }

@@ -24,8 +24,7 @@ namespace QuanLyTraoDoiHang
         }
         void TakeAllProduct()
         {
-            ProductDAO productDAO = new ProductDAO();
-            DataTable table = productDAO.Load();
+            DataTable table = ProductDAO.LoadCanBuy();
             foreach (DataRow row in table.Rows)
             {
                 listProduct.Add(ProductDAO.RowToProduct(row));
