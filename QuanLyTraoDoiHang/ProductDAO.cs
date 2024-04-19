@@ -22,7 +22,7 @@ namespace QuanLyTraoDoiHang
 
         public static int CreateID()
         {
-            string sqlStr = string.Format("SELECT * FROM " + tableName );
+            string sqlStr = string.Format("SELECT * FROM " + tableName);
             DataTable x = dBConnection.Load(sqlStr);
             int maxValue = 0;
             foreach (DataRow row in x.Rows)
@@ -34,35 +34,6 @@ namespace QuanLyTraoDoiHang
 
 
         public ProductDAO() { }
-        public DataTable Load()
-        {
-            string sqlStr = string.Format("SELECT * FROM " + tableName );
-            DataTable x = dBConnection.Load(sqlStr);
-            //return x; 
-            sqlStr = string.Format("SELECT productId FROM OrderTable,OrderItem where status<>'cancelled' and OrderTable.orderId = orderItem.orderId");
-            DataTable y = dBConnection.Load(sqlStr);
-            //return y;
-            DataTable z = x;
-            for (int i = 0; i < x.Rows.Count; i ++)
-            {
-                DataRow rowX = x.Rows[i];
-                bool kt = true;
-                foreach (DataRow rowY in y.Rows)
-                {
-                    if (rowX["productId"].ToString() == rowY["productId"].ToString())
-                    {
-                        kt = false;
-                        break;
-                    }
-                }
-                if (kt == false)
-                {
-                    x.Rows.RemoveAt(i--);
-                }
-
-            }
-            return z;
-        }
         public void Update(Product product)
         {
             string sqlStr = string.Format("SELECT productId FROM OrderTable,OrderItem where status<>'cancelled' and OrderTable.orderId = orderItem.orderId");
@@ -185,6 +156,59 @@ namespace QuanLyTraoDoiHang
                 }
             }
             return relatedProducts;
+        }
+        public static DataTable LoadCanBuy()
+        {
+            string sqlStr = string.Format("SELECT * FROM " + tableName);
+            DataTable x = dBConnection.Load(sqlStr);
+            //return x; 
+            sqlStr = string.Format("SELECT productId FROM OrderTable,OrderItem where status<>'cancelled' and OrderTable.orderId = orderItem.orderId");
+            DataTable y = dBConnection.Load(sqlStr);
+            //return y;
+            DataTable z = x;
+            for (int i = 0; i < x.Rows.Count; i++)
+            {
+                DataRow rowX = x.Rows[i];
+                bool kt = true;
+                foreach (DataRow rowY in y.Rows)
+                {
+                    if (rowX["productId"].ToString() == rowY["productId"].ToString())
+                    {
+                        kt = false;
+                        break;
+                    }
+                }
+                if (kt == false)
+                {
+                    z.Rows.RemoveAt(i--);
+                }
+
+            }
+            return z;
+        }
+        public static DataTable LoadCanBuy_SameCategory(string category)
+        {
+            DataTable x = LoadCanBuy();
+
+            for (int i = 0; i < x.Rows.Count; i++)
+            {
+                Product tmp = RowToProduct(x.Rows[i]);   
+                if (tmp.category != category)
+                    x.Rows.RemoveAt(i--);
+            }
+            return x;
+        }
+        public static DataTable LoadCanBuy_SameSeller(int sellerId)
+        {
+            DataTable x = LoadCanBuy();
+
+            for (int i = 0; i < x.Rows.Count; i++)
+            {
+                Product tmp = RowToProduct(x.Rows[i]);
+                if (tmp.sellerId != sellerId)
+                    x.Rows.RemoveAt(i--);
+            }
+            return x;
         }
 
     }

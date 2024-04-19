@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.ApplicationServices;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,8 @@ namespace QuanLyTraoDoiHang
     public partial class UCStars : UserControl
     {
         double numStar = 5;
+        public int userId = 0;
+        public bool canChanged = false;
         public UCStars()
         {
             InitializeComponent();
@@ -36,6 +39,34 @@ namespace QuanLyTraoDoiHang
             comboBoxNum.SelectedIndex = 4;
 
             comboBoxNum.SelectedIndexChanged += ComboBoxNum_SelectedIndexChanged;
+
+            this.Load += UCStars_Load;
+            UCStars_Load(null, null);
+        }
+
+        public void UCStars_Load(object? sender, EventArgs e)
+        {
+            DataTable ratings = RatingDAO.SellectBySellerId(userId);
+            double avgRating = 0;
+            foreach (DataRow row in ratings.Rows)
+            {
+                Rating x = RatingDAO.RowToRating(row);
+                avgRating += x.marks;
+            }
+            double tmp = ratings.Rows.Count;
+
+            lblNumStar.Text = (avgRating / tmp).ToString();
+            lblNumStar.Visible = true;
+
+            if (canChanged == false)
+            {
+                comboBoxNum.Text = (avgRating / tmp).ToString();
+                comboBoxNum.Visible = false;
+                comboBoxNum.Enabled = false;
+            }
+            else
+            {
+            }
         }
 
         private void ComboBoxNum_SelectedIndexChanged(object? sender, EventArgs e)

@@ -32,18 +32,20 @@ namespace QuanLyTraoDoiHang
             lblBrand.Text = product.brand.ToString();
             lblCondition.Text = product.condition.ToString();
             lblBought.Text = product.dateBought.ToString();
-            richTextBoxDescription.Text = product.description;
             //seller info
             User seller = UserDAO.SelectByUserId(product.sellerId);
             lblSellerName.Text = seller.name;
             ptbSellerImage.BackgroundImage = seller.image;
             lblSellerAddress.Text = seller.address;
             lblDateJoined.Text = seller.dateJoined.ToString();
+            lblSellerPhone.Text = seller.phone;
+            ucStarsSeller.userId = seller.userId;
+            ucStarsSeller.canChanged = false;
+            ucStarsSeller.UCStars_Load(null, null);
 
             pnlDetailImages.Controls.Clear();
             List<Image> list = DetailImageDAO.TakeListByProductId(product.productId);
             list.Add(product.image);
-            int i = 0;
             foreach (Image img in list)
             {
                 UCDetailImage x = new UCDetailImage(img);
@@ -58,6 +60,23 @@ namespace QuanLyTraoDoiHang
 
                 pnlDetailImages.Controls.Add(x);
             }
+
+            DataTable dataTable = ProductDAO.LoadCanBuy_SameSeller(product.sellerId);
+            fpnlShowProductOfThisSeller.Controls.Clear();
+            for (int i = 0; i < Math.Min(dataTable.Rows.Count, 4); i++)
+            {
+                Product tmp = ProductDAO.RowToProduct(dataTable.Rows[i]);
+                fpnlShowProductOfThisSeller.Controls.Add(new UCProductOnMainpage(tmp));
+            }
+
+            dataTable = ProductDAO.LoadCanBuy_SameCategory(product.category);
+            fpnlShowSimilarProduct.Controls.Clear();
+            for (int i = 0; i < Math.Min(dataTable.Rows.Count, 4); i++)
+            {
+                Product tmp = ProductDAO.RowToProduct(dataTable.Rows[i]);
+                fpnlShowSimilarProduct.Controls.Add(new UCProductOnMainpage(tmp));
+            }
+
         }
 
 
