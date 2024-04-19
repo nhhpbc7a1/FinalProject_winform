@@ -36,7 +36,6 @@
             panel8 = new Panel();
             label1 = new Label();
             panel2 = new Panel();
-            panel3 = new Panel();
             panel7 = new Panel();
             label5 = new Label();
             label6 = new Label();
@@ -63,6 +62,7 @@
             // 
             // pnlChildForm
             // 
+            pnlChildForm.BackColor = SystemColors.ControlLight;
             pnlChildForm.Controls.Add(panel4);
             pnlChildForm.Controls.Add(panel2);
             pnlChildForm.Dock = DockStyle.Fill;
@@ -78,20 +78,19 @@
             panel4.BackColor = SystemColors.ControlLight;
             panel4.Controls.Add(flowLayoutPanelProductList);
             panel4.Controls.Add(panel1);
-            panel4.Dock = DockStyle.Fill;
-            panel4.Location = new Point(257, 0);
+            panel4.Location = new Point(265, 0);
             panel4.Margin = new Padding(3, 2, 3, 2);
             panel4.Name = "panel4";
-            panel4.Size = new Size(727, 561);
+            panel4.Size = new Size(719, 561);
             panel4.TabIndex = 56;
             // 
             // flowLayoutPanelProductList
             // 
             flowLayoutPanelProductList.AutoScroll = true;
             flowLayoutPanelProductList.BackColor = Color.White;
-            flowLayoutPanelProductList.Location = new Point(12, 63);
+            flowLayoutPanelProductList.Location = new Point(6, 63);
             flowLayoutPanelProductList.Name = "flowLayoutPanelProductList";
-            flowLayoutPanelProductList.Size = new Size(703, 495);
+            flowLayoutPanelProductList.Size = new Size(698, 495);
             flowLayoutPanelProductList.TabIndex = 62;
             // 
             // panel1
@@ -100,10 +99,10 @@
             panel1.Controls.Add(panel8);
             panel1.Controls.Add(label1);
             panel1.ForeColor = Color.FromArgb(30, 106, 17);
-            panel1.Location = new Point(12, 10);
+            panel1.Location = new Point(6, 10);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(703, 54);
+            panel1.Size = new Size(701, 54);
             panel1.TabIndex = 61;
             // 
             // panel8
@@ -114,7 +113,7 @@
             panel8.Location = new Point(0, 49);
             panel8.Margin = new Padding(3, 4, 3, 4);
             panel8.Name = "panel8";
-            panel8.Size = new Size(703, 5);
+            panel8.Size = new Size(701, 5);
             panel8.TabIndex = 62;
             // 
             // label1
@@ -131,26 +130,15 @@
             // panel2
             // 
             panel2.BackColor = Color.White;
-            panel2.Controls.Add(panel3);
             panel2.Controls.Add(panel7);
             panel2.Controls.Add(panel6);
             panel2.Controls.Add(panel5);
             panel2.Controls.Add(label22);
-            panel2.Dock = DockStyle.Left;
-            panel2.Location = new Point(0, 0);
+            panel2.Location = new Point(12, 10);
             panel2.Name = "panel2";
-            panel2.Size = new Size(257, 561);
+            panel2.Size = new Size(247, 551);
             panel2.TabIndex = 56;
             panel2.Paint += panel2_Paint;
-            // 
-            // panel3
-            // 
-            panel3.BackColor = SystemColors.ControlLight;
-            panel3.Dock = DockStyle.Top;
-            panel3.Location = new Point(0, 0);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(257, 12);
-            panel3.TabIndex = 60;
             // 
             // panel7
             // 
@@ -159,7 +147,7 @@
             panel7.Controls.Add(btnApply);
             panel7.Controls.Add(cbMaxPrice);
             panel7.Controls.Add(cbMinPrice);
-            panel7.Location = new Point(18, 408);
+            panel7.Location = new Point(18, 376);
             panel7.Name = "panel7";
             panel7.Size = new Size(214, 141);
             panel7.TabIndex = 59;
@@ -236,7 +224,7 @@
             panel6.Controls.Add(cbAddress);
             panel6.Controls.Add(checkListBoxAddress);
             panel6.Controls.Add(label21);
-            panel6.Location = new Point(18, 237);
+            panel6.Location = new Point(18, 210);
             panel6.Name = "panel6";
             panel6.Size = new Size(214, 165);
             panel6.TabIndex = 58;
@@ -282,7 +270,7 @@
             panel5.Controls.Add(checkListBoxCategory);
             panel5.Controls.Add(cbCategory);
             panel5.Controls.Add(label20);
-            panel5.Location = new Point(18, 56);
+            panel5.Location = new Point(18, 41);
             panel5.Name = "panel5";
             panel5.Size = new Size(214, 175);
             panel5.TabIndex = 57;
@@ -326,7 +314,7 @@
             label22.ForeColor = Color.FromArgb(30, 106, 17);
             label22.Image = (Image)resources.GetObject("label22.Image");
             label22.ImageAlign = ContentAlignment.MiddleLeft;
-            label22.Location = new Point(31, 28);
+            label22.Location = new Point(35, 13);
             label22.Name = "label22";
             label22.Size = new Size(159, 25);
             label22.TabIndex = 41;
@@ -375,7 +363,6 @@
         private ComboBox cbAddress;
         private CheckedListBox checkListBoxCategory;
         private ComboBox cbCategory;
-        private Panel panel3;
         public FlowLayoutPanel flowLayoutPanelProductList;
         private Panel panel8;
     }

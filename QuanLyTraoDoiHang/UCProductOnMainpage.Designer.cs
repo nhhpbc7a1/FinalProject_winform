@@ -40,6 +40,9 @@
             ucStars1 = new UCStars();
             lblDateStart = new Label();
             label3 = new Label();
+            panel1 = new Panel();
+            panel2 = new Panel();
+            panel3 = new Panel();
             ((System.ComponentModel.ISupportInitialize)ptbImage).BeginInit();
             flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
@@ -52,7 +55,7 @@
             ptbImage.Location = new Point(0, 0);
             ptbImage.Margin = new Padding(3, 2, 3, 2);
             ptbImage.Name = "ptbImage";
-            ptbImage.Size = new Size(198, 148);
+            ptbImage.Size = new Size(200, 148);
             ptbImage.TabIndex = 0;
             ptbImage.TabStop = false;
             // 
@@ -171,11 +174,40 @@
             label3.TabIndex = 6;
             label3.Text = "date:";
             // 
+            // panel1
+            // 
+            panel1.BackColor = SystemColors.AppWorkspace;
+            panel1.Dock = DockStyle.Right;
+            panel1.Location = new Point(199, 148);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1, 164);
+            panel1.TabIndex = 10;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = SystemColors.AppWorkspace;
+            panel2.Dock = DockStyle.Left;
+            panel2.Location = new Point(0, 148);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1, 164);
+            panel2.TabIndex = 11;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = SystemColors.AppWorkspace;
+            panel3.Dock = DockStyle.Bottom;
+            panel3.Location = new Point(1, 311);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(198, 1);
+            panel3.TabIndex = 12;
+            // 
             // UCProductOnMainpage
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.White;
-            BorderStyle = BorderStyle.FixedSingle;
+            Controls.Add(panel3);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
             Controls.Add(ucStars1);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(label3);
@@ -183,9 +215,9 @@
             Controls.Add(lblDateStart);
             Controls.Add(lblName);
             Controls.Add(ptbImage);
-            Margin = new Padding(8, 4, 10, 4);
+            Margin = new Padding(8, 4, 15, 4);
             Name = "UCProductOnMainpage";
-            Size = new Size(198, 310);
+            Size = new Size(200, 312);
             ((System.ComponentModel.ISupportInitialize)ptbImage).EndInit();
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel1.PerformLayout();
@@ -205,5 +237,8 @@
         private UCStars ucStars1;
         private Label lblDateStart;
         private Label label3;
+        private Panel panel1;
+        private Panel panel2;
+        private Panel panel3;
     }
 }

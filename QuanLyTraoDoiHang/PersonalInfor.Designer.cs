@@ -128,80 +128,80 @@
             // 
             // btnUpdateInfo
             // 
-            btnUpdateInfo.BackColor = Color.White;
-            btnUpdateInfo.BackgroundColor = Color.White;
+            btnUpdateInfo.BackColor = Color.FromArgb(30, 106, 17);
+            btnUpdateInfo.BackgroundColor = Color.FromArgb(30, 106, 17);
             btnUpdateInfo.BorderColor = Color.Black;
             btnUpdateInfo.BorderRadius = 10;
             btnUpdateInfo.BorderSize = 1;
             btnUpdateInfo.FlatAppearance.BorderSize = 0;
             btnUpdateInfo.FlatStyle = FlatStyle.Flat;
             btnUpdateInfo.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnUpdateInfo.ForeColor = Color.Black;
+            btnUpdateInfo.ForeColor = Color.White;
             btnUpdateInfo.ImageAlign = ContentAlignment.MiddleLeft;
-            btnUpdateInfo.Location = new Point(7, 14);
+            btnUpdateInfo.Location = new Point(13, 14);
             btnUpdateInfo.Name = "btnUpdateInfo";
-            btnUpdateInfo.Size = new Size(164, 51);
+            btnUpdateInfo.Size = new Size(145, 51);
             btnUpdateInfo.TabIndex = 2;
             btnUpdateInfo.Text = "Update info";
-            btnUpdateInfo.TextColor = Color.Black;
+            btnUpdateInfo.TextColor = Color.White;
             btnUpdateInfo.UseVisualStyleBackColor = false;
             // 
             // btnLogout
             // 
-            btnLogout.BackColor = Color.White;
-            btnLogout.BackgroundColor = Color.White;
+            btnLogout.BackColor = Color.FromArgb(30, 106, 17);
+            btnLogout.BackgroundColor = Color.FromArgb(30, 106, 17);
             btnLogout.BorderColor = Color.Black;
             btnLogout.BorderRadius = 10;
             btnLogout.BorderSize = 1;
             btnLogout.FlatAppearance.BorderSize = 0;
             btnLogout.FlatStyle = FlatStyle.Flat;
             btnLogout.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnLogout.ForeColor = Color.Black;
+            btnLogout.ForeColor = Color.White;
             btnLogout.ImageAlign = ContentAlignment.MiddleLeft;
-            btnLogout.Location = new Point(7, 233);
+            btnLogout.Location = new Point(13, 233);
             btnLogout.Name = "btnLogout";
-            btnLogout.Size = new Size(164, 51);
+            btnLogout.Size = new Size(145, 51);
             btnLogout.TabIndex = 5;
             btnLogout.Text = "Log out";
-            btnLogout.TextColor = Color.Black;
+            btnLogout.TextColor = Color.White;
             btnLogout.UseVisualStyleBackColor = false;
             // 
             // btnChangePass
             // 
-            btnChangePass.BackColor = Color.White;
-            btnChangePass.BackgroundColor = Color.White;
+            btnChangePass.BackColor = Color.FromArgb(30, 106, 17);
+            btnChangePass.BackgroundColor = Color.FromArgb(30, 106, 17);
             btnChangePass.BorderColor = Color.Black;
             btnChangePass.BorderRadius = 10;
             btnChangePass.BorderSize = 1;
             btnChangePass.FlatAppearance.BorderSize = 0;
             btnChangePass.FlatStyle = FlatStyle.Flat;
             btnChangePass.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnChangePass.ForeColor = Color.Black;
-            btnChangePass.Location = new Point(7, 84);
+            btnChangePass.ForeColor = Color.White;
+            btnChangePass.Location = new Point(13, 84);
             btnChangePass.Name = "btnChangePass";
-            btnChangePass.Size = new Size(164, 51);
+            btnChangePass.Size = new Size(145, 51);
             btnChangePass.TabIndex = 3;
             btnChangePass.Text = "Change password";
-            btnChangePass.TextColor = Color.Black;
+            btnChangePass.TextColor = Color.White;
             btnChangePass.UseVisualStyleBackColor = false;
             // 
             // btnHistory
             // 
-            btnHistory.BackColor = Color.White;
-            btnHistory.BackgroundColor = Color.White;
+            btnHistory.BackColor = Color.FromArgb(30, 106, 17);
+            btnHistory.BackgroundColor = Color.FromArgb(30, 106, 17);
             btnHistory.BorderColor = Color.Black;
             btnHistory.BorderRadius = 10;
             btnHistory.BorderSize = 1;
             btnHistory.FlatAppearance.BorderSize = 0;
             btnHistory.FlatStyle = FlatStyle.Flat;
             btnHistory.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnHistory.ForeColor = Color.Black;
-            btnHistory.Location = new Point(7, 159);
+            btnHistory.ForeColor = Color.White;
+            btnHistory.Location = new Point(13, 159);
             btnHistory.Name = "btnHistory";
-            btnHistory.Size = new Size(164, 51);
+            btnHistory.Size = new Size(145, 51);
             btnHistory.TabIndex = 4;
             btnHistory.Text = "Purchase History";
-            btnHistory.TextColor = Color.Black;
+            btnHistory.TextColor = Color.White;
             btnHistory.UseVisualStyleBackColor = false;
             // 
             // panel1
@@ -216,16 +216,16 @@
             // 
             panel3.BackColor = Color.White;
             panel3.Controls.Add(pnl_Infor);
-            panel3.Location = new Point(205, 8);
+            panel3.Location = new Point(189, 8);
             panel3.Name = "panel3";
-            panel3.Size = new Size(767, 545);
+            panel3.Size = new Size(783, 545);
             panel3.TabIndex = 2;
             // 
             // pnl_Infor
             // 
             pnl_Infor.Anchor = AnchorStyles.None;
             pnl_Infor.BackColor = SystemColors.ControlLight;
-            pnl_Infor.Location = new Point(10, 21);
+            pnl_Infor.Location = new Point(18, 21);
             pnl_Infor.Name = "pnl_Infor";
             pnl_Infor.Size = new Size(747, 502);
             pnl_Infor.TabIndex = 1;

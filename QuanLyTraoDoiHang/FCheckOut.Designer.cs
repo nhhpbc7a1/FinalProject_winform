@@ -61,15 +61,17 @@ namespace QuanLyTraoDoiHang
             // 
             // panel1
             // 
-            panel1.AutoScroll = true;
+            panel1.AutoSize = true;
             panel1.BackColor = SystemColors.ControlLight;
             panel1.Controls.Add(label2);
             panel1.Controls.Add(panel5);
             panel1.Controls.Add(panel2);
             panel1.Location = new Point(128, 15);
             panel1.Margin = new Padding(3, 15, 3, 3);
+            panel1.MaximumSize = new Size(751, 10000);
+            panel1.MinimumSize = new Size(751, 590);
             panel1.Name = "panel1";
-            panel1.Size = new Size(751, 584);
+            panel1.Size = new Size(751, 590);
             panel1.TabIndex = 0;
             // 
             // label2
@@ -355,6 +357,7 @@ namespace QuanLyTraoDoiHang
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel1.PerformLayout();
             ResumeLayout(false);
         }
 

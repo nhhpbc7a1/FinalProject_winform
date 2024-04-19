@@ -46,7 +46,7 @@
             // 
             lblOriginPrice.AutoSize = true;
             lblOriginPrice.Font = new Font("Segoe UI", 12F, FontStyle.Strikeout, GraphicsUnit.Point);
-            lblOriginPrice.Location = new Point(484, 45);
+            lblOriginPrice.Location = new Point(469, 49);
             lblOriginPrice.Margin = new Padding(1, 0, 1, 0);
             lblOriginPrice.Name = "lblOriginPrice";
             lblOriginPrice.Size = new Size(55, 21);
@@ -58,7 +58,7 @@
             lblPrice.AutoSize = true;
             lblPrice.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblPrice.ForeColor = Color.Red;
-            lblPrice.Location = new Point(487, 74);
+            lblPrice.Location = new Point(472, 78);
             lblPrice.Margin = new Padding(1, 0, 1, 0);
             lblPrice.Name = "lblPrice";
             lblPrice.Size = new Size(52, 21);
@@ -67,12 +67,12 @@
             // 
             // lblCondition
             // 
-            lblCondition.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblCondition.Location = new Point(262, 50);
+            lblCondition.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCondition.Location = new Point(247, 49);
             lblCondition.Margin = new Padding(1, 0, 1, 0);
             lblCondition.Name = "lblCondition";
             lblCondition.RightToLeft = RightToLeft.No;
-            lblCondition.Size = new Size(181, 64);
+            lblCondition.Size = new Size(181, 79);
             lblCondition.TabIndex = 62;
             lblCondition.Text = "Condition";
             // 
@@ -80,20 +80,20 @@
             // 
             panel3.Controls.Add(lblProductName);
             panel3.Controls.Add(picItems);
-            panel3.Location = new Point(25, 40);
+            panel3.Location = new Point(10, 30);
             panel3.Margin = new Padding(1);
             panel3.Name = "panel3";
-            panel3.Size = new Size(222, 74);
+            panel3.Size = new Size(235, 98);
             panel3.TabIndex = 61;
             // 
             // lblProductName
             // 
-            lblProductName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblProductName.Location = new Point(70, 10);
+            lblProductName.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblProductName.Location = new Point(74, 19);
             lblProductName.Margin = new Padding(1, 0, 1, 0);
             lblProductName.Name = "lblProductName";
             lblProductName.RightToLeft = RightToLeft.No;
-            lblProductName.Size = new Size(151, 56);
+            lblProductName.Size = new Size(151, 69);
             lblProductName.TabIndex = 11;
             lblProductName.Text = "(name)";
             // 
@@ -101,10 +101,10 @@
             // 
             picItems.BackColor = SystemColors.Control;
             picItems.BackgroundImageLayout = ImageLayout.Stretch;
-            picItems.Location = new Point(4, 5);
+            picItems.Location = new Point(4, 13);
             picItems.Margin = new Padding(1);
             picItems.Name = "picItems";
-            picItems.Size = new Size(64, 63);
+            picItems.Size = new Size(68, 74);
             picItems.TabIndex = 10;
             picItems.TabStop = false;
             // 
@@ -120,7 +120,7 @@
             btnViewChange.FlatStyle = FlatStyle.Flat;
             btnViewChange.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnViewChange.ForeColor = Color.LightCoral;
-            btnViewChange.Location = new Point(596, 26);
+            btnViewChange.Location = new Point(581, 30);
             btnViewChange.Name = "btnViewChange";
             btnViewChange.Size = new Size(119, 40);
             btnViewChange.TabIndex = 0;
@@ -139,7 +139,7 @@
             btnDelete.FlatStyle = FlatStyle.Flat;
             btnDelete.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnDelete.ForeColor = Color.White;
-            btnDelete.Location = new Point(596, 74);
+            btnDelete.Location = new Point(581, 78);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(119, 40);
             btnDelete.TabIndex = 0;
@@ -152,7 +152,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 11.25F, FontStyle.Underline, GraphicsUnit.Point);
             label1.ForeColor = Color.Red;
-            label1.Location = new Point(470, 75);
+            label1.Location = new Point(455, 79);
             label1.Margin = new Padding(1, 0, 1, 0);
             label1.Name = "label1";
             label1.Size = new Size(18, 20);
@@ -164,7 +164,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Underline, GraphicsUnit.Point);
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(470, 46);
+            label2.Location = new Point(455, 50);
             label2.Margin = new Padding(1, 0, 1, 0);
             label2.Name = "label2";
             label2.Size = new Size(18, 20);

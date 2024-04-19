@@ -54,7 +54,7 @@
             lblPhone.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblPhone.Image = (Image)resources.GetObject("lblPhone.Image");
             lblPhone.ImageAlign = ContentAlignment.MiddleLeft;
-            lblPhone.Location = new Point(221, 13);
+            lblPhone.Location = new Point(242, 13);
             lblPhone.Name = "lblPhone";
             lblPhone.Size = new Size(150, 26);
             lblPhone.TabIndex = 0;

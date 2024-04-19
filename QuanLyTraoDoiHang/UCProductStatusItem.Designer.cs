@@ -35,18 +35,19 @@
             lblOriginPrice = new Label();
             label1 = new Label();
             label2 = new Label();
+            panel2 = new Panel();
             ((System.ComponentModel.ISupportInitialize)picItems).BeginInit();
             SuspendLayout();
             // 
             // lblProductName
             // 
-            lblProductName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblProductName.Location = new Point(83, 25);
+            lblProductName.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblProductName.Location = new Point(96, 25);
             lblProductName.Margin = new Padding(1, 0, 1, 15);
             lblProductName.MaximumSize = new Size(220, 10000);
             lblProductName.Name = "lblProductName";
             lblProductName.RightToLeft = RightToLeft.No;
-            lblProductName.Size = new Size(159, 61);
+            lblProductName.Size = new Size(159, 72);
             lblProductName.TabIndex = 11;
             lblProductName.Text = "(name)";
             // 
@@ -57,19 +58,19 @@
             picItems.Location = new Point(17, 23);
             picItems.Margin = new Padding(1);
             picItems.Name = "picItems";
-            picItems.Size = new Size(64, 63);
+            picItems.Size = new Size(68, 74);
             picItems.TabIndex = 10;
             picItems.TabStop = false;
             // 
             // lblCondition
             // 
-            lblCondition.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblCondition.Location = new Point(244, 28);
+            lblCondition.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCondition.Location = new Point(313, 25);
             lblCondition.Margin = new Padding(1, 0, 1, 15);
             lblCondition.MaximumSize = new Size(264, 10000);
             lblCondition.Name = "lblCondition";
             lblCondition.RightToLeft = RightToLeft.No;
-            lblCondition.Size = new Size(184, 61);
+            lblCondition.Size = new Size(197, 72);
             lblCondition.TabIndex = 56;
             lblCondition.Text = "Condition";
             // 
@@ -119,12 +120,20 @@
             label2.TabIndex = 61;
             label2.Text = "đ";
             // 
+            // panel2
+            // 
+            panel2.BackColor = SystemColors.AppWorkspace;
+            panel2.Location = new Point(4, 129);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(707, 1);
+            panel2.TabIndex = 62;
+            // 
             // UCProductStatusItem
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            BorderStyle = BorderStyle.FixedSingle;
+            Controls.Add(panel2);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(lblProductName);
@@ -135,7 +144,7 @@
             Margin = new Padding(0);
             Name = "UCProductStatusItem";
             RightToLeft = RightToLeft.No;
-            Size = new Size(725, 128);
+            Size = new Size(727, 130);
             ((System.ComponentModel.ISupportInitialize)picItems).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -149,5 +158,6 @@
         public Label lblOriginPrice;
         public Label label1;
         public Label label2;
+        private Panel panel2;
     }
 }
