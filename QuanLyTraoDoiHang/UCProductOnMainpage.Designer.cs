@@ -29,168 +29,168 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCProductOnMainpage));
-            this.ptbImage = new System.Windows.Forms.PictureBox();
-            this.lblName = new System.Windows.Forms.Label();
-            this.lblPrice = new System.Windows.Forms.Label();
-            this.btnBuyNow = new QuanLyTraoDoiHang.RJControls.RButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblOriginalPrice = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.ucStars1 = new QuanLyTraoDoiHang.UCStars();
-            this.lblDateStart = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbImage)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.SuspendLayout();
+            ptbImage = new PictureBox();
+            lblName = new Label();
+            lblPrice = new Label();
+            btnBuyNow = new RJControls.RButton();
+            label1 = new Label();
+            lblOriginalPrice = new Label();
+            label2 = new Label();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            ucStars1 = new UCStars();
+            lblDateStart = new Label();
+            label3 = new Label();
+            ((System.ComponentModel.ISupportInitialize)ptbImage).BeginInit();
+            flowLayoutPanel1.SuspendLayout();
+            SuspendLayout();
             // 
             // ptbImage
             // 
-            this.ptbImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptbImage.BackgroundImage")));
-            this.ptbImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptbImage.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ptbImage.Location = new System.Drawing.Point(0, 0);
-            this.ptbImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ptbImage.Name = "ptbImage";
-            this.ptbImage.Size = new System.Drawing.Size(196, 148);
-            this.ptbImage.TabIndex = 0;
-            this.ptbImage.TabStop = false;
+            ptbImage.BackgroundImage = (Image)resources.GetObject("ptbImage.BackgroundImage");
+            ptbImage.BackgroundImageLayout = ImageLayout.Stretch;
+            ptbImage.Dock = DockStyle.Top;
+            ptbImage.Location = new Point(0, 0);
+            ptbImage.Margin = new Padding(3, 2, 3, 2);
+            ptbImage.Name = "ptbImage";
+            ptbImage.Size = new Size(198, 148);
+            ptbImage.TabIndex = 0;
+            ptbImage.TabStop = false;
             // 
             // lblName
             // 
-            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblName.Location = new System.Drawing.Point(-2, 150);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(200, 33);
-            this.lblName.TabIndex = 1;
-            this.lblName.Text = "Product\'s name";
-            this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblName.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblName.Location = new Point(-2, 150);
+            lblName.Name = "lblName";
+            lblName.Size = new Size(200, 48);
+            lblName.TabIndex = 1;
+            lblName.Text = "Product's name";
+            lblName.TextAlign = ContentAlignment.TopCenter;
+            lblName.Click += lblName_Click;
             // 
             // lblPrice
             // 
-            this.lblPrice.AutoSize = true;
-            this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPrice.ForeColor = System.Drawing.Color.Red;
-            this.lblPrice.Location = new System.Drawing.Point(14, 0);
-            this.lblPrice.Margin = new System.Windows.Forms.Padding(0);
-            this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(71, 24);
-            this.lblPrice.TabIndex = 3;
-            this.lblPrice.Text = "10.500";
+            lblPrice.AutoSize = true;
+            lblPrice.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblPrice.ForeColor = Color.Red;
+            lblPrice.Location = new Point(14, 0);
+            lblPrice.Margin = new Padding(0);
+            lblPrice.Name = "lblPrice";
+            lblPrice.Size = new Size(71, 24);
+            lblPrice.TabIndex = 3;
+            lblPrice.Text = "10.500";
             // 
             // btnBuyNow
             // 
-            this.btnBuyNow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.btnBuyNow.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.btnBuyNow.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnBuyNow.BorderRadius = 15;
-            this.btnBuyNow.BorderSize = 0;
-            this.btnBuyNow.FlatAppearance.BorderSize = 0;
-            this.btnBuyNow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuyNow.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnBuyNow.ForeColor = System.Drawing.Color.White;
-            this.btnBuyNow.Location = new System.Drawing.Point(120, 266);
-            this.btnBuyNow.Name = "btnBuyNow";
-            this.btnBuyNow.Size = new System.Drawing.Size(73, 30);
-            this.btnBuyNow.TabIndex = 5;
-            this.btnBuyNow.Text = "Buy now";
-            this.btnBuyNow.TextColor = System.Drawing.Color.White;
-            this.btnBuyNow.UseVisualStyleBackColor = false;
+            btnBuyNow.BackColor = Color.FromArgb(231, 41, 41);
+            btnBuyNow.BackgroundColor = Color.FromArgb(231, 41, 41);
+            btnBuyNow.BorderColor = Color.PaleVioletRed;
+            btnBuyNow.BorderRadius = 15;
+            btnBuyNow.BorderSize = 0;
+            btnBuyNow.FlatAppearance.BorderSize = 0;
+            btnBuyNow.FlatStyle = FlatStyle.Flat;
+            btnBuyNow.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnBuyNow.ForeColor = Color.White;
+            btnBuyNow.Location = new Point(115, 272);
+            btnBuyNow.Name = "btnBuyNow";
+            btnBuyNow.Size = new Size(73, 30);
+            btnBuyNow.TabIndex = 5;
+            btnBuyNow.Text = "Buy now";
+            btnBuyNow.TextColor = Color.White;
+            btnBuyNow.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(14, 15);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "đ";
+            label1.AutoSize = true;
+            label1.ForeColor = Color.Red;
+            label1.Location = new Point(0, 10);
+            label1.Margin = new Padding(0, 10, 0, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(14, 15);
+            label1.TabIndex = 6;
+            label1.Text = "đ";
             // 
             // lblOriginalPrice
             // 
-            this.lblOriginalPrice.AutoSize = true;
-            this.lblOriginalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point);
-            this.lblOriginalPrice.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblOriginalPrice.Location = new System.Drawing.Point(99, 4);
-            this.lblOriginalPrice.Margin = new System.Windows.Forms.Padding(0, 4, 0, 0);
-            this.lblOriginalPrice.Name = "lblOriginalPrice";
-            this.lblOriginalPrice.Size = new System.Drawing.Size(49, 16);
-            this.lblOriginalPrice.TabIndex = 6;
-            this.lblOriginalPrice.Text = "100000";
+            lblOriginalPrice.AutoSize = true;
+            lblOriginalPrice.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Strikeout, GraphicsUnit.Point);
+            lblOriginalPrice.ForeColor = SystemColors.ControlDarkDark;
+            lblOriginalPrice.Location = new Point(99, 4);
+            lblOriginalPrice.Margin = new Padding(0, 4, 0, 0);
+            lblOriginalPrice.Name = "lblOriginalPrice";
+            lblOriginalPrice.Size = new Size(49, 16);
+            lblOriginalPrice.TabIndex = 6;
+            lblOriginalPrice.Text = "100000";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(85, 2);
-            this.label2.Margin = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(14, 15);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "đ";
+            label2.AutoSize = true;
+            label2.ForeColor = SystemColors.ControlDarkDark;
+            label2.Location = new Point(85, 10);
+            label2.Margin = new Padding(0, 10, 0, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(14, 15);
+            label2.TabIndex = 6;
+            label2.Text = "đ";
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.label1);
-            this.flowLayoutPanel1.Controls.Add(this.lblPrice);
-            this.flowLayoutPanel1.Controls.Add(this.label2);
-            this.flowLayoutPanel1.Controls.Add(this.lblOriginalPrice);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 198);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(196, 33);
-            this.flowLayoutPanel1.TabIndex = 7;
+            flowLayoutPanel1.Controls.Add(label1);
+            flowLayoutPanel1.Controls.Add(lblPrice);
+            flowLayoutPanel1.Controls.Add(label2);
+            flowLayoutPanel1.Controls.Add(lblOriginalPrice);
+            flowLayoutPanel1.Location = new Point(3, 198);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(196, 33);
+            flowLayoutPanel1.TabIndex = 7;
             // 
             // ucStars1
             // 
-            this.ucStars1.Location = new System.Drawing.Point(1, 225);
-            this.ucStars1.Name = "ucStars1";
-            this.ucStars1.Size = new System.Drawing.Size(195, 44);
-            this.ucStars1.TabIndex = 8;
+            ucStars1.Location = new Point(1, 225);
+            ucStars1.Name = "ucStars1";
+            ucStars1.Size = new Size(195, 44);
+            ucStars1.TabIndex = 8;
             // 
             // lblDateStart
             // 
-            this.lblDateStart.AutoSize = true;
-            this.lblDateStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDateStart.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblDateStart.Location = new System.Drawing.Point(45, 278);
-            this.lblDateStart.Name = "lblDateStart";
-            this.lblDateStart.Size = new System.Drawing.Size(64, 18);
-            this.lblDateStart.TabIndex = 6;
-            this.lblDateStart.Text = "1/1/2000";
+            lblDateStart.AutoSize = true;
+            lblDateStart.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDateStart.ForeColor = SystemColors.ControlDarkDark;
+            lblDateStart.Location = new Point(45, 278);
+            lblDateStart.Name = "lblDateStart";
+            lblDateStart.Size = new Size(64, 18);
+            lblDateStart.TabIndex = 6;
+            lblDateStart.Text = "1/1/2000";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(6, 281);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 15);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "date:";
+            label3.AutoSize = true;
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(6, 281);
+            label3.Name = "label3";
+            label3.Size = new Size(33, 15);
+            label3.TabIndex = 6;
+            label3.Text = "date:";
             // 
             // UCProductOnMainpage
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.White;
-            this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Controls.Add(this.ucStars1);
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.btnBuyNow);
-            this.Controls.Add(this.lblDateStart);
-            this.Controls.Add(this.lblName);
-            this.Controls.Add(this.ptbImage);
-            this.Margin = new System.Windows.Forms.Padding(10, 4, 10, 4);
-            this.Name = "UCProductOnMainpage";
-            this.Size = new System.Drawing.Size(196, 308);
-            ((System.ComponentModel.ISupportInitialize)(this.ptbImage)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleMode = AutoScaleMode.None;
+            BackColor = Color.White;
+            BorderStyle = BorderStyle.FixedSingle;
+            Controls.Add(ucStars1);
+            Controls.Add(flowLayoutPanel1);
+            Controls.Add(label3);
+            Controls.Add(btnBuyNow);
+            Controls.Add(lblDateStart);
+            Controls.Add(lblName);
+            Controls.Add(ptbImage);
+            Margin = new Padding(8, 4, 10, 4);
+            Name = "UCProductOnMainpage";
+            Size = new Size(198, 310);
+            ((System.ComponentModel.ISupportInitialize)ptbImage).EndInit();
+            flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
