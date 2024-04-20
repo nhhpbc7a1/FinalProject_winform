@@ -15,7 +15,7 @@ namespace QuanLyTraoDoiHang
     public partial class UCStars : UserControl
     {
         double numStar = 5;
-        public int userId = 0;
+        public int userId = -1;
         public bool canChanged = false;
         public UCStars()
         {
@@ -46,6 +46,14 @@ namespace QuanLyTraoDoiHang
 
         public void UCStars_Load(object? sender, EventArgs e)
         {
+            if (userId == -1)
+            {
+                lblNumStar.Text = comboBoxNum.Text.ToString();
+                lblNumStar.Visible = true;
+                comboBoxNum.Visible = false;
+                comboBoxNum.Enabled = false;
+                return;
+            }
             DataTable ratings = RatingDAO.SellectBySellerId(userId);
             double avgRating = 0;
             foreach (DataRow row in ratings.Rows)
