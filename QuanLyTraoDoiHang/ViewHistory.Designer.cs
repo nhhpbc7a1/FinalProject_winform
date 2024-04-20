@@ -36,6 +36,7 @@
             btnReturn = new RJControls.RButton();
             pictureBox1 = new PictureBox();
             pnlItems = new FlowLayoutPanel();
+            panel1 = new Panel();
             flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             pnlItems.SuspendLayout();
@@ -155,8 +156,17 @@
             pnlItems.Controls.Add(pictureBox1);
             pnlItems.Location = new Point(0, 56);
             pnlItems.Name = "pnlItems";
-            pnlItems.Size = new Size(747, 446);
+            pnlItems.Size = new Size(747, 438);
             pnlItems.TabIndex = 3;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = SystemColors.ControlLight;
+            panel1.Dock = DockStyle.Bottom;
+            panel1.Location = new Point(0, 492);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(747, 10);
+            panel1.TabIndex = 1;
             // 
             // ViewHistory
             // 
@@ -164,6 +174,7 @@
             BackColor = Color.White;
             ClientSize = new Size(747, 502);
             Controls.Add(pnlItems);
+            Controls.Add(panel1);
             Controls.Add(flowLayoutPanel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "ViewHistory";
@@ -182,5 +193,6 @@
         private RJControls.RButton btnReturn;
         private PictureBox pictureBox1;
         private FlowLayoutPanel pnlItems;
+        private Panel panel1;
     }
 }

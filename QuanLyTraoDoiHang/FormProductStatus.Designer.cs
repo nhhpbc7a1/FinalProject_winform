@@ -32,6 +32,7 @@
             btnUpdate = new RJControls.RButton();
             pnlItems = new FlowLayoutPanel();
             picEmpty = new PictureBox();
+            panel1 = new Panel();
             pnlItems.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picEmpty).BeginInit();
             SuspendLayout();
@@ -65,7 +66,7 @@
             pnlItems.Name = "pnlItems";
             pnlItems.Padding = new Padding(0, 5, 0, 0);
             pnlItems.RightToLeft = RightToLeft.No;
-            pnlItems.Size = new Size(740, 468);
+            pnlItems.Size = new Size(740, 459);
             pnlItems.TabIndex = 27;
             // 
             // picEmpty
@@ -78,6 +79,14 @@
             picEmpty.TabIndex = 29;
             picEmpty.TabStop = false;
             // 
+            // panel1
+            // 
+            panel1.BackColor = SystemColors.ControlLight;
+            panel1.Location = new Point(9, 480);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(740, 5);
+            panel1.TabIndex = 30;
+            // 
             // FormProductStatus
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -85,6 +94,7 @@
             BackColor = Color.White;
             ClientSize = new Size(758, 545);
             Controls.Add(pnlItems);
+            Controls.Add(panel1);
             Controls.Add(btnUpdate);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormProductStatus";
@@ -99,5 +109,6 @@
         private RJControls.RButton btnUpdate;
         private FlowLayoutPanel pnlItems;
         private PictureBox picEmpty;
+        private Panel panel1;
     }
 }

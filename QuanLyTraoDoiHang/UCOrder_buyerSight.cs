@@ -61,6 +61,7 @@ namespace QuanLyTraoDoiHang
             }
             lblShippingFee.Text = order.shippingFee.ToString();
             lblTotalPrice.Text = (total + order.shippingFee).ToString();
+            lblItemsNo.Text = productList.Rows.Count.ToString();
         }
 
     }

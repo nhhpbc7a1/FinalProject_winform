@@ -105,7 +105,7 @@
             pnlProducts.BackColor = SystemColors.ControlLight;
             pnlProducts.Location = new Point(8, 53);
             pnlProducts.Margin = new Padding(0);
-            pnlProducts.MaximumSize = new Size(723, 100000);
+            pnlProducts.MaximumSize = new Size(740, 100000);
             pnlProducts.MinimumSize = new Size(740, 470);
             pnlProducts.Name = "pnlProducts";
             pnlProducts.Padding = new Padding(5, 0, 0, 0);
