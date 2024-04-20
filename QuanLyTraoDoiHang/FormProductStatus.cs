@@ -29,8 +29,7 @@ namespace QuanLyTraoDoiHang
                         ucOrder item = new ucOrder(order);
                         if (beUpdated == true)
                         {
-                            item.cbxStatus.Visible = true;
-                            item.lblStatus.Visible = true;
+                            item.cbxStatus.Enabled = true;
                         }
 
                         pnlItems.Controls.Add(item);

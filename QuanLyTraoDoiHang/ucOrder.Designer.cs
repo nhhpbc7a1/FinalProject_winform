@@ -39,14 +39,20 @@
             label2 = new Label();
             label6 = new Label();
             lblItemsQuantity = new Label();
+            lblTotalPrice = new Label();
+            label4 = new Label();
             lblMethod = new Label();
             lblStatus = new Label();
             cbxStatus = new ComboBox();
-            lblTotalPrice = new Label();
-            label4 = new Label();
+            panel3 = new Panel();
+            label7 = new Label();
             label3 = new Label();
+            label5 = new Label();
+            lblShippingFee = new Label();
+            panel4 = new Panel();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
+            panel3.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -61,7 +67,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(720, 58);
+            panel1.Size = new Size(713, 58);
             panel1.TabIndex = 0;
             // 
             // lblTime
@@ -94,7 +100,7 @@
             lblPhone.ForeColor = Color.Black;
             lblPhone.Image = (Image)resources.GetObject("lblPhone.Image");
             lblPhone.ImageAlign = ContentAlignment.MiddleLeft;
-            lblPhone.Location = new Point(217, 20);
+            lblPhone.Location = new Point(256, 20);
             lblPhone.Name = "lblPhone";
             lblPhone.RightToLeft = RightToLeft.No;
             lblPhone.Size = new Size(164, 21);
@@ -107,7 +113,7 @@
             lblName.AutoSize = true;
             lblName.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblName.ForeColor = Color.Black;
-            lblName.Location = new Point(37, 19);
+            lblName.Location = new Point(19, 20);
             lblName.Name = "lblName";
             lblName.RightToLeft = RightToLeft.No;
             lblName.Size = new Size(106, 21);
@@ -117,14 +123,14 @@
             // flwpnlOrder
             // 
             flwpnlOrder.AutoSize = true;
-            flwpnlOrder.Dock = DockStyle.Bottom;
+            flwpnlOrder.Dock = DockStyle.Top;
             flwpnlOrder.Location = new Point(0, 58);
             flwpnlOrder.Margin = new Padding(0, 0, 5, 0);
             flwpnlOrder.MaximumSize = new Size(720, 100000);
-            flwpnlOrder.MinimumSize = new Size(720, 128);
+            flwpnlOrder.MinimumSize = new Size(715, 128);
             flwpnlOrder.Name = "flwpnlOrder";
             flwpnlOrder.RightToLeft = RightToLeft.No;
-            flwpnlOrder.Size = new Size(720, 128);
+            flwpnlOrder.Size = new Size(715, 128);
             flwpnlOrder.TabIndex = 1;
             // 
             // panel2
@@ -134,60 +140,81 @@
             panel2.Controls.Add(label2);
             panel2.Controls.Add(label6);
             panel2.Controls.Add(lblItemsQuantity);
-            panel2.Controls.Add(lblMethod);
-            panel2.Controls.Add(lblStatus);
-            panel2.Controls.Add(cbxStatus);
             panel2.Controls.Add(lblTotalPrice);
             panel2.Controls.Add(label4);
-            panel2.Controls.Add(label3);
             panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 186);
+            panel2.Location = new Point(0, 254);
             panel2.Margin = new Padding(0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(720, 66);
+            panel2.Size = new Size(713, 60);
             panel2.TabIndex = 2;
             // 
             // label2
             // 
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(153, 17);
+            label2.Location = new Point(137, 18);
             label2.Name = "label2";
             label2.RightToLeft = RightToLeft.No;
             label2.Size = new Size(57, 21);
             label2.TabIndex = 11;
-            label2.Text = "items )";
+            label2.Text = "items";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.Black;
-            label6.Location = new Point(35, 17);
+            label6.Location = new Point(19, 18);
             label6.Name = "label6";
             label6.RightToLeft = RightToLeft.No;
             label6.Size = new Size(96, 21);
             label6.TabIndex = 10;
-            label6.Text = "Order Total (";
+            label6.Text = "Order Total:";
             // 
             // lblItemsQuantity
             // 
             lblItemsQuantity.AutoSize = true;
-            lblItemsQuantity.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblItemsQuantity.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblItemsQuantity.ForeColor = Color.Black;
-            lblItemsQuantity.Location = new Point(128, 17);
+            lblItemsQuantity.Location = new Point(114, 18);
             lblItemsQuantity.Name = "lblItemsQuantity";
             lblItemsQuantity.RightToLeft = RightToLeft.No;
-            lblItemsQuantity.Size = new Size(28, 21);
+            lblItemsQuantity.Size = new Size(29, 21);
             lblItemsQuantity.TabIndex = 6;
             lblItemsQuantity.Text = "no";
+            // 
+            // lblTotalPrice
+            // 
+            lblTotalPrice.AutoSize = true;
+            lblTotalPrice.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTotalPrice.ForeColor = Color.Red;
+            lblTotalPrice.Location = new Point(580, 18);
+            lblTotalPrice.Name = "lblTotalPrice";
+            lblTotalPrice.RightToLeft = RightToLeft.No;
+            lblTotalPrice.Size = new Size(78, 25);
+            lblTotalPrice.TabIndex = 3;
+            lblTotalPrice.Text = "100000";
+            lblTotalPrice.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            label4.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
+            label4.ForeColor = Color.Red;
+            label4.Location = new Point(569, 20);
+            label4.Name = "label4";
+            label4.RightToLeft = RightToLeft.No;
+            label4.Size = new Size(13, 25);
+            label4.TabIndex = 2;
+            label4.Text = "đ";
+            label4.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblMethod
             // 
             lblMethod.AutoSize = true;
             lblMethod.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblMethod.ForeColor = Color.Black;
-            lblMethod.Location = new Point(240, 17);
+            lblMethod.Location = new Point(280, 33);
             lblMethod.Name = "lblMethod";
             lblMethod.RightToLeft = RightToLeft.No;
             lblMethod.Size = new Size(115, 21);
@@ -197,61 +224,100 @@
             // lblStatus
             // 
             lblStatus.AutoSize = true;
-            lblStatus.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblStatus.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblStatus.ForeColor = Color.Black;
-            lblStatus.Location = new Point(416, 19);
+            lblStatus.Location = new Point(19, 15);
             lblStatus.Name = "lblStatus";
-            lblStatus.Size = new Size(52, 21);
+            lblStatus.Size = new Size(55, 21);
             lblStatus.TabIndex = 5;
             lblStatus.Text = "Status";
-            lblStatus.Visible = false;
             // 
             // cbxStatus
             // 
+            cbxStatus.BackColor = SystemColors.Window;
             cbxStatus.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbxStatus.Enabled = false;
+            cbxStatus.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            cbxStatus.ForeColor = Color.FromArgb(30, 106, 17);
             cbxStatus.FormattingEnabled = true;
             cbxStatus.Items.AddRange(new object[] { "waiting", "shipping", "completed", "cancelled", "returned" });
-            cbxStatus.Location = new Point(474, 19);
+            cbxStatus.Location = new Point(77, 12);
             cbxStatus.Name = "cbxStatus";
             cbxStatus.RightToLeft = RightToLeft.No;
-            cbxStatus.Size = new Size(97, 23);
+            cbxStatus.Size = new Size(117, 29);
             cbxStatus.TabIndex = 4;
-            cbxStatus.Visible = false;
             // 
-            // lblTotalPrice
+            // panel3
             // 
-            lblTotalPrice.AutoSize = true;
-            lblTotalPrice.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTotalPrice.ForeColor = Color.Red;
-            lblTotalPrice.Location = new Point(628, 31);
-            lblTotalPrice.Name = "lblTotalPrice";
-            lblTotalPrice.RightToLeft = RightToLeft.No;
-            lblTotalPrice.Size = new Size(61, 21);
-            lblTotalPrice.TabIndex = 3;
-            lblTotalPrice.Text = "100000";
+            panel3.BackColor = Color.White;
+            panel3.Controls.Add(label7);
+            panel3.Controls.Add(label3);
+            panel3.Controls.Add(label5);
+            panel3.Controls.Add(lblShippingFee);
+            panel3.Controls.Add(panel4);
+            panel3.Controls.Add(lblMethod);
+            panel3.Controls.Add(lblStatus);
+            panel3.Controls.Add(cbxStatus);
+            panel3.Dock = DockStyle.Bottom;
+            panel3.Location = new Point(0, 186);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(713, 68);
+            panel3.TabIndex = 3;
             // 
-            // label4
+            // label7
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
-            label4.ForeColor = Color.Red;
-            label4.Location = new Point(607, 31);
-            label4.Name = "label4";
-            label4.RightToLeft = RightToLeft.No;
-            label4.Size = new Size(20, 21);
-            label4.TabIndex = 2;
-            label4.Text = "đ";
+            label7.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.ForeColor = Color.Black;
+            label7.Location = new Point(274, 11);
+            label7.Name = "label7";
+            label7.Size = new Size(146, 22);
+            label7.TabIndex = 14;
+            label7.Text = "Shipping Method";
+            label7.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(617, 10);
+            label3.Location = new Point(569, 35);
             label3.Name = "label3";
-            label3.Size = new Size(85, 21);
-            label3.TabIndex = 1;
-            label3.Text = "Total Price";
+            label3.Size = new Size(20, 21);
+            label3.TabIndex = 13;
+            label3.Text = "đ";
+            label3.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            label5.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.ForeColor = Color.Black;
+            label5.Location = new Point(560, 11);
+            label5.Name = "label5";
+            label5.Size = new Size(111, 22);
+            label5.TabIndex = 12;
+            label5.Text = "Shipping Fee";
+            label5.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblShippingFee
+            // 
+            lblShippingFee.AutoSize = true;
+            lblShippingFee.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblShippingFee.ForeColor = Color.Black;
+            lblShippingFee.Location = new Point(585, 35);
+            lblShippingFee.Name = "lblShippingFee";
+            lblShippingFee.Size = new Size(55, 21);
+            lblShippingFee.TabIndex = 11;
+            lblShippingFee.Text = "20000";
+            lblShippingFee.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = SystemColors.AppWorkspace;
+            panel4.Dock = DockStyle.Bottom;
+            panel4.Location = new Point(0, 67);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(713, 1);
+            panel4.TabIndex = 0;
             // 
             // ucOrder
             // 
@@ -259,19 +325,23 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            BorderStyle = BorderStyle.FixedSingle;
+            Controls.Add(panel3);
             Controls.Add(flwpnlOrder);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Margin = new Padding(5, 0, 0, 8);
+            Margin = new Padding(5, 0, 0, 10);
             MaximumSize = new Size(720, 100000);
-            MinimumSize = new Size(720, 252);
+            MinimumSize = new Size(715, 314);
             Name = "ucOrder";
             RightToLeft = RightToLeft.No;
-            Size = new Size(720, 252);
+            Size = new Size(713, 314);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -284,7 +354,6 @@
         private Label lblName;
         private Label lblTotalPrice;
         private Label label4;
-        private Label label3;
         private Label lblMethod;
         private Label lblTime;
         private Label label1;
@@ -293,5 +362,11 @@
         private Label lblItemsQuantity;
         private Label label2;
         private Label label6;
+        private Panel panel3;
+        private Panel panel4;
+        public Label label3;
+        public Label label5;
+        public Label lblShippingFee;
+        public Label label7;
     }
 }

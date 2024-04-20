@@ -47,7 +47,7 @@
             lblProductName.MaximumSize = new Size(220, 10000);
             lblProductName.Name = "lblProductName";
             lblProductName.RightToLeft = RightToLeft.No;
-            lblProductName.Size = new Size(159, 72);
+            lblProductName.Size = new Size(189, 72);
             lblProductName.TabIndex = 11;
             lblProductName.Text = "(name)";
             // 
@@ -65,7 +65,7 @@
             // lblCondition
             // 
             lblCondition.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblCondition.Location = new Point(313, 25);
+            lblCondition.Location = new Point(287, 25);
             lblCondition.Margin = new Padding(1, 0, 1, 15);
             lblCondition.MaximumSize = new Size(264, 10000);
             lblCondition.Name = "lblCondition";
@@ -79,7 +79,7 @@
             lblPrice.AutoSize = true;
             lblPrice.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblPrice.ForeColor = Color.Red;
-            lblPrice.Location = new Point(614, 59);
+            lblPrice.Location = new Point(576, 58);
             lblPrice.Margin = new Padding(1, 0, 1, 0);
             lblPrice.Name = "lblPrice";
             lblPrice.Size = new Size(52, 21);
@@ -90,7 +90,7 @@
             // 
             lblOriginPrice.AutoSize = true;
             lblOriginPrice.Font = new Font("Segoe UI", 12F, FontStyle.Strikeout, GraphicsUnit.Point);
-            lblOriginPrice.Location = new Point(614, 38);
+            lblOriginPrice.Location = new Point(576, 37);
             lblOriginPrice.Margin = new Padding(1, 0, 1, 0);
             lblOriginPrice.Name = "lblOriginPrice";
             lblOriginPrice.Size = new Size(55, 21);
@@ -102,7 +102,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
             label1.ForeColor = Color.Red;
-            label1.Location = new Point(600, 61);
+            label1.Location = new Point(562, 60);
             label1.Margin = new Padding(1, 0, 1, 0);
             label1.Name = "label1";
             label1.Size = new Size(18, 20);
@@ -113,7 +113,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Underline, GraphicsUnit.Point);
-            label2.Location = new Point(600, 39);
+            label2.Location = new Point(562, 38);
             label2.Margin = new Padding(1, 0, 1, 0);
             label2.Name = "label2";
             label2.Size = new Size(18, 20);

@@ -52,6 +52,7 @@ namespace QuanLyTraoDoiHang
                 flwpnlOrder.Controls.Add(uc);
                 total += tmp.price;
             }
+            lblShippingFee.Text = order.shippingFee.ToString();
             lblItemsQuantity.Text = productList.Rows.Count.ToString();
             lblTotalPrice.Text = (total + order.shippingFee).ToString();
         }

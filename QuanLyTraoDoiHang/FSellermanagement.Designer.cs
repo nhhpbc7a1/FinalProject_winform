@@ -61,13 +61,13 @@ namespace QuanLyTraoDoiHang
             // pnlSellerTool
             // 
             pnlSellerTool.BackColor = Color.White;
-            pnlSellerTool.Location = new Point(217, 6);
+            pnlSellerTool.Location = new Point(209, 6);
             pnlSellerTool.Margin = new Padding(0);
             pnlSellerTool.MaximumSize = new Size(758, 100000);
-            pnlSellerTool.MinimumSize = new Size(758, 545);
+            pnlSellerTool.MinimumSize = new Size(765, 545);
             pnlSellerTool.Name = "pnlSellerTool";
             pnlSellerTool.RightToLeft = RightToLeft.Yes;
-            pnlSellerTool.Size = new Size(758, 545);
+            pnlSellerTool.Size = new Size(765, 545);
             pnlSellerTool.TabIndex = 2;
             // 
             // timer1
