@@ -14,6 +14,7 @@ namespace QuanLyTraoDoiHang
 {
     public partial class FormCart : Form
     {
+        public CartItem buyNowItem = null; 
         public FormCart()
         {
             InitializeComponent();
@@ -93,7 +94,12 @@ namespace QuanLyTraoDoiHang
                         y.cbChoose.Click += x.update_cbShop;
                         y.cbChoose.Click += update_CbSellectAll;
 
-
+                        if (buyNowItem != null && y.cartItem.productId == buyNowItem.productId && y.cartItem.userId == buyNowItem.userId)
+                        {
+                            y.cbChoose.Checked = true;
+                            buyNowItem = null;
+                        }
+                    
                         x.pnlProducts.Controls.Add(y);
                     }
                     x.cbShop.Click += update_CbSellectAll;

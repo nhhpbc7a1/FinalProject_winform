@@ -16,6 +16,28 @@ namespace QuanLyTraoDoiHang
         public static DBConnection dBConnection = new DBConnection();
 
         private static string tableName = "CartItem";
+        public static bool Add_NoMessage(CartItem cartItem)
+        {
+            if (Program.currentUserId == -1)
+            {
+                MessageBox.Show("please login first");
+                return false;
+            }
+            if (Program.currentUserId == ProductDAO.SelectById(cartItem.productId).sellerId)
+            {
+                MessageBox.Show("You can not buy your product");
+                return false;
+            }
+            if (SelectByCartItem(cartItem) != null)
+            {
+                return true;
+            }
+
+            string SQL = string.Format(" INSERT INTO " + tableName + " (userId, productId) VALUES ('{0}','{1}')", cartItem.userId, cartItem.productId);
+            dBConnection.Execute(SQL);
+
+            return true;
+        }
         public static void Add(CartItem cartItem)
         {
             if (Program.currentUserId == -1)
