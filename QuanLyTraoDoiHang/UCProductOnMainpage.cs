@@ -33,7 +33,10 @@ namespace QuanLyTraoDoiHang
             lblName.Text = product.name;
             lblPrice.Text = product.price.ToString();
             lblOriginalPrice.Text = product.originalPrice.ToString();
-            lblDateStart.Text = product.dateBought.ToString();
+            int cnt = Convert.ToInt32((DateTime.Now - product.dateBought.ToDateTime(new TimeOnly())).TotalDays);
+            lblDateStart.Text = cnt.ToString();
+            //lblDateStart.Text = DateTime.Now.ToString();
+
 
             DataTable ratings = RatingDAO.SellectBySellerId(product.sellerId);
             if (ratings.Rows.Count == 0)
@@ -60,8 +63,17 @@ namespace QuanLyTraoDoiHang
 
         void BuyNow(object sender, EventArgs e)
         {
-            CartItem x = new CartItem(Program.currentUserId, product.productId);
-            CartItemDAO.Add(x);
+            if (MessageBox.Show("Do you really want to buy now this product?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                CartItem x = new CartItem(Program.currentUserId, product.productId);
+                if (CartItemDAO.Add_NoMessage(x))
+                {
+                    FormCart formTmp = new FormCart();
+                    formTmp.buyNowItem = x;
+                    Program.mainpage.OpenChildForm(formTmp);
+                }
+
+            }
         }
 
         private void UCProductOnMainpage_Load(object sender, EventArgs e)

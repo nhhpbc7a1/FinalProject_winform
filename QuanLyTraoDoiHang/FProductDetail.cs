@@ -71,7 +71,7 @@ namespace QuanLyTraoDoiHang
 
             dataTable = ProductDAO.LoadCanBuy_SameCategory(product.category);
             fpnlShowSimilarProduct.Controls.Clear();
-            for (int i = 0; i < Math.Min(dataTable.Rows.Count, 4); i++)
+            for (int i = 0; i < dataTable.Rows.Count; i++)
             {
                 Product tmp = ProductDAO.RowToProduct(dataTable.Rows[i]);
                 fpnlShowSimilarProduct.Controls.Add(new UCProductOnMainpage(tmp));
@@ -82,8 +82,17 @@ namespace QuanLyTraoDoiHang
 
         private void BtnBuyNow_Click(object? sender, EventArgs e)
         {
-            CartItem x = new CartItem(Program.currentUserId, product.productId);
-            CartItemDAO.Add(x);
+            if (MessageBox.Show("Do you really want to buy now this product?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                CartItem x = new CartItem(Program.currentUserId, product.productId);
+                if (CartItemDAO.Add_NoMessage(x))
+                {
+                    FormCart formTmp = new FormCart();
+                    formTmp.buyNowItem = x;
+                    Program.mainpage.OpenChildForm(formTmp);
+                }
+
+            }
         }
 
         private void BtnAddToCart_Click(object? sender, EventArgs e)

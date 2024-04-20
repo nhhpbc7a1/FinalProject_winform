@@ -26,6 +26,7 @@ namespace QuanLyTraoDoiHang
             lblDateJoined.Text = user.dateJoined.ToString();
             ptbSellerImage.BackgroundImage = user.image;
             products = ProductDAO.LoadCanBuy_SameSeller(user.userId);
+            ratings = RatingDAO.SellectBySellerId(user.userId);
             btnViewProducts.Click += BtnViewProducts_Click;
             btnViewRating.Click += BtnViewRating_Click;
             BtnViewProducts_Click(null, null);

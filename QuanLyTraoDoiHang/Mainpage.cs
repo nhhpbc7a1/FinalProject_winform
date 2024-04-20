@@ -41,8 +41,15 @@ namespace QuanLyTraoDoiHang
             MinimizeBox = false;
             ControlBox = false;
 
+            cbSearchBox.Items.Clear();
+            DataTable tmp = ProductDAO.LoadCanBuy();
+            foreach (DataRow dr in tmp.Rows)
+            {
+                Product product = ProductDAO.RowToProduct(dr);
+                cbSearchBox.Items.Add(product.name);
+            }
+
             //UploadSearchBoxHistory();
-            btnSearch.Click += btnSearch_Click;
         }
         //private void UploadSearchBoxHistory()
         //{
@@ -59,6 +66,8 @@ namespace QuanLyTraoDoiHang
 
         private void UpdateAccountByAction(object? sender, EventArgs e)
         {
+            btnSearch.Click += btnSearch_Click;
+
             if (Program.CurrentUser() != null)
             {
                 pnlAccount.Visible = true;
@@ -170,6 +179,11 @@ namespace QuanLyTraoDoiHang
                 Form form = new FormAddNewProduct();
                 form.ShowDialog();
             }
+
+        }
+
+        private void cbSearchBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }
