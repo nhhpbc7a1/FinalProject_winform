@@ -71,7 +71,7 @@ namespace QuanLyTraoDoiHang
 
             dataTable = ProductDAO.LoadCanBuy_SameCategory(product.category);
             fpnlShowSimilarProduct.Controls.Clear();
-            for (int i = 0; i < Math.Min(dataTable.Rows.Count, 4); i++)
+            for (int i = 0; i < dataTable.Rows.Count; i++)
             {
                 Product tmp = ProductDAO.RowToProduct(dataTable.Rows[i]);
                 fpnlShowSimilarProduct.Controls.Add(new UCProductOnMainpage(tmp));

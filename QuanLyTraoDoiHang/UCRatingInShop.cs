@@ -26,6 +26,7 @@ namespace QuanLyTraoDoiHang
 
             ucStars1.comboBoxNum.Text = rating.marks.ToString();
             ucStars1.comboBoxNum.Enabled = false;
+            ucStars1.UCStars_Load(null, null);
         }
 
     }

@@ -33,7 +33,10 @@ namespace QuanLyTraoDoiHang
             lblName.Text = product.name;
             lblPrice.Text = product.price.ToString();
             lblOriginalPrice.Text = product.originalPrice.ToString();
-            lblDateStart.Text = product.dateBought.ToString();
+            int cnt = Convert.ToInt32((DateTime.Now - product.dateBought.ToDateTime(new TimeOnly())).TotalDays);
+            lblDateStart.Text = cnt.ToString();
+            //lblDateStart.Text = DateTime.Now.ToString();
+
 
             DataTable ratings = RatingDAO.SellectBySellerId(product.sellerId);
             if (ratings.Rows.Count == 0)
