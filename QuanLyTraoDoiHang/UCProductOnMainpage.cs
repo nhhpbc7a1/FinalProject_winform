@@ -63,8 +63,17 @@ namespace QuanLyTraoDoiHang
 
         void BuyNow(object sender, EventArgs e)
         {
-            CartItem x = new CartItem(Program.currentUserId, product.productId);
-            CartItemDAO.Add(x);
+            if (MessageBox.Show("Do you really want to buy now this product?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                CartItem x = new CartItem(Program.currentUserId, product.productId);
+                if (CartItemDAO.Add_NoMessage(x))
+                {
+                    FormCart formTmp = new FormCart();
+                    formTmp.buyNowItem = x;
+                    Program.mainpage.OpenChildForm(formTmp);
+                }
+
+            }
         }
 
         private void UCProductOnMainpage_Load(object sender, EventArgs e)
