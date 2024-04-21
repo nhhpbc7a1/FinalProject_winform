@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.ApplicationServices;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,6 +23,10 @@ namespace QuanLyTraoDoiHang
             lblProductName.Text = product.name;
             btnSubmit.Click += BtnSubmit_Click;
             this.orderTable = orderTable;
+
+            ucStars1.canChanged = true;
+            ucStars1.UCStars_Load(null, null);
+
         }
 
         private void BtnSubmit_Click(object? sender, EventArgs e)
