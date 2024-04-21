@@ -26,14 +26,26 @@ namespace QuanLyTraoDoiHang
             lblOriginPrice.Text = product.originalPrice.ToString();
             if (status == "completed")
             {
-                btnRating.Visible = true;
+                btnAction.Text = "Rating";
                 if (RatingDAO.SelectByProductId(product.productId) != null)
                 {
-                    btnRating.Enabled = false;
+                    btnAction.Enabled = false;
                 }
                 else Enabled = true;
             }
-            btnRating.Click += BtnRating_Click;
+            if(status == "cancelled")
+            {
+                btnAction.Text = "Buy again";
+            }
+            if(status == "returned")
+            {
+                btnAction.Text = "Buy again";
+            }
+            if((status == "waiting")||(status == "shipping"))
+            {
+                btnAction.Visible = false;
+            }
+            btnAction.Click += BtnRating_Click;
             this.orderTable = orderTable;
         }
 
@@ -43,7 +55,7 @@ namespace QuanLyTraoDoiHang
             x.ShowDialog();
             if (RatingDAO.SelectByProductId(product.productId) != null)
             {
-                btnRating.Enabled = false;
+                btnAction.Enabled = false;
             }
             else Enabled = true;
         }

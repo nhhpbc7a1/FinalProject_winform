@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using CustomControls.RJControls;
 using System.Windows.Forms;
 using QuanLyTraoDoiHang.Properties;
+using System.DirectoryServices.ActiveDirectory;
 
 namespace QuanLyTraoDoiHang
 {
@@ -90,7 +91,6 @@ namespace QuanLyTraoDoiHang
         private void btnOrder_Click(object sender, EventArgs e)
         {
             timer1.Start();
-            btnOrder.BackColor = Color.FromArgb(30, 106, 17);
         }
 
 
@@ -121,7 +121,6 @@ namespace QuanLyTraoDoiHang
         private void btnProducts_Click(object sender, EventArgs e)
         {
             timer2.Start();
-            //btnProducts.BackColor = Color.FromArgb(30, 106, 17);
 
         }
         private void btnShipment_Click(object sender, EventArgs e)
@@ -138,23 +137,31 @@ namespace QuanLyTraoDoiHang
         // btn Product
         private void btnMyProducts_Click(object sender, EventArgs e)
         {
-
+            ResetButtonColor();
+            btnMyProducts.BackColor = Color.FromArgb(51, 255, 0);
             MyProduct formMyProduct = new MyProduct();
             OpenChildForm(formMyProduct);
         }
 
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
-
+            ResetButtonColor();
+            btnAddProduct.BackColor = Color.FromArgb(41, 204, 0);
+            Form form = new FormAddNewProduct();
+            form.ShowDialog();
         }
         private void btnDataAnalysis_Click(object sender, EventArgs e)
         {
+            ResetButtonColor();
+            btnDataAnalysis.BackColor = Color.FromArgb(41, 204, 0);
             OpenChildForm(new FAnalysis());
 
         }
         // btn Order
         private void btnMyOrder_Click(object sender, EventArgs e)
         {
+            ResetButtonColor();
+            btnCompleted.BackColor = Color.FromArgb(51, 255, 0);
             List<string> strings = new List<string>();
             strings.Add("completed");
             FormProductStatus formProductStatus = new FormProductStatus(strings, false);
@@ -163,6 +170,8 @@ namespace QuanLyTraoDoiHang
 
         private void btnReturned_Click(object sender, EventArgs e)
         {
+            ResetButtonColor();
+            btnReturned.BackColor = Color.FromArgb(51, 255, 0);
             List<string> strings = new List<string>();
             strings.Add("returned");
             FormProductStatus formProductStatus = new FormProductStatus(strings, false);
@@ -171,6 +180,8 @@ namespace QuanLyTraoDoiHang
 
         private void btnCancelled_Click(object sender, EventArgs e)
         {
+            ResetButtonColor();
+            btnCancelled.BackColor = Color.FromArgb(51, 255, 0);
             List<string> strings = new List<string>();
             strings.Add("cancelled");
             FormProductStatus formProductStatus = new FormProductStatus(strings, false);
@@ -179,22 +190,26 @@ namespace QuanLyTraoDoiHang
 
         private void btnShipment_Click_1(object sender, EventArgs e)
         {
+            ResetButtonColor();
+            btnShipment.BackColor = Color.FromArgb(51, 255, 0);          
             List<string> strings = new List<string>();
             strings.Add("waiting");
             strings.Add("shipping");
             FormProductStatus formProductStatus = new FormProductStatus(strings, true);
             OpenChildForm(formProductStatus);
         }
-
-        private void btnUpdate_Click(object sender, EventArgs e)
+        void ResetButtonColor()
         {
-
+            //rgb(41,204,0) rgb(51,255,0)
+            btnShipment.BackColor = Color.FromArgb(30, 106, 17);
+            btnCompleted.BackColor = Color.FromArgb(155,207,83);
+            btnCancelled.BackColor = Color.FromArgb(155, 207, 83);
+            btnReturned.BackColor = Color.FromArgb(155, 207, 83);
+            btnAddProduct.BackColor = Color.FromArgb(155, 207, 83);
+            btnMyProducts.BackColor = Color.FromArgb(155, 207, 83);
+            btnDataAnalysis.BackColor = Color.FromArgb(30, 106, 17);
 
         }
-
-        private void lblContent_Click(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }

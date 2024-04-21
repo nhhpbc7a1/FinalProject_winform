@@ -93,7 +93,7 @@
             lblProductName.Margin = new Padding(1, 0, 1, 0);
             lblProductName.Name = "lblProductName";
             lblProductName.RightToLeft = RightToLeft.No;
-            lblProductName.Size = new Size(151, 69);
+            lblProductName.Size = new Size(160, 69);
             lblProductName.TabIndex = 11;
             lblProductName.Text = "(name)";
             // 
