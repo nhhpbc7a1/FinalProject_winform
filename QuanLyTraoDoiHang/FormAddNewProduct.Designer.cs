@@ -246,6 +246,8 @@
             // 
             // txtCategory
             // 
+            this.txtCategory.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txtCategory.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.txtCategory.FormattingEnabled = true;
             this.txtCategory.Items.AddRange(new object[] {
             "Clothes",

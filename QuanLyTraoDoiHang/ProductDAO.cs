@@ -53,8 +53,8 @@ namespace QuanLyTraoDoiHang
             {
                 connection.Open();
 
-                string SQL = string.Format(" UPDATE " + tableName + " SET sellerId = '{1}', category = '{2}', name = '{3}', price = '{4}', image = @ImageData, originalPrice = '{6}', condition = '{7}', warrantyPolicy = '{8}', dateBought = '{9}', Brand = '{10}', Origin = '{11}', Description = N'{12}'  WHERE productId = '{0}' ;",
-                product.productId, product.sellerId, product.category, product.name, product.price, null, product.originalPrice, product.condition, product.warrantyPolicy, product.dateBought, product.brand, product.origin, product.description);
+                string SQL = string.Format(" UPDATE " + tableName + " SET sellerId = '{1}', category = N'{2}', name = N'{3}', price = '{4}', image = @ImageData, originalPrice = '{6}', condition = N'{7}', warrantyPolicy = N'{8}', dateBought = '{9}', Brand = N'{10}', Origin = N'{11}', Description = N'{12}', PostedDate='{13}', SearchCounter='{14}'  WHERE productId = '{0}' ;",
+                product.productId, product.sellerId, product.category, product.name, product.price, null, product.originalPrice, product.condition, product.warrantyPolicy, product.dateBought, product.brand, product.origin, product.description, product.PostedDate, product.SearchCounter);
 
                 SqlCommand cmd = new SqlCommand(SQL, connection);
                 cmd.Parameters.Add("@ImageData", System.Data.SqlDbType.VarBinary, -1).Value = imageData;
@@ -70,8 +70,8 @@ namespace QuanLyTraoDoiHang
             using (SqlConnection connection = new SqlConnection(Properties.Settings.Default.connStr))
             {
                 connection.Open();
-                string sqlStr = string.Format("INSERT INTO " + tableName + "(productId,sellerId,category,name,price,image,originalPrice,condition,warrantyPolicy,dateBought,Brand,Origin,Description) VALUES ('{0}','{1}','{2}','{3}','{4}',@ImageData,'{6}','{7}','{8}','{9}','{10}','{11}',N'{12}')",
-                product.productId, product.sellerId, product.category, product.name, product.price, null, product.originalPrice, product.condition, product.warrantyPolicy, product.dateBought, product.brand, product.origin, product.description);
+                string sqlStr = string.Format("INSERT INTO " + tableName + "(productId,sellerId,category,name,price,image,originalPrice,condition,warrantyPolicy,dateBought,Brand,Origin,Description,PostedDate,SearchCounter) VALUES ('{0}','{1}',N'{2}',N'{3}','{4}',@ImageData,'{6}',N'{7}',N'{8}','{9}',N'{10}',N'{11}',N'{12}','{13}','{14}')",
+                product.productId, product.sellerId, product.category, product.name, product.price, null, product.originalPrice, product.condition, product.warrantyPolicy, product.dateBought, product.brand, product.origin, product.description,product.PostedDate, product.SearchCounter);
 
                 SqlCommand cmd = new SqlCommand(sqlStr, connection);
                 cmd.Parameters.Add("@ImageData", System.Data.SqlDbType.VarBinary, -1).Value = imageData;
@@ -121,6 +121,9 @@ namespace QuanLyTraoDoiHang
             product.brand = row["brand"].ToString();
             product.origin = row["origin"].ToString();
             product.description = row["description"].ToString();
+            product.PostedDate = Convert.ToDateTime(row["PostedDate"]);
+            product.SearchCounter = Convert.ToInt32(row["SearchCounter"]);
+
 
             return product;
 
@@ -159,10 +162,10 @@ namespace QuanLyTraoDoiHang
         }
         public static DataTable LoadCanBuy()
         {
-            string sqlStr = string.Format("SELECT * FROM " + tableName);
+            string sqlStr = string.Format("SELECT * FROM " + tableName + " ORDER BY SearchCounter DESC;");
             DataTable x = dBConnection.Load(sqlStr);
             //return x; 
-            sqlStr = string.Format("SELECT productId FROM OrderTable,OrderItem where status<>'cancelled' and OrderTable.orderId = orderItem.orderId");
+            sqlStr = string.Format("SELECT productId FROM OrderTable,OrderItem where status<>'cancelled' and OrderTable.orderId = orderItem.orderId " );
             DataTable y = dBConnection.Load(sqlStr);
             //return y;
             DataTable z = x;
@@ -210,6 +213,10 @@ namespace QuanLyTraoDoiHang
             }
             return x;
         }
-
+        public static void CountingSearch(Product product)
+        {
+            string SQL = string.Format(" UPDATE " + tableName + " SET SearchCounter='{1}'  WHERE productId = '{0}' ;",product.productId, product.SearchCounter);
+            dBConnection.Execute(SQL);
+        }
     }
 }

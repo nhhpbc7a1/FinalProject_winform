@@ -31,6 +31,8 @@ create table Product (
 	Brand nvarchar(100), 
 	Origin nvarchar(100), 
 	Description nvarchar(2000),
+	PostedDate datetime,
+	SearchCounter int,
 );
 go
 
