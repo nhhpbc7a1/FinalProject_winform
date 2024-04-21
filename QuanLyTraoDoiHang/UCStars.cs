@@ -46,7 +46,7 @@ namespace QuanLyTraoDoiHang
 
         public void UCStars_Load(object? sender, EventArgs e)
         {
-            if (userId == -1)
+            if (userId == -1 && canChanged == false)
             {
                 lblNumStar.Text = comboBoxNum.Text.ToString();
                 lblNumStar.Visible = true;
@@ -64,16 +64,21 @@ namespace QuanLyTraoDoiHang
             double tmp = ratings.Rows.Count;
 
             lblNumStar.Text = (avgRating / tmp).ToString();
-            lblNumStar.Visible = true;
 
             if (canChanged == false)
             {
                 comboBoxNum.Text = (avgRating / tmp).ToString();
                 comboBoxNum.Visible = false;
                 comboBoxNum.Enabled = false;
+                lblNumStar.Visible = true;
+                if (ratings.Rows.Count == 0) Visible = false;
+
             }
             else
             {
+                comboBoxNum.Visible = true;
+                comboBoxNum.Enabled = true;
+                lblNumStar.Visible = false;
             }
         }
 
