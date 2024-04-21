@@ -56,7 +56,7 @@ namespace QuanLyTraoDoiHang
         }
 
         Product product = null;
-        List<Image> listImage = new List<Image>();
+        List<Image> listImage = new List<Image>() { Properties.Resources.empty_product, Properties.Resources.empty_product, Properties.Resources.empty_product };
         public FormAddNewProduct(Product product)
         {
             InitializeComponent();
@@ -82,7 +82,6 @@ namespace QuanLyTraoDoiHang
             picDetailImage1.BackgroundImage = listImage[0];
             picDetailImage2.BackgroundImage = listImage[1];
             picDetailImage3.BackgroundImage = listImage[2];
-
 
             //picboxProduct.BackgroundImage = Properties.Resources.empty_product;
         }
@@ -162,7 +161,7 @@ namespace QuanLyTraoDoiHang
             if (product == null)
             {
                 Product x = new Product(Program.CurrentUser().userId, txtCategory.Text, txtName.Text, Convert.ToInt32(txtPrice.Text), picboxProduct.BackgroundImage,
-                Convert.ToInt32(txtOriginalPrice.Text), txtCondition.Text, txtWarranty.Text, DateOnly.FromDateTime(dtpBought.Value), txtBrand.Text, txtOrigin.Text, richTextBoxDescription.Text);
+                Convert.ToInt32(txtOriginalPrice.Text), txtCondition.Text, txtWarranty.Text, DateOnly.FromDateTime(dtpBought.Value), txtBrand.Text, txtOrigin.Text, richTextBoxDescription.Text,DateTime.Now,0);
 
                 productDAO.Add(x);
                 foreach (Image img in listImage)
@@ -171,7 +170,7 @@ namespace QuanLyTraoDoiHang
             else
             {
                 Product x = new Product(Program.CurrentUser().userId, txtCategory.Text, txtName.Text, Convert.ToInt32(txtPrice.Text), picboxProduct.BackgroundImage,
-                Convert.ToInt32(txtOriginalPrice.Text), txtCondition.Text, txtWarranty.Text, DateOnly.FromDateTime(dtpBought.Value), txtBrand.Text, txtOrigin.Text, richTextBoxDescription.Text);
+                Convert.ToInt32(txtOriginalPrice.Text), txtCondition.Text, txtWarranty.Text, DateOnly.FromDateTime(dtpBought.Value), txtBrand.Text, txtOrigin.Text, richTextBoxDescription.Text,product.PostedDate,product.SearchCounter);
                 x.productId = product.productId;
                 productDAO.Update(x);
 

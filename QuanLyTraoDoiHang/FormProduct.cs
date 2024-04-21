@@ -39,6 +39,9 @@ namespace QuanLyTraoDoiHang
                 if (x == null) continue;
                 UCProductOnMainpage ucProduct = new UCProductOnMainpage(x);
                 flowLayoutPanelProductList.Controls.Add(ucProduct);
+                x.SearchCounter += 1;
+                ProductDAO.CountingSearch(x);
+                //MessageBox.Show(x.productId.ToString());
             }
         }
 
