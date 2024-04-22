@@ -34,7 +34,6 @@ namespace QuanLyTraoDoiHang
             btnAddProduct.Click += btnAddProduct_Click;
             btnCart.Click += btnCart_Click;
 
-            this.Load += UpdateAccountByAction;
             btnSearch.Click += btnSearch_Click;
 
             btnExit.Click += btnExit_Click;
