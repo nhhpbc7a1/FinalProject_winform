@@ -22,10 +22,11 @@ namespace QuanLyTraoDoiHang
         public string brand;
         public string origin;
         public string description;
-
+        public DateTime PostedDate;
+        public int SearchCounter;
         public Product() { }
 
-        public Product(int sellerId, string category, string name, int price, Image image, int originalPrice, string condition, string warrantyPolicy, DateOnly dateBought, string brand, string origin, string description)
+        public Product(int sellerId, string category, string name, int price, Image image, int originalPrice, string condition, string warrantyPolicy, DateOnly dateBought, string brand, string origin, string description, DateTime postedDate, int searchCounter)
         {
             this.productId = ProductDAO.CreateID();
             this.sellerId = sellerId;
@@ -40,7 +41,8 @@ namespace QuanLyTraoDoiHang
             this.brand = brand;
             this.origin = origin;
             this.description = description;
-
+            PostedDate = postedDate;
+            SearchCounter = searchCounter;
         }
     }
 

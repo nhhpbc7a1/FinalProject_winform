@@ -35,6 +35,7 @@ namespace QuanLyTraoDoiHang
             btnCart.Click += btnCart_Click;
 
             this.Load += UpdateAccountByAction;
+            btnSearch.Click += btnSearch_Click;
 
             btnExit.Click += btnExit_Click;
             MaximizeBox = false;
@@ -66,7 +67,6 @@ namespace QuanLyTraoDoiHang
 
         private void UpdateAccountByAction(object? sender, EventArgs e)
         {
-            btnSearch.Click += btnSearch_Click;
 
             if (Program.CurrentUser() != null)
             {
@@ -157,7 +157,8 @@ namespace QuanLyTraoDoiHang
 
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
-
+            FormAddNewProduct x = new FormAddNewProduct();
+            x.ShowDialog();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
