@@ -84,7 +84,7 @@
             // 
             btnViewShop.BackColor = Color.FromArgb(229, 228, 131);
             btnViewShop.BackgroundColor = Color.FromArgb(229, 228, 131);
-            btnViewShop.BorderColor = Color.White;
+            btnViewShop.BorderColor = Color.Black;
             btnViewShop.BorderRadius = 10;
             btnViewShop.BorderSize = 1;
             btnViewShop.FlatAppearance.BorderSize = 0;
@@ -102,10 +102,10 @@
             // lblTime
             // 
             lblTime.AutoSize = true;
-            lblTime.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTime.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblTime.Location = new Point(270, 27);
             lblTime.Name = "lblTime";
-            lblTime.Size = new Size(94, 21);
+            lblTime.Size = new Size(87, 21);
             lblTime.TabIndex = 5;
             lblTime.Text = "10/11/2004";
             // 

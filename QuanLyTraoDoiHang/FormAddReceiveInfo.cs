@@ -59,7 +59,7 @@ namespace QuanLyTraoDoiHang
 
         private void btnDeliverAdress_Click_1(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

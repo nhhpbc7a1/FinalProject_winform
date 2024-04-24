@@ -62,13 +62,13 @@
             // 
             // lblName
             // 
-            lblName.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblName.Location = new Point(-2, 150);
+            lblName.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblName.Location = new Point(4, 150);
             lblName.Name = "lblName";
-            lblName.Size = new Size(200, 48);
+            lblName.Size = new Size(194, 65);
             lblName.TabIndex = 1;
             lblName.Text = "Product's name";
-            lblName.TextAlign = ContentAlignment.TopCenter;
+
             // 
             // lblPrice
             // 
@@ -141,14 +141,16 @@
             flowLayoutPanel1.Controls.Add(lblPrice);
             flowLayoutPanel1.Controls.Add(label2);
             flowLayoutPanel1.Controls.Add(lblOriginalPrice);
-            flowLayoutPanel1.Location = new Point(3, 198);
+
+            flowLayoutPanel1.Location = new Point(4, 218);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(196, 33);
             flowLayoutPanel1.TabIndex = 7;
             // 
             // ucStars1
             // 
-            ucStars1.Location = new Point(3, 237);
+
+            ucStars1.Location = new Point(4, 242);
             ucStars1.Name = "ucStars1";
             ucStars1.Size = new Size(195, 29);
             ucStars1.TabIndex = 8;

@@ -41,6 +41,11 @@
             panel4 = new Panel();
             panel5 = new Panel();
             panel6 = new Panel();
+
+            pnlReturned = new Panel();
+            pnlCancelled = new Panel();
+            pnlCompleted = new Panel();
+            pnlShip = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             pnlItems.SuspendLayout();
             panel6.SuspendLayout();
@@ -52,7 +57,7 @@
             btnShip.BackgroundColor = Color.White;
             btnShip.BorderColor = Color.DimGray;
             btnShip.BorderRadius = 5;
-            btnShip.BorderSize = 1;
+            btnShip.BorderSize = 0;
             btnShip.FlatAppearance.BorderSize = 0;
             btnShip.FlatStyle = FlatStyle.Flat;
             btnShip.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
@@ -73,7 +78,7 @@
             btnCompleted.BackgroundColor = Color.White;
             btnCompleted.BorderColor = Color.DimGray;
             btnCompleted.BorderRadius = 5;
-            btnCompleted.BorderSize = 1;
+            btnCompleted.BorderSize = 0;
             btnCompleted.FlatAppearance.BorderSize = 0;
             btnCompleted.FlatStyle = FlatStyle.Flat;
             btnCompleted.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
@@ -94,7 +99,7 @@
             btnCancel.BackgroundColor = Color.White;
             btnCancel.BorderColor = Color.DimGray;
             btnCancel.BorderRadius = 5;
-            btnCancel.BorderSize = 1;
+            btnCancel.BorderSize = 0;
             btnCancel.FlatAppearance.BorderSize = 0;
             btnCancel.FlatStyle = FlatStyle.Flat;
             btnCancel.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
@@ -115,7 +120,7 @@
             btnReturn.BackgroundColor = Color.White;
             btnReturn.BorderColor = Color.DimGray;
             btnReturn.BorderRadius = 5;
-            btnReturn.BorderSize = 1;
+            btnReturn.BorderSize = 0;
             btnReturn.FlatAppearance.BorderSize = 0;
             btnReturn.FlatStyle = FlatStyle.Flat;
             btnReturn.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
@@ -198,6 +203,12 @@
             // panel6
             // 
             panel6.BackColor = Color.White;
+
+            panel6.Controls.Add(pnlReturned);
+            panel6.Controls.Add(pnlCancelled);
+            panel6.Controls.Add(pnlCompleted);
+            panel6.Controls.Add(pnlShip);
+
             panel6.Controls.Add(btnReturn);
             panel6.Controls.Add(btnCompleted);
             panel6.Controls.Add(btnCancel);
@@ -212,6 +223,36 @@
             panel6.Size = new Size(747, 60);
             panel6.TabIndex = 4;
             // 
+
+            // pnlReturned
+            // 
+            pnlReturned.Location = new Point(562, 55);
+            pnlReturned.Name = "pnlReturned";
+            pnlReturned.Size = new Size(180, 3);
+            pnlReturned.TabIndex = 5;
+            // 
+            // pnlCancelled
+            // 
+            pnlCancelled.Location = new Point(376, 55);
+            pnlCancelled.Name = "pnlCancelled";
+            pnlCancelled.Size = new Size(180, 3);
+            pnlCancelled.TabIndex = 5;
+            // 
+            // pnlCompleted
+            // 
+            pnlCompleted.Location = new Point(191, 55);
+            pnlCompleted.Name = "pnlCompleted";
+            pnlCompleted.Size = new Size(180, 3);
+            pnlCompleted.TabIndex = 5;
+            // 
+            // pnlShip
+            // 
+            pnlShip.Location = new Point(5, 55);
+            pnlShip.Name = "pnlShip";
+            pnlShip.Size = new Size(180, 3);
+            pnlShip.TabIndex = 4;
+            // 
+
             // ViewHistory
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -242,5 +283,11 @@
         private Panel panel3;
         private Panel panel5;
         private Panel panel6;
+
+        private Panel pnlReturned;
+        private Panel pnlCancelled;
+        private Panel pnlCompleted;
+        private Panel pnlShip;
+
     }
 }

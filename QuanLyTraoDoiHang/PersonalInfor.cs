@@ -26,6 +26,10 @@ namespace QuanLyTraoDoiHang
 
         private void BtnLogout_Click(object? sender, EventArgs e)
         {
+            ResetbtnColor();
+            btnLogout.TextColor = Color.White;
+            btnLogout.BackColor = Color.FromArgb(101, 183, 65);
+
             if (MessageBox.Show("Do you really want to log out?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 MessageBox.Show("Logout successfully");
@@ -54,15 +58,24 @@ namespace QuanLyTraoDoiHang
 
         private void btnChangePassword_Click(object sender, EventArgs e)
         {
+            ResetbtnColor();
+            btnChangePass.TextColor = Color.White;
+            btnChangePass.BackColor = Color.FromArgb(101, 183, 65);
             OpenChildForm(new ChangePassword());
         }
 
         private void btnUpdateInfo_Click(object sender, EventArgs e)
         {
+            ResetbtnColor();
+            btnUpdateInfo.TextColor = Color.White;
+            btnUpdateInfo.BackColor = Color.FromArgb(101, 183, 65);
             OpenChildForm(new MyInfo());
         }
         private void btnHistory_Click(object sender, EventArgs e)
         {
+            ResetbtnColor();
+            btnHistory.TextColor = Color.White;
+            btnHistory.BackColor = Color.FromArgb(101, 183, 65);
             OpenChildForm(new ViewHistory());
         }
 
@@ -79,6 +92,16 @@ namespace QuanLyTraoDoiHang
             Program.CurrentUser().image = image;
             UserDAO.Update(Program.CurrentUser());
         }
-
+        void ResetbtnColor()
+        {
+            btnUpdateInfo.BackColor = Color.White;
+            btnUpdateInfo.TextColor = Color.FromArgb(30, 106, 17);
+            btnChangePass.BackColor = Color.White;
+            btnChangePass.TextColor = Color.FromArgb(30, 106, 17);
+            btnHistory.BackColor = Color.White;
+            btnHistory.TextColor = Color.FromArgb(30, 106, 17);
+            btnLogout.BackColor = Color.White;
+            btnLogout.TextColor = Color.FromArgb(30, 106, 17);
+        }
     }
 }

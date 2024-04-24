@@ -15,8 +15,10 @@ namespace QuanLyTraoDoiHang
 {
     public partial class FormAddNewProduct : Form
     {
+
         void AddEvents()
         {
+
             picboxProduct.Click += ChangeProductImage_Click;
             lblAddPhoto.Click += ChangeProductImage_Click;
             btnSave.Click += btnSave_Click;
@@ -50,7 +52,10 @@ namespace QuanLyTraoDoiHang
 
         public FormAddNewProduct()
         {
+
             InitializeComponent();
+            txtCondition.Focus();
+
             AddEvents();
             //picboxProduct.BackgroundImage = Properties.Resources.empty_product;
         }

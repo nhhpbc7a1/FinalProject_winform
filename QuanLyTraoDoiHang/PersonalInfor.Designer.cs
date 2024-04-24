@@ -128,80 +128,80 @@
             // 
             // btnUpdateInfo
             // 
-            btnUpdateInfo.BackColor = Color.FromArgb(30, 106, 17);
-            btnUpdateInfo.BackgroundColor = Color.FromArgb(30, 106, 17);
-            btnUpdateInfo.BorderColor = Color.Black;
-            btnUpdateInfo.BorderRadius = 5;
-            btnUpdateInfo.BorderSize = 0;
+            btnUpdateInfo.BackColor = Color.White;
+            btnUpdateInfo.BackgroundColor = Color.White;
+            btnUpdateInfo.BorderColor = Color.FromArgb(30, 106, 17);
+            btnUpdateInfo.BorderRadius = 10;
+            btnUpdateInfo.BorderSize = 1;
             btnUpdateInfo.FlatAppearance.BorderSize = 0;
             btnUpdateInfo.FlatStyle = FlatStyle.Flat;
-            btnUpdateInfo.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnUpdateInfo.ForeColor = Color.White;
+            btnUpdateInfo.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnUpdateInfo.ForeColor = Color.FromArgb(30, 106, 17);
             btnUpdateInfo.ImageAlign = ContentAlignment.MiddleLeft;
             btnUpdateInfo.Location = new Point(13, 14);
             btnUpdateInfo.Name = "btnUpdateInfo";
-            btnUpdateInfo.Size = new Size(145, 44);
+            btnUpdateInfo.Size = new Size(152, 44);
             btnUpdateInfo.TabIndex = 2;
             btnUpdateInfo.Text = "Update info";
-            btnUpdateInfo.TextColor = Color.White;
+            btnUpdateInfo.TextColor = Color.FromArgb(30, 106, 17);
             btnUpdateInfo.UseVisualStyleBackColor = false;
             // 
             // btnLogout
             // 
-            btnLogout.BackColor = Color.FromArgb(30, 106, 17);
-            btnLogout.BackgroundColor = Color.FromArgb(30, 106, 17);
-            btnLogout.BorderColor = Color.Black;
-            btnLogout.BorderRadius = 5;
-            btnLogout.BorderSize = 0;
+            btnLogout.BackColor = Color.White;
+            btnLogout.BackgroundColor = Color.White;
+            btnLogout.BorderColor = Color.FromArgb(30, 106, 17);
+            btnLogout.BorderRadius = 10;
+            btnLogout.BorderSize = 1;
             btnLogout.FlatAppearance.BorderSize = 0;
             btnLogout.FlatStyle = FlatStyle.Flat;
-            btnLogout.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnLogout.ForeColor = Color.White;
+            btnLogout.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnLogout.ForeColor = Color.FromArgb(30, 106, 17);
             btnLogout.ImageAlign = ContentAlignment.MiddleLeft;
             btnLogout.Location = new Point(13, 185);
             btnLogout.Name = "btnLogout";
-            btnLogout.Size = new Size(145, 44);
+            btnLogout.Size = new Size(152, 44);
             btnLogout.TabIndex = 5;
             btnLogout.Text = "Log out";
-            btnLogout.TextColor = Color.White;
+            btnLogout.TextColor = Color.FromArgb(30, 106, 17);
             btnLogout.UseVisualStyleBackColor = false;
             // 
             // btnChangePass
             // 
-            btnChangePass.BackColor = Color.FromArgb(30, 106, 17);
-            btnChangePass.BackgroundColor = Color.FromArgb(30, 106, 17);
-            btnChangePass.BorderColor = Color.Black;
-            btnChangePass.BorderRadius = 5;
-            btnChangePass.BorderSize = 0;
+            btnChangePass.BackColor = Color.White;
+            btnChangePass.BackgroundColor = Color.White;
+            btnChangePass.BorderColor = Color.FromArgb(30, 106, 17);
+            btnChangePass.BorderRadius = 10;
+            btnChangePass.BorderSize = 1;
             btnChangePass.FlatAppearance.BorderSize = 0;
             btnChangePass.FlatStyle = FlatStyle.Flat;
-            btnChangePass.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnChangePass.ForeColor = Color.White;
+            btnChangePass.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnChangePass.ForeColor = Color.FromArgb(30, 106, 17);
             btnChangePass.Location = new Point(13, 71);
             btnChangePass.Name = "btnChangePass";
-            btnChangePass.Size = new Size(145, 44);
+            btnChangePass.Size = new Size(152, 44);
             btnChangePass.TabIndex = 3;
             btnChangePass.Text = "Change password";
-            btnChangePass.TextColor = Color.White;
+            btnChangePass.TextColor = Color.FromArgb(30, 106, 17);
             btnChangePass.UseVisualStyleBackColor = false;
             // 
             // btnHistory
             // 
-            btnHistory.BackColor = Color.FromArgb(30, 106, 17);
-            btnHistory.BackgroundColor = Color.FromArgb(30, 106, 17);
-            btnHistory.BorderColor = Color.Black;
-            btnHistory.BorderRadius = 5;
-            btnHistory.BorderSize = 0;
+            btnHistory.BackColor = Color.White;
+            btnHistory.BackgroundColor = Color.White;
+            btnHistory.BorderColor = Color.FromArgb(30, 106, 17);
+            btnHistory.BorderRadius = 10;
+            btnHistory.BorderSize = 1;
             btnHistory.FlatAppearance.BorderSize = 0;
             btnHistory.FlatStyle = FlatStyle.Flat;
-            btnHistory.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnHistory.ForeColor = Color.White;
+            btnHistory.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnHistory.ForeColor = Color.FromArgb(30, 106, 17);
             btnHistory.Location = new Point(13, 128);
             btnHistory.Name = "btnHistory";
-            btnHistory.Size = new Size(145, 44);
+            btnHistory.Size = new Size(152, 44);
             btnHistory.TabIndex = 4;
             btnHistory.Text = "Purchase History";
-            btnHistory.TextColor = Color.White;
+            btnHistory.TextColor = Color.FromArgb(30, 106, 17);
             btnHistory.UseVisualStyleBackColor = false;
             // 
             // panel1

@@ -18,7 +18,6 @@ namespace QuanLyTraoDoiHang
             InitializeComponent();
             btnViewPage.Click += btnViewPage_Click;
             Load += FProductDetail_Load;
-            btnDeliverAdress.Click += btnDeliverAdress_Click;
             btnAddToCart.Click += BtnAddToCart_Click;
             btnBuyNow.Click += BtnBuyNow_Click;
             this.product = product;
@@ -120,5 +119,14 @@ namespace QuanLyTraoDoiHang
             Program.mainpage.OpenChildForm(new FormProduct());
         }
 
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnlProductDetail_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

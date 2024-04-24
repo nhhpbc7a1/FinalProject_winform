@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,8 +29,8 @@ namespace QuanLyTraoDoiHang
         {
             ResetBtnStatusBorder();
 
-            btnReturn.BorderSize = 2;
-            btnReturn.BorderColor = Color.FromArgb(52, 255, 46);
+            pnlReturned.BackColor = Color.FromArgb(30, 106, 17);
+
 
             foreach (DataRow row in x.Rows)
             {
@@ -48,8 +48,8 @@ namespace QuanLyTraoDoiHang
         {
             ResetBtnStatusBorder();
 
-            btnCancel.BorderSize = 2;
-            btnCancel.BorderColor = Color.FromArgb(52, 255, 46);
+            pnlCancelled.BackColor = Color.FromArgb(30, 106, 17);
+
 
             foreach (DataRow row in x.Rows)
             {
@@ -67,9 +67,8 @@ namespace QuanLyTraoDoiHang
         private void BtnCompleted_Click(object? sender, EventArgs e)
         {
             ResetBtnStatusBorder();
+            pnlCompleted.BackColor = Color.FromArgb(30, 106, 17);
 
-            btnCompleted.BorderSize = 2;
-            btnCompleted.BorderColor = Color.FromArgb(52, 255, 46);
 
             foreach (DataRow row in x.Rows)
             {
@@ -88,8 +87,7 @@ namespace QuanLyTraoDoiHang
         {
             ResetBtnStatusBorder();
 
-            btnShip.BorderSize = 2;
-            btnShip.BorderColor = Color.FromArgb(52, 255, 46);
+            pnlShip.BackColor = Color.FromArgb(30, 106, 17);
 
             pnlItems.Controls.Clear();
             DataTable x = OrderTableDAO.SellectByBuyerId(Program.currentUserId);
@@ -107,14 +105,11 @@ namespace QuanLyTraoDoiHang
         }
         void ResetBtnStatusBorder()
         {
-            btnShip.BorderSize = 0;
-            btnShip.BorderColor = Color.FromArgb(64, 64, 64, 64);
-            btnCancel.BorderSize = 0;
-            btnCancel.BorderColor = Color.FromArgb(64, 64, 64, 64);
-            btnCompleted.BorderSize = 0;
-            btnCompleted.BorderColor = Color.FromArgb(64, 64, 64, 64);
-            btnReturn.BorderSize = 0;
-            btnReturn.BorderColor = Color.FromArgb(64, 64, 64, 64);
+
+            pnlShip.BackColor = Color.Transparent;
+            pnlCompleted.BackColor = Color.Transparent;
+            pnlCancelled.BackColor = Color.Transparent;
+            pnlReturned.BackColor = Color.Transparent;
             pnlItems.Controls.Clear();
         }
 

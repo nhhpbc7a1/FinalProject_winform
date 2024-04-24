@@ -103,6 +103,46 @@ namespace QuanLyTraoDoiHang.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_down_24__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-down-24 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_down_24__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-down-24 (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_drop_down_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-drop-down-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_drop_down_241 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-drop-down-241", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_up_16 {
             get {
                 object obj = ResourceManager.GetObject("icons8-up-16", resourceCulture);
@@ -116,6 +156,26 @@ namespace QuanLyTraoDoiHang.Properties {
         internal static System.Drawing.Bitmap icons8_up_161 {
             get {
                 object obj = ResourceManager.GetObject("icons8-up-161", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_up_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-up-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_up_24__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-up-24 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

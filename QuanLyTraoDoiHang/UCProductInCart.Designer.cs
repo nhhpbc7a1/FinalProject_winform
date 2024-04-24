@@ -166,9 +166,10 @@
             // panel2
             // 
             panel2.BackColor = SystemColors.AppWorkspace;
-            panel2.Location = new Point(4, 120);
+            panel2.Dock = DockStyle.Bottom;
+            panel2.Location = new Point(0, 120);
             panel2.Name = "panel2";
-            panel2.Size = new Size(707, 1);
+            panel2.Size = new Size(715, 1);
             panel2.TabIndex = 57;
             // 
             // UCProductInCart
