@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -105,6 +105,7 @@ namespace QuanLyTraoDoiHang
         }
         void ResetBtnStatusBorder()
         {
+
             pnlShip.BackColor = Color.Transparent;
             pnlCompleted.BackColor = Color.Transparent;
             pnlCancelled.BackColor = Color.Transparent;

@@ -68,6 +68,7 @@
             lblName.Size = new Size(194, 65);
             lblName.TabIndex = 1;
             lblName.Text = "Product's name";
+
             // 
             // lblPrice
             // 
@@ -140,6 +141,7 @@
             flowLayoutPanel1.Controls.Add(lblPrice);
             flowLayoutPanel1.Controls.Add(label2);
             flowLayoutPanel1.Controls.Add(lblOriginalPrice);
+
             flowLayoutPanel1.Location = new Point(4, 218);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(196, 33);
@@ -147,6 +149,7 @@
             // 
             // ucStars1
             // 
+
             ucStars1.Location = new Point(4, 242);
             ucStars1.Name = "ucStars1";
             ucStars1.Size = new Size(195, 29);

@@ -203,6 +203,7 @@ namespace QuanLyTraoDoiHang
             label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ButtonHighlight;
             label1.Location = new Point(287, 4);
+
             label1.Margin = new Padding(1, 0, 1, 0);
             label1.Name = "label1";
             label1.Size = new Size(82, 21);
@@ -226,7 +227,9 @@ namespace QuanLyTraoDoiHang
             label100.AutoSize = true;
             label100.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label100.ForeColor = SystemColors.ButtonHighlight;
+
             label100.Location = new Point(487, 4);
+
             label100.Margin = new Padding(1, 0, 1, 0);
             label100.Name = "label100";
             label100.Size = new Size(46, 21);

@@ -41,6 +41,7 @@
             panel4 = new Panel();
             panel5 = new Panel();
             panel6 = new Panel();
+
             pnlReturned = new Panel();
             pnlCancelled = new Panel();
             pnlCompleted = new Panel();
@@ -202,10 +203,12 @@
             // panel6
             // 
             panel6.BackColor = Color.White;
+
             panel6.Controls.Add(pnlReturned);
             panel6.Controls.Add(pnlCancelled);
             panel6.Controls.Add(pnlCompleted);
             panel6.Controls.Add(pnlShip);
+
             panel6.Controls.Add(btnReturn);
             panel6.Controls.Add(btnCompleted);
             panel6.Controls.Add(btnCancel);
@@ -220,6 +223,7 @@
             panel6.Size = new Size(747, 60);
             panel6.TabIndex = 4;
             // 
+
             // pnlReturned
             // 
             pnlReturned.Location = new Point(562, 55);
@@ -248,6 +252,7 @@
             pnlShip.Size = new Size(180, 3);
             pnlShip.TabIndex = 4;
             // 
+
             // ViewHistory
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -278,9 +283,11 @@
         private Panel panel3;
         private Panel panel5;
         private Panel panel6;
+
         private Panel pnlReturned;
         private Panel pnlCancelled;
         private Panel pnlCompleted;
         private Panel pnlShip;
+
     }
 }
