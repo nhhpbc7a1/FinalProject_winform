@@ -76,7 +76,7 @@
             btnAddAddress.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnAddAddress.ForeColor = SystemColors.ActiveCaptionText;
             btnAddAddress.ImageAlign = ContentAlignment.TopCenter;
-            btnAddAddress.Location = new Point(234, 20);
+            btnAddAddress.Location = new Point(522, 20);
             btnAddAddress.Name = "btnAddAddress";
             btnAddAddress.Size = new Size(261, 53);
             btnAddAddress.TabIndex = 2;
@@ -95,7 +95,7 @@
             btnConfirm.FlatStyle = FlatStyle.Flat;
             btnConfirm.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnConfirm.ForeColor = Color.White;
-            btnConfirm.Location = new Point(522, 20);
+            btnConfirm.Location = new Point(234, 20);
             btnConfirm.Name = "btnConfirm";
             btnConfirm.Size = new Size(261, 53);
             btnConfirm.TabIndex = 0;

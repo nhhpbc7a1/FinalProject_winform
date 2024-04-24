@@ -157,7 +157,7 @@ namespace QuanLyTraoDoiHang
 
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
-          
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -182,8 +182,11 @@ namespace QuanLyTraoDoiHang
 
         }
 
-        private void cbSearchBox_SelectedIndexChanged(object sender, EventArgs e)
+      
+        private void btnAddProduct_Click_2(object sender, EventArgs e)
         {
+            Form form = new FormAddNewProduct();
+            form.Show();
 
         }
     }

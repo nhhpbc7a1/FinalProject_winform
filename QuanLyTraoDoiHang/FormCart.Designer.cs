@@ -202,7 +202,7 @@ namespace QuanLyTraoDoiHang
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(310, 4);
+            label1.Location = new Point(287, 4);
             label1.Margin = new Padding(1, 0, 1, 0);
             label1.Name = "label1";
             label1.Size = new Size(82, 21);
@@ -226,7 +226,7 @@ namespace QuanLyTraoDoiHang
             label100.AutoSize = true;
             label100.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label100.ForeColor = SystemColors.ButtonHighlight;
-            label100.Location = new Point(521, 4);
+            label100.Location = new Point(487, 4);
             label100.Margin = new Padding(1, 0, 1, 0);
             label100.Name = "label100";
             label100.Size = new Size(46, 21);
@@ -235,7 +235,6 @@ namespace QuanLyTraoDoiHang
             // 
             // panel1
             // 
-            panel1.AutoScroll = true;
             panel1.BackColor = SystemColors.ControlLight;
             panel1.Controls.Add(panel2);
             panel1.Dock = DockStyle.Fill;
@@ -246,6 +245,7 @@ namespace QuanLyTraoDoiHang
             // 
             // panel2
             // 
+            panel2.AutoScroll = true;
             panel2.AutoSize = true;
             panel2.BackColor = Color.White;
             panel2.Controls.Add(pnlProducts);

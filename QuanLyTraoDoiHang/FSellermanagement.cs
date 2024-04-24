@@ -68,7 +68,7 @@ namespace QuanLyTraoDoiHang
         {
             if (isCollapsed)
             {
-                btnOrder.Image = Resources.icons8_up_16;
+                btnOrder.Image = Resources.icons8_up_24__1_;
                 pnlDropDownnn.Height += 10;
                 if (pnlDropDownnn.Size == pnlDropDownnn.MaximumSize)
                 {
@@ -78,7 +78,7 @@ namespace QuanLyTraoDoiHang
             }
             else
             {
-                btnOrder.Image = Resources.icons8_down_16;
+                btnOrder.Image = Resources.icons8_down_24__1_1;
                 pnlDropDownnn.Height -= 10;
                 if (pnlDropDownnn.Size == pnlDropDownnn.MinimumSize)
                 {
@@ -98,7 +98,7 @@ namespace QuanLyTraoDoiHang
         {
             if (isCollapsed1)
             {
-                btnProducts.Image = Resources.icons8_up_16;
+                btnProducts.Image = Resources.icons8_up_24__1_;
                 pnlDropDownProdu.Height += 10;
                 if (pnlDropDownProdu.Size == pnlDropDownProdu.MaximumSize)
                 {
@@ -108,7 +108,7 @@ namespace QuanLyTraoDoiHang
             }
             else
             {
-                btnProducts.Image = Resources.icons8_down_16;
+                btnProducts.Image = Resources.icons8_down_24__1_1;
                 pnlDropDownProdu.Height -= 10;
                 if (pnlDropDownProdu.Size == pnlDropDownProdu.MinimumSize)
                 {
@@ -138,7 +138,9 @@ namespace QuanLyTraoDoiHang
         private void btnMyProducts_Click(object sender, EventArgs e)
         {
             ResetButtonColor();
-            btnMyProducts.BackColor = Color.FromArgb(51, 255, 0);
+            btnMyProducts.TextColor = Color.White;
+            btnMyProducts.BorderColor = Color.FromArgb(30, 106, 17);
+            btnMyProducts.BackColor = Color.FromArgb(101, 183, 65);
             MyProduct formMyProduct = new MyProduct();
             OpenChildForm(formMyProduct);
         }
@@ -146,14 +148,18 @@ namespace QuanLyTraoDoiHang
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
             ResetButtonColor();
-            btnAddProduct.BackColor = Color.FromArgb(41, 204, 0);
+            btnAddProduct.TextColor = Color.White;
+            btnAddProduct.BorderColor = Color.FromArgb(30, 106, 17);
+            btnAddProduct.BackColor = Color.FromArgb(101, 183, 65);
             Form form = new FormAddNewProduct();
             form.ShowDialog();
         }
         private void btnDataAnalysis_Click(object sender, EventArgs e)
         {
             ResetButtonColor();
-            btnDataAnalysis.BackColor = Color.FromArgb(41, 204, 0);
+            btnDataAnalysis.TextColor = Color.White;
+            btnDataAnalysis.BorderColor = Color.FromArgb(30, 106, 17);
+            btnDataAnalysis.BackColor = Color.FromArgb(101, 183, 65);
             OpenChildForm(new FAnalysis());
 
         }
@@ -161,7 +167,9 @@ namespace QuanLyTraoDoiHang
         private void btnMyOrder_Click(object sender, EventArgs e)
         {
             ResetButtonColor();
-            btnCompleted.BackColor = Color.FromArgb(51, 255, 0);
+            btnCompleted.TextColor = Color.White;
+            btnCompleted.BorderColor = Color.FromArgb(30, 106, 17);
+            btnCompleted.BackColor = Color.FromArgb(101, 183, 65);
             List<string> strings = new List<string>();
             strings.Add("completed");
             FormProductStatus formProductStatus = new FormProductStatus(strings, false);
@@ -171,7 +179,9 @@ namespace QuanLyTraoDoiHang
         private void btnReturned_Click(object sender, EventArgs e)
         {
             ResetButtonColor();
-            btnReturned.BackColor = Color.FromArgb(51, 255, 0);
+            btnReturned.TextColor = Color.White;
+            btnReturned.BorderColor = Color.FromArgb(30, 106, 17);
+            btnReturned.BackColor = Color.FromArgb(101, 183, 65);
             List<string> strings = new List<string>();
             strings.Add("returned");
             FormProductStatus formProductStatus = new FormProductStatus(strings, false);
@@ -181,7 +191,9 @@ namespace QuanLyTraoDoiHang
         private void btnCancelled_Click(object sender, EventArgs e)
         {
             ResetButtonColor();
-            btnCancelled.BackColor = Color.FromArgb(51, 255, 0);
+            btnCancelled.TextColor = Color.White;
+            btnCancelled.BorderColor = Color.FromArgb(30, 106, 17);
+            btnCancelled.BackColor = Color.FromArgb(101, 183, 65);
             List<string> strings = new List<string>();
             strings.Add("cancelled");
             FormProductStatus formProductStatus = new FormProductStatus(strings, false);
@@ -191,7 +203,9 @@ namespace QuanLyTraoDoiHang
         private void btnShipment_Click_1(object sender, EventArgs e)
         {
             ResetButtonColor();
-            btnShipment.BackColor = Color.FromArgb(51, 255, 0);          
+            btnShipment.TextColor = Color.White;
+            btnShipment.BorderColor = Color.FromArgb(30, 106, 17);
+            btnShipment.BackColor = Color.FromArgb(101, 183, 65);          
             List<string> strings = new List<string>();
             strings.Add("waiting");
             strings.Add("shipping");
@@ -201,15 +215,21 @@ namespace QuanLyTraoDoiHang
         void ResetButtonColor()
         {
             //rgb(41,204,0) rgb(51,255,0)
-            btnShipment.BackColor = Color.FromArgb(30, 106, 17);
-            btnCompleted.BackColor = Color.FromArgb(155,207,83);
-            btnCancelled.BackColor = Color.FromArgb(155, 207, 83);
-            btnReturned.BackColor = Color.FromArgb(155, 207, 83);
-            btnAddProduct.BackColor = Color.FromArgb(155, 207, 83);
-            btnMyProducts.BackColor = Color.FromArgb(155, 207, 83);
-            btnDataAnalysis.BackColor = Color.FromArgb(30, 106, 17);
-
+            btnShipment.BackColor = Color.White;
+            btnShipment.TextColor = Color.FromArgb(30, 106, 17);
+            btnCompleted.BackColor = Color.White;
+            btnCompleted.TextColor = Color.FromArgb(30, 106, 17);
+            btnCancelled.BackColor = Color.White;
+            btnCancelled.TextColor = Color.FromArgb(30, 106, 17);
+            btnReturned.BackColor = Color.White;
+            btnReturned.TextColor = Color.FromArgb(30, 106, 17);
+            btnAddProduct.BackColor = Color.White;
+            btnAddProduct.TextColor = Color.FromArgb(30, 106, 17);
+            btnMyProducts.BackColor = Color.White;
+            btnMyProducts.TextColor = Color.FromArgb(30, 106, 17);
+            btnDataAnalysis.BackColor = Color.White;
+            btnDataAnalysis.TextColor = Color.FromArgb(30, 106, 17);
         }
-      
+
     }
 }

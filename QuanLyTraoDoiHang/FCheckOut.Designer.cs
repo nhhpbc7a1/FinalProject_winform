@@ -31,15 +31,6 @@ namespace QuanLyTraoDoiHang
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FCheckOut));
-            panel1 = new Panel();
-            label2 = new Label();
-            panel5 = new Panel();
-            pnlProducts = new FlowLayoutPanel();
-            panel2 = new Panel();
-            btnChangeReceiveInfo = new RButton();
-            lblAddressDelivery = new Label();
-            lblPhoneDelivery = new Label();
-            lblNameDelivery = new Label();
             panel3 = new Panel();
             label4 = new Label();
             label3 = new Label();
@@ -51,127 +42,20 @@ namespace QuanLyTraoDoiHang
             lblTotalPrice = new Label();
             lblShipping = new Label();
             lblTotal = new Label();
-            flowLayoutPanel1 = new FlowLayoutPanel();
-            panel1.SuspendLayout();
-            panel5.SuspendLayout();
-            panel2.SuspendLayout();
+            panel4 = new Panel();
+            panel1 = new Panel();
+            label2 = new Label();
+            pnlProducts = new FlowLayoutPanel();
+            panel2 = new Panel();
+            btnChangeReceiveInfo = new RButton();
+            lblAddressDelivery = new Label();
+            lblPhoneDelivery = new Label();
+            lblNameDelivery = new Label();
             panel3.SuspendLayout();
-            flowLayoutPanel1.SuspendLayout();
+            panel4.SuspendLayout();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
             SuspendLayout();
-            // 
-            // panel1
-            // 
-            panel1.AutoSize = true;
-            panel1.BackColor = SystemColors.ControlLight;
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(panel5);
-            panel1.Controls.Add(panel2);
-            panel1.Location = new Point(128, 15);
-            panel1.Margin = new Padding(3, 15, 3, 3);
-            panel1.MaximumSize = new Size(751, 10000);
-            panel1.MinimumSize = new Size(751, 590);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(751, 590);
-            panel1.TabIndex = 0;
-            // 
-            // label2
-            // 
-            label2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Image = (Image)resources.GetObject("label2.Image");
-            label2.ImageAlign = ContentAlignment.MiddleLeft;
-            label2.Location = new Point(15, 6);
-            label2.Name = "label2";
-            label2.Size = new Size(159, 23);
-            label2.TabIndex = 3;
-            label2.Text = "Delivery Address";
-            label2.TextAlign = ContentAlignment.TopRight;
-            // 
-            // panel5
-            // 
-            panel5.AutoSize = true;
-            panel5.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            panel5.Controls.Add(pnlProducts);
-            panel5.Location = new Point(15, 120);
-            panel5.MaximumSize = new Size(725, 10000);
-            panel5.MinimumSize = new Size(725, 200);
-            panel5.Name = "panel5";
-            panel5.Padding = new Padding(30, 0, 0, 0);
-            panel5.Size = new Size(725, 206);
-            panel5.TabIndex = 53;
-            // 
-            // pnlProducts
-            // 
-            pnlProducts.AutoSize = true;
-            pnlProducts.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            pnlProducts.BackColor = Color.White;
-            pnlProducts.Location = new Point(3, 3);
-            pnlProducts.MaximumSize = new Size(719, 10000);
-            pnlProducts.MinimumSize = new Size(719, 200);
-            pnlProducts.Name = "pnlProducts";
-            pnlProducts.Size = new Size(719, 200);
-            pnlProducts.TabIndex = 25;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = SystemColors.ButtonHighlight;
-            panel2.Controls.Add(btnChangeReceiveInfo);
-            panel2.Controls.Add(lblAddressDelivery);
-            panel2.Controls.Add(lblPhoneDelivery);
-            panel2.Controls.Add(lblNameDelivery);
-            panel2.Location = new Point(13, 32);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(725, 71);
-            panel2.TabIndex = 1;
-            // 
-            // btnChangeReceiveInfo
-            // 
-            btnChangeReceiveInfo.BackColor = SystemColors.ButtonHighlight;
-            btnChangeReceiveInfo.BackgroundColor = SystemColors.ButtonHighlight;
-            btnChangeReceiveInfo.BorderColor = Color.PeachPuff;
-            btnChangeReceiveInfo.BorderRadius = 20;
-            btnChangeReceiveInfo.BorderSize = 0;
-            btnChangeReceiveInfo.FlatAppearance.BorderSize = 0;
-            btnChangeReceiveInfo.FlatStyle = FlatStyle.Flat;
-            btnChangeReceiveInfo.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point);
-            btnChangeReceiveInfo.ForeColor = Color.Black;
-            btnChangeReceiveInfo.Location = new Point(616, 13);
-            btnChangeReceiveInfo.Name = "btnChangeReceiveInfo";
-            btnChangeReceiveInfo.Size = new Size(82, 45);
-            btnChangeReceiveInfo.TabIndex = 3;
-            btnChangeReceiveInfo.Text = "Edit";
-            btnChangeReceiveInfo.TextColor = Color.Black;
-            btnChangeReceiveInfo.UseVisualStyleBackColor = false;
-            // 
-            // lblAddressDelivery
-            // 
-            lblAddressDelivery.AutoSize = true;
-            lblAddressDelivery.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblAddressDelivery.ForeColor = SystemColors.ControlText;
-            lblAddressDelivery.Location = new Point(14, 37);
-            lblAddressDelivery.Name = "lblAddressDelivery";
-            lblAddressDelivery.Size = new Size(66, 21);
-            lblAddressDelivery.TabIndex = 2;
-            lblAddressDelivery.Text = "Address";
-            // 
-            // lblPhoneDelivery
-            // 
-            lblPhoneDelivery.AutoSize = true;
-            lblPhoneDelivery.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblPhoneDelivery.Location = new Point(245, 13);
-            lblPhoneDelivery.Name = "lblPhoneDelivery";
-            lblPhoneDelivery.Size = new Size(126, 21);
-            lblPhoneDelivery.TabIndex = 1;
-            lblPhoneDelivery.Text = "Phone Number";
-            // 
-            // lblNameDelivery
-            // 
-            lblNameDelivery.AutoSize = true;
-            lblNameDelivery.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblNameDelivery.Location = new Point(14, 13);
-            lblNameDelivery.Name = "lblNameDelivery";
-            lblNameDelivery.Size = new Size(56, 21);
-            lblNameDelivery.TabIndex = 0;
-            lblNameDelivery.Text = "Name";
             // 
             // panel3
             // 
@@ -322,52 +206,141 @@ namespace QuanLyTraoDoiHang
             lblTotal.TextAlign = ContentAlignment.BottomRight;
             lblTotal.UseCompatibleTextRendering = true;
             // 
-            // flowLayoutPanel1
+            // panel4
             // 
-            flowLayoutPanel1.AutoScroll = true;
-            flowLayoutPanel1.BackColor = Color.Transparent;
-            flowLayoutPanel1.BackgroundImageLayout = ImageLayout.Stretch;
-            flowLayoutPanel1.Controls.Add(panel1);
-            flowLayoutPanel1.Dock = DockStyle.Fill;
-            flowLayoutPanel1.Location = new Point(0, 0);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Padding = new Padding(125, 0, 0, 0);
-            flowLayoutPanel1.Size = new Size(984, 605);
-            flowLayoutPanel1.TabIndex = 54;
+            panel4.AutoScroll = true;
+            panel4.BackColor = Color.White;
+            panel4.Controls.Add(panel1);
+            panel4.Location = new Point(12, 12);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(960, 595);
+            panel4.TabIndex = 61;
+            // 
+            // panel1
+            // 
+            panel1.AutoSize = true;
+            panel1.BackColor = SystemColors.ControlLight;
+            panel1.Controls.Add(pnlProducts);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(panel2);
+            panel1.Location = new Point(100, 18);
+            panel1.Margin = new Padding(3, 15, 3, 3);
+            panel1.MaximumSize = new Size(751, 10000);
+            panel1.MinimumSize = new Size(751, 590);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(751, 590);
+            panel1.TabIndex = 1;
+            // 
+            // label2
+            // 
+            label2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Image = (Image)resources.GetObject("label2.Image");
+            label2.ImageAlign = ContentAlignment.MiddleLeft;
+            label2.Location = new Point(15, 6);
+            label2.Name = "label2";
+            label2.Size = new Size(159, 23);
+            label2.TabIndex = 3;
+            label2.Text = "Delivery Address";
+            label2.TextAlign = ContentAlignment.TopRight;
+            // 
+            // pnlProducts
+            // 
+            pnlProducts.AutoSize = true;
+            pnlProducts.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            pnlProducts.BackColor = SystemColors.ControlLight;
+            pnlProducts.Location = new Point(15, 109);
+            pnlProducts.MaximumSize = new Size(719, 10000);
+            pnlProducts.MinimumSize = new Size(719, 200);
+            pnlProducts.Name = "pnlProducts";
+            pnlProducts.Size = new Size(719, 200);
+            pnlProducts.TabIndex = 25;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = SystemColors.ButtonHighlight;
+            panel2.Controls.Add(btnChangeReceiveInfo);
+            panel2.Controls.Add(lblAddressDelivery);
+            panel2.Controls.Add(lblPhoneDelivery);
+            panel2.Controls.Add(lblNameDelivery);
+            panel2.Location = new Point(13, 32);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(725, 71);
+            panel2.TabIndex = 1;
+            // 
+            // btnChangeReceiveInfo
+            // 
+            btnChangeReceiveInfo.BackColor = SystemColors.ButtonHighlight;
+            btnChangeReceiveInfo.BackgroundColor = SystemColors.ButtonHighlight;
+            btnChangeReceiveInfo.BorderColor = Color.PeachPuff;
+            btnChangeReceiveInfo.BorderRadius = 20;
+            btnChangeReceiveInfo.BorderSize = 0;
+            btnChangeReceiveInfo.FlatAppearance.BorderSize = 0;
+            btnChangeReceiveInfo.FlatStyle = FlatStyle.Flat;
+            btnChangeReceiveInfo.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point);
+            btnChangeReceiveInfo.ForeColor = Color.Black;
+            btnChangeReceiveInfo.Location = new Point(616, 13);
+            btnChangeReceiveInfo.Name = "btnChangeReceiveInfo";
+            btnChangeReceiveInfo.Size = new Size(82, 45);
+            btnChangeReceiveInfo.TabIndex = 3;
+            btnChangeReceiveInfo.Text = "Edit";
+            btnChangeReceiveInfo.TextColor = Color.Black;
+            btnChangeReceiveInfo.UseVisualStyleBackColor = false;
+            // 
+            // lblAddressDelivery
+            // 
+            lblAddressDelivery.AutoSize = true;
+            lblAddressDelivery.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblAddressDelivery.ForeColor = SystemColors.ControlText;
+            lblAddressDelivery.Location = new Point(14, 37);
+            lblAddressDelivery.Name = "lblAddressDelivery";
+            lblAddressDelivery.Size = new Size(66, 21);
+            lblAddressDelivery.TabIndex = 2;
+            lblAddressDelivery.Text = "Address";
+            // 
+            // lblPhoneDelivery
+            // 
+            lblPhoneDelivery.AutoSize = true;
+            lblPhoneDelivery.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblPhoneDelivery.Location = new Point(245, 13);
+            lblPhoneDelivery.Name = "lblPhoneDelivery";
+            lblPhoneDelivery.Size = new Size(126, 21);
+            lblPhoneDelivery.TabIndex = 1;
+            lblPhoneDelivery.Text = "Phone Number";
+            // 
+            // lblNameDelivery
+            // 
+            lblNameDelivery.AutoSize = true;
+            lblNameDelivery.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblNameDelivery.Location = new Point(14, 13);
+            lblNameDelivery.Name = "lblNameDelivery";
+            lblNameDelivery.Size = new Size(56, 21);
+            lblNameDelivery.TabIndex = 0;
+            lblNameDelivery.Text = "Name";
             // 
             // FCheckOut
             // 
             AccessibleRole = AccessibleRole.Row;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.Control;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackColor = SystemColors.ControlLight;
             ClientSize = new Size(984, 701);
-            Controls.Add(flowLayoutPanel1);
             Controls.Add(panel3);
+            Controls.Add(panel4);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FCheckOut";
             Text = "FCheckOut";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            panel5.ResumeLayout(false);
-            panel5.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
-            flowLayoutPanel1.ResumeLayout(false);
-            flowLayoutPanel1.PerformLayout();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Panel panel1;
-        private Label lblPhoneDelivery;
-        private Panel panel2;
-        private Label lblNameDelivery;
-        private RJControls.RButton btnChangeReceiveInfo;
         private Label lblTotalProductPrice;
         private Label lblProducPrice;
         private Label lblTotalShippingFee;
@@ -375,14 +348,18 @@ namespace QuanLyTraoDoiHang
         private Label lblTotalPrice;
         private Label lblTotal;
         private RJControls.RButton btnCheckOut;
-        private Panel panel5;
-        public FlowLayoutPanel pnlProducts;
-        private FlowLayoutPanel flowLayoutPanel1;
         private Panel panel3;
-        private Label lblAddressDelivery;
         private Label label1;
-        private Label label2;
         private Label label4;
         private Label label3;
+        private Panel panel4;
+        private Panel panel1;
+        private Label label2;
+        public FlowLayoutPanel pnlProducts;
+        private Panel panel2;
+        private RButton btnChangeReceiveInfo;
+        private Label lblAddressDelivery;
+        private Label lblPhoneDelivery;
+        private Label lblNameDelivery;
     }
 }

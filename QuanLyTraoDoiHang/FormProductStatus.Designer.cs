@@ -48,7 +48,7 @@
             btnUpdate.FlatStyle = FlatStyle.Flat;
             btnUpdate.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnUpdate.ForeColor = Color.White;
-            btnUpdate.Location = new Point(307, 497);
+            btnUpdate.Location = new Point(307, 494);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(168, 41);
             btnUpdate.TabIndex = 28;

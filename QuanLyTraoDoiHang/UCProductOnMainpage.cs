@@ -82,13 +82,9 @@ namespace QuanLyTraoDoiHang
         private void OpenFormDetail(object sender, EventArgs e)
         {
             FProductDetail formDetail = new FProductDetail(product);
-
             Program.mainpage.OpenChildForm(formDetail);
         }
 
-        private void lblName_Click(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }
