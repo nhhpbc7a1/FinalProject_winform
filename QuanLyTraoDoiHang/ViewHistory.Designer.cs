@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewHistory));
-            flowLayoutPanel1 = new FlowLayoutPanel();
             btnShip = new RJControls.RButton();
             btnCompleted = new RJControls.RButton();
             btnCancel = new RJControls.RButton();
@@ -37,29 +36,21 @@
             pictureBox1 = new PictureBox();
             pnlItems = new FlowLayoutPanel();
             panel1 = new Panel();
-            flowLayoutPanel1.SuspendLayout();
+            panel2 = new Panel();
+            panel3 = new Panel();
+            panel4 = new Panel();
+            panel5 = new Panel();
+            panel6 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             pnlItems.SuspendLayout();
+            panel6.SuspendLayout();
             SuspendLayout();
-            // 
-            // flowLayoutPanel1
-            // 
-            flowLayoutPanel1.BackColor = Color.White;
-            flowLayoutPanel1.Controls.Add(btnShip);
-            flowLayoutPanel1.Controls.Add(btnCompleted);
-            flowLayoutPanel1.Controls.Add(btnCancel);
-            flowLayoutPanel1.Controls.Add(btnReturn);
-            flowLayoutPanel1.Dock = DockStyle.Top;
-            flowLayoutPanel1.Location = new Point(0, 0);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(747, 50);
-            flowLayoutPanel1.TabIndex = 2;
             // 
             // btnShip
             // 
             btnShip.BackColor = Color.White;
             btnShip.BackgroundColor = Color.White;
-            btnShip.BorderColor = Color.White;
+            btnShip.BorderColor = Color.DimGray;
             btnShip.BorderRadius = 5;
             btnShip.BorderSize = 1;
             btnShip.FlatAppearance.BorderSize = 0;
@@ -67,10 +58,10 @@
             btnShip.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnShip.ForeColor = Color.Black;
             btnShip.ImageAlign = ContentAlignment.MiddleRight;
-            btnShip.Location = new Point(0, 3);
-            btnShip.Margin = new Padding(0, 3, 0, 0);
+            btnShip.Location = new Point(5, 7);
+            btnShip.Margin = new Padding(0);
             btnShip.Name = "btnShip";
-            btnShip.Size = new Size(187, 45);
+            btnShip.Size = new Size(180, 45);
             btnShip.TabIndex = 0;
             btnShip.Text = "To Ship";
             btnShip.TextColor = Color.Black;
@@ -80,7 +71,7 @@
             // 
             btnCompleted.BackColor = Color.White;
             btnCompleted.BackgroundColor = Color.White;
-            btnCompleted.BorderColor = Color.White;
+            btnCompleted.BorderColor = Color.DimGray;
             btnCompleted.BorderRadius = 5;
             btnCompleted.BorderSize = 1;
             btnCompleted.FlatAppearance.BorderSize = 0;
@@ -88,10 +79,10 @@
             btnCompleted.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnCompleted.ForeColor = Color.Black;
             btnCompleted.ImageAlign = ContentAlignment.MiddleRight;
-            btnCompleted.Location = new Point(187, 3);
-            btnCompleted.Margin = new Padding(0, 3, 0, 0);
+            btnCompleted.Location = new Point(190, 7);
+            btnCompleted.Margin = new Padding(0);
             btnCompleted.Name = "btnCompleted";
-            btnCompleted.Size = new Size(187, 45);
+            btnCompleted.Size = new Size(180, 45);
             btnCompleted.TabIndex = 1;
             btnCompleted.Text = "Completed";
             btnCompleted.TextColor = Color.Black;
@@ -101,7 +92,7 @@
             // 
             btnCancel.BackColor = Color.White;
             btnCancel.BackgroundColor = Color.White;
-            btnCancel.BorderColor = Color.White;
+            btnCancel.BorderColor = Color.DimGray;
             btnCancel.BorderRadius = 5;
             btnCancel.BorderSize = 1;
             btnCancel.FlatAppearance.BorderSize = 0;
@@ -109,10 +100,10 @@
             btnCancel.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnCancel.ForeColor = Color.Black;
             btnCancel.ImageAlign = ContentAlignment.MiddleRight;
-            btnCancel.Location = new Point(374, 3);
-            btnCancel.Margin = new Padding(0, 3, 0, 0);
+            btnCancel.Location = new Point(376, 7);
+            btnCancel.Margin = new Padding(0);
             btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(187, 45);
+            btnCancel.Size = new Size(180, 45);
             btnCancel.TabIndex = 2;
             btnCancel.Text = "Cancelled";
             btnCancel.TextColor = Color.Black;
@@ -122,7 +113,7 @@
             // 
             btnReturn.BackColor = Color.White;
             btnReturn.BackgroundColor = Color.White;
-            btnReturn.BorderColor = Color.White;
+            btnReturn.BorderColor = Color.DimGray;
             btnReturn.BorderRadius = 5;
             btnReturn.BorderSize = 1;
             btnReturn.FlatAppearance.BorderSize = 0;
@@ -130,10 +121,10 @@
             btnReturn.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnReturn.ForeColor = Color.Black;
             btnReturn.ImageAlign = ContentAlignment.MiddleRight;
-            btnReturn.Location = new Point(561, 3);
+            btnReturn.Location = new Point(560, 7);
             btnReturn.Margin = new Padding(0, 3, 0, 0);
             btnReturn.Name = "btnReturn";
-            btnReturn.Size = new Size(183, 45);
+            btnReturn.Size = new Size(180, 45);
             btnReturn.TabIndex = 3;
             btnReturn.Text = "Returned";
             btnReturn.TextColor = Color.Black;
@@ -154,9 +145,9 @@
             pnlItems.AutoScroll = true;
             pnlItems.BackColor = SystemColors.ControlLight;
             pnlItems.Controls.Add(pictureBox1);
-            pnlItems.Location = new Point(0, 56);
+            pnlItems.Location = new Point(0, 62);
             pnlItems.Name = "pnlItems";
-            pnlItems.Size = new Size(747, 438);
+            pnlItems.Size = new Size(747, 432);
             pnlItems.TabIndex = 3;
             // 
             // panel1
@@ -168,25 +159,77 @@
             panel1.Size = new Size(747, 10);
             panel1.TabIndex = 1;
             // 
+            // panel2
+            // 
+            panel2.BackColor = SystemColors.AppWorkspace;
+            panel2.Dock = DockStyle.Bottom;
+            panel2.Location = new Point(1, 59);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(745, 1);
+            panel2.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = SystemColors.AppWorkspace;
+            panel3.Dock = DockStyle.Top;
+            panel3.Location = new Point(1, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(745, 1);
+            panel3.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = SystemColors.AppWorkspace;
+            panel4.Dock = DockStyle.Left;
+            panel4.Location = new Point(0, 0);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(1, 60);
+            panel4.TabIndex = 1;
+            // 
+            // panel5
+            // 
+            panel5.BackColor = SystemColors.AppWorkspace;
+            panel5.Dock = DockStyle.Right;
+            panel5.Location = new Point(746, 0);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(1, 60);
+            panel5.TabIndex = 1;
+            // 
+            // panel6
+            // 
+            panel6.BackColor = Color.White;
+            panel6.Controls.Add(btnReturn);
+            panel6.Controls.Add(btnCompleted);
+            panel6.Controls.Add(btnCancel);
+            panel6.Controls.Add(panel3);
+            panel6.Controls.Add(btnShip);
+            panel6.Controls.Add(panel2);
+            panel6.Controls.Add(panel5);
+            panel6.Controls.Add(panel4);
+            panel6.Dock = DockStyle.Top;
+            panel6.Location = new Point(0, 0);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(747, 60);
+            panel6.TabIndex = 4;
+            // 
             // ViewHistory
             // 
             AutoScaleMode = AutoScaleMode.None;
-            BackColor = Color.White;
+            BackColor = SystemColors.ControlLight;
             ClientSize = new Size(747, 502);
+            Controls.Add(panel6);
             Controls.Add(pnlItems);
             Controls.Add(panel1);
-            Controls.Add(flowLayoutPanel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "ViewHistory";
             Text = "ViewHistory";
-            flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             pnlItems.ResumeLayout(false);
+            panel6.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
-        private FlowLayoutPanel flowLayoutPanel1;
         private RJControls.RButton btnShip;
         private RJControls.RButton btnCompleted;
         private RJControls.RButton btnCancel;
@@ -194,5 +237,10 @@
         private PictureBox pictureBox1;
         private FlowLayoutPanel pnlItems;
         private Panel panel1;
+        private Panel panel2;
+        private Panel panel4;
+        private Panel panel3;
+        private Panel panel5;
+        private Panel panel6;
     }
 }

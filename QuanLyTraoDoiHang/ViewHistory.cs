@@ -107,13 +107,13 @@ namespace QuanLyTraoDoiHang
         }
         void ResetBtnStatusBorder()
         {
-            btnShip.BorderSize = 1;
+            btnShip.BorderSize = 0;
             btnShip.BorderColor = Color.FromArgb(64, 64, 64, 64);
-            btnCancel.BorderSize = 1;
+            btnCancel.BorderSize = 0;
             btnCancel.BorderColor = Color.FromArgb(64, 64, 64, 64);
-            btnCompleted.BorderSize = 1;
+            btnCompleted.BorderSize = 0;
             btnCompleted.BorderColor = Color.FromArgb(64, 64, 64, 64);
-            btnReturn.BorderSize = 1;
+            btnReturn.BorderSize = 0;
             btnReturn.BorderColor = Color.FromArgb(64, 64, 64, 64);
             pnlItems.Controls.Clear();
         }

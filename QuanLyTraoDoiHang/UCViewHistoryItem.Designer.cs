@@ -34,7 +34,7 @@
             lblCondition = new Label();
             lblPrice = new Label();
             lblOriginPrice = new Label();
-            btnRating = new RJControls.RButton();
+            btnAction = new RJControls.RButton();
             label1 = new Label();
             label2 = new Label();
             panel2 = new Panel();
@@ -106,25 +106,24 @@
             lblOriginPrice.TabIndex = 59;
             lblOriginPrice.Text = "10000";
             // 
-            // btnRating
+            // btnAction
             // 
-            btnRating.BackColor = Color.Transparent;
-            btnRating.BackgroundColor = Color.Transparent;
-            btnRating.BorderColor = Color.LightCoral;
-            btnRating.BorderRadius = 10;
-            btnRating.BorderSize = 1;
-            btnRating.FlatAppearance.BorderSize = 0;
-            btnRating.FlatStyle = FlatStyle.Flat;
-            btnRating.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnRating.ForeColor = Color.LightCoral;
-            btnRating.Location = new Point(578, 37);
-            btnRating.Name = "btnRating";
-            btnRating.Size = new Size(119, 40);
-            btnRating.TabIndex = 60;
-            btnRating.Text = "Rating";
-            btnRating.TextColor = Color.LightCoral;
-            btnRating.UseVisualStyleBackColor = false;
-            btnRating.Visible = false;
+            btnAction.BackColor = Color.Transparent;
+            btnAction.BackgroundColor = Color.Transparent;
+            btnAction.BorderColor = Color.LightCoral;
+            btnAction.BorderRadius = 10;
+            btnAction.BorderSize = 1;
+            btnAction.FlatAppearance.BorderSize = 0;
+            btnAction.FlatStyle = FlatStyle.Flat;
+            btnAction.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnAction.ForeColor = Color.LightCoral;
+            btnAction.Location = new Point(578, 37);
+            btnAction.Name = "btnAction";
+            btnAction.Size = new Size(119, 40);
+            btnAction.TabIndex = 60;
+            btnAction.Text = "Action";
+            btnAction.TextColor = Color.LightCoral;
+            btnAction.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -166,7 +165,7 @@
             Controls.Add(panel2);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(btnRating);
+            Controls.Add(btnAction);
             Controls.Add(lblOriginPrice);
             Controls.Add(lblPrice);
             Controls.Add(lblCondition);
@@ -187,7 +186,7 @@
         public Label lblCondition;
         public Label lblPrice;
         public Label lblOriginPrice;
-        private RJControls.RButton btnRating;
+        private RJControls.RButton btnAction;
         public Label label1;
         public Label label2;
         private Panel panel2;

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyInfo));
             panel3 = new Panel();
             panel2 = new Panel();
             label2 = new Label();
@@ -44,19 +43,17 @@
             btnSave = new RJControls.RButton();
             flowLayoutPanel3 = new FlowLayoutPanel();
             txtPersonalID = new TextBox();
-            rButton3 = new RJControls.RButton();
-            flowLayoutPanel4 = new FlowLayoutPanel();
-            rButton2 = new RJControls.RButton();
-            rButton1 = new RJControls.RButton();
-            rButton4 = new RJControls.RButton();
-            rButton5 = new RJControls.RButton();
-            rButton6 = new RJControls.RButton();
-            rButton7 = new RJControls.RButton();
             panel1 = new Panel();
+            label8 = new Label();
+            label7 = new Label();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label1 = new Label();
             panel3.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
             flowLayoutPanel3.SuspendLayout();
-            flowLayoutPanel4.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -146,7 +143,6 @@
             txtAddress.Location = new Point(10, 244);
             txtAddress.Margin = new Padding(10, 9, 10, 9);
             txtAddress.Name = "txtAddress";
-            txtAddress.PlaceholderText = "Address";
             txtAddress.Size = new Size(277, 29);
             txtAddress.TabIndex = 5;
             // 
@@ -172,7 +168,6 @@
             txtPhone.Location = new Point(10, 197);
             txtPhone.Margin = new Padding(10, 9, 10, 9);
             txtPhone.Name = "txtPhone";
-            txtPhone.PlaceholderText = "Phone number";
             txtPhone.Size = new Size(277, 29);
             txtPhone.TabIndex = 2;
             // 
@@ -184,7 +179,6 @@
             txtEmail.Location = new Point(10, 150);
             txtEmail.Margin = new Padding(10, 9, 10, 9);
             txtEmail.Name = "txtEmail";
-            txtEmail.PlaceholderText = "Email";
             txtEmail.Size = new Size(277, 29);
             txtEmail.TabIndex = 1;
             // 
@@ -203,11 +197,11 @@
             // 
             // btnSave
             // 
-            btnSave.BackColor = Color.FromArgb(36, 10, 52);
-            btnSave.BackgroundColor = Color.FromArgb(36, 10, 52);
-            btnSave.BorderColor = Color.FromArgb(0, 192, 192);
+            btnSave.BackColor = Color.FromArgb(30, 106, 17);
+            btnSave.BackgroundColor = Color.FromArgb(30, 106, 17);
+            btnSave.BorderColor = Color.FromArgb(128, 255, 128);
             btnSave.BorderRadius = 40;
-            btnSave.BorderSize = 1;
+            btnSave.BorderSize = 0;
             btnSave.FlatAppearance.BorderSize = 0;
             btnSave.FlatStyle = FlatStyle.Flat;
             btnSave.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
@@ -233,7 +227,7 @@
             flowLayoutPanel3.Location = new Point(190, 6);
             flowLayoutPanel3.Margin = new Padding(0);
             flowLayoutPanel3.Name = "flowLayoutPanel3";
-            flowLayoutPanel3.Size = new Size(428, 341);
+            flowLayoutPanel3.Size = new Size(313, 341);
             flowLayoutPanel3.TabIndex = 10;
             // 
             // txtPersonalID
@@ -244,166 +238,94 @@
             txtPersonalID.Location = new Point(10, 56);
             txtPersonalID.Margin = new Padding(10, 9, 10, 9);
             txtPersonalID.Name = "txtPersonalID";
-            txtPersonalID.PlaceholderText = "Identity number";
             txtPersonalID.Size = new Size(277, 29);
             txtPersonalID.TabIndex = 1;
-            // 
-            // rButton3
-            // 
-            rButton3.BackColor = Color.FromArgb(36, 10, 52);
-            rButton3.BackgroundColor = Color.FromArgb(36, 10, 52);
-            rButton3.BorderColor = Color.PaleVioletRed;
-            rButton3.BorderRadius = 38;
-            rButton3.BorderSize = 0;
-            rButton3.FlatAppearance.BorderSize = 0;
-            rButton3.FlatStyle = FlatStyle.Flat;
-            rButton3.ForeColor = Color.White;
-            rButton3.Image = (Image)resources.GetObject("rButton3.Image");
-            rButton3.Location = new Point(3, 5);
-            rButton3.Margin = new Padding(3, 5, 3, 5);
-            rButton3.Name = "rButton3";
-            rButton3.Size = new Size(38, 38);
-            rButton3.TabIndex = 27;
-            rButton3.TextColor = Color.White;
-            rButton3.UseVisualStyleBackColor = false;
-            // 
-            // flowLayoutPanel4
-            // 
-            flowLayoutPanel4.Controls.Add(rButton3);
-            flowLayoutPanel4.Controls.Add(rButton2);
-            flowLayoutPanel4.Controls.Add(rButton1);
-            flowLayoutPanel4.Controls.Add(rButton4);
-            flowLayoutPanel4.Controls.Add(rButton5);
-            flowLayoutPanel4.Controls.Add(rButton6);
-            flowLayoutPanel4.Controls.Add(rButton7);
-            flowLayoutPanel4.Location = new Point(124, 3);
-            flowLayoutPanel4.Name = "flowLayoutPanel4";
-            flowLayoutPanel4.Size = new Size(47, 340);
-            flowLayoutPanel4.TabIndex = 13;
-            // 
-            // rButton2
-            // 
-            rButton2.BackColor = Color.FromArgb(36, 10, 52);
-            rButton2.BackgroundColor = Color.FromArgb(36, 10, 52);
-            rButton2.BorderColor = Color.PaleVioletRed;
-            rButton2.BorderRadius = 38;
-            rButton2.BorderSize = 0;
-            rButton2.FlatAppearance.BorderSize = 0;
-            rButton2.FlatStyle = FlatStyle.Flat;
-            rButton2.ForeColor = Color.White;
-            rButton2.Image = (Image)resources.GetObject("rButton2.Image");
-            rButton2.Location = new Point(3, 53);
-            rButton2.Margin = new Padding(3, 5, 3, 5);
-            rButton2.Name = "rButton2";
-            rButton2.Size = new Size(38, 38);
-            rButton2.TabIndex = 29;
-            rButton2.TextColor = Color.White;
-            rButton2.UseVisualStyleBackColor = false;
-            // 
-            // rButton1
-            // 
-            rButton1.BackColor = Color.FromArgb(36, 10, 52);
-            rButton1.BackgroundColor = Color.FromArgb(36, 10, 52);
-            rButton1.BorderColor = Color.PaleVioletRed;
-            rButton1.BorderRadius = 38;
-            rButton1.BorderSize = 0;
-            rButton1.FlatAppearance.BorderSize = 0;
-            rButton1.FlatStyle = FlatStyle.Flat;
-            rButton1.ForeColor = Color.White;
-            rButton1.Image = (Image)resources.GetObject("rButton1.Image");
-            rButton1.Location = new Point(3, 101);
-            rButton1.Margin = new Padding(3, 5, 3, 5);
-            rButton1.Name = "rButton1";
-            rButton1.Size = new Size(38, 38);
-            rButton1.TabIndex = 28;
-            rButton1.TextColor = Color.White;
-            rButton1.UseVisualStyleBackColor = false;
-            // 
-            // rButton4
-            // 
-            rButton4.BackColor = Color.FromArgb(36, 10, 52);
-            rButton4.BackgroundColor = Color.FromArgb(36, 10, 52);
-            rButton4.BorderColor = Color.PaleVioletRed;
-            rButton4.BorderRadius = 38;
-            rButton4.BorderSize = 0;
-            rButton4.FlatAppearance.BorderSize = 0;
-            rButton4.FlatStyle = FlatStyle.Flat;
-            rButton4.ForeColor = Color.White;
-            rButton4.Image = (Image)resources.GetObject("rButton4.Image");
-            rButton4.Location = new Point(3, 149);
-            rButton4.Margin = new Padding(3, 5, 3, 5);
-            rButton4.Name = "rButton4";
-            rButton4.Size = new Size(38, 38);
-            rButton4.TabIndex = 30;
-            rButton4.TextColor = Color.White;
-            rButton4.UseVisualStyleBackColor = false;
-            // 
-            // rButton5
-            // 
-            rButton5.BackColor = Color.FromArgb(36, 10, 52);
-            rButton5.BackgroundColor = Color.FromArgb(36, 10, 52);
-            rButton5.BorderColor = Color.PaleVioletRed;
-            rButton5.BorderRadius = 38;
-            rButton5.BorderSize = 0;
-            rButton5.FlatAppearance.BorderSize = 0;
-            rButton5.FlatStyle = FlatStyle.Flat;
-            rButton5.ForeColor = Color.White;
-            rButton5.Image = (Image)resources.GetObject("rButton5.Image");
-            rButton5.Location = new Point(3, 197);
-            rButton5.Margin = new Padding(3, 5, 3, 5);
-            rButton5.Name = "rButton5";
-            rButton5.Size = new Size(38, 38);
-            rButton5.TabIndex = 31;
-            rButton5.TextColor = Color.White;
-            rButton5.UseVisualStyleBackColor = false;
-            // 
-            // rButton6
-            // 
-            rButton6.BackColor = Color.FromArgb(36, 10, 52);
-            rButton6.BackgroundColor = Color.FromArgb(36, 10, 52);
-            rButton6.BorderColor = Color.PaleVioletRed;
-            rButton6.BorderRadius = 38;
-            rButton6.BorderSize = 0;
-            rButton6.FlatAppearance.BorderSize = 0;
-            rButton6.FlatStyle = FlatStyle.Flat;
-            rButton6.ForeColor = Color.White;
-            rButton6.Image = (Image)resources.GetObject("rButton6.Image");
-            rButton6.Location = new Point(3, 245);
-            rButton6.Margin = new Padding(3, 5, 3, 5);
-            rButton6.Name = "rButton6";
-            rButton6.Size = new Size(38, 38);
-            rButton6.TabIndex = 32;
-            rButton6.TextColor = Color.White;
-            rButton6.UseVisualStyleBackColor = false;
-            // 
-            // rButton7
-            // 
-            rButton7.BackColor = Color.FromArgb(36, 10, 52);
-            rButton7.BackgroundColor = Color.FromArgb(36, 10, 52);
-            rButton7.BorderColor = Color.PaleVioletRed;
-            rButton7.BorderRadius = 38;
-            rButton7.BorderSize = 0;
-            rButton7.FlatAppearance.BorderSize = 0;
-            rButton7.FlatStyle = FlatStyle.Flat;
-            rButton7.ForeColor = Color.White;
-            rButton7.Image = (Image)resources.GetObject("rButton7.Image");
-            rButton7.Location = new Point(3, 293);
-            rButton7.Margin = new Padding(3, 5, 3, 5);
-            rButton7.Name = "rButton7";
-            rButton7.Size = new Size(38, 38);
-            rButton7.TabIndex = 33;
-            rButton7.TextColor = Color.White;
-            rButton7.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(224, 224, 224);
-            panel1.Controls.Add(flowLayoutPanel4);
+            panel1.Controls.Add(label8);
+            panel1.Controls.Add(label7);
+            panel1.Controls.Add(label6);
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(label1);
             panel1.Controls.Add(flowLayoutPanel3);
-            panel1.Location = new Point(66, 78);
+            panel1.Location = new Point(107, 72);
             panel1.Name = "panel1";
-            panel1.Size = new Size(618, 347);
+            panel1.Size = new Size(536, 347);
             panel1.TabIndex = 14;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Location = new Point(59, 64);
+            label8.Name = "label8";
+            label8.Size = new Size(128, 21);
+            label8.TabIndex = 20;
+            label8.Text = "Identity number";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Location = new Point(60, 112);
+            label7.Name = "label7";
+            label7.Size = new Size(71, 21);
+            label7.TabIndex = 19;
+            label7.Text = "Birthday";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Location = new Point(60, 158);
+            label6.Name = "label6";
+            label6.Size = new Size(48, 21);
+            label6.TabIndex = 18;
+            label6.Text = "Email";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(60, 205);
+            label5.Name = "label5";
+            label5.Size = new Size(117, 21);
+            label5.TabIndex = 17;
+            label5.Text = "Phone number";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(60, 252);
+            label4.Name = "label4";
+            label4.Size = new Size(70, 21);
+            label4.TabIndex = 16;
+            label4.Text = "Address";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(60, 302);
+            label3.Name = "label3";
+            label3.Size = new Size(64, 21);
+            label3.TabIndex = 15;
+            label3.Text = "Gender";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(59, 17);
+            label1.Name = "label1";
+            label1.Size = new Size(79, 21);
+            label1.TabIndex = 14;
+            label1.Text = "Full name";
             // 
             // MyInfo
             // 
@@ -422,8 +344,8 @@
             flowLayoutPanel1.PerformLayout();
             flowLayoutPanel3.ResumeLayout(false);
             flowLayoutPanel3.PerformLayout();
-            flowLayoutPanel4.ResumeLayout(false);
             panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -442,15 +364,14 @@
         private RadioButton radioBtnOther;
         private FlowLayoutPanel flowLayoutPanel3;
         private TextBox txtPersonalID;
-        private RJControls.RButton rButton3;
-        private FlowLayoutPanel flowLayoutPanel4;
-        private RJControls.RButton rButton2;
-        private RJControls.RButton rButton1;
-        private RJControls.RButton rButton4;
-        private RJControls.RButton rButton5;
-        private RJControls.RButton rButton6;
-        private RJControls.RButton rButton7;
         private Panel panel1;
         private Panel panel2;
+        private Label label8;
+        private Label label7;
+        private Label label6;
+        private Label label5;
+        private Label label4;
+        private Label label3;
+        private Label label1;
     }
 }

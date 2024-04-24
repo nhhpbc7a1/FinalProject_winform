@@ -34,9 +34,8 @@
             lblProductName = new Label();
             pbProductImage = new PictureBox();
             btnCancel = new RJControls.RButton();
-            lblCondition = new Label();
             lblOldPrice = new Label();
-            label1 = new Label();
+            lblCondition = new Label();
             label2 = new Label();
             label3 = new Label();
             panel2 = new Panel();
@@ -49,7 +48,7 @@
             lblPrice.AutoSize = true;
             lblPrice.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblPrice.ForeColor = Color.Red;
-            lblPrice.Location = new Point(472, 58);
+            lblPrice.Location = new Point(489, 58);
             lblPrice.Margin = new Padding(1, 0, 1, 0);
             lblPrice.Name = "lblPrice";
             lblPrice.Size = new Size(47, 21);
@@ -74,7 +73,7 @@
             panel1.Location = new Point(33, 11);
             panel1.Margin = new Padding(1);
             panel1.Name = "panel1";
-            panel1.Size = new Size(196, 99);
+            panel1.Size = new Size(249, 99);
             panel1.TabIndex = 50;
             // 
             // lblProductName
@@ -83,7 +82,7 @@
             lblProductName.Location = new Point(74, 12);
             lblProductName.Margin = new Padding(1, 0, 1, 0);
             lblProductName.Name = "lblProductName";
-            lblProductName.Size = new Size(121, 74);
+            lblProductName.Size = new Size(174, 87);
             lblProductName.TabIndex = 11;
             lblProductName.Text = "(name)";
             // 
@@ -118,42 +117,32 @@
             btnCancel.TextColor = Color.White;
             btnCancel.UseVisualStyleBackColor = false;
             // 
-            // lblCondition
-            // 
-            lblCondition.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblCondition.Location = new Point(246, 35);
-            lblCondition.Name = "lblCondition";
-            lblCondition.Size = new Size(198, 62);
-            lblCondition.TabIndex = 52;
-            lblCondition.Text = "condition of product";
-            lblCondition.TextAlign = ContentAlignment.TopCenter;
-            // 
             // lblOldPrice
             // 
             lblOldPrice.AutoSize = true;
             lblOldPrice.Font = new Font("Segoe UI", 12F, FontStyle.Strikeout, GraphicsUnit.Point);
-            lblOldPrice.Location = new Point(472, 35);
+            lblOldPrice.Location = new Point(489, 35);
             lblOldPrice.Name = "lblOldPrice";
             lblOldPrice.Size = new Size(73, 21);
             lblOldPrice.TabIndex = 53;
             lblOldPrice.Text = "Old price";
             lblOldPrice.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // label1
+            // lblCondition
             // 
-            label1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(246, 23);
-            label1.Name = "label1";
-            label1.Size = new Size(197, 87);
-            label1.TabIndex = 54;
-            label1.Text = "condition of product";
+            lblCondition.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCondition.Location = new Point(286, 23);
+            lblCondition.Name = "lblCondition";
+            lblCondition.Size = new Size(186, 87);
+            lblCondition.TabIndex = 54;
+            lblCondition.Text = "condition of product";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.Red;
-            label2.Location = new Point(459, 61);
+            label2.Location = new Point(476, 61);
             label2.Margin = new Padding(1, 0, 1, 0);
             label2.Name = "label2";
             label2.Size = new Size(16, 17);
@@ -166,7 +155,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(459, 38);
+            label3.Location = new Point(476, 38);
             label3.Margin = new Padding(1, 0, 1, 0);
             label3.Name = "label3";
             label3.Size = new Size(16, 17);
@@ -190,9 +179,8 @@
             Controls.Add(panel2);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(lblOldPrice);
             Controls.Add(lblCondition);
+            Controls.Add(lblOldPrice);
             Controls.Add(lblPrice);
             Controls.Add(cbChoose);
             Controls.Add(panel1);
@@ -214,9 +202,8 @@
         public Label lblProductName;
         public PictureBox pbProductImage;
         public RJControls.RButton btnCancel;
-        private Label lblCondition;
         private Label lblOldPrice;
-        private Label label1;
+        private Label lblCondition;
         public Label label2;
         public Label label3;
         private Panel panel2;
