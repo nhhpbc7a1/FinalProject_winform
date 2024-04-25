@@ -44,8 +44,8 @@ namespace QuanLyTraoDoiHang
             lblTotal = new Label();
             panel4 = new Panel();
             panel1 = new Panel();
-            label2 = new Label();
             pnlProducts = new FlowLayoutPanel();
+            label2 = new Label();
             panel2 = new Panel();
             btnChangeReceiveInfo = new RButton();
             lblAddressDelivery = new Label();
@@ -71,9 +71,9 @@ namespace QuanLyTraoDoiHang
             panel3.Controls.Add(lblShipping);
             panel3.Controls.Add(lblTotal);
             panel3.Dock = DockStyle.Bottom;
-            panel3.Location = new Point(0, 605);
+            panel3.Location = new Point(0, 465);
             panel3.Name = "panel3";
-            panel3.Size = new Size(984, 96);
+            panel3.Size = new Size(982, 96);
             panel3.TabIndex = 60;
             // 
             // label4
@@ -213,7 +213,7 @@ namespace QuanLyTraoDoiHang
             panel4.Controls.Add(panel1);
             panel4.Location = new Point(12, 12);
             panel4.Name = "panel4";
-            panel4.Size = new Size(960, 595);
+            panel4.Size = new Size(960, 455);
             panel4.TabIndex = 61;
             // 
             // panel1
@@ -226,22 +226,10 @@ namespace QuanLyTraoDoiHang
             panel1.Location = new Point(100, 18);
             panel1.Margin = new Padding(3, 15, 3, 3);
             panel1.MaximumSize = new Size(751, 10000);
-            panel1.MinimumSize = new Size(751, 590);
+            panel1.MinimumSize = new Size(751, 440);
             panel1.Name = "panel1";
-            panel1.Size = new Size(751, 590);
+            panel1.Size = new Size(751, 440);
             panel1.TabIndex = 1;
-            // 
-            // label2
-            // 
-            label2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Image = (Image)resources.GetObject("label2.Image");
-            label2.ImageAlign = ContentAlignment.MiddleLeft;
-            label2.Location = new Point(15, 6);
-            label2.Name = "label2";
-            label2.Size = new Size(159, 23);
-            label2.TabIndex = 3;
-            label2.Text = "Delivery Address";
-            label2.TextAlign = ContentAlignment.TopRight;
             // 
             // pnlProducts
             // 
@@ -254,6 +242,18 @@ namespace QuanLyTraoDoiHang
             pnlProducts.Name = "pnlProducts";
             pnlProducts.Size = new Size(719, 200);
             pnlProducts.TabIndex = 25;
+            // 
+            // label2
+            // 
+            label2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Image = (Image)resources.GetObject("label2.Image");
+            label2.ImageAlign = ContentAlignment.MiddleLeft;
+            label2.Location = new Point(15, 6);
+            label2.Name = "label2";
+            label2.Size = new Size(159, 23);
+            label2.TabIndex = 3;
+            label2.Text = "Delivery Address";
+            label2.TextAlign = ContentAlignment.TopRight;
             // 
             // panel2
             // 
@@ -301,7 +301,7 @@ namespace QuanLyTraoDoiHang
             // 
             lblPhoneDelivery.AutoSize = true;
             lblPhoneDelivery.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblPhoneDelivery.Location = new Point(245, 13);
+            lblPhoneDelivery.Location = new Point(264, 13);
             lblPhoneDelivery.Name = "lblPhoneDelivery";
             lblPhoneDelivery.Size = new Size(126, 21);
             lblPhoneDelivery.TabIndex = 1;
@@ -323,7 +323,7 @@ namespace QuanLyTraoDoiHang
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
-            ClientSize = new Size(984, 701);
+            ClientSize = new Size(982, 561);
             Controls.Add(panel3);
             Controls.Add(panel4);
             FormBorderStyle = FormBorderStyle.None;

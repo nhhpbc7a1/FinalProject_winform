@@ -79,7 +79,7 @@
             lblCondition.Location = new Point(274, 29);
             lblCondition.Margin = new Padding(1, 0, 1, 0);
             lblCondition.Name = "lblCondition";
-            lblCondition.Size = new Size(186, 78);
+            lblCondition.Size = new Size(161, 78);
             lblCondition.TabIndex = 56;
             lblCondition.Text = "Condition";
             // 

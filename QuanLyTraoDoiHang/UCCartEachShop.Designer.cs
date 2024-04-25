@@ -32,6 +32,7 @@
             lblUsername = new Label();
             lblPhone = new Label();
             panel1 = new Panel();
+            label1 = new Label();
             cbShop = new CheckBox();
             pnlProducts = new FlowLayoutPanel();
             panel1.SuspendLayout();
@@ -43,7 +44,7 @@
             lblUsername.BackColor = Color.FromArgb(229, 228, 131);
             lblUsername.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblUsername.ForeColor = Color.Black;
-            lblUsername.Location = new Point(34, 16);
+            lblUsername.Location = new Point(35, 26);
             lblUsername.Name = "lblUsername";
             lblUsername.Size = new Size(85, 21);
             lblUsername.TabIndex = 0;
@@ -54,7 +55,7 @@
             lblPhone.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblPhone.Image = (Image)resources.GetObject("lblPhone.Image");
             lblPhone.ImageAlign = ContentAlignment.MiddleLeft;
-            lblPhone.Location = new Point(242, 13);
+            lblPhone.Location = new Point(255, 16);
             lblPhone.Name = "lblPhone";
             lblPhone.Size = new Size(150, 26);
             lblPhone.TabIndex = 0;
@@ -64,6 +65,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(229, 228, 131);
+            panel1.Controls.Add(label1);
             panel1.Controls.Add(cbShop);
             panel1.Controls.Add(lblUsername);
             panel1.Controls.Add(lblPhone);
@@ -74,10 +76,20 @@
             panel1.Size = new Size(715, 58);
             panel1.TabIndex = 2;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(35, 10);
+            label1.Name = "label1";
+            label1.Size = new Size(85, 17);
+            label1.TabIndex = 2;
+            label1.Text = "Seller's name";
+            // 
             // cbShop
             // 
             cbShop.AutoSize = true;
-            cbShop.Location = new Point(13, 20);
+            cbShop.Location = new Point(14, 32);
             cbShop.Name = "cbShop";
             cbShop.Size = new Size(15, 14);
             cbShop.TabIndex = 1;
@@ -121,5 +133,6 @@
         private Panel panel1;
         public FlowLayoutPanel pnlProducts;
         public CheckBox cbShop;
+        private Label label1;
     }
 }

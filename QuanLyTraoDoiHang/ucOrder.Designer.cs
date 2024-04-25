@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucOrder));
             panel1 = new Panel();
+            label8 = new Label();
             lblTime = new Label();
             label1 = new Label();
             lblPhone = new Label();
@@ -58,6 +59,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(229, 228, 131);
+            panel1.Controls.Add(label8);
             panel1.Controls.Add(lblTime);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(lblPhone);
@@ -69,6 +71,17 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(713, 58);
             panel1.TabIndex = 0;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.ForeColor = Color.Black;
+            label8.Location = new Point(19, 9);
+            label8.Name = "label8";
+            label8.Size = new Size(85, 17);
+            label8.TabIndex = 4;
+            label8.Text = "Seller's name";
             // 
             // lblTime
             // 
@@ -113,7 +126,7 @@
             lblName.AutoSize = true;
             lblName.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblName.ForeColor = Color.Black;
-            lblName.Location = new Point(19, 20);
+            lblName.Location = new Point(19, 26);
             lblName.Name = "lblName";
             lblName.RightToLeft = RightToLeft.No;
             lblName.Size = new Size(106, 21);
@@ -368,5 +381,6 @@
         public Label label5;
         public Label lblShippingFee;
         public Label label7;
+        private Label label8;
     }
 }
