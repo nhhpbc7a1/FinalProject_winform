@@ -169,7 +169,7 @@ namespace QuanLyTraoDoiHang
             pnlProducts.MaximumSize = new Size(725, 10000);
             pnlProducts.MinimumSize = new Size(725, 0);
             pnlProducts.Name = "pnlProducts";
-            pnlProducts.Size = new Size(725, 403);
+            pnlProducts.Size = new Size(725, 402);
             pnlProducts.TabIndex = 25;
             // 
             // pnlMenu
@@ -202,8 +202,7 @@ namespace QuanLyTraoDoiHang
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(287, 4);
-
+            label1.Location = new Point(284, 4);
             label1.Margin = new Padding(1, 0, 1, 0);
             label1.Name = "label1";
             label1.Size = new Size(82, 21);
@@ -227,9 +226,7 @@ namespace QuanLyTraoDoiHang
             label100.AutoSize = true;
             label100.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label100.ForeColor = SystemColors.ButtonHighlight;
-
             label100.Location = new Point(487, 4);
-
             label100.Margin = new Padding(1, 0, 1, 0);
             label100.Name = "label100";
             label100.Size = new Size(46, 21);
@@ -238,6 +235,7 @@ namespace QuanLyTraoDoiHang
             // 
             // panel1
             // 
+            panel1.AutoSize = true;
             panel1.BackColor = SystemColors.ControlLight;
             panel1.Controls.Add(panel2);
             panel1.Dock = DockStyle.Fill;
@@ -249,15 +247,12 @@ namespace QuanLyTraoDoiHang
             // panel2
             // 
             panel2.AutoScroll = true;
-            panel2.AutoSize = true;
             panel2.BackColor = Color.White;
             panel2.Controls.Add(pnlProducts);
             panel2.Controls.Add(pnlMenu);
             panel2.Location = new Point(12, 12);
-            panel2.MaximumSize = new Size(960, 100000);
-            panel2.MinimumSize = new Size(960, 458);
             panel2.Name = "panel2";
-            panel2.Size = new Size(960, 458);
+            panel2.Size = new Size(960, 455);
             panel2.TabIndex = 26;
             // 
             // FormCart
@@ -268,6 +263,7 @@ namespace QuanLyTraoDoiHang
             ClientSize = new Size(984, 561);
             Controls.Add(panel1);
             Controls.Add(pnlCheckOut);
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(1);
             MaximizeBox = false;
             MinimizeBox = false;
@@ -279,10 +275,10 @@ namespace QuanLyTraoDoiHang
             pnlMenu.ResumeLayout(false);
             pnlMenu.PerformLayout();
             panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

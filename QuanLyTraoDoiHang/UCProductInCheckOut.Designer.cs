@@ -97,7 +97,7 @@
             // lblCondition
             // 
             lblCondition.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblCondition.Location = new Point(303, 25);
+            lblCondition.Location = new Point(260, 25);
             lblCondition.Name = "lblCondition";
             lblCondition.Size = new Size(203, 83);
             lblCondition.TabIndex = 62;

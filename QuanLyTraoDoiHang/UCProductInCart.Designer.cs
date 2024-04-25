@@ -73,18 +73,18 @@
             panel1.Location = new Point(33, 11);
             panel1.Margin = new Padding(1);
             panel1.Name = "panel1";
-            panel1.Size = new Size(249, 99);
+            panel1.Size = new Size(218, 99);
             panel1.TabIndex = 50;
             // 
             // lblProductName
             // 
             lblProductName.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblProductName.Location = new Point(74, 12);
+            lblProductName.Location = new Point(74, 24);
             lblProductName.Margin = new Padding(1, 0, 1, 0);
             lblProductName.Name = "lblProductName";
-            lblProductName.Size = new Size(174, 87);
+            lblProductName.Size = new Size(143, 74);
             lblProductName.TabIndex = 11;
-            lblProductName.Text = "(name)";
+            lblProductName.Text = "ndjkjdsasjjsdasjdlkasjkljkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk";
             // 
             // pbProductImage
             // 
@@ -102,7 +102,7 @@
             btnCancel.BackColor = Color.FromArgb(255, 128, 128);
             btnCancel.BackgroundColor = Color.FromArgb(255, 128, 128);
             btnCancel.BorderColor = Color.PaleVioletRed;
-            btnCancel.BorderRadius = 20;
+            btnCancel.BorderRadius = 10;
             btnCancel.BorderSize = 0;
             btnCancel.FlatAppearance.BorderSize = 0;
             btnCancel.FlatStyle = FlatStyle.Flat;
@@ -131,9 +131,9 @@
             // lblCondition
             // 
             lblCondition.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblCondition.Location = new Point(286, 23);
+            lblCondition.Location = new Point(272, 22);
             lblCondition.Name = "lblCondition";
-            lblCondition.Size = new Size(186, 87);
+            lblCondition.Size = new Size(165, 87);
             lblCondition.TabIndex = 54;
             lblCondition.Text = "condition of product";
             // 

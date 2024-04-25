@@ -93,7 +93,7 @@
             // txtOriginalPrice
             // 
             txtOriginalPrice.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtOriginalPrice.Location = new Point(3, 273);
+            txtOriginalPrice.Location = new Point(3, 111);
             txtOriginalPrice.Margin = new Padding(3, 3, 3, 22);
             txtOriginalPrice.Name = "txtOriginalPrice";
             txtOriginalPrice.Size = new Size(248, 29);
@@ -173,7 +173,7 @@
             // txtOrigin
             // 
             txtOrigin.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtOrigin.Location = new Point(3, 57);
+            txtOrigin.Location = new Point(3, 327);
             txtOrigin.Margin = new Padding(3, 3, 3, 22);
             txtOrigin.Name = "txtOrigin";
             txtOrigin.Size = new Size(248, 29);
@@ -203,7 +203,7 @@
             // txtPrice
             // 
             txtPrice.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtPrice.Location = new Point(3, 111);
+            txtPrice.Location = new Point(3, 57);
             txtPrice.Margin = new Padding(3, 3, 3, 22);
             txtPrice.Name = "txtPrice";
             txtPrice.Size = new Size(248, 29);
@@ -250,13 +250,13 @@
             // flowLayoutPanel2
             // 
             flowLayoutPanel2.Controls.Add(txtCategory);
-            flowLayoutPanel2.Controls.Add(txtOrigin);
             flowLayoutPanel2.Controls.Add(txtPrice);
+            flowLayoutPanel2.Controls.Add(txtOriginalPrice);
             flowLayoutPanel2.Controls.Add(txtWarranty);
             flowLayoutPanel2.Controls.Add(dtpBought);
-            flowLayoutPanel2.Controls.Add(txtOriginalPrice);
             flowLayoutPanel2.Controls.Add(txtBrand);
-            flowLayoutPanel2.Location = new Point(221, 143);
+            flowLayoutPanel2.Controls.Add(txtOrigin);
+            flowLayoutPanel2.Location = new Point(221, 152);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
             flowLayoutPanel2.Size = new Size(266, 361);
             flowLayoutPanel2.TabIndex = 26;
@@ -275,8 +275,8 @@
             // txtBrand
             // 
             txtBrand.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtBrand.Location = new Point(3, 327);
-            txtBrand.Margin = new Padding(3, 3, 3, 0);
+            txtBrand.Location = new Point(3, 273);
+            txtBrand.Margin = new Padding(3, 3, 3, 22);
             txtBrand.Name = "txtBrand";
             txtBrand.Size = new Size(248, 29);
             txtBrand.TabIndex = 22;
