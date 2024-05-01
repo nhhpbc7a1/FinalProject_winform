@@ -36,17 +36,20 @@ namespace QuanLyTraoDoiHang
             if(status == "cancelled")
             {
                 btnAction.Text = "Buy again";
+                btnAction.Click += BtnRating_Click;
             }
             if(status == "returned")
             {
                 btnAction.Text = "Buy again";
+                btnAction.Click += BtnRating_Click;
             }
-            if((status == "waiting")||(status == "shipping"))
-            {
-                btnAction.Visible = false;
-            }
-            btnAction.Click += BtnRating_Click;
+            
             this.orderTable = orderTable;
+            if ((status == "waiting") || (status == "shipping"))
+            {
+                btnAction.Text = "Cancel";
+                btnAction.Click += BtnCancel_Click;
+            }
         }
 
         private void BtnRating_Click(object? sender, EventArgs e)
@@ -59,7 +62,10 @@ namespace QuanLyTraoDoiHang
             }
             else Enabled = true;
         }
-
+        private void BtnCancel_Click(object? sender, EventArgs e) 
+        {
+            ProductDAO.CancelByBuyer(product, orderTable);
+        }
         private void rButton1_Click(object sender, EventArgs e)
         {
            
