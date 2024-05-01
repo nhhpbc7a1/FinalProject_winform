@@ -90,7 +90,7 @@
             flowLayoutPanelProductList.BackColor = Color.White;
             flowLayoutPanelProductList.Location = new Point(6, 63);
             flowLayoutPanelProductList.Name = "flowLayoutPanelProductList";
-            flowLayoutPanelProductList.Padding = new Padding(0, 5, 0, 0);
+            flowLayoutPanelProductList.Padding = new Padding(15, 5, 0, 0);
             flowLayoutPanelProductList.Size = new Size(698, 495);
             flowLayoutPanelProductList.TabIndex = 62;
             // 

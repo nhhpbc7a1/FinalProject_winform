@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCCheckOutEachShop));
             panel3 = new Panel();
+            btnvoucher = new RJControls.RButton();
+            label5 = new Label();
             panel2 = new Panel();
             label2 = new Label();
             label1 = new Label();
@@ -51,6 +54,8 @@
             // panel3
             // 
             panel3.BackColor = Color.White;
+            panel3.Controls.Add(btnvoucher);
+            panel3.Controls.Add(label5);
             panel3.Controls.Add(panel2);
             panel3.Controls.Add(label2);
             panel3.Controls.Add(label1);
@@ -65,6 +70,39 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(713, 128);
             panel3.TabIndex = 3;
+            // 
+            // btnvoucher
+            // 
+            btnvoucher.BackColor = Color.White;
+            btnvoucher.BackgroundColor = Color.White;
+            btnvoucher.BorderColor = Color.FromArgb(30, 106, 17);
+            btnvoucher.BorderRadius = 0;
+            btnvoucher.BorderSize = 1;
+            btnvoucher.FlatAppearance.BorderSize = 0;
+            btnvoucher.FlatStyle = FlatStyle.Flat;
+            btnvoucher.ForeColor = Color.FromArgb(30, 106, 17);
+            btnvoucher.Image = (Image)resources.GetObject("btnvoucher.Image");
+            btnvoucher.ImageAlign = ContentAlignment.MiddleRight;
+            btnvoucher.Location = new Point(370, 37);
+            btnvoucher.Name = "btnvoucher";
+            btnvoucher.Size = new Size(116, 25);
+            btnvoucher.TabIndex = 13;
+            btnvoucher.Text = "discount fee";
+            btnvoucher.TextAlign = ContentAlignment.MiddleLeft;
+            btnvoucher.TextColor = Color.FromArgb(30, 106, 17);
+            btnvoucher.UseVisualStyleBackColor = false;
+            btnvoucher.Click += rButton1_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.ForeColor = Color.Black;
+            label5.Location = new Point(221, 39);
+            label5.Name = "label5";
+            label5.Size = new Size(143, 21);
+            label5.TabIndex = 12;
+            label5.Text = "Platform vouchers";
             // 
             // panel2
             // 
@@ -175,7 +213,7 @@
             comboBoxShippingMethod.ForeColor = Color.FromArgb(30, 106, 17);
             comboBoxShippingMethod.FormattingEnabled = true;
             comboBoxShippingMethod.Items.AddRange(new object[] { "Standard", "Fast" });
-            comboBoxShippingMethod.Location = new Point(351, 15);
+            comboBoxShippingMethod.Location = new Point(370, 5);
             comboBoxShippingMethod.Name = "comboBoxShippingMethod";
             comboBoxShippingMethod.Size = new Size(116, 29);
             comboBoxShippingMethod.TabIndex = 7;
@@ -197,7 +235,7 @@
             lblShippingType.AutoSize = true;
             lblShippingType.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblShippingType.ForeColor = Color.Black;
-            lblShippingType.Location = new Point(221, 15);
+            lblShippingType.Location = new Point(221, 10);
             lblShippingType.Name = "lblShippingType";
             lblShippingType.Size = new Size(130, 21);
             lblShippingType.TabIndex = 6;
@@ -279,5 +317,7 @@
         public Label lblTotalPriceThisShop;
         public Label lblItemNo;
         private Panel panel2;
+        private Label label5;
+        private RJControls.RButton btnvoucher;
     }
 }

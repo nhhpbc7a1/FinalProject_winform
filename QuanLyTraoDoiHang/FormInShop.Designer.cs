@@ -48,10 +48,12 @@
             panel4 = new Panel();
             panel5 = new Panel();
             btnViewShop = new RJControls.RButton();
+            panel7 = new Panel();
             pnlThisSellerPage.SuspendLayout();
             panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ptbSellerImage).BeginInit();
             panel4.SuspendLayout();
+            panel7.SuspendLayout();
             SuspendLayout();
             // 
             // pnlThisSellerPage
@@ -70,9 +72,9 @@
             pnlThisSellerPage.Controls.Add(lblSellerName);
             pnlThisSellerPage.Controls.Add(ptbSellerImage);
             pnlThisSellerPage.ForeColor = SystemColors.ControlDark;
-            pnlThisSellerPage.Location = new Point(54, 69);
+            pnlThisSellerPage.Location = new Point(20, 17);
             pnlThisSellerPage.Name = "pnlThisSellerPage";
-            pnlThisSellerPage.Size = new Size(882, 119);
+            pnlThisSellerPage.Size = new Size(911, 115);
             pnlThisSellerPage.TabIndex = 4;
             // 
             // btnViewRating
@@ -155,7 +157,7 @@
             lblDateJoined.AutoSize = true;
             lblDateJoined.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblDateJoined.ForeColor = SystemColors.ActiveCaptionText;
-            lblDateJoined.Location = new Point(678, 75);
+            lblDateJoined.Location = new Point(678, 72);
             lblDateJoined.Name = "lblDateJoined";
             lblDateJoined.Size = new Size(42, 21);
             lblDateJoined.TabIndex = 19;
@@ -234,24 +236,25 @@
             pnlItems.AutoSize = true;
             pnlItems.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             pnlItems.BackColor = Color.White;
-            pnlItems.Location = new Point(54, 223);
-            pnlItems.MaximumSize = new Size(882, 100000);
-            pnlItems.MinimumSize = new Size(882, 400);
+            pnlItems.Location = new Point(20, 160);
+            pnlItems.MaximumSize = new Size(935, 10000);
+            pnlItems.MinimumSize = new Size(911, 406);
             pnlItems.Name = "pnlItems";
-            pnlItems.Size = new Size(882, 400);
+            pnlItems.Padding = new Padding(23, 5, 0, 0);
+            pnlItems.Size = new Size(911, 406);
             pnlItems.TabIndex = 5;
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(101, 183, 65);
-            panel1.Location = new Point(54, 194);
+            panel1.Location = new Point(20, 142);
             panel1.Name = "panel1";
-            panel1.Size = new Size(882, 23);
+            panel1.Size = new Size(911, 19);
             panel1.TabIndex = 6;
             // 
             // panel4
             // 
-            panel4.BackColor = SystemColors.Control;
+            panel4.BackColor = Color.White;
             panel4.Controls.Add(panel5);
             panel4.Controls.Add(btnViewShop);
             panel4.Dock = DockStyle.Top;
@@ -271,8 +274,8 @@
             // 
             // btnViewShop
             // 
-            btnViewShop.BackColor = SystemColors.Control;
-            btnViewShop.BackgroundColor = SystemColors.Control;
+            btnViewShop.BackColor = Color.White;
+            btnViewShop.BackgroundColor = Color.White;
             btnViewShop.BorderColor = Color.PaleVioletRed;
             btnViewShop.BorderRadius = 20;
             btnViewShop.BorderSize = 0;
@@ -293,15 +296,25 @@
             btnViewShop.UseVisualStyleBackColor = false;
             btnViewShop.Click += btnViewShop_Click;
             // 
+            // panel7
+            // 
+            panel7.AutoScroll = true;
+            panel7.BackColor = SystemColors.ControlLight;
+            panel7.Controls.Add(pnlThisSellerPage);
+            panel7.Controls.Add(pnlItems);
+            panel7.Controls.Add(panel1);
+            panel7.Location = new Point(12, 73);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(958, 582);
+            panel7.TabIndex = 62;
+            // 
             // FormInShop
             // 
             AutoScaleMode = AutoScaleMode.None;
-            AutoScroll = true;
+            BackColor = Color.White;
             ClientSize = new Size(982, 661);
             Controls.Add(panel4);
-            Controls.Add(panel1);
-            Controls.Add(pnlItems);
-            Controls.Add(pnlThisSellerPage);
+            Controls.Add(panel7);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormInShop";
             StartPosition = FormStartPosition.CenterScreen;
@@ -311,8 +324,9 @@
             panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ptbSellerImage).EndInit();
             panel4.ResumeLayout(false);
+            panel7.ResumeLayout(false);
+            panel7.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -336,5 +350,6 @@
         private Panel panel3;
         private Panel panel2;
         private Panel panel6;
+        private Panel panel7;
     }
 }
