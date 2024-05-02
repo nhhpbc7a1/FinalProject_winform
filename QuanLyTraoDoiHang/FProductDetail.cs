@@ -31,6 +31,7 @@ namespace QuanLyTraoDoiHang
             lblBrand.Text = product.brand.ToString();
             lblCondition.Text = product.condition.ToString();
             lblBought.Text = product.dateBought.ToString();
+            lblDetailDescription.Text = product.description.ToString();
             //seller info
             User seller = UserDAO.SelectByUserId(product.sellerId);
             lblSellerName.Text = seller.name;
