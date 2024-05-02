@@ -121,7 +121,7 @@
   <data name="lblSellerPhone.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAAAVhJREFUSEvFlUFKw0AUhksRqpQWlXofxY0b8QiCeAG3ClUpRc/Qu4iKiIgLF3oC
+        DQAACw0B7QfALAAAAVhJREFUSEvFlUFKw0AUhksRqpQWlXofxY0b8QiCeAG3ClUpRc/Qu4iKiIgLF3oC
         W/QCuhPi9888TZMmZoYG/eBbzP9m3qPNpG38G0mSdHEl0K4d+x02LuEQ3zAWnRngorXLQkHNb3FebnB2
         CKGm18WptU0hfPW1DO/4hJ9uFc7E2noI9EDzXOCy1Q9cEkfHNRcsej7LsGll1Zv46NJwena8dMC2lR2s
         z30cTOWAQyt/f4I7l4ZTOeDeyqrv+yiKygFi3eq7fhlF0ABd0RYuoF6gGIIGiJHtWcPpIXomZ1h2u4IH
@@ -592,16 +592,6 @@
         SZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIk
         SZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSWo777z/F1LckkzETUJsAAAA
         AElFTkSuQmCC
-</value>
-  </data>
-  <data name="btnViewShop.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAAOZJREFUWEdjGAWjYBSMAlKAUga3mGymwCzZLMF0qBD9gEQuj6hclsBluSzB/yAs
-        mSbJBZWiPZBM4xEBWnoRZrlcpsBKqBTtgXw+vwDQ0jNIlm+Xj5fngErTFoAtzxQ8jWT5DrpZrpQmyA+M
-        85Nwy7MEdg6k5Y/ksgV85DKFXMjB8tn8DuLF4txQ4/ED9SRhXtksgeMIy6mDgWZug1qBHwy4A0CAFlFA
-        crkxoIkQBgY0G8LAgBZEMIBeFAMrpDVQKfoBlMooU/CvTKEMJ1SKfgBUHQOjYIZctmAKVGgUjIJRMAoo
-        BAwMAMSjum5SCGhjAAAAAElFTkSuQmCC
 </value>
   </data>
 </root>

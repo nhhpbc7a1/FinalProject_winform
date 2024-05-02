@@ -235,7 +235,7 @@
             pnlItems.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             pnlItems.BackColor = Color.White;
             pnlItems.Location = new Point(54, 223);
-            pnlItems.MaximumSize = new Size(882, 100000);
+            pnlItems.MaximumSize = new Size(900, 100000);
             pnlItems.MinimumSize = new Size(882, 400);
             pnlItems.Name = "pnlItems";
             pnlItems.Size = new Size(882, 400);
