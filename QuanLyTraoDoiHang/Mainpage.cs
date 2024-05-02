@@ -184,11 +184,6 @@ namespace QuanLyTraoDoiHang
         }
 
       
-        private void btnAddProduct_Click_2(object sender, EventArgs e)
-        {
-            Form form = new FormAddNewProduct();
-            form.Show();
 
-        }
     }
 }
