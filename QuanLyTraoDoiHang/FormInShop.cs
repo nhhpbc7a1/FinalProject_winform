@@ -76,9 +76,9 @@ namespace QuanLyTraoDoiHang
       
         private void btnViewShop_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Program.mainpage.OpenChildForm(new FormProduct());
         }
 
-      
+
     }
 }
