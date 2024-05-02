@@ -58,13 +58,13 @@
             lblDetailDescription = new Label();
             label10 = new Label();
             pnlThisSellerPage = new Panel();
+            lblSellerPhone = new Label();
             panel5 = new Panel();
             panel3 = new Panel();
             label1 = new Label();
             ucStarsSeller = new UCStars();
             lblDateJoined = new Label();
             btnViewPage = new RJControls.RButton();
-            lblSellerPhone = new Label();
             lblSellerAddress = new Label();
             label11 = new Label();
             lblSellerName = new Label();
@@ -157,7 +157,6 @@
             btnBuyNow.FlatStyle = FlatStyle.Flat;
             btnBuyNow.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnBuyNow.ForeColor = Color.Transparent;
-            btnBuyNow.Image = (Image)resources.GetObject("btnBuyNow.Image");
             btnBuyNow.ImageAlign = ContentAlignment.MiddleLeft;
             btnBuyNow.Location = new Point(204, 418);
             btnBuyNow.Margin = new Padding(3, 4, 3, 4);
@@ -289,7 +288,7 @@
             // 
             // panel2
             // 
-            panel2.BackColor = Color.White;
+            panel2.BackColor = Color.WhiteSmoke;
             panel2.Controls.Add(label3);
             panel2.Controls.Add(lblOriginalPrice);
             panel2.Controls.Add(label2);
@@ -345,7 +344,7 @@
             // 
             // lblName
             // 
-            lblName.BackColor = SystemColors.Control;
+            lblName.BackColor = Color.White;
             lblName.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lblName.Location = new Point(399, 20);
             lblName.Name = "lblName";
@@ -444,6 +443,21 @@
             pnlThisSellerPage.Size = new Size(923, 119);
             pnlThisSellerPage.TabIndex = 2;
             // 
+            // lblSellerPhone
+            // 
+            lblSellerPhone.Anchor = AnchorStyles.Top;
+            lblSellerPhone.BackColor = Color.FromArgb(101, 183, 65);
+            lblSellerPhone.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lblSellerPhone.ForeColor = Color.White;
+            lblSellerPhone.Image = (Image)resources.GetObject("lblSellerPhone.Image");
+            lblSellerPhone.ImageAlign = ContentAlignment.MiddleLeft;
+            lblSellerPhone.Location = new Point(383, 16);
+            lblSellerPhone.Name = "lblSellerPhone";
+            lblSellerPhone.Size = new Size(152, 38);
+            lblSellerPhone.TabIndex = 0;
+            lblSellerPhone.Text = "0783701185";
+            lblSellerPhone.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // panel5
             // 
             panel5.BackColor = SystemColors.AppWorkspace;
@@ -510,21 +524,6 @@
             btnViewPage.Text = "View page";
             btnViewPage.TextColor = Color.FromArgb(30, 106, 17);
             btnViewPage.UseVisualStyleBackColor = false;
-            // 
-            // lblSellerPhone
-            // 
-            lblSellerPhone.Anchor = AnchorStyles.Top;
-            lblSellerPhone.BackColor = Color.FromArgb(101, 183, 65);
-            lblSellerPhone.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblSellerPhone.ForeColor = Color.White;
-            lblSellerPhone.Image = (Image)resources.GetObject("lblSellerPhone.Image");
-            lblSellerPhone.ImageAlign = ContentAlignment.MiddleLeft;
-            lblSellerPhone.Location = new Point(383, 16);
-            lblSellerPhone.Name = "lblSellerPhone";
-            lblSellerPhone.Size = new Size(152, 43);
-            lblSellerPhone.TabIndex = 0;
-            lblSellerPhone.Text = "0783701185";
-            lblSellerPhone.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblSellerAddress
             // 

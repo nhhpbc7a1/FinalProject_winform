@@ -58,6 +58,7 @@ namespace QuanLyTraoDoiHang
             // 
             // pnlSellerTool
             // 
+            pnlSellerTool.AutoScroll = true;
             pnlSellerTool.BackColor = Color.White;
             pnlSellerTool.Location = new Point(209, 6);
             pnlSellerTool.Margin = new Padding(0);

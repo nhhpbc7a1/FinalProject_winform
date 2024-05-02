@@ -13,6 +13,8 @@ namespace QuanLyTraoDoiHang
     public partial class UCCheckOutEachShop : UserControl
     {
         public User shopInfo = new User();
+        Voucher chosenVoucher = null;
+
         public UCCheckOutEachShop(User shopInfo)
         {
             InitializeComponent();
@@ -24,7 +26,7 @@ namespace QuanLyTraoDoiHang
         private void ComboBoxShippingMethod_SelectedIndexChanged(object? sender, EventArgs e)
         {
             lblShippingFee.Text = ((comboBoxShippingMethod.SelectedIndex + 1) * 20000).ToString();
-         
+
         }
 
         private void UCCheckOutEachShop_Load(object? sender, EventArgs e)
@@ -41,5 +43,23 @@ namespace QuanLyTraoDoiHang
         {
 
         }
+
+        private void rButton1_Click(object sender, EventArgs e)
+        {
+            FVoucher f = new FVoucher();
+            void BtnSelect_Click(object? sender, EventArgs e)
+            {
+                chosenVoucher = f.chosenVoucher;
+                MessageBox.Show("Select sucessfully! " + chosenVoucher.name);
+                btnvoucher.Text = chosenVoucher.name;
+                f.Close();
+            }
+
+
+            f.btnSelect.Click += BtnSelect_Click;
+
+            f.ShowDialog();
+        }
+
     }
 }

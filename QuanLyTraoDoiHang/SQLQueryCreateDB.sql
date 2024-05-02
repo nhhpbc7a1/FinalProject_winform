@@ -102,7 +102,12 @@ create table OrderItem (
 	orderId int references OrderTable(orderId),
 	productId int references Product(productId),
 );
-
+create table CancelProduct
+(
+	orderId int references OrderTable(orderId),
+	productId int references Product(productId),
+	reasonCancel nvarchar(1000)
+);
 --drop table detailImage
 create table DetailImage (
 	productId int references Product(productId),
