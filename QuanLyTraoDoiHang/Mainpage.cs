@@ -31,7 +31,6 @@ namespace QuanLyTraoDoiHang
             picProfile.Click += Account_Click;
             lblUsername.Click += Account_Click;
             pnlAccount.Visible = false;
-            btnAddProduct.Click += btnAddProduct_Click;
             btnCart.Click += btnCart_Click;
 
             this.Load += UpdateAccountByAction;
@@ -155,12 +154,6 @@ namespace QuanLyTraoDoiHang
             OpenChildForm(form);
         }
 
-        private void btnAddProduct_Click(object sender, EventArgs e)
-        {
-            FormAddNewProduct x = new FormAddNewProduct();
-            x.ShowDialog();
-        }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Do you really want to log out?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
@@ -177,18 +170,11 @@ namespace QuanLyTraoDoiHang
             }
             else
             {
-                Form form = new FormAddNewProduct();
-                form.ShowDialog();
+                FormAddNewProduct x = new FormAddNewProduct();
+                x.ShowDialog();
             }
 
         }
 
-      
-        private void btnAddProduct_Click_2(object sender, EventArgs e)
-        {
-            Form form = new FormAddNewProduct();
-            form.Show();
-
-        }
     }
 }

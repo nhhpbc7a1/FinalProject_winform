@@ -52,7 +52,7 @@ namespace QuanLyTraoDoiHang
             }
             if (SelectByCartItem(cartItem) != null)
             {
-                MessageBox.Show("Be added to cart");
+                MessageBox.Show("Added to cart");
                 return;
             }
 
