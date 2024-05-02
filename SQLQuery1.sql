@@ -1,6 +1,6 @@
 ﻿
---drop table UserTable;
---go
+drop table UserTable;
+go
 create table UserTable (
 	userId int primary key,
 	personalId varchar(100),
@@ -14,8 +14,8 @@ create table UserTable (
 	dateJoined date,
 );
 go
---drop table Product ;
---go
+drop table Product ;
+go
 
 create table Product (
 	productId int primary key, 
@@ -37,8 +37,8 @@ create table Product (
 go
 
 
---drop table Account;
---go
+drop table Account;
+go
 create table Account (
 	userId int references UserTable(userId) unique, 
 	username nvarchar(100) primary key, 
@@ -46,8 +46,8 @@ create table Account (
 );
 go
 
---drop table CartItem;
---go
+drop table CartItem;
+go
 
 create table CartItem (
 	userId int references UserTable(userId),
@@ -56,8 +56,8 @@ create table CartItem (
 );
 go
 
---drop table ReceiveInfo;
---go
+drop table ReceiveInfo;
+go
 create table ReceiveInfo(
 	receiveId int primary key, 
 	userId int references UserTable(userId), 
@@ -66,8 +66,8 @@ create table ReceiveInfo(
 	address nvarchar(200),
 );
 go
---drop table OrderTable;
---go
+drop table OrderTable;
+go
 
 create table OrderTable (
 	orderId int primary key, 
@@ -82,8 +82,8 @@ create table OrderTable (
 	status nvarchar(100)
 );
 go
---drop table Rating;
---go
+drop table Rating;
+go
 
 create table Rating (
 	ratingId int primary key,
@@ -96,19 +96,14 @@ create table Rating (
 );
 
 
---drop table OrderItem;
---go
+drop table OrderItem;
+go
 create table OrderItem (
 	orderId int references OrderTable(orderId),
 	productId int references Product(productId),
 );
-create table CancelProduct
-(
-	orderId int references OrderTable(orderId),
-	productId int references Product(productId),
-	reasonCancel nvarchar(1000)
-);
---drop table detailImage
+
+drop table detailImage
 create table DetailImage (
 	productId int references Product(productId),
 	image varbinary(max),

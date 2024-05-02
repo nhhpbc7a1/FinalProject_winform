@@ -77,7 +77,7 @@ namespace QuanLyTraoDoiHang
             cbSearchBox.Location = new Point(254, 13);
             cbSearchBox.Margin = new Padding(6, 3, 6, 3);
             cbSearchBox.Name = "cbSearchBox";
-            cbSearchBox.Size = new Size(406, 29);
+            cbSearchBox.Size = new Size(406, 49);
             cbSearchBox.TabIndex = 0;
             // 
             // panel1
@@ -130,7 +130,7 @@ namespace QuanLyTraoDoiHang
             lblMainPage.ForeColor = Color.FromArgb(30, 106, 17);
             lblMainPage.Location = new Point(71, 17);
             lblMainPage.Name = "lblMainPage";
-            lblMainPage.Size = new Size(51, 19);
+            lblMainPage.Size = new Size(97, 37);
             lblMainPage.TabIndex = 1;
             lblMainPage.Text = "KoHa";
             // 
@@ -206,7 +206,7 @@ namespace QuanLyTraoDoiHang
             lblSignIn.ForeColor = SystemColors.ButtonHighlight;
             lblSignIn.Location = new Point(136, 13);
             lblSignIn.Name = "lblSignIn";
-            lblSignIn.Size = new Size(59, 18);
+            lblSignIn.Size = new Size(109, 32);
             lblSignIn.TabIndex = 14;
             lblSignIn.Text = "Sign in";
             // 
@@ -217,7 +217,7 @@ namespace QuanLyTraoDoiHang
             lblSignUp.ForeColor = SystemColors.ButtonHighlight;
             lblSignUp.Location = new Point(225, 13);
             lblSignUp.Name = "lblSignUp";
-            lblSignUp.Size = new Size(64, 18);
+            lblSignUp.Size = new Size(118, 32);
             lblSignUp.TabIndex = 15;
             lblSignUp.Text = "Sign up";
             // 
@@ -228,7 +228,7 @@ namespace QuanLyTraoDoiHang
             lblSellerChannel.ForeColor = SystemColors.ButtonHighlight;
             lblSellerChannel.Location = new Point(3, 13);
             lblSellerChannel.Name = "lblSellerChannel";
-            lblSellerChannel.Size = new Size(114, 18);
+            lblSellerChannel.Size = new Size(210, 32);
             lblSellerChannel.TabIndex = 16;
             lblSellerChannel.Text = "Seller channel";
             // 
@@ -270,7 +270,7 @@ namespace QuanLyTraoDoiHang
             lblUsername.Location = new Point(26, 6);
             lblUsername.Margin = new Padding(10, 0, 3, 0);
             lblUsername.Name = "lblUsername";
-            lblUsername.Size = new Size(73, 17);
+            lblUsername.Size = new Size(123, 30);
             lblUsername.TabIndex = 0;
             lblUsername.Text = "HuongLe";
             // 

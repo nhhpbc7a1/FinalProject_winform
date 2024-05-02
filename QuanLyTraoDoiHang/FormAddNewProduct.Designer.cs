@@ -232,6 +232,7 @@
             // 
             // panel1
             // 
+            panel1.AutoScroll = true;
             panel1.BackColor = Color.White;
             panel1.Controls.Add(flowLayoutPanel2);
             panel1.Controls.Add(flowLayoutPanel1);
@@ -517,6 +518,7 @@
             // FormAddNewProduct
             // 
             AutoScaleMode = AutoScaleMode.None;
+            AutoScroll = true;
             BackColor = SystemColors.ControlLight;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(982, 661);
