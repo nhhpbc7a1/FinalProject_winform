@@ -38,6 +38,10 @@
             btnDelete = new RJControls.RButton();
             label1 = new Label();
             label2 = new Label();
+            lblEstimateddate = new Label();
+            lblWriteDate = new Label();
+            btnUpdate = new Button();
+            btnCancel = new Button();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picItems).BeginInit();
             SuspendLayout();
@@ -80,7 +84,7 @@
             // 
             panel3.Controls.Add(lblProductName);
             panel3.Controls.Add(picItems);
-            panel3.Location = new Point(10, 30);
+            panel3.Location = new Point(10, 20);
             panel3.Margin = new Padding(1);
             panel3.Name = "panel3";
             panel3.Size = new Size(235, 98);
@@ -171,12 +175,64 @@
             label2.TabIndex = 67;
             label2.Text = "đ";
             // 
+            // lblEstimateddate
+            // 
+            lblEstimateddate.AutoSize = true;
+            lblEstimateddate.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblEstimateddate.Location = new Point(10, 119);
+            lblEstimateddate.Margin = new Padding(1, 0, 1, 0);
+            lblEstimateddate.Name = "lblEstimateddate";
+            lblEstimateddate.RightToLeft = RightToLeft.No;
+            lblEstimateddate.Size = new Size(81, 17);
+            lblEstimateddate.TabIndex = 64;
+            lblEstimateddate.Text = "Posted date:";
+            // 
+            // lblWriteDate
+            // 
+            lblWriteDate.AutoSize = true;
+            lblWriteDate.Font = new Font("Segoe UI", 9.75F, FontStyle.Italic, GraphicsUnit.Point);
+            lblWriteDate.Location = new Point(93, 119);
+            lblWriteDate.Margin = new Padding(1, 0, 1, 0);
+            lblWriteDate.Name = "lblWriteDate";
+            lblWriteDate.Size = new Size(40, 17);
+            lblWriteDate.TabIndex = 65;
+            lblWriteDate.Text = "(date)";
+            lblWriteDate.Click += lblWriteDate_Click;
+            // 
+            // btnUpdate
+            // 
+            btnUpdate.Font = new Font("Segoe UI", 9F, FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point);
+            btnUpdate.Location = new Point(246, 117);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new Size(75, 23);
+            btnUpdate.TabIndex = 68;
+            btnUpdate.Text = "Update";
+            btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Visible = false;
+            btnUpdate.Click += Update_Click;
+            // 
+            // btnCancel
+            // 
+            btnCancel.Font = new Font("Segoe UI", 9F, FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point);
+            btnCancel.Location = new Point(327, 117);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(75, 23);
+            btnCancel.TabIndex = 69;
+            btnCancel.Text = "Cancel";
+            btnCancel.UseVisualStyleBackColor = true;
+            btnCancel.Visible = false;
+            btnCancel.Click += btnCancel_Click;
+            // 
             // UCManageProduct
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
+            Controls.Add(btnCancel);
+            Controls.Add(btnUpdate);
+            Controls.Add(lblEstimateddate);
             Controls.Add(label2);
+            Controls.Add(lblWriteDate);
             Controls.Add(label1);
             Controls.Add(btnDelete);
             Controls.Add(btnViewChange);
@@ -187,6 +243,7 @@
             Margin = new Padding(0, 5, 0, 0);
             Name = "UCManageProduct";
             Size = new Size(723, 150);
+            Load += UCManageProduct_Load;
             panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)picItems).EndInit();
             ResumeLayout(false);
@@ -204,5 +261,9 @@
         private RJControls.RButton btnDelete;
         public Label label1;
         public Label label2;
+        public Label lblEstimateddate;
+        public Label lblWriteDate;
+        private Button btnUpdate;
+        private Button btnCancel;
     }
 }
