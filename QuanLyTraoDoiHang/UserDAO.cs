@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace QuanLyTraoDoiHang
 {
@@ -118,6 +119,11 @@ namespace QuanLyTraoDoiHang
             }
             return true;
         }
+        public static DataTable LoadAll()
+        {
+            string sqlStr = string.Format("SELECT * FROM " + tableName);
+            return dBConnection.Load(sqlStr);
 
+        }
     }
 }

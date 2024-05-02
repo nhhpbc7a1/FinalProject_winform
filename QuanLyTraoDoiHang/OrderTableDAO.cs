@@ -97,6 +97,11 @@ namespace QuanLyTraoDoiHang
             }
             return order;
         }
-
+        public static int CountOrder_BySellerIdAndStatus(int sellerId,string status)
+        {
+            string SQL = string.Format("Select * FROM " + tableName + " WHERE status='{1}' and sellerId = '{0}';", sellerId, status);
+            DataTable x = dBConnection.Load(SQL);
+            return x.Rows.Count;
+        }
     }
 }
