@@ -44,6 +44,7 @@ namespace QuanLyTraoDoiHang
             lblSignUp = new Label();
             lblSellerChannel = new Label();
             panel2 = new Panel();
+            label1 = new Label();
             pnlAccount = new Panel();
             picProfile = new PictureBox();
             lblUsername = new Label();
@@ -118,6 +119,7 @@ namespace QuanLyTraoDoiHang
             btnCount.TextColor = Color.White;
             btnCount.UseVisualStyleBackColor = false;
             btnCount.Visible = false;
+            btnCount.Click += btnCount_Click;
             // 
             // pnlMainPage
             // 
@@ -210,7 +212,7 @@ namespace QuanLyTraoDoiHang
             btnSearch.BorderSize = 0;
             btnSearch.FlatAppearance.BorderSize = 0;
             btnSearch.FlatStyle = FlatStyle.Flat;
-            btnSearch.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSearch.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnSearch.ForeColor = Color.White;
             btnSearch.Image = (Image)resources.GetObject("btnSearch.Image");
             btnSearch.ImageAlign = ContentAlignment.MiddleLeft;
@@ -226,39 +228,40 @@ namespace QuanLyTraoDoiHang
             // lblSignIn
             // 
             lblSignIn.AutoSize = true;
-            lblSignIn.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            lblSignIn.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblSignIn.ForeColor = SystemColors.ButtonHighlight;
             lblSignIn.Location = new Point(136, 13);
             lblSignIn.Name = "lblSignIn";
-            lblSignIn.Size = new Size(59, 18);
+            lblSignIn.Size = new Size(59, 21);
             lblSignIn.TabIndex = 14;
             lblSignIn.Text = "Sign in";
             // 
             // lblSignUp
             // 
             lblSignUp.AutoSize = true;
-            lblSignUp.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            lblSignUp.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblSignUp.ForeColor = SystemColors.ButtonHighlight;
             lblSignUp.Location = new Point(225, 13);
             lblSignUp.Name = "lblSignUp";
-            lblSignUp.Size = new Size(64, 18);
+            lblSignUp.Size = new Size(65, 21);
             lblSignUp.TabIndex = 15;
             lblSignUp.Text = "Sign up";
             // 
             // lblSellerChannel
             // 
             lblSellerChannel.AutoSize = true;
-            lblSellerChannel.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            lblSellerChannel.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblSellerChannel.ForeColor = SystemColors.ButtonHighlight;
             lblSellerChannel.Location = new Point(3, 13);
             lblSellerChannel.Name = "lblSellerChannel";
-            lblSellerChannel.Size = new Size(114, 18);
+            lblSellerChannel.Size = new Size(111, 21);
             lblSellerChannel.TabIndex = 16;
             lblSellerChannel.Text = "Seller channel";
             // 
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(30, 106, 17);
+            panel2.Controls.Add(label1);
             panel2.Controls.Add(pnlAccount);
             panel2.Controls.Add(panel6);
             panel2.Controls.Add(panel3);
@@ -268,11 +271,23 @@ namespace QuanLyTraoDoiHang
             panel2.Size = new Size(982, 45);
             panel2.TabIndex = 14;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.ButtonHighlight;
+            label1.Location = new Point(473, 14);
+            label1.Name = "label1";
+            label1.Size = new Size(169, 21);
+            label1.TabIndex = 22;
+            label1.Text = "Prestigious seller's list";
+            label1.Click += label1_Click;
+            // 
             // pnlAccount
             // 
             pnlAccount.Controls.Add(picProfile);
             pnlAccount.Controls.Add(lblUsername);
-            pnlAccount.Location = new Point(198, 10);
+            pnlAccount.Location = new Point(324, 5);
             pnlAccount.Name = "pnlAccount";
             pnlAccount.Size = new Size(159, 27);
             pnlAccount.TabIndex = 21;
@@ -289,12 +304,12 @@ namespace QuanLyTraoDoiHang
             // lblUsername
             // 
             lblUsername.AutoSize = true;
-            lblUsername.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            lblUsername.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblUsername.ForeColor = Color.White;
-            lblUsername.Location = new Point(26, 6);
+            lblUsername.Location = new Point(25, 3);
             lblUsername.Margin = new Padding(10, 0, 3, 0);
             lblUsername.Name = "lblUsername";
-            lblUsername.Size = new Size(73, 17);
+            lblUsername.Size = new Size(77, 21);
             lblUsername.TabIndex = 0;
             lblUsername.Text = "HuongLe";
             // 
@@ -409,6 +424,7 @@ namespace QuanLyTraoDoiHang
             pnlMainPage.ResumeLayout(false);
             pnlMainPage.PerformLayout();
             panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             pnlAccount.ResumeLayout(false);
             pnlAccount.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)picProfile).EndInit();
@@ -446,5 +462,6 @@ namespace QuanLyTraoDoiHang
         private PictureBox picProfile;
         private Label lblUsername;
         private RJControls.RButton btnCount;
+        private Label label1;
     }
 }

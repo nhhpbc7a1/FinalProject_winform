@@ -200,7 +200,7 @@
             btnSave.BackColor = Color.FromArgb(30, 106, 17);
             btnSave.BackgroundColor = Color.FromArgb(30, 106, 17);
             btnSave.BorderColor = Color.FromArgb(128, 255, 128);
-            btnSave.BorderRadius = 40;
+            btnSave.BorderRadius = 10;
             btnSave.BorderSize = 0;
             btnSave.FlatAppearance.BorderSize = 0;
             btnSave.FlatStyle = FlatStyle.Flat;

@@ -176,5 +176,15 @@ namespace QuanLyTraoDoiHang
 
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Form form = new FormShowSellerList();
+            form.ShowDialog();
+        }
+
+        private void btnCount_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
