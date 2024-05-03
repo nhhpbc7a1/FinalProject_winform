@@ -27,5 +27,16 @@ namespace QuanLyTraoDoiHang
 
             this.Close();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void rButton2_Click(object sender, EventArgs e)
+        {
+            Program.mainpage.OpenChildForm(new FormProduct());
+            this.Close();
+        }
     }
 }

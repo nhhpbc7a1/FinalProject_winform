@@ -66,7 +66,7 @@
             txtUsername.Name = "txtUsername";
             txtUsername.PlaceholderText = "  Username";
             txtUsername.Size = new Size(264, 26);
-            txtUsername.TabIndex = 2;
+            txtUsername.TabIndex = 1;
             // 
             // panel2
             // 
@@ -92,7 +92,7 @@
             ucPassword.Margin = new Padding(3, 2, 3, 2);
             ucPassword.Name = "ucPassword";
             ucPassword.Size = new Size(264, 29);
-            ucPassword.TabIndex = 27;
+            ucPassword.TabIndex = 2;
             // 
             // pictureBox2
             // 
@@ -130,7 +130,7 @@
             btnRegister.Location = new Point(54, 326);
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(251, 44);
-            btnRegister.TabIndex = 16;
+            btnRegister.TabIndex = 6;
             btnRegister.Text = "Register";
             btnRegister.TextColor = Color.FromArgb(11, 96, 176);
             btnRegister.UseVisualStyleBackColor = false;
@@ -149,7 +149,7 @@
             btnSignin.Location = new Point(54, 256);
             btnSignin.Name = "btnSignin";
             btnSignin.Size = new Size(251, 40);
-            btnSignin.TabIndex = 15;
+            btnSignin.TabIndex = 5;
             btnSignin.Text = "Sign in";
             btnSignin.TextColor = Color.White;
             btnSignin.UseVisualStyleBackColor = false;
@@ -162,7 +162,7 @@
             lblforgotpass.Location = new Point(97, 194);
             lblforgotpass.Name = "lblforgotpass";
             lblforgotpass.Size = new Size(171, 20);
-            lblforgotpass.TabIndex = 7;
+            lblforgotpass.TabIndex = 4;
             lblforgotpass.Text = "Forgot your password?";
             lblforgotpass.MouseEnter += lblforgotpass_MouseEnter;
             lblforgotpass.MouseLeave += lblforgotpass_MouseLeave;

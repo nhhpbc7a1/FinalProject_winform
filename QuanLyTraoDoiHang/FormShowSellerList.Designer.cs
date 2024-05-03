@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormShowSellerList));
             label1 = new Label();
             flowLayoutPanel = new FlowLayoutPanel();
-            comboBox1 = new ComboBox();
             panel1 = new Panel();
             rButton1 = new RJControls.RButton();
             panel1.SuspendLayout();
@@ -61,20 +60,11 @@
             // 
             // comboBox1
             // 
-            comboBox1.BackColor = Color.FromArgb(101, 183, 65);
-            comboBox1.FlatStyle = FlatStyle.Popup;
-            comboBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(835, 22);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 29);
-            comboBox1.TabIndex = 2;
             // 
             // panel1
             // 
             panel1.AutoScroll = true;
             panel1.BackColor = Color.FromArgb(101, 183, 65);
-            panel1.Controls.Add(comboBox1);
             panel1.Controls.Add(rButton1);
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Top;
@@ -122,7 +112,6 @@
 
         private Label label1;
         private FlowLayoutPanel flowLayoutPanel;
-        private ComboBox comboBox1;
         private Panel panel1;
         private RJControls.RButton rButton1;
     }

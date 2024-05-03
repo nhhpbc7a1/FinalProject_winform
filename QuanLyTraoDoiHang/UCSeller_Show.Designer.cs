@@ -260,9 +260,9 @@
             panel1.Controls.Add(txtNumShippingOrder);
             panel1.Controls.Add(txtNumCompletedOrder);
             panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(0, 148);
+            panel1.Location = new Point(0, 146);
             panel1.Name = "panel1";
-            panel1.Size = new Size(902, 134);
+            panel1.Size = new Size(900, 134);
             panel1.TabIndex = 37;
             // 
             // panel7
@@ -309,6 +309,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+            BorderStyle = BorderStyle.FixedSingle;
             Controls.Add(lblDateJoined);
             Controls.Add(lblSellerAddress);
             Controls.Add(panel1);
@@ -321,9 +322,9 @@
             Controls.Add(label11);
             Controls.Add(lblSellerName);
             Controls.Add(ptbSellerImage);
-            Margin = new Padding(0, 0, 0, 8);
+            Margin = new Padding(0, 0, 0, 16);
             Name = "UCSeller_Show";
-            Size = new Size(902, 282);
+            Size = new Size(900, 280);
             panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ptbSellerImage).EndInit();
             panel1.ResumeLayout(false);

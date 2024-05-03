@@ -31,6 +31,7 @@ namespace QuanLyTraoDoiHang
             picProfile.Click += Account_Click;
             lblUsername.Click += Account_Click;
             pnlAccount.Visible = false;
+            btnAddProduct.Click += btnAddProduct_Click;
             btnCart.Click += btnCart_Click;
 
             this.Load += UpdateAccountByAction;
@@ -48,9 +49,16 @@ namespace QuanLyTraoDoiHang
                 Product product = ProductDAO.RowToProduct(dr);
                 cbSearchBox.Items.Add(product.name);
             }
-
+            lblShowSellerList.Click += LblShowSellerList_Click;
             //UploadSearchBoxHistory();
         }
+
+        private void LblShowSellerList_Click(object? sender, EventArgs e)
+        {
+            FormShowSellerList form = new FormShowSellerList();
+            form.ShowDialog();
+        }
+
         //private void UploadSearchBoxHistory()
         //{
         //    cbSearchBox.Items.Clear();
@@ -81,7 +89,14 @@ namespace QuanLyTraoDoiHang
                 pnlAccount.Visible = false;
                 lblSignIn.Visible = true;
                 lblSignUp.Visible = true;
+                DataTable x = CartItemDAO.SelectByUserId(Program.currentUserId);
+                btnCount.Text = x.Rows.Count.ToString();
+                //if(x.Rows.Count > 0)
+                //    btnCount.Visible = true;
+                //else
+                //    btnCount.Visible = false;
             }
+
         }
 
 
@@ -99,6 +114,7 @@ namespace QuanLyTraoDoiHang
 
         private void BackToMainpage(object sender, EventArgs e)
         {
+            UpdateAccountByAction(null, null);
             OpenChildForm(new FormProduct());
         }
         private Form currentFormChild;
@@ -154,6 +170,12 @@ namespace QuanLyTraoDoiHang
             OpenChildForm(form);
         }
 
+        private void btnAddProduct_Click(object sender, EventArgs e)
+        {
+            FormAddNewProduct x = new FormAddNewProduct();
+            x.ShowDialog();
+        }
+
         private void btnExit_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Do you really want to log out?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
@@ -170,19 +192,13 @@ namespace QuanLyTraoDoiHang
             }
             else
             {
-                FormAddNewProduct x = new FormAddNewProduct();
-                x.ShowDialog();
+                Form form = new FormAddNewProduct();
+                form.ShowDialog();
             }
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-            Form form = new FormShowSellerList();
-            form.ShowDialog();
-        }
-
-        private void btnCount_Click(object sender, EventArgs e)
+        private void lblShowSellerList_Click_1(object sender, EventArgs e)
         {
 
         }

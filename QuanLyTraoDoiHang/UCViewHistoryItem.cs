@@ -26,14 +26,16 @@ namespace QuanLyTraoDoiHang
             lblOriginPrice.Text = product.originalPrice.ToString();
             if (status == "completed")
             {
-                btnAction.Text = "Rating";
+                btnAction.Text = "To Rate";
                 if (RatingDAO.SelectByProductId(product.productId) != null)
                 {
                     btnAction.Enabled = false;
                 }
                 else Enabled = true;
+                btnAction.Click += BtnRating_Click;
+
             }
-            if(status == "cancelled")
+            if (status == "cancelled")
             {
                 btnAction.Text = "Buy again";
                 btnAction.Click += BtnRating_Click;
@@ -51,6 +53,7 @@ namespace QuanLyTraoDoiHang
                 btnAction.Click += BtnCancel_Click;
             }
         }
+
 
         private void BtnRating_Click(object? sender, EventArgs e)
         {

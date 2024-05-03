@@ -113,3 +113,10 @@ create table DetailImage (
 	productId int references Product(productId),
 	image varbinary(max),
 );
+
+create table CancelProduct
+(
+	orderId int references OrderTable(orderId),
+	productId int references Product(productId),
+	reasonCancel nvarchar(1000)
+);
