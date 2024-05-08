@@ -49,9 +49,16 @@ namespace QuanLyTraoDoiHang
                 Product product = ProductDAO.RowToProduct(dr);
                 cbSearchBox.Items.Add(product.name);
             }
-
+            lblShowSellerList.Click += LblShowSellerList_Click;
             //UploadSearchBoxHistory();
         }
+
+        private void LblShowSellerList_Click(object? sender, EventArgs e)
+        {
+            FormShowSellerList form = new FormShowSellerList();
+            OpenChildForm(form);
+        }
+
         //private void UploadSearchBoxHistory()
         //{
         //    cbSearchBox.Items.Clear();

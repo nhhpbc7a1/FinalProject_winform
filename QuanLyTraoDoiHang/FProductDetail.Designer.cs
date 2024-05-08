@@ -642,7 +642,7 @@
             fpnlShowSimilarProduct.BackColor = SystemColors.ControlLight;
             fpnlShowSimilarProduct.Location = new Point(0, 51);
             fpnlShowSimilarProduct.Margin = new Padding(3, 3, 3, 10);
-            fpnlShowSimilarProduct.MaximumSize = new Size(923, 1000);
+            fpnlShowSimilarProduct.MaximumSize = new Size(923, 100000);
             fpnlShowSimilarProduct.MinimumSize = new Size(940, 100);
             fpnlShowSimilarProduct.Name = "fpnlShowSimilarProduct";
             fpnlShowSimilarProduct.Padding = new Padding(30, 0, 0, 0);

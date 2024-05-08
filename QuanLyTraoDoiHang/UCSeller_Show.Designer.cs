@@ -48,16 +48,18 @@
             label7 = new Label();
             txtNumCancelledOrder = new Label();
             panel1 = new Panel();
+            panel4 = new Panel();
             panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ptbSellerImage).BeginInit();
             panel1.SuspendLayout();
+            panel4.SuspendLayout();
             SuspendLayout();
             // 
             // panel3
             // 
             panel3.BackColor = SystemColors.AppWorkspace;
             panel3.ForeColor = SystemColors.AppWorkspace;
-            panel3.Location = new Point(597, 52);
+            panel3.Location = new Point(570, 17);
             panel3.Name = "panel3";
             panel3.Size = new Size(1, 86);
             panel3.TabIndex = 35;
@@ -73,7 +75,7 @@
             btnViewShop.FlatStyle = FlatStyle.Flat;
             btnViewShop.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnViewShop.ForeColor = Color.FromArgb(101, 183, 65);
-            btnViewShop.Location = new Point(394, 103);
+            btnViewShop.Location = new Point(367, 68);
             btnViewShop.Name = "btnViewShop";
             btnViewShop.Size = new Size(150, 40);
             btnViewShop.TabIndex = 26;
@@ -85,7 +87,7 @@
             // 
             panel2.BackColor = SystemColors.AppWorkspace;
             panel2.ForeColor = SystemColors.AppWorkspace;
-            panel2.Location = new Point(350, 52);
+            panel2.Location = new Point(323, 17);
             panel2.Name = "panel2";
             panel2.Size = new Size(1, 86);
             panel2.TabIndex = 36;
@@ -95,7 +97,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(621, 61);
+            label1.Location = new Point(594, 26);
             label1.Name = "label1";
             label1.Size = new Size(81, 21);
             label1.TabIndex = 34;
@@ -103,7 +105,7 @@
             // 
             // ucStars1
             // 
-            ucStars1.Location = new Point(146, 82);
+            ucStars1.Location = new Point(119, 47);
             ucStars1.Name = "ucStars1";
             ucStars1.Size = new Size(195, 37);
             ucStars1.TabIndex = 33;
@@ -113,7 +115,7 @@
             lblDateJoined.AutoSize = true;
             lblDateJoined.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblDateJoined.ForeColor = SystemColors.ActiveCaptionText;
-            lblDateJoined.Location = new Point(738, 113);
+            lblDateJoined.Location = new Point(677, 78);
             lblDateJoined.Name = "lblDateJoined";
             lblDateJoined.Size = new Size(42, 21);
             lblDateJoined.TabIndex = 32;
@@ -124,7 +126,7 @@
             panel6.BackColor = Color.FromArgb(101, 183, 65);
             panel6.Controls.Add(lblSellerPhone);
             panel6.ForeColor = SystemColors.ActiveCaptionText;
-            panel6.Location = new Point(394, 61);
+            panel6.Location = new Point(367, 26);
             panel6.Margin = new Padding(3, 4, 3, 4);
             panel6.Name = "panel6";
             panel6.Size = new Size(152, 35);
@@ -148,7 +150,7 @@
             // 
             lblSellerAddress.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblSellerAddress.ForeColor = Color.Black;
-            lblSellerAddress.Location = new Point(738, 61);
+            lblSellerAddress.Location = new Point(677, 26);
             lblSellerAddress.Name = "lblSellerAddress";
             lblSellerAddress.Size = new Size(191, 52);
             lblSellerAddress.TabIndex = 31;
@@ -159,7 +161,7 @@
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label11.ForeColor = Color.Black;
-            label11.Location = new Point(624, 113);
+            label11.Location = new Point(597, 78);
             label11.Name = "label11";
             label11.Size = new Size(66, 21);
             label11.TabIndex = 30;
@@ -170,7 +172,7 @@
             lblSellerName.AutoSize = true;
             lblSellerName.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblSellerName.ForeColor = SystemColors.ActiveCaptionText;
-            lblSellerName.Location = new Point(146, 58);
+            lblSellerName.Location = new Point(119, 23);
             lblSellerName.Name = "lblSellerName";
             lblSellerName.Size = new Size(144, 21);
             lblSellerName.TabIndex = 28;
@@ -180,7 +182,7 @@
             // 
             ptbSellerImage.BackgroundImage = (Image)resources.GetObject("ptbSellerImage.BackgroundImage");
             ptbSellerImage.BackgroundImageLayout = ImageLayout.Stretch;
-            ptbSellerImage.Location = new Point(50, 58);
+            ptbSellerImage.Location = new Point(23, 23);
             ptbSellerImage.Margin = new Padding(3, 4, 3, 4);
             ptbSellerImage.Name = "ptbSellerImage";
             ptbSellerImage.Size = new Size(80, 80);
@@ -262,36 +264,47 @@
             panel1.Controls.Add(label7);
             panel1.Controls.Add(txtNumShippingOrder);
             panel1.Controls.Add(txtNumCompletedOrder);
-            panel1.Location = new Point(621, 171);
+            panel1.Location = new Point(654, 169);
             panel1.Name = "panel1";
             panel1.Size = new Size(270, 134);
             panel1.TabIndex = 37;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.White;
+            panel4.Controls.Add(ptbSellerImage);
+            panel4.Controls.Add(lblSellerName);
+            panel4.Controls.Add(panel3);
+            panel4.Controls.Add(label11);
+            panel4.Controls.Add(btnViewShop);
+            panel4.Controls.Add(lblSellerAddress);
+            panel4.Controls.Add(panel2);
+            panel4.Controls.Add(panel6);
+            panel4.Controls.Add(label1);
+            panel4.Controls.Add(lblDateJoined);
+            panel4.Controls.Add(ucStars1);
+            panel4.Location = new Point(23, 26);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(901, 125);
+            panel4.TabIndex = 38;
             // 
             // UCSeller_Show
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BorderStyle = BorderStyle.FixedSingle;
+            Controls.Add(panel4);
             Controls.Add(panel1);
-            Controls.Add(panel3);
-            Controls.Add(btnViewShop);
-            Controls.Add(panel2);
-            Controls.Add(label1);
-            Controls.Add(ucStars1);
-            Controls.Add(lblDateJoined);
-            Controls.Add(panel6);
-            Controls.Add(lblSellerAddress);
-            Controls.Add(label11);
-            Controls.Add(lblSellerName);
-            Controls.Add(ptbSellerImage);
+            Margin = new Padding(10, 3, 3, 3);
             Name = "UCSeller_Show";
             Size = new Size(946, 358);
             panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ptbSellerImage).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -315,5 +328,6 @@
         private Label label7;
         private Label txtNumCancelledOrder;
         private Panel panel1;
+        private Panel panel4;
     }
 }

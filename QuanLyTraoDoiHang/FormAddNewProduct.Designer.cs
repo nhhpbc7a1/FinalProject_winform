@@ -266,7 +266,7 @@
             // 
             txtCategory.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtCategory.FormattingEnabled = true;
-            txtCategory.Items.AddRange(new object[] { "Clothes", "Furnitures", "Electronic Devices", "Mini Models", "Stationeries", "Decorations", "Books", "Robot Toys", "Accessories", "Cosmetics" });
+            txtCategory.Items.AddRange(new object[] { "Car", "Motorbike", "Smart Phone", "Pet", "Clothes", "Furnitures", "Electronic Devices", "Mini Models", "Stationeries", "Decorations", "Books", "Robot Toys", "Accessories", "Cosmetics" });
             txtCategory.Location = new Point(3, 3);
             txtCategory.Margin = new Padding(3, 3, 3, 22);
             txtCategory.Name = "txtCategory";
