@@ -30,9 +30,7 @@
         {
             label1 = new Label();
             flowLayoutPanel = new FlowLayoutPanel();
-            comboBox1 = new ComboBox();
             panel1 = new Panel();
-            label2 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -55,36 +53,17 @@
             flowLayoutPanel.Size = new Size(966, 440);
             flowLayoutPanel.TabIndex = 1;
             // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(506, 27);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 2;
-            // 
             // panel1
             // 
             panel1.AutoScroll = true;
             panel1.BackColor = Color.Bisque;
             panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
-            panel1.Controls.Add(comboBox1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(966, 76);
             panel1.TabIndex = 3;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(417, 35);
-            label2.Name = "label2";
-            label2.Size = new Size(71, 15);
-            label2.TabIndex = 3;
-            label2.Text = "Sort options";
             // 
             // FormShowSellerList
             // 
@@ -104,8 +83,6 @@
 
         private Label label1;
         private FlowLayoutPanel flowLayoutPanel;
-        private ComboBox comboBox1;
         private Panel panel1;
-        private Label label2;
     }
 }

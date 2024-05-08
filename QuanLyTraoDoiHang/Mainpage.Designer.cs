@@ -53,6 +53,7 @@ namespace QuanLyTraoDoiHang
             panel3 = new Panel();
             panel4 = new Panel();
             pnl_Body = new Panel();
+            lblShowSellerList = new Label();
             panel1.SuspendLayout();
             pnlMainPage.SuspendLayout();
             panel2.SuspendLayout();
@@ -77,7 +78,7 @@ namespace QuanLyTraoDoiHang
             cbSearchBox.Location = new Point(254, 13);
             cbSearchBox.Margin = new Padding(6, 3, 6, 3);
             cbSearchBox.Name = "cbSearchBox";
-            cbSearchBox.Size = new Size(406, 49);
+            cbSearchBox.Size = new Size(406, 29);
             cbSearchBox.TabIndex = 0;
             // 
             // panel1
@@ -130,7 +131,7 @@ namespace QuanLyTraoDoiHang
             lblMainPage.ForeColor = Color.FromArgb(30, 106, 17);
             lblMainPage.Location = new Point(71, 17);
             lblMainPage.Name = "lblMainPage";
-            lblMainPage.Size = new Size(97, 37);
+            lblMainPage.Size = new Size(51, 19);
             lblMainPage.TabIndex = 1;
             lblMainPage.Text = "KoHa";
             // 
@@ -205,7 +206,7 @@ namespace QuanLyTraoDoiHang
             lblSignIn.ForeColor = SystemColors.ButtonHighlight;
             lblSignIn.Location = new Point(136, 13);
             lblSignIn.Name = "lblSignIn";
-            lblSignIn.Size = new Size(109, 32);
+            lblSignIn.Size = new Size(59, 18);
             lblSignIn.TabIndex = 14;
             lblSignIn.Text = "Sign in";
             // 
@@ -216,7 +217,7 @@ namespace QuanLyTraoDoiHang
             lblSignUp.ForeColor = SystemColors.ButtonHighlight;
             lblSignUp.Location = new Point(225, 13);
             lblSignUp.Name = "lblSignUp";
-            lblSignUp.Size = new Size(118, 32);
+            lblSignUp.Size = new Size(64, 18);
             lblSignUp.TabIndex = 15;
             lblSignUp.Text = "Sign up";
             // 
@@ -227,7 +228,7 @@ namespace QuanLyTraoDoiHang
             lblSellerChannel.ForeColor = SystemColors.ButtonHighlight;
             lblSellerChannel.Location = new Point(3, 13);
             lblSellerChannel.Name = "lblSellerChannel";
-            lblSellerChannel.Size = new Size(210, 32);
+            lblSellerChannel.Size = new Size(114, 18);
             lblSellerChannel.TabIndex = 16;
             lblSellerChannel.Text = "Seller channel";
             // 
@@ -236,6 +237,7 @@ namespace QuanLyTraoDoiHang
             panel2.BackColor = Color.FromArgb(30, 106, 17);
             panel2.Controls.Add(pnlAccount);
             panel2.Controls.Add(panel6);
+            panel2.Controls.Add(lblShowSellerList);
             panel2.Controls.Add(panel3);
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
@@ -269,7 +271,7 @@ namespace QuanLyTraoDoiHang
             lblUsername.Location = new Point(26, 6);
             lblUsername.Margin = new Padding(10, 0, 3, 0);
             lblUsername.Name = "lblUsername";
-            lblUsername.Size = new Size(123, 30);
+            lblUsername.Size = new Size(73, 17);
             lblUsername.TabIndex = 0;
             lblUsername.Text = "HuongLe";
             // 
@@ -368,6 +370,17 @@ namespace QuanLyTraoDoiHang
             pnl_Body.Size = new Size(982, 561);
             pnl_Body.TabIndex = 19;
             // 
+            // lblShowSellerList
+            // 
+            lblShowSellerList.AutoSize = true;
+            lblShowSellerList.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            lblShowSellerList.ForeColor = SystemColors.ButtonHighlight;
+            lblShowSellerList.Location = new Point(537, 14);
+            lblShowSellerList.Name = "lblShowSellerList";
+            lblShowSellerList.Size = new Size(123, 18);
+            lblShowSellerList.TabIndex = 16;
+            lblShowSellerList.Text = "Show seller list";
+            // 
             // Mainpage
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -383,6 +396,7 @@ namespace QuanLyTraoDoiHang
             pnlMainPage.ResumeLayout(false);
             pnlMainPage.PerformLayout();
             panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             pnlAccount.ResumeLayout(false);
             pnlAccount.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)picProfile).EndInit();
@@ -419,5 +433,6 @@ namespace QuanLyTraoDoiHang
         private Panel pnlAccount;
         private PictureBox picProfile;
         private Label lblUsername;
+        private Label lblShowSellerList;
     }
 }

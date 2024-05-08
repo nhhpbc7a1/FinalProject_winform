@@ -293,7 +293,7 @@
             cbCategory.BackColor = Color.White;
             cbCategory.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cbCategory.FormattingEnabled = true;
-            cbCategory.Items.AddRange(new object[] { "Smart phone", "Laptop", "Motorbike", "Car", "tai nghe", "Moc Khoa", "Album", "Clothes", "Furnitures", "Electronic Devices", "Mini Models", "Stationeries", "Decorations", "Books", "Robot Toys", "Accessories", "Cosmetics" });
+            cbCategory.Items.AddRange(new object[] { "Smart Phone", "Laptop", "Motorbike", "Car", "Pet", "Clothes", "Furnitures", "Electronic Devices", "Mini Models", "Stationeries", "Decorations", "Books", "Robot Toys", "Accessories", "Cosmetics" });
             cbCategory.Location = new Point(17, 135);
             cbCategory.Name = "cbCategory";
             cbCategory.Size = new Size(172, 28);
