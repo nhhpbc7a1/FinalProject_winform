@@ -37,6 +37,7 @@ namespace QuanLyTraoDoiHang
             lblDateStart.Text = cnt.ToString();
 
             DataTable ratings = RatingDAO.SellectBySellerId(product.sellerId);
+            ucStars1.lblNumStar.Visible = false;
             if (ratings.Rows.Count == 0)
             {
                 ucStars1.Visible = false;
@@ -56,7 +57,7 @@ namespace QuanLyTraoDoiHang
                 ucStars1.comboBoxNum.Visible = false;
                 ucStars1.comboBoxNum.Enabled = false;
             }
-
+            ucStars1.lblNumStar.Visible = false;
         }
 
         void BuyNow(object sender, EventArgs e)
