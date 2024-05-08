@@ -36,7 +36,7 @@ namespace QuanLyTraoDoiHang
             {
                 foreach (UCCheckOutEachShop ucShop in pnlProducts.Controls)
                 {
-                    OrderTable x = new OrderTable(Program.currentUserId, ucShop.shopInfo.userId, currentReceiveInfo.receiveId,DateTime.Now,ucShop.txtNote.Text, ucShop.comboBoxShippingMethod.Text, Convert.ToInt32(ucShop.lblShippingFee.Text),"","waiting");
+                    OrderTable x = new OrderTable(Program.currentUserId, ucShop.shopInfo.userId, currentReceiveInfo.receiveId, DateTime.Now, ucShop.txtNote.Text, ucShop.comboBoxShippingMethod.Text, Convert.ToInt32(ucShop.lblShippingFee.Text), "", "waiting",totalPrice);
                     OrderTableDAO.Add(x);
                     foreach (ucItemsInCheckOut ucProduct in ucShop.ucCartEachShop1.pnlProducts.Controls)
                     {
@@ -47,7 +47,7 @@ namespace QuanLyTraoDoiHang
                 FPurchaseDone fPurchaseDone = new FPurchaseDone(totalPrice);
                 fPurchaseDone.ShowDialog();
             }
-            
+
         }
 
         private void BtnChangeReceiveInfo_Click(object? sender, EventArgs e)
@@ -99,7 +99,7 @@ namespace QuanLyTraoDoiHang
 
         private void ComboBoxShippingMethod_SelectedIndexChanged(object? sender, EventArgs e)
         {
-            int totalShip = 0,totalProductPrice = 0;
+            int totalShip = 0, totalProductPrice = 0;
             foreach (UCCheckOutEachShop x in pnlProducts.Controls)
             {
                 totalShip += Convert.ToInt32(x.lblShippingFee.Text);
@@ -118,5 +118,9 @@ namespace QuanLyTraoDoiHang
             totalPrice = totalShip + totalProductPrice;
         }
 
+        private void lblTotalPrice_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
