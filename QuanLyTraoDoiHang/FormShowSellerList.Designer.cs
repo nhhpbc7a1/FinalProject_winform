@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormShowSellerList));
             label1 = new Label();
             flowLayoutPanel = new FlowLayoutPanel();
             panel1 = new Panel();
+            rButton1 = new RJControls.RButton();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -38,41 +40,68 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(52, 20);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(347, 20);
             label1.Name = "label1";
-            label1.Size = new Size(141, 37);
+            label1.Size = new Size(311, 37);
             label1.TabIndex = 0;
-            label1.Text = "List Seller";
+            label1.Text = "Prestigious Seller's List";
             // 
             // flowLayoutPanel
             // 
             flowLayoutPanel.AutoScroll = true;
-            flowLayoutPanel.Dock = DockStyle.Bottom;
-            flowLayoutPanel.Location = new Point(0, 82);
+            flowLayoutPanel.BackColor = SystemColors.Control;
+            flowLayoutPanel.Location = new Point(10, 88);
+            flowLayoutPanel.Margin = new Padding(30, 0, 0, 0);
             flowLayoutPanel.Name = "flowLayoutPanel";
-            flowLayoutPanel.Size = new Size(966, 440);
+            flowLayoutPanel.Padding = new Padding(30, 0, 0, 0);
+            flowLayoutPanel.Size = new Size(960, 561);
             flowLayoutPanel.TabIndex = 1;
+            // 
+            // comboBox1
+            // 
             // 
             // panel1
             // 
             panel1.AutoScroll = true;
-            panel1.BackColor = Color.Bisque;
-            panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.BackColor = Color.FromArgb(101, 183, 65);
+            panel1.Controls.Add(rButton1);
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(966, 76);
+            panel1.Size = new Size(982, 76);
             panel1.TabIndex = 3;
+            // 
+            // rButton1
+            // 
+            rButton1.BackColor = Color.FromArgb(101, 183, 65);
+            rButton1.BackgroundColor = Color.FromArgb(101, 183, 65);
+            rButton1.BorderColor = Color.PaleVioletRed;
+            rButton1.BorderRadius = 40;
+            rButton1.BorderSize = 0;
+            rButton1.FlatAppearance.BorderSize = 0;
+            rButton1.FlatStyle = FlatStyle.Flat;
+            rButton1.ForeColor = Color.White;
+            rButton1.Image = (Image)resources.GetObject("rButton1.Image");
+            rButton1.Location = new Point(10, 17);
+            rButton1.Name = "rButton1";
+            rButton1.Size = new Size(50, 40);
+            rButton1.TabIndex = 1;
+            rButton1.TextColor = Color.White;
+            rButton1.UseVisualStyleBackColor = false;
+            rButton1.Click += rButton1_Click;
             // 
             // FormShowSellerList
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(966, 522);
+            ClientSize = new Size(982, 661);
             Controls.Add(panel1);
             Controls.Add(flowLayoutPanel);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FormShowSellerList";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FormShowSellerList";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -84,5 +113,6 @@
         private Label label1;
         private FlowLayoutPanel flowLayoutPanel;
         private Panel panel1;
+        private RJControls.RButton rButton1;
     }
 }

@@ -56,7 +56,7 @@ namespace QuanLyTraoDoiHang
         private void LblShowSellerList_Click(object? sender, EventArgs e)
         {
             FormShowSellerList form = new FormShowSellerList();
-            OpenChildForm(form);
+            form.ShowDialog();
         }
 
         //private void UploadSearchBoxHistory()
@@ -89,7 +89,14 @@ namespace QuanLyTraoDoiHang
                 pnlAccount.Visible = false;
                 lblSignIn.Visible = true;
                 lblSignUp.Visible = true;
+                DataTable x = CartItemDAO.SelectByUserId(Program.currentUserId);
+                btnCount.Text = x.Rows.Count.ToString();
+                //if(x.Rows.Count > 0)
+                //    btnCount.Visible = true;
+                //else
+                //    btnCount.Visible = false;
             }
+
         }
 
 
@@ -107,6 +114,7 @@ namespace QuanLyTraoDoiHang
 
         private void BackToMainpage(object sender, EventArgs e)
         {
+            UpdateAccountByAction(null, null);
             OpenChildForm(new FormProduct());
         }
         private Form currentFormChild;
@@ -190,7 +198,9 @@ namespace QuanLyTraoDoiHang
 
         }
 
-      
+        private void lblShowSellerList_Click_1(object sender, EventArgs e)
+        {
 
+        }
     }
 }

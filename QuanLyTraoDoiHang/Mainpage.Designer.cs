@@ -33,6 +33,7 @@ namespace QuanLyTraoDoiHang
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mainpage));
             cbSearchBox = new ComboBox();
             panel1 = new Panel();
+            btnCount = new RJControls.RButton();
             pnlMainPage = new Panel();
             btnMainPage = new RJControls.RButton();
             lblMainPage = new Label();
@@ -50,10 +51,10 @@ namespace QuanLyTraoDoiHang
             rButton2 = new RJControls.RButton();
             btnMinimize = new RJControls.RButton();
             btnExit = new RJControls.RButton();
+            lblShowSellerList = new Label();
             panel3 = new Panel();
             panel4 = new Panel();
             pnl_Body = new Panel();
-            lblShowSellerList = new Label();
             panel1.SuspendLayout();
             pnlMainPage.SuspendLayout();
             panel2.SuspendLayout();
@@ -84,6 +85,7 @@ namespace QuanLyTraoDoiHang
             // panel1
             // 
             panel1.BackColor = Color.White;
+            panel1.Controls.Add(btnCount);
             panel1.Controls.Add(pnlMainPage);
             panel1.Controls.Add(btnCart);
             panel1.Controls.Add(btnAddProduct);
@@ -94,6 +96,28 @@ namespace QuanLyTraoDoiHang
             panel1.Name = "panel1";
             panel1.Size = new Size(982, 55);
             panel1.TabIndex = 10;
+            // 
+            // btnCount
+            // 
+            btnCount.AutoSize = true;
+            btnCount.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnCount.BackColor = Color.Red;
+            btnCount.BackgroundColor = Color.Red;
+            btnCount.BorderColor = Color.PaleVioletRed;
+            btnCount.BorderRadius = 20;
+            btnCount.BorderSize = 0;
+            btnCount.FlatAppearance.BorderSize = 0;
+            btnCount.FlatStyle = FlatStyle.Flat;
+            btnCount.Font = new Font("Segoe UI", 6.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnCount.ForeColor = Color.White;
+            btnCount.Location = new Point(795, 7);
+            btnCount.Margin = new Padding(5);
+            btnCount.Name = "btnCount";
+            btnCount.Size = new Size(20, 22);
+            btnCount.TabIndex = 22;
+            btnCount.Text = "1";
+            btnCount.TextColor = Color.White;
+            btnCount.UseVisualStyleBackColor = false;
             // 
             // pnlMainPage
             // 
@@ -339,6 +363,18 @@ namespace QuanLyTraoDoiHang
             btnExit.TextColor = Color.White;
             btnExit.UseVisualStyleBackColor = false;
             // 
+            // lblShowSellerList
+            // 
+            lblShowSellerList.AutoSize = true;
+            lblShowSellerList.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            lblShowSellerList.ForeColor = SystemColors.ButtonHighlight;
+            lblShowSellerList.Location = new Point(537, 14);
+            lblShowSellerList.Name = "lblShowSellerList";
+            lblShowSellerList.Size = new Size(123, 18);
+            lblShowSellerList.TabIndex = 16;
+            lblShowSellerList.Text = "Show seller list";
+            lblShowSellerList.Click += lblShowSellerList_Click_1;
+            // 
             // panel3
             // 
             panel3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
@@ -370,17 +406,6 @@ namespace QuanLyTraoDoiHang
             pnl_Body.Size = new Size(982, 561);
             pnl_Body.TabIndex = 19;
             // 
-            // lblShowSellerList
-            // 
-            lblShowSellerList.AutoSize = true;
-            lblShowSellerList.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            lblShowSellerList.ForeColor = SystemColors.ButtonHighlight;
-            lblShowSellerList.Location = new Point(537, 14);
-            lblShowSellerList.Name = "lblShowSellerList";
-            lblShowSellerList.Size = new Size(123, 18);
-            lblShowSellerList.TabIndex = 16;
-            lblShowSellerList.Text = "Show seller list";
-            // 
             // Mainpage
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -393,6 +418,7 @@ namespace QuanLyTraoDoiHang
             ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             pnlMainPage.ResumeLayout(false);
             pnlMainPage.PerformLayout();
             panel2.ResumeLayout(false);
@@ -434,5 +460,6 @@ namespace QuanLyTraoDoiHang
         private PictureBox picProfile;
         private Label lblUsername;
         private Label lblShowSellerList;
+        private RJControls.RButton btnCount;
     }
 }
