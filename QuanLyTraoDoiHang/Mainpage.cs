@@ -71,6 +71,15 @@ namespace QuanLyTraoDoiHang
             OpenChildForm(form);
         }
 
+        public void UpdateCartCounter()
+        {
+            DataTable x = CartItemDAO.SelectByUserId(Program.currentUserId);
+            btnCount.Text = x.Rows.Count.ToString();
+            if (x.Rows.Count > 0)
+                btnCount.Visible = true;
+            else
+                btnCount.Visible = false;
+        }
 
         private void UpdateAccountByAction(object? sender, EventArgs e)
         {
@@ -83,18 +92,15 @@ namespace QuanLyTraoDoiHang
                 lblUsername.Text = AccountDAO.SelectByUserID(Program.currentUserId).username;
                 picProfile.BackgroundImage = Program.CurrentUser().image;
 
+                UpdateCartCounter();
             }
             else
             {
                 pnlAccount.Visible = false;
                 lblSignIn.Visible = true;
                 lblSignUp.Visible = true;
-                DataTable x = CartItemDAO.SelectByUserId(Program.currentUserId);
-                btnCount.Text = x.Rows.Count.ToString();
-                //if(x.Rows.Count > 0)
-                //    btnCount.Visible = true;
-                //else
-                //    btnCount.Visible = false;
+
+                btnCount.Visible = false;
             }
 
         }
@@ -114,7 +120,7 @@ namespace QuanLyTraoDoiHang
 
         private void BackToMainpage(object sender, EventArgs e)
         {
-            UpdateAccountByAction(null, null);
+            UpdateAccountByAction(sender, e);
             OpenChildForm(new FormProduct());
         }
         private Form currentFormChild;

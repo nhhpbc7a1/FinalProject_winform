@@ -226,7 +226,7 @@ namespace QuanLyTraoDoiHang
         }
         public static void CancelByBuyer(Product product, OrderTable ordertable)
         {
-            string sqlStr = string.Format("SELECT productId FROM OrderTable,OrderItem where status='cancelled' and OrderTable.orderId = orderItem.orderId");
+            string sqlStr = string.Format("SELECT productId FROM OrderTable,OrderItem where status='cancelled' and OrderTable.orderId = orderItem.orderId and OrderTable.orderId='{0}'",ordertable.orderId);
             DataTable y = dBConnection.Load(sqlStr);
             foreach (DataRow rowY in y.Rows)
             {
