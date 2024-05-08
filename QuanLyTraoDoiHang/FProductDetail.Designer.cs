@@ -76,6 +76,7 @@
             panel4 = new Panel();
             fpnlShowSimilarProduct = new FlowLayoutPanel();
             label12 = new Label();
+            ucLikedItem1 = new UCLikedItem();
             pnlSellerProduct.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ptbImage).BeginInit();
@@ -90,6 +91,7 @@
             // pnlSellerProduct
             // 
             pnlSellerProduct.BackColor = Color.White;
+            pnlSellerProduct.Controls.Add(ucLikedItem1);
             pnlSellerProduct.Controls.Add(pnlDetailImages);
             pnlSellerProduct.Controls.Add(btnAddToCart);
             pnlSellerProduct.Controls.Add(btnBuyNow);
@@ -660,6 +662,15 @@
             label12.TabIndex = 0;
             label12.Text = "Similar products ";
             // 
+            // ucLikedItem1
+            // 
+            ucLikedItem1.BackColor = Color.FromArgb(255, 255, 192);
+            ucLikedItem1.BorderStyle = BorderStyle.FixedSingle;
+            ucLikedItem1.Location = new Point(281, 248);
+            ucLikedItem1.Name = "ucLikedItem1";
+            ucLikedItem1.Size = new Size(97, 28);
+            ucLikedItem1.TabIndex = 67;
+            // 
             // FProductDetail
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -739,7 +750,6 @@
         private Label label13;
         private PictureBox pictureBox8;
         private PictureBox pictureBox10;
-
-
+        private UCLikedItem ucLikedItem1;
     }
 }

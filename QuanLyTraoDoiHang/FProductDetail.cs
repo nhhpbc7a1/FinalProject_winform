@@ -21,7 +21,7 @@ namespace QuanLyTraoDoiHang
             btnAddToCart.Click += BtnAddToCart_Click;
             btnBuyNow.Click += BtnBuyNow_Click;
             this.product = product;
-
+            ucLikedItem1.AddProductId(product.productId);
 
             ptbImage.BackgroundImage = product.image;
             lblName.Text = product.name;
