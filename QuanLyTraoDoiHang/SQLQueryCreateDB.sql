@@ -79,7 +79,8 @@ create table OrderTable (
 	shippingMethod nvarchar(100),
 	shippingFee int,
 	paymentMethod nvarchar(100), 
-	status nvarchar(100)
+	status nvarchar(100),
+	totalprice int
 );
 go
 --drop table Rating;
@@ -131,3 +132,5 @@ create table LikedItem (
 	primary key(userId, productId),
 );
 go
+
+

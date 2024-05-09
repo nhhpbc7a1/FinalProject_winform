@@ -43,6 +43,21 @@ namespace QuanLyTraoDoiHang
             {
                 fillChartbyMonths(checkStart, checkEnd);
             }
+
+            //Update bottom 
+            DBConnection dBConnection;
+            x = OrderTableDAO.TakeOrderBySellerIdAndTime(Program.currentUserId, dtpStartTime.Value, dtpEndtime.Value);
+            lblOrdersNumber.Text = x.Rows.Count.ToString();
+            int sum = 0;
+            foreach (DataRow row in x.Rows) 
+            {
+                sum += Convert.ToInt32(row["totalprice"]);
+            }
+            lblRevenueNumber.Text = sum.ToString();
+            double revenue = Convert.ToDouble(sum);
+            double profit = 0.2 * revenue;
+            lblProfitNumber.Text = Convert.ToString(profit);
+
         }
 
         private void fillChartbyMonths(DateTime checkStart, DateTime checkEnd)
@@ -58,7 +73,6 @@ namespace QuanLyTraoDoiHang
         private void fillChartbyDays()
         {
             DataTable revenueData = OrderTableDAO.Revenue_Days(Program.currentUserId, checkStart, checkEnd);
-
             chartGrossRevenue.DataSource = revenueData;
             chartGrossRevenue.Series[0].XValueType = ChartValueType.DateTime;
             chartGrossRevenue.ChartAreas[0].AxisX.LabelStyle.Format = "dd MMM";
@@ -69,7 +83,6 @@ namespace QuanLyTraoDoiHang
         private void fillChartbyWeeks()
         {
             DataTable revenueData = OrderTableDAO.Revenue_Days(Program.currentUserId, DateTime.Today.AddDays(-7), DateTime.Today.AddDays(-1));
-
             chartGrossRevenue.DataSource = revenueData;
             chartGrossRevenue.Series[0].XValueType = ChartValueType.DateTime;
             chartGrossRevenue.ChartAreas[0].AxisX.LabelStyle.Format = "dd MMM";
@@ -82,8 +95,8 @@ namespace QuanLyTraoDoiHang
         {
             DataTable top5products = OrderTableDAO.Top5Products(Program.currentUserId);
             charttop5.DataSource = top5products;
-            charttop5.Series[0].XValueMember = "CategoryCount";
-            charttop5.Series[0].YValueMembers = "category";
+            charttop5.Series[0].XValueMember = "Category";
+            charttop5.Series[0].YValueMembers = "CategoryCount";
             charttop5.DataBind();
         }
         private void chartGrossRevenue_Click(object sender, EventArgs e)
