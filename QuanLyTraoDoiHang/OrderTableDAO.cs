@@ -68,8 +68,25 @@ namespace QuanLyTraoDoiHang
             orderTable.shippingMethod = row["shippingMethod"].ToString();
             orderTable.paymentMethod = row["paymentMethod"].ToString();
             orderTable.status = row["status"].ToString();
-            orderTable.totalprice = Convert.ToInt32(row["totalprice"].ToString());
 
+            try
+            {
+                orderTable.totalprice = Convert.ToInt32(row["totalprice"].ToString());
+            }
+            catch 
+            {
+                DataTable tmp = dBConnection.Load(string.Format("" +
+                "SELECT SUM(price) as haha " +
+                "FROM Product,OrderItem,OrderTable " +
+                "WHERE OrderItem.OrderId = OrderTable.OrderId " +
+                "and OrderItem.ProductId = Product.ProductId " +
+                "and OrderTable.OrderId='{0}'", orderTable.orderId));
+
+                int haha = Convert.ToInt32(tmp.Rows[0]["haha"]);
+                orderTable.totalprice = haha + orderTable.shippingFee;
+
+                Update(orderTable);
+            }
 
             return orderTable;
         }
@@ -227,7 +244,16 @@ namespace QuanLyTraoDoiHang
             }
             return Top5Product;
         }
-
+        public static DataTable TakeOrderBySellerIdAndTime(int sellerID, DateTime begin, DateTime end) 
+        {
+            return dBConnection.Load(string.Format("" +
+                "SELECT * " +
+                "FROM OrderTable " +
+                "WHERE OrderTable.SellerId='{0}' " +
+                "and '{1}' <= OrderTable.Time  " +
+                "and OrderTable.Time <= '{2}' ;",
+                sellerID,begin,end));
+        }
     }
 }
 
