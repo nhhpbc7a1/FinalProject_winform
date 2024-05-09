@@ -26,7 +26,9 @@ namespace QuanLyTraoDoiHang
         };
 
         public static Mainpage mainpage = new Mainpage();
-        public static int currentUserId = 1  ;
+
+        public static int currentUserId = 1;
+
         public static User CurrentUser() { return UserDAO.SelectByUserId(currentUserId); }
     }
 }

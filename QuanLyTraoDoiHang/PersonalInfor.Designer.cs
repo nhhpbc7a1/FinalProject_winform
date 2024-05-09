@@ -42,6 +42,7 @@
             panel1 = new Panel();
             panel3 = new Panel();
             pnl_Infor = new Panel();
+            btnFavorite = new RJControls.RButton();
             panel2.SuspendLayout();
             panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ptbUserImage).BeginInit();
@@ -117,6 +118,7 @@
             panel7.Anchor = AnchorStyles.None;
             panel7.BackColor = Color.White;
             panel7.Controls.Add(btnUpdateInfo);
+            panel7.Controls.Add(btnFavorite);
             panel7.Controls.Add(btnLogout);
             panel7.Controls.Add(btnChangePass);
             panel7.Controls.Add(btnHistory);
@@ -230,6 +232,26 @@
             pnl_Infor.Size = new Size(747, 502);
             pnl_Infor.TabIndex = 1;
             // 
+            // btnFavorite
+            // 
+            btnFavorite.BackColor = Color.White;
+            btnFavorite.BackgroundColor = Color.White;
+            btnFavorite.BorderColor = Color.FromArgb(30, 106, 17);
+            btnFavorite.BorderRadius = 10;
+            btnFavorite.BorderSize = 1;
+            btnFavorite.FlatAppearance.BorderSize = 0;
+            btnFavorite.FlatStyle = FlatStyle.Flat;
+            btnFavorite.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnFavorite.ForeColor = Color.FromArgb(30, 106, 17);
+            btnFavorite.ImageAlign = ContentAlignment.MiddleLeft;
+            btnFavorite.Location = new Point(13, 244);
+            btnFavorite.Name = "btnFavorite";
+            btnFavorite.Size = new Size(152, 44);
+            btnFavorite.TabIndex = 5;
+            btnFavorite.Text = "Favorite Product";
+            btnFavorite.TextColor = Color.FromArgb(30, 106, 17);
+            btnFavorite.UseVisualStyleBackColor = false;
+            // 
             // PersonalInfor
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -262,5 +284,6 @@
         private Panel panel1;
         private Panel panel3;
         private Panel pnl_Infor;
+        public RJControls.RButton btnFavorite;
     }
 }

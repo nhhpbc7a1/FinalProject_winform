@@ -35,6 +35,7 @@ namespace QuanLyTraoDoiHang
 
             string SQL = string.Format(" INSERT INTO " + tableName + " (userId, productId) VALUES ('{0}','{1}')", cartItem.userId, cartItem.productId);
             dBConnection.Execute(SQL);
+            Program.mainpage.UpdateCartCounter();
 
             return true;
         }
@@ -52,19 +53,20 @@ namespace QuanLyTraoDoiHang
             }
             if (SelectByCartItem(cartItem) != null)
             {
-                MessageBox.Show("Be added to cart");
+                MessageBox.Show("Added to cart");
                 return;
             }
 
             string SQL = string.Format(" INSERT INTO " + tableName + " (userId, productId) VALUES ('{0}','{1}')", cartItem.userId, cartItem.productId);
             dBConnection.Execute(SQL);
-
+            Program.mainpage.UpdateCartCounter();
             MessageBox.Show("add successfully ");
         }
         public static void Delete(CartItem cartItem)
         {
             string SQL = string.Format("DELETE FROM " + tableName + " WHERE userId = '{0}' and productId = '{1}';", cartItem.userId, cartItem.productId);
             dBConnection.Execute(SQL);
+            Program.mainpage.UpdateCartCounter();
         }
         public static CartItem RowToCartItem(DataRow row)
         {
@@ -95,12 +97,13 @@ namespace QuanLyTraoDoiHang
             {
                 DeletedByProductId(Convert.ToInt32(row["productId"]));
             }
+            Program.mainpage.UpdateCartCounter();
         }
         public static void DeletedByProductId(int productId)
         {
             string SQL = string.Format("DELETE FROM " + tableName + " WHERE productId = '{0}';", productId);
             dBConnection.Execute(SQL);
-
+            Program.mainpage.UpdateCartCounter();
         }
     }
 }

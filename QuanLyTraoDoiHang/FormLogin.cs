@@ -13,7 +13,7 @@ namespace QuanLyTraoDoiHang
             lblforgotpass.MouseEnter += lblforgotpass_MouseEnter;
             lblforgotpass.MouseLeave += lblforgotpass_MouseLeave;
             this.AcceptButton = btnSignin;
-           
+            txtUsername.Focus();
          }
 
         private void lblforgotpass_Click(object sender, EventArgs e)

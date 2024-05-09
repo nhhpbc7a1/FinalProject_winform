@@ -22,6 +22,24 @@ namespace QuanLyTraoDoiHang
             Load += PersonalInfor_Load;
             lblChangeImage.Click += lblChangeImage_Click;
             btnLogout.Click += BtnLogout_Click;
+            btnFavorite.Click += BtnFavorite_Click;
+        }
+
+        private void BtnFavorite_Click(object? sender, EventArgs e)
+        {
+            FlowLayoutPanel x = new FlowLayoutPanel();
+            x.Dock = DockStyle.Fill;
+            x.Padding = new Padding(50, 5, 0, 5);
+            x.AutoScroll = true;
+            DataTable listFavor = LikedItemDAO.SelectByUserId(Program.currentUserId);
+            foreach (DataRow row in listFavor.Rows) 
+            {
+                LikedItem likedItem = LikedItemDAO.RowToLikedItem(row);
+                UCProductOnMainpage tmp = new UCProductOnMainpage(ProductDAO.SelectById(likedItem.productId));
+                x.Controls.Add(tmp);
+            }
+            pnl_Infor.Controls.Clear();
+            pnl_Infor.Controls.Add(x);
         }
 
         private void BtnLogout_Click(object? sender, EventArgs e)

@@ -15,16 +15,21 @@ namespace QuanLyTraoDoiHang
         public FormShowSellerList()
         {
             InitializeComponent();
-            
+
             flowLayoutPanel.Controls.Clear();
             DataTable x = UserDAO.LoadAll();
-            foreach(DataRow dr in x.Rows) 
-            { 
+            foreach (DataRow dr in x.Rows)
+            {
                 User user = UserDAO.RowToUser(dr);
                 UCSeller_Show tmp = new UCSeller_Show(user);
                 flowLayoutPanel.Controls.Add(tmp);
             }
             //flowLayoutPanel.
+        }
+
+        private void rButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

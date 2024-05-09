@@ -154,7 +154,6 @@
             // 
             // lblDateStart
             // 
-            lblDateStart.AutoSize = true;
             lblDateStart.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblDateStart.ForeColor = SystemColors.ControlDarkDark;
             lblDateStart.Location = new Point(9, 281);
@@ -162,6 +161,7 @@
             lblDateStart.Size = new Size(40, 18);
             lblDateStart.TabIndex = 6;
             lblDateStart.Text = "1000";
+            lblDateStart.TextAlign = ContentAlignment.MiddleRight;
             // 
             // label3
             // 

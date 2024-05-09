@@ -33,9 +33,9 @@
             panel4 = new Panel();
             label2 = new Label();
             panel2 = new Panel();
-            ucOldPass = new UCPasswordTextBox();
-            ucNewPass = new UCPasswordTextBox();
             ucReTypePass = new UCPasswordTextBox();
+            ucNewPass = new UCPasswordTextBox();
+            ucOldPass = new UCPasswordTextBox();
             lblRetypedPass = new Label();
             rButton3 = new RJControls.RButton();
             rButton4 = new RJControls.RButton();
@@ -84,9 +84,9 @@
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(224, 224, 224);
-            panel2.Controls.Add(ucReTypePass);
-            panel2.Controls.Add(ucNewPass);
             panel2.Controls.Add(ucOldPass);
+            panel2.Controls.Add(ucNewPass);
+            panel2.Controls.Add(ucReTypePass);
             panel2.Controls.Add(lblRetypedPass);
             panel2.Controls.Add(rButton3);
             panel2.Controls.Add(rButton4);
@@ -98,14 +98,14 @@
             panel2.Size = new Size(620, 309);
             panel2.TabIndex = 6;
             // 
-            // ucOldPass
+            // ucReTypePass
             // 
-            ucOldPass.BackColor = Color.White;
-            ucOldPass.Location = new Point(169, 57);
-            ucOldPass.Margin = new Padding(3, 2, 3, 2);
-            ucOldPass.Name = "ucOldPass";
-            ucOldPass.Size = new Size(329, 29);
-            ucOldPass.TabIndex = 30;
+            ucReTypePass.BackColor = Color.White;
+            ucReTypePass.Location = new Point(166, 225);
+            ucReTypePass.Margin = new Padding(3, 2, 3, 2);
+            ucReTypePass.Name = "ucReTypePass";
+            ucReTypePass.Size = new Size(332, 29);
+            ucReTypePass.TabIndex = 28;
             // 
             // ucNewPass
             // 
@@ -116,14 +116,14 @@
             ucNewPass.Size = new Size(329, 29);
             ucNewPass.TabIndex = 29;
             // 
-            // ucReTypePass
+            // ucOldPass
             // 
-            ucReTypePass.BackColor = Color.White;
-            ucReTypePass.Location = new Point(166, 225);
-            ucReTypePass.Margin = new Padding(3, 2, 3, 2);
-            ucReTypePass.Name = "ucReTypePass";
-            ucReTypePass.Size = new Size(332, 29);
-            ucReTypePass.TabIndex = 28;
+            ucOldPass.BackColor = Color.White;
+            ucOldPass.Location = new Point(169, 57);
+            ucOldPass.Margin = new Padding(3, 2, 3, 2);
+            ucOldPass.Name = "ucOldPass";
+            ucOldPass.Size = new Size(329, 29);
+            ucOldPass.TabIndex = 30;
             // 
             // lblRetypedPass
             // 
@@ -155,8 +155,8 @@
             // 
             // rButton4
             // 
-            rButton4.BackColor = Color.FromArgb(101, 183, 65);
-            rButton4.BackgroundColor = Color.FromArgb(101, 183, 65);
+            rButton4.BackColor = Color.FromArgb(255, 128, 128);
+            rButton4.BackgroundColor = Color.FromArgb(255, 128, 128);
             rButton4.BorderColor = Color.PaleVioletRed;
             rButton4.BorderRadius = 38;
             rButton4.BorderSize = 0;
@@ -173,8 +173,8 @@
             // 
             // rButton2
             // 
-            rButton2.BackColor = Color.FromArgb(101, 183, 65);
-            rButton2.BackgroundColor = Color.FromArgb(101, 183, 65);
+            rButton2.BackColor = Color.DodgerBlue;
+            rButton2.BackgroundColor = Color.DodgerBlue;
             rButton2.BorderColor = Color.PaleVioletRed;
             rButton2.BorderRadius = 38;
             rButton2.BorderSize = 0;
@@ -224,7 +224,7 @@
             btnChangePass.BackColor = Color.FromArgb(30, 106, 17);
             btnChangePass.BackgroundColor = Color.FromArgb(30, 106, 17);
             btnChangePass.BorderColor = Color.FromArgb(30, 106, 17);
-            btnChangePass.BorderRadius = 40;
+            btnChangePass.BorderRadius = 10;
             btnChangePass.BorderSize = 0;
             btnChangePass.Enabled = false;
             btnChangePass.FlatAppearance.BorderSize = 0;

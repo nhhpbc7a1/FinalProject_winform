@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FProductDetail));
             pnlSellerProduct = new Panel();
+            ucLikedItem1 = new UCLikedItem();
             pnlDetailImages = new FlowLayoutPanel();
             btnAddToCart = new RJControls.RButton();
             btnBuyNow = new RJControls.RButton();
@@ -70,9 +71,6 @@
             lblSellerName = new Label();
             ptbSellerImage = new PictureBox();
             flowLayoutPanel1 = new FlowLayoutPanel();
-            panel1 = new Panel();
-            fpnlShowProductOfThisSeller = new FlowLayoutPanel();
-            label13 = new Label();
             panel4 = new Panel();
             fpnlShowSimilarProduct = new FlowLayoutPanel();
             label12 = new Label();
@@ -83,13 +81,13 @@
             pnlThisSellerPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ptbSellerImage).BeginInit();
             flowLayoutPanel1.SuspendLayout();
-            panel1.SuspendLayout();
             panel4.SuspendLayout();
             SuspendLayout();
             // 
             // pnlSellerProduct
             // 
             pnlSellerProduct.BackColor = Color.White;
+            pnlSellerProduct.Controls.Add(ucLikedItem1);
             pnlSellerProduct.Controls.Add(pnlDetailImages);
             pnlSellerProduct.Controls.Add(btnAddToCart);
             pnlSellerProduct.Controls.Add(btnBuyNow);
@@ -113,6 +111,15 @@
             pnlSellerProduct.Name = "pnlSellerProduct";
             pnlSellerProduct.Size = new Size(924, 520);
             pnlSellerProduct.TabIndex = 0;
+            // 
+            // ucLikedItem1
+            // 
+            ucLikedItem1.BackColor = Color.FromArgb(255, 255, 192);
+            ucLikedItem1.BorderStyle = BorderStyle.FixedSingle;
+            ucLikedItem1.Location = new Point(281, 248);
+            ucLikedItem1.Name = "ucLikedItem1";
+            ucLikedItem1.Size = new Size(97, 28);
+            ucLikedItem1.TabIndex = 67;
             // 
             // pnlDetailImages
             // 
@@ -375,7 +382,7 @@
             pnlProductDetail.Location = new Point(20, 682);
             pnlProductDetail.Margin = new Padding(20, 0, 3, 30);
             pnlProductDetail.MaximumSize = new Size(923, 100000);
-            pnlProductDetail.MinimumSize = new Size(923, 539);
+            pnlProductDetail.MinimumSize = new Size(923, 0);
             pnlProductDetail.Name = "pnlProductDetail";
             pnlProductDetail.Size = new Size(923, 610);
             pnlProductDetail.TabIndex = 1;
@@ -575,51 +582,12 @@
             flowLayoutPanel1.Controls.Add(pnlSellerProduct);
             flowLayoutPanel1.Controls.Add(pnlThisSellerPage);
             flowLayoutPanel1.Controls.Add(pnlProductDetail);
-            flowLayoutPanel1.Controls.Add(panel1);
             flowLayoutPanel1.Controls.Add(panel4);
             flowLayoutPanel1.Dock = DockStyle.Fill;
             flowLayoutPanel1.Location = new Point(0, 0);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(984, 641);
             flowLayoutPanel1.TabIndex = 3;
-            // 
-            // panel1
-            // 
-            panel1.AutoSize = true;
-            panel1.BackColor = SystemColors.ControlLight;
-            panel1.Controls.Add(fpnlShowProductOfThisSeller);
-            panel1.Controls.Add(label13);
-            panel1.Location = new Point(0, 1322);
-            panel1.Margin = new Padding(0, 0, 3, 30);
-            panel1.MaximumSize = new Size(923, 100000);
-            panel1.MinimumSize = new Size(940, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(940, 163);
-            panel1.TabIndex = 3;
-            // 
-            // fpnlShowProductOfThisSeller
-            // 
-            fpnlShowProductOfThisSeller.AutoSize = true;
-            fpnlShowProductOfThisSeller.BackColor = SystemColors.ControlLight;
-            fpnlShowProductOfThisSeller.Location = new Point(0, 53);
-            fpnlShowProductOfThisSeller.Margin = new Padding(3, 3, 3, 10);
-            fpnlShowProductOfThisSeller.MaximumSize = new Size(923, 1000);
-            fpnlShowProductOfThisSeller.MinimumSize = new Size(940, 100);
-            fpnlShowProductOfThisSeller.Name = "fpnlShowProductOfThisSeller";
-            fpnlShowProductOfThisSeller.Padding = new Padding(30, 0, 0, 0);
-            fpnlShowProductOfThisSeller.Size = new Size(940, 100);
-            fpnlShowProductOfThisSeller.TabIndex = 1;
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label13.ForeColor = Color.Black;
-            label13.Location = new Point(20, 0);
-            label13.Name = "label13";
-            label13.Size = new Size(180, 30);
-            label13.TabIndex = 2;
-            label13.Text = " Products in shop";
             // 
             // panel4
             // 
@@ -628,7 +596,7 @@
             panel4.Controls.Add(fpnlShowSimilarProduct);
             panel4.Controls.Add(label12);
             panel4.ForeColor = SystemColors.ControlDarkDark;
-            panel4.Location = new Point(0, 1515);
+            panel4.Location = new Point(0, 1322);
             panel4.Margin = new Padding(0, 0, 3, 50);
             panel4.MaximumSize = new Size(923, 100000);
             panel4.MinimumSize = new Size(940, 0);
@@ -642,7 +610,7 @@
             fpnlShowSimilarProduct.BackColor = SystemColors.ControlLight;
             fpnlShowSimilarProduct.Location = new Point(0, 51);
             fpnlShowSimilarProduct.Margin = new Padding(3, 3, 3, 10);
-            fpnlShowSimilarProduct.MaximumSize = new Size(923, 1000);
+            fpnlShowSimilarProduct.MaximumSize = new Size(923, 100000);
             fpnlShowSimilarProduct.MinimumSize = new Size(940, 100);
             fpnlShowSimilarProduct.Name = "fpnlShowSimilarProduct";
             fpnlShowSimilarProduct.Padding = new Padding(30, 0, 0, 0);
@@ -681,8 +649,6 @@
             ((System.ComponentModel.ISupportInitialize)ptbSellerImage).EndInit();
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel1.PerformLayout();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
             ResumeLayout(false);
@@ -726,8 +692,6 @@
         private UCStars ucStarsSeller;
         private Label lblDetailDescription;
         private FlowLayoutPanel flowLayoutPanel1;
-        private Panel panel1;
-        private FlowLayoutPanel fpnlShowProductOfThisSeller;
         private Panel panel4;
         private FlowLayoutPanel fpnlShowSimilarProduct;
         private Label label12;
@@ -736,10 +700,8 @@
         private Panel panel3;
         private Label label9;
         private Panel panel7;
-        private Label label13;
         private PictureBox pictureBox8;
         private PictureBox pictureBox10;
-
-
+        private UCLikedItem ucLikedItem1;
     }
 }

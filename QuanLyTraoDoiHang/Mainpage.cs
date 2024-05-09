@@ -49,9 +49,16 @@ namespace QuanLyTraoDoiHang
                 Product product = ProductDAO.RowToProduct(dr);
                 cbSearchBox.Items.Add(product.name);
             }
-
+            lblShowSellerList.Click += LblShowSellerList_Click;
             //UploadSearchBoxHistory();
         }
+
+        private void LblShowSellerList_Click(object? sender, EventArgs e)
+        {
+            FormShowSellerList form = new FormShowSellerList();
+            form.ShowDialog();
+        }
+
         //private void UploadSearchBoxHistory()
         //{
         //    cbSearchBox.Items.Clear();
@@ -64,6 +71,15 @@ namespace QuanLyTraoDoiHang
             OpenChildForm(form);
         }
 
+        public void UpdateCartCounter()
+        {
+            DataTable x = CartItemDAO.SelectByUserId(Program.currentUserId);
+            btnCount.Text = x.Rows.Count.ToString();
+            if (x.Rows.Count > 0)
+                btnCount.Visible = true;
+            else
+                btnCount.Visible = false;
+        }
 
         private void UpdateAccountByAction(object? sender, EventArgs e)
         {
@@ -76,13 +92,17 @@ namespace QuanLyTraoDoiHang
                 lblUsername.Text = AccountDAO.SelectByUserID(Program.currentUserId).username;
                 picProfile.BackgroundImage = Program.CurrentUser().image;
 
+                UpdateCartCounter();
             }
             else
             {
                 pnlAccount.Visible = false;
                 lblSignIn.Visible = true;
                 lblSignUp.Visible = true;
+
+                btnCount.Visible = false;
             }
+
         }
 
 
@@ -100,6 +120,7 @@ namespace QuanLyTraoDoiHang
 
         private void BackToMainpage(object sender, EventArgs e)
         {
+            UpdateAccountByAction(sender, e);
             OpenChildForm(new FormProduct());
         }
         private Form currentFormChild;
@@ -183,7 +204,9 @@ namespace QuanLyTraoDoiHang
 
         }
 
-      
+        private void lblShowSellerList_Click_1(object sender, EventArgs e)
+        {
 
+        }
     }
 }

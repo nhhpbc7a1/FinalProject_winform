@@ -21,7 +21,7 @@ namespace QuanLyTraoDoiHang
             btnAddToCart.Click += BtnAddToCart_Click;
             btnBuyNow.Click += BtnBuyNow_Click;
             this.product = product;
-
+            ucLikedItem1.AddProductId(product.productId);
 
             ptbImage.BackgroundImage = product.image;
             lblName.Text = product.name;
@@ -62,12 +62,12 @@ namespace QuanLyTraoDoiHang
             }
 
             DataTable dataTable = ProductDAO.LoadCanBuy_SameSeller(product.sellerId);
-            fpnlShowProductOfThisSeller.Controls.Clear();
-            for (int i = 0; i < Math.Min(dataTable.Rows.Count, 4); i++)
-            {
-                Product tmp = ProductDAO.RowToProduct(dataTable.Rows[i]);
-                fpnlShowProductOfThisSeller.Controls.Add(new UCProductOnMainpage(tmp));
-            }
+            //fpnlShowProductOfThisSeller.Controls.Clear();
+            //for (int i = 0; i < Math.Min(dataTable.Rows.Count, 4); i++)
+            //{
+            //    Product tmp = ProductDAO.RowToProduct(dataTable.Rows[i]);
+            //    fpnlShowProductOfThisSeller.Controls.Add(new UCProductOnMainpage(tmp));
+            //}
 
             dataTable = ProductDAO.LoadCanBuy_SameCategory(product.category);
             fpnlShowSimilarProduct.Controls.Clear();
@@ -99,6 +99,7 @@ namespace QuanLyTraoDoiHang
         {
             CartItem x = new CartItem(Program.currentUserId, product.productId);
             CartItemDAO.Add(x);
+            Program.mainpage.UpdateCartCounter();
         }
 
         private void FProductDetail_Load(object sender, EventArgs e)
