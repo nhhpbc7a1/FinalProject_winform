@@ -18,6 +18,7 @@ namespace QuanLyTraoDoiHang
         public int shippingFee;
         public string paymentMethod;
         public string status;
+        public int totalprice;
         public OrderTable() { }
         public OrderTable(int buyerId, int sellerId, int receiveId, DateTime time, string note, string shippingMethod, int shippingFee, string paymentMethod, string status)
         {
@@ -31,6 +32,20 @@ namespace QuanLyTraoDoiHang
             this.shippingFee = shippingFee;
             this.paymentMethod = paymentMethod;
             this.status = status;
+        }
+        public OrderTable(int buyerId, int sellerId, int receiveId, DateTime time, string note, string shippingMethod, int shippingFee, string paymentMethod, string status, int totalprice)
+        {
+            this.orderId = OrderTableDAO.CreateID();
+            this.buyerId = buyerId;
+            this.sellerId = sellerId;
+            this.receiveId = receiveId;
+            this.time = time;
+            this.note = note;
+            this.shippingMethod = shippingMethod;
+            this.shippingFee = shippingFee;
+            this.paymentMethod = paymentMethod;
+            this.status = status;
+            this.totalprice = totalprice;
         }
     }
 }

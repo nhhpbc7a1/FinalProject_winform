@@ -237,7 +237,7 @@ namespace QuanLyTraoDoiHang
                 }
             }
 
-            if (MessageBox.Show("Do you really want to cancel this order?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+             if (MessageBox.Show("Do you really want to cancel this order?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 CancelReason cancel = new CancelReason();
                 cancel.ShowDialog();

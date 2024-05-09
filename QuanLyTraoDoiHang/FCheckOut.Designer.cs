@@ -179,6 +179,7 @@ namespace QuanLyTraoDoiHang
             lblTotalPrice.Size = new Size(89, 25);
             lblTotalPrice.TabIndex = 59;
             lblTotalPrice.Text = "1000000";
+            lblTotalPrice.Click += lblTotalPrice_Click;
             // 
             // lblShipping
             // 
