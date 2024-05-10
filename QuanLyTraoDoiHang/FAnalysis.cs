@@ -35,7 +35,7 @@ namespace QuanLyTraoDoiHang
             checkStart = dtpStartTime.Value;
             checkEnd = dtpEndtime.Value;
             numberdays = (checkEnd - checkStart).Days;
-            if (numberdays <= 30)
+            if (numberdays <= 28)
             {
                 fillChartbyDays();
             }

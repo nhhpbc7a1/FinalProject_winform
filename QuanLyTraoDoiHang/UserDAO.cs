@@ -77,7 +77,15 @@ namespace QuanLyTraoDoiHang
             user.phone = row["phone"].ToString();
             user.gender = Convert.ToInt32(row["gender"].ToString());
             user.address = row["address"].ToString();
-            user.image = MyImage.ByteArrayToImage((byte[])row["image"]);
+
+            try
+            {
+                user.image = MyImage.ByteArrayToImage((byte[])row["image"]);
+            }
+            catch
+            {
+                user.image = Properties.Resources.empty_avatar;
+            }
 
             return user;
         }

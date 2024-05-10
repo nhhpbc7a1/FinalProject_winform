@@ -160,7 +160,7 @@ namespace QuanLyTraoDoiHang
                 string mainQuerySQL = "SELECT DAY(dt.day_month) AS day,  DATENAME(MONTH, dt.day_month) as month, " +
                                       "COALESCE(SUM(ot.totalprice), 0) AS revenue, dt.day_month as day_month " +
                                       "FROM @DateTable dt " +
-                                      "JOIN " + tableName + " ot ON DAY(dt.day_month) = DAY(ot.time) " +
+                                      "LEFT JOIN " + tableName + " ot ON DAY(dt.day_month) = DAY(ot.time) " +
                                       "                                   AND DATENAME(MONTH, dt.day_month) = DATENAME(MONTH, ot.time)" +
                                       "                                   AND ot.sellerId = @sellerId " +
                                       "                                   AND ot.status <> 'cancelled' " +

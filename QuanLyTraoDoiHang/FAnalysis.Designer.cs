@@ -220,6 +220,7 @@
             // 
             // chartGrossRevenue
             // 
+            chartGrossRevenue.BorderlineColor = Color.WhiteSmoke;
             chartArea1.Name = "ChartArea1";
             chartGrossRevenue.ChartAreas.Add(chartArea1);
             chartGrossRevenue.Dock = DockStyle.Top;
@@ -230,7 +231,7 @@
             chartGrossRevenue.Location = new Point(0, 0);
             chartGrossRevenue.Margin = new Padding(1);
             chartGrossRevenue.Name = "chartGrossRevenue";
-            chartGrossRevenue.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
+            chartGrossRevenue.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Light;
             series1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight;
             series1.BackSecondaryColor = Color.FromArgb(255, 255, 192);
             series1.BorderColor = Color.FromArgb(64, 64, 0);

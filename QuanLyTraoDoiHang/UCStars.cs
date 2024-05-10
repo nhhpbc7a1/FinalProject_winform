@@ -14,7 +14,7 @@ namespace QuanLyTraoDoiHang
 {
     public partial class UCStars : UserControl
     {
-        double numStar = 5;
+        public double numStar = 5;
         public int userId = -1;
         public bool canChanged = false;
         public UCStars()

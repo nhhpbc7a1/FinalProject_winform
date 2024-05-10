@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.XPath;
 
 namespace QuanLyTraoDoiHang
 {
@@ -18,15 +19,31 @@ namespace QuanLyTraoDoiHang
 
             flowLayoutPanel.Controls.Clear();
             DataTable x = UserDAO.LoadAll();
-            foreach (DataRow dr in x.Rows)
-            {
-                User user = UserDAO.RowToUser(dr);
-                UCSeller_Show tmp = new UCSeller_Show(user);
-                flowLayoutPanel.Controls.Add(tmp);
-            }
-            //flowLayoutPanel.
-        }
+            List<UCSeller_Show> list = new List<UCSeller_Show>();
 
+            foreach (DataRow c in x.Rows)
+            {
+                User user1 = UserDAO.RowToUser(c);
+                UCSeller_Show tmp1 = new UCSeller_Show(user1);
+                list.Add(tmp1);
+            }
+            for (int i = 0; i < list.Count; i++)
+            {
+                for (int j = i; j < list.Count; j++)
+                {
+                    if (list[i].ucStars1.numStar > list[j].ucStars1.numStar)
+                    {
+                        UCSeller_Show tam = list[i];
+                        list[i] = list[j];
+                        list[j] = tam;
+                    }
+                }
+            }
+            foreach (UCSeller_Show c in list)
+            {
+                flowLayoutPanel.Controls.Add(c);
+            }
+        }
         private void rButton1_Click(object sender, EventArgs e)
         {
             this.Close();
