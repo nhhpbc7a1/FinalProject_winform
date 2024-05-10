@@ -339,7 +339,6 @@
         private RJControls.RButton btnViewShop;
         private Panel panel2;
         private Label label1;
-        private UCStars ucStars1;
         private Panel panel6;
         private Label lblSellerPhone;
         private Label label11;
@@ -356,5 +355,6 @@
         private Panel panel5;
         private Label lblDateJoined;
         private Label lblSellerAddress;
+        public UCStars ucStars1;
     }
 }

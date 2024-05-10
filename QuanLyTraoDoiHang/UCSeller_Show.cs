@@ -32,6 +32,7 @@ namespace QuanLyTraoDoiHang
             txtNumCompletedOrder.Text = OrderTableDAO.CountOrder_BySellerIdAndStatus(user.userId, "completed").ToString();
             txtNumCancelledOrder.Text = OrderTableDAO.CountOrder_BySellerIdAndStatus(user.userId, "cancelled").ToString();
 
+        
             ucStars1.userId = user.userId;
             ucStars1.canChanged = false;
             ucStars1.UCStars_Load(null, null);

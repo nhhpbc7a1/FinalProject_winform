@@ -81,7 +81,7 @@
             label8.Name = "label8";
             label8.Size = new Size(85, 17);
             label8.TabIndex = 4;
-            label8.Text = "Seller's name";
+            label8.Text = "Buyer's name";
             // 
             // lblTime
             // 

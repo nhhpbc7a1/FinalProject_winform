@@ -119,7 +119,15 @@ namespace QuanLyTraoDoiHang
             product.category = row["category"].ToString();
             product.name = row["name"].ToString();
             product.price = Convert.ToInt32(row["price"]);
-            product.image = MyImage.ByteArrayToImage((byte[])row["image"]);
+            try
+            {
+                product.image = MyImage.ByteArrayToImage((byte[])row["image"]);
+            }
+            catch
+            {
+                product.image = Properties.Resources.empty_product;
+            }
+
             product.originalPrice = Convert.ToInt32(row["originalPrice"]);
             product.condition = row["condition"].ToString();
             product.warrantyPolicy = row["warrantyPolicy"].ToString();

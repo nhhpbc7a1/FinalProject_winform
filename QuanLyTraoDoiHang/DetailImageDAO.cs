@@ -51,7 +51,15 @@ namespace QuanLyTraoDoiHang
             {
                 if (x.Rows.Count >= i + 1)
                 {
-                    list[i] = MyImage.ByteArrayToImage((byte[])x.Rows[i]["image"]);
+                    try
+                    {
+                        list[i] = MyImage.ByteArrayToImage((byte[])x.Rows[i]["image"]);
+                    }
+                    catch
+                    {
+                        list[i] = Properties.Resources.empty_product;
+
+                    }
                 }
             }
             return list;

@@ -27,6 +27,10 @@ namespace QuanLyTraoDoiHang
 
         private void BtnFavorite_Click(object? sender, EventArgs e)
         {
+            ResetbtnColor();
+            btnFavorite.TextColor = Color.White;
+            btnFavorite.BackColor = Color.FromArgb(101, 183, 65);
+
             FlowLayoutPanel x = new FlowLayoutPanel();
             x.Dock = DockStyle.Fill;
             x.Padding = new Padding(50, 5, 0, 5);
@@ -120,6 +124,8 @@ namespace QuanLyTraoDoiHang
             btnHistory.TextColor = Color.FromArgb(30, 106, 17);
             btnLogout.BackColor = Color.White;
             btnLogout.TextColor = Color.FromArgb(30, 106, 17);
+            btnFavorite.BackColor = Color.White;
+            btnFavorite.TextColor = Color.FromArgb(30, 106, 17);
         }
     }
 }
