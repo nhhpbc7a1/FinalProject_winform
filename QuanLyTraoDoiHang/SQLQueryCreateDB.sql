@@ -336,13 +336,12 @@ create table ReceiveInfo(
 );
 go
 INSERT INTO [dbo].[ReceiveInfo] ([receiveId], [userId], [name], [phone], [address]) VALUES (1, 1, N'Nguyen Hoang Huy', N'0783701185', N'393, to 12, ap Tan Hau, xa Tan Thuan Tay, thanh pho Cao Lanh, tinh Dong Thap')
-INSERT INTO [dbo].[ReceiveInfo] ([receiveId], [userId], [name], [phone], [address]) VALUES (2, 1, N'kiet', N'098098', N'binh duong ')
-INSERT INTO [dbo].[ReceiveInfo] ([receiveId], [userId], [name], [phone], [address]) VALUES (3, 1, N'nguyen van a', N'wtf', N'sdasdasdas')
+INSERT INTO [dbo].[ReceiveInfo] ([receiveId], [userId], [name], [phone], [address]) VALUES (2, 1, N'Nguyen Hoang Kiet', N'0339132788', N'45 Tan Lap, Dong Hoa, Di An, Binh duong ')
+INSERT INTO [dbo].[ReceiveInfo] ([receiveId], [userId], [name], [phone], [address]) VALUES (3, 1, N'Nguyen Nguyen Toan Khoa', N'0987654321', N'Hoang Dieu 2, Linh Trung Thu Duc')
 INSERT INTO [dbo].[ReceiveInfo] ([receiveId], [userId], [name], [phone], [address]) VALUES (4, 2, N'Le Thi Thu Huong', N'0123456789', N'5/3 112 Phuoc Long A, TP Thu Duc, Viet Nam')
 INSERT INTO [dbo].[ReceiveInfo] ([receiveId], [userId], [name], [phone], [address]) VALUES (5, 1, N'Khoa', N'23123', N'Hoang Dieu 2, linh xuan, thu duc, viet nam')
 INSERT INTO [dbo].[ReceiveInfo] ([receiveId], [userId], [name], [phone], [address]) VALUES (6, 3, N'Doan Minh Khanh', N'0987654321', N'Quan 3, Le Van Si, thanh pho Ho CHi Minh')
 INSERT INTO [dbo].[ReceiveInfo] ([receiveId], [userId], [name], [phone], [address]) VALUES (7, 3, N'Le Thi Thu Huong', N'0987654321', N'5/3 112 Phuoc Long A, Thu Duc, HCM')
-INSERT INTO [dbo].[ReceiveInfo] ([receiveId], [userId], [name], [phone], [address]) VALUES (8, 1, N'Nguyen Nguyen Toan Khoa', N'0987654321', N'Hoang Dieu 2, Linh Trung Thu DUc')
 go
 --drop table OrderTable;
 --go
