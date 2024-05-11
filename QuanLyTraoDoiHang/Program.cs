@@ -1,3 +1,5 @@
+﻿using System.Security.Policy;
+
 namespace QuanLyTraoDoiHang
 {
     internal static class Program
@@ -30,5 +32,41 @@ namespace QuanLyTraoDoiHang
         public static int currentUserId = -1;
 
         public static User CurrentUser() { return UserDAO.SelectByUserId(currentUserId); }
+
+        public static Image TakeRandom()
+        {
+             List<Image> listImage = new List<Image>()
+            {
+                Properties.Resources.GPX_LEGEND_150_S__202I_chính_chủ_xe_classic_pkl___1,
+                Properties.Resources.Ip15_2,
+                Properties.Resources.pro1_1,
+                Properties.Resources.Mitsubishi_1,
+                Properties.Resources.Máy_in_màu_Epson_L120_4màu_sắc_nét_cực_căng_đẹp____2,
+                Properties.Resources.omega_seamaster_3,
+                Properties.Resources.poddle_4,
+                Properties.Resources.pro1_4,
+                Properties.Resources.pro3_2,
+                Properties.Resources.pro5_2,
+                Properties.Resources.samsung_A14_5g
+            };
+
+
+
+            try
+            {
+                Random random = new Random();
+                int x = listImage.Count;
+                int i = random.Next(x);
+
+                if (i == 0)
+                    return Properties.Resources.empty_product;
+                return listImage[i];
+            }
+            catch
+            {
+                return Properties.Resources.empty_product;
+            }
+            return Properties.Resources.empty_product;
+        }
     }
 }

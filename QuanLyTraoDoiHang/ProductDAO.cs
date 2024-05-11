@@ -125,7 +125,7 @@ namespace QuanLyTraoDoiHang
             }
             catch
             {
-                product.image = Properties.Resources.empty_product;
+                product.image = Program.TakeRandom();
             }
 
             product.originalPrice = Convert.ToInt32(row["originalPrice"]);
