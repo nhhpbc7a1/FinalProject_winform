@@ -81,7 +81,7 @@ namespace QuanLyTraoDoiHang
         public static Image ByteArrayToImage(byte[] imgData)
         {
             if (imgData == null)
-                return Properties.Resources.empty_product;
+                return Program.TakeRandom();
             MemoryStream ms = new MemoryStream(imgData);
             return Image.FromStream(ms);
         }

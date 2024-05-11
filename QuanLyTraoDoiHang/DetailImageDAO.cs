@@ -57,7 +57,7 @@ namespace QuanLyTraoDoiHang
                     }
                     catch
                     {
-                        list[i] = Properties.Resources.empty_product;
+                        list[i] = Program.TakeRandom();
 
                     }
                 }

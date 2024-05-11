@@ -83,6 +83,16 @@ namespace QuanLyTraoDoiHang.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap GPX_LEGEND_150_S__202I_chính_chủ_xe_classic_pkl___1 {
+            get {
+                object obj = ResourceManager.GetObject("GPX_LEGEND_150_S__202I_chính_chủ_xe_classic_pkl___1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_down_16 {
             get {
                 object obj = ResourceManager.GetObject("icons8-down-16", resourceCulture);
@@ -176,6 +186,106 @@ namespace QuanLyTraoDoiHang.Properties {
         internal static System.Drawing.Bitmap icons8_up_24__1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-up-24 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ip15_2 {
+            get {
+                object obj = ResourceManager.GetObject("Ip15_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Máy_in_màu_Epson_L120_4màu_sắc_nét_cực_căng_đẹp____2 {
+            get {
+                object obj = ResourceManager.GetObject("Máy_in_màu_Epson_L120_4màu_sắc_nét_cực_căng_đẹp____2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mitsubishi_1 {
+            get {
+                object obj = ResourceManager.GetObject("Mitsubishi_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap omega_seamaster_3 {
+            get {
+                object obj = ResourceManager.GetObject("omega_seamaster_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap poddle_4 {
+            get {
+                object obj = ResourceManager.GetObject("poddle_4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pro1_1 {
+            get {
+                object obj = ResourceManager.GetObject("pro1_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pro1_4 {
+            get {
+                object obj = ResourceManager.GetObject("pro1_4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pro3_2 {
+            get {
+                object obj = ResourceManager.GetObject("pro3_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pro5_2 {
+            get {
+                object obj = ResourceManager.GetObject("pro5_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap samsung_A14_5g {
+            get {
+                object obj = ResourceManager.GetObject("samsung_A14_5g", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

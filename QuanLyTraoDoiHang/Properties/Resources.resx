@@ -154,4 +154,37 @@
   <data name="icons8-down-24 (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-down-24 (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GPX_LEGEND_150_S__202I_chính_chủ_xe_classic_pkl___1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GPX LEGEND 150 S- 202I.chính chủ xe classic pkl _ 1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ip15_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ip15_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mitsubishi_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mitsubishi_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Máy_in_màu_Epson_L120_4màu_sắc_nét_cực_căng_đẹp____2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Máy in màu Epson L120 4màu sắc nét cực căng đẹp  _ 2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="omega_seamaster_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\omega-seamaster_3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poddle_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poddle_4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pro1_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pro1_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pro1_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pro1_4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pro3_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pro3_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pro5_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pro5_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="samsung_A14_5g" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\samsung_A14_5g.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

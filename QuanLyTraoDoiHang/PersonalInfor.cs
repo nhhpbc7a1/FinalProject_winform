@@ -111,8 +111,9 @@ namespace QuanLyTraoDoiHang
         {
             Image image = MyImage.ChooseImage();
             ptbUserImage.BackgroundImage = image;
-            Program.CurrentUser().image = image;
-            UserDAO.Update(Program.CurrentUser());
+            User x = Program.CurrentUser();
+            x.image = image;
+            UserDAO.Update(x);
         }
         void ResetbtnColor()
         {
